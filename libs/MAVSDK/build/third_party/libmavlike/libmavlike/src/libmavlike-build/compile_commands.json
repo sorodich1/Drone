@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -o CMakeFiles/mav.dir/src/MessageDefinition.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp",
+  "file": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp",
+  "output": "CMakeFiles/mav.dir/src/MessageDefinition.cpp.o"
+},
+{
+  "directory": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -o CMakeFiles/mav.dir/src/MessageSet.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp",
+  "file": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp",
+  "output": "CMakeFiles/mav.dir/src/MessageSet.cpp.o"
+},
+{
+  "directory": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -o CMakeFiles/mav.dir/src/Message.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp",
+  "file": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp",
+  "output": "CMakeFiles/mav.dir/src/Message.cpp.o"
+},
+{
+  "directory": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -o CMakeFiles/mav.dir/src/BufferParser.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp",
+  "file": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp",
+  "output": "CMakeFiles/mav.dir/src/BufferParser.cpp.o"
+},
+{
+  "directory": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build",
+  "command": "/usr/bin/c++ -D_FILE_OFFSET_BITS=64 -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion -o CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp",
+  "file": "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp",
+  "output": "CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o"
+}
+]

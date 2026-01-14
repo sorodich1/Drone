@@ -1,0 +1,13 @@
+prefix=/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build
+exec_prefix=${prefix}
+libdir=${exec_prefix}
+includedir=${prefix}/include ${prefix}/../openssl/include 
+enginesdir=${libdir}/engines
+modulesdir=${libdir}/providers
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.6.0
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread
+Cflags: -I${prefix}/include  -I${prefix}/../openssl/include 

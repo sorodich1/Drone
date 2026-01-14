@@ -1,0 +1,47 @@
+# Билд файлы
+/build/
+*.o
+*.so
+*.so.*
+*.a
+*.la
+
+# Исполняемые файлы
+/debug_fixed
+/Drone
+
+# Логи и данные
+*.log
+*.dat
+*.csv
+*.txt
+
+# Архивы
+*.zip
+*.tar.gz
+*.7z
+
+# Временные файлы
+*~
+*.swp
+*.swo
+*.swn
+
+# Системные
+.DS_Store
+Thumbs.db
+.desktop
+.lgd-*
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Скрытые файлы
+.*.swp
+.*.swo

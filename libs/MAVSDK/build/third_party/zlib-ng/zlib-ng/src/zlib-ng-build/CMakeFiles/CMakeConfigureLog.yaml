@@ -1,0 +1,1281 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      The system is: Linux - 6.12.47+rpt-rpi-2712 - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_64135/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_64135.dir/build.make CMakeFiles/cmTC_64135.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws'
+        Building C object CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -std=c11 -fPIE   -v -o CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_64135.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -std=c11 -version -fPIE -fasynchronous-unwind-tables -o /tmp/ccANzvLF.s
+        GNU C11 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45
+        COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o /tmp/ccANzvLF.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_64135
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64135.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64135' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_64135.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Vjs9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_64135 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Vjs9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_64135 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64135' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_64135.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -o cmTC_64135
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_64135/fast]
+        ignore line: [gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_64135.dir/build.make CMakeFiles/cmTC_64135.dir/build]
+        ignore line: [gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-GuGAws']
+        ignore line: [Building C object CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -std=c11 -fPIE   -v -o CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_64135.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -std=c11 -version -fPIE -fasynchronous-unwind-tables -o /tmp/ccANzvLF.s]
+        ignore line: [GNU C11 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o /tmp/ccANzvLF.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c11' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_64135]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64135.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_64135' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_64135.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Vjs9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_64135 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccr4Vjs9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_64135] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccr4Vjs9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_64135 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_64135.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:35 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "cmake/detect-arch.cmake:26 (try_run)"
+      - "CMakeLists.txt:47 (include)"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03d67/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_03d67.dir/build.make CMakeFiles/cmTC_03d67.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_03d67.dir/detect-arch.c.o
+        /usr/bin/cc   -std=c11 -fPIE -o CMakeFiles/cmTC_03d67.dir/detect-arch.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cmake/detect-arch.c
+        /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cmake/detect-arch.c:16:6: error: #error archfound aarch64
+           16 |     #error archfound aarch64
+              |      ^~~~~
+        gmake[4]: *** [CMakeFiles/cmTC_03d67.dir/build.make:81: CMakeFiles/cmTC_03d67.dir/detect-arch.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp'
+        gmake[3]: *** [Makefile:134: cmTC_03d67/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:202 (check_c_source_compiles)"
+    checks:
+      - "Performing Test FNO_LTO_AVAILABLE"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "FNO_LTO_AVAILABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0a35/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0a35.dir/build.make CMakeFiles/cmTC_b0a35.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx'
+        Building C object CMakeFiles/cmTC_b0a35.dir/src.c.o
+        /usr/bin/cc -DFNO_LTO_AVAILABLE  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_b0a35.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx/src.c
+        Linking C executable cmTC_b0a35
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0a35.dir/link.txt --verbose=1
+        /usr/bin/cc  -fno-lto CMakeFiles/cmTC_b0a35.dir/src.c.o -o cmTC_b0a35
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dcnOUx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:315 (check_include_file)"
+    checks:
+      - "Looking for arm_acle.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ARM_ACLE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37a66/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_37a66.dir/build.make CMakeFiles/cmTC_37a66.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5'
+        Building C object CMakeFiles/cmTC_37a66.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=c11 -fPIE -o CMakeFiles/cmTC_37a66.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5/CheckIncludeFile.c
+        Linking C executable cmTC_37a66
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37a66.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_37a66.dir/CheckIncludeFile.c.o -o cmTC_37a66
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-0zfxb5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:319 (check_include_file)"
+    checks:
+      - "Looking for sys/auxv.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_AUXV_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_daffc/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_daffc.dir/build.make CMakeFiles/cmTC_daffc.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK'
+        Building C object CMakeFiles/cmTC_daffc.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=c11 -fPIE -o CMakeFiles/cmTC_daffc.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK/CheckIncludeFile.c
+        Linking C executable cmTC_daffc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daffc.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_daffc.dir/CheckIncludeFile.c.o -o cmTC_daffc
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-a7NDSK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:323 (check_include_file)"
+    checks:
+      - "Looking for sys/sdt.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_SDT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4bc04/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4bc04.dir/build.make CMakeFiles/cmTC_4bc04.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6'
+        Building C object CMakeFiles/cmTC_4bc04.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=c11 -fPIE -o CMakeFiles/cmTC_4bc04.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6/CheckIncludeFile.c
+        /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6/CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: No such file or directory
+            1 | #include <sys/sdt.h>
+              |          ^~~~~~~~~~~
+        compilation terminated.
+        gmake[4]: *** [CMakeFiles/cmTC_4bc04.dir/build.make:81: CMakeFiles/cmTC_4bc04.dir/CheckIncludeFile.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6'
+        gmake[3]: *** [Makefile:134: cmTC_4bc04/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BpyiT6'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:327 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bad42/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bad42.dir/build.make CMakeFiles/cmTC_bad42.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN'
+        Building C object CMakeFiles/cmTC_bad42.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -std=c11 -fPIE -o CMakeFiles/cmTC_bad42.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN/CheckIncludeFile.c
+        Linking C executable cmTC_bad42
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bad42.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_bad42.dir/CheckIncludeFile.c.o -o cmTC_bad42
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-DosjZN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "CMakeLists.txt:333 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a36fd/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a36fd.dir/build.make CMakeFiles/cmTC_a36fd.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM'
+        Building C object CMakeFiles/cmTC_a36fd.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -std=c11 -fPIE -o CMakeFiles/cmTC_a36fd.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM/CheckIncludeFile.c
+        Linking C executable cmTC_a36fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a36fd.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a36fd.dir/CheckIncludeFile.c.o -o cmTC_a36fd
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-yXZiuM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "CMakeLists.txt:333 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eedff/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eedff.dir/build.make CMakeFiles/cmTC_eedff.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs'
+        Building C object CMakeFiles/cmTC_eedff.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -std=c11 -fPIE -o CMakeFiles/cmTC_eedff.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs/CheckIncludeFile.c
+        Linking C executable cmTC_eedff
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eedff.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_eedff.dir/CheckIncludeFile.c.o -o cmTC_eedff
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-2Lrdrs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "CMakeLists.txt:333 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_44fde/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_44fde.dir/build.make CMakeFiles/cmTC_44fde.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn'
+        Building C object CMakeFiles/cmTC_44fde.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -std=c11 -fPIE -o CMakeFiles/cmTC_44fde.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn/CheckIncludeFile.c
+        Linking C executable cmTC_44fde
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44fde.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_44fde.dir/CheckIncludeFile.c.o -o cmTC_44fde
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Rew7Rn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:333 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_59d4b/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_59d4b.dir/build.make CMakeFiles/cmTC_59d4b.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG'
+        Building C object CMakeFiles/cmTC_59d4b.dir/OFF64_T.c.o
+        /usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -std=c11 -fPIE -o CMakeFiles/cmTC_59d4b.dir/OFF64_T.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG/OFF64_T.c
+        Linking C executable cmTC_59d4b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59d4b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_59d4b.dir/OFF64_T.c.o -o cmTC_59d4b
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-PeM9DG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:349 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70621/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70621.dir/build.make CMakeFiles/cmTC_70621.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA'
+        Building C object CMakeFiles/cmTC_70621.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fseeko -std=c11 -fPIE -o CMakeFiles/cmTC_70621.dir/CheckFunctionExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA/CheckFunctionExists.c
+        Linking C executable cmTC_70621
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70621.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fseeko CMakeFiles/cmTC_70621.dir/CheckFunctionExists.c.o -o cmTC_70621
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-3WAfhA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeLists.txt:354 (check_function_exists)"
+    checks:
+      - "Looking for strerror"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3042c/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3042c.dir/build.make CMakeFiles/cmTC_3042c.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB'
+        Building C object CMakeFiles/cmTC_3042c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror -std=c11 -fPIE -o CMakeFiles/cmTC_3042c.dir/CheckFunctionExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB/CheckFunctionExists.c
+        Linking C executable cmTC_3042c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3042c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strerror CMakeFiles/cmTC_3042c.dir/CheckFunctionExists.c.o -o cmTC_3042c
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qknUKB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:360 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da62f/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da62f.dir/build.make CMakeFiles/cmTC_da62f.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb'
+        Building C object CMakeFiles/cmTC_da62f.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_POSIX_C_SOURCE=200112L  -std=c11 -fPIE -o CMakeFiles/cmTC_da62f.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb/CheckSymbolExists.c
+        Linking C executable cmTC_da62f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da62f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_da62f.dir/CheckSymbolExists.c.o -o cmTC_da62f
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-hM2vlb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:367 (check_symbol_exists)"
+    checks:
+      - "Looking for aligned_alloc"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ALIGNED_ALLOC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fc86f/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fc86f.dir/build.make CMakeFiles/cmTC_fc86f.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj'
+        Building C object CMakeFiles/cmTC_fc86f.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ISOC11_SOURCE=1  -std=c11 -fPIE -o CMakeFiles/cmTC_fc86f.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj/CheckSymbolExists.c
+        Linking C executable cmTC_fc86f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc86f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fc86f.dir/CheckSymbolExists.c.o -o cmTC_fc86f
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-6gUqdj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:386 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_NO_INTERPOSITION"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_NO_INTERPOSITION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ae01/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7ae01.dir/build.make CMakeFiles/cmTC_7ae01.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd'
+        Building C object CMakeFiles/cmTC_7ae01.dir/src.c.o
+        /usr/bin/cc -DHAVE_NO_INTERPOSITION  -std=c11 -fPIE   -fno-semantic-interposition -o CMakeFiles/cmTC_7ae01.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd/src.c
+        Linking C executable cmTC_7ae01
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ae01.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7ae01.dir/src.c.o -o cmTC_7ae01
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-9zbnvd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:391 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ATTRIBUTE_VISIBILITY_HIDDEN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9e7f/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b9e7f.dir/build.make CMakeFiles/cmTC_b9e7f.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h'
+        Building C object CMakeFiles/cmTC_b9e7f.dir/src.c.o
+        /usr/bin/cc -DHAVE_ATTRIBUTE_VISIBILITY_HIDDEN  -std=c11 -fPIE -o CMakeFiles/cmTC_b9e7f.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h/src.c
+        Linking C executable cmTC_b9e7f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9e7f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b9e7f.dir/src.c.o -o cmTC_b9e7f
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-Pzmx8h'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:405 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ATTRIBUTE_VISIBILITY_INTERNAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b1b5a/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b1b5a.dir/build.make CMakeFiles/cmTC_b1b5a.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc'
+        Building C object CMakeFiles/cmTC_b1b5a.dir/src.c.o
+        /usr/bin/cc -DHAVE_ATTRIBUTE_VISIBILITY_INTERNAL  -std=c11 -fPIE -o CMakeFiles/cmTC_b1b5a.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc/src.c
+        Linking C executable cmTC_b1b5a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1b5a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b1b5a.dir/src.c.o -o cmTC_b1b5a
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-7gIjMc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:419 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_ATTRIBUTE_ALIGNED"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ATTRIBUTE_ALIGNED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_075eb/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_075eb.dir/build.make CMakeFiles/cmTC_075eb.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc'
+        Building C object CMakeFiles/cmTC_075eb.dir/src.c.o
+        /usr/bin/cc -DHAVE_ATTRIBUTE_ALIGNED  -std=c11 -fPIE -o CMakeFiles/cmTC_075eb.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc/src.c
+        Linking C executable cmTC_075eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_075eb.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_075eb.dir/src.c.o -o cmTC_075eb
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-OY45Sc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:433 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZ"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZ"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1817/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f1817.dir/build.make CMakeFiles/cmTC_f1817.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ'
+        Building C object CMakeFiles/cmTC_f1817.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZ  -std=c11 -fPIE -o CMakeFiles/cmTC_f1817.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ/src.c
+        Linking C executable cmTC_f1817
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1817.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f1817.dir/src.c.o -o cmTC_f1817
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-UUBnIQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:449 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZLL"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZLL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea13d/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea13d.dir/build.make CMakeFiles/cmTC_ea13d.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ'
+        Building C object CMakeFiles/cmTC_ea13d.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZLL  -std=c11 -fPIE -o CMakeFiles/cmTC_ea13d.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ/src.c
+        Linking C executable cmTC_ea13d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea13d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ea13d.dir/src.c.o -o cmTC_ea13d
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qR7lJQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:465 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_PTRDIFF_T"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PTRDIFF_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6fff5/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6fff5.dir/build.make CMakeFiles/cmTC_6fff5.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh'
+        Building C object CMakeFiles/cmTC_6fff5.dir/src.c.o
+        /usr/bin/cc -DHAVE_PTRDIFF_T  -std=c11 -fPIE -o CMakeFiles/cmTC_6fff5.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh/src.c
+        Linking C executable cmTC_6fff5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fff5.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6fff5.dir/src.c.o -o cmTC_6fff5
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-dBBLAh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:561 (check_c_source_compiles)"
+    checks:
+      - "Performing Test ARM_AUXV_HAS_CRC32"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "ARM_AUXV_HAS_CRC32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dacb6/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dacb6.dir/build.make CMakeFiles/cmTC_dacb6.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn'
+        Building C object CMakeFiles/cmTC_dacb6.dir/src.c.o
+        /usr/bin/cc -DARM_AUXV_HAS_CRC32  -std=c11 -fPIE -o CMakeFiles/cmTC_dacb6.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn/src.c
+        Linking C executable cmTC_dacb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dacb6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_dacb6.dir/src.c.o -o cmTC_dacb6
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-oXjQAn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/detect-intrinsics.cmake:19 (check_c_source_compiles)"
+      - "CMakeLists.txt:626 (check_acle_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_ACLE_FLAG"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ACLE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9589b/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9589b.dir/build.make CMakeFiles/cmTC_9589b.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz'
+        Building C object CMakeFiles/cmTC_9589b.dir/src.c.o
+        /usr/bin/cc -DHAVE_ACLE_FLAG  -march=armv8-a+crc  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_9589b.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz/src.c
+        Linking C executable cmTC_9589b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9589b.dir/link.txt --verbose=1
+        /usr/bin/cc  -march=armv8-a+crc  -fno-lto CMakeFiles/cmTC_9589b.dir/src.c.o -o cmTC_9589b
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-llSyuz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/detect-intrinsics.cmake:201 (check_c_source_compiles)"
+      - "CMakeLists.txt:640 (check_neon_compiler_flag)"
+    checks:
+      - "Performing Test NEON_AVAILABLE"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "NEON_AVAILABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3245b/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3245b.dir/build.make CMakeFiles/cmTC_3245b.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF'
+        Building C object CMakeFiles/cmTC_3245b.dir/src.c.o
+        /usr/bin/cc -DNEON_AVAILABLE  -march=armv8-a+simd  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_3245b.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF/src.c
+        Linking C executable cmTC_3245b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3245b.dir/link.txt --verbose=1
+        /usr/bin/cc  -march=armv8-a+simd  -fno-lto CMakeFiles/cmTC_3245b.dir/src.c.o -o cmTC_3245b
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-BNPeYF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/detect-intrinsics.cmake:224 (check_c_source_compiles)"
+      - "CMakeLists.txt:652 (check_neon_ld4_intrinsics)"
+    checks:
+      - "Performing Test NEON_HAS_LD4"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "NEON_HAS_LD4"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1b96/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1b96.dir/build.make CMakeFiles/cmTC_a1b96.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa'
+        Building C object CMakeFiles/cmTC_a1b96.dir/src.c.o
+        /usr/bin/cc -DNEON_HAS_LD4  -march=armv8-a+simd  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_a1b96.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa/src.c
+        Linking C executable cmTC_a1b96
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b96.dir/link.txt --verbose=1
+        /usr/bin/cc  -march=armv8-a+simd  -fno-lto CMakeFiles/cmTC_a1b96.dir/src.c.o -o cmTC_a1b96
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-H5gLRa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/detect-intrinsics.cmake:39 (check_c_compiler_flag)"
+      - "CMakeLists.txt:661 (check_armv6_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_MARCH_ARMV6"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MARCH_ARMV6"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b059d/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b059d.dir/build.make CMakeFiles/cmTC_b059d.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk'
+        Building C object CMakeFiles/cmTC_b059d.dir/src.c.o
+        /usr/bin/cc -DHAVE_MARCH_ARMV6  -std=c11 -fPIE   -march=armv6 -o CMakeFiles/cmTC_b059d.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk/src.c
+        cc1: error: unknown value 'armv6' for '-march'
+        cc1: note: valid arguments are: armv8-a armv8.1-a armv8.2-a armv8.3-a armv8.4-a armv8.5-a armv8.6-a armv8.7-a armv8.8-a armv8.9-a armv8-r armv9-a armv9.1-a armv9.2-a armv9.3-a armv9.4-a native; did you mean 'armv8-a'?
+        gmake[4]: *** [CMakeFiles/cmTC_b059d.dir/build.make:81: CMakeFiles/cmTC_b059d.dir/src.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk'
+        gmake[3]: *** [Makefile:134: cmTC_b059d/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-aYaALk'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/detect-intrinsics.cmake:47 (check_c_source_compiles)"
+      - "CMakeLists.txt:661 (check_armv6_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_ARMV6_INLINE_ASM"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ARMV6_INLINE_ASM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2626/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a2626.dir/build.make CMakeFiles/cmTC_a2626.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf'
+        Building C object CMakeFiles/cmTC_a2626.dir/src.c.o
+        /usr/bin/cc -DHAVE_ARMV6_INLINE_ASM  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_a2626.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf/src.c
+        /tmp/ccCp4yIX.s: Assembler messages:
+        /tmp/ccCp4yIX.s:18: Error: unknown mnemonic `uqsub16' -- `uqsub16 x0,x0,x1'
+        gmake[4]: *** [CMakeFiles/cmTC_a2626.dir/build.make:81: CMakeFiles/cmTC_a2626.dir/src.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf'
+        gmake[3]: *** [Makefile:134: cmTC_a2626/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-qJtgJf'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/detect-intrinsics.cmake:57 (check_c_source_compiles)"
+      - "CMakeLists.txt:661 (check_armv6_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_ARMV6_INTRIN"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ARMV6_INTRIN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3634f/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3634f.dir/build.make CMakeFiles/cmTC_3634f.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ'
+        Building C object CMakeFiles/cmTC_3634f.dir/src.c.o
+        /usr/bin/cc -DHAVE_ARMV6_INTRIN  -fno-lto -std=c11 -fPIE -o CMakeFiles/cmTC_3634f.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ/src.c
+        /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ/src.c: In function ‘f’:
+        /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ/src.c:10:20: error: implicit declaration of function ‘__uqsub16’ [-Wimplicit-function-declaration]
+           10 |             return __uqsub16(a, b);
+              |                    ^~~~~~~~~
+        gmake[4]: *** [CMakeFiles/cmTC_3634f.dir/build.make:81: CMakeFiles/cmTC_3634f.dir/src.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ'
+        gmake[3]: *** [Makefile:134: cmTC_3634f/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/CMakeFiles/CMakeScratch/TryCompile-k2cNJZ'
+        
+      exitCode: 2
+...

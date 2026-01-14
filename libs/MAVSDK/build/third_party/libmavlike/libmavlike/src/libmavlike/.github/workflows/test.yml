@@ -1,0 +1,23 @@
+name: Tests
+
+on:
+  - push
+
+jobs:
+  build-test:
+    strategy:
+        fail-fast: false
+        matrix:
+            platform:
+              - runner: ubuntu-24.04
+              - runner: macos-13
+    runs-on: ${{ matrix.platform.runner }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build
+        run: ./build-with-deps.sh
+
+      - name: Run tests
+        run: ./build/tests/tests
+

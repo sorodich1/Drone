@@ -1,0 +1,634 @@
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o: \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader_test.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/mavsdk.h \
+ /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+ /usr/include/aarch64-linux-gnu/bits/timesize.h \
+ /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+ /usr/include/aarch64-linux-gnu/bits/long-double.h \
+ /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+ /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/cpu_defines.h \
+ /usr/include/c++/14/pstl/pstl_config.h \
+ /usr/include/c++/14/bits/stringfwd.h \
+ /usr/include/c++/14/bits/memoryfwd.h \
+ /usr/include/c++/14/bits/char_traits.h \
+ /usr/include/c++/14/bits/postypes.h /usr/include/c++/14/cwchar \
+ /usr/include/wchar.h \
+ /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn.h \
+ /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
+ /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/c++/14/type_traits /usr/include/c++/14/bits/version.h \
+ /usr/include/c++/14/bits/allocator.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/c++allocator.h \
+ /usr/include/c++/14/bits/new_allocator.h /usr/include/c++/14/new \
+ /usr/include/c++/14/bits/exception.h \
+ /usr/include/c++/14/bits/functexcept.h \
+ /usr/include/c++/14/bits/exception_defines.h \
+ /usr/include/c++/14/bits/move.h \
+ /usr/include/c++/14/bits/cpp_type_traits.h \
+ /usr/include/c++/14/bits/localefwd.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/c++locale.h \
+ /usr/include/c++/14/clocale /usr/include/locale.h \
+ /usr/include/aarch64-linux-gnu/bits/locale.h /usr/include/c++/14/iosfwd \
+ /usr/include/c++/14/cctype /usr/include/ctype.h \
+ /usr/include/aarch64-linux-gnu/bits/types.h \
+ /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+ /usr/include/aarch64-linux-gnu/bits/time64.h \
+ /usr/include/aarch64-linux-gnu/bits/endian.h \
+ /usr/include/aarch64-linux-gnu/bits/endianness.h \
+ /usr/include/c++/14/bits/ostream_insert.h \
+ /usr/include/c++/14/bits/cxxabi_forced.h \
+ /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14/bits/concept_check.h \
+ /usr/include/c++/14/debug/assertions.h \
+ /usr/include/c++/14/bits/stl_iterator_base_types.h \
+ /usr/include/c++/14/bits/stl_iterator.h \
+ /usr/include/c++/14/ext/type_traits.h \
+ /usr/include/c++/14/bits/ptr_traits.h \
+ /usr/include/c++/14/bits/stl_function.h \
+ /usr/include/c++/14/backward/binders.h \
+ /usr/include/c++/14/ext/numeric_traits.h \
+ /usr/include/c++/14/bits/stl_algobase.h \
+ /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/bits/utility.h \
+ /usr/include/c++/14/debug/debug.h \
+ /usr/include/c++/14/bits/predefined_ops.h /usr/include/c++/14/bit \
+ /usr/include/c++/14/concepts /usr/include/c++/14/bits/refwrap.h \
+ /usr/include/c++/14/bits/invoke.h \
+ /usr/include/c++/14/bits/range_access.h \
+ /usr/include/c++/14/initializer_list \
+ /usr/include/c++/14/bits/basic_string.h \
+ /usr/include/c++/14/ext/alloc_traits.h \
+ /usr/include/c++/14/bits/alloc_traits.h \
+ /usr/include/c++/14/bits/stl_construct.h /usr/include/c++/14/string_view \
+ /usr/include/c++/14/bits/functional_hash.h \
+ /usr/include/c++/14/bits/hash_bytes.h \
+ /usr/include/c++/14/bits/string_view.tcc \
+ /usr/include/c++/14/ext/string_conversions.h /usr/include/c++/14/cstdlib \
+ /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+ /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
+ /usr/include/aarch64-linux-gnu/sys/types.h \
+ /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/aarch64-linux-gnu/bits/byteswap.h \
+ /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/aarch64-linux-gnu/sys/select.h \
+ /usr/include/aarch64-linux-gnu/bits/select.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
+ /usr/include/alloca.h \
+ /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
+ /usr/include/stdio.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
+ /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/14/bits/charconv.h \
+ /usr/include/c++/14/bits/basic_string.tcc \
+ /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
+ /usr/include/c++/14/bits/uses_allocator.h \
+ /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
+ /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \
+ /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h /usr/include/c++/14/typeinfo \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
+ /usr/include/c++/14/ext/atomicity.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/gthr.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/aarch64-linux-gnu/bits/sched.h \
+ /usr/include/linux/sched/types.h /usr/include/linux/types.h \
+ /usr/lib/linux/uapi/arm64/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/lib/linux/uapi/arm64/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/aarch64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/aarch64-linux-gnu/bits/time.h \
+ /usr/include/aarch64-linux-gnu/bits/timex.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/aarch64-linux-gnu/bits/setjmp.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/atomic_word.h \
+ /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/14/ext/concurrence.h /usr/include/c++/14/exception \
+ /usr/include/c++/14/bits/exception_ptr.h \
+ /usr/include/c++/14/bits/cxxabi_init_exception.h \
+ /usr/include/c++/14/bits/nested_exception.h \
+ /usr/include/c++/14/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14/bits/atomic_base.h \
+ /usr/include/c++/14/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/14/backward/auto_ptr.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/optional \
+ /usr/include/c++/14/bits/enable_special_members.h \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/functional \
+ /usr/include/c++/14/bits/std_function.h \
+ /usr/include/c++/14/unordered_map \
+ /usr/include/c++/14/bits/unordered_map.h \
+ /usr/include/c++/14/bits/hashtable.h \
+ /usr/include/c++/14/bits/hashtable_policy.h \
+ /usr/include/c++/14/bits/node_handle.h \
+ /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/array \
+ /usr/include/c++/14/compare \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/deprecated.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/handle.h \
+ /usr/include/c++/14/cstdint \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/system.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/autopilot.h \
+ /usr/include/c++/14/sstream /usr/include/c++/14/istream \
+ /usr/include/c++/14/ios /usr/include/c++/14/bits/ios_base.h \
+ /usr/include/c++/14/bits/locale_classes.h \
+ /usr/include/c++/14/bits/locale_classes.tcc \
+ /usr/include/c++/14/system_error \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
+ /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/bits/basic_ios.h \
+ /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
+ /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_base.h \
+ /usr/include/c++/14/bits/streambuf_iterator.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/ctype_inline.h \
+ /usr/include/c++/14/bits/locale_facets.tcc \
+ /usr/include/c++/14/bits/basic_ios.tcc /usr/include/c++/14/ostream \
+ /usr/include/c++/14/bits/ostream.tcc \
+ /usr/include/c++/14/bits/istream.tcc \
+ /usr/include/c++/14/bits/sstream.tcc \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/component_type.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/vehicle.h \
+ /home/pi/Drone/MAVSDK/build/src/mavsdk/core/include/mavsdk/mavlink_include.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/version.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/common.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/protocol.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/mavlink_types.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/mavlink_helpers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/checksum.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/mavlink_conversions.h \
+ /usr/include/c++/14/math.h /usr/include/c++/14/cmath /usr/include/math.h \
+ /usr/include/aarch64-linux-gnu/bits/math-vector.h \
+ /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-macros.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/14/bits/specfun.h /usr/include/c++/14/limits \
+ /usr/include/c++/14/tr1/gamma.tcc \
+ /usr/include/c++/14/tr1/special_function_util.h \
+ /usr/include/c++/14/tr1/bessel_function.tcc \
+ /usr/include/c++/14/tr1/beta_function.tcc \
+ /usr/include/c++/14/tr1/ell_integral.tcc \
+ /usr/include/c++/14/tr1/exp_integral.tcc \
+ /usr/include/c++/14/tr1/hypergeometric.tcc \
+ /usr/include/c++/14/tr1/legendre_function.tcc \
+ /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14/tr1/poly_hermite.tcc \
+ /usr/include/c++/14/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14/tr1/riemann_zeta.tcc \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/mavlink_sha256.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_sys_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_system_time.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_ping.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_change_operator_control.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_change_operator_control_ack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_auth_key.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_link_node_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_mode.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_request_read.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_request_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_value.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_set.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_raw_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_imu.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_raw_imu.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_raw_pressure.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_pressure.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_attitude.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_attitude_quaternion.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_local_position_ned.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_global_position_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_rc_channels_scaled.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_rc_channels_raw.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_servo_output_raw.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_request_partial_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_write_partial_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_item.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_request.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_set_current.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_current.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_request_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_count.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_clear_all.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_item_reached.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_ack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_gps_global_origin.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_global_origin.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_map_rc.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_request_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_safety_set_allowed_area.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_safety_allowed_area.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_attitude_quaternion_cov.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_nav_controller_output.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_global_position_int_cov.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_local_position_ned_cov.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_rc_channels.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_request_data_stream.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_data_stream.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_manual_control.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_rc_channels_override.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mission_item_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_vfr_hud.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_command_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_command_long.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_command_ack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_command_cancel.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_manual_setpoint.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_attitude_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_attitude_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_position_target_local_ned.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_position_target_local_ned.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_position_target_global_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_position_target_global_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_local_position_ned_system_global_offset.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_state.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_controls.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_rc_inputs_raw.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_actuator_controls.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_optical_flow.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_global_vision_position_estimate.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_vision_position_estimate.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_vision_speed_estimate.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_vicon_position_estimate.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_highres_imu.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_optical_flow_rad.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_sensor.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_sim_state.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_radio_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_file_transfer_protocol.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_timesync.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_trigger.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_gps.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_optical_flow.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hil_state_quaternion.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_imu2.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_request_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_entry.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_request_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_erase.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_log_request_end.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_inject_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps2_raw.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_power_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_serial_control.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_rtk.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps2_rtk.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_imu3.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_data_transmission_handshake.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_encapsulated_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_distance_sensor.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_terrain_request.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_terrain_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_terrain_check.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_terrain_report.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_pressure2.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_att_pos_mocap.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_actuator_control_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_actuator_control_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_altitude.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_resource_request.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_scaled_pressure3.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_follow_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_control_system_state.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_battery_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_autopilot_version.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_landing_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_fence_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mag_cal_report.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_efi_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_estimator_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_wind_cov.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_input.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gps_rtcm_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_high_latency.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_high_latency2.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_vibration.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_home_position.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_set_home_position.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_message_interval.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_extended_sys_state.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_adsb_vehicle.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_collision.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_v2_extension.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_memory_vect.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_debug_vect.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_named_value_float.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_named_value_int.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_statustext.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_debug.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_setup_signing.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_button_change.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_play_tune.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_settings.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_storage_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_capture_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_image_captured.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_flight_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_mount_orientation.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_logging_data.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_logging_data_acked.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_logging_ack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_video_stream_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_video_stream_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_fov_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_tracking_image_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_tracking_geo_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_camera_thermal_range.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_manager_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_manager_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_manager_set_attitude.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_device_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_device_set_attitude.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_device_attitude_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_autopilot_state_for_gimbal_device.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_manager_set_pitchyaw.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_gimbal_manager_set_manual_control.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_esc_info.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_esc_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_wifi_config_ap.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_ais_vessel.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_uavcan_node_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_uavcan_node_info.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_ext_request_read.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_ext_request_list.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_ext_value.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_ext_set.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_param_ext_ack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_obstacle_distance.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_odometry.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_trajectory_representation_waypoints.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_trajectory_representation_bezier.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_cellular_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_isbd_link_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_cellular_config.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_raw_rpm.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_utm_global_position.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_debug_float_array.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_orbit_execution_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_smart_battery_info.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_fuel_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_battery_info.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_generator_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_actuator_output_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_time_estimate_to_target.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_tunnel.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_can_frame.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_onboard_computer_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_component_information.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_component_information_basic.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_component_metadata.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_play_tune_v2.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_supported_tunes.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_event.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_current_event_sequence.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_request_event.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_response_event_error.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_illuminator_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_canfd_frame.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_can_filter_modify.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_wheel_distance.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_winch_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_basic_id.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_location.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_authentication.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_self_id.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_system.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_operator_id.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_message_pack.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_arm_status.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_open_drone_id_system_update.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/common/mavlink_msg_hygrometer_sensor.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/standard/standard.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/minimal/minimal.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/minimal/mavlink_msg_heartbeat.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/minimal/mavlink_msg_protocol_version.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/mavlink_get_info.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/server_component.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/connection_result.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader.h \
+ /usr/include/c++/14/thread /usr/include/c++/14/bits/std_thread.h \
+ /usr/include/c++/14/bits/this_thread_sleep.h \
+ /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
+ /usr/include/c++/14/ctime /usr/include/c++/14/bits/parse_numbers.h \
+ /usr/include/c++/14/atomic /usr/include/c++/14/utility \
+ /usr/include/c++/14/bits/stl_relops.h /usr/include/c++/14/variant \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue.h \
+ /usr/include/c++/14/queue /usr/include/c++/14/deque \
+ /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
+ /usr/include/c++/14/bits/stl_heap.h /usr/include/c++/14/bits/stl_queue.h \
+ /usr/include/c++/14/mutex /usr/include/c++/14/bits/std_mutex.h \
+ /usr/include/c++/14/bits/unique_lock.h \
+ /usr/include/c++/14/condition_variable \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_include.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curlver.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/system.h \
+ /usr/include/aarch64-linux-gnu/sys/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/aarch64-linux-gnu/bits/socket.h \
+ /usr/include/aarch64-linux-gnu/bits/socket_type.h \
+ /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+ /usr/lib/linux/uapi/arm64/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/lib/linux/uapi/arm64/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
+ /usr/include/aarch64-linux-gnu/sys/time.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/multi.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/urlapi.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/options.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/header.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/websockets.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/mprintf.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-actions.h \
+ /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
+ /usr/include/c++/14/bits/algorithmfwd.h \
+ /usr/include/c++/14/bits/uniform_int_dist.h \
+ /usr/include/c++/14/pstl/glue_algorithm_defs.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-internal-utils.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-port.h \
+ /usr/include/assert.h /usr/include/c++/14/stdlib.h \
+ /usr/include/c++/14/iostream \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-port.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port.h \
+ /usr/include/c++/14/locale \
+ /usr/include/c++/14/bits/locale_facets_nonio.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/time_members.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/14/bits/codecvt.h \
+ /usr/include/c++/14/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/14/bits/locale_conv.h \
+ /usr/include/aarch64-linux-gnu/sys/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+ /usr/include/aarch64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-port.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port-arch.h \
+ /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/regex.h \
+ /usr/include/c++/14/any \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest.h \
+ /usr/include/c++/14/iomanip /usr/include/c++/14/bits/quoted_string.h \
+ /usr/include/c++/14/set /usr/include/c++/14/bits/stl_tree.h \
+ /usr/include/c++/14/bits/stl_set.h \
+ /usr/include/c++/14/bits/stl_multiset.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-assertion-result.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-message.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-death-test.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-death-test-internal.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-matchers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-printers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-internal.h \
+ /usr/include/aarch64-linux-gnu/sys/wait.h /usr/include/signal.h \
+ /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
+ /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/aarch64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/aarch64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/aarch64-linux-gnu/bits/sigaction.h \
+ /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
+ /usr/lib/linux/uapi/arm64/asm/sigcontext.h \
+ /usr/lib/linux/uapi/arm64/asm/sve_context.h \
+ /usr/include/aarch64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/aarch64-linux-gnu/sys/ucontext.h \
+ /usr/include/aarch64-linux-gnu/sys/procfs.h \
+ /usr/include/aarch64-linux-gnu/sys/user.h \
+ /usr/include/aarch64-linux-gnu/bits/procfs.h \
+ /usr/include/aarch64-linux-gnu/bits/procfs-id.h \
+ /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
+ /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
+ /usr/include/aarch64-linux-gnu/bits/sigstack.h \
+ /usr/include/aarch64-linux-gnu/bits/sigstksz.h \
+ /usr/include/aarch64-linux-gnu/bits/ss_flags.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/aarch64-linux-gnu/bits/sigthread.h \
+ /usr/include/aarch64-linux-gnu/bits/signal_ext.h \
+ /usr/include/aarch64-linux-gnu/bits/types/idtype_t.h \
+ /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
+ /usr/include/c++/14/map /usr/include/c++/14/bits/stl_map.h \
+ /usr/include/c++/14/bits/stl_multimap.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-filepath.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-string.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-type-util.h \
+ /usr/include/c++/14/cxxabi.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-printers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-param-test.h \
+ /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-param-util.h \
+ /usr/include/c++/14/cassert \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-test-part.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-typed-test.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_pred_impl.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_prod.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-pp.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-cardinalities.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-function-mocker.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-spec-builders.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-matchers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-matchers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-more-actions.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-generated-actions.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-more-matchers.h \
+ /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-nice-strict.h \
+ /home/pi/Drone/MAVSDK/src/mavsdk/core/unused.h \
+ /usr/include/c++/14/fstream \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
+ /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \
+ /usr/include/c++/14/bits/fstream.tcc /usr/include/c++/14/chrono \
+ /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
+ /usr/include/c++/14/pstl/glue_numeric_defs.h /usr/include/c++/14/future \
+ /usr/include/c++/14/bits/atomic_futex.h

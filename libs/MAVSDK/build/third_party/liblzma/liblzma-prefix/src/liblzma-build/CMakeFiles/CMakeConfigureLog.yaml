@@ -1,0 +1,1090 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      The system is: Linux - 6.12.47+rpt-rpi-2712 - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c017/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6c017.dir/build.make CMakeFiles/cmTC_6c017.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J'
+        Building C object CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c017.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fPIE -fasynchronous-unwind-tables -o /tmp/ccN8a4hy.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o /tmp/ccN8a4hy.s
+        GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_6c017
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c017.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6c017' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c017.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvOOVh9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6c017 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvOOVh9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6c017 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6c017' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c017.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -o cmTC_6c017
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/14/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/14/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c017/fast]
+        ignore line: [gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6c017.dir/build.make CMakeFiles/cmTC_6c017.dir/build]
+        ignore line: [gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-f5TE1J']
+        ignore line: [Building C object CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fPIE   -v -o CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6c017.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fPIE -fasynchronous-unwind-tables -o /tmp/ccN8a4hy.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/14/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o /tmp/ccN8a4hy.s]
+        ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_6c017]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c017.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6c017' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_6c017.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvOOVh9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6c017 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccvOOVh9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6c017] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvOOVh9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_6c017 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_6c017.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14] ==> [/usr/lib/gcc/aarch64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/14;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_large_file_support.cmake:29 (check_c_source_compiles)"
+      - "CMakeLists.txt:158 (tuklib_large_file_support)"
+    checks:
+      - "Performing Test TUKLIB_LARGE_FILE_SUPPORT_BY_DEFAULT"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "TUKLIB_LARGE_FILE_SUPPORT_BY_DEFAULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d7b45/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d7b45.dir/build.make CMakeFiles/cmTC_d7b45.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE'
+        Building C object CMakeFiles/cmTC_d7b45.dir/src.c.o
+        /usr/bin/cc -DTUKLIB_LARGE_FILE_SUPPORT_BY_DEFAULT -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_d7b45.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE/src.c
+        Linking C executable cmTC_d7b45
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7b45.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d7b45.dir/src.c.o -o cmTC_d7b45
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-XTw2GE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_integer.cmake:28 (check_c_source_compiles)"
+      - "CMakeLists.txt:161 (tuklib_integer)"
+    checks:
+      - "Performing Test HAVE___BUILTIN_BSWAPXX"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___BUILTIN_BSWAPXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_38413/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_38413.dir/build.make CMakeFiles/cmTC_38413.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i'
+        Building C object CMakeFiles/cmTC_38413.dir/src.c.o
+        /usr/bin/cc -DHAVE___BUILTIN_BSWAPXX -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_38413.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i/src.c
+        Linking C executable cmTC_38413
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38413.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_38413.dir/src.c.o -o cmTC_38413
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-6f1D8i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_integer.cmake:97 (check_c_source_compiles)"
+      - "CMakeLists.txt:161 (tuklib_integer)"
+    checks:
+      - "Performing Test HAVE___BUILTIN_ASSUME_ALIGNED"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___BUILTIN_ASSUME_ALIGNED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e45b2/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e45b2.dir/build.make CMakeFiles/cmTC_e45b2.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0'
+        Building C object CMakeFiles/cmTC_e45b2.dir/src.c.o
+        /usr/bin/cc -DHAVE___BUILTIN_ASSUME_ALIGNED -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_e45b2.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0/src.c
+        Linking C executable cmTC_e45b2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e45b2.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e45b2.dir/src.c.o -o cmTC_e45b2
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-cC5Ol0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:169 (check_symbol_exists)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9bb8a/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9bb8a.dir/build.make CMakeFiles/cmTC_9bb8a.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd'
+        Building C object CMakeFiles/cmTC_9bb8a.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_9bb8a.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd/CheckSymbolExists.c
+        Linking C executable cmTC_9bb8a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bb8a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_9bb8a.dir/CheckSymbolExists.c.o -o cmTC_9bb8a
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-TW1Hxd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:192 (check_symbol_exists)"
+    checks:
+      - "Looking for CLOCK_MONOTONIC"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CLOCK_MONOTONIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8d74/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8d74.dir/build.make CMakeFiles/cmTC_d8d74.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs'
+        Building C object CMakeFiles/cmTC_d8d74.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_d8d74.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs/CheckSymbolExists.c
+        Linking C executable cmTC_d8d74
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8d74.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d8d74.dir/CheckSymbolExists.c.o -o cmTC_d8d74
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-SLx4qs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:386 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e92e/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3e92e.dir/build.make CMakeFiles/cmTC_3e92e.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL'
+        Building C object CMakeFiles/cmTC_3e92e.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_3e92e.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL/src.c
+        Linking C executable cmTC_3e92e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e92e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3e92e.dir/src.c.o -o cmTC_3e92e
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-h8mcqL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:419 (check_symbol_exists)"
+    checks:
+      - "Looking for pthread_condattr_setclock"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PTHREAD_CONDATTR_SETCLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcc0b/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcc0b.dir/build.make CMakeFiles/cmTC_dcc0b.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz'
+        Building C object CMakeFiles/cmTC_dcc0b.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_dcc0b.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz/CheckSymbolExists.c
+        Linking C executable cmTC_dcc0b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcc0b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_dcc0b.dir/CheckSymbolExists.c.o -o cmTC_dcc0b
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-NSF5wz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_cpucores.cmake:29 (check_c_source_compiles)"
+      - "cmake/tuklib_cpucores.cmake:165 (tuklib_cpucores_internal_check)"
+      - "CMakeLists.txt:753 (tuklib_cpucores)"
+    checks:
+      - "Performing Test TUKLIB_CPUCORES_SCHED_GETAFFINITY"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "TUKLIB_CPUCORES_SCHED_GETAFFINITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d5c90/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d5c90.dir/build.make CMakeFiles/cmTC_d5c90.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp'
+        Building C object CMakeFiles/cmTC_d5c90.dir/src.c.o
+        /usr/bin/cc -DTUKLIB_CPUCORES_SCHED_GETAFFINITY -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_d5c90.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp/src.c
+        Linking C executable cmTC_d5c90
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5c90.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d5c90.dir/src.c.o -o cmTC_d5c90
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-9KQvhp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:26 (check_c_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:135 (tuklib_physmem_internal_check)"
+      - "CMakeLists.txt:754 (tuklib_physmem)"
+    checks:
+      - "Performing Test TUKLIB_PHYSMEM_SPECIAL"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "TUKLIB_PHYSMEM_SPECIAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cfaaf/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cfaaf.dir/build.make CMakeFiles/cmTC_cfaaf.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4'
+        Building C object CMakeFiles/cmTC_cfaaf.dir/src.c.o
+        /usr/bin/cc -DTUKLIB_PHYSMEM_SPECIAL -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_cfaaf.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4/src.c
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4/src.c:5:13: error: unknown type name ‘compile’
+            5 |             compile error
+              |             ^~~~~~~
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4/src.c:5:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ at end of input
+        gmake[4]: *** [CMakeFiles/cmTC_cfaaf.dir/build.make:81: CMakeFiles/cmTC_cfaaf.dir/src.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4'
+        gmake[3]: *** [Makefile:134: cmTC_cfaaf/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-yd05s4'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:45 (check_c_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:135 (tuklib_physmem_internal_check)"
+      - "CMakeLists.txt:754 (tuklib_physmem)"
+    checks:
+      - "Performing Test TUKLIB_PHYSMEM_AIX"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "TUKLIB_PHYSMEM_AIX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6e44/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6e44.dir/build.make CMakeFiles/cmTC_e6e44.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA'
+        Building C object CMakeFiles/cmTC_e6e44.dir/src.c.o
+        /usr/bin/cc -DTUKLIB_PHYSMEM_AIX -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_e6e44.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA/src.c
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA/src.c:2:22: fatal error: sys/systemcfg.h: No such file or directory
+            2 |             #include <sys/systemcfg.h>
+              |                      ^~~~~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[4]: *** [CMakeFiles/cmTC_e6e44.dir/build.make:81: CMakeFiles/cmTC_e6e44.dir/src.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA'
+        gmake[3]: *** [Makefile:134: cmTC_e6e44/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-Pb9ApA'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:60 (check_c_source_compiles)"
+      - "cmake/tuklib_physmem.cmake:135 (tuklib_physmem_internal_check)"
+      - "CMakeLists.txt:754 (tuklib_physmem)"
+    checks:
+      - "Performing Test TUKLIB_PHYSMEM_SYSCONF"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "TUKLIB_PHYSMEM_SYSCONF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0eb2a/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0eb2a.dir/build.make CMakeFiles/cmTC_0eb2a.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn'
+        Building C object CMakeFiles/cmTC_0eb2a.dir/src.c.o
+        /usr/bin/cc -DTUKLIB_PHYSMEM_SYSCONF -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_0eb2a.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn/src.c
+        Linking C executable cmTC_0eb2a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eb2a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_0eb2a.dir/src.c.o -o cmTC_0eb2a
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-viW8Qn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:779 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_FUNC_ATTRIBUTE_CONSTRUCTOR"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FUNC_ATTRIBUTE_CONSTRUCTOR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c23d4/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c23d4.dir/build.make CMakeFiles/cmTC_c23d4.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG'
+        Building C object CMakeFiles/cmTC_c23d4.dir/src.c.o
+        /usr/bin/cc -DHAVE_FUNC_ATTRIBUTE_CONSTRUCTOR -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -Werror -std=gnu99 -fPIE -o CMakeFiles/cmTC_c23d4.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG/src.c
+        Linking C executable cmTC_c23d4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c23d4.dir/link.txt --verbose=1
+        /usr/bin/cc  -Werror CMakeFiles/cmTC_c23d4.dir/src.c.o -o cmTC_c23d4
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-qAAIyG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:802 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2be80/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2be80.dir/build.make CMakeFiles/cmTC_2be80.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr'
+        Building C object CMakeFiles/cmTC_2be80.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_2be80.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr/CheckIncludeFile.c
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr/CheckIncludeFile.c:1:10: fatal error: cpuid.h: No such file or directory
+            1 | #include <cpuid.h>
+              |          ^~~~~~~~~
+        compilation terminated.
+        gmake[4]: *** [CMakeFiles/cmTC_2be80.dir/build.make:81: CMakeFiles/cmTC_2be80.dir/CheckIncludeFile.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr'
+        gmake[3]: *** [Makefile:134: cmTC_2be80/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-X44tXr'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "CMakeLists.txt:806 (check_include_file)"
+    checks:
+      - "Looking for immintrin.h"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_IMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f51e2/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f51e2.dir/build.make CMakeFiles/cmTC_f51e2.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9'
+        Building C object CMakeFiles/cmTC_f51e2.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_f51e2.dir/CheckIncludeFile.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9/CheckIncludeFile.c
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9/CheckIncludeFile.c:1:10: fatal error: immintrin.h: No such file or directory
+            1 | #include <immintrin.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        gmake[4]: *** [CMakeFiles/cmTC_f51e2.dir/build.make:81: CMakeFiles/cmTC_f51e2.dir/CheckIncludeFile.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9'
+        gmake[3]: *** [Makefile:134: cmTC_f51e2/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-kcxcn9'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:1038 (check_symbol_exists)"
+    checks:
+      - "Looking for getopt_long"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GETOPT_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de00d/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_de00d.dir/build.make CMakeFiles/cmTC_de00d.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn'
+        Building C object CMakeFiles/cmTC_de00d.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_de00d.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn/CheckSymbolExists.c
+        Linking C executable cmTC_de00d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de00d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_de00d.dir/CheckSymbolExists.c.o -o cmTC_de00d
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-GJZQkn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/tuklib_progname.cmake:15 (check_symbol_exists)"
+      - "CMakeLists.txt:1073 (tuklib_progname)"
+    checks:
+      - "Looking for program_invocation_name"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PROGRAM_INVOCATION_NAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22975/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22975.dir/build.make CMakeFiles/cmTC_22975.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P'
+        Building C object CMakeFiles/cmTC_22975.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_22975.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P/CheckSymbolExists.c
+        Linking C executable cmTC_22975
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22975.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_22975.dir/CheckSymbolExists.c.o -o cmTC_22975
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-PI5w2P'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/tuklib_mbstr.cmake:14 (check_symbol_exists)"
+      - "CMakeLists.txt:1158 (tuklib_mbstr)"
+    checks:
+      - "Looking for mbrtowc"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MBRTOWC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ec5db/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ec5db.dir/build.make CMakeFiles/cmTC_ec5db.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B'
+        Building C object CMakeFiles/cmTC_ec5db.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_ec5db.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B/CheckSymbolExists.c
+        Linking C executable cmTC_ec5db
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec5db.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ec5db.dir/CheckSymbolExists.c.o -o cmTC_ec5db
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-pdFB9B'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/tuklib_mbstr.cmake:18 (check_symbol_exists)"
+      - "CMakeLists.txt:1158 (tuklib_mbstr)"
+    checks:
+      - "Looking for wcwidth"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_WCWIDTH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_944f7/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_944f7.dir/build.make CMakeFiles/cmTC_944f7.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk'
+        Building C object CMakeFiles/cmTC_944f7.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_944f7.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk/CheckSymbolExists.c
+        Linking C executable cmTC_944f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_944f7.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_944f7.dir/CheckSymbolExists.c.o -o cmTC_944f7
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-VHRnKk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:1160 (check_symbol_exists)"
+    checks:
+      - "Looking for optreset"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_OPTRESET"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cce61/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cce61.dir/build.make CMakeFiles/cmTC_cce61.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO'
+        Building C object CMakeFiles/cmTC_cce61.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_cce61.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO/CheckSymbolExists.c
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO/CheckSymbolExists.c: In function ‘main’:
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO/CheckSymbolExists.c:8:19: error: ‘optreset’ undeclared (first use in this function)
+            8 |   return ((int*)(&optreset))[argc];
+              |                   ^~~~~~~~
+        /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[4]: *** [CMakeFiles/cmTC_cce61.dir/build.make:81: CMakeFiles/cmTC_cce61.dir/CheckSymbolExists.c.o] Error 1
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO'
+        gmake[3]: *** [Makefile:134: cmTC_cce61/fast] Error 2
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-FIE4aO'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:1163 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_fadvise"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_POSIX_FADVISE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c402a/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c402a.dir/build.make CMakeFiles/cmTC_c402a.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa'
+        Building C object CMakeFiles/cmTC_c402a.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_c402a.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa/CheckSymbolExists.c
+        Linking C executable cmTC_c402a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c402a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c402a.dir/CheckSymbolExists.c.o -o cmTC_c402a
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-OA1uqa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckStructHasMember.cmake:79 (CHECK_SOURCE_COMPILES)"
+      - "CMakeLists.txt:1167 (check_struct_has_member)"
+    checks:
+      - "Performing Test HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de11f/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_de11f.dir/build.make CMakeFiles/cmTC_de11f.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt'
+        Building C object CMakeFiles/cmTC_de11f.dir/src.c.o
+        /usr/bin/cc -DHAVE_STRUCT_STAT_ST_ATIM_TV_NSEC -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_de11f.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt/src.c
+        Linking C executable cmTC_de11f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de11f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_de11f.dir/src.c.o -o cmTC_de11f
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-v1yjMt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:1187 (check_symbol_exists)"
+    checks:
+      - "Looking for futimens"
+    directories:
+      source: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA"
+      binary: "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FUTIMENS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a1a9/fast
+        gmake[3]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0a1a9.dir/build.make CMakeFiles/cmTC_0a1a9.dir/build
+        gmake[4]: Entering directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA'
+        Building C object CMakeFiles/cmTC_0a1a9.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_ALL_SOURCE -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__EXTENSIONS__  -std=gnu99 -fPIE -o CMakeFiles/cmTC_0a1a9.dir/CheckSymbolExists.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA/CheckSymbolExists.c
+        Linking C executable cmTC_0a1a9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a1a9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_0a1a9.dir/CheckSymbolExists.c.o -o cmTC_0a1a9
+        gmake[4]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA'
+        gmake[3]: Leaving directory '/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/CMakeScratch/TryCompile-agsRBA'
+        
+      exitCode: 0
+...
