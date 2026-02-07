@@ -44,9 +44,3 @@ Thumbs.db
 # Скрытые файлы
 .*.swp
 .*.swo
-*.cmake
-*.o.d
-*.txt
-*.h
-*.cpp
-*.yml
