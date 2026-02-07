@@ -13,6 +13,7 @@ Enable simple actions such as arming, taking off, and landing.
 Type | Description
 --- | ---
 enum [OrbitYawBehavior](#classmavsdk_1_1_action_1ad9dd7c5e85dda1ae188df75998375c92) | Yaw behaviour during orbit flight.
+enum [RelayCommand](#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21) | Commanded values for relays.
 enum [Result](#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | Possible results returned for action requests.
 std::function< void([Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51))> [ResultCallback](#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) | Callback type for asynchronous [Action](classmavsdk_1_1_action.md) calls.
 std::function< void([Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51), float)> [GetTakeoffAltitudeCallback](#classmavsdk_1_1_action_1ad1ae6edb8ea375a3472ef14313b591e2) | Callback type for get_takeoff_altitude_async.
@@ -55,6 +56,8 @@ void | [hold_async](#classmavsdk_1_1_action_1aad198c883e7ace1cf4556c3b15bd8ad8) 
 [Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [hold](#classmavsdk_1_1_action_1a3440724492453e88d2399be7bae6e7c4) () const | Send command to hold position (a.k.a. "Loiter").
 void | [set_actuator_async](#classmavsdk_1_1_action_1a2206033eb3469d2ae81b9cf994bfda98) (int32_t index, float value, const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) callback) | Send command to set the value of an actuator.
 [Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [set_actuator](#classmavsdk_1_1_action_1ad30beac27f05c62dcf6a3d0928b86e4c) (int32_t index, float value)const | Send command to set the value of an actuator.
+void | [set_relay_async](#classmavsdk_1_1_action_1a7c4f46fe008477d60e7c2ed13edd00d0) (int32_t index, [RelayCommand](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21) setting, const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) callback) | Send command to set the value of a relay.
+[Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [set_relay](#classmavsdk_1_1_action_1a8d2cb20c06de07acab02d5f0c0d672a7) (int32_t index, [RelayCommand](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21) setting)const | Send command to set the value of a relay.
 void | [transition_to_fixedwing_async](#classmavsdk_1_1_action_1aa56181441cd64e092a8fb91a38c7c9fd) (const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) callback) | Send command to transition the drone to fixedwing.
 [Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [transition_to_fixedwing](#classmavsdk_1_1_action_1a8d5cf999a48ea3859ec75db27cf4fbda) () const | Send command to transition the drone to fixedwing.
 void | [transition_to_multicopter_async](#classmavsdk_1_1_action_1a8c109076641b5c9aa6dd78ea8b913529) (const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) callback) | Send command to transition the drone to multicopter.
@@ -69,6 +72,7 @@ void | [set_return_to_launch_altitude_async](#classmavsdk_1_1_action_1acdc4360c2
 [Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [set_return_to_launch_altitude](#classmavsdk_1_1_action_1a5b05e84d35fad5b0ba2837aae1b3686e) (float relative_altitude_m)const | Set the return to launch minimum return altitude (in meters).
 void | [set_current_speed_async](#classmavsdk_1_1_action_1afd210be0eba436c81da79107562a0b6c) (float speed_m_s, const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) callback) | Set current speed.
 [Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [set_current_speed](#classmavsdk_1_1_action_1af3b74cf3912411d9476b6eeac0984afb) (float speed_m_s)const | Set current speed.
+[Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) | [set_gps_global_origin](#classmavsdk_1_1_action_1abf97620153fca87f2dd89a6eb96a8479) (double latitude_deg, double longitude_deg, float absolute_altitude_m)const | Set GPS Global Origin.
 const [Action](classmavsdk_1_1_action.md) & | [operator=](#classmavsdk_1_1_action_1a89482740f533e194fade200103b5adef) (const [Action](classmavsdk_1_1_action.md) &)=delete | Equality operator (object is not copyable).
 
 
@@ -182,6 +186,17 @@ Value | Description
 <span id="classmavsdk_1_1_action_1ad9dd7c5e85dda1ae188df75998375c92a3cbc75230c11ca34e25123273980f413"></span> `Uncontrolled` | Yaw uncontrolled. 
 <span id="classmavsdk_1_1_action_1ad9dd7c5e85dda1ae188df75998375c92a03aac6c04bac9cc0876336d842763dd0"></span> `HoldFrontTangentToCircle` | Vehicle front follows flight path (tangential to circle). 
 <span id="classmavsdk_1_1_action_1ad9dd7c5e85dda1ae188df75998375c92ac48baeef91367bc4132d164d920ff697"></span> `RcControlled` | Yaw controlled by RC input. 
+
+### enum RelayCommand {#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21}
+
+
+Commanded values for relays.
+
+
+Value | Description
+--- | ---
+<span id="classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21a521c36a31c2762741cf0f8890cbe05e3"></span> `On` | Turn the relay off. 
+<span id="classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21ad15305d7a4e34e02489c74a5ef542f36"></span> `Off` | Turn the relay on.. 
 
 ### enum Result {#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51}
 
@@ -743,6 +758,47 @@ This function is blocking. See 'set_actuator_async' for the non-blocking counter
 
 &emsp;[Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) - Result of request.
 
+### set_relay_async() {#classmavsdk_1_1_action_1a7c4f46fe008477d60e7c2ed13edd00d0}
+```cpp
+void mavsdk::Action::set_relay_async(int32_t index, RelayCommand setting, const ResultCallback callback)
+```
+
+
+Send command to set the value of a relay.
+
+The index of the relay starts at 0. For the relay value, 1=on, 0=off, others possible depending on system hardware
+
+
+This function is non-blocking. See 'set_relay' for the blocking counterpart.
+
+**Parameters**
+
+* int32_t **index** - 
+* [RelayCommand](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21) **setting** - 
+* const [ResultCallback](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a70a7b6e742d0c86728dc2e1827dacccd) **callback** - 
+
+### set_relay() {#classmavsdk_1_1_action_1a8d2cb20c06de07acab02d5f0c0d672a7}
+```cpp
+Result mavsdk::Action::set_relay(int32_t index, RelayCommand setting) const
+```
+
+
+Send command to set the value of a relay.
+
+The index of the relay starts at 0. For the relay value, 1=on, 0=off, others possible depending on system hardware
+
+
+This function is blocking. See 'set_relay_async' for the non-blocking counterpart.
+
+**Parameters**
+
+* int32_t **index** - 
+* [RelayCommand](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1a074487be5ea2fa534ce7bd779682ee21) **setting** - 
+
+**Returns**
+
+&emsp;[Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) - Result of request.
+
 ### transition_to_fixedwing_async() {#classmavsdk_1_1_action_1aa56181441cd64e092a8fb91a38c7c9fd}
 ```cpp
 void mavsdk::Action::transition_to_fixedwing_async(const ResultCallback callback)
@@ -967,6 +1023,29 @@ This function is blocking. See 'set_current_speed_async' for the non-blocking co
 **Parameters**
 
 * float **speed_m_s** - 
+
+**Returns**
+
+&emsp;[Result](classmavsdk_1_1_action.md#classmavsdk_1_1_action_1adc2e13257ef13de0e7610cf879a0ec51) - Result of request.
+
+### set_gps_global_origin() {#classmavsdk_1_1_action_1abf97620153fca87f2dd89a6eb96a8479}
+```cpp
+Result mavsdk::Action::set_gps_global_origin(double latitude_deg, double longitude_deg, float absolute_altitude_m) const
+```
+
+
+Set GPS Global Origin.
+
+Sets the GPS coordinates of the vehicle local origin (0,0,0) position.
+
+
+This function is blocking.
+
+**Parameters**
+
+* double **latitude_deg** - 
+* double **longitude_deg** - 
+* float **absolute_altitude_m** - 
 
 **Returns**
 

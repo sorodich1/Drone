@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-bu
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/scripts//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/scripts//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,17 +168,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scripts/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -206,6 +206,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

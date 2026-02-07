@@ -1,8 +1,8 @@
 lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/curl_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/curl_config.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
@@ -49,7 +49,7 @@ lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
@@ -79,9 +79,8 @@ lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/assert.h \
- /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/assert.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
+ /usr/include/stdint.h /usr/include/aarch64-linux-gnu/bits/wchar.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
@@ -92,10 +91,9 @@ lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: \
  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup_once.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup_once.h \
  /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
@@ -121,80 +119,80 @@ lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/functypes.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_mem_undef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ctype.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curlver.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/multi.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/urlapi.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/options.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/header.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/websockets.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/mprintf.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/typecheck-gcc.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/urldata.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/functypes.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_mem_undef.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ctype.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curlver.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/multi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/urlapi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/options.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/header.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/websockets.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/mprintf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/typecheck-gcc.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/urldata.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.h \
  /usr/include/netinet/in.h /usr/include/aarch64-linux-gnu/bits/in.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/../curl_setup.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/../curl_mem_undef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/../curl_setup.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/../curl_mem_undef.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.h \
  /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/aarch64-linux-gnu/bits/netdb.h /usr/include/arpa/inet.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.h \
  /usr/include/setjmp.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/ssh.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../curl_setup.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../curl_mem_undef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../urldata.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multihandle.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sockaddr.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/ssh.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../curl_setup.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../curl_mem_undef.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/../urldata.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multihandle.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sockaddr.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.h

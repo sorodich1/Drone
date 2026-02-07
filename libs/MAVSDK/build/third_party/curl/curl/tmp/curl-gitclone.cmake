@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt" AND EXISTS "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt" AND
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt" IS_NEWER_THAN "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt")
+if(EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt" AND EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt" AND
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt" IS_NEWER_THAN "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt'"
+    "'/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl'")
+  message(FATAL_ERROR "Failed to remove directory: '/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -37,7 +37,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"
             clone --no-checkout --depth 1 --no-single-branch --config "advice.detachedHead=false" "https://github.com/curl/curl.git" "curl"
-    WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src"
+    WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -53,7 +53,7 @@ endif()
 execute_process(
   COMMAND "/usr/bin/git"
           checkout "curl-8_16_0" --
-  WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl"
+  WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -66,22 +66,22 @@ if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl"
+    WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl'")
+  message(FATAL_ERROR "Failed to update submodules in: '/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt" "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitinfo.txt" "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-gitclone-lastrun.txt'")
 endif()

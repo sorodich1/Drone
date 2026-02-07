@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -D_FILE_OFFSET_BITS=64
 
-CXX_INCLUDES = -I/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
+CXX_INCLUDES = -I/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
+CXX_FLAGS = -fPIC -fvisibility=hidden -fvisibility-inlines-hidden
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/MAVSDK/build/third_party/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/libs/MAVSDK/build/third_party/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,18 +43,18 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma/liblzma-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma/liblzma-targets.cmake"
-         "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets.cmake")
+         "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma/liblzma-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -67,21 +67,21 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_C
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets-release.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/Export/6194817f435e7429e84a3ab7f926109c/liblzma-targets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/liblzma" TYPE FILE FILES
-    "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma-config.cmake"
-    "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma-config-version.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma-config.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "liblzma_Development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/liblzma.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xzdec" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,7 +91,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "xzdec" OR NOT CMAKE_INSTALL_COMPONENT)
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xzdec"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzdec")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzdec")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xzdec" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xzdec")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -101,7 +101,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "xzdec" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xzdec" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -111,7 +111,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xz"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xz")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xz" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/xz")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -121,53 +121,53 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/xz.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/xz.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unxz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unxz")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unxz.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unxz.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzcat")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzcat")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzcat.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/xzcat.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzma")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzma")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzma.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzma.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unlzma")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unlzma")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unlzma.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/unlzma.1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzcat")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzcat")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "xz" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzcat.1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/lzcat.1")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -183,6 +183,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

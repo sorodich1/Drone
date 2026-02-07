@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Include any dependencies generated for this target.
 include docs/examples/CMakeFiles/curl-example-pop3-retr.dir/depend.make
@@ -73,18 +73,18 @@ docs/examples/CMakeFiles/curl-example-pop3-retr.dir/codegen:
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-retr.dir/codegen
 
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/flags.make
-docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c
+docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o -MF CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o.d -o CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o -MF CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o.d -o CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c
 
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c > CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c > CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i
 
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c -o CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-retr.c -o CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s
 
 # Object files for target curl-example-pop3-retr
 curl__example__pop3__retr_OBJECTS = \
@@ -97,21 +97,21 @@ docs/examples/pop3-retr: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop
 docs/examples/pop3-retr: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make
 docs/examples/pop3-retr: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/compiler_depend.ts
 docs/examples/pop3-retr: lib/libcurl.a
-docs/examples/pop3-retr: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libssl.a
-docs/examples/pop3-retr: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libcrypto.a
+docs/examples/pop3-retr: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libssl.a
+docs/examples/pop3-retr: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libcrypto.a
 docs/examples/pop3-retr: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pop3-retr"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-pop3-retr.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pop3-retr"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-pop3-retr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build: docs/examples/pop3-retr
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build
 
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-pop3-retr.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-pop3-retr.dir/cmake_clean.cmake
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-retr.dir/clean
 
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-pop3-retr.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-pop3-retr.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-retr.dir/depend
 

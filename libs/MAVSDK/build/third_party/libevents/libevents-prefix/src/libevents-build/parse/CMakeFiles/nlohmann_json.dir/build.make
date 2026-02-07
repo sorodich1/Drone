@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 # Utility rule file for nlohmann_json.
 
@@ -77,10 +77,10 @@ parse/CMakeFiles/nlohmann_json.dir/build: nlohmann_json
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/build
 
 parse/CMakeFiles/nlohmann_json.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/nlohmann_json.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/nlohmann_json.dir/cmake_clean.cmake
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/clean
 
 parse/CMakeFiles/nlohmann_json.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/CMakeFiles/nlohmann_json.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/CMakeFiles/nlohmann_json.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/depend
 

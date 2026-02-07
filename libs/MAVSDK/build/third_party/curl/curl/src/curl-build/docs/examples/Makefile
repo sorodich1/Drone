@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-bu
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-examples.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-examples.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-examples.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-examples.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ curl-examples: docs/examples/CMakeFiles/curl-examples.dir/rule
 
 # fast build rule for target.
 curl-examples/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-examples.dir/build.make docs/examples/CMakeFiles/curl-examples.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-examples.dir/build.make docs/examples/CMakeFiles/curl-examples.dir/build
 .PHONY : curl-examples/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ curl-example-10-at-a-time: docs/examples/CMakeFiles/curl-example-10-at-a-time.di
 
 # fast build rule for target.
 curl-example-10-at-a-time/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build
 .PHONY : curl-example-10-at-a-time/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-address-scope.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-address-scope.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-address-scope.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-address-scope.dir/rule
 
 # Convenience name for target.
@@ -220,12 +220,12 @@ curl-example-address-scope: docs/examples/CMakeFiles/curl-example-address-scope.
 
 # fast build rule for target.
 curl-example-address-scope/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/build
 .PHONY : curl-example-address-scope/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-altsvc.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-altsvc.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-altsvc.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-altsvc.dir/rule
 
 # Convenience name for target.
@@ -234,12 +234,12 @@ curl-example-altsvc: docs/examples/CMakeFiles/curl-example-altsvc.dir/rule
 
 # fast build rule for target.
 curl-example-altsvc/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/build
 .PHONY : curl-example-altsvc/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-anyauthput.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-anyauthput.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-anyauthput.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-anyauthput.dir/rule
 
 # Convenience name for target.
@@ -248,12 +248,12 @@ curl-example-anyauthput: docs/examples/CMakeFiles/curl-example-anyauthput.dir/ru
 
 # fast build rule for target.
 curl-example-anyauthput/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/build
 .PHONY : curl-example-anyauthput/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-block_ip.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-block_ip.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-block_ip.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-block_ip.dir/rule
 
 # Convenience name for target.
@@ -262,12 +262,12 @@ curl-example-block_ip: docs/examples/CMakeFiles/curl-example-block_ip.dir/rule
 
 # fast build rule for target.
 curl-example-block_ip/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/build
 .PHONY : curl-example-block_ip/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-certinfo.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-certinfo.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-certinfo.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-certinfo.dir/rule
 
 # Convenience name for target.
@@ -276,12 +276,12 @@ curl-example-certinfo: docs/examples/CMakeFiles/curl-example-certinfo.dir/rule
 
 # fast build rule for target.
 curl-example-certinfo/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/build
 .PHONY : curl-example-certinfo/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-chkspeed.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-chkspeed.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-chkspeed.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-chkspeed.dir/rule
 
 # Convenience name for target.
@@ -290,12 +290,12 @@ curl-example-chkspeed: docs/examples/CMakeFiles/curl-example-chkspeed.dir/rule
 
 # fast build rule for target.
 curl-example-chkspeed/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/build
 .PHONY : curl-example-chkspeed/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-connect-to.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-connect-to.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-connect-to.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-connect-to.dir/rule
 
 # Convenience name for target.
@@ -304,12 +304,12 @@ curl-example-connect-to: docs/examples/CMakeFiles/curl-example-connect-to.dir/ru
 
 # fast build rule for target.
 curl-example-connect-to/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/build
 .PHONY : curl-example-connect-to/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-cookie_interface.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-cookie_interface.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-cookie_interface.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-cookie_interface.dir/rule
 
 # Convenience name for target.
@@ -318,12 +318,12 @@ curl-example-cookie_interface: docs/examples/CMakeFiles/curl-example-cookie_inte
 
 # fast build rule for target.
 curl-example-cookie_interface/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build
 .PHONY : curl-example-cookie_interface/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-debug.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-debug.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-debug.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-debug.dir/rule
 
 # Convenience name for target.
@@ -332,12 +332,12 @@ curl-example-debug: docs/examples/CMakeFiles/curl-example-debug.dir/rule
 
 # fast build rule for target.
 curl-example-debug/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/build
 .PHONY : curl-example-debug/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-default-scheme.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-default-scheme.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-default-scheme.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-default-scheme.dir/rule
 
 # Convenience name for target.
@@ -346,12 +346,12 @@ curl-example-default-scheme: docs/examples/CMakeFiles/curl-example-default-schem
 
 # fast build rule for target.
 curl-example-default-scheme/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/build
 .PHONY : curl-example-default-scheme/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-externalsocket.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-externalsocket.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-externalsocket.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-externalsocket.dir/rule
 
 # Convenience name for target.
@@ -360,12 +360,12 @@ curl-example-externalsocket: docs/examples/CMakeFiles/curl-example-externalsocke
 
 # fast build rule for target.
 curl-example-externalsocket/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/build
 .PHONY : curl-example-externalsocket/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-fileupload.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-fileupload.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-fileupload.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-fileupload.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ curl-example-fileupload: docs/examples/CMakeFiles/curl-example-fileupload.dir/ru
 
 # fast build rule for target.
 curl-example-fileupload/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/build
 .PHONY : curl-example-fileupload/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftp-delete.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftp-delete.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftp-delete.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftp-delete.dir/rule
 
 # Convenience name for target.
@@ -388,12 +388,12 @@ curl-example-ftp-delete: docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ru
 
 # fast build rule for target.
 curl-example-ftp-delete/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build
 .PHONY : curl-example-ftp-delete/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ curl-example-ftp-wildcard: docs/examples/CMakeFiles/curl-example-ftp-wildcard.di
 
 # fast build rule for target.
 curl-example-ftp-wildcard/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build
 .PHONY : curl-example-ftp-wildcard/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpget.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpget.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpget.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpget.dir/rule
 
 # Convenience name for target.
@@ -416,12 +416,12 @@ curl-example-ftpget: docs/examples/CMakeFiles/curl-example-ftpget.dir/rule
 
 # fast build rule for target.
 curl-example-ftpget/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/build
 .PHONY : curl-example-ftpget/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/rule
 
 # Convenience name for target.
@@ -430,12 +430,12 @@ curl-example-ftpgetinfo: docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ru
 
 # fast build rule for target.
 curl-example-ftpgetinfo/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build
 .PHONY : curl-example-ftpgetinfo/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/rule
 
 # Convenience name for target.
@@ -444,12 +444,12 @@ curl-example-ftpgetresp: docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ru
 
 # fast build rule for target.
 curl-example-ftpgetresp/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build
 .PHONY : curl-example-ftpgetresp/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpsget.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpsget.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpsget.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpsget.dir/rule
 
 # Convenience name for target.
@@ -458,12 +458,12 @@ curl-example-ftpsget: docs/examples/CMakeFiles/curl-example-ftpsget.dir/rule
 
 # fast build rule for target.
 curl-example-ftpsget/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/build
 .PHONY : curl-example-ftpsget/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpupload.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpupload.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpupload.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpupload.dir/rule
 
 # Convenience name for target.
@@ -472,12 +472,12 @@ curl-example-ftpupload: docs/examples/CMakeFiles/curl-example-ftpupload.dir/rule
 
 # fast build rule for target.
 curl-example-ftpupload/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/build
 .PHONY : curl-example-ftpupload/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/rule
 
 # Convenience name for target.
@@ -486,12 +486,12 @@ curl-example-ftpuploadfrommem: docs/examples/CMakeFiles/curl-example-ftpuploadfr
 
 # fast build rule for target.
 curl-example-ftpuploadfrommem/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build
 .PHONY : curl-example-ftpuploadfrommem/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/rule
 
 # Convenience name for target.
@@ -500,12 +500,12 @@ curl-example-ftpuploadresume: docs/examples/CMakeFiles/curl-example-ftpuploadres
 
 # fast build rule for target.
 curl-example-ftpuploadresume/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build
 .PHONY : curl-example-ftpuploadresume/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-getinfo.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getinfo.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getinfo.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-getinfo.dir/rule
 
 # Convenience name for target.
@@ -514,12 +514,12 @@ curl-example-getinfo: docs/examples/CMakeFiles/curl-example-getinfo.dir/rule
 
 # fast build rule for target.
 curl-example-getinfo/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/build
 .PHONY : curl-example-getinfo/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-getinmemory.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getinmemory.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getinmemory.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-getinmemory.dir/rule
 
 # Convenience name for target.
@@ -528,12 +528,12 @@ curl-example-getinmemory: docs/examples/CMakeFiles/curl-example-getinmemory.dir/
 
 # fast build rule for target.
 curl-example-getinmemory/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/build
 .PHONY : curl-example-getinmemory/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-getredirect.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getredirect.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getredirect.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-getredirect.dir/rule
 
 # Convenience name for target.
@@ -542,12 +542,12 @@ curl-example-getredirect: docs/examples/CMakeFiles/curl-example-getredirect.dir/
 
 # fast build rule for target.
 curl-example-getredirect/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/build
 .PHONY : curl-example-getredirect/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-getreferrer.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getreferrer.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-getreferrer.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-getreferrer.dir/rule
 
 # Convenience name for target.
@@ -556,12 +556,12 @@ curl-example-getreferrer: docs/examples/CMakeFiles/curl-example-getreferrer.dir/
 
 # fast build rule for target.
 curl-example-getreferrer/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/build
 .PHONY : curl-example-getreferrer/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-headerapi.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-headerapi.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-headerapi.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-headerapi.dir/rule
 
 # Convenience name for target.
@@ -570,12 +570,12 @@ curl-example-headerapi: docs/examples/CMakeFiles/curl-example-headerapi.dir/rule
 
 # fast build rule for target.
 curl-example-headerapi/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/build
 .PHONY : curl-example-headerapi/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-hsts-preload.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-hsts-preload.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-hsts-preload.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-hsts-preload.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ curl-example-hsts-preload: docs/examples/CMakeFiles/curl-example-hsts-preload.di
 
 # fast build rule for target.
 curl-example-hsts-preload/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build
 .PHONY : curl-example-hsts-preload/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http-options.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http-options.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http-options.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http-options.dir/rule
 
 # Convenience name for target.
@@ -598,12 +598,12 @@ curl-example-http-options: docs/examples/CMakeFiles/curl-example-http-options.di
 
 # fast build rule for target.
 curl-example-http-options/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/build
 .PHONY : curl-example-http-options/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http-post.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http-post.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http-post.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http-post.dir/rule
 
 # Convenience name for target.
@@ -612,12 +612,12 @@ curl-example-http-post: docs/examples/CMakeFiles/curl-example-http-post.dir/rule
 
 # fast build rule for target.
 curl-example-http-post/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/build
 .PHONY : curl-example-http-post/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http2-download.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-download.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-download.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http2-download.dir/rule
 
 # Convenience name for target.
@@ -626,12 +626,12 @@ curl-example-http2-download: docs/examples/CMakeFiles/curl-example-http2-downloa
 
 # fast build rule for target.
 curl-example-http2-download/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/build
 .PHONY : curl-example-http2-download/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/rule
 
 # Convenience name for target.
@@ -640,12 +640,12 @@ curl-example-http2-pushinmemory: docs/examples/CMakeFiles/curl-example-http2-pus
 
 # fast build rule for target.
 curl-example-http2-pushinmemory/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build
 .PHONY : curl-example-http2-pushinmemory/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/rule
 
 # Convenience name for target.
@@ -654,12 +654,12 @@ curl-example-http2-serverpush: docs/examples/CMakeFiles/curl-example-http2-serve
 
 # fast build rule for target.
 curl-example-http2-serverpush/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build
 .PHONY : curl-example-http2-serverpush/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http2-upload.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-upload.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http2-upload.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http2-upload.dir/rule
 
 # Convenience name for target.
@@ -668,12 +668,12 @@ curl-example-http2-upload: docs/examples/CMakeFiles/curl-example-http2-upload.di
 
 # fast build rule for target.
 curl-example-http2-upload/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/build
 .PHONY : curl-example-http2-upload/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http3.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http3.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http3.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http3.dir/rule
 
 # Convenience name for target.
@@ -682,12 +682,12 @@ curl-example-http3: docs/examples/CMakeFiles/curl-example-http3.dir/rule
 
 # fast build rule for target.
 curl-example-http3/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/build
 .PHONY : curl-example-http3/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-http3-present.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http3-present.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-http3-present.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-http3-present.dir/rule
 
 # Convenience name for target.
@@ -696,12 +696,12 @@ curl-example-http3-present: docs/examples/CMakeFiles/curl-example-http3-present.
 
 # fast build rule for target.
 curl-example-http3-present/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/build
 .PHONY : curl-example-http3-present/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/rule
 
 # Convenience name for target.
@@ -710,12 +710,12 @@ curl-example-httpcustomheader: docs/examples/CMakeFiles/curl-example-httpcustomh
 
 # fast build rule for target.
 curl-example-httpcustomheader/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build
 .PHONY : curl-example-httpcustomheader/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-httpput.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpput.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpput.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-httpput.dir/rule
 
 # Convenience name for target.
@@ -724,12 +724,12 @@ curl-example-httpput: docs/examples/CMakeFiles/curl-example-httpput.dir/rule
 
 # fast build rule for target.
 curl-example-httpput/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/build
 .PHONY : curl-example-httpput/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/rule
 
 # Convenience name for target.
@@ -738,12 +738,12 @@ curl-example-httpput-postfields: docs/examples/CMakeFiles/curl-example-httpput-p
 
 # fast build rule for target.
 curl-example-httpput-postfields/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build
 .PHONY : curl-example-httpput-postfields/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-https.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-https.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-https.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-https.dir/rule
 
 # Convenience name for target.
@@ -752,12 +752,12 @@ curl-example-https: docs/examples/CMakeFiles/curl-example-https.dir/rule
 
 # fast build rule for target.
 curl-example-https/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/build
 .PHONY : curl-example-https/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-append.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-append.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-append.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-append.dir/rule
 
 # Convenience name for target.
@@ -766,12 +766,12 @@ curl-example-imap-append: docs/examples/CMakeFiles/curl-example-imap-append.dir/
 
 # fast build rule for target.
 curl-example-imap-append/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/build
 .PHONY : curl-example-imap-append/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-authzid.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-authzid.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-authzid.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-authzid.dir/rule
 
 # Convenience name for target.
@@ -780,12 +780,12 @@ curl-example-imap-authzid: docs/examples/CMakeFiles/curl-example-imap-authzid.di
 
 # fast build rule for target.
 curl-example-imap-authzid/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build
 .PHONY : curl-example-imap-authzid/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-copy.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-copy.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-copy.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-copy.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ curl-example-imap-copy: docs/examples/CMakeFiles/curl-example-imap-copy.dir/rule
 
 # fast build rule for target.
 curl-example-imap-copy/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/build
 .PHONY : curl-example-imap-copy/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-create.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-create.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-create.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-create.dir/rule
 
 # Convenience name for target.
@@ -808,12 +808,12 @@ curl-example-imap-create: docs/examples/CMakeFiles/curl-example-imap-create.dir/
 
 # fast build rule for target.
 curl-example-imap-create/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/build
 .PHONY : curl-example-imap-create/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-delete.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-delete.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-delete.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-delete.dir/rule
 
 # Convenience name for target.
@@ -822,12 +822,12 @@ curl-example-imap-delete: docs/examples/CMakeFiles/curl-example-imap-delete.dir/
 
 # fast build rule for target.
 curl-example-imap-delete/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/build
 .PHONY : curl-example-imap-delete/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-examine.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-examine.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-examine.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-examine.dir/rule
 
 # Convenience name for target.
@@ -836,12 +836,12 @@ curl-example-imap-examine: docs/examples/CMakeFiles/curl-example-imap-examine.di
 
 # fast build rule for target.
 curl-example-imap-examine/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/build
 .PHONY : curl-example-imap-examine/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-fetch.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-fetch.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-fetch.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-fetch.dir/rule
 
 # Convenience name for target.
@@ -850,12 +850,12 @@ curl-example-imap-fetch: docs/examples/CMakeFiles/curl-example-imap-fetch.dir/ru
 
 # fast build rule for target.
 curl-example-imap-fetch/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build
 .PHONY : curl-example-imap-fetch/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-list.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-list.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-list.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-list.dir/rule
 
 # Convenience name for target.
@@ -864,12 +864,12 @@ curl-example-imap-list: docs/examples/CMakeFiles/curl-example-imap-list.dir/rule
 
 # fast build rule for target.
 curl-example-imap-list/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/build
 .PHONY : curl-example-imap-list/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-lsub.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-lsub.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-lsub.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-lsub.dir/rule
 
 # Convenience name for target.
@@ -878,12 +878,12 @@ curl-example-imap-lsub: docs/examples/CMakeFiles/curl-example-imap-lsub.dir/rule
 
 # fast build rule for target.
 curl-example-imap-lsub/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build
 .PHONY : curl-example-imap-lsub/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-multi.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-multi.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-multi.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-multi.dir/rule
 
 # Convenience name for target.
@@ -892,12 +892,12 @@ curl-example-imap-multi: docs/examples/CMakeFiles/curl-example-imap-multi.dir/ru
 
 # fast build rule for target.
 curl-example-imap-multi/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/build
 .PHONY : curl-example-imap-multi/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-noop.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-noop.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-noop.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-noop.dir/rule
 
 # Convenience name for target.
@@ -906,12 +906,12 @@ curl-example-imap-noop: docs/examples/CMakeFiles/curl-example-imap-noop.dir/rule
 
 # fast build rule for target.
 curl-example-imap-noop/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/build
 .PHONY : curl-example-imap-noop/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-search.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-search.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-search.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-search.dir/rule
 
 # Convenience name for target.
@@ -920,12 +920,12 @@ curl-example-imap-search: docs/examples/CMakeFiles/curl-example-imap-search.dir/
 
 # fast build rule for target.
 curl-example-imap-search/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/build
 .PHONY : curl-example-imap-search/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-ssl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-ssl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-ssl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-ssl.dir/rule
 
 # Convenience name for target.
@@ -934,12 +934,12 @@ curl-example-imap-ssl: docs/examples/CMakeFiles/curl-example-imap-ssl.dir/rule
 
 # fast build rule for target.
 curl-example-imap-ssl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build
 .PHONY : curl-example-imap-ssl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-store.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-store.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-store.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-store.dir/rule
 
 # Convenience name for target.
@@ -948,12 +948,12 @@ curl-example-imap-store: docs/examples/CMakeFiles/curl-example-imap-store.dir/ru
 
 # fast build rule for target.
 curl-example-imap-store/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/build
 .PHONY : curl-example-imap-store/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-imap-tls.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-tls.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-imap-tls.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-imap-tls.dir/rule
 
 # Convenience name for target.
@@ -962,12 +962,12 @@ curl-example-imap-tls: docs/examples/CMakeFiles/curl-example-imap-tls.dir/rule
 
 # fast build rule for target.
 curl-example-imap-tls/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/build
 .PHONY : curl-example-imap-tls/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-interface.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-interface.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-interface.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-interface.dir/rule
 
 # Convenience name for target.
@@ -976,12 +976,12 @@ curl-example-interface: docs/examples/CMakeFiles/curl-example-interface.dir/rule
 
 # fast build rule for target.
 curl-example-interface/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/build
 .PHONY : curl-example-interface/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-ipv6.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ipv6.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-ipv6.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-ipv6.dir/rule
 
 # Convenience name for target.
@@ -990,12 +990,12 @@ curl-example-ipv6: docs/examples/CMakeFiles/curl-example-ipv6.dir/rule
 
 # fast build rule for target.
 curl-example-ipv6/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/build
 .PHONY : curl-example-ipv6/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-keepalive.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-keepalive.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-keepalive.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-keepalive.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ curl-example-keepalive: docs/examples/CMakeFiles/curl-example-keepalive.dir/rule
 
 # fast build rule for target.
 curl-example-keepalive/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/build
 .PHONY : curl-example-keepalive/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-localport.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-localport.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-localport.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-localport.dir/rule
 
 # Convenience name for target.
@@ -1018,12 +1018,12 @@ curl-example-localport: docs/examples/CMakeFiles/curl-example-localport.dir/rule
 
 # fast build rule for target.
 curl-example-localport/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/build
 .PHONY : curl-example-localport/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-maxconnects.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-maxconnects.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-maxconnects.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-maxconnects.dir/rule
 
 # Convenience name for target.
@@ -1032,12 +1032,12 @@ curl-example-maxconnects: docs/examples/CMakeFiles/curl-example-maxconnects.dir/
 
 # fast build rule for target.
 curl-example-maxconnects/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/build
 .PHONY : curl-example-maxconnects/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-app.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-app.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-app.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-app.dir/rule
 
 # Convenience name for target.
@@ -1046,12 +1046,12 @@ curl-example-multi-app: docs/examples/CMakeFiles/curl-example-multi-app.dir/rule
 
 # fast build rule for target.
 curl-example-multi-app/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/build
 .PHONY : curl-example-multi-app/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/rule
 
 # Convenience name for target.
@@ -1060,12 +1060,12 @@ curl-example-multi-debugcallback: docs/examples/CMakeFiles/curl-example-multi-de
 
 # fast build rule for target.
 curl-example-multi-debugcallback/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build
 .PHONY : curl-example-multi-debugcallback/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-double.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-double.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-double.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-double.dir/rule
 
 # Convenience name for target.
@@ -1074,12 +1074,12 @@ curl-example-multi-double: docs/examples/CMakeFiles/curl-example-multi-double.di
 
 # fast build rule for target.
 curl-example-multi-double/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/build
 .PHONY : curl-example-multi-double/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-formadd.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-formadd.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-formadd.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-formadd.dir/rule
 
 # Convenience name for target.
@@ -1088,12 +1088,12 @@ curl-example-multi-formadd: docs/examples/CMakeFiles/curl-example-multi-formadd.
 
 # fast build rule for target.
 curl-example-multi-formadd/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build
 .PHONY : curl-example-multi-formadd/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-legacy.dir/rule
 
 # Convenience name for target.
@@ -1102,12 +1102,12 @@ curl-example-multi-legacy: docs/examples/CMakeFiles/curl-example-multi-legacy.di
 
 # fast build rule for target.
 curl-example-multi-legacy/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build
 .PHONY : curl-example-multi-legacy/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-post.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-post.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-post.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-post.dir/rule
 
 # Convenience name for target.
@@ -1116,12 +1116,12 @@ curl-example-multi-post: docs/examples/CMakeFiles/curl-example-multi-post.dir/ru
 
 # fast build rule for target.
 curl-example-multi-post/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/build
 .PHONY : curl-example-multi-post/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-multi-single.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-single.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-multi-single.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-single.dir/rule
 
 # Convenience name for target.
@@ -1130,12 +1130,12 @@ curl-example-multi-single: docs/examples/CMakeFiles/curl-example-multi-single.di
 
 # fast build rule for target.
 curl-example-multi-single/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/build
 .PHONY : curl-example-multi-single/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-netrc.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-netrc.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-netrc.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-netrc.dir/rule
 
 # Convenience name for target.
@@ -1144,12 +1144,12 @@ curl-example-netrc: docs/examples/CMakeFiles/curl-example-netrc.dir/rule
 
 # fast build rule for target.
 curl-example-netrc/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/build
 .PHONY : curl-example-netrc/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-parseurl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-parseurl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-parseurl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-parseurl.dir/rule
 
 # Convenience name for target.
@@ -1158,12 +1158,12 @@ curl-example-parseurl: docs/examples/CMakeFiles/curl-example-parseurl.dir/rule
 
 # fast build rule for target.
 curl-example-parseurl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/build
 .PHONY : curl-example-parseurl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-persistent.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-persistent.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-persistent.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-persistent.dir/rule
 
 # Convenience name for target.
@@ -1172,12 +1172,12 @@ curl-example-persistent: docs/examples/CMakeFiles/curl-example-persistent.dir/ru
 
 # fast build rule for target.
 curl-example-persistent/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/build
 .PHONY : curl-example-persistent/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/rule
 
 # Convenience name for target.
@@ -1186,12 +1186,12 @@ curl-example-pop3-authzid: docs/examples/CMakeFiles/curl-example-pop3-authzid.di
 
 # fast build rule for target.
 curl-example-pop3-authzid/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build
 .PHONY : curl-example-pop3-authzid/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-dele.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-dele.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-dele.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-dele.dir/rule
 
 # Convenience name for target.
@@ -1200,12 +1200,12 @@ curl-example-pop3-dele: docs/examples/CMakeFiles/curl-example-pop3-dele.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-dele/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build
 .PHONY : curl-example-pop3-dele/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-list.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-list.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-list.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-list.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ curl-example-pop3-list: docs/examples/CMakeFiles/curl-example-pop3-list.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-list/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/build
 .PHONY : curl-example-pop3-list/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-multi.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-multi.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-multi.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-multi.dir/rule
 
 # Convenience name for target.
@@ -1228,12 +1228,12 @@ curl-example-pop3-multi: docs/examples/CMakeFiles/curl-example-pop3-multi.dir/ru
 
 # fast build rule for target.
 curl-example-pop3-multi/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build
 .PHONY : curl-example-pop3-multi/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-noop.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-noop.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-noop.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-noop.dir/rule
 
 # Convenience name for target.
@@ -1242,12 +1242,12 @@ curl-example-pop3-noop: docs/examples/CMakeFiles/curl-example-pop3-noop.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-noop/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build
 .PHONY : curl-example-pop3-noop/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-retr.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-retr.dir/rule
 
 # Convenience name for target.
@@ -1256,12 +1256,12 @@ curl-example-pop3-retr: docs/examples/CMakeFiles/curl-example-pop3-retr.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-retr/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build
 .PHONY : curl-example-pop3-retr/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/rule
 
 # Convenience name for target.
@@ -1270,12 +1270,12 @@ curl-example-pop3-ssl: docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-ssl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build
 .PHONY : curl-example-pop3-ssl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-stat.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-stat.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-stat.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-stat.dir/rule
 
 # Convenience name for target.
@@ -1284,12 +1284,12 @@ curl-example-pop3-stat: docs/examples/CMakeFiles/curl-example-pop3-stat.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-stat/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build
 .PHONY : curl-example-pop3-stat/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-tls.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-tls.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-tls.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-tls.dir/rule
 
 # Convenience name for target.
@@ -1298,12 +1298,12 @@ curl-example-pop3-tls: docs/examples/CMakeFiles/curl-example-pop3-tls.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-tls/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build
 .PHONY : curl-example-pop3-tls/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-top.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-top.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-top.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-top.dir/rule
 
 # Convenience name for target.
@@ -1312,12 +1312,12 @@ curl-example-pop3-top: docs/examples/CMakeFiles/curl-example-pop3-top.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-top/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/build
 .PHONY : curl-example-pop3-top/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/rule
 
 # Convenience name for target.
@@ -1326,12 +1326,12 @@ curl-example-pop3-uidl: docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/rule
 
 # fast build rule for target.
 curl-example-pop3-uidl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build
 .PHONY : curl-example-pop3-uidl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-post-callback.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-post-callback.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-post-callback.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-post-callback.dir/rule
 
 # Convenience name for target.
@@ -1340,12 +1340,12 @@ curl-example-post-callback: docs/examples/CMakeFiles/curl-example-post-callback.
 
 # fast build rule for target.
 curl-example-post-callback/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/build
 .PHONY : curl-example-post-callback/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-postinmemory.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postinmemory.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postinmemory.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-postinmemory.dir/rule
 
 # Convenience name for target.
@@ -1354,12 +1354,12 @@ curl-example-postinmemory: docs/examples/CMakeFiles/curl-example-postinmemory.di
 
 # fast build rule for target.
 curl-example-postinmemory/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/build
 .PHONY : curl-example-postinmemory/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-postit2.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postit2.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postit2.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-postit2.dir/rule
 
 # Convenience name for target.
@@ -1368,12 +1368,12 @@ curl-example-postit2: docs/examples/CMakeFiles/curl-example-postit2.dir/rule
 
 # fast build rule for target.
 curl-example-postit2/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/build
 .PHONY : curl-example-postit2/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/rule
 
 # Convenience name for target.
@@ -1382,12 +1382,12 @@ curl-example-postit2-formadd: docs/examples/CMakeFiles/curl-example-postit2-form
 
 # fast build rule for target.
 curl-example-postit2-formadd/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build
 .PHONY : curl-example-postit2-formadd/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-progressfunc.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-progressfunc.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-progressfunc.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-progressfunc.dir/rule
 
 # Convenience name for target.
@@ -1396,12 +1396,12 @@ curl-example-progressfunc: docs/examples/CMakeFiles/curl-example-progressfunc.di
 
 # fast build rule for target.
 curl-example-progressfunc/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/build
 .PHONY : curl-example-progressfunc/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-protofeats.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-protofeats.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-protofeats.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-protofeats.dir/rule
 
 # Convenience name for target.
@@ -1410,12 +1410,12 @@ curl-example-protofeats: docs/examples/CMakeFiles/curl-example-protofeats.dir/ru
 
 # fast build rule for target.
 curl-example-protofeats/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/build
 .PHONY : curl-example-protofeats/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-range.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-range.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-range.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-range.dir/rule
 
 # Convenience name for target.
@@ -1424,12 +1424,12 @@ curl-example-range: docs/examples/CMakeFiles/curl-example-range.dir/rule
 
 # fast build rule for target.
 curl-example-range/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/build
 .PHONY : curl-example-range/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-resolve.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-resolve.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-resolve.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-resolve.dir/rule
 
 # Convenience name for target.
@@ -1438,12 +1438,12 @@ curl-example-resolve: docs/examples/CMakeFiles/curl-example-resolve.dir/rule
 
 # fast build rule for target.
 curl-example-resolve/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/build
 .PHONY : curl-example-resolve/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rule
 
 # Convenience name for target.
@@ -1452,12 +1452,12 @@ curl-example-rtsp-options: docs/examples/CMakeFiles/curl-example-rtsp-options.di
 
 # fast build rule for target.
 curl-example-rtsp-options/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build
 .PHONY : curl-example-rtsp-options/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-sendrecv.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sendrecv.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sendrecv.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-sendrecv.dir/rule
 
 # Convenience name for target.
@@ -1466,12 +1466,12 @@ curl-example-sendrecv: docs/examples/CMakeFiles/curl-example-sendrecv.dir/rule
 
 # fast build rule for target.
 curl-example-sendrecv/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/build
 .PHONY : curl-example-sendrecv/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-sepheaders.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sepheaders.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sepheaders.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-sepheaders.dir/rule
 
 # Convenience name for target.
@@ -1480,12 +1480,12 @@ curl-example-sepheaders: docs/examples/CMakeFiles/curl-example-sepheaders.dir/ru
 
 # fast build rule for target.
 curl-example-sepheaders/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/build
 .PHONY : curl-example-sepheaders/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-sftpget.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sftpget.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sftpget.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-sftpget.dir/rule
 
 # Convenience name for target.
@@ -1494,12 +1494,12 @@ curl-example-sftpget: docs/examples/CMakeFiles/curl-example-sftpget.dir/rule
 
 # fast build rule for target.
 curl-example-sftpget/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/build
 .PHONY : curl-example-sftpget/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/rule
 
 # Convenience name for target.
@@ -1508,12 +1508,12 @@ curl-example-sftpuploadresume: docs/examples/CMakeFiles/curl-example-sftpuploadr
 
 # fast build rule for target.
 curl-example-sftpuploadresume/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build
 .PHONY : curl-example-sftpuploadresume/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/rule
 
 # Convenience name for target.
@@ -1522,12 +1522,12 @@ curl-example-shared-connection-cache: docs/examples/CMakeFiles/curl-example-shar
 
 # fast build rule for target.
 curl-example-shared-connection-cache/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build
 .PHONY : curl-example-shared-connection-cache/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-simple.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simple.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simple.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-simple.dir/rule
 
 # Convenience name for target.
@@ -1536,12 +1536,12 @@ curl-example-simple: docs/examples/CMakeFiles/curl-example-simple.dir/rule
 
 # fast build rule for target.
 curl-example-simple/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/build
 .PHONY : curl-example-simple/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-simplepost.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simplepost.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simplepost.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-simplepost.dir/rule
 
 # Convenience name for target.
@@ -1550,12 +1550,12 @@ curl-example-simplepost: docs/examples/CMakeFiles/curl-example-simplepost.dir/ru
 
 # fast build rule for target.
 curl-example-simplepost/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/build
 .PHONY : curl-example-simplepost/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-simplessl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simplessl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-simplessl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-simplessl.dir/rule
 
 # Convenience name for target.
@@ -1564,12 +1564,12 @@ curl-example-simplessl: docs/examples/CMakeFiles/curl-example-simplessl.dir/rule
 
 # fast build rule for target.
 curl-example-simplessl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/build
 .PHONY : curl-example-simplessl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/rule
 
 # Convenience name for target.
@@ -1578,12 +1578,12 @@ curl-example-smtp-authzid: docs/examples/CMakeFiles/curl-example-smtp-authzid.di
 
 # fast build rule for target.
 curl-example-smtp-authzid/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build
 .PHONY : curl-example-smtp-authzid/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-expn.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-expn.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-expn.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-expn.dir/rule
 
 # Convenience name for target.
@@ -1592,12 +1592,12 @@ curl-example-smtp-expn: docs/examples/CMakeFiles/curl-example-smtp-expn.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-expn/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build
 .PHONY : curl-example-smtp-expn/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-mail.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-mail.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-mail.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-mail.dir/rule
 
 # Convenience name for target.
@@ -1606,12 +1606,12 @@ curl-example-smtp-mail: docs/examples/CMakeFiles/curl-example-smtp-mail.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-mail/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build
 .PHONY : curl-example-smtp-mail/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-mime.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-mime.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-mime.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-mime.dir/rule
 
 # Convenience name for target.
@@ -1620,12 +1620,12 @@ curl-example-smtp-mime: docs/examples/CMakeFiles/curl-example-smtp-mime.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-mime/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build
 .PHONY : curl-example-smtp-mime/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-multi.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-multi.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-multi.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-multi.dir/rule
 
 # Convenience name for target.
@@ -1634,12 +1634,12 @@ curl-example-smtp-multi: docs/examples/CMakeFiles/curl-example-smtp-multi.dir/ru
 
 # fast build rule for target.
 curl-example-smtp-multi/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build
 .PHONY : curl-example-smtp-multi/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/rule
 
 # Convenience name for target.
@@ -1648,12 +1648,12 @@ curl-example-smtp-ssl: docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-ssl/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build
 .PHONY : curl-example-smtp-ssl/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-tls.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-tls.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-tls.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-tls.dir/rule
 
 # Convenience name for target.
@@ -1662,12 +1662,12 @@ curl-example-smtp-tls: docs/examples/CMakeFiles/curl-example-smtp-tls.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-tls/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build
 .PHONY : curl-example-smtp-tls/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/rule
 
 # Convenience name for target.
@@ -1676,12 +1676,12 @@ curl-example-smtp-vrfy: docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/rule
 
 # fast build rule for target.
 curl-example-smtp-vrfy/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build
 .PHONY : curl-example-smtp-vrfy/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-sslbackend.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sslbackend.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-sslbackend.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-sslbackend.dir/rule
 
 # Convenience name for target.
@@ -1690,12 +1690,12 @@ curl-example-sslbackend: docs/examples/CMakeFiles/curl-example-sslbackend.dir/ru
 
 # fast build rule for target.
 curl-example-sslbackend/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/build
 .PHONY : curl-example-sslbackend/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-unixsocket.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-unixsocket.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-unixsocket.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-unixsocket.dir/rule
 
 # Convenience name for target.
@@ -1704,12 +1704,12 @@ curl-example-unixsocket: docs/examples/CMakeFiles/curl-example-unixsocket.dir/ru
 
 # fast build rule for target.
 curl-example-unixsocket/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/build
 .PHONY : curl-example-unixsocket/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-url2file.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-url2file.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-url2file.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-url2file.dir/rule
 
 # Convenience name for target.
@@ -1718,12 +1718,12 @@ curl-example-url2file: docs/examples/CMakeFiles/curl-example-url2file.dir/rule
 
 # fast build rule for target.
 curl-example-url2file/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/build
 .PHONY : curl-example-url2file/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-urlapi.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-urlapi.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-urlapi.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-urlapi.dir/rule
 
 # Convenience name for target.
@@ -1732,12 +1732,12 @@ curl-example-urlapi: docs/examples/CMakeFiles/curl-example-urlapi.dir/rule
 
 # fast build rule for target.
 curl-example-urlapi/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/build
 .PHONY : curl-example-urlapi/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-websocket.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-websocket.dir/rule
 
 # Convenience name for target.
@@ -1746,12 +1746,12 @@ curl-example-websocket: docs/examples/CMakeFiles/curl-example-websocket.dir/rule
 
 # fast build rule for target.
 curl-example-websocket/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/build
 .PHONY : curl-example-websocket/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-websocket-cb.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket-cb.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket-cb.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-websocket-cb.dir/rule
 
 # Convenience name for target.
@@ -1760,12 +1760,12 @@ curl-example-websocket-cb: docs/examples/CMakeFiles/curl-example-websocket-cb.di
 
 # fast build rule for target.
 curl-example-websocket-cb/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build
 .PHONY : curl-example-websocket-cb/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-websocket-updown.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket-updown.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-websocket-updown.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-websocket-updown.dir/rule
 
 # Convenience name for target.
@@ -1774,12 +1774,12 @@ curl-example-websocket-updown: docs/examples/CMakeFiles/curl-example-websocket-u
 
 # fast build rule for target.
 curl-example-websocket-updown/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build
 .PHONY : curl-example-websocket-updown/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-example-all.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-all.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-example-all.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-example-all.dir/rule
 
 # Convenience name for target.
@@ -1788,12 +1788,12 @@ curl-example-all: docs/examples/CMakeFiles/curl-example-all.dir/rule
 
 # fast build rule for target.
 curl-example-all/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/build
 .PHONY : curl-example-all/fast
 
 # Convenience name for target.
 docs/examples/CMakeFiles/curl-examples-build.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-examples-build.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/examples/CMakeFiles/curl-examples-build.dir/rule
 .PHONY : docs/examples/CMakeFiles/curl-examples-build.dir/rule
 
 # Convenience name for target.
@@ -1802,7 +1802,7 @@ curl-examples-build: docs/examples/CMakeFiles/curl-examples-build.dir/rule
 
 # fast build rule for target.
 curl-examples-build/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-examples-build.dir/build.make docs/examples/CMakeFiles/curl-examples-build.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-examples-build.dir/build.make docs/examples/CMakeFiles/curl-examples-build.dir/build
 .PHONY : curl-examples-build/fast
 
 10-at-a-time.o: 10-at-a-time.c.o
@@ -1810,8 +1810,8 @@ curl-examples-build/fast:
 
 # target to build an object file
 10-at-a-time.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.o
 .PHONY : 10-at-a-time.c.o
 
 10-at-a-time.i: 10-at-a-time.c.i
@@ -1819,8 +1819,8 @@ curl-examples-build/fast:
 
 # target to preprocess a source file
 10-at-a-time.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.i
 .PHONY : 10-at-a-time.c.i
 
 10-at-a-time.s: 10-at-a-time.c.s
@@ -1828,8 +1828,8 @@ curl-examples-build/fast:
 
 # target to generate assembly for a file
 10-at-a-time.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/build.make docs/examples/CMakeFiles/curl-example-10-at-a-time.dir/10-at-a-time.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/10-at-a-time.c.s
 .PHONY : 10-at-a-time.c.s
 
 address-scope.o: address-scope.c.o
@@ -1837,8 +1837,8 @@ address-scope.o: address-scope.c.o
 
 # target to build an object file
 address-scope.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.o
 .PHONY : address-scope.c.o
 
 address-scope.i: address-scope.c.i
@@ -1846,8 +1846,8 @@ address-scope.i: address-scope.c.i
 
 # target to preprocess a source file
 address-scope.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.i
 .PHONY : address-scope.c.i
 
 address-scope.s: address-scope.c.s
@@ -1855,8 +1855,8 @@ address-scope.s: address-scope.c.s
 
 # target to generate assembly for a file
 address-scope.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-address-scope.dir/build.make docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/address-scope.c.s
 .PHONY : address-scope.c.s
 
 altsvc.o: altsvc.c.o
@@ -1864,8 +1864,8 @@ altsvc.o: altsvc.c.o
 
 # target to build an object file
 altsvc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.o
 .PHONY : altsvc.c.o
 
 altsvc.i: altsvc.c.i
@@ -1873,8 +1873,8 @@ altsvc.i: altsvc.c.i
 
 # target to preprocess a source file
 altsvc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.i
 .PHONY : altsvc.c.i
 
 altsvc.s: altsvc.c.s
@@ -1882,8 +1882,8 @@ altsvc.s: altsvc.c.s
 
 # target to generate assembly for a file
 altsvc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-altsvc.dir/build.make docs/examples/CMakeFiles/curl-example-altsvc.dir/altsvc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/altsvc.c.s
 .PHONY : altsvc.c.s
 
 anyauthput.o: anyauthput.c.o
@@ -1891,8 +1891,8 @@ anyauthput.o: anyauthput.c.o
 
 # target to build an object file
 anyauthput.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.o
 .PHONY : anyauthput.c.o
 
 anyauthput.i: anyauthput.c.i
@@ -1900,8 +1900,8 @@ anyauthput.i: anyauthput.c.i
 
 # target to preprocess a source file
 anyauthput.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.i
 .PHONY : anyauthput.c.i
 
 anyauthput.s: anyauthput.c.s
@@ -1909,8 +1909,8 @@ anyauthput.s: anyauthput.c.s
 
 # target to generate assembly for a file
 anyauthput.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-anyauthput.dir/build.make docs/examples/CMakeFiles/curl-example-anyauthput.dir/anyauthput.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/anyauthput.c.s
 .PHONY : anyauthput.c.s
 
 block_ip.o: block_ip.c.o
@@ -1918,8 +1918,8 @@ block_ip.o: block_ip.c.o
 
 # target to build an object file
 block_ip.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.o
 .PHONY : block_ip.c.o
 
 block_ip.i: block_ip.c.i
@@ -1927,8 +1927,8 @@ block_ip.i: block_ip.c.i
 
 # target to preprocess a source file
 block_ip.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.i
 .PHONY : block_ip.c.i
 
 block_ip.s: block_ip.c.s
@@ -1936,8 +1936,8 @@ block_ip.s: block_ip.c.s
 
 # target to generate assembly for a file
 block_ip.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-block_ip.dir/build.make docs/examples/CMakeFiles/curl-example-block_ip.dir/block_ip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/block_ip.c.s
 .PHONY : block_ip.c.s
 
 certinfo.o: certinfo.c.o
@@ -1945,8 +1945,8 @@ certinfo.o: certinfo.c.o
 
 # target to build an object file
 certinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.o
 .PHONY : certinfo.c.o
 
 certinfo.i: certinfo.c.i
@@ -1954,8 +1954,8 @@ certinfo.i: certinfo.c.i
 
 # target to preprocess a source file
 certinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.i
 .PHONY : certinfo.c.i
 
 certinfo.s: certinfo.c.s
@@ -1963,8 +1963,8 @@ certinfo.s: certinfo.c.s
 
 # target to generate assembly for a file
 certinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/certinfo.c.s
 .PHONY : certinfo.c.s
 
 chkspeed.o: chkspeed.c.o
@@ -1972,8 +1972,8 @@ chkspeed.o: chkspeed.c.o
 
 # target to build an object file
 chkspeed.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.o
 .PHONY : chkspeed.c.o
 
 chkspeed.i: chkspeed.c.i
@@ -1981,8 +1981,8 @@ chkspeed.i: chkspeed.c.i
 
 # target to preprocess a source file
 chkspeed.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.i
 .PHONY : chkspeed.c.i
 
 chkspeed.s: chkspeed.c.s
@@ -1990,8 +1990,8 @@ chkspeed.s: chkspeed.c.s
 
 # target to generate assembly for a file
 chkspeed.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-chkspeed.dir/build.make docs/examples/CMakeFiles/curl-example-chkspeed.dir/chkspeed.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/chkspeed.c.s
 .PHONY : chkspeed.c.s
 
 connect-to.o: connect-to.c.o
@@ -1999,8 +1999,8 @@ connect-to.o: connect-to.c.o
 
 # target to build an object file
 connect-to.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.o
 .PHONY : connect-to.c.o
 
 connect-to.i: connect-to.c.i
@@ -2008,8 +2008,8 @@ connect-to.i: connect-to.c.i
 
 # target to preprocess a source file
 connect-to.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.i
 .PHONY : connect-to.c.i
 
 connect-to.s: connect-to.c.s
@@ -2017,8 +2017,8 @@ connect-to.s: connect-to.c.s
 
 # target to generate assembly for a file
 connect-to.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-connect-to.dir/build.make docs/examples/CMakeFiles/curl-example-connect-to.dir/connect-to.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/connect-to.c.s
 .PHONY : connect-to.c.s
 
 cookie_interface.o: cookie_interface.c.o
@@ -2026,8 +2026,8 @@ cookie_interface.o: cookie_interface.c.o
 
 # target to build an object file
 cookie_interface.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.o
 .PHONY : cookie_interface.c.o
 
 cookie_interface.i: cookie_interface.c.i
@@ -2035,8 +2035,8 @@ cookie_interface.i: cookie_interface.c.i
 
 # target to preprocess a source file
 cookie_interface.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.i
 .PHONY : cookie_interface.c.i
 
 cookie_interface.s: cookie_interface.c.s
@@ -2044,8 +2044,8 @@ cookie_interface.s: cookie_interface.c.s
 
 # target to generate assembly for a file
 cookie_interface.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-cookie_interface.dir/build.make docs/examples/CMakeFiles/curl-example-cookie_interface.dir/cookie_interface.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/cookie_interface.c.s
 .PHONY : cookie_interface.c.s
 
 debug.o: debug.c.o
@@ -2053,8 +2053,8 @@ debug.o: debug.c.o
 
 # target to build an object file
 debug.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.o
 .PHONY : debug.c.o
 
 debug.i: debug.c.i
@@ -2062,8 +2062,8 @@ debug.i: debug.c.i
 
 # target to preprocess a source file
 debug.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.i
 .PHONY : debug.c.i
 
 debug.s: debug.c.s
@@ -2071,8 +2071,8 @@ debug.s: debug.c.s
 
 # target to generate assembly for a file
 debug.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-debug.dir/build.make docs/examples/CMakeFiles/curl-example-debug.dir/debug.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/debug.c.s
 .PHONY : debug.c.s
 
 default-scheme.o: default-scheme.c.o
@@ -2080,8 +2080,8 @@ default-scheme.o: default-scheme.c.o
 
 # target to build an object file
 default-scheme.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.o
 .PHONY : default-scheme.c.o
 
 default-scheme.i: default-scheme.c.i
@@ -2089,8 +2089,8 @@ default-scheme.i: default-scheme.c.i
 
 # target to preprocess a source file
 default-scheme.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.i
 .PHONY : default-scheme.c.i
 
 default-scheme.s: default-scheme.c.s
@@ -2098,8 +2098,8 @@ default-scheme.s: default-scheme.c.s
 
 # target to generate assembly for a file
 default-scheme.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-default-scheme.dir/build.make docs/examples/CMakeFiles/curl-example-default-scheme.dir/default-scheme.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/default-scheme.c.s
 .PHONY : default-scheme.c.s
 
 externalsocket.o: externalsocket.c.o
@@ -2107,8 +2107,8 @@ externalsocket.o: externalsocket.c.o
 
 # target to build an object file
 externalsocket.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.o
 .PHONY : externalsocket.c.o
 
 externalsocket.i: externalsocket.c.i
@@ -2116,8 +2116,8 @@ externalsocket.i: externalsocket.c.i
 
 # target to preprocess a source file
 externalsocket.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.i
 .PHONY : externalsocket.c.i
 
 externalsocket.s: externalsocket.c.s
@@ -2125,8 +2125,8 @@ externalsocket.s: externalsocket.c.s
 
 # target to generate assembly for a file
 externalsocket.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-externalsocket.dir/build.make docs/examples/CMakeFiles/curl-example-externalsocket.dir/externalsocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/externalsocket.c.s
 .PHONY : externalsocket.c.s
 
 fileupload.o: fileupload.c.o
@@ -2134,8 +2134,8 @@ fileupload.o: fileupload.c.o
 
 # target to build an object file
 fileupload.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.o
 .PHONY : fileupload.c.o
 
 fileupload.i: fileupload.c.i
@@ -2143,8 +2143,8 @@ fileupload.i: fileupload.c.i
 
 # target to preprocess a source file
 fileupload.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.i
 .PHONY : fileupload.c.i
 
 fileupload.s: fileupload.c.s
@@ -2152,8 +2152,8 @@ fileupload.s: fileupload.c.s
 
 # target to generate assembly for a file
 fileupload.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-fileupload.dir/build.make docs/examples/CMakeFiles/curl-example-fileupload.dir/fileupload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/fileupload.c.s
 .PHONY : fileupload.c.s
 
 ftp-delete.o: ftp-delete.c.o
@@ -2161,8 +2161,8 @@ ftp-delete.o: ftp-delete.c.o
 
 # target to build an object file
 ftp-delete.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.o
 .PHONY : ftp-delete.c.o
 
 ftp-delete.i: ftp-delete.c.i
@@ -2170,8 +2170,8 @@ ftp-delete.i: ftp-delete.c.i
 
 # target to preprocess a source file
 ftp-delete.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.i
 .PHONY : ftp-delete.c.i
 
 ftp-delete.s: ftp-delete.c.s
@@ -2179,8 +2179,8 @@ ftp-delete.s: ftp-delete.c.s
 
 # target to generate assembly for a file
 ftp-delete.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-delete.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-delete.dir/ftp-delete.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-delete.c.s
 .PHONY : ftp-delete.c.s
 
 ftp-wildcard.o: ftp-wildcard.c.o
@@ -2188,8 +2188,8 @@ ftp-wildcard.o: ftp-wildcard.c.o
 
 # target to build an object file
 ftp-wildcard.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.o
 .PHONY : ftp-wildcard.c.o
 
 ftp-wildcard.i: ftp-wildcard.c.i
@@ -2197,8 +2197,8 @@ ftp-wildcard.i: ftp-wildcard.c.i
 
 # target to preprocess a source file
 ftp-wildcard.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.i
 .PHONY : ftp-wildcard.c.i
 
 ftp-wildcard.s: ftp-wildcard.c.s
@@ -2206,8 +2206,8 @@ ftp-wildcard.s: ftp-wildcard.c.s
 
 # target to generate assembly for a file
 ftp-wildcard.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/build.make docs/examples/CMakeFiles/curl-example-ftp-wildcard.dir/ftp-wildcard.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftp-wildcard.c.s
 .PHONY : ftp-wildcard.c.s
 
 ftpget.o: ftpget.c.o
@@ -2215,8 +2215,8 @@ ftpget.o: ftpget.c.o
 
 # target to build an object file
 ftpget.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.o
 .PHONY : ftpget.c.o
 
 ftpget.i: ftpget.c.i
@@ -2224,8 +2224,8 @@ ftpget.i: ftpget.c.i
 
 # target to preprocess a source file
 ftpget.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.i
 .PHONY : ftpget.c.i
 
 ftpget.s: ftpget.c.s
@@ -2233,8 +2233,8 @@ ftpget.s: ftpget.c.s
 
 # target to generate assembly for a file
 ftpget.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpget.dir/ftpget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpget.c.s
 .PHONY : ftpget.c.s
 
 ftpgetinfo.o: ftpgetinfo.c.o
@@ -2242,8 +2242,8 @@ ftpgetinfo.o: ftpgetinfo.c.o
 
 # target to build an object file
 ftpgetinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.o
 .PHONY : ftpgetinfo.c.o
 
 ftpgetinfo.i: ftpgetinfo.c.i
@@ -2251,8 +2251,8 @@ ftpgetinfo.i: ftpgetinfo.c.i
 
 # target to preprocess a source file
 ftpgetinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.i
 .PHONY : ftpgetinfo.c.i
 
 ftpgetinfo.s: ftpgetinfo.c.s
@@ -2260,8 +2260,8 @@ ftpgetinfo.s: ftpgetinfo.c.s
 
 # target to generate assembly for a file
 ftpgetinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetinfo.dir/ftpgetinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetinfo.c.s
 .PHONY : ftpgetinfo.c.s
 
 ftpgetresp.o: ftpgetresp.c.o
@@ -2269,8 +2269,8 @@ ftpgetresp.o: ftpgetresp.c.o
 
 # target to build an object file
 ftpgetresp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.o
 .PHONY : ftpgetresp.c.o
 
 ftpgetresp.i: ftpgetresp.c.i
@@ -2278,8 +2278,8 @@ ftpgetresp.i: ftpgetresp.c.i
 
 # target to preprocess a source file
 ftpgetresp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.i
 .PHONY : ftpgetresp.c.i
 
 ftpgetresp.s: ftpgetresp.c.s
@@ -2287,8 +2287,8 @@ ftpgetresp.s: ftpgetresp.c.s
 
 # target to generate assembly for a file
 ftpgetresp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/build.make docs/examples/CMakeFiles/curl-example-ftpgetresp.dir/ftpgetresp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpgetresp.c.s
 .PHONY : ftpgetresp.c.s
 
 ftpsget.o: ftpsget.c.o
@@ -2296,8 +2296,8 @@ ftpsget.o: ftpsget.c.o
 
 # target to build an object file
 ftpsget.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.o
 .PHONY : ftpsget.c.o
 
 ftpsget.i: ftpsget.c.i
@@ -2305,8 +2305,8 @@ ftpsget.i: ftpsget.c.i
 
 # target to preprocess a source file
 ftpsget.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.i
 .PHONY : ftpsget.c.i
 
 ftpsget.s: ftpsget.c.s
@@ -2314,8 +2314,8 @@ ftpsget.s: ftpsget.c.s
 
 # target to generate assembly for a file
 ftpsget.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpsget.dir/build.make docs/examples/CMakeFiles/curl-example-ftpsget.dir/ftpsget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpsget.c.s
 .PHONY : ftpsget.c.s
 
 ftpupload.o: ftpupload.c.o
@@ -2323,8 +2323,8 @@ ftpupload.o: ftpupload.c.o
 
 # target to build an object file
 ftpupload.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.o
 .PHONY : ftpupload.c.o
 
 ftpupload.i: ftpupload.c.i
@@ -2332,8 +2332,8 @@ ftpupload.i: ftpupload.c.i
 
 # target to preprocess a source file
 ftpupload.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.i
 .PHONY : ftpupload.c.i
 
 ftpupload.s: ftpupload.c.s
@@ -2341,8 +2341,8 @@ ftpupload.s: ftpupload.c.s
 
 # target to generate assembly for a file
 ftpupload.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpupload.dir/build.make docs/examples/CMakeFiles/curl-example-ftpupload.dir/ftpupload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpupload.c.s
 .PHONY : ftpupload.c.s
 
 ftpuploadfrommem.o: ftpuploadfrommem.c.o
@@ -2350,8 +2350,8 @@ ftpuploadfrommem.o: ftpuploadfrommem.c.o
 
 # target to build an object file
 ftpuploadfrommem.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.o
 .PHONY : ftpuploadfrommem.c.o
 
 ftpuploadfrommem.i: ftpuploadfrommem.c.i
@@ -2359,8 +2359,8 @@ ftpuploadfrommem.i: ftpuploadfrommem.c.i
 
 # target to preprocess a source file
 ftpuploadfrommem.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.i
 .PHONY : ftpuploadfrommem.c.i
 
 ftpuploadfrommem.s: ftpuploadfrommem.c.s
@@ -2368,8 +2368,8 @@ ftpuploadfrommem.s: ftpuploadfrommem.c.s
 
 # target to generate assembly for a file
 ftpuploadfrommem.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadfrommem.dir/ftpuploadfrommem.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadfrommem.c.s
 .PHONY : ftpuploadfrommem.c.s
 
 ftpuploadresume.o: ftpuploadresume.c.o
@@ -2377,8 +2377,8 @@ ftpuploadresume.o: ftpuploadresume.c.o
 
 # target to build an object file
 ftpuploadresume.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.o
 .PHONY : ftpuploadresume.c.o
 
 ftpuploadresume.i: ftpuploadresume.c.i
@@ -2386,8 +2386,8 @@ ftpuploadresume.i: ftpuploadresume.c.i
 
 # target to preprocess a source file
 ftpuploadresume.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.i
 .PHONY : ftpuploadresume.c.i
 
 ftpuploadresume.s: ftpuploadresume.c.s
@@ -2395,8 +2395,8 @@ ftpuploadresume.s: ftpuploadresume.c.s
 
 # target to generate assembly for a file
 ftpuploadresume.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-ftpuploadresume.dir/ftpuploadresume.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ftpuploadresume.c.s
 .PHONY : ftpuploadresume.c.s
 
 getinfo.o: getinfo.c.o
@@ -2404,8 +2404,8 @@ getinfo.o: getinfo.c.o
 
 # target to build an object file
 getinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.o
 .PHONY : getinfo.c.o
 
 getinfo.i: getinfo.c.i
@@ -2413,8 +2413,8 @@ getinfo.i: getinfo.c.i
 
 # target to preprocess a source file
 getinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.i
 .PHONY : getinfo.c.i
 
 getinfo.s: getinfo.c.s
@@ -2422,8 +2422,8 @@ getinfo.s: getinfo.c.s
 
 # target to generate assembly for a file
 getinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinfo.dir/build.make docs/examples/CMakeFiles/curl-example-getinfo.dir/getinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinfo.c.s
 .PHONY : getinfo.c.s
 
 getinmemory.o: getinmemory.c.o
@@ -2431,8 +2431,8 @@ getinmemory.o: getinmemory.c.o
 
 # target to build an object file
 getinmemory.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.o
 .PHONY : getinmemory.c.o
 
 getinmemory.i: getinmemory.c.i
@@ -2440,8 +2440,8 @@ getinmemory.i: getinmemory.c.i
 
 # target to preprocess a source file
 getinmemory.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.i
 .PHONY : getinmemory.c.i
 
 getinmemory.s: getinmemory.c.s
@@ -2449,8 +2449,8 @@ getinmemory.s: getinmemory.c.s
 
 # target to generate assembly for a file
 getinmemory.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-getinmemory.dir/getinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getinmemory.c.s
 .PHONY : getinmemory.c.s
 
 getredirect.o: getredirect.c.o
@@ -2458,8 +2458,8 @@ getredirect.o: getredirect.c.o
 
 # target to build an object file
 getredirect.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.o
 .PHONY : getredirect.c.o
 
 getredirect.i: getredirect.c.i
@@ -2467,8 +2467,8 @@ getredirect.i: getredirect.c.i
 
 # target to preprocess a source file
 getredirect.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.i
 .PHONY : getredirect.c.i
 
 getredirect.s: getredirect.c.s
@@ -2476,8 +2476,8 @@ getredirect.s: getredirect.c.s
 
 # target to generate assembly for a file
 getredirect.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getredirect.dir/build.make docs/examples/CMakeFiles/curl-example-getredirect.dir/getredirect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getredirect.c.s
 .PHONY : getredirect.c.s
 
 getreferrer.o: getreferrer.c.o
@@ -2485,8 +2485,8 @@ getreferrer.o: getreferrer.c.o
 
 # target to build an object file
 getreferrer.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.o
 .PHONY : getreferrer.c.o
 
 getreferrer.i: getreferrer.c.i
@@ -2494,8 +2494,8 @@ getreferrer.i: getreferrer.c.i
 
 # target to preprocess a source file
 getreferrer.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.i
 .PHONY : getreferrer.c.i
 
 getreferrer.s: getreferrer.c.s
@@ -2503,8 +2503,8 @@ getreferrer.s: getreferrer.c.s
 
 # target to generate assembly for a file
 getreferrer.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-getreferrer.dir/build.make docs/examples/CMakeFiles/curl-example-getreferrer.dir/getreferrer.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/getreferrer.c.s
 .PHONY : getreferrer.c.s
 
 headerapi.o: headerapi.c.o
@@ -2512,8 +2512,8 @@ headerapi.o: headerapi.c.o
 
 # target to build an object file
 headerapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.o
 .PHONY : headerapi.c.o
 
 headerapi.i: headerapi.c.i
@@ -2521,8 +2521,8 @@ headerapi.i: headerapi.c.i
 
 # target to preprocess a source file
 headerapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.i
 .PHONY : headerapi.c.i
 
 headerapi.s: headerapi.c.s
@@ -2530,8 +2530,8 @@ headerapi.s: headerapi.c.s
 
 # target to generate assembly for a file
 headerapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-headerapi.dir/build.make docs/examples/CMakeFiles/curl-example-headerapi.dir/headerapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/headerapi.c.s
 .PHONY : headerapi.c.s
 
 hsts-preload.o: hsts-preload.c.o
@@ -2539,8 +2539,8 @@ hsts-preload.o: hsts-preload.c.o
 
 # target to build an object file
 hsts-preload.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.o
 .PHONY : hsts-preload.c.o
 
 hsts-preload.i: hsts-preload.c.i
@@ -2548,8 +2548,8 @@ hsts-preload.i: hsts-preload.c.i
 
 # target to preprocess a source file
 hsts-preload.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.i
 .PHONY : hsts-preload.c.i
 
 hsts-preload.s: hsts-preload.c.s
@@ -2557,8 +2557,8 @@ hsts-preload.s: hsts-preload.c.s
 
 # target to generate assembly for a file
 hsts-preload.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-hsts-preload.dir/build.make docs/examples/CMakeFiles/curl-example-hsts-preload.dir/hsts-preload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/hsts-preload.c.s
 .PHONY : hsts-preload.c.s
 
 http-options.o: http-options.c.o
@@ -2566,8 +2566,8 @@ http-options.o: http-options.c.o
 
 # target to build an object file
 http-options.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.o
 .PHONY : http-options.c.o
 
 http-options.i: http-options.c.i
@@ -2575,8 +2575,8 @@ http-options.i: http-options.c.i
 
 # target to preprocess a source file
 http-options.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.i
 .PHONY : http-options.c.i
 
 http-options.s: http-options.c.s
@@ -2584,8 +2584,8 @@ http-options.s: http-options.c.s
 
 # target to generate assembly for a file
 http-options.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-options.dir/build.make docs/examples/CMakeFiles/curl-example-http-options.dir/http-options.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-options.c.s
 .PHONY : http-options.c.s
 
 http-post.o: http-post.c.o
@@ -2593,8 +2593,8 @@ http-post.o: http-post.c.o
 
 # target to build an object file
 http-post.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.o
 .PHONY : http-post.c.o
 
 http-post.i: http-post.c.i
@@ -2602,8 +2602,8 @@ http-post.i: http-post.c.i
 
 # target to preprocess a source file
 http-post.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.i
 .PHONY : http-post.c.i
 
 http-post.s: http-post.c.s
@@ -2611,8 +2611,8 @@ http-post.s: http-post.c.s
 
 # target to generate assembly for a file
 http-post.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http-post.dir/build.make docs/examples/CMakeFiles/curl-example-http-post.dir/http-post.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http-post.c.s
 .PHONY : http-post.c.s
 
 http2-download.o: http2-download.c.o
@@ -2620,8 +2620,8 @@ http2-download.o: http2-download.c.o
 
 # target to build an object file
 http2-download.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.o
 .PHONY : http2-download.c.o
 
 http2-download.i: http2-download.c.i
@@ -2629,8 +2629,8 @@ http2-download.i: http2-download.c.i
 
 # target to preprocess a source file
 http2-download.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.i
 .PHONY : http2-download.c.i
 
 http2-download.s: http2-download.c.s
@@ -2638,8 +2638,8 @@ http2-download.s: http2-download.c.s
 
 # target to generate assembly for a file
 http2-download.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-download.dir/build.make docs/examples/CMakeFiles/curl-example-http2-download.dir/http2-download.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-download.c.s
 .PHONY : http2-download.c.s
 
 http2-pushinmemory.o: http2-pushinmemory.c.o
@@ -2647,8 +2647,8 @@ http2-pushinmemory.o: http2-pushinmemory.c.o
 
 # target to build an object file
 http2-pushinmemory.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.o
 .PHONY : http2-pushinmemory.c.o
 
 http2-pushinmemory.i: http2-pushinmemory.c.i
@@ -2656,8 +2656,8 @@ http2-pushinmemory.i: http2-pushinmemory.c.i
 
 # target to preprocess a source file
 http2-pushinmemory.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.i
 .PHONY : http2-pushinmemory.c.i
 
 http2-pushinmemory.s: http2-pushinmemory.c.s
@@ -2665,8 +2665,8 @@ http2-pushinmemory.s: http2-pushinmemory.c.s
 
 # target to generate assembly for a file
 http2-pushinmemory.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-http2-pushinmemory.dir/http2-pushinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-pushinmemory.c.s
 .PHONY : http2-pushinmemory.c.s
 
 http2-serverpush.o: http2-serverpush.c.o
@@ -2674,8 +2674,8 @@ http2-serverpush.o: http2-serverpush.c.o
 
 # target to build an object file
 http2-serverpush.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.o
 .PHONY : http2-serverpush.c.o
 
 http2-serverpush.i: http2-serverpush.c.i
@@ -2683,8 +2683,8 @@ http2-serverpush.i: http2-serverpush.c.i
 
 # target to preprocess a source file
 http2-serverpush.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.i
 .PHONY : http2-serverpush.c.i
 
 http2-serverpush.s: http2-serverpush.c.s
@@ -2692,8 +2692,8 @@ http2-serverpush.s: http2-serverpush.c.s
 
 # target to generate assembly for a file
 http2-serverpush.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/build.make docs/examples/CMakeFiles/curl-example-http2-serverpush.dir/http2-serverpush.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-serverpush.c.s
 .PHONY : http2-serverpush.c.s
 
 http2-upload.o: http2-upload.c.o
@@ -2701,8 +2701,8 @@ http2-upload.o: http2-upload.c.o
 
 # target to build an object file
 http2-upload.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.o
 .PHONY : http2-upload.c.o
 
 http2-upload.i: http2-upload.c.i
@@ -2710,8 +2710,8 @@ http2-upload.i: http2-upload.c.i
 
 # target to preprocess a source file
 http2-upload.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.i
 .PHONY : http2-upload.c.i
 
 http2-upload.s: http2-upload.c.s
@@ -2719,8 +2719,8 @@ http2-upload.s: http2-upload.c.s
 
 # target to generate assembly for a file
 http2-upload.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http2-upload.dir/build.make docs/examples/CMakeFiles/curl-example-http2-upload.dir/http2-upload.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http2-upload.c.s
 .PHONY : http2-upload.c.s
 
 http3-present.o: http3-present.c.o
@@ -2728,8 +2728,8 @@ http3-present.o: http3-present.c.o
 
 # target to build an object file
 http3-present.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.o
 .PHONY : http3-present.c.o
 
 http3-present.i: http3-present.c.i
@@ -2737,8 +2737,8 @@ http3-present.i: http3-present.c.i
 
 # target to preprocess a source file
 http3-present.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.i
 .PHONY : http3-present.c.i
 
 http3-present.s: http3-present.c.s
@@ -2746,8 +2746,8 @@ http3-present.s: http3-present.c.s
 
 # target to generate assembly for a file
 http3-present.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3-present.dir/build.make docs/examples/CMakeFiles/curl-example-http3-present.dir/http3-present.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3-present.c.s
 .PHONY : http3-present.c.s
 
 http3.o: http3.c.o
@@ -2755,8 +2755,8 @@ http3.o: http3.c.o
 
 # target to build an object file
 http3.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.o
 .PHONY : http3.c.o
 
 http3.i: http3.c.i
@@ -2764,8 +2764,8 @@ http3.i: http3.c.i
 
 # target to preprocess a source file
 http3.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.i
 .PHONY : http3.c.i
 
 http3.s: http3.c.s
@@ -2773,8 +2773,8 @@ http3.s: http3.c.s
 
 # target to generate assembly for a file
 http3.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-http3.dir/build.make docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/http3.c.s
 .PHONY : http3.c.s
 
 httpcustomheader.o: httpcustomheader.c.o
@@ -2782,8 +2782,8 @@ httpcustomheader.o: httpcustomheader.c.o
 
 # target to build an object file
 httpcustomheader.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.o
 .PHONY : httpcustomheader.c.o
 
 httpcustomheader.i: httpcustomheader.c.i
@@ -2791,8 +2791,8 @@ httpcustomheader.i: httpcustomheader.c.i
 
 # target to preprocess a source file
 httpcustomheader.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.i
 .PHONY : httpcustomheader.c.i
 
 httpcustomheader.s: httpcustomheader.c.s
@@ -2800,8 +2800,8 @@ httpcustomheader.s: httpcustomheader.c.s
 
 # target to generate assembly for a file
 httpcustomheader.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/build.make docs/examples/CMakeFiles/curl-example-httpcustomheader.dir/httpcustomheader.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpcustomheader.c.s
 .PHONY : httpcustomheader.c.s
 
 httpput-postfields.o: httpput-postfields.c.o
@@ -2809,8 +2809,8 @@ httpput-postfields.o: httpput-postfields.c.o
 
 # target to build an object file
 httpput-postfields.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.o
 .PHONY : httpput-postfields.c.o
 
 httpput-postfields.i: httpput-postfields.c.i
@@ -2818,8 +2818,8 @@ httpput-postfields.i: httpput-postfields.c.i
 
 # target to preprocess a source file
 httpput-postfields.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.i
 .PHONY : httpput-postfields.c.i
 
 httpput-postfields.s: httpput-postfields.c.s
@@ -2827,8 +2827,8 @@ httpput-postfields.s: httpput-postfields.c.s
 
 # target to generate assembly for a file
 httpput-postfields.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/build.make docs/examples/CMakeFiles/curl-example-httpput-postfields.dir/httpput-postfields.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput-postfields.c.s
 .PHONY : httpput-postfields.c.s
 
 httpput.o: httpput.c.o
@@ -2836,8 +2836,8 @@ httpput.o: httpput.c.o
 
 # target to build an object file
 httpput.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.o
 .PHONY : httpput.c.o
 
 httpput.i: httpput.c.i
@@ -2845,8 +2845,8 @@ httpput.i: httpput.c.i
 
 # target to preprocess a source file
 httpput.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.i
 .PHONY : httpput.c.i
 
 httpput.s: httpput.c.s
@@ -2854,8 +2854,8 @@ httpput.s: httpput.c.s
 
 # target to generate assembly for a file
 httpput.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-httpput.dir/build.make docs/examples/CMakeFiles/curl-example-httpput.dir/httpput.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/httpput.c.s
 .PHONY : httpput.c.s
 
 https.o: https.c.o
@@ -2863,8 +2863,8 @@ https.o: https.c.o
 
 # target to build an object file
 https.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.o
 .PHONY : https.c.o
 
 https.i: https.c.i
@@ -2872,8 +2872,8 @@ https.i: https.c.i
 
 # target to preprocess a source file
 https.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.i
 .PHONY : https.c.i
 
 https.s: https.c.s
@@ -2881,8 +2881,8 @@ https.s: https.c.s
 
 # target to generate assembly for a file
 https.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-https.dir/build.make docs/examples/CMakeFiles/curl-example-https.dir/https.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/https.c.s
 .PHONY : https.c.s
 
 imap-append.o: imap-append.c.o
@@ -2890,8 +2890,8 @@ imap-append.o: imap-append.c.o
 
 # target to build an object file
 imap-append.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.o
 .PHONY : imap-append.c.o
 
 imap-append.i: imap-append.c.i
@@ -2899,8 +2899,8 @@ imap-append.i: imap-append.c.i
 
 # target to preprocess a source file
 imap-append.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.i
 .PHONY : imap-append.c.i
 
 imap-append.s: imap-append.c.s
@@ -2908,8 +2908,8 @@ imap-append.s: imap-append.c.s
 
 # target to generate assembly for a file
 imap-append.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-append.dir/build.make docs/examples/CMakeFiles/curl-example-imap-append.dir/imap-append.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-append.c.s
 .PHONY : imap-append.c.s
 
 imap-authzid.o: imap-authzid.c.o
@@ -2917,8 +2917,8 @@ imap-authzid.o: imap-authzid.c.o
 
 # target to build an object file
 imap-authzid.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.o
 .PHONY : imap-authzid.c.o
 
 imap-authzid.i: imap-authzid.c.i
@@ -2926,8 +2926,8 @@ imap-authzid.i: imap-authzid.c.i
 
 # target to preprocess a source file
 imap-authzid.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.i
 .PHONY : imap-authzid.c.i
 
 imap-authzid.s: imap-authzid.c.s
@@ -2935,8 +2935,8 @@ imap-authzid.s: imap-authzid.c.s
 
 # target to generate assembly for a file
 imap-authzid.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-imap-authzid.dir/imap-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-authzid.c.s
 .PHONY : imap-authzid.c.s
 
 imap-copy.o: imap-copy.c.o
@@ -2944,8 +2944,8 @@ imap-copy.o: imap-copy.c.o
 
 # target to build an object file
 imap-copy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.o
 .PHONY : imap-copy.c.o
 
 imap-copy.i: imap-copy.c.i
@@ -2953,8 +2953,8 @@ imap-copy.i: imap-copy.c.i
 
 # target to preprocess a source file
 imap-copy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.i
 .PHONY : imap-copy.c.i
 
 imap-copy.s: imap-copy.c.s
@@ -2962,8 +2962,8 @@ imap-copy.s: imap-copy.c.s
 
 # target to generate assembly for a file
 imap-copy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-copy.dir/build.make docs/examples/CMakeFiles/curl-example-imap-copy.dir/imap-copy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-copy.c.s
 .PHONY : imap-copy.c.s
 
 imap-create.o: imap-create.c.o
@@ -2971,8 +2971,8 @@ imap-create.o: imap-create.c.o
 
 # target to build an object file
 imap-create.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.o
 .PHONY : imap-create.c.o
 
 imap-create.i: imap-create.c.i
@@ -2980,8 +2980,8 @@ imap-create.i: imap-create.c.i
 
 # target to preprocess a source file
 imap-create.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.i
 .PHONY : imap-create.c.i
 
 imap-create.s: imap-create.c.s
@@ -2989,8 +2989,8 @@ imap-create.s: imap-create.c.s
 
 # target to generate assembly for a file
 imap-create.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-create.dir/build.make docs/examples/CMakeFiles/curl-example-imap-create.dir/imap-create.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-create.c.s
 .PHONY : imap-create.c.s
 
 imap-delete.o: imap-delete.c.o
@@ -2998,8 +2998,8 @@ imap-delete.o: imap-delete.c.o
 
 # target to build an object file
 imap-delete.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.o
 .PHONY : imap-delete.c.o
 
 imap-delete.i: imap-delete.c.i
@@ -3007,8 +3007,8 @@ imap-delete.i: imap-delete.c.i
 
 # target to preprocess a source file
 imap-delete.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.i
 .PHONY : imap-delete.c.i
 
 imap-delete.s: imap-delete.c.s
@@ -3016,8 +3016,8 @@ imap-delete.s: imap-delete.c.s
 
 # target to generate assembly for a file
 imap-delete.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-delete.dir/build.make docs/examples/CMakeFiles/curl-example-imap-delete.dir/imap-delete.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-delete.c.s
 .PHONY : imap-delete.c.s
 
 imap-examine.o: imap-examine.c.o
@@ -3025,8 +3025,8 @@ imap-examine.o: imap-examine.c.o
 
 # target to build an object file
 imap-examine.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.o
 .PHONY : imap-examine.c.o
 
 imap-examine.i: imap-examine.c.i
@@ -3034,8 +3034,8 @@ imap-examine.i: imap-examine.c.i
 
 # target to preprocess a source file
 imap-examine.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.i
 .PHONY : imap-examine.c.i
 
 imap-examine.s: imap-examine.c.s
@@ -3043,8 +3043,8 @@ imap-examine.s: imap-examine.c.s
 
 # target to generate assembly for a file
 imap-examine.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-examine.dir/build.make docs/examples/CMakeFiles/curl-example-imap-examine.dir/imap-examine.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-examine.c.s
 .PHONY : imap-examine.c.s
 
 imap-fetch.o: imap-fetch.c.o
@@ -3052,8 +3052,8 @@ imap-fetch.o: imap-fetch.c.o
 
 # target to build an object file
 imap-fetch.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.o
 .PHONY : imap-fetch.c.o
 
 imap-fetch.i: imap-fetch.c.i
@@ -3061,8 +3061,8 @@ imap-fetch.i: imap-fetch.c.i
 
 # target to preprocess a source file
 imap-fetch.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.i
 .PHONY : imap-fetch.c.i
 
 imap-fetch.s: imap-fetch.c.s
@@ -3070,8 +3070,8 @@ imap-fetch.s: imap-fetch.c.s
 
 # target to generate assembly for a file
 imap-fetch.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-fetch.dir/build.make docs/examples/CMakeFiles/curl-example-imap-fetch.dir/imap-fetch.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-fetch.c.s
 .PHONY : imap-fetch.c.s
 
 imap-list.o: imap-list.c.o
@@ -3079,8 +3079,8 @@ imap-list.o: imap-list.c.o
 
 # target to build an object file
 imap-list.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.o
 .PHONY : imap-list.c.o
 
 imap-list.i: imap-list.c.i
@@ -3088,8 +3088,8 @@ imap-list.i: imap-list.c.i
 
 # target to preprocess a source file
 imap-list.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.i
 .PHONY : imap-list.c.i
 
 imap-list.s: imap-list.c.s
@@ -3097,8 +3097,8 @@ imap-list.s: imap-list.c.s
 
 # target to generate assembly for a file
 imap-list.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-list.dir/build.make docs/examples/CMakeFiles/curl-example-imap-list.dir/imap-list.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-list.c.s
 .PHONY : imap-list.c.s
 
 imap-lsub.o: imap-lsub.c.o
@@ -3106,8 +3106,8 @@ imap-lsub.o: imap-lsub.c.o
 
 # target to build an object file
 imap-lsub.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.o
 .PHONY : imap-lsub.c.o
 
 imap-lsub.i: imap-lsub.c.i
@@ -3115,8 +3115,8 @@ imap-lsub.i: imap-lsub.c.i
 
 # target to preprocess a source file
 imap-lsub.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.i
 .PHONY : imap-lsub.c.i
 
 imap-lsub.s: imap-lsub.c.s
@@ -3124,8 +3124,8 @@ imap-lsub.s: imap-lsub.c.s
 
 # target to generate assembly for a file
 imap-lsub.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-lsub.dir/build.make docs/examples/CMakeFiles/curl-example-imap-lsub.dir/imap-lsub.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-lsub.c.s
 .PHONY : imap-lsub.c.s
 
 imap-multi.o: imap-multi.c.o
@@ -3133,8 +3133,8 @@ imap-multi.o: imap-multi.c.o
 
 # target to build an object file
 imap-multi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.o
 .PHONY : imap-multi.c.o
 
 imap-multi.i: imap-multi.c.i
@@ -3142,8 +3142,8 @@ imap-multi.i: imap-multi.c.i
 
 # target to preprocess a source file
 imap-multi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.i
 .PHONY : imap-multi.c.i
 
 imap-multi.s: imap-multi.c.s
@@ -3151,8 +3151,8 @@ imap-multi.s: imap-multi.c.s
 
 # target to generate assembly for a file
 imap-multi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-multi.dir/build.make docs/examples/CMakeFiles/curl-example-imap-multi.dir/imap-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-multi.c.s
 .PHONY : imap-multi.c.s
 
 imap-noop.o: imap-noop.c.o
@@ -3160,8 +3160,8 @@ imap-noop.o: imap-noop.c.o
 
 # target to build an object file
 imap-noop.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.o
 .PHONY : imap-noop.c.o
 
 imap-noop.i: imap-noop.c.i
@@ -3169,8 +3169,8 @@ imap-noop.i: imap-noop.c.i
 
 # target to preprocess a source file
 imap-noop.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.i
 .PHONY : imap-noop.c.i
 
 imap-noop.s: imap-noop.c.s
@@ -3178,8 +3178,8 @@ imap-noop.s: imap-noop.c.s
 
 # target to generate assembly for a file
 imap-noop.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-noop.dir/build.make docs/examples/CMakeFiles/curl-example-imap-noop.dir/imap-noop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-noop.c.s
 .PHONY : imap-noop.c.s
 
 imap-search.o: imap-search.c.o
@@ -3187,8 +3187,8 @@ imap-search.o: imap-search.c.o
 
 # target to build an object file
 imap-search.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.o
 .PHONY : imap-search.c.o
 
 imap-search.i: imap-search.c.i
@@ -3196,8 +3196,8 @@ imap-search.i: imap-search.c.i
 
 # target to preprocess a source file
 imap-search.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.i
 .PHONY : imap-search.c.i
 
 imap-search.s: imap-search.c.s
@@ -3205,8 +3205,8 @@ imap-search.s: imap-search.c.s
 
 # target to generate assembly for a file
 imap-search.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-search.dir/build.make docs/examples/CMakeFiles/curl-example-imap-search.dir/imap-search.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-search.c.s
 .PHONY : imap-search.c.s
 
 imap-ssl.o: imap-ssl.c.o
@@ -3214,8 +3214,8 @@ imap-ssl.o: imap-ssl.c.o
 
 # target to build an object file
 imap-ssl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.o
 .PHONY : imap-ssl.c.o
 
 imap-ssl.i: imap-ssl.c.i
@@ -3223,8 +3223,8 @@ imap-ssl.i: imap-ssl.c.i
 
 # target to preprocess a source file
 imap-ssl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.i
 .PHONY : imap-ssl.c.i
 
 imap-ssl.s: imap-ssl.c.s
@@ -3232,8 +3232,8 @@ imap-ssl.s: imap-ssl.c.s
 
 # target to generate assembly for a file
 imap-ssl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-ssl.c.s
 .PHONY : imap-ssl.c.s
 
 imap-store.o: imap-store.c.o
@@ -3241,8 +3241,8 @@ imap-store.o: imap-store.c.o
 
 # target to build an object file
 imap-store.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.o
 .PHONY : imap-store.c.o
 
 imap-store.i: imap-store.c.i
@@ -3250,8 +3250,8 @@ imap-store.i: imap-store.c.i
 
 # target to preprocess a source file
 imap-store.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.i
 .PHONY : imap-store.c.i
 
 imap-store.s: imap-store.c.s
@@ -3259,8 +3259,8 @@ imap-store.s: imap-store.c.s
 
 # target to generate assembly for a file
 imap-store.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-store.dir/build.make docs/examples/CMakeFiles/curl-example-imap-store.dir/imap-store.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-store.c.s
 .PHONY : imap-store.c.s
 
 imap-tls.o: imap-tls.c.o
@@ -3268,8 +3268,8 @@ imap-tls.o: imap-tls.c.o
 
 # target to build an object file
 imap-tls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.o
 .PHONY : imap-tls.c.o
 
 imap-tls.i: imap-tls.c.i
@@ -3277,8 +3277,8 @@ imap-tls.i: imap-tls.c.i
 
 # target to preprocess a source file
 imap-tls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.i
 .PHONY : imap-tls.c.i
 
 imap-tls.s: imap-tls.c.s
@@ -3286,8 +3286,8 @@ imap-tls.s: imap-tls.c.s
 
 # target to generate assembly for a file
 imap-tls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-imap-tls.dir/build.make docs/examples/CMakeFiles/curl-example-imap-tls.dir/imap-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/imap-tls.c.s
 .PHONY : imap-tls.c.s
 
 interface.o: interface.c.o
@@ -3295,8 +3295,8 @@ interface.o: interface.c.o
 
 # target to build an object file
 interface.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.o
 .PHONY : interface.c.o
 
 interface.i: interface.c.i
@@ -3304,8 +3304,8 @@ interface.i: interface.c.i
 
 # target to preprocess a source file
 interface.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.i
 .PHONY : interface.c.i
 
 interface.s: interface.c.s
@@ -3313,8 +3313,8 @@ interface.s: interface.c.s
 
 # target to generate assembly for a file
 interface.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-interface.dir/build.make docs/examples/CMakeFiles/curl-example-interface.dir/interface.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/interface.c.s
 .PHONY : interface.c.s
 
 ipv6.o: ipv6.c.o
@@ -3322,8 +3322,8 @@ ipv6.o: ipv6.c.o
 
 # target to build an object file
 ipv6.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.o
 .PHONY : ipv6.c.o
 
 ipv6.i: ipv6.c.i
@@ -3331,8 +3331,8 @@ ipv6.i: ipv6.c.i
 
 # target to preprocess a source file
 ipv6.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.i
 .PHONY : ipv6.c.i
 
 ipv6.s: ipv6.c.s
@@ -3340,8 +3340,8 @@ ipv6.s: ipv6.c.s
 
 # target to generate assembly for a file
 ipv6.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-ipv6.dir/build.make docs/examples/CMakeFiles/curl-example-ipv6.dir/ipv6.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/ipv6.c.s
 .PHONY : ipv6.c.s
 
 keepalive.o: keepalive.c.o
@@ -3349,8 +3349,8 @@ keepalive.o: keepalive.c.o
 
 # target to build an object file
 keepalive.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.o
 .PHONY : keepalive.c.o
 
 keepalive.i: keepalive.c.i
@@ -3358,8 +3358,8 @@ keepalive.i: keepalive.c.i
 
 # target to preprocess a source file
 keepalive.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.i
 .PHONY : keepalive.c.i
 
 keepalive.s: keepalive.c.s
@@ -3367,8 +3367,8 @@ keepalive.s: keepalive.c.s
 
 # target to generate assembly for a file
 keepalive.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-keepalive.dir/build.make docs/examples/CMakeFiles/curl-example-keepalive.dir/keepalive.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/keepalive.c.s
 .PHONY : keepalive.c.s
 
 localport.o: localport.c.o
@@ -3376,8 +3376,8 @@ localport.o: localport.c.o
 
 # target to build an object file
 localport.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.o
 .PHONY : localport.c.o
 
 localport.i: localport.c.i
@@ -3385,8 +3385,8 @@ localport.i: localport.c.i
 
 # target to preprocess a source file
 localport.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.i
 .PHONY : localport.c.i
 
 localport.s: localport.c.s
@@ -3394,8 +3394,8 @@ localport.s: localport.c.s
 
 # target to generate assembly for a file
 localport.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-localport.dir/build.make docs/examples/CMakeFiles/curl-example-localport.dir/localport.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/localport.c.s
 .PHONY : localport.c.s
 
 maxconnects.o: maxconnects.c.o
@@ -3403,8 +3403,8 @@ maxconnects.o: maxconnects.c.o
 
 # target to build an object file
 maxconnects.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.o
 .PHONY : maxconnects.c.o
 
 maxconnects.i: maxconnects.c.i
@@ -3412,8 +3412,8 @@ maxconnects.i: maxconnects.c.i
 
 # target to preprocess a source file
 maxconnects.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.i
 .PHONY : maxconnects.c.i
 
 maxconnects.s: maxconnects.c.s
@@ -3421,8 +3421,8 @@ maxconnects.s: maxconnects.c.s
 
 # target to generate assembly for a file
 maxconnects.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-maxconnects.dir/build.make docs/examples/CMakeFiles/curl-example-maxconnects.dir/maxconnects.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/maxconnects.c.s
 .PHONY : maxconnects.c.s
 
 multi-app.o: multi-app.c.o
@@ -3430,8 +3430,8 @@ multi-app.o: multi-app.c.o
 
 # target to build an object file
 multi-app.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.o
 .PHONY : multi-app.c.o
 
 multi-app.i: multi-app.c.i
@@ -3439,8 +3439,8 @@ multi-app.i: multi-app.c.i
 
 # target to preprocess a source file
 multi-app.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.i
 .PHONY : multi-app.c.i
 
 multi-app.s: multi-app.c.s
@@ -3448,8 +3448,8 @@ multi-app.s: multi-app.c.s
 
 # target to generate assembly for a file
 multi-app.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-app.dir/build.make docs/examples/CMakeFiles/curl-example-multi-app.dir/multi-app.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-app.c.s
 .PHONY : multi-app.c.s
 
 multi-debugcallback.o: multi-debugcallback.c.o
@@ -3457,8 +3457,8 @@ multi-debugcallback.o: multi-debugcallback.c.o
 
 # target to build an object file
 multi-debugcallback.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.o
 .PHONY : multi-debugcallback.c.o
 
 multi-debugcallback.i: multi-debugcallback.c.i
@@ -3466,8 +3466,8 @@ multi-debugcallback.i: multi-debugcallback.c.i
 
 # target to preprocess a source file
 multi-debugcallback.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.i
 .PHONY : multi-debugcallback.c.i
 
 multi-debugcallback.s: multi-debugcallback.c.s
@@ -3475,8 +3475,8 @@ multi-debugcallback.s: multi-debugcallback.c.s
 
 # target to generate assembly for a file
 multi-debugcallback.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/build.make docs/examples/CMakeFiles/curl-example-multi-debugcallback.dir/multi-debugcallback.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-debugcallback.c.s
 .PHONY : multi-debugcallback.c.s
 
 multi-double.o: multi-double.c.o
@@ -3484,8 +3484,8 @@ multi-double.o: multi-double.c.o
 
 # target to build an object file
 multi-double.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.o
 .PHONY : multi-double.c.o
 
 multi-double.i: multi-double.c.i
@@ -3493,8 +3493,8 @@ multi-double.i: multi-double.c.i
 
 # target to preprocess a source file
 multi-double.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.i
 .PHONY : multi-double.c.i
 
 multi-double.s: multi-double.c.s
@@ -3502,8 +3502,8 @@ multi-double.s: multi-double.c.s
 
 # target to generate assembly for a file
 multi-double.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-double.dir/build.make docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-double.c.s
 .PHONY : multi-double.c.s
 
 multi-formadd.o: multi-formadd.c.o
@@ -3511,8 +3511,8 @@ multi-formadd.o: multi-formadd.c.o
 
 # target to build an object file
 multi-formadd.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.o
 .PHONY : multi-formadd.c.o
 
 multi-formadd.i: multi-formadd.c.i
@@ -3520,8 +3520,8 @@ multi-formadd.i: multi-formadd.c.i
 
 # target to preprocess a source file
 multi-formadd.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.i
 .PHONY : multi-formadd.c.i
 
 multi-formadd.s: multi-formadd.c.s
@@ -3529,8 +3529,8 @@ multi-formadd.s: multi-formadd.c.s
 
 # target to generate assembly for a file
 multi-formadd.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-multi-formadd.dir/multi-formadd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-formadd.c.s
 .PHONY : multi-formadd.c.s
 
 multi-legacy.o: multi-legacy.c.o
@@ -3538,8 +3538,8 @@ multi-legacy.o: multi-legacy.c.o
 
 # target to build an object file
 multi-legacy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.o
 .PHONY : multi-legacy.c.o
 
 multi-legacy.i: multi-legacy.c.i
@@ -3547,8 +3547,8 @@ multi-legacy.i: multi-legacy.c.i
 
 # target to preprocess a source file
 multi-legacy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.i
 .PHONY : multi-legacy.c.i
 
 multi-legacy.s: multi-legacy.c.s
@@ -3556,8 +3556,8 @@ multi-legacy.s: multi-legacy.c.s
 
 # target to generate assembly for a file
 multi-legacy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-legacy.c.s
 .PHONY : multi-legacy.c.s
 
 multi-post.o: multi-post.c.o
@@ -3565,8 +3565,8 @@ multi-post.o: multi-post.c.o
 
 # target to build an object file
 multi-post.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.o
 .PHONY : multi-post.c.o
 
 multi-post.i: multi-post.c.i
@@ -3574,8 +3574,8 @@ multi-post.i: multi-post.c.i
 
 # target to preprocess a source file
 multi-post.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.i
 .PHONY : multi-post.c.i
 
 multi-post.s: multi-post.c.s
@@ -3583,8 +3583,8 @@ multi-post.s: multi-post.c.s
 
 # target to generate assembly for a file
 multi-post.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-post.dir/build.make docs/examples/CMakeFiles/curl-example-multi-post.dir/multi-post.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-post.c.s
 .PHONY : multi-post.c.s
 
 multi-single.o: multi-single.c.o
@@ -3592,8 +3592,8 @@ multi-single.o: multi-single.c.o
 
 # target to build an object file
 multi-single.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.o
 .PHONY : multi-single.c.o
 
 multi-single.i: multi-single.c.i
@@ -3601,8 +3601,8 @@ multi-single.i: multi-single.c.i
 
 # target to preprocess a source file
 multi-single.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.i
 .PHONY : multi-single.c.i
 
 multi-single.s: multi-single.c.s
@@ -3610,8 +3610,8 @@ multi-single.s: multi-single.c.s
 
 # target to generate assembly for a file
 multi-single.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-multi-single.dir/build.make docs/examples/CMakeFiles/curl-example-multi-single.dir/multi-single.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/multi-single.c.s
 .PHONY : multi-single.c.s
 
 netrc.o: netrc.c.o
@@ -3619,8 +3619,8 @@ netrc.o: netrc.c.o
 
 # target to build an object file
 netrc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.o
 .PHONY : netrc.c.o
 
 netrc.i: netrc.c.i
@@ -3628,8 +3628,8 @@ netrc.i: netrc.c.i
 
 # target to preprocess a source file
 netrc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.i
 .PHONY : netrc.c.i
 
 netrc.s: netrc.c.s
@@ -3637,8 +3637,8 @@ netrc.s: netrc.c.s
 
 # target to generate assembly for a file
 netrc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-netrc.dir/build.make docs/examples/CMakeFiles/curl-example-netrc.dir/netrc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/netrc.c.s
 .PHONY : netrc.c.s
 
 parseurl.o: parseurl.c.o
@@ -3646,8 +3646,8 @@ parseurl.o: parseurl.c.o
 
 # target to build an object file
 parseurl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.o
 .PHONY : parseurl.c.o
 
 parseurl.i: parseurl.c.i
@@ -3655,8 +3655,8 @@ parseurl.i: parseurl.c.i
 
 # target to preprocess a source file
 parseurl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.i
 .PHONY : parseurl.c.i
 
 parseurl.s: parseurl.c.s
@@ -3664,8 +3664,8 @@ parseurl.s: parseurl.c.s
 
 # target to generate assembly for a file
 parseurl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-parseurl.dir/build.make docs/examples/CMakeFiles/curl-example-parseurl.dir/parseurl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/parseurl.c.s
 .PHONY : parseurl.c.s
 
 persistent.o: persistent.c.o
@@ -3673,8 +3673,8 @@ persistent.o: persistent.c.o
 
 # target to build an object file
 persistent.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.o
 .PHONY : persistent.c.o
 
 persistent.i: persistent.c.i
@@ -3682,8 +3682,8 @@ persistent.i: persistent.c.i
 
 # target to preprocess a source file
 persistent.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.i
 .PHONY : persistent.c.i
 
 persistent.s: persistent.c.s
@@ -3691,8 +3691,8 @@ persistent.s: persistent.c.s
 
 # target to generate assembly for a file
 persistent.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-persistent.dir/build.make docs/examples/CMakeFiles/curl-example-persistent.dir/persistent.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/persistent.c.s
 .PHONY : persistent.c.s
 
 pop3-authzid.o: pop3-authzid.c.o
@@ -3700,8 +3700,8 @@ pop3-authzid.o: pop3-authzid.c.o
 
 # target to build an object file
 pop3-authzid.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.o
 .PHONY : pop3-authzid.c.o
 
 pop3-authzid.i: pop3-authzid.c.i
@@ -3709,8 +3709,8 @@ pop3-authzid.i: pop3-authzid.c.i
 
 # target to preprocess a source file
 pop3-authzid.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.i
 .PHONY : pop3-authzid.c.i
 
 pop3-authzid.s: pop3-authzid.c.s
@@ -3718,8 +3718,8 @@ pop3-authzid.s: pop3-authzid.c.s
 
 # target to generate assembly for a file
 pop3-authzid.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-authzid.dir/pop3-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-authzid.c.s
 .PHONY : pop3-authzid.c.s
 
 pop3-dele.o: pop3-dele.c.o
@@ -3727,8 +3727,8 @@ pop3-dele.o: pop3-dele.c.o
 
 # target to build an object file
 pop3-dele.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.o
 .PHONY : pop3-dele.c.o
 
 pop3-dele.i: pop3-dele.c.i
@@ -3736,8 +3736,8 @@ pop3-dele.i: pop3-dele.c.i
 
 # target to preprocess a source file
 pop3-dele.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.i
 .PHONY : pop3-dele.c.i
 
 pop3-dele.s: pop3-dele.c.s
@@ -3745,8 +3745,8 @@ pop3-dele.s: pop3-dele.c.s
 
 # target to generate assembly for a file
 pop3-dele.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-dele.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-dele.dir/pop3-dele.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-dele.c.s
 .PHONY : pop3-dele.c.s
 
 pop3-list.o: pop3-list.c.o
@@ -3754,8 +3754,8 @@ pop3-list.o: pop3-list.c.o
 
 # target to build an object file
 pop3-list.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.o
 .PHONY : pop3-list.c.o
 
 pop3-list.i: pop3-list.c.i
@@ -3763,8 +3763,8 @@ pop3-list.i: pop3-list.c.i
 
 # target to preprocess a source file
 pop3-list.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.i
 .PHONY : pop3-list.c.i
 
 pop3-list.s: pop3-list.c.s
@@ -3772,8 +3772,8 @@ pop3-list.s: pop3-list.c.s
 
 # target to generate assembly for a file
 pop3-list.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-list.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-list.dir/pop3-list.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-list.c.s
 .PHONY : pop3-list.c.s
 
 pop3-multi.o: pop3-multi.c.o
@@ -3781,8 +3781,8 @@ pop3-multi.o: pop3-multi.c.o
 
 # target to build an object file
 pop3-multi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.o
 .PHONY : pop3-multi.c.o
 
 pop3-multi.i: pop3-multi.c.i
@@ -3790,8 +3790,8 @@ pop3-multi.i: pop3-multi.c.i
 
 # target to preprocess a source file
 pop3-multi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.i
 .PHONY : pop3-multi.c.i
 
 pop3-multi.s: pop3-multi.c.s
@@ -3799,8 +3799,8 @@ pop3-multi.s: pop3-multi.c.s
 
 # target to generate assembly for a file
 pop3-multi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-multi.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-multi.dir/pop3-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-multi.c.s
 .PHONY : pop3-multi.c.s
 
 pop3-noop.o: pop3-noop.c.o
@@ -3808,8 +3808,8 @@ pop3-noop.o: pop3-noop.c.o
 
 # target to build an object file
 pop3-noop.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.o
 .PHONY : pop3-noop.c.o
 
 pop3-noop.i: pop3-noop.c.i
@@ -3817,8 +3817,8 @@ pop3-noop.i: pop3-noop.c.i
 
 # target to preprocess a source file
 pop3-noop.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.i
 .PHONY : pop3-noop.c.i
 
 pop3-noop.s: pop3-noop.c.s
@@ -3826,8 +3826,8 @@ pop3-noop.s: pop3-noop.c.s
 
 # target to generate assembly for a file
 pop3-noop.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-noop.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-noop.dir/pop3-noop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-noop.c.s
 .PHONY : pop3-noop.c.s
 
 pop3-retr.o: pop3-retr.c.o
@@ -3835,8 +3835,8 @@ pop3-retr.o: pop3-retr.c.o
 
 # target to build an object file
 pop3-retr.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.o
 .PHONY : pop3-retr.c.o
 
 pop3-retr.i: pop3-retr.c.i
@@ -3844,8 +3844,8 @@ pop3-retr.i: pop3-retr.c.i
 
 # target to preprocess a source file
 pop3-retr.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.i
 .PHONY : pop3-retr.c.i
 
 pop3-retr.s: pop3-retr.c.s
@@ -3853,8 +3853,8 @@ pop3-retr.s: pop3-retr.c.s
 
 # target to generate assembly for a file
 pop3-retr.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-retr.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-retr.dir/pop3-retr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-retr.c.s
 .PHONY : pop3-retr.c.s
 
 pop3-ssl.o: pop3-ssl.c.o
@@ -3862,8 +3862,8 @@ pop3-ssl.o: pop3-ssl.c.o
 
 # target to build an object file
 pop3-ssl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.o
 .PHONY : pop3-ssl.c.o
 
 pop3-ssl.i: pop3-ssl.c.i
@@ -3871,8 +3871,8 @@ pop3-ssl.i: pop3-ssl.c.i
 
 # target to preprocess a source file
 pop3-ssl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.i
 .PHONY : pop3-ssl.c.i
 
 pop3-ssl.s: pop3-ssl.c.s
@@ -3880,8 +3880,8 @@ pop3-ssl.s: pop3-ssl.c.s
 
 # target to generate assembly for a file
 pop3-ssl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-ssl.c.s
 .PHONY : pop3-ssl.c.s
 
 pop3-stat.o: pop3-stat.c.o
@@ -3889,8 +3889,8 @@ pop3-stat.o: pop3-stat.c.o
 
 # target to build an object file
 pop3-stat.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.o
 .PHONY : pop3-stat.c.o
 
 pop3-stat.i: pop3-stat.c.i
@@ -3898,8 +3898,8 @@ pop3-stat.i: pop3-stat.c.i
 
 # target to preprocess a source file
 pop3-stat.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.i
 .PHONY : pop3-stat.c.i
 
 pop3-stat.s: pop3-stat.c.s
@@ -3907,8 +3907,8 @@ pop3-stat.s: pop3-stat.c.s
 
 # target to generate assembly for a file
 pop3-stat.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-stat.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-stat.dir/pop3-stat.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-stat.c.s
 .PHONY : pop3-stat.c.s
 
 pop3-tls.o: pop3-tls.c.o
@@ -3916,8 +3916,8 @@ pop3-tls.o: pop3-tls.c.o
 
 # target to build an object file
 pop3-tls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.o
 .PHONY : pop3-tls.c.o
 
 pop3-tls.i: pop3-tls.c.i
@@ -3925,8 +3925,8 @@ pop3-tls.i: pop3-tls.c.i
 
 # target to preprocess a source file
 pop3-tls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.i
 .PHONY : pop3-tls.c.i
 
 pop3-tls.s: pop3-tls.c.s
@@ -3934,8 +3934,8 @@ pop3-tls.s: pop3-tls.c.s
 
 # target to generate assembly for a file
 pop3-tls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-tls.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-tls.dir/pop3-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-tls.c.s
 .PHONY : pop3-tls.c.s
 
 pop3-top.o: pop3-top.c.o
@@ -3943,8 +3943,8 @@ pop3-top.o: pop3-top.c.o
 
 # target to build an object file
 pop3-top.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.o
 .PHONY : pop3-top.c.o
 
 pop3-top.i: pop3-top.c.i
@@ -3952,8 +3952,8 @@ pop3-top.i: pop3-top.c.i
 
 # target to preprocess a source file
 pop3-top.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.i
 .PHONY : pop3-top.c.i
 
 pop3-top.s: pop3-top.c.s
@@ -3961,8 +3961,8 @@ pop3-top.s: pop3-top.c.s
 
 # target to generate assembly for a file
 pop3-top.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-top.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-top.dir/pop3-top.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-top.c.s
 .PHONY : pop3-top.c.s
 
 pop3-uidl.o: pop3-uidl.c.o
@@ -3970,8 +3970,8 @@ pop3-uidl.o: pop3-uidl.c.o
 
 # target to build an object file
 pop3-uidl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.o
 .PHONY : pop3-uidl.c.o
 
 pop3-uidl.i: pop3-uidl.c.i
@@ -3979,8 +3979,8 @@ pop3-uidl.i: pop3-uidl.c.i
 
 # target to preprocess a source file
 pop3-uidl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.i
 .PHONY : pop3-uidl.c.i
 
 pop3-uidl.s: pop3-uidl.c.s
@@ -3988,8 +3988,8 @@ pop3-uidl.s: pop3-uidl.c.s
 
 # target to generate assembly for a file
 pop3-uidl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/build.make docs/examples/CMakeFiles/curl-example-pop3-uidl.dir/pop3-uidl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/pop3-uidl.c.s
 .PHONY : pop3-uidl.c.s
 
 post-callback.o: post-callback.c.o
@@ -3997,8 +3997,8 @@ post-callback.o: post-callback.c.o
 
 # target to build an object file
 post-callback.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.o
 .PHONY : post-callback.c.o
 
 post-callback.i: post-callback.c.i
@@ -4006,8 +4006,8 @@ post-callback.i: post-callback.c.i
 
 # target to preprocess a source file
 post-callback.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.i
 .PHONY : post-callback.c.i
 
 post-callback.s: post-callback.c.s
@@ -4015,8 +4015,8 @@ post-callback.s: post-callback.c.s
 
 # target to generate assembly for a file
 post-callback.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/post-callback.c.s
 .PHONY : post-callback.c.s
 
 postinmemory.o: postinmemory.c.o
@@ -4024,8 +4024,8 @@ postinmemory.o: postinmemory.c.o
 
 # target to build an object file
 postinmemory.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.o
 .PHONY : postinmemory.c.o
 
 postinmemory.i: postinmemory.c.i
@@ -4033,8 +4033,8 @@ postinmemory.i: postinmemory.c.i
 
 # target to preprocess a source file
 postinmemory.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.i
 .PHONY : postinmemory.c.i
 
 postinmemory.s: postinmemory.c.s
@@ -4042,8 +4042,8 @@ postinmemory.s: postinmemory.c.s
 
 # target to generate assembly for a file
 postinmemory.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postinmemory.dir/build.make docs/examples/CMakeFiles/curl-example-postinmemory.dir/postinmemory.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postinmemory.c.s
 .PHONY : postinmemory.c.s
 
 postit2-formadd.o: postit2-formadd.c.o
@@ -4051,8 +4051,8 @@ postit2-formadd.o: postit2-formadd.c.o
 
 # target to build an object file
 postit2-formadd.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.o
 .PHONY : postit2-formadd.c.o
 
 postit2-formadd.i: postit2-formadd.c.i
@@ -4060,8 +4060,8 @@ postit2-formadd.i: postit2-formadd.c.i
 
 # target to preprocess a source file
 postit2-formadd.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.i
 .PHONY : postit2-formadd.c.i
 
 postit2-formadd.s: postit2-formadd.c.s
@@ -4069,8 +4069,8 @@ postit2-formadd.s: postit2-formadd.c.s
 
 # target to generate assembly for a file
 postit2-formadd.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/build.make docs/examples/CMakeFiles/curl-example-postit2-formadd.dir/postit2-formadd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2-formadd.c.s
 .PHONY : postit2-formadd.c.s
 
 postit2.o: postit2.c.o
@@ -4078,8 +4078,8 @@ postit2.o: postit2.c.o
 
 # target to build an object file
 postit2.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.o
 .PHONY : postit2.c.o
 
 postit2.i: postit2.c.i
@@ -4087,8 +4087,8 @@ postit2.i: postit2.c.i
 
 # target to preprocess a source file
 postit2.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.i
 .PHONY : postit2.c.i
 
 postit2.s: postit2.c.s
@@ -4096,8 +4096,8 @@ postit2.s: postit2.c.s
 
 # target to generate assembly for a file
 postit2.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-postit2.dir/build.make docs/examples/CMakeFiles/curl-example-postit2.dir/postit2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/postit2.c.s
 .PHONY : postit2.c.s
 
 progressfunc.o: progressfunc.c.o
@@ -4105,8 +4105,8 @@ progressfunc.o: progressfunc.c.o
 
 # target to build an object file
 progressfunc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.o
 .PHONY : progressfunc.c.o
 
 progressfunc.i: progressfunc.c.i
@@ -4114,8 +4114,8 @@ progressfunc.i: progressfunc.c.i
 
 # target to preprocess a source file
 progressfunc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.i
 .PHONY : progressfunc.c.i
 
 progressfunc.s: progressfunc.c.s
@@ -4123,8 +4123,8 @@ progressfunc.s: progressfunc.c.s
 
 # target to generate assembly for a file
 progressfunc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-progressfunc.dir/build.make docs/examples/CMakeFiles/curl-example-progressfunc.dir/progressfunc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/progressfunc.c.s
 .PHONY : progressfunc.c.s
 
 protofeats.o: protofeats.c.o
@@ -4132,8 +4132,8 @@ protofeats.o: protofeats.c.o
 
 # target to build an object file
 protofeats.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.o
 .PHONY : protofeats.c.o
 
 protofeats.i: protofeats.c.i
@@ -4141,8 +4141,8 @@ protofeats.i: protofeats.c.i
 
 # target to preprocess a source file
 protofeats.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.i
 .PHONY : protofeats.c.i
 
 protofeats.s: protofeats.c.s
@@ -4150,8 +4150,8 @@ protofeats.s: protofeats.c.s
 
 # target to generate assembly for a file
 protofeats.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-protofeats.dir/build.make docs/examples/CMakeFiles/curl-example-protofeats.dir/protofeats.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/protofeats.c.s
 .PHONY : protofeats.c.s
 
 range.o: range.c.o
@@ -4159,8 +4159,8 @@ range.o: range.c.o
 
 # target to build an object file
 range.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.o
 .PHONY : range.c.o
 
 range.i: range.c.i
@@ -4168,8 +4168,8 @@ range.i: range.c.i
 
 # target to preprocess a source file
 range.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.i
 .PHONY : range.c.i
 
 range.s: range.c.s
@@ -4177,8 +4177,8 @@ range.s: range.c.s
 
 # target to generate assembly for a file
 range.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-range.dir/build.make docs/examples/CMakeFiles/curl-example-range.dir/range.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/range.c.s
 .PHONY : range.c.s
 
 resolve.o: resolve.c.o
@@ -4186,8 +4186,8 @@ resolve.o: resolve.c.o
 
 # target to build an object file
 resolve.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.o
 .PHONY : resolve.c.o
 
 resolve.i: resolve.c.i
@@ -4195,8 +4195,8 @@ resolve.i: resolve.c.i
 
 # target to preprocess a source file
 resolve.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.i
 .PHONY : resolve.c.i
 
 resolve.s: resolve.c.s
@@ -4204,8 +4204,8 @@ resolve.s: resolve.c.s
 
 # target to generate assembly for a file
 resolve.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-resolve.dir/build.make docs/examples/CMakeFiles/curl-example-resolve.dir/resolve.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/resolve.c.s
 .PHONY : resolve.c.s
 
 rtsp-options.o: rtsp-options.c.o
@@ -4213,8 +4213,8 @@ rtsp-options.o: rtsp-options.c.o
 
 # target to build an object file
 rtsp-options.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.o
 .PHONY : rtsp-options.c.o
 
 rtsp-options.i: rtsp-options.c.i
@@ -4222,8 +4222,8 @@ rtsp-options.i: rtsp-options.c.i
 
 # target to preprocess a source file
 rtsp-options.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.i
 .PHONY : rtsp-options.c.i
 
 rtsp-options.s: rtsp-options.c.s
@@ -4231,8 +4231,8 @@ rtsp-options.s: rtsp-options.c.s
 
 # target to generate assembly for a file
 rtsp-options.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-rtsp-options.dir/build.make docs/examples/CMakeFiles/curl-example-rtsp-options.dir/rtsp-options.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/rtsp-options.c.s
 .PHONY : rtsp-options.c.s
 
 sendrecv.o: sendrecv.c.o
@@ -4240,8 +4240,8 @@ sendrecv.o: sendrecv.c.o
 
 # target to build an object file
 sendrecv.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.o
 .PHONY : sendrecv.c.o
 
 sendrecv.i: sendrecv.c.i
@@ -4249,8 +4249,8 @@ sendrecv.i: sendrecv.c.i
 
 # target to preprocess a source file
 sendrecv.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.i
 .PHONY : sendrecv.c.i
 
 sendrecv.s: sendrecv.c.s
@@ -4258,8 +4258,8 @@ sendrecv.s: sendrecv.c.s
 
 # target to generate assembly for a file
 sendrecv.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sendrecv.dir/build.make docs/examples/CMakeFiles/curl-example-sendrecv.dir/sendrecv.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sendrecv.c.s
 .PHONY : sendrecv.c.s
 
 sepheaders.o: sepheaders.c.o
@@ -4267,8 +4267,8 @@ sepheaders.o: sepheaders.c.o
 
 # target to build an object file
 sepheaders.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.o
 .PHONY : sepheaders.c.o
 
 sepheaders.i: sepheaders.c.i
@@ -4276,8 +4276,8 @@ sepheaders.i: sepheaders.c.i
 
 # target to preprocess a source file
 sepheaders.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.i
 .PHONY : sepheaders.c.i
 
 sepheaders.s: sepheaders.c.s
@@ -4285,8 +4285,8 @@ sepheaders.s: sepheaders.c.s
 
 # target to generate assembly for a file
 sepheaders.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sepheaders.dir/build.make docs/examples/CMakeFiles/curl-example-sepheaders.dir/sepheaders.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sepheaders.c.s
 .PHONY : sepheaders.c.s
 
 sftpget.o: sftpget.c.o
@@ -4294,8 +4294,8 @@ sftpget.o: sftpget.c.o
 
 # target to build an object file
 sftpget.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.o
 .PHONY : sftpget.c.o
 
 sftpget.i: sftpget.c.i
@@ -4303,8 +4303,8 @@ sftpget.i: sftpget.c.i
 
 # target to preprocess a source file
 sftpget.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.i
 .PHONY : sftpget.c.i
 
 sftpget.s: sftpget.c.s
@@ -4312,8 +4312,8 @@ sftpget.s: sftpget.c.s
 
 # target to generate assembly for a file
 sftpget.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpget.dir/build.make docs/examples/CMakeFiles/curl-example-sftpget.dir/sftpget.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpget.c.s
 .PHONY : sftpget.c.s
 
 sftpuploadresume.o: sftpuploadresume.c.o
@@ -4321,8 +4321,8 @@ sftpuploadresume.o: sftpuploadresume.c.o
 
 # target to build an object file
 sftpuploadresume.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.o
 .PHONY : sftpuploadresume.c.o
 
 sftpuploadresume.i: sftpuploadresume.c.i
@@ -4330,8 +4330,8 @@ sftpuploadresume.i: sftpuploadresume.c.i
 
 # target to preprocess a source file
 sftpuploadresume.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.i
 .PHONY : sftpuploadresume.c.i
 
 sftpuploadresume.s: sftpuploadresume.c.s
@@ -4339,8 +4339,8 @@ sftpuploadresume.s: sftpuploadresume.c.s
 
 # target to generate assembly for a file
 sftpuploadresume.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/build.make docs/examples/CMakeFiles/curl-example-sftpuploadresume.dir/sftpuploadresume.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sftpuploadresume.c.s
 .PHONY : sftpuploadresume.c.s
 
 shared-connection-cache.o: shared-connection-cache.c.o
@@ -4348,8 +4348,8 @@ shared-connection-cache.o: shared-connection-cache.c.o
 
 # target to build an object file
 shared-connection-cache.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.o
 .PHONY : shared-connection-cache.c.o
 
 shared-connection-cache.i: shared-connection-cache.c.i
@@ -4357,8 +4357,8 @@ shared-connection-cache.i: shared-connection-cache.c.i
 
 # target to preprocess a source file
 shared-connection-cache.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.i
 .PHONY : shared-connection-cache.c.i
 
 shared-connection-cache.s: shared-connection-cache.c.s
@@ -4366,8 +4366,8 @@ shared-connection-cache.s: shared-connection-cache.c.s
 
 # target to generate assembly for a file
 shared-connection-cache.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/build.make docs/examples/CMakeFiles/curl-example-shared-connection-cache.dir/shared-connection-cache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/shared-connection-cache.c.s
 .PHONY : shared-connection-cache.c.s
 
 simple.o: simple.c.o
@@ -4375,8 +4375,8 @@ simple.o: simple.c.o
 
 # target to build an object file
 simple.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.o
 .PHONY : simple.c.o
 
 simple.i: simple.c.i
@@ -4384,8 +4384,8 @@ simple.i: simple.c.i
 
 # target to preprocess a source file
 simple.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.i
 .PHONY : simple.c.i
 
 simple.s: simple.c.s
@@ -4393,8 +4393,8 @@ simple.s: simple.c.s
 
 # target to generate assembly for a file
 simple.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simple.dir/build.make docs/examples/CMakeFiles/curl-example-simple.dir/simple.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simple.c.s
 .PHONY : simple.c.s
 
 simplepost.o: simplepost.c.o
@@ -4402,8 +4402,8 @@ simplepost.o: simplepost.c.o
 
 # target to build an object file
 simplepost.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.o
 .PHONY : simplepost.c.o
 
 simplepost.i: simplepost.c.i
@@ -4411,8 +4411,8 @@ simplepost.i: simplepost.c.i
 
 # target to preprocess a source file
 simplepost.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.i
 .PHONY : simplepost.c.i
 
 simplepost.s: simplepost.c.s
@@ -4420,8 +4420,8 @@ simplepost.s: simplepost.c.s
 
 # target to generate assembly for a file
 simplepost.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplepost.dir/build.make docs/examples/CMakeFiles/curl-example-simplepost.dir/simplepost.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplepost.c.s
 .PHONY : simplepost.c.s
 
 simplessl.o: simplessl.c.o
@@ -4429,8 +4429,8 @@ simplessl.o: simplessl.c.o
 
 # target to build an object file
 simplessl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.o
 .PHONY : simplessl.c.o
 
 simplessl.i: simplessl.c.i
@@ -4438,8 +4438,8 @@ simplessl.i: simplessl.c.i
 
 # target to preprocess a source file
 simplessl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.i
 .PHONY : simplessl.c.i
 
 simplessl.s: simplessl.c.s
@@ -4447,8 +4447,8 @@ simplessl.s: simplessl.c.s
 
 # target to generate assembly for a file
 simplessl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-simplessl.dir/build.make docs/examples/CMakeFiles/curl-example-simplessl.dir/simplessl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/simplessl.c.s
 .PHONY : simplessl.c.s
 
 smtp-authzid.o: smtp-authzid.c.o
@@ -4456,8 +4456,8 @@ smtp-authzid.o: smtp-authzid.c.o
 
 # target to build an object file
 smtp-authzid.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.o
 .PHONY : smtp-authzid.c.o
 
 smtp-authzid.i: smtp-authzid.c.i
@@ -4465,8 +4465,8 @@ smtp-authzid.i: smtp-authzid.c.i
 
 # target to preprocess a source file
 smtp-authzid.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.i
 .PHONY : smtp-authzid.c.i
 
 smtp-authzid.s: smtp-authzid.c.s
@@ -4474,8 +4474,8 @@ smtp-authzid.s: smtp-authzid.c.s
 
 # target to generate assembly for a file
 smtp-authzid.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-authzid.dir/smtp-authzid.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-authzid.c.s
 .PHONY : smtp-authzid.c.s
 
 smtp-expn.o: smtp-expn.c.o
@@ -4483,8 +4483,8 @@ smtp-expn.o: smtp-expn.c.o
 
 # target to build an object file
 smtp-expn.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.o
 .PHONY : smtp-expn.c.o
 
 smtp-expn.i: smtp-expn.c.i
@@ -4492,8 +4492,8 @@ smtp-expn.i: smtp-expn.c.i
 
 # target to preprocess a source file
 smtp-expn.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.i
 .PHONY : smtp-expn.c.i
 
 smtp-expn.s: smtp-expn.c.s
@@ -4501,8 +4501,8 @@ smtp-expn.s: smtp-expn.c.s
 
 # target to generate assembly for a file
 smtp-expn.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-expn.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-expn.dir/smtp-expn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-expn.c.s
 .PHONY : smtp-expn.c.s
 
 smtp-mail.o: smtp-mail.c.o
@@ -4510,8 +4510,8 @@ smtp-mail.o: smtp-mail.c.o
 
 # target to build an object file
 smtp-mail.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.o
 .PHONY : smtp-mail.c.o
 
 smtp-mail.i: smtp-mail.c.i
@@ -4519,8 +4519,8 @@ smtp-mail.i: smtp-mail.c.i
 
 # target to preprocess a source file
 smtp-mail.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.i
 .PHONY : smtp-mail.c.i
 
 smtp-mail.s: smtp-mail.c.s
@@ -4528,8 +4528,8 @@ smtp-mail.s: smtp-mail.c.s
 
 # target to generate assembly for a file
 smtp-mail.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mail.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mail.c.s
 .PHONY : smtp-mail.c.s
 
 smtp-mime.o: smtp-mime.c.o
@@ -4537,8 +4537,8 @@ smtp-mime.o: smtp-mime.c.o
 
 # target to build an object file
 smtp-mime.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.o
 .PHONY : smtp-mime.c.o
 
 smtp-mime.i: smtp-mime.c.i
@@ -4546,8 +4546,8 @@ smtp-mime.i: smtp-mime.c.i
 
 # target to preprocess a source file
 smtp-mime.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.i
 .PHONY : smtp-mime.c.i
 
 smtp-mime.s: smtp-mime.c.s
@@ -4555,8 +4555,8 @@ smtp-mime.s: smtp-mime.c.s
 
 # target to generate assembly for a file
 smtp-mime.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-mime.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-mime.dir/smtp-mime.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-mime.c.s
 .PHONY : smtp-mime.c.s
 
 smtp-multi.o: smtp-multi.c.o
@@ -4564,8 +4564,8 @@ smtp-multi.o: smtp-multi.c.o
 
 # target to build an object file
 smtp-multi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.o
 .PHONY : smtp-multi.c.o
 
 smtp-multi.i: smtp-multi.c.i
@@ -4573,8 +4573,8 @@ smtp-multi.i: smtp-multi.c.i
 
 # target to preprocess a source file
 smtp-multi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.i
 .PHONY : smtp-multi.c.i
 
 smtp-multi.s: smtp-multi.c.s
@@ -4582,8 +4582,8 @@ smtp-multi.s: smtp-multi.c.s
 
 # target to generate assembly for a file
 smtp-multi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-multi.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-multi.dir/smtp-multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-multi.c.s
 .PHONY : smtp-multi.c.s
 
 smtp-ssl.o: smtp-ssl.c.o
@@ -4591,8 +4591,8 @@ smtp-ssl.o: smtp-ssl.c.o
 
 # target to build an object file
 smtp-ssl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.o
 .PHONY : smtp-ssl.c.o
 
 smtp-ssl.i: smtp-ssl.c.i
@@ -4600,8 +4600,8 @@ smtp-ssl.i: smtp-ssl.c.i
 
 # target to preprocess a source file
 smtp-ssl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.i
 .PHONY : smtp-ssl.c.i
 
 smtp-ssl.s: smtp-ssl.c.s
@@ -4609,8 +4609,8 @@ smtp-ssl.s: smtp-ssl.c.s
 
 # target to generate assembly for a file
 smtp-ssl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-ssl.dir/smtp-ssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-ssl.c.s
 .PHONY : smtp-ssl.c.s
 
 smtp-tls.o: smtp-tls.c.o
@@ -4618,8 +4618,8 @@ smtp-tls.o: smtp-tls.c.o
 
 # target to build an object file
 smtp-tls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.o
 .PHONY : smtp-tls.c.o
 
 smtp-tls.i: smtp-tls.c.i
@@ -4627,8 +4627,8 @@ smtp-tls.i: smtp-tls.c.i
 
 # target to preprocess a source file
 smtp-tls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.i
 .PHONY : smtp-tls.c.i
 
 smtp-tls.s: smtp-tls.c.s
@@ -4636,8 +4636,8 @@ smtp-tls.s: smtp-tls.c.s
 
 # target to generate assembly for a file
 smtp-tls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-tls.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-tls.dir/smtp-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-tls.c.s
 .PHONY : smtp-tls.c.s
 
 smtp-vrfy.o: smtp-vrfy.c.o
@@ -4645,8 +4645,8 @@ smtp-vrfy.o: smtp-vrfy.c.o
 
 # target to build an object file
 smtp-vrfy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.o
 .PHONY : smtp-vrfy.c.o
 
 smtp-vrfy.i: smtp-vrfy.c.i
@@ -4654,8 +4654,8 @@ smtp-vrfy.i: smtp-vrfy.c.i
 
 # target to preprocess a source file
 smtp-vrfy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.i
 .PHONY : smtp-vrfy.c.i
 
 smtp-vrfy.s: smtp-vrfy.c.s
@@ -4663,8 +4663,8 @@ smtp-vrfy.s: smtp-vrfy.c.s
 
 # target to generate assembly for a file
 smtp-vrfy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/build.make docs/examples/CMakeFiles/curl-example-smtp-vrfy.dir/smtp-vrfy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/smtp-vrfy.c.s
 .PHONY : smtp-vrfy.c.s
 
 sslbackend.o: sslbackend.c.o
@@ -4672,8 +4672,8 @@ sslbackend.o: sslbackend.c.o
 
 # target to build an object file
 sslbackend.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.o
 .PHONY : sslbackend.c.o
 
 sslbackend.i: sslbackend.c.i
@@ -4681,8 +4681,8 @@ sslbackend.i: sslbackend.c.i
 
 # target to preprocess a source file
 sslbackend.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.i
 .PHONY : sslbackend.c.i
 
 sslbackend.s: sslbackend.c.s
@@ -4690,8 +4690,8 @@ sslbackend.s: sslbackend.c.s
 
 # target to generate assembly for a file
 sslbackend.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-sslbackend.dir/build.make docs/examples/CMakeFiles/curl-example-sslbackend.dir/sslbackend.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/sslbackend.c.s
 .PHONY : sslbackend.c.s
 
 unixsocket.o: unixsocket.c.o
@@ -4699,8 +4699,8 @@ unixsocket.o: unixsocket.c.o
 
 # target to build an object file
 unixsocket.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.o
 .PHONY : unixsocket.c.o
 
 unixsocket.i: unixsocket.c.i
@@ -4708,8 +4708,8 @@ unixsocket.i: unixsocket.c.i
 
 # target to preprocess a source file
 unixsocket.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.i
 .PHONY : unixsocket.c.i
 
 unixsocket.s: unixsocket.c.s
@@ -4717,8 +4717,8 @@ unixsocket.s: unixsocket.c.s
 
 # target to generate assembly for a file
 unixsocket.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-unixsocket.dir/build.make docs/examples/CMakeFiles/curl-example-unixsocket.dir/unixsocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/unixsocket.c.s
 .PHONY : unixsocket.c.s
 
 url2file.o: url2file.c.o
@@ -4726,8 +4726,8 @@ url2file.o: url2file.c.o
 
 # target to build an object file
 url2file.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.o
 .PHONY : url2file.c.o
 
 url2file.i: url2file.c.i
@@ -4735,8 +4735,8 @@ url2file.i: url2file.c.i
 
 # target to preprocess a source file
 url2file.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.i
 .PHONY : url2file.c.i
 
 url2file.s: url2file.c.s
@@ -4744,8 +4744,8 @@ url2file.s: url2file.c.s
 
 # target to generate assembly for a file
 url2file.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-url2file.dir/build.make docs/examples/CMakeFiles/curl-example-url2file.dir/url2file.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/url2file.c.s
 .PHONY : url2file.c.s
 
 urlapi.o: urlapi.c.o
@@ -4753,8 +4753,8 @@ urlapi.o: urlapi.c.o
 
 # target to build an object file
 urlapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.o
 .PHONY : urlapi.c.o
 
 urlapi.i: urlapi.c.i
@@ -4762,8 +4762,8 @@ urlapi.i: urlapi.c.i
 
 # target to preprocess a source file
 urlapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.i
 .PHONY : urlapi.c.i
 
 urlapi.s: urlapi.c.s
@@ -4771,8 +4771,8 @@ urlapi.s: urlapi.c.s
 
 # target to generate assembly for a file
 urlapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-urlapi.dir/build.make docs/examples/CMakeFiles/curl-example-urlapi.dir/urlapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/urlapi.c.s
 .PHONY : urlapi.c.s
 
 websocket-cb.o: websocket-cb.c.o
@@ -4780,8 +4780,8 @@ websocket-cb.o: websocket-cb.c.o
 
 # target to build an object file
 websocket-cb.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.o
 .PHONY : websocket-cb.c.o
 
 websocket-cb.i: websocket-cb.c.i
@@ -4789,8 +4789,8 @@ websocket-cb.i: websocket-cb.c.i
 
 # target to preprocess a source file
 websocket-cb.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.i
 .PHONY : websocket-cb.c.i
 
 websocket-cb.s: websocket-cb.c.s
@@ -4798,8 +4798,8 @@ websocket-cb.s: websocket-cb.c.s
 
 # target to generate assembly for a file
 websocket-cb.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-cb.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-cb.dir/websocket-cb.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-cb.c.s
 .PHONY : websocket-cb.c.s
 
 websocket-updown.o: websocket-updown.c.o
@@ -4807,8 +4807,8 @@ websocket-updown.o: websocket-updown.c.o
 
 # target to build an object file
 websocket-updown.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.o
 .PHONY : websocket-updown.c.o
 
 websocket-updown.i: websocket-updown.c.i
@@ -4816,8 +4816,8 @@ websocket-updown.i: websocket-updown.c.i
 
 # target to preprocess a source file
 websocket-updown.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.i
 .PHONY : websocket-updown.c.i
 
 websocket-updown.s: websocket-updown.c.s
@@ -4825,8 +4825,8 @@ websocket-updown.s: websocket-updown.c.s
 
 # target to generate assembly for a file
 websocket-updown.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket-updown.dir/build.make docs/examples/CMakeFiles/curl-example-websocket-updown.dir/websocket-updown.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket-updown.c.s
 .PHONY : websocket-updown.c.s
 
 websocket.o: websocket.c.o
@@ -4834,8 +4834,8 @@ websocket.o: websocket.c.o
 
 # target to build an object file
 websocket.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.o
 .PHONY : websocket.c.o
 
 websocket.i: websocket.c.i
@@ -4843,8 +4843,8 @@ websocket.i: websocket.c.i
 
 # target to preprocess a source file
 websocket.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.i
 .PHONY : websocket.c.i
 
 websocket.s: websocket.c.s
@@ -4852,8 +4852,8 @@ websocket.s: websocket.c.s
 
 # target to generate assembly for a file
 websocket.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-websocket.dir/build.make docs/examples/CMakeFiles/curl-example-websocket.dir/websocket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/examples/CMakeFiles/curl-example-all.dir/build.make docs/examples/CMakeFiles/curl-example-all.dir/websocket.c.s
 .PHONY : websocket.c.s
 
 # Help Target
@@ -5336,6 +5336,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/http3.c" "docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/http3.c" "docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-http3.dir/http3.c.o.d"
   "" "docs/examples/http3" "gcc" "docs/examples/CMakeFiles/curl-example-http3.dir/link.d"
   )
 

@@ -1,7 +1,7 @@
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/assertions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/assertions.h \
  /usr/include/c++/14/cstdlib \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -47,9 +47,7 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/sstream \
  /usr/include/c++/14/bits/requires_hosted.h /usr/include/c++/14/istream \
  /usr/include/c++/14/ios /usr/include/c++/14/iosfwd \
@@ -137,10 +135,10 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/functional_hash.h \
@@ -161,7 +159,7 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/config.h \
  /usr/include/c++/14/cstddef /usr/include/c++/14/cstdint \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
@@ -181,11 +179,11 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/backward/auto_ptr.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/allocator.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/allocator.h \
  /usr/include/c++/14/cstring /usr/include/string.h /usr/include/strings.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/version.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/forwards.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/version.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/forwards.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_map.h \
@@ -194,8 +192,8 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/writer.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/writer.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
@@ -213,4 +211,4 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/14/iostream /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h \
- /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_valueiterator.inl
+ /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_valueiterator.inl

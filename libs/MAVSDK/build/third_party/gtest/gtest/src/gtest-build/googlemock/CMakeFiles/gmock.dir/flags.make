@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include -I/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock -isystem /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include -isystem /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest
+CXX_INCLUDES = -I/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include -I/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock -isystem /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include -isystem /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+CXX_FLAGS = -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

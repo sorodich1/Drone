@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/mavlink
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/mavlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/mavlink
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink
 
 # Utility rule file for mavlink.
 
@@ -76,54 +76,54 @@ CMakeFiles/mavlink-complete: mavlink/src/mavlink-stamp/mavlink-patch
 CMakeFiles/mavlink-complete: mavlink/src/mavlink-stamp/mavlink-configure
 CMakeFiles/mavlink-complete: mavlink/src/mavlink-stamp/mavlink-build
 CMakeFiles/mavlink-complete: mavlink/src/mavlink-stamp/mavlink-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'mavlink'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'mavlink'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-done
 
 mavlink/src/mavlink-stamp/mavlink-build: mavlink/src/mavlink-stamp/mavlink-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-build
 
 mavlink/src/mavlink-stamp/mavlink-configure: mavlink/tmp/mavlink-cfgcmd.txt
 mavlink/src/mavlink-stamp/mavlink-configure: mavlink/src/mavlink-stamp/mavlink-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DMAVLINK_DIALECT=common "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink -B /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DMAVLINK_DIALECT=ardupilotmega "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink -B /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-configure
 
 mavlink/src/mavlink-stamp/mavlink-download: mavlink/src/mavlink-stamp/mavlink-gitinfo.txt
 mavlink/src/mavlink-stamp/mavlink-download: mavlink/src/mavlink-stamp/mavlink-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-download
 
 mavlink/src/mavlink-stamp/mavlink-install: mavlink/src/mavlink-stamp/mavlink-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake --build /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build --target install
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/minimal.xml /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/standard.xml /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/common.xml /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/ardupilotmega.xml /home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake --build /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build --target install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/minimal.xml /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/standard.xml /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/common.xml /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E copy /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/ardupilotmega.xml /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-install
 
 mavlink/src/mavlink-stamp/mavlink-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'mavlink'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'mavlink'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-mkdir
 
 mavlink/src/mavlink-stamp/mavlink-patch: mavlink/src/mavlink-stamp/mavlink-patch-info.txt
 mavlink/src/mavlink-stamp/mavlink-patch: mavlink/src/mavlink-stamp/mavlink-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing patch step for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && git checkout . && git apply /home/pi/Drone/MAVSDK/third_party/mavlink/mavlink.patch
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing patch step for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && git checkout . && git apply /home/pi/Drone/libs/MAVSDK/third_party/mavlink/mavlink.patch
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-patch
 
 mavlink/src/mavlink-stamp/mavlink-update: mavlink/tmp/mavlink-gitupdate.cmake
 mavlink/src/mavlink-stamp/mavlink-update: mavlink/src/mavlink-stamp/mavlink-update-info.txt
 mavlink/src/mavlink-stamp/mavlink-update: mavlink/src/mavlink-stamp/mavlink-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'mavlink'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'mavlink'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/tmp/mavlink-gitupdate.cmake
 
 CMakeFiles/mavlink.dir/codegen:
 .PHONY : CMakeFiles/mavlink.dir/codegen
@@ -149,6 +149,6 @@ CMakeFiles/mavlink.dir/clean:
 .PHONY : CMakeFiles/mavlink.dir/clean
 
 CMakeFiles/mavlink.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/mavlink /home/pi/Drone/MAVSDK/third_party/mavlink /home/pi/Drone/MAVSDK/build/third_party/mavlink /home/pi/Drone/MAVSDK/build/third_party/mavlink /home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/mavlink /home/pi/Drone/libs/MAVSDK/third_party/mavlink /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mavlink.dir/depend
 

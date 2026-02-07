@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles/gtest"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles/gtest"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles/gtest.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles/gtest.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles/gtest-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles/gtest-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-update.rule"
 		}
 	],
 	"target" : 

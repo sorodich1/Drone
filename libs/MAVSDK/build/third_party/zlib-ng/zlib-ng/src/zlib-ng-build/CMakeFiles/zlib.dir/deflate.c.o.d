@@ -1,7 +1,7 @@
 CMakeFiles/zlib.dir/deflate.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zbuild.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zbuild.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h /usr/include/string.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -27,12 +27,12 @@ CMakeFiles/zlib.dir/deflate.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zutil.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zlib.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zutil.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zlib.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zconf.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zlib_name_mangling.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zconf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build/zlib_name_mangling.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
@@ -52,8 +52,8 @@ CMakeFiles/zlib.dir/deflate.c.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zendian.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/adler32_fold.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/crc32_fold.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate_p.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/functable.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zendian.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/adler32_fold.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/crc32_fold.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/deflate_p.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/functable.h

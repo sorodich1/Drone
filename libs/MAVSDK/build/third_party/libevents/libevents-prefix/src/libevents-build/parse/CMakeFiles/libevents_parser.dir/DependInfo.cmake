@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/parser.cpp" "parse/CMakeFiles/libevents_parser.dir/parser.cpp.o" "gcc" "parse/CMakeFiles/libevents_parser.dir/parser.cpp.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/parser.cpp" "parse/CMakeFiles/libevents_parser.dir/parser.cpp.o" "gcc" "parse/CMakeFiles/libevents_parser.dir/parser.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

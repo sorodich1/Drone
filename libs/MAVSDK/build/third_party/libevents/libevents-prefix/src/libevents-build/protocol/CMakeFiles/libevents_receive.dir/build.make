@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 # Utility rule file for libevents_receive.
 
@@ -77,10 +77,10 @@ protocol/CMakeFiles/libevents_receive.dir/build: libevents_receive
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/build
 
 protocol/CMakeFiles/libevents_receive.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol && $(CMAKE_COMMAND) -P CMakeFiles/libevents_receive.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol && $(CMAKE_COMMAND) -P CMakeFiles/libevents_receive.dir/cmake_clean.cmake
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/clean
 
 protocol/CMakeFiles/libevents_receive.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/protocol /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol/CMakeFiles/libevents_receive.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/protocol /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/protocol/CMakeFiles/libevents_receive.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/depend
 

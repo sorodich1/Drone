@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/generate_c_headers"
-  "include/mavlink/common/mavlink.h"
+  "include/mavlink/ardupilotmega/mavlink.h"
 )
 
 # Per-language clean rules from dependency scanning.

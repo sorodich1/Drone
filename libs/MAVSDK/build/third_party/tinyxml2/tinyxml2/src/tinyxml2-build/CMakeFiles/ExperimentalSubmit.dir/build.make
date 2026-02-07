@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -85,6 +85,6 @@ CMakeFiles/ExperimentalSubmit.dir/clean:
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/clean
 
 CMakeFiles/ExperimentalSubmit.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/depend
 

@@ -18,23 +18,23 @@ our @EXPORT = qw(
     $VERSION @LDLIBS
 );
 
-our @PREFIX                     = ( '/home/pi/Drone/MAVSDK/build/third_party/install' );
-our @libdir                     = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib' );
-our @BINDIR                     = ( '/home/pi/Drone/MAVSDK/build/third_party/install/bin' );
+our @PREFIX                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install' );
+our @libdir                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib' );
+our @BINDIR                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/bin' );
 our @BINDIR_REL_PREFIX          = ( 'bin' );
-our @LIBDIR                     = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib' );
+our @LIBDIR                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib' );
 our @LIBDIR_REL_PREFIX          = ( 'lib' );
-our @INCLUDEDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/install/include' );
+our @INCLUDEDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/include' );
 our @INCLUDEDIR_REL_PREFIX      = ( 'include' );
-our @APPLINKDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/install/include/openssl' );
+our @APPLINKDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/include/openssl' );
 our @APPLINKDIR_REL_PREFIX      = ( 'include/openssl' );
-our @ENGINESDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib/engines-3' );
+our @ENGINESDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/engines-3' );
 our @ENGINESDIR_REL_LIBDIR      = ( 'engines-3' );
-our @MODULESDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib/ossl-modules' );
+our @MODULESDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/ossl-modules' );
 our @MODULESDIR_REL_LIBDIR      = ( 'ossl-modules' );
-our @PKGCONFIGDIR               = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib/pkgconfig' );
+our @PKGCONFIGDIR               = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/pkgconfig' );
 our @PKGCONFIGDIR_REL_LIBDIR    = ( 'pkgconfig' );
-our @CMAKECONFIGDIR             = ( '/home/pi/Drone/MAVSDK/build/third_party/install/lib/cmake/OpenSSL' );
+our @CMAKECONFIGDIR             = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/cmake/OpenSSL' );
 our @CMAKECONFIGDIR_REL_LIBDIR  = ( 'cmake/OpenSSL' );
 our $VERSION                    = '3.6.0';
 our @LDLIBS                     =

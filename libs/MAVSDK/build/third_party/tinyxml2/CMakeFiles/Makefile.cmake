@@ -11,7 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeSystem.cmake"
   "tinyxml2/tmp/tinyxml2-mkdirs.cmake"
-  "/home/pi/Drone/MAVSDK/third_party/tinyxml2/CMakeLists.txt"
+  "/home/pi/Drone/libs/MAVSDK/third_party/tinyxml2/CMakeLists.txt"
   "/usr/share/cmake-3.31/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.31/Modules/CMakeCInformation.cmake"

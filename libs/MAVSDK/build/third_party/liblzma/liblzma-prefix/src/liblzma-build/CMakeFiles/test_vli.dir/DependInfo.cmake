@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_vli.c" "CMakeFiles/test_vli.dir/tests/test_vli.c.o" "gcc" "CMakeFiles/test_vli.dir/tests/test_vli.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_vli.c" "CMakeFiles/test_vli.dir/tests/test_vli.c.o" "gcc" "CMakeFiles/test_vli.dir/tests/test_vli.c.o.d"
   "" "tests_bin/test_vli" "gcc" "CMakeFiles/test_vli.dir/link.d"
   )
 

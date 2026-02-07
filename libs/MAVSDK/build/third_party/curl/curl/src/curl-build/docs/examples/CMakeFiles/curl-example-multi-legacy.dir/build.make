@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Include any dependencies generated for this target.
 include docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend.make
@@ -73,18 +73,18 @@ docs/examples/CMakeFiles/curl-example-multi-legacy.dir/codegen:
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-legacy.dir/codegen
 
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: docs/examples/CMakeFiles/curl-example-multi-legacy.dir/flags.make
-docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c
+docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o: docs/examples/CMakeFiles/curl-example-multi-legacy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -MF CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o.d -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -MF CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o.d -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c
 
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c > CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c > CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.i
 
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-legacy.c -o CMakeFiles/curl-example-multi-legacy.dir/multi-legacy.c.s
 
 # Object files for target curl-example-multi-legacy
 curl__example__multi__legacy_OBJECTS = \
@@ -97,21 +97,21 @@ docs/examples/multi-legacy: docs/examples/CMakeFiles/curl-example-multi-legacy.d
 docs/examples/multi-legacy: docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build.make
 docs/examples/multi-legacy: docs/examples/CMakeFiles/curl-example-multi-legacy.dir/compiler_depend.ts
 docs/examples/multi-legacy: lib/libcurl.a
-docs/examples/multi-legacy: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libssl.a
-docs/examples/multi-legacy: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libcrypto.a
+docs/examples/multi-legacy: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libssl.a
+docs/examples/multi-legacy: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libcrypto.a
 docs/examples/multi-legacy: docs/examples/CMakeFiles/curl-example-multi-legacy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable multi-legacy"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-multi-legacy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable multi-legacy"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-multi-legacy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build: docs/examples/multi-legacy
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-legacy.dir/build
 
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-multi-legacy.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-multi-legacy.dir/cmake_clean.cmake
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-legacy.dir/clean
 
 docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-multi-legacy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/examples/CMakeFiles/curl-example-multi-legacy.dir/depend
 

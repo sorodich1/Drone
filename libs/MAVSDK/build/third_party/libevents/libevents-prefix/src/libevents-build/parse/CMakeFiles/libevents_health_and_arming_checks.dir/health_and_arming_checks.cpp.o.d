@@ -1,7 +1,7 @@
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o: \
- /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.h \
  /usr/include/c++/14/cstdint \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -35,8 +35,8 @@ parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks
  /usr/include/c++/14/bits/exception.h /usr/include/c++/14/typeinfo \
  /usr/include/c++/14/bits/functexcept.h \
  /usr/include/c++/14/bits/exception_defines.h \
- /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/../common/event_type.h \
- /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/parser.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/../common/event_type.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/parser.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_algobase.h \
@@ -147,9 +147,7 @@ parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -157,14 +155,14 @@ parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc /usr/include/c++/14/vector \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/nlohmann/json_fwd.hpp
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/nlohmann/json_fwd.hpp

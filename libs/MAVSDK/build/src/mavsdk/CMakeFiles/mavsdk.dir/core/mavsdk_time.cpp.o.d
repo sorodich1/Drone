@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -106,9 +106,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/specfun.h \
  /usr/include/c++/14/bits/stl_algobase.h \
  /usr/include/c++/14/bits/stl_iterator_base_types.h \

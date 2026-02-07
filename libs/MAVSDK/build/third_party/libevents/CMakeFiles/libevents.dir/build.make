@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/libevents
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/libevents
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents
 
 # Utility rule file for libevents.
 
@@ -76,49 +76,49 @@ CMakeFiles/libevents-complete: libevents-prefix/src/libevents-stamp/libevents-pa
 CMakeFiles/libevents-complete: libevents-prefix/src/libevents-stamp/libevents-configure
 CMakeFiles/libevents-complete: libevents-prefix/src/libevents-stamp/libevents-build
 CMakeFiles/libevents-complete: libevents-prefix/src/libevents-stamp/libevents-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libevents'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles/libevents-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libevents'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles/libevents-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-done
 
 libevents-prefix/src/libevents-stamp/libevents-build: libevents-prefix/src/libevents-stamp/libevents-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libevents'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libevents'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-build
 
 libevents-prefix/src/libevents-stamp/libevents-configure: libevents-prefix/tmp/libevents-cfgcmd.txt
 libevents-prefix/src/libevents-stamp/libevents-configure: libevents-prefix/src/libevents-stamp/libevents-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libevents'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DCMAKE_CFG_INTDIR=. -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_TRY_COMPILE_CONFIGURATION= -DENABLE_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp -B /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libevents'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DBUILD_SHARED_LIBS=OFF -DCMAKE_CFG_INTDIR=. -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_TRY_COMPILE_CONFIGURATION= -DENABLE_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp -B /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-configure
 
 libevents-prefix/src/libevents-stamp/libevents-download: libevents-prefix/src/libevents-stamp/libevents-gitinfo.txt
 libevents-prefix/src/libevents-stamp/libevents-download: libevents-prefix/src/libevents-stamp/libevents-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libevents'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libevents'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-download
 
 libevents-prefix/src/libevents-stamp/libevents-install: libevents-prefix/src/libevents-stamp/libevents-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libevents'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libevents'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-install
 
 libevents-prefix/src/libevents-stamp/libevents-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libevents'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libevents'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-mkdir
 
 libevents-prefix/src/libevents-stamp/libevents-patch: libevents-prefix/src/libevents-stamp/libevents-patch-info.txt
 libevents-prefix/src/libevents-stamp/libevents-patch: libevents-prefix/src/libevents-stamp/libevents-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libevents'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libevents'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-patch
 
 libevents-prefix/src/libevents-stamp/libevents-update: libevents-prefix/tmp/libevents-gitupdate.cmake
 libevents-prefix/src/libevents-stamp/libevents-update: libevents-prefix/src/libevents-stamp/libevents-update-info.txt
 libevents-prefix/src/libevents-stamp/libevents-update: libevents-prefix/src/libevents-stamp/libevents-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libevents'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libevents'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/tmp/libevents-gitupdate.cmake
 
 CMakeFiles/libevents.dir/codegen:
 .PHONY : CMakeFiles/libevents.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/libevents.dir/clean:
 .PHONY : CMakeFiles/libevents.dir/clean
 
 CMakeFiles/libevents.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/libevents /home/pi/Drone/MAVSDK/third_party/libevents /home/pi/Drone/MAVSDK/build/third_party/libevents /home/pi/Drone/MAVSDK/build/third_party/libevents /home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles/libevents.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/libevents /home/pi/Drone/libs/MAVSDK/third_party/libevents /home/pi/Drone/libs/MAVSDK/build/third_party/libevents /home/pi/Drone/libs/MAVSDK/build/third_party/libevents /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles/libevents.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/libevents.dir/depend
 

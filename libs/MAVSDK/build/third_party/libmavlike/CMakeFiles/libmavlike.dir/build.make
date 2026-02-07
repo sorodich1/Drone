@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/libmavlike
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/libmavlike
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libmavlike
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike
 
 # Utility rule file for libmavlike.
 
@@ -76,49 +76,49 @@ CMakeFiles/libmavlike-complete: libmavlike/src/libmavlike-stamp/libmavlike-patch
 CMakeFiles/libmavlike-complete: libmavlike/src/libmavlike-stamp/libmavlike-configure
 CMakeFiles/libmavlike-complete: libmavlike/src/libmavlike-stamp/libmavlike-build
 CMakeFiles/libmavlike-complete: libmavlike/src/libmavlike-stamp/libmavlike-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libmavlike'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'libmavlike'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-done
 
 libmavlike/src/libmavlike-stamp/libmavlike-build: libmavlike/src/libmavlike-stamp/libmavlike-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libmavlike'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'libmavlike'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-build
 
 libmavlike/src/libmavlike-stamp/libmavlike-configure: libmavlike/tmp/libmavlike-cfgcmd.txt
 libmavlike/src/libmavlike-stamp/libmavlike-configure: libmavlike/src/libmavlike-stamp/libmavlike-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libmavlike'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE=Release -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike -B /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'libmavlike'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike -B /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-configure
 
 libmavlike/src/libmavlike-stamp/libmavlike-download: libmavlike/src/libmavlike-stamp/libmavlike-gitinfo.txt
 libmavlike/src/libmavlike-stamp/libmavlike-download: libmavlike/src/libmavlike-stamp/libmavlike-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libmavlike'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'libmavlike'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-download
 
 libmavlike/src/libmavlike-stamp/libmavlike-install: libmavlike/src/libmavlike-stamp/libmavlike-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libmavlike'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'libmavlike'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-install
 
 libmavlike/src/libmavlike-stamp/libmavlike-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libmavlike'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libmavlike'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-mkdir
 
 libmavlike/src/libmavlike-stamp/libmavlike-patch: libmavlike/src/libmavlike-stamp/libmavlike-patch-info.txt
 libmavlike/src/libmavlike-stamp/libmavlike-patch: libmavlike/src/libmavlike-stamp/libmavlike-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libmavlike'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'libmavlike'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-patch
 
 libmavlike/src/libmavlike-stamp/libmavlike-update: libmavlike/tmp/libmavlike-gitupdate.cmake
 libmavlike/src/libmavlike-stamp/libmavlike-update: libmavlike/src/libmavlike-stamp/libmavlike-update-info.txt
 libmavlike/src/libmavlike-stamp/libmavlike-update: libmavlike/src/libmavlike-stamp/libmavlike-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libmavlike'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'libmavlike'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/tmp/libmavlike-gitupdate.cmake
 
 CMakeFiles/libmavlike.dir/codegen:
 .PHONY : CMakeFiles/libmavlike.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/libmavlike.dir/clean:
 .PHONY : CMakeFiles/libmavlike.dir/clean
 
 CMakeFiles/libmavlike.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/libmavlike /home/pi/Drone/MAVSDK/third_party/libmavlike /home/pi/Drone/MAVSDK/build/third_party/libmavlike /home/pi/Drone/MAVSDK/build/third_party/libmavlike /home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/libmavlike /home/pi/Drone/libs/MAVSDK/third_party/libmavlike /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/libmavlike.dir/depend
 

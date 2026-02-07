@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-all.cc" "googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-all.cc" "googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

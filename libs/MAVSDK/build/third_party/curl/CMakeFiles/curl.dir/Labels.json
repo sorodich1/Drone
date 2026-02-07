@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles/curl"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles/curl"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles/curl.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles/curl.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles/curl-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles/curl-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-update.rule"
 		}
 	],
 	"target" : 

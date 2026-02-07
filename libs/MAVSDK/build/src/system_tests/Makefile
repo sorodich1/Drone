@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles /home/pi/Drone/MAVSDK/build/src/system_tests//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/src/system_tests//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/clean
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/system_tests/CMakeFiles/system_tests_runner.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/CMakeFiles/system_tests_runner.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/CMakeFiles/system_tests_runner.dir/rule
 .PHONY : src/system_tests/CMakeFiles/system_tests_runner.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ system_tests_runner: src/system_tests/CMakeFiles/system_tests_runner.dir/rule
 
 # fast build rule for target.
 system_tests_runner/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/build
 .PHONY : system_tests_runner/fast
 
 action_arm_disarm.o: action_arm_disarm.cpp.o
@@ -180,7 +180,7 @@ action_arm_disarm.o: action_arm_disarm.cpp.o
 
 # target to build an object file
 action_arm_disarm.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.o
 .PHONY : action_arm_disarm.cpp.o
 
 action_arm_disarm.i: action_arm_disarm.cpp.i
@@ -188,7 +188,7 @@ action_arm_disarm.i: action_arm_disarm.cpp.i
 
 # target to preprocess a source file
 action_arm_disarm.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.i
 .PHONY : action_arm_disarm.cpp.i
 
 action_arm_disarm.s: action_arm_disarm.cpp.s
@@ -196,7 +196,7 @@ action_arm_disarm.s: action_arm_disarm.cpp.s
 
 # target to generate assembly for a file
 action_arm_disarm.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/action_arm_disarm.cpp.s
 .PHONY : action_arm_disarm.cpp.s
 
 camera_format_storage.o: camera_format_storage.cpp.o
@@ -204,7 +204,7 @@ camera_format_storage.o: camera_format_storage.cpp.o
 
 # target to build an object file
 camera_format_storage.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.o
 .PHONY : camera_format_storage.cpp.o
 
 camera_format_storage.i: camera_format_storage.cpp.i
@@ -212,7 +212,7 @@ camera_format_storage.i: camera_format_storage.cpp.i
 
 # target to preprocess a source file
 camera_format_storage.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.i
 .PHONY : camera_format_storage.cpp.i
 
 camera_format_storage.s: camera_format_storage.cpp.s
@@ -220,7 +220,7 @@ camera_format_storage.s: camera_format_storage.cpp.s
 
 # target to generate assembly for a file
 camera_format_storage.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_format_storage.cpp.s
 .PHONY : camera_format_storage.cpp.s
 
 camera_list_cameras.o: camera_list_cameras.cpp.o
@@ -228,7 +228,7 @@ camera_list_cameras.o: camera_list_cameras.cpp.o
 
 # target to build an object file
 camera_list_cameras.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.o
 .PHONY : camera_list_cameras.cpp.o
 
 camera_list_cameras.i: camera_list_cameras.cpp.i
@@ -236,7 +236,7 @@ camera_list_cameras.i: camera_list_cameras.cpp.i
 
 # target to preprocess a source file
 camera_list_cameras.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.i
 .PHONY : camera_list_cameras.cpp.i
 
 camera_list_cameras.s: camera_list_cameras.cpp.s
@@ -244,7 +244,7 @@ camera_list_cameras.s: camera_list_cameras.cpp.s
 
 # target to generate assembly for a file
 camera_list_cameras.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_list_cameras.cpp.s
 .PHONY : camera_list_cameras.cpp.s
 
 camera_mode.o: camera_mode.cpp.o
@@ -252,7 +252,7 @@ camera_mode.o: camera_mode.cpp.o
 
 # target to build an object file
 camera_mode.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.o
 .PHONY : camera_mode.cpp.o
 
 camera_mode.i: camera_mode.cpp.i
@@ -260,7 +260,7 @@ camera_mode.i: camera_mode.cpp.i
 
 # target to preprocess a source file
 camera_mode.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.i
 .PHONY : camera_mode.cpp.i
 
 camera_mode.s: camera_mode.cpp.s
@@ -268,7 +268,7 @@ camera_mode.s: camera_mode.cpp.s
 
 # target to generate assembly for a file
 camera_mode.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_mode.cpp.s
 .PHONY : camera_mode.cpp.s
 
 camera_settings.o: camera_settings.cpp.o
@@ -276,7 +276,7 @@ camera_settings.o: camera_settings.cpp.o
 
 # target to build an object file
 camera_settings.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.o
 .PHONY : camera_settings.cpp.o
 
 camera_settings.i: camera_settings.cpp.i
@@ -284,7 +284,7 @@ camera_settings.i: camera_settings.cpp.i
 
 # target to preprocess a source file
 camera_settings.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.i
 .PHONY : camera_settings.cpp.i
 
 camera_settings.s: camera_settings.cpp.s
@@ -292,7 +292,7 @@ camera_settings.s: camera_settings.cpp.s
 
 # target to generate assembly for a file
 camera_settings.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_settings.cpp.s
 .PHONY : camera_settings.cpp.s
 
 camera_storage.o: camera_storage.cpp.o
@@ -300,7 +300,7 @@ camera_storage.o: camera_storage.cpp.o
 
 # target to build an object file
 camera_storage.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.o
 .PHONY : camera_storage.cpp.o
 
 camera_storage.i: camera_storage.cpp.i
@@ -308,7 +308,7 @@ camera_storage.i: camera_storage.cpp.i
 
 # target to preprocess a source file
 camera_storage.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.i
 .PHONY : camera_storage.cpp.i
 
 camera_storage.s: camera_storage.cpp.s
@@ -316,7 +316,7 @@ camera_storage.s: camera_storage.cpp.s
 
 # target to generate assembly for a file
 camera_storage.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_storage.cpp.s
 .PHONY : camera_storage.cpp.s
 
 camera_take_photo.o: camera_take_photo.cpp.o
@@ -324,7 +324,7 @@ camera_take_photo.o: camera_take_photo.cpp.o
 
 # target to build an object file
 camera_take_photo.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.o
 .PHONY : camera_take_photo.cpp.o
 
 camera_take_photo.i: camera_take_photo.cpp.i
@@ -332,7 +332,7 @@ camera_take_photo.i: camera_take_photo.cpp.i
 
 # target to preprocess a source file
 camera_take_photo.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.i
 .PHONY : camera_take_photo.cpp.i
 
 camera_take_photo.s: camera_take_photo.cpp.s
@@ -340,7 +340,7 @@ camera_take_photo.s: camera_take_photo.cpp.s
 
 # target to generate assembly for a file
 camera_take_photo.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo.cpp.s
 .PHONY : camera_take_photo.cpp.s
 
 camera_take_photo_interval.o: camera_take_photo_interval.cpp.o
@@ -348,7 +348,7 @@ camera_take_photo_interval.o: camera_take_photo_interval.cpp.o
 
 # target to build an object file
 camera_take_photo_interval.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.o
 .PHONY : camera_take_photo_interval.cpp.o
 
 camera_take_photo_interval.i: camera_take_photo_interval.cpp.i
@@ -356,7 +356,7 @@ camera_take_photo_interval.i: camera_take_photo_interval.cpp.i
 
 # target to preprocess a source file
 camera_take_photo_interval.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.i
 .PHONY : camera_take_photo_interval.cpp.i
 
 camera_take_photo_interval.s: camera_take_photo_interval.cpp.s
@@ -364,7 +364,7 @@ camera_take_photo_interval.s: camera_take_photo_interval.cpp.s
 
 # target to generate assembly for a file
 camera_take_photo_interval.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_take_photo_interval.cpp.s
 .PHONY : camera_take_photo_interval.cpp.s
 
 camera_video_stream.o: camera_video_stream.cpp.o
@@ -372,7 +372,7 @@ camera_video_stream.o: camera_video_stream.cpp.o
 
 # target to build an object file
 camera_video_stream.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.o
 .PHONY : camera_video_stream.cpp.o
 
 camera_video_stream.i: camera_video_stream.cpp.i
@@ -380,7 +380,7 @@ camera_video_stream.i: camera_video_stream.cpp.i
 
 # target to preprocess a source file
 camera_video_stream.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.i
 .PHONY : camera_video_stream.cpp.i
 
 camera_video_stream.s: camera_video_stream.cpp.s
@@ -388,7 +388,7 @@ camera_video_stream.s: camera_video_stream.cpp.s
 
 # target to generate assembly for a file
 camera_video_stream.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/camera_video_stream.cpp.s
 .PHONY : camera_video_stream.cpp.s
 
 component_metadata.o: component_metadata.cpp.o
@@ -396,7 +396,7 @@ component_metadata.o: component_metadata.cpp.o
 
 # target to build an object file
 component_metadata.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.o
 .PHONY : component_metadata.cpp.o
 
 component_metadata.i: component_metadata.cpp.i
@@ -404,7 +404,7 @@ component_metadata.i: component_metadata.cpp.i
 
 # target to preprocess a source file
 component_metadata.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.i
 .PHONY : component_metadata.cpp.i
 
 component_metadata.s: component_metadata.cpp.s
@@ -412,7 +412,7 @@ component_metadata.s: component_metadata.cpp.s
 
 # target to generate assembly for a file
 component_metadata.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/component_metadata.cpp.s
 .PHONY : component_metadata.cpp.s
 
 connections.o: connections.cpp.o
@@ -420,7 +420,7 @@ connections.o: connections.cpp.o
 
 # target to build an object file
 connections.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.o
 .PHONY : connections.cpp.o
 
 connections.i: connections.cpp.i
@@ -428,7 +428,7 @@ connections.i: connections.cpp.i
 
 # target to preprocess a source file
 connections.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.i
 .PHONY : connections.cpp.i
 
 connections.s: connections.cpp.s
@@ -436,7 +436,7 @@ connections.s: connections.cpp.s
 
 # target to generate assembly for a file
 connections.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/connections.cpp.s
 .PHONY : connections.cpp.s
 
 fs_helpers.o: fs_helpers.cpp.o
@@ -444,7 +444,7 @@ fs_helpers.o: fs_helpers.cpp.o
 
 # target to build an object file
 fs_helpers.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.o
 .PHONY : fs_helpers.cpp.o
 
 fs_helpers.i: fs_helpers.cpp.i
@@ -452,7 +452,7 @@ fs_helpers.i: fs_helpers.cpp.i
 
 # target to preprocess a source file
 fs_helpers.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.i
 .PHONY : fs_helpers.cpp.i
 
 fs_helpers.s: fs_helpers.cpp.s
@@ -460,7 +460,7 @@ fs_helpers.s: fs_helpers.cpp.s
 
 # target to generate assembly for a file
 fs_helpers.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/fs_helpers.cpp.s
 .PHONY : fs_helpers.cpp.s
 
 ftp_compare_files.o: ftp_compare_files.cpp.o
@@ -468,7 +468,7 @@ ftp_compare_files.o: ftp_compare_files.cpp.o
 
 # target to build an object file
 ftp_compare_files.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.o
 .PHONY : ftp_compare_files.cpp.o
 
 ftp_compare_files.i: ftp_compare_files.cpp.i
@@ -476,7 +476,7 @@ ftp_compare_files.i: ftp_compare_files.cpp.i
 
 # target to preprocess a source file
 ftp_compare_files.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.i
 .PHONY : ftp_compare_files.cpp.i
 
 ftp_compare_files.s: ftp_compare_files.cpp.s
@@ -484,7 +484,7 @@ ftp_compare_files.s: ftp_compare_files.cpp.s
 
 # target to generate assembly for a file
 ftp_compare_files.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_compare_files.cpp.s
 .PHONY : ftp_compare_files.cpp.s
 
 ftp_create_dir.o: ftp_create_dir.cpp.o
@@ -492,7 +492,7 @@ ftp_create_dir.o: ftp_create_dir.cpp.o
 
 # target to build an object file
 ftp_create_dir.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.o
 .PHONY : ftp_create_dir.cpp.o
 
 ftp_create_dir.i: ftp_create_dir.cpp.i
@@ -500,7 +500,7 @@ ftp_create_dir.i: ftp_create_dir.cpp.i
 
 # target to preprocess a source file
 ftp_create_dir.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.i
 .PHONY : ftp_create_dir.cpp.i
 
 ftp_create_dir.s: ftp_create_dir.cpp.s
@@ -508,7 +508,7 @@ ftp_create_dir.s: ftp_create_dir.cpp.s
 
 # target to generate assembly for a file
 ftp_create_dir.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_create_dir.cpp.s
 .PHONY : ftp_create_dir.cpp.s
 
 ftp_download_file.o: ftp_download_file.cpp.o
@@ -516,7 +516,7 @@ ftp_download_file.o: ftp_download_file.cpp.o
 
 # target to build an object file
 ftp_download_file.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.o
 .PHONY : ftp_download_file.cpp.o
 
 ftp_download_file.i: ftp_download_file.cpp.i
@@ -524,7 +524,7 @@ ftp_download_file.i: ftp_download_file.cpp.i
 
 # target to preprocess a source file
 ftp_download_file.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.i
 .PHONY : ftp_download_file.cpp.i
 
 ftp_download_file.s: ftp_download_file.cpp.s
@@ -532,7 +532,7 @@ ftp_download_file.s: ftp_download_file.cpp.s
 
 # target to generate assembly for a file
 ftp_download_file.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file.cpp.s
 .PHONY : ftp_download_file.cpp.s
 
 ftp_download_file_burst.o: ftp_download_file_burst.cpp.o
@@ -540,7 +540,7 @@ ftp_download_file_burst.o: ftp_download_file_burst.cpp.o
 
 # target to build an object file
 ftp_download_file_burst.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.o
 .PHONY : ftp_download_file_burst.cpp.o
 
 ftp_download_file_burst.i: ftp_download_file_burst.cpp.i
@@ -548,7 +548,7 @@ ftp_download_file_burst.i: ftp_download_file_burst.cpp.i
 
 # target to preprocess a source file
 ftp_download_file_burst.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.i
 .PHONY : ftp_download_file_burst.cpp.i
 
 ftp_download_file_burst.s: ftp_download_file_burst.cpp.s
@@ -556,7 +556,7 @@ ftp_download_file_burst.s: ftp_download_file_burst.cpp.s
 
 # target to generate assembly for a file
 ftp_download_file_burst.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_download_file_burst.cpp.s
 .PHONY : ftp_download_file_burst.cpp.s
 
 ftp_list_dir.o: ftp_list_dir.cpp.o
@@ -564,7 +564,7 @@ ftp_list_dir.o: ftp_list_dir.cpp.o
 
 # target to build an object file
 ftp_list_dir.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.o
 .PHONY : ftp_list_dir.cpp.o
 
 ftp_list_dir.i: ftp_list_dir.cpp.i
@@ -572,7 +572,7 @@ ftp_list_dir.i: ftp_list_dir.cpp.i
 
 # target to preprocess a source file
 ftp_list_dir.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.i
 .PHONY : ftp_list_dir.cpp.i
 
 ftp_list_dir.s: ftp_list_dir.cpp.s
@@ -580,7 +580,7 @@ ftp_list_dir.s: ftp_list_dir.cpp.s
 
 # target to generate assembly for a file
 ftp_list_dir.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_list_dir.cpp.s
 .PHONY : ftp_list_dir.cpp.s
 
 ftp_remove_dir.o: ftp_remove_dir.cpp.o
@@ -588,7 +588,7 @@ ftp_remove_dir.o: ftp_remove_dir.cpp.o
 
 # target to build an object file
 ftp_remove_dir.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.o
 .PHONY : ftp_remove_dir.cpp.o
 
 ftp_remove_dir.i: ftp_remove_dir.cpp.i
@@ -596,7 +596,7 @@ ftp_remove_dir.i: ftp_remove_dir.cpp.i
 
 # target to preprocess a source file
 ftp_remove_dir.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.i
 .PHONY : ftp_remove_dir.cpp.i
 
 ftp_remove_dir.s: ftp_remove_dir.cpp.s
@@ -604,7 +604,7 @@ ftp_remove_dir.s: ftp_remove_dir.cpp.s
 
 # target to generate assembly for a file
 ftp_remove_dir.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_dir.cpp.s
 .PHONY : ftp_remove_dir.cpp.s
 
 ftp_remove_file.o: ftp_remove_file.cpp.o
@@ -612,7 +612,7 @@ ftp_remove_file.o: ftp_remove_file.cpp.o
 
 # target to build an object file
 ftp_remove_file.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.o
 .PHONY : ftp_remove_file.cpp.o
 
 ftp_remove_file.i: ftp_remove_file.cpp.i
@@ -620,7 +620,7 @@ ftp_remove_file.i: ftp_remove_file.cpp.i
 
 # target to preprocess a source file
 ftp_remove_file.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.i
 .PHONY : ftp_remove_file.cpp.i
 
 ftp_remove_file.s: ftp_remove_file.cpp.s
@@ -628,7 +628,7 @@ ftp_remove_file.s: ftp_remove_file.cpp.s
 
 # target to generate assembly for a file
 ftp_remove_file.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_remove_file.cpp.s
 .PHONY : ftp_remove_file.cpp.s
 
 ftp_rename_file.o: ftp_rename_file.cpp.o
@@ -636,7 +636,7 @@ ftp_rename_file.o: ftp_rename_file.cpp.o
 
 # target to build an object file
 ftp_rename_file.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.o
 .PHONY : ftp_rename_file.cpp.o
 
 ftp_rename_file.i: ftp_rename_file.cpp.i
@@ -644,7 +644,7 @@ ftp_rename_file.i: ftp_rename_file.cpp.i
 
 # target to preprocess a source file
 ftp_rename_file.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.i
 .PHONY : ftp_rename_file.cpp.i
 
 ftp_rename_file.s: ftp_rename_file.cpp.s
@@ -652,7 +652,7 @@ ftp_rename_file.s: ftp_rename_file.cpp.s
 
 # target to generate assembly for a file
 ftp_rename_file.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_rename_file.cpp.s
 .PHONY : ftp_rename_file.cpp.s
 
 ftp_upload_file.o: ftp_upload_file.cpp.o
@@ -660,7 +660,7 @@ ftp_upload_file.o: ftp_upload_file.cpp.o
 
 # target to build an object file
 ftp_upload_file.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.o
 .PHONY : ftp_upload_file.cpp.o
 
 ftp_upload_file.i: ftp_upload_file.cpp.i
@@ -668,7 +668,7 @@ ftp_upload_file.i: ftp_upload_file.cpp.i
 
 # target to preprocess a source file
 ftp_upload_file.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.i
 .PHONY : ftp_upload_file.cpp.i
 
 ftp_upload_file.s: ftp_upload_file.cpp.s
@@ -676,7 +676,7 @@ ftp_upload_file.s: ftp_upload_file.cpp.s
 
 # target to generate assembly for a file
 ftp_upload_file.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/ftp_upload_file.cpp.s
 .PHONY : ftp_upload_file.cpp.s
 
 intercept.o: intercept.cpp.o
@@ -684,7 +684,7 @@ intercept.o: intercept.cpp.o
 
 # target to build an object file
 intercept.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.o
 .PHONY : intercept.cpp.o
 
 intercept.i: intercept.cpp.i
@@ -692,7 +692,7 @@ intercept.i: intercept.cpp.i
 
 # target to preprocess a source file
 intercept.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.i
 .PHONY : intercept.cpp.i
 
 intercept.s: intercept.cpp.s
@@ -700,7 +700,7 @@ intercept.s: intercept.cpp.s
 
 # target to generate assembly for a file
 intercept.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/intercept.cpp.s
 .PHONY : intercept.cpp.s
 
 mavlink_direct.o: mavlink_direct.cpp.o
@@ -708,7 +708,7 @@ mavlink_direct.o: mavlink_direct.cpp.o
 
 # target to build an object file
 mavlink_direct.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.o
 .PHONY : mavlink_direct.cpp.o
 
 mavlink_direct.i: mavlink_direct.cpp.i
@@ -716,7 +716,7 @@ mavlink_direct.i: mavlink_direct.cpp.i
 
 # target to preprocess a source file
 mavlink_direct.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.i
 .PHONY : mavlink_direct.cpp.i
 
 mavlink_direct.s: mavlink_direct.cpp.s
@@ -724,7 +724,7 @@ mavlink_direct.s: mavlink_direct.cpp.s
 
 # target to generate assembly for a file
 mavlink_direct.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.s
 .PHONY : mavlink_direct.cpp.s
 
 mavlink_direct_forwarding.o: mavlink_direct_forwarding.cpp.o
@@ -732,7 +732,7 @@ mavlink_direct_forwarding.o: mavlink_direct_forwarding.cpp.o
 
 # target to build an object file
 mavlink_direct_forwarding.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.o
 .PHONY : mavlink_direct_forwarding.cpp.o
 
 mavlink_direct_forwarding.i: mavlink_direct_forwarding.cpp.i
@@ -740,7 +740,7 @@ mavlink_direct_forwarding.i: mavlink_direct_forwarding.cpp.i
 
 # target to preprocess a source file
 mavlink_direct_forwarding.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.i
 .PHONY : mavlink_direct_forwarding.cpp.i
 
 mavlink_direct_forwarding.s: mavlink_direct_forwarding.cpp.s
@@ -748,15 +748,87 @@ mavlink_direct_forwarding.s: mavlink_direct_forwarding.cpp.s
 
 # target to generate assembly for a file
 mavlink_direct_forwarding.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.s
 .PHONY : mavlink_direct_forwarding.cpp.s
+
+mavlink_seq.o: mavlink_seq.cpp.o
+.PHONY : mavlink_seq.o
+
+# target to build an object file
+mavlink_seq.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_seq.cpp.o
+.PHONY : mavlink_seq.cpp.o
+
+mavlink_seq.i: mavlink_seq.cpp.i
+.PHONY : mavlink_seq.i
+
+# target to preprocess a source file
+mavlink_seq.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_seq.cpp.i
+.PHONY : mavlink_seq.cpp.i
+
+mavlink_seq.s: mavlink_seq.cpp.s
+.PHONY : mavlink_seq.s
+
+# target to generate assembly for a file
+mavlink_seq.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mavlink_seq.cpp.s
+.PHONY : mavlink_seq.cpp.s
+
+mission_cancellation.o: mission_cancellation.cpp.o
+.PHONY : mission_cancellation.o
+
+# target to build an object file
+mission_cancellation.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_cancellation.cpp.o
+.PHONY : mission_cancellation.cpp.o
+
+mission_cancellation.i: mission_cancellation.cpp.i
+.PHONY : mission_cancellation.i
+
+# target to preprocess a source file
+mission_cancellation.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_cancellation.cpp.i
+.PHONY : mission_cancellation.cpp.i
+
+mission_cancellation.s: mission_cancellation.cpp.s
+.PHONY : mission_cancellation.s
+
+# target to generate assembly for a file
+mission_cancellation.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_cancellation.cpp.s
+.PHONY : mission_cancellation.cpp.s
+
+mission_changed.o: mission_changed.cpp.o
+.PHONY : mission_changed.o
+
+# target to build an object file
+mission_changed.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_changed.cpp.o
+.PHONY : mission_changed.cpp.o
+
+mission_changed.i: mission_changed.cpp.i
+.PHONY : mission_changed.i
+
+# target to preprocess a source file
+mission_changed.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_changed.cpp.i
+.PHONY : mission_changed.cpp.i
+
+mission_changed.s: mission_changed.cpp.s
+.PHONY : mission_changed.s
+
+# target to generate assembly for a file
+mission_changed.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_changed.cpp.s
+.PHONY : mission_changed.cpp.s
 
 mission_raw_upload.o: mission_raw_upload.cpp.o
 .PHONY : mission_raw_upload.o
 
 # target to build an object file
 mission_raw_upload.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.o
 .PHONY : mission_raw_upload.cpp.o
 
 mission_raw_upload.i: mission_raw_upload.cpp.i
@@ -764,7 +836,7 @@ mission_raw_upload.i: mission_raw_upload.cpp.i
 
 # target to preprocess a source file
 mission_raw_upload.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.i
 .PHONY : mission_raw_upload.cpp.i
 
 mission_raw_upload.s: mission_raw_upload.cpp.s
@@ -772,15 +844,39 @@ mission_raw_upload.s: mission_raw_upload.cpp.s
 
 # target to generate assembly for a file
 mission_raw_upload.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_raw_upload.cpp.s
 .PHONY : mission_raw_upload.cpp.s
+
+mission_transfer_lossy.o: mission_transfer_lossy.cpp.o
+.PHONY : mission_transfer_lossy.o
+
+# target to build an object file
+mission_transfer_lossy.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_transfer_lossy.cpp.o
+.PHONY : mission_transfer_lossy.cpp.o
+
+mission_transfer_lossy.i: mission_transfer_lossy.cpp.i
+.PHONY : mission_transfer_lossy.i
+
+# target to preprocess a source file
+mission_transfer_lossy.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_transfer_lossy.cpp.i
+.PHONY : mission_transfer_lossy.cpp.i
+
+mission_transfer_lossy.s: mission_transfer_lossy.cpp.s
+.PHONY : mission_transfer_lossy.s
+
+# target to generate assembly for a file
+mission_transfer_lossy.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/mission_transfer_lossy.cpp.s
+.PHONY : mission_transfer_lossy.cpp.s
 
 param_custom_set_and_get.o: param_custom_set_and_get.cpp.o
 .PHONY : param_custom_set_and_get.o
 
 # target to build an object file
 param_custom_set_and_get.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.o
 .PHONY : param_custom_set_and_get.cpp.o
 
 param_custom_set_and_get.i: param_custom_set_and_get.cpp.i
@@ -788,7 +884,7 @@ param_custom_set_and_get.i: param_custom_set_and_get.cpp.i
 
 # target to preprocess a source file
 param_custom_set_and_get.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.i
 .PHONY : param_custom_set_and_get.cpp.i
 
 param_custom_set_and_get.s: param_custom_set_and_get.cpp.s
@@ -796,7 +892,7 @@ param_custom_set_and_get.s: param_custom_set_and_get.cpp.s
 
 # target to generate assembly for a file
 param_custom_set_and_get.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_custom_set_and_get.cpp.s
 .PHONY : param_custom_set_and_get.cpp.s
 
 param_get_all.o: param_get_all.cpp.o
@@ -804,7 +900,7 @@ param_get_all.o: param_get_all.cpp.o
 
 # target to build an object file
 param_get_all.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.o
 .PHONY : param_get_all.cpp.o
 
 param_get_all.i: param_get_all.cpp.i
@@ -812,7 +908,7 @@ param_get_all.i: param_get_all.cpp.i
 
 # target to preprocess a source file
 param_get_all.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.i
 .PHONY : param_get_all.cpp.i
 
 param_get_all.s: param_get_all.cpp.s
@@ -820,7 +916,7 @@ param_get_all.s: param_get_all.cpp.s
 
 # target to generate assembly for a file
 param_get_all.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_get_all.cpp.s
 .PHONY : param_get_all.cpp.s
 
 param_set_and_get.o: param_set_and_get.cpp.o
@@ -828,7 +924,7 @@ param_set_and_get.o: param_set_and_get.cpp.o
 
 # target to build an object file
 param_set_and_get.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.o
 .PHONY : param_set_and_get.cpp.o
 
 param_set_and_get.i: param_set_and_get.cpp.i
@@ -836,7 +932,7 @@ param_set_and_get.i: param_set_and_get.cpp.i
 
 # target to preprocess a source file
 param_set_and_get.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.i
 .PHONY : param_set_and_get.cpp.i
 
 param_set_and_get.s: param_set_and_get.cpp.s
@@ -844,15 +940,39 @@ param_set_and_get.s: param_set_and_get.cpp.s
 
 # target to generate assembly for a file
 param_set_and_get.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/param_set_and_get.cpp.s
 .PHONY : param_set_and_get.cpp.s
+
+raw_bytes.o: raw_bytes.cpp.o
+.PHONY : raw_bytes.o
+
+# target to build an object file
+raw_bytes.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/raw_bytes.cpp.o
+.PHONY : raw_bytes.cpp.o
+
+raw_bytes.i: raw_bytes.cpp.i
+.PHONY : raw_bytes.i
+
+# target to preprocess a source file
+raw_bytes.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/raw_bytes.cpp.i
+.PHONY : raw_bytes.cpp.i
+
+raw_bytes.s: raw_bytes.cpp.s
+.PHONY : raw_bytes.s
+
+# target to generate assembly for a file
+raw_bytes.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/raw_bytes.cpp.s
+.PHONY : raw_bytes.cpp.s
 
 system_tests_runner.o: system_tests_runner.cpp.o
 .PHONY : system_tests_runner.o
 
 # target to build an object file
 system_tests_runner.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.o
 .PHONY : system_tests_runner.cpp.o
 
 system_tests_runner.i: system_tests_runner.cpp.i
@@ -860,7 +980,7 @@ system_tests_runner.i: system_tests_runner.cpp.i
 
 # target to preprocess a source file
 system_tests_runner.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.i
 .PHONY : system_tests_runner.cpp.i
 
 system_tests_runner.s: system_tests_runner.cpp.s
@@ -868,7 +988,7 @@ system_tests_runner.s: system_tests_runner.cpp.s
 
 # target to generate assembly for a file
 system_tests_runner.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.s
 .PHONY : system_tests_runner.cpp.s
 
 telemetry_subscription.o: telemetry_subscription.cpp.o
@@ -876,7 +996,7 @@ telemetry_subscription.o: telemetry_subscription.cpp.o
 
 # target to build an object file
 telemetry_subscription.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.o
 .PHONY : telemetry_subscription.cpp.o
 
 telemetry_subscription.i: telemetry_subscription.cpp.i
@@ -884,7 +1004,7 @@ telemetry_subscription.i: telemetry_subscription.cpp.i
 
 # target to preprocess a source file
 telemetry_subscription.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.i
 .PHONY : telemetry_subscription.cpp.i
 
 telemetry_subscription.s: telemetry_subscription.cpp.s
@@ -892,7 +1012,7 @@ telemetry_subscription.s: telemetry_subscription.cpp.s
 
 # target to generate assembly for a file
 telemetry_subscription.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/telemetry_subscription.cpp.s
 .PHONY : telemetry_subscription.cpp.s
 
 # Help Target
@@ -980,9 +1100,21 @@ help:
 	@echo "... mavlink_direct_forwarding.o"
 	@echo "... mavlink_direct_forwarding.i"
 	@echo "... mavlink_direct_forwarding.s"
+	@echo "... mavlink_seq.o"
+	@echo "... mavlink_seq.i"
+	@echo "... mavlink_seq.s"
+	@echo "... mission_cancellation.o"
+	@echo "... mission_cancellation.i"
+	@echo "... mission_cancellation.s"
+	@echo "... mission_changed.o"
+	@echo "... mission_changed.i"
+	@echo "... mission_changed.s"
 	@echo "... mission_raw_upload.o"
 	@echo "... mission_raw_upload.i"
 	@echo "... mission_raw_upload.s"
+	@echo "... mission_transfer_lossy.o"
+	@echo "... mission_transfer_lossy.i"
+	@echo "... mission_transfer_lossy.s"
 	@echo "... param_custom_set_and_get.o"
 	@echo "... param_custom_set_and_get.i"
 	@echo "... param_custom_set_and_get.s"
@@ -992,6 +1124,9 @@ help:
 	@echo "... param_set_and_get.o"
 	@echo "... param_set_and_get.i"
 	@echo "... param_set_and_get.s"
+	@echo "... raw_bytes.o"
+	@echo "... raw_bytes.i"
+	@echo "... raw_bytes.s"
 	@echo "... system_tests_runner.o"
 	@echo "... system_tests_runner.i"
 	@echo "... system_tests_runner.s"
@@ -1009,6 +1144,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

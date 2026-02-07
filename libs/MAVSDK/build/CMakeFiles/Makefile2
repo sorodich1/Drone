@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -87,51 +87,27 @@ clean: src/clean
 
 # Recursive "all" directory target.
 src/all: src/mavsdk/all
-src/all: src/integration_tests/all
 src/all: src/unit_tests/all
 src/all: src/system_tests/all
 .PHONY : src/all
 
 # Recursive "codegen" directory target.
 src/codegen: src/mavsdk/codegen
-src/codegen: src/integration_tests/codegen
 src/codegen: src/unit_tests/codegen
 src/codegen: src/system_tests/codegen
 .PHONY : src/codegen
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/mavsdk/preinstall
-src/preinstall: src/integration_tests/preinstall
 src/preinstall: src/unit_tests/preinstall
 src/preinstall: src/system_tests/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/mavsdk/clean
-src/clean: src/integration_tests/clean
 src/clean: src/unit_tests/clean
 src/clean: src/system_tests/clean
 .PHONY : src/clean
-
-#=============================================================================
-# Directory level rules for directory src/integration_tests
-
-# Recursive "all" directory target.
-src/integration_tests/all: src/integration_tests/CMakeFiles/integration_tests_runner.dir/all
-.PHONY : src/integration_tests/all
-
-# Recursive "codegen" directory target.
-src/integration_tests/codegen: src/integration_tests/CMakeFiles/integration_tests_runner.dir/codegen
-.PHONY : src/integration_tests/codegen
-
-# Recursive "preinstall" directory target.
-src/integration_tests/preinstall:
-.PHONY : src/integration_tests/preinstall
-
-# Recursive "clean" directory target.
-src/integration_tests/clean: src/integration_tests/CMakeFiles/check.dir/clean
-src/integration_tests/clean: src/integration_tests/CMakeFiles/integration_tests_runner.dir/clean
-.PHONY : src/integration_tests/clean
 
 #=============================================================================
 # Directory level rules for directory src/mavsdk
@@ -1108,14 +1084,14 @@ third_party/clean:
 src/mavsdk/CMakeFiles/mavsdk.dir/all: src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/all
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target mavsdk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target mavsdk"
 .PHONY : src/mavsdk/CMakeFiles/mavsdk.dir/all
 
 # Build rule for subdir invocation for target.
 src/mavsdk/CMakeFiles/mavsdk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/CMakeFiles/mavsdk.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : src/mavsdk/CMakeFiles/mavsdk.dir/rule
 
 # Convenience name for target.
@@ -1125,7 +1101,7 @@ mavsdk: src/mavsdk/CMakeFiles/mavsdk.dir/rule
 # codegen rule for target.
 src/mavsdk/CMakeFiles/mavsdk.dir/codegen: src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/all
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Finished codegen for target mavsdk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Finished codegen for target mavsdk"
 .PHONY : src/mavsdk/CMakeFiles/mavsdk.dir/codegen
 
 # clean rule for target.
@@ -1140,14 +1116,14 @@ src/mavsdk/CMakeFiles/mavsdk.dir/clean:
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build.make src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build.make src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num= "Built target generate_core_mavlink_xml_header"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num= "Built target generate_core_mavlink_xml_header"
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/all
 
 # Build rule for subdir invocation for target.
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/rule
 
 # Convenience name for target.
@@ -1157,7 +1133,7 @@ generate_core_mavlink_xml_header: src/mavsdk/core/CMakeFiles/generate_core_mavli
 # codegen rule for target.
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build.make src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num= "Finished codegen for target generate_core_mavlink_xml_header"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num= "Finished codegen for target generate_core_mavlink_xml_header"
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/codegen
 
 # clean rule for target.
@@ -1166,84 +1142,20 @@ src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/clean:
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/clean
 
 #=============================================================================
-# Target rules for target src/integration_tests/CMakeFiles/check.dir
-
-# All Build rule for target.
-src/integration_tests/CMakeFiles/check.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/check.dir/build.make src/integration_tests/CMakeFiles/check.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/check.dir/build.make src/integration_tests/CMakeFiles/check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num= "Built target check"
-.PHONY : src/integration_tests/CMakeFiles/check.dir/all
-
-# Build rule for subdir invocation for target.
-src/integration_tests/CMakeFiles/check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/integration_tests/CMakeFiles/check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
-.PHONY : src/integration_tests/CMakeFiles/check.dir/rule
-
-# Convenience name for target.
-check: src/integration_tests/CMakeFiles/check.dir/rule
-.PHONY : check
-
-# codegen rule for target.
-src/integration_tests/CMakeFiles/check.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/check.dir/build.make src/integration_tests/CMakeFiles/check.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num= "Finished codegen for target check"
-.PHONY : src/integration_tests/CMakeFiles/check.dir/codegen
-
-# clean rule for target.
-src/integration_tests/CMakeFiles/check.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/check.dir/build.make src/integration_tests/CMakeFiles/check.dir/clean
-.PHONY : src/integration_tests/CMakeFiles/check.dir/clean
-
-#=============================================================================
-# Target rules for target src/integration_tests/CMakeFiles/integration_tests_runner.dir
-
-# All Build rule for target.
-src/integration_tests/CMakeFiles/integration_tests_runner.dir/all: src/mavsdk/CMakeFiles/mavsdk.dir/all
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/integration_tests_runner.dir/build.make src/integration_tests/CMakeFiles/integration_tests_runner.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/integration_tests_runner.dir/build.make src/integration_tests/CMakeFiles/integration_tests_runner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target integration_tests_runner"
-.PHONY : src/integration_tests/CMakeFiles/integration_tests_runner.dir/all
-
-# Build rule for subdir invocation for target.
-src/integration_tests/CMakeFiles/integration_tests_runner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 75
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/integration_tests/CMakeFiles/integration_tests_runner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
-.PHONY : src/integration_tests/CMakeFiles/integration_tests_runner.dir/rule
-
-# Convenience name for target.
-integration_tests_runner: src/integration_tests/CMakeFiles/integration_tests_runner.dir/rule
-.PHONY : integration_tests_runner
-
-# codegen rule for target.
-src/integration_tests/CMakeFiles/integration_tests_runner.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/integration_tests_runner.dir/build.make src/integration_tests/CMakeFiles/integration_tests_runner.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target integration_tests_runner"
-.PHONY : src/integration_tests/CMakeFiles/integration_tests_runner.dir/codegen
-
-# clean rule for target.
-src/integration_tests/CMakeFiles/integration_tests_runner.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/integration_tests_runner.dir/build.make src/integration_tests/CMakeFiles/integration_tests_runner.dir/clean
-.PHONY : src/integration_tests/CMakeFiles/integration_tests_runner.dir/clean
-
-#=============================================================================
 # Target rules for target src/unit_tests/CMakeFiles/unit_tests_runner.dir
 
 # All Build rule for target.
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/all: src/mavsdk/CMakeFiles/mavsdk.dir/all
 	$(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=89,90,91,92,93,94,95,96,97,98,99,100 "Built target unit_tests_runner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target unit_tests_runner"
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/all
 
 # Build rule for subdir invocation for target.
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 83
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/CMakeFiles/unit_tests_runner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
 
 # Convenience name for target.
@@ -1253,7 +1165,7 @@ unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
 # codegen rule for target.
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=89,90,91,92,93,94,95,96,97,98,99,100 "Finished codegen for target unit_tests_runner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Finished codegen for target unit_tests_runner"
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/codegen
 
 # clean rule for target.
@@ -1268,14 +1180,14 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/clean:
 src/system_tests/CMakeFiles/system_tests_runner.dir/all: src/mavsdk/CMakeFiles/mavsdk.dir/all
 	$(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85,86,87,88 "Built target system_tests_runner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target system_tests_runner"
 .PHONY : src/system_tests/CMakeFiles/system_tests_runner.dir/all
 
 # Build rule for subdir invocation for target.
 src/system_tests/CMakeFiles/system_tests_runner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/system_tests/CMakeFiles/system_tests_runner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : src/system_tests/CMakeFiles/system_tests_runner.dir/rule
 
 # Convenience name for target.
@@ -1285,7 +1197,7 @@ system_tests_runner: src/system_tests/CMakeFiles/system_tests_runner.dir/rule
 # codegen rule for target.
 src/system_tests/CMakeFiles/system_tests_runner.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/system_tests/CMakeFiles/system_tests_runner.dir/build.make src/system_tests/CMakeFiles/system_tests_runner.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target system_tests_runner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Finished codegen for target system_tests_runner"
 .PHONY : src/system_tests/CMakeFiles/system_tests_runner.dir/codegen
 
 # clean rule for target.

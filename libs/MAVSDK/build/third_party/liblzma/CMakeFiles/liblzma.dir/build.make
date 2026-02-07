@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma
 
 # Utility rule file for liblzma.
 
@@ -76,52 +76,52 @@ CMakeFiles/liblzma-complete: liblzma-prefix/src/liblzma-stamp/liblzma-patch
 CMakeFiles/liblzma-complete: liblzma-prefix/src/liblzma-stamp/liblzma-configure
 CMakeFiles/liblzma-complete: liblzma-prefix/src/liblzma-stamp/liblzma-build
 CMakeFiles/liblzma-complete: liblzma-prefix/src/liblzma-stamp/liblzma-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'liblzma'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles/liblzma-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'liblzma'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles/liblzma-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-done
 
 liblzma-prefix/src/liblzma-stamp/liblzma-build: liblzma-prefix/src/liblzma-stamp/liblzma-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'liblzma'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'liblzma'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-build
 
 liblzma-prefix/src/liblzma-stamp/liblzma-configure: liblzma-prefix/tmp/liblzma-cfgcmd.txt
 liblzma-prefix/src/liblzma-stamp/liblzma-configure: liblzma-prefix/src/liblzma-stamp/liblzma-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'liblzma'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DCMAKE_CFG_INTDIR=. -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_TRY_COMPILE_CONFIGURATION= "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma -B /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'liblzma'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DBUILD_SHARED_LIBS=OFF -DCMAKE_CFG_INTDIR=. -DCMAKE_DEBUG_POSTFIX=d -DCMAKE_TRY_COMPILE_CONFIGURATION= "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma -B /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-configure
 
 liblzma-prefix/src/liblzma-stamp/liblzma-download: liblzma-prefix/src/liblzma-stamp/download-liblzma.cmake
 liblzma-prefix/src/liblzma-stamp/liblzma-download: liblzma-prefix/src/liblzma-stamp/liblzma-urlinfo.txt
 liblzma-prefix/src/liblzma-stamp/liblzma-download: liblzma-prefix/src/liblzma-stamp/liblzma-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'liblzma'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/download-liblzma.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/verify-liblzma.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/extract-liblzma.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'liblzma'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/download-liblzma.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/verify-liblzma.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/extract-liblzma.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-download
 
 liblzma-prefix/src/liblzma-stamp/liblzma-install: liblzma-prefix/src/liblzma-stamp/liblzma-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'liblzma'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'liblzma'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-install
 
 liblzma-prefix/src/liblzma-stamp/liblzma-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'liblzma'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/tmp/liblzma-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'liblzma'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/tmp/liblzma-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-mkdir
 
 liblzma-prefix/src/liblzma-stamp/liblzma-patch: liblzma-prefix/src/liblzma-stamp/liblzma-patch-info.txt
 liblzma-prefix/src/liblzma-stamp/liblzma-patch: liblzma-prefix/src/liblzma-stamp/liblzma-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'liblzma'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'liblzma'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-patch
 
 liblzma-prefix/src/liblzma-stamp/liblzma-update: liblzma-prefix/src/liblzma-stamp/liblzma-update-info.txt
 liblzma-prefix/src/liblzma-stamp/liblzma-update: liblzma-prefix/src/liblzma-stamp/liblzma-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'liblzma'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'liblzma'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-update
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-stamp/liblzma-update
 
 CMakeFiles/liblzma.dir/codegen:
 .PHONY : CMakeFiles/liblzma.dir/codegen
@@ -147,6 +147,6 @@ CMakeFiles/liblzma.dir/clean:
 .PHONY : CMakeFiles/liblzma.dir/clean
 
 CMakeFiles/liblzma.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/liblzma /home/pi/Drone/MAVSDK/third_party/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles/liblzma.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/liblzma /home/pi/Drone/libs/MAVSDK/third_party/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles/liblzma.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/liblzma.dir/depend
 

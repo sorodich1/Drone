@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/libmavlike
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/libmavlike
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libmavlike
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/libmavlike.dir/clean
 CMakeFiles/libmavlike.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libmavlike.dir/build.make CMakeFiles/libmavlike.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libmavlike.dir/build.make CMakeFiles/libmavlike.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target libmavlike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target libmavlike"
 .PHONY : CMakeFiles/libmavlike.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libmavlike.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libmavlike.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles 0
 .PHONY : CMakeFiles/libmavlike.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ libmavlike: CMakeFiles/libmavlike.dir/rule
 # codegen rule for target.
 CMakeFiles/libmavlike.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libmavlike.dir/build.make CMakeFiles/libmavlike.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target libmavlike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target libmavlike"
 .PHONY : CMakeFiles/libmavlike.dir/codegen
 
 # clean rule for target.

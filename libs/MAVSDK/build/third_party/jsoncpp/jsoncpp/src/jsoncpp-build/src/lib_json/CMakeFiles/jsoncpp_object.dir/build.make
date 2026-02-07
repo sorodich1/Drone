@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
 
 # Include any dependencies generated for this target.
 include src/lib_json/CMakeFiles/jsoncpp_object.dir/depend.make
@@ -73,46 +73,46 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/codegen:
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_object.dir/codegen
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/flags.make
-src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp
+src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp > CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp > CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp -o CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_reader.cpp -o CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/flags.make
-src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp
+src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_value.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_value.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_value.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jsoncpp_object.dir/json_value.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp > CMakeFiles/jsoncpp_object.dir/json_value.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp > CMakeFiles/jsoncpp_object.dir/json_value.cpp.i
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jsoncpp_object.dir/json_value.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp -o CMakeFiles/jsoncpp_object.dir/json_value.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_value.cpp -o CMakeFiles/jsoncpp_object.dir/json_value.cpp.s
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/flags.make
-src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp
+src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o: src/lib_json/CMakeFiles/jsoncpp_object.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -MF CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o.d -o CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp > CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp > CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp -o CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/json_writer.cpp -o CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s
 
 jsoncpp_object: src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o
 jsoncpp_object: src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o
@@ -125,10 +125,10 @@ src/lib_json/CMakeFiles/jsoncpp_object.dir/build: jsoncpp_object
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_object.dir/build
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && $(CMAKE_COMMAND) -P CMakeFiles/jsoncpp_object.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json && $(CMAKE_COMMAND) -P CMakeFiles/jsoncpp_object.dir/cmake_clean.cmake
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_object.dir/clean
 
 src/lib_json/CMakeFiles/jsoncpp_object.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json/CMakeFiles/jsoncpp_object.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json/CMakeFiles/jsoncpp_object.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_object.dir/depend
 

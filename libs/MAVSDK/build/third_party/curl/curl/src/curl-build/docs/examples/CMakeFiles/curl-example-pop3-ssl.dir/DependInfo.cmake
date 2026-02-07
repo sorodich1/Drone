@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-ssl.c" "docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/pop3-ssl.c" "docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/pop3-ssl.c.o.d"
   "" "docs/examples/pop3-ssl" "gcc" "docs/examples/CMakeFiles/curl-example-pop3-ssl.dir/link.d"
   )
 

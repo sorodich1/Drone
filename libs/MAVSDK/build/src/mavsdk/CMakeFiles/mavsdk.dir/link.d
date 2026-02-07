@@ -1,9 +1,11 @@
-libmavsdk.so.3.10.2: \
+libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty: \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/mavsdk.dir/core/autopilot.cpp.o \
   CMakeFiles/mavsdk.dir/core/base64.cpp.o \
+  CMakeFiles/mavsdk.dir/core/compatibility_mode.cpp.o \
   CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o \
+  CMakeFiles/mavsdk.dir/core/callback_tracker.cpp.o \
   CMakeFiles/mavsdk.dir/core/connection.cpp.o \
   CMakeFiles/mavsdk.dir/core/connection_result.cpp.o \
   CMakeFiles/mavsdk.dir/core/crc32.cpp.o \
@@ -17,6 +19,7 @@ libmavsdk.so.3.10.2: \
   CMakeFiles/mavsdk.dir/core/math_utils.cpp.o \
   CMakeFiles/mavsdk.dir/core/mavsdk.cpp.o \
   CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.o \
+  CMakeFiles/mavsdk.dir/core/mavlink_channel_status.cpp.o \
   CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.o \
   CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.o \
   CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.o \
@@ -39,6 +42,7 @@ libmavsdk.so.3.10.2: \
   CMakeFiles/mavsdk.dir/core/param_value.cpp.o \
   CMakeFiles/mavsdk.dir/core/ping.cpp.o \
   CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.o \
+  CMakeFiles/mavsdk.dir/core/raw_connection.cpp.o \
   CMakeFiles/mavsdk.dir/core/serial_connection.cpp.o \
   CMakeFiles/mavsdk.dir/core/server_component.cpp.o \
   CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.o \
@@ -98,6 +102,8 @@ libmavsdk.so.3.10.2: \
   CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.o \
   CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.o \
   CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.o \
+  CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_px4.cpp.o \
+  CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o \
   CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.o \
   CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.o \
   CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.o \
@@ -141,8 +147,6 @@ libmavsdk.so.3.10.2: \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/libdl.a \
   ../../third_party/install/lib/libtinyxml2.a \
   ../../third_party/install/lib/libmav.a \
-  /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/libldap.so \
-  /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/liblber.so \
   ../../third_party/install/lib/libssl.a \
   ../../third_party/install/lib/libcrypto.a \
   ../../third_party/install/lib/libjsoncpp.a \
@@ -183,7 +187,11 @@ CMakeFiles/mavsdk.dir/core/autopilot.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/base64.cpp.o:
 
+CMakeFiles/mavsdk.dir/core/compatibility_mode.cpp.o:
+
 CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o:
+
+CMakeFiles/mavsdk.dir/core/callback_tracker.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/connection.cpp.o:
 
@@ -210,6 +218,8 @@ CMakeFiles/mavsdk.dir/core/math_utils.cpp.o:
 CMakeFiles/mavsdk.dir/core/mavsdk.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.o:
+
+CMakeFiles/mavsdk.dir/core/mavlink_channel_status.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.o:
 
@@ -254,6 +264,8 @@ CMakeFiles/mavsdk.dir/core/param_value.cpp.o:
 CMakeFiles/mavsdk.dir/core/ping.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.o:
+
+CMakeFiles/mavsdk.dir/core/raw_connection.cpp.o:
 
 CMakeFiles/mavsdk.dir/core/serial_connection.cpp.o:
 
@@ -373,6 +385,10 @@ CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.o:
 
 CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.o:
 
+CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_px4.cpp.o:
+
+CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o:
+
 CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.o:
 
 CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.o:
@@ -458,10 +474,6 @@ CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o
 ../../third_party/install/lib/libtinyxml2.a:
 
 ../../third_party/install/lib/libmav.a:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/libldap.so:
-
-/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/liblber.so:
 
 ../../third_party/install/lib/libssl.a:
 

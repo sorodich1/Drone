@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_lzip_decoder.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test_lzip_decoder.dir/codegen:
 .PHONY : CMakeFiles/test_lzip_decoder.dir/codegen
 
 CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o: CMakeFiles/test_lzip_decoder.dir/flags.make
-CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c
+CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c
 CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o: CMakeFiles/test_lzip_decoder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o -MF CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o.d -o CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o -MF CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o.d -o CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c
 
 CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c > CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c > CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.i
 
 CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c -o CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_lzip_decoder.c -o CMakeFiles/test_lzip_decoder.dir/tests/test_lzip_decoder.c.s
 
 # Object files for target test_lzip_decoder
 test_lzip_decoder_OBJECTS = \
@@ -98,7 +98,7 @@ tests_bin/test_lzip_decoder: CMakeFiles/test_lzip_decoder.dir/build.make
 tests_bin/test_lzip_decoder: CMakeFiles/test_lzip_decoder.dir/compiler_depend.ts
 tests_bin/test_lzip_decoder: liblzma.a
 tests_bin/test_lzip_decoder: CMakeFiles/test_lzip_decoder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_lzip_decoder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_lzip_decoder"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_lzip_decoder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/test_lzip_decoder.dir/clean:
 .PHONY : CMakeFiles/test_lzip_decoder.dir/clean
 
 CMakeFiles/test_lzip_decoder.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_lzip_decoder.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_lzip_decoder.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_lzip_decoder.dir/depend
 

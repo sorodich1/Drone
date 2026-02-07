@@ -4,12 +4,12 @@ This guide explains how to build MAVSDK from source on Linux systems.
 
 ## Requirements
 
-The build requirements are git, cmake, and a C++ compiler (GCC or Clang).
+The build requirements are git, cmake, and a C++ compiler (GCC or Clang), and python.
 
 ### Ubuntu
 ```bash
 sudo apt-get update
-sudo apt-get install build-essential cmake git
+sudo apt-get install build-essential cmake git python3 python3-pip
 ```
 
 ### Fedora
@@ -85,7 +85,7 @@ During the configure step you can set various flags using `-DFLAG=Value`:
 - `CMAKE_BUILD_TYPE`: Choose between `Debug`, `Release`, or `RelWithDebInfo` (optimizations and debug symbols)
 - `CMAKE_INSTALL_PREFIX`: Specify directory to install library artifacts
 - `BUILD_SHARED_LIBS`: Set to `ON` for dynamic libraries (.so), `OFF` for static libraries (.a)
-- `SUPERBUILD`: Set to `OFF` to use system dependencies instead of third party dependencies
+- `SUPERBUILD`: Set to `OFF` to use system dependencies instead of third party dependencies (see [Building without Superbuild](#building-without-superbuild))
 - `CMAKE_PREFIX_PATH`: Set path where dependencies can be found if `SUPERBUILD` is `OFF`
 - `BUILD_MAVSDK_SERVER`: Set to `ON` to build mavsdk_server
 - `BUILD_WITHOUT_CURL`: Set to `ON` to build without CURL support
@@ -93,6 +93,57 @@ During the configure step you can set various flags using `-DFLAG=Value`:
 - `UBSAN`: Set to `ON` to enable undefined behavior sanitizer
 - `LSAN`: Set to `ON` to enable leak sanitizer
 - `WERROR`: Set to `ON` to treat warnings as errors
+
+### MAVLink Configuration
+
+MAVSDK supports configuring the MAVLink dialect and repository:
+
+- `MAVLINK_DIALECT`: MAVLink dialect to use (default: `ardupilotmega`)
+- `MAVLINK_XML_PATH`: Path to local MAVLink XML definition files. If not set, definitions are fetched automatically.
+- `MAVLINK_URL`: URL for the MAVLink repository (default: `https://github.com/mavlink/mavlink`)
+- `MAVLINK_HASH`: Git commit hash to use from the MAVLink repository
+
+> **Note:** You can also load custom MAVLink message definitions at runtime using the [MavlinkDirect](../api_reference/classmavsdk_1_1_mavlink_direct.md) plugin, without needing to rebuild MAVSDK.
+
+Examples:
+
+```bash
+# Build with development dialect
+cmake -DCMAKE_BUILD_TYPE=Debug -DMAVLINK_DIALECT=development -Bbuild -S.
+
+# Use a custom MAVLink repository fork
+cmake -DCMAKE_BUILD_TYPE=Debug \
+    -DMAVLINK_URL=https://github.com/yourfork/mavlink \
+    -DMAVLINK_HASH=abc123def456 \
+    -Bbuild -S.
+
+# Use local MAVLink XML files
+cmake -DCMAKE_BUILD_TYPE=Debug \
+    -DMAVLINK_XML_PATH=/path/to/mavlink/message_definitions/v1.0 \
+    -Bbuild -S.
+```
+
+## Building without Superbuild
+
+By default, MAVSDK uses a "superbuild" that automatically downloads and builds all required dependencies. If you prefer to provide dependencies yourself (e.g., from system packages or custom builds), you can disable this with `SUPERBUILD=OFF`.
+
+A script is provided that demonstrates how to build all dependencies and MAVSDK:
+
+```bash
+./tools/build-with-system-deps.sh
+```
+
+This script:
+1. Clones and builds the required dependencies (MAVLink, libevents, PicoSHA2, libmav) into a local `deps/` directory
+2. Installs them to `deps-install/`
+3. Builds MAVSDK with `SUPERBUILD=OFF` using these dependencies
+
+Prerequisites (install before running the script):
+```bash
+sudo apt install build-essential cmake git python3 python3-pip \
+                 liblzma-dev libtinyxml2-dev libjsoncpp-dev \
+                 libcurl4-openssl-dev libssl-dev
+```
 
 ## Troubleshooting
 

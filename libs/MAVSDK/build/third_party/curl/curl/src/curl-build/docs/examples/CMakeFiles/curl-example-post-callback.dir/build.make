@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Include any dependencies generated for this target.
 include docs/examples/CMakeFiles/curl-example-post-callback.dir/depend.make
@@ -73,18 +73,18 @@ docs/examples/CMakeFiles/curl-example-post-callback.dir/codegen:
 .PHONY : docs/examples/CMakeFiles/curl-example-post-callback.dir/codegen
 
 docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o: docs/examples/CMakeFiles/curl-example-post-callback.dir/flags.make
-docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c
+docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c
 docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o: docs/examples/CMakeFiles/curl-example-post-callback.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o -MF CMakeFiles/curl-example-post-callback.dir/post-callback.c.o.d -o CMakeFiles/curl-example-post-callback.dir/post-callback.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.o -MF CMakeFiles/curl-example-post-callback.dir/post-callback.c.o.d -o CMakeFiles/curl-example-post-callback.dir/post-callback.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c
 
 docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/curl-example-post-callback.dir/post-callback.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c > CMakeFiles/curl-example-post-callback.dir/post-callback.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c > CMakeFiles/curl-example-post-callback.dir/post-callback.c.i
 
 docs/examples/CMakeFiles/curl-example-post-callback.dir/post-callback.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/curl-example-post-callback.dir/post-callback.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c -o CMakeFiles/curl-example-post-callback.dir/post-callback.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/post-callback.c -o CMakeFiles/curl-example-post-callback.dir/post-callback.c.s
 
 # Object files for target curl-example-post-callback
 curl__example__post__callback_OBJECTS = \
@@ -97,21 +97,21 @@ docs/examples/post-callback: docs/examples/CMakeFiles/curl-example-post-callback
 docs/examples/post-callback: docs/examples/CMakeFiles/curl-example-post-callback.dir/build.make
 docs/examples/post-callback: docs/examples/CMakeFiles/curl-example-post-callback.dir/compiler_depend.ts
 docs/examples/post-callback: lib/libcurl.a
-docs/examples/post-callback: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libssl.a
-docs/examples/post-callback: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libcrypto.a
+docs/examples/post-callback: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libssl.a
+docs/examples/post-callback: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libcrypto.a
 docs/examples/post-callback: docs/examples/CMakeFiles/curl-example-post-callback.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable post-callback"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-post-callback.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable post-callback"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-post-callback.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 docs/examples/CMakeFiles/curl-example-post-callback.dir/build: docs/examples/post-callback
 .PHONY : docs/examples/CMakeFiles/curl-example-post-callback.dir/build
 
 docs/examples/CMakeFiles/curl-example-post-callback.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-post-callback.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-post-callback.dir/cmake_clean.cmake
 .PHONY : docs/examples/CMakeFiles/curl-example-post-callback.dir/clean
 
 docs/examples/CMakeFiles/curl-example-post-callback.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-post-callback.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-post-callback.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/examples/CMakeFiles/curl-example-post-callback.dir/depend
 

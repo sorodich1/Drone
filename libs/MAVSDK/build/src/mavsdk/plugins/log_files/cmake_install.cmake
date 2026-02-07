@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/src/mavsdk/plugins/log_files
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/log_files
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,12 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mavsdk/plugins/log_files" TYPE FILE FILES "/home/pi/Drone/MAVSDK/src/mavsdk/plugins/log_files/include/plugins/log_files/log_files.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mavsdk/plugins/log_files" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/log_files/include/plugins/log_files/log_files.h")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/src/mavsdk/plugins/log_files/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/src/mavsdk/plugins/log_files/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

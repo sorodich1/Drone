@@ -30,9 +30,14 @@ system_tests_runner: \
   CMakeFiles/system_tests_runner.dir/intercept.cpp.o \
   CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.o \
   CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.o \
+  CMakeFiles/system_tests_runner.dir/mavlink_seq.cpp.o \
+  CMakeFiles/system_tests_runner.dir/mission_cancellation.cpp.o \
+  CMakeFiles/system_tests_runner.dir/mission_changed.cpp.o \
+  CMakeFiles/system_tests_runner.dir/mission_transfer_lossy.cpp.o \
   CMakeFiles/system_tests_runner.dir/connections.cpp.o \
+  CMakeFiles/system_tests_runner.dir/raw_bytes.cpp.o \
   CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.o \
-  ../mavsdk/libmavsdk.so.3.10.2 \
+  ../mavsdk/libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty \
   ../../third_party/install/lib/libgtest.a \
   ../../third_party/install/lib/libgtest_main.a \
   ../../third_party/install/lib/libgmock.a \
@@ -65,14 +70,7 @@ system_tests_runner: \
   /usr/lib/gcc/aarch64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o \
-  /lib/aarch64-linux-gnu/libldap.so.2 \
-  /lib/aarch64-linux-gnu/liblber.so.2 \
-  /lib/ld-linux-aarch64.so.1 \
-  /lib/aarch64-linux-gnu/libsasl2.so.2 \
-  /lib/aarch64-linux-gnu/libssl.so.3 \
-  /lib/aarch64-linux-gnu/libcrypto.so.3 \
-  /lib/aarch64-linux-gnu/libz.so.1 \
-  /lib/aarch64-linux-gnu/libzstd.so.1
+  /lib/ld-linux-aarch64.so.1
 
 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o:
 
@@ -136,11 +134,21 @@ CMakeFiles/system_tests_runner.dir/mavlink_direct.cpp.o:
 
 CMakeFiles/system_tests_runner.dir/mavlink_direct_forwarding.cpp.o:
 
+CMakeFiles/system_tests_runner.dir/mavlink_seq.cpp.o:
+
+CMakeFiles/system_tests_runner.dir/mission_cancellation.cpp.o:
+
+CMakeFiles/system_tests_runner.dir/mission_changed.cpp.o:
+
+CMakeFiles/system_tests_runner.dir/mission_transfer_lossy.cpp.o:
+
 CMakeFiles/system_tests_runner.dir/connections.cpp.o:
+
+CMakeFiles/system_tests_runner.dir/raw_bytes.cpp.o:
 
 CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.o:
 
-../mavsdk/libmavsdk.so.3.10.2:
+../mavsdk/libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty:
 
 ../../third_party/install/lib/libgtest.a:
 
@@ -206,18 +214,4 @@ CMakeFiles/system_tests_runner.dir/system_tests_runner.cpp.o:
 
 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o:
 
-/lib/aarch64-linux-gnu/libldap.so.2:
-
-/lib/aarch64-linux-gnu/liblber.so.2:
-
 /lib/ld-linux-aarch64.so.1:
-
-/lib/aarch64-linux-gnu/libsasl2.so.2:
-
-/lib/aarch64-linux-gnu/libssl.so.3:
-
-/lib/aarch64-linux-gnu/libcrypto.so.3:
-
-/lib/aarch64-linux-gnu/libz.so.1:
-
-/lib/aarch64-linux-gnu/libzstd.so.1:

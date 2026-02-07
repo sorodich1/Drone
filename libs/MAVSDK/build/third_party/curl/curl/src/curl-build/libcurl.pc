@@ -22,20 +22,20 @@
 #
 ###########################################################################
 
-prefix=/home/pi/Drone/MAVSDK/build/third_party/install
+prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-supported_protocols="DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS IPFS IPNS LDAP LDAPS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP WS WSS"
+supported_protocols="DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS IPFS IPNS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP WS WSS"
 supported_features="alt-svc AsynchDNS HSTS HTTPS-proxy IPv6 Largefile NTLM SSL threadsafe TLS-SRP UnixSockets"
 
 Name: libcurl
 URL: https://curl.se/
 Description: Library to transfer files with HTTP, FTP, etc.
 Version: 8.16.0-DEV
-Requires: ldap,lber,openssl
-Requires.private: ldap,lber,openssl
-Libs: -L${libdir} -lcurl -lldap -llber -lssl -lcrypto
-Libs.private:  -lldap -llber -lssl -lcrypto
+Requires: openssl
+Requires.private: openssl
+Libs: -L${libdir} -lcurl -lssl -lcrypto
+Libs.private:  -lssl -lcrypto
 Cflags: -I${includedir} -DCURL_STATICLIB
 Cflags.private: -DCURL_STATICLIB

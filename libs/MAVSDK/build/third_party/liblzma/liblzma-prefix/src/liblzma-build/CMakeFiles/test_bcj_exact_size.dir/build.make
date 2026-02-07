@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_bcj_exact_size.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test_bcj_exact_size.dir/codegen:
 .PHONY : CMakeFiles/test_bcj_exact_size.dir/codegen
 
 CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o: CMakeFiles/test_bcj_exact_size.dir/flags.make
-CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c
+CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c
 CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o: CMakeFiles/test_bcj_exact_size.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o -MF CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o.d -o CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o -MF CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o.d -o CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c
 
 CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c > CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c > CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.i
 
 CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c -o CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_bcj_exact_size.c -o CMakeFiles/test_bcj_exact_size.dir/tests/test_bcj_exact_size.c.s
 
 # Object files for target test_bcj_exact_size
 test_bcj_exact_size_OBJECTS = \
@@ -98,7 +98,7 @@ tests_bin/test_bcj_exact_size: CMakeFiles/test_bcj_exact_size.dir/build.make
 tests_bin/test_bcj_exact_size: CMakeFiles/test_bcj_exact_size.dir/compiler_depend.ts
 tests_bin/test_bcj_exact_size: liblzma.a
 tests_bin/test_bcj_exact_size: CMakeFiles/test_bcj_exact_size.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_bcj_exact_size"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_bcj_exact_size"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_bcj_exact_size.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/test_bcj_exact_size.dir/clean:
 .PHONY : CMakeFiles/test_bcj_exact_size.dir/clean
 
 CMakeFiles/test_bcj_exact_size.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_bcj_exact_size.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_bcj_exact_size.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_bcj_exact_size.dir/depend
 

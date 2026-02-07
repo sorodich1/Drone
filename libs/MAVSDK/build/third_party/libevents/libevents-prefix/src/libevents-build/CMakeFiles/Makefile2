@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -161,14 +161,14 @@ CMakeFiles/libevents.dir/all: parse/CMakeFiles/libevents_health_and_arming_check
 CMakeFiles/libevents.dir/all: protocol/CMakeFiles/libevents_receive.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libevents.dir/build.make CMakeFiles/libevents.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libevents.dir/build.make CMakeFiles/libevents.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=1,2 "Built target libevents"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=1,2 "Built target libevents"
 .PHONY : CMakeFiles/libevents.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libevents.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libevents.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : CMakeFiles/libevents.dir/rule
 
 # Convenience name for target.
@@ -178,7 +178,7 @@ libevents: CMakeFiles/libevents.dir/rule
 # codegen rule for target.
 CMakeFiles/libevents.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libevents.dir/build.make CMakeFiles/libevents.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=1,2 "Finished codegen for target libevents"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=1,2 "Finished codegen for target libevents"
 .PHONY : CMakeFiles/libevents.dir/codegen
 
 # clean rule for target.
@@ -193,14 +193,14 @@ CMakeFiles/libevents.dir/clean:
 common/CMakeFiles/libevents_common.dir/all:
 	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/libevents_common.dir/build.make common/CMakeFiles/libevents_common.dir/depend
 	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/libevents_common.dir/build.make common/CMakeFiles/libevents_common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target libevents_common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target libevents_common"
 .PHONY : common/CMakeFiles/libevents_common.dir/all
 
 # Build rule for subdir invocation for target.
 common/CMakeFiles/libevents_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/libevents_common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : common/CMakeFiles/libevents_common.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ libevents_common: common/CMakeFiles/libevents_common.dir/rule
 # codegen rule for target.
 common/CMakeFiles/libevents_common.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/libevents_common.dir/build.make common/CMakeFiles/libevents_common.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target libevents_common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target libevents_common"
 .PHONY : common/CMakeFiles/libevents_common.dir/codegen
 
 # clean rule for target.
@@ -225,14 +225,14 @@ common/CMakeFiles/libevents_common.dir/clean:
 parse/CMakeFiles/libevents_parser.dir/all:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=5,6 "Built target libevents_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=5,6 "Built target libevents_parser"
 .PHONY : parse/CMakeFiles/libevents_parser.dir/all
 
 # Build rule for subdir invocation for target.
 parse/CMakeFiles/libevents_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : parse/CMakeFiles/libevents_parser.dir/rule
 
 # Convenience name for target.
@@ -242,7 +242,7 @@ libevents_parser: parse/CMakeFiles/libevents_parser.dir/rule
 # codegen rule for target.
 parse/CMakeFiles/libevents_parser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=5,6 "Finished codegen for target libevents_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=5,6 "Finished codegen for target libevents_parser"
 .PHONY : parse/CMakeFiles/libevents_parser.dir/codegen
 
 # clean rule for target.
@@ -257,14 +257,14 @@ parse/CMakeFiles/libevents_parser.dir/clean:
 parse/CMakeFiles/nlohmann_json.dir/all:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/nlohmann_json.dir/build.make parse/CMakeFiles/nlohmann_json.dir/depend
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/nlohmann_json.dir/build.make parse/CMakeFiles/nlohmann_json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target nlohmann_json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target nlohmann_json"
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/all
 
 # Build rule for subdir invocation for target.
 parse/CMakeFiles/nlohmann_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/nlohmann_json.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/rule
 
 # Convenience name for target.
@@ -274,7 +274,7 @@ nlohmann_json: parse/CMakeFiles/nlohmann_json.dir/rule
 # codegen rule for target.
 parse/CMakeFiles/nlohmann_json.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/nlohmann_json.dir/build.make parse/CMakeFiles/nlohmann_json.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target nlohmann_json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target nlohmann_json"
 .PHONY : parse/CMakeFiles/nlohmann_json.dir/codegen
 
 # clean rule for target.
@@ -289,14 +289,14 @@ parse/CMakeFiles/nlohmann_json.dir/clean:
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/all:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/depend
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=3,4 "Built target libevents_health_and_arming_checks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=3,4 "Built target libevents_health_and_arming_checks"
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/all
 
 # Build rule for subdir invocation for target.
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_health_and_arming_checks.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule
 
 # Convenience name for target.
@@ -306,7 +306,7 @@ libevents_health_and_arming_checks: parse/CMakeFiles/libevents_health_and_arming
 # codegen rule for target.
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=3,4 "Finished codegen for target libevents_health_and_arming_checks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=3,4 "Finished codegen for target libevents_health_and_arming_checks"
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/codegen
 
 # clean rule for target.
@@ -321,14 +321,14 @@ parse/CMakeFiles/libevents_health_and_arming_checks.dir/clean:
 protocol/CMakeFiles/libevents_receive.dir/all:
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/libevents_receive.dir/build.make protocol/CMakeFiles/libevents_receive.dir/depend
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/libevents_receive.dir/build.make protocol/CMakeFiles/libevents_receive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target libevents_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Built target libevents_receive"
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/all
 
 # Build rule for subdir invocation for target.
 protocol/CMakeFiles/libevents_receive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protocol/CMakeFiles/libevents_receive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/rule
 
 # Convenience name for target.
@@ -338,7 +338,7 @@ libevents_receive: protocol/CMakeFiles/libevents_receive.dir/rule
 # codegen rule for target.
 protocol/CMakeFiles/libevents_receive.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/libevents_receive.dir/build.make protocol/CMakeFiles/libevents_receive.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target libevents_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num= "Finished codegen for target libevents_receive"
 .PHONY : protocol/CMakeFiles/libevents_receive.dir/codegen
 
 # clean rule for target.

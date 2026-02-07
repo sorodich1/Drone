@@ -1,7 +1,7 @@
 googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-all.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-all.cc \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest.h \
  /usr/include/c++/14/cstddef \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -127,9 +127,7 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -137,10 +135,10 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -198,9 +196,9 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-assertion-result.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-message.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-assertion-result.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-message.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/c++/14/stdlib.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/14/iostream \
  /usr/include/aarch64-linux-gnu/sys/stat.h \
@@ -210,8 +208,8 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port-arch.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
  /usr/include/aarch64-linux-gnu/bits/environments.h \
  /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -226,9 +224,9 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/c++/14/any /usr/include/c++/14/optional \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/variant \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-death-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-death-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/14/atomic /usr/include/c++/14/functional \
  /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
@@ -236,9 +234,9 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h /usr/include/c++/14/array \
  /usr/include/c++/14/compare \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-printers.h \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/aarch64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
@@ -274,23 +272,23 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-filepath.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-string.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-type-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-string.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/14/cxxabi.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-param-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-param-test.h \
  /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-param-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/14/cassert /usr/include/assert.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-test-part.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-typed-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_pred_impl.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_prod.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-assertion-result.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-death-test.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-test-part.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-typed-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_pred_impl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_prod.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-assertion-result.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-death-test.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest.h \
  /usr/include/fcntl.h /usr/include/aarch64-linux-gnu/bits/fcntl.h \
  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
@@ -309,7 +307,7 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-internal-inl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-internal-inl.h \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
@@ -325,19 +323,19 @@ googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h /usr/include/aarch64-linux-gnu/bits/netdb.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-spi.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-filepath.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-spi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-filepath.cc \
  /usr/include/c++/14/climits \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-matchers.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-port.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-matchers.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-port.cc \
  /usr/include/c++/14/fstream \
  /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \
  /usr/include/c++/14/bits/fstream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-printers.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-test-part.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-typed-test.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-printers.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-test-part.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest-typed-test.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/src/gtest.cc \
  /usr/include/c++/14/chrono /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \

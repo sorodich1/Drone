@@ -51,16 +51,16 @@ add_library(CURL::libcurl_static STATIC IMPORTED)
 
 set_target_properties(CURL::libcurl_static PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "CURL_STATICLIB"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include"
-  INTERFACE_LINK_DIRECTORIES "/usr/lib/aarch64-linux-gnu"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:ldap>;\$<LINK_ONLY:lber>;\$<LINK_ONLY:OpenSSL::SSL>;\$<LINK_ONLY:OpenSSL::Crypto>"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include"
+  INTERFACE_LINK_DIRECTORIES ""
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenSSL::SSL>;\$<LINK_ONLY:OpenSSL::Crypto>"
 )
 
-# Import target "CURL::libcurl_static" for configuration "Release"
-set_property(TARGET CURL::libcurl_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "CURL::libcurl_static" for configuration ""
+set_property(TARGET CURL::libcurl_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(CURL::libcurl_static PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
-  IMPORTED_LOCATION_RELEASE "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/libcurl.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
+  IMPORTED_LOCATION_NOCONFIG "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/libcurl.a"
   )
 
 # This file does not depend on other imported targets which have

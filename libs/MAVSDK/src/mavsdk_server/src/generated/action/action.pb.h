@@ -144,6 +144,18 @@ extern SetCurrentSpeedRequestDefaultTypeInternal _SetCurrentSpeedRequest_default
 class SetCurrentSpeedResponse;
 struct SetCurrentSpeedResponseDefaultTypeInternal;
 extern SetCurrentSpeedResponseDefaultTypeInternal _SetCurrentSpeedResponse_default_instance_;
+class SetGpsGlobalOriginRequest;
+struct SetGpsGlobalOriginRequestDefaultTypeInternal;
+extern SetGpsGlobalOriginRequestDefaultTypeInternal _SetGpsGlobalOriginRequest_default_instance_;
+class SetGpsGlobalOriginResponse;
+struct SetGpsGlobalOriginResponseDefaultTypeInternal;
+extern SetGpsGlobalOriginResponseDefaultTypeInternal _SetGpsGlobalOriginResponse_default_instance_;
+class SetRelayRequest;
+struct SetRelayRequestDefaultTypeInternal;
+extern SetRelayRequestDefaultTypeInternal _SetRelayRequest_default_instance_;
+class SetRelayResponse;
+struct SetRelayResponseDefaultTypeInternal;
+extern SetRelayResponseDefaultTypeInternal _SetRelayResponse_default_instance_;
 class SetReturnToLaunchAltitudeRequest;
 struct SetReturnToLaunchAltitudeRequestDefaultTypeInternal;
 extern SetReturnToLaunchAltitudeRequestDefaultTypeInternal _SetReturnToLaunchAltitudeRequest_default_instance_;
@@ -279,6 +291,39 @@ inline bool OrbitYawBehavior_Parse(absl::string_view name, OrbitYawBehavior* val
   return ::google::protobuf::internal::ParseNamedEnum<OrbitYawBehavior>(
       OrbitYawBehavior_descriptor(), name, value);
 }
+enum RelayCommand : int {
+  RELAY_COMMAND_ON = 0,
+  RELAY_COMMAND_OFF = 1,
+  RelayCommand_INT_MIN_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::min(),
+  RelayCommand_INT_MAX_SENTINEL_DO_NOT_USE_ =
+      std::numeric_limits<::int32_t>::max(),
+};
+
+bool RelayCommand_IsValid(int value);
+extern const uint32_t RelayCommand_internal_data_[];
+constexpr RelayCommand RelayCommand_MIN = static_cast<RelayCommand>(0);
+constexpr RelayCommand RelayCommand_MAX = static_cast<RelayCommand>(1);
+constexpr int RelayCommand_ARRAYSIZE = 1 + 1;
+const ::google::protobuf::EnumDescriptor*
+RelayCommand_descriptor();
+template <typename T>
+const std::string& RelayCommand_Name(T value) {
+  static_assert(std::is_same<T, RelayCommand>::value ||
+                    std::is_integral<T>::value,
+                "Incorrect type passed to RelayCommand_Name().");
+  return RelayCommand_Name(static_cast<RelayCommand>(value));
+}
+template <>
+inline const std::string& RelayCommand_Name(RelayCommand value) {
+  return ::google::protobuf::internal::NameOfDenseEnum<RelayCommand_descriptor,
+                                                 0, 1>(
+      static_cast<int>(value));
+}
+inline bool RelayCommand_Parse(absl::string_view name, RelayCommand* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<RelayCommand>(
+      RelayCommand_descriptor(), name, value);
+}
 
 // ===================================================================
 
@@ -344,7 +389,7 @@ class TransitionToMulticopterRequest final
     return reinterpret_cast<const TransitionToMulticopterRequest*>(
         &_TransitionToMulticopterRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 30;
+  static constexpr int kIndexInFileMessages = 32;
   friend void swap(TransitionToMulticopterRequest& a, TransitionToMulticopterRequest& b) { a.Swap(&b); }
   inline void Swap(TransitionToMulticopterRequest* other) {
     if (other == this) return;
@@ -490,7 +535,7 @@ class TransitionToFixedwingRequest final
     return reinterpret_cast<const TransitionToFixedwingRequest*>(
         &_TransitionToFixedwingRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 28;
+  static constexpr int kIndexInFileMessages = 30;
   friend void swap(TransitionToFixedwingRequest& a, TransitionToFixedwingRequest& b) { a.Swap(&b); }
   inline void Swap(TransitionToFixedwingRequest* other) {
     if (other == this) return;
@@ -1075,7 +1120,7 @@ class SetTakeoffAltitudeRequest final
     return reinterpret_cast<const SetTakeoffAltitudeRequest*>(
         &_SetTakeoffAltitudeRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 34;
+  static constexpr int kIndexInFileMessages = 36;
   friend void swap(SetTakeoffAltitudeRequest& a, SetTakeoffAltitudeRequest& b) { a.Swap(&b); }
   inline void Swap(SetTakeoffAltitudeRequest* other) {
     if (other == this) return;
@@ -1266,7 +1311,7 @@ class SetReturnToLaunchAltitudeRequest final
     return reinterpret_cast<const SetReturnToLaunchAltitudeRequest*>(
         &_SetReturnToLaunchAltitudeRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 38;
+  static constexpr int kIndexInFileMessages = 40;
   friend void swap(SetReturnToLaunchAltitudeRequest& a, SetReturnToLaunchAltitudeRequest& b) { a.Swap(&b); }
   inline void Swap(SetReturnToLaunchAltitudeRequest* other) {
     if (other == this) return;
@@ -1397,6 +1442,424 @@ class SetReturnToLaunchAltitudeRequest final
 };
 // -------------------------------------------------------------------
 
+class SetRelayRequest final
+    : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetRelayRequest) */ {
+ public:
+  inline SetRelayRequest() : SetRelayRequest(nullptr) {}
+  ~SetRelayRequest() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(SetRelayRequest* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(SetRelayRequest));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR SetRelayRequest(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline SetRelayRequest(const SetRelayRequest& from) : SetRelayRequest(nullptr, from) {}
+  inline SetRelayRequest(SetRelayRequest&& from) noexcept
+      : SetRelayRequest(nullptr, std::move(from)) {}
+  inline SetRelayRequest& operator=(const SetRelayRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SetRelayRequest& operator=(SetRelayRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SetRelayRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SetRelayRequest* internal_default_instance() {
+    return reinterpret_cast<const SetRelayRequest*>(
+        &_SetRelayRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 28;
+  friend void swap(SetRelayRequest& a, SetRelayRequest& b) { a.Swap(&b); }
+  inline void Swap(SetRelayRequest* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SetRelayRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SetRelayRequest* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<SetRelayRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const SetRelayRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const SetRelayRequest& from) { SetRelayRequest::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(SetRelayRequest* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "mavsdk.rpc.action.SetRelayRequest"; }
+
+ protected:
+  explicit SetRelayRequest(::google::protobuf::Arena* arena);
+  SetRelayRequest(::google::protobuf::Arena* arena, const SetRelayRequest& from);
+  SetRelayRequest(::google::protobuf::Arena* arena, SetRelayRequest&& from) noexcept
+      : SetRelayRequest(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kIndexFieldNumber = 1,
+    kSettingFieldNumber = 2,
+  };
+  // int32 index = 1;
+  void clear_index() ;
+  ::int32_t index() const;
+  void set_index(::int32_t value);
+
+  private:
+  ::int32_t _internal_index() const;
+  void _internal_set_index(::int32_t value);
+
+  public:
+  // .mavsdk.rpc.action.RelayCommand setting = 2;
+  void clear_setting() ;
+  ::mavsdk::rpc::action::RelayCommand setting() const;
+  void set_setting(::mavsdk::rpc::action::RelayCommand value);
+
+  private:
+  ::mavsdk::rpc::action::RelayCommand _internal_setting() const;
+  void _internal_set_setting(::mavsdk::rpc::action::RelayCommand value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.SetRelayRequest)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      1, 2, 0,
+      0, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const SetRelayRequest& from_msg);
+    ::int32_t index_;
+    int setting_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SetGpsGlobalOriginRequest final
+    : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetGpsGlobalOriginRequest) */ {
+ public:
+  inline SetGpsGlobalOriginRequest() : SetGpsGlobalOriginRequest(nullptr) {}
+  ~SetGpsGlobalOriginRequest() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(SetGpsGlobalOriginRequest* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(SetGpsGlobalOriginRequest));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR SetGpsGlobalOriginRequest(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline SetGpsGlobalOriginRequest(const SetGpsGlobalOriginRequest& from) : SetGpsGlobalOriginRequest(nullptr, from) {}
+  inline SetGpsGlobalOriginRequest(SetGpsGlobalOriginRequest&& from) noexcept
+      : SetGpsGlobalOriginRequest(nullptr, std::move(from)) {}
+  inline SetGpsGlobalOriginRequest& operator=(const SetGpsGlobalOriginRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SetGpsGlobalOriginRequest& operator=(SetGpsGlobalOriginRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SetGpsGlobalOriginRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SetGpsGlobalOriginRequest* internal_default_instance() {
+    return reinterpret_cast<const SetGpsGlobalOriginRequest*>(
+        &_SetGpsGlobalOriginRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 44;
+  friend void swap(SetGpsGlobalOriginRequest& a, SetGpsGlobalOriginRequest& b) { a.Swap(&b); }
+  inline void Swap(SetGpsGlobalOriginRequest* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SetGpsGlobalOriginRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SetGpsGlobalOriginRequest* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<SetGpsGlobalOriginRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const SetGpsGlobalOriginRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const SetGpsGlobalOriginRequest& from) { SetGpsGlobalOriginRequest::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(SetGpsGlobalOriginRequest* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "mavsdk.rpc.action.SetGpsGlobalOriginRequest"; }
+
+ protected:
+  explicit SetGpsGlobalOriginRequest(::google::protobuf::Arena* arena);
+  SetGpsGlobalOriginRequest(::google::protobuf::Arena* arena, const SetGpsGlobalOriginRequest& from);
+  SetGpsGlobalOriginRequest(::google::protobuf::Arena* arena, SetGpsGlobalOriginRequest&& from) noexcept
+      : SetGpsGlobalOriginRequest(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kLatitudeDegFieldNumber = 1,
+    kLongitudeDegFieldNumber = 2,
+    kAbsoluteAltitudeMFieldNumber = 3,
+  };
+  // double latitude_deg = 1;
+  void clear_latitude_deg() ;
+  double latitude_deg() const;
+  void set_latitude_deg(double value);
+
+  private:
+  double _internal_latitude_deg() const;
+  void _internal_set_latitude_deg(double value);
+
+  public:
+  // double longitude_deg = 2;
+  void clear_longitude_deg() ;
+  double longitude_deg() const;
+  void set_longitude_deg(double value);
+
+  private:
+  double _internal_longitude_deg() const;
+  void _internal_set_longitude_deg(double value);
+
+  public:
+  // float absolute_altitude_m = 3;
+  void clear_absolute_altitude_m() ;
+  float absolute_altitude_m() const;
+  void set_absolute_altitude_m(float value);
+
+  private:
+  float _internal_absolute_altitude_m() const;
+  void _internal_set_absolute_altitude_m(float value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.SetGpsGlobalOriginRequest)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      2, 3, 0,
+      0, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const SetGpsGlobalOriginRequest& from_msg);
+    double latitude_deg_;
+    double longitude_deg_;
+    float absolute_altitude_m_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SetCurrentSpeedRequest final
     : public ::google::protobuf::Message
 /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetCurrentSpeedRequest) */ {
@@ -1457,7 +1920,7 @@ class SetCurrentSpeedRequest final
     return reinterpret_cast<const SetCurrentSpeedRequest*>(
         &_SetCurrentSpeedRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 40;
+  static constexpr int kIndexInFileMessages = 42;
   friend void swap(SetCurrentSpeedRequest& a, SetCurrentSpeedRequest& b) { a.Swap(&b); }
   inline void Swap(SetCurrentSpeedRequest* other) {
     if (other == this) return;
@@ -2807,7 +3270,7 @@ class GetTakeoffAltitudeRequest final
     return reinterpret_cast<const GetTakeoffAltitudeRequest*>(
         &_GetTakeoffAltitudeRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 32;
+  static constexpr int kIndexInFileMessages = 34;
   friend void swap(GetTakeoffAltitudeRequest& a, GetTakeoffAltitudeRequest& b) { a.Swap(&b); }
   inline void Swap(GetTakeoffAltitudeRequest* other) {
     if (other == this) return;
@@ -2953,7 +3416,7 @@ class GetReturnToLaunchAltitudeRequest final
     return reinterpret_cast<const GetReturnToLaunchAltitudeRequest*>(
         &_GetReturnToLaunchAltitudeRequest_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 36;
+  static constexpr int kIndexInFileMessages = 38;
   friend void swap(GetReturnToLaunchAltitudeRequest& a, GetReturnToLaunchAltitudeRequest& b) { a.Swap(&b); }
   inline void Swap(GetReturnToLaunchAltitudeRequest* other) {
     if (other == this) return;
@@ -3789,7 +4252,7 @@ class ActionResult final
     return reinterpret_cast<const ActionResult*>(
         &_ActionResult_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 42;
+  static constexpr int kIndexInFileMessages = 46;
   friend void swap(ActionResult& a, ActionResult& b) { a.Swap(&b); }
   inline void Swap(ActionResult* other) {
     if (other == this) return;
@@ -4030,7 +4493,7 @@ class TransitionToMulticopterResponse final
     return reinterpret_cast<const TransitionToMulticopterResponse*>(
         &_TransitionToMulticopterResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 31;
+  static constexpr int kIndexInFileMessages = 33;
   friend void swap(TransitionToMulticopterResponse& a, TransitionToMulticopterResponse& b) { a.Swap(&b); }
   inline void Swap(TransitionToMulticopterResponse* other) {
     if (other == this) return;
@@ -4227,7 +4690,7 @@ class TransitionToFixedwingResponse final
     return reinterpret_cast<const TransitionToFixedwingResponse*>(
         &_TransitionToFixedwingResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 29;
+  static constexpr int kIndexInFileMessages = 31;
   friend void swap(TransitionToFixedwingResponse& a, TransitionToFixedwingResponse& b) { a.Swap(&b); }
   inline void Swap(TransitionToFixedwingResponse* other) {
     if (other == this) return;
@@ -5015,7 +5478,7 @@ class SetTakeoffAltitudeResponse final
     return reinterpret_cast<const SetTakeoffAltitudeResponse*>(
         &_SetTakeoffAltitudeResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 35;
+  static constexpr int kIndexInFileMessages = 37;
   friend void swap(SetTakeoffAltitudeResponse& a, SetTakeoffAltitudeResponse& b) { a.Swap(&b); }
   inline void Swap(SetTakeoffAltitudeResponse* other) {
     if (other == this) return;
@@ -5212,7 +5675,7 @@ class SetReturnToLaunchAltitudeResponse final
     return reinterpret_cast<const SetReturnToLaunchAltitudeResponse*>(
         &_SetReturnToLaunchAltitudeResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 39;
+  static constexpr int kIndexInFileMessages = 41;
   friend void swap(SetReturnToLaunchAltitudeResponse& a, SetReturnToLaunchAltitudeResponse& b) { a.Swap(&b); }
   inline void Swap(SetReturnToLaunchAltitudeResponse* other) {
     if (other == this) return;
@@ -5349,6 +5812,400 @@ class SetReturnToLaunchAltitudeResponse final
 };
 // -------------------------------------------------------------------
 
+class SetRelayResponse final
+    : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetRelayResponse) */ {
+ public:
+  inline SetRelayResponse() : SetRelayResponse(nullptr) {}
+  ~SetRelayResponse() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(SetRelayResponse* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(SetRelayResponse));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR SetRelayResponse(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline SetRelayResponse(const SetRelayResponse& from) : SetRelayResponse(nullptr, from) {}
+  inline SetRelayResponse(SetRelayResponse&& from) noexcept
+      : SetRelayResponse(nullptr, std::move(from)) {}
+  inline SetRelayResponse& operator=(const SetRelayResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SetRelayResponse& operator=(SetRelayResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SetRelayResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SetRelayResponse* internal_default_instance() {
+    return reinterpret_cast<const SetRelayResponse*>(
+        &_SetRelayResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 29;
+  friend void swap(SetRelayResponse& a, SetRelayResponse& b) { a.Swap(&b); }
+  inline void Swap(SetRelayResponse* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SetRelayResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SetRelayResponse* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<SetRelayResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const SetRelayResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const SetRelayResponse& from) { SetRelayResponse::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(SetRelayResponse* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "mavsdk.rpc.action.SetRelayResponse"; }
+
+ protected:
+  explicit SetRelayResponse(::google::protobuf::Arena* arena);
+  SetRelayResponse(::google::protobuf::Arena* arena, const SetRelayResponse& from);
+  SetRelayResponse(::google::protobuf::Arena* arena, SetRelayResponse&& from) noexcept
+      : SetRelayResponse(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  void clear_action_result() ;
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_NODISCARD ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value);
+  void unsafe_arena_set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+
+  public:
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.SetRelayResponse)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 1,
+      0, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const SetRelayResponse& from_msg);
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    ::mavsdk::rpc::action::ActionResult* action_result_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SetGpsGlobalOriginResponse final
+    : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetGpsGlobalOriginResponse) */ {
+ public:
+  inline SetGpsGlobalOriginResponse() : SetGpsGlobalOriginResponse(nullptr) {}
+  ~SetGpsGlobalOriginResponse() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(SetGpsGlobalOriginResponse* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(SetGpsGlobalOriginResponse));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR SetGpsGlobalOriginResponse(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline SetGpsGlobalOriginResponse(const SetGpsGlobalOriginResponse& from) : SetGpsGlobalOriginResponse(nullptr, from) {}
+  inline SetGpsGlobalOriginResponse(SetGpsGlobalOriginResponse&& from) noexcept
+      : SetGpsGlobalOriginResponse(nullptr, std::move(from)) {}
+  inline SetGpsGlobalOriginResponse& operator=(const SetGpsGlobalOriginResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SetGpsGlobalOriginResponse& operator=(SetGpsGlobalOriginResponse&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SetGpsGlobalOriginResponse& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SetGpsGlobalOriginResponse* internal_default_instance() {
+    return reinterpret_cast<const SetGpsGlobalOriginResponse*>(
+        &_SetGpsGlobalOriginResponse_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 45;
+  friend void swap(SetGpsGlobalOriginResponse& a, SetGpsGlobalOriginResponse& b) { a.Swap(&b); }
+  inline void Swap(SetGpsGlobalOriginResponse* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SetGpsGlobalOriginResponse* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SetGpsGlobalOriginResponse* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<SetGpsGlobalOriginResponse>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const SetGpsGlobalOriginResponse& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const SetGpsGlobalOriginResponse& from) { SetGpsGlobalOriginResponse::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(SetGpsGlobalOriginResponse* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "mavsdk.rpc.action.SetGpsGlobalOriginResponse"; }
+
+ protected:
+  explicit SetGpsGlobalOriginResponse(::google::protobuf::Arena* arena);
+  SetGpsGlobalOriginResponse(::google::protobuf::Arena* arena, const SetGpsGlobalOriginResponse& from);
+  SetGpsGlobalOriginResponse(::google::protobuf::Arena* arena, SetGpsGlobalOriginResponse&& from) noexcept
+      : SetGpsGlobalOriginResponse(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kActionResultFieldNumber = 1,
+  };
+  // .mavsdk.rpc.action.ActionResult action_result = 1;
+  bool has_action_result() const;
+  void clear_action_result() ;
+  const ::mavsdk::rpc::action::ActionResult& action_result() const;
+  PROTOBUF_NODISCARD ::mavsdk::rpc::action::ActionResult* release_action_result();
+  ::mavsdk::rpc::action::ActionResult* mutable_action_result();
+  void set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value);
+  void unsafe_arena_set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value);
+  ::mavsdk::rpc::action::ActionResult* unsafe_arena_release_action_result();
+
+  private:
+  const ::mavsdk::rpc::action::ActionResult& _internal_action_result() const;
+  ::mavsdk::rpc::action::ActionResult* _internal_mutable_action_result();
+
+  public:
+  // @@protoc_insertion_point(class_scope:mavsdk.rpc.action.SetGpsGlobalOriginResponse)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      0, 1, 1,
+      0, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const SetGpsGlobalOriginResponse& from_msg);
+    ::google::protobuf::internal::HasBits<1> _has_bits_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    ::mavsdk::rpc::action::ActionResult* action_result_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_action_2faction_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SetCurrentSpeedResponse final
     : public ::google::protobuf::Message
 /* @@protoc_insertion_point(class_definition:mavsdk.rpc.action.SetCurrentSpeedResponse) */ {
@@ -5409,7 +6266,7 @@ class SetCurrentSpeedResponse final
     return reinterpret_cast<const SetCurrentSpeedResponse*>(
         &_SetCurrentSpeedResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 41;
+  static constexpr int kIndexInFileMessages = 43;
   friend void swap(SetCurrentSpeedResponse& a, SetCurrentSpeedResponse& b) { a.Swap(&b); }
   inline void Swap(SetCurrentSpeedResponse* other) {
     if (other == this) return;
@@ -6985,7 +7842,7 @@ class GetTakeoffAltitudeResponse final
     return reinterpret_cast<const GetTakeoffAltitudeResponse*>(
         &_GetTakeoffAltitudeResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 33;
+  static constexpr int kIndexInFileMessages = 35;
   friend void swap(GetTakeoffAltitudeResponse& a, GetTakeoffAltitudeResponse& b) { a.Swap(&b); }
   inline void Swap(GetTakeoffAltitudeResponse* other) {
     if (other == this) return;
@@ -7194,7 +8051,7 @@ class GetReturnToLaunchAltitudeResponse final
     return reinterpret_cast<const GetReturnToLaunchAltitudeResponse*>(
         &_GetReturnToLaunchAltitudeResponse_default_instance_);
   }
-  static constexpr int kIndexInFileMessages = 37;
+  static constexpr int kIndexInFileMessages = 39;
   friend void swap(GetReturnToLaunchAltitudeResponse& a, GetReturnToLaunchAltitudeResponse& b) { a.Swap(&b); }
   inline void Swap(GetReturnToLaunchAltitudeResponse* other) {
     if (other == this) return;
@@ -9864,6 +10721,154 @@ inline void SetActuatorResponse::set_allocated_action_result(::mavsdk::rpc::acti
 
 // -------------------------------------------------------------------
 
+// SetRelayRequest
+
+// int32 index = 1;
+inline void SetRelayRequest::clear_index() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.index_ = 0;
+}
+inline ::int32_t SetRelayRequest::index() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetRelayRequest.index)
+  return _internal_index();
+}
+inline void SetRelayRequest::set_index(::int32_t value) {
+  _internal_set_index(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.action.SetRelayRequest.index)
+}
+inline ::int32_t SetRelayRequest::_internal_index() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.index_;
+}
+inline void SetRelayRequest::_internal_set_index(::int32_t value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.index_ = value;
+}
+
+// .mavsdk.rpc.action.RelayCommand setting = 2;
+inline void SetRelayRequest::clear_setting() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.setting_ = 0;
+}
+inline ::mavsdk::rpc::action::RelayCommand SetRelayRequest::setting() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetRelayRequest.setting)
+  return _internal_setting();
+}
+inline void SetRelayRequest::set_setting(::mavsdk::rpc::action::RelayCommand value) {
+  _internal_set_setting(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.action.SetRelayRequest.setting)
+}
+inline ::mavsdk::rpc::action::RelayCommand SetRelayRequest::_internal_setting() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return static_cast<::mavsdk::rpc::action::RelayCommand>(_impl_.setting_);
+}
+inline void SetRelayRequest::_internal_set_setting(::mavsdk::rpc::action::RelayCommand value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.setting_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// SetRelayResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool SetRelayResponse::has_action_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.action_result_ != nullptr);
+  return value;
+}
+inline void SetRelayResponse::clear_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.action_result_ != nullptr) _impl_.action_result_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::mavsdk::rpc::action::ActionResult& SetRelayResponse::_internal_action_result() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  const ::mavsdk::rpc::action::ActionResult* p = _impl_.action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& SetRelayResponse::action_result() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetRelayResponse.action_result)
+  return _internal_action_result();
+}
+inline void SetRelayResponse::unsafe_arena_set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.action_result_);
+  }
+  _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.SetRelayResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* SetRelayResponse::release_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* released = _impl_.action_result_;
+  _impl_.action_result_ = nullptr;
+  if (::google::protobuf::internal::DebugHardenForceCopyInRelease()) {
+    auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+    if (GetArena() == nullptr) {
+      delete old;
+    }
+  } else {
+    if (GetArena() != nullptr) {
+      released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+    }
+  }
+  return released;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetRelayResponse::unsafe_arena_release_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.SetRelayResponse.action_result)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* temp = _impl_.action_result_;
+  _impl_.action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetRelayResponse::_internal_mutable_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.action_result_ == nullptr) {
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::mavsdk::rpc::action::ActionResult>(GetArena());
+    _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(p);
+  }
+  return _impl_.action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetRelayResponse::mutable_action_result() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.SetRelayResponse.action_result)
+  return _msg;
+}
+inline void SetRelayResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (message_arena == nullptr) {
+    delete (_impl_.action_result_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena = (value)->GetArena();
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(value);
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.SetRelayResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
 // TransitionToFixedwingRequest
 
 // -------------------------------------------------------------------
@@ -10702,6 +11707,176 @@ inline void SetCurrentSpeedResponse::set_allocated_action_result(::mavsdk::rpc::
 
 // -------------------------------------------------------------------
 
+// SetGpsGlobalOriginRequest
+
+// double latitude_deg = 1;
+inline void SetGpsGlobalOriginRequest::clear_latitude_deg() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.latitude_deg_ = 0;
+}
+inline double SetGpsGlobalOriginRequest::latitude_deg() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetGpsGlobalOriginRequest.latitude_deg)
+  return _internal_latitude_deg();
+}
+inline void SetGpsGlobalOriginRequest::set_latitude_deg(double value) {
+  _internal_set_latitude_deg(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.action.SetGpsGlobalOriginRequest.latitude_deg)
+}
+inline double SetGpsGlobalOriginRequest::_internal_latitude_deg() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.latitude_deg_;
+}
+inline void SetGpsGlobalOriginRequest::_internal_set_latitude_deg(double value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.latitude_deg_ = value;
+}
+
+// double longitude_deg = 2;
+inline void SetGpsGlobalOriginRequest::clear_longitude_deg() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.longitude_deg_ = 0;
+}
+inline double SetGpsGlobalOriginRequest::longitude_deg() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetGpsGlobalOriginRequest.longitude_deg)
+  return _internal_longitude_deg();
+}
+inline void SetGpsGlobalOriginRequest::set_longitude_deg(double value) {
+  _internal_set_longitude_deg(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.action.SetGpsGlobalOriginRequest.longitude_deg)
+}
+inline double SetGpsGlobalOriginRequest::_internal_longitude_deg() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.longitude_deg_;
+}
+inline void SetGpsGlobalOriginRequest::_internal_set_longitude_deg(double value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.longitude_deg_ = value;
+}
+
+// float absolute_altitude_m = 3;
+inline void SetGpsGlobalOriginRequest::clear_absolute_altitude_m() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.absolute_altitude_m_ = 0;
+}
+inline float SetGpsGlobalOriginRequest::absolute_altitude_m() const {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetGpsGlobalOriginRequest.absolute_altitude_m)
+  return _internal_absolute_altitude_m();
+}
+inline void SetGpsGlobalOriginRequest::set_absolute_altitude_m(float value) {
+  _internal_set_absolute_altitude_m(value);
+  // @@protoc_insertion_point(field_set:mavsdk.rpc.action.SetGpsGlobalOriginRequest.absolute_altitude_m)
+}
+inline float SetGpsGlobalOriginRequest::_internal_absolute_altitude_m() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.absolute_altitude_m_;
+}
+inline void SetGpsGlobalOriginRequest::_internal_set_absolute_altitude_m(float value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.absolute_altitude_m_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// SetGpsGlobalOriginResponse
+
+// .mavsdk.rpc.action.ActionResult action_result = 1;
+inline bool SetGpsGlobalOriginResponse::has_action_result() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.action_result_ != nullptr);
+  return value;
+}
+inline void SetGpsGlobalOriginResponse::clear_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.action_result_ != nullptr) _impl_.action_result_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline const ::mavsdk::rpc::action::ActionResult& SetGpsGlobalOriginResponse::_internal_action_result() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  const ::mavsdk::rpc::action::ActionResult* p = _impl_.action_result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::mavsdk::rpc::action::ActionResult&>(::mavsdk::rpc::action::_ActionResult_default_instance_);
+}
+inline const ::mavsdk::rpc::action::ActionResult& SetGpsGlobalOriginResponse::action_result() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:mavsdk.rpc.action.SetGpsGlobalOriginResponse.action_result)
+  return _internal_action_result();
+}
+inline void SetGpsGlobalOriginResponse::unsafe_arena_set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::google::protobuf::MessageLite*>(_impl_.action_result_);
+  }
+  _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(value);
+  if (value != nullptr) {
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:mavsdk.rpc.action.SetGpsGlobalOriginResponse.action_result)
+}
+inline ::mavsdk::rpc::action::ActionResult* SetGpsGlobalOriginResponse::release_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* released = _impl_.action_result_;
+  _impl_.action_result_ = nullptr;
+  if (::google::protobuf::internal::DebugHardenForceCopyInRelease()) {
+    auto* old = reinterpret_cast<::google::protobuf::MessageLite*>(released);
+    released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+    if (GetArena() == nullptr) {
+      delete old;
+    }
+  } else {
+    if (GetArena() != nullptr) {
+      released = ::google::protobuf::internal::DuplicateIfNonNull(released);
+    }
+  }
+  return released;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetGpsGlobalOriginResponse::unsafe_arena_release_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:mavsdk.rpc.action.SetGpsGlobalOriginResponse.action_result)
+
+  _impl_._has_bits_[0] &= ~0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* temp = _impl_.action_result_;
+  _impl_.action_result_ = nullptr;
+  return temp;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetGpsGlobalOriginResponse::_internal_mutable_action_result() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (_impl_.action_result_ == nullptr) {
+    auto* p = ::google::protobuf::Message::DefaultConstruct<::mavsdk::rpc::action::ActionResult>(GetArena());
+    _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(p);
+  }
+  return _impl_.action_result_;
+}
+inline ::mavsdk::rpc::action::ActionResult* SetGpsGlobalOriginResponse::mutable_action_result() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  ::mavsdk::rpc::action::ActionResult* _msg = _internal_mutable_action_result();
+  // @@protoc_insertion_point(field_mutable:mavsdk.rpc.action.SetGpsGlobalOriginResponse.action_result)
+  return _msg;
+}
+inline void SetGpsGlobalOriginResponse::set_allocated_action_result(::mavsdk::rpc::action::ActionResult* value) {
+  ::google::protobuf::Arena* message_arena = GetArena();
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  if (message_arena == nullptr) {
+    delete (_impl_.action_result_);
+  }
+
+  if (value != nullptr) {
+    ::google::protobuf::Arena* submessage_arena = (value)->GetArena();
+    if (message_arena != submessage_arena) {
+      value = ::google::protobuf::internal::GetOwnedMessage(message_arena, value, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000001u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000001u;
+  }
+
+  _impl_.action_result_ = reinterpret_cast<::mavsdk::rpc::action::ActionResult*>(value);
+  // @@protoc_insertion_point(field_set_allocated:mavsdk.rpc.action.SetGpsGlobalOriginResponse.action_result)
+}
+
+// -------------------------------------------------------------------
+
 // ActionResult
 
 // .mavsdk.rpc.action.ActionResult.Result result = 1;
@@ -10798,6 +11973,12 @@ struct is_proto_enum<::mavsdk::rpc::action::OrbitYawBehavior> : std::true_type {
 template <>
 inline const EnumDescriptor* GetEnumDescriptor<::mavsdk::rpc::action::OrbitYawBehavior>() {
   return ::mavsdk::rpc::action::OrbitYawBehavior_descriptor();
+}
+template <>
+struct is_proto_enum<::mavsdk::rpc::action::RelayCommand> : std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor<::mavsdk::rpc::action::RelayCommand>() {
+  return ::mavsdk::rpc::action::RelayCommand_descriptor();
 }
 
 }  // namespace protobuf

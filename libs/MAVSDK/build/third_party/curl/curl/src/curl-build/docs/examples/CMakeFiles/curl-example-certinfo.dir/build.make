@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Include any dependencies generated for this target.
 include docs/examples/CMakeFiles/curl-example-certinfo.dir/depend.make
@@ -73,18 +73,18 @@ docs/examples/CMakeFiles/curl-example-certinfo.dir/codegen:
 .PHONY : docs/examples/CMakeFiles/curl-example-certinfo.dir/codegen
 
 docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o: docs/examples/CMakeFiles/curl-example-certinfo.dir/flags.make
-docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c
+docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c
 docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o: docs/examples/CMakeFiles/curl-example-certinfo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o -MF CMakeFiles/curl-example-certinfo.dir/certinfo.c.o.d -o CMakeFiles/curl-example-certinfo.dir/certinfo.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.o -MF CMakeFiles/curl-example-certinfo.dir/certinfo.c.o.d -o CMakeFiles/curl-example-certinfo.dir/certinfo.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c
 
 docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/curl-example-certinfo.dir/certinfo.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c > CMakeFiles/curl-example-certinfo.dir/certinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c > CMakeFiles/curl-example-certinfo.dir/certinfo.c.i
 
 docs/examples/CMakeFiles/curl-example-certinfo.dir/certinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/curl-example-certinfo.dir/certinfo.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c -o CMakeFiles/curl-example-certinfo.dir/certinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/certinfo.c -o CMakeFiles/curl-example-certinfo.dir/certinfo.c.s
 
 # Object files for target curl-example-certinfo
 curl__example__certinfo_OBJECTS = \
@@ -97,21 +97,21 @@ docs/examples/certinfo: docs/examples/CMakeFiles/curl-example-certinfo.dir/certi
 docs/examples/certinfo: docs/examples/CMakeFiles/curl-example-certinfo.dir/build.make
 docs/examples/certinfo: docs/examples/CMakeFiles/curl-example-certinfo.dir/compiler_depend.ts
 docs/examples/certinfo: lib/libcurl.a
-docs/examples/certinfo: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libssl.a
-docs/examples/certinfo: /home/pi/Drone/MAVSDK/build/third_party/install/lib/libcrypto.a
+docs/examples/certinfo: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libssl.a
+docs/examples/certinfo: /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/libcrypto.a
 docs/examples/certinfo: docs/examples/CMakeFiles/curl-example-certinfo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable certinfo"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-certinfo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable certinfo"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curl-example-certinfo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 docs/examples/CMakeFiles/curl-example-certinfo.dir/build: docs/examples/certinfo
 .PHONY : docs/examples/CMakeFiles/curl-example-certinfo.dir/build
 
 docs/examples/CMakeFiles/curl-example-certinfo.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-certinfo.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples && $(CMAKE_COMMAND) -P CMakeFiles/curl-example-certinfo.dir/cmake_clean.cmake
 .PHONY : docs/examples/CMakeFiles/curl-example-certinfo.dir/clean
 
 docs/examples/CMakeFiles/curl-example-certinfo.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-certinfo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/CMakeFiles/curl-example-certinfo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/examples/CMakeFiles/curl-example-certinfo.dir/depend
 

@@ -54,13 +54,15 @@ void EventsImpl::deinit()
 {
     _system_impl->component_metadata().unsubscribe_metadata_available(_subscribe_metadata_handle);
 
-    if (_current_mode_cookie) {
-        _system_impl->unregister_all_mavlink_message_handlers(_current_mode_cookie);
-        _current_mode_cookie = nullptr;
-    }
-    if (_heartbeat_mode_cookie) {
-        _system_impl->unregister_all_mavlink_message_handlers(_heartbeat_mode_cookie);
-        _heartbeat_mode_cookie = nullptr;
+    // Use blocking version to ensure any in-flight callbacks complete before destruction.
+    // Pass the ADDRESS of the cookie (same as was passed during registration).
+    _system_impl->unregister_all_mavlink_message_handlers_blocking(&_current_mode_cookie);
+    _system_impl->unregister_all_mavlink_message_handlers_blocking(&_heartbeat_mode_cookie);
+
+    // Clear all EventHandlers - their destructors will unregister message handlers
+    {
+        const std::lock_guard lg{_mutex};
+        _events.clear();
     }
 }
 
@@ -354,9 +356,11 @@ std::string EventsImpl::mode_name_from_custom_mode(uint32_t custom_mode) const
 {
     // TODO: use Standard Modes MAVLink interface
     switch (to_flight_mode_from_custom_mode(
-        _system_impl->autopilot(), _system_impl->get_vehicle_type(), custom_mode)) {
+        _system_impl->effective_autopilot(), _system_impl->get_vehicle_type(), custom_mode)) {
         case FlightMode::FBWA:
             return "FBWA";
+        case FlightMode::FBWB:
+            return "FBWB";
         case FlightMode::Autotune:
             return "Autotune";
         case FlightMode::Guided:

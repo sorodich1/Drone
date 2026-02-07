@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Utility rule file for curl-man.
 
@@ -169,111 +169,111 @@ docs/libcurl/CMakeFiles/curl-man: docs/libcurl/libcurl-url.3
 docs/libcurl/CMakeFiles/curl-man: docs/libcurl/libcurl-ws.3
 docs/libcurl/CMakeFiles/curl-man: docs/libcurl/libcurl.3
 
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_cleanup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_duphandle.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_escape.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_getinfo.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_header.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_init.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_nextheader.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_by_id.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_by_name.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_next.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_pause.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_perform.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_recv.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_reset.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_send.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_setopt.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_ssls_export.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_ssls_import.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_strerror.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_unescape.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_upkeep.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_escape.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formadd.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formfree.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formget.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_free.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_getdate.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_getenv.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_cleanup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_init.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_init_mem.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_sslset.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_trace.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_addpart.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_data.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_data_cb.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_encoder.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_filedata.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_filename.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_free.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_headers.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_init.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_name.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_subparts.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_type.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mprintf.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_add_handle.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_assign.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_cleanup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_fdset.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_get_handles.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_get_offt.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_info_read.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_init.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_perform.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_poll.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_remove_handle.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_setopt.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket_action.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket_all.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_strerror.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_timeout.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_wait.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_waitfds.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_wakeup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_pushheader_byname.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_pushheader_bynum.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_cleanup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_init.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_setopt.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_strerror.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_slist_append.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_slist_free_all.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_strequal.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_strnequal.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_unescape.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_cleanup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_dup.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_get.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_set.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_strerror.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_version.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_version_info.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_meta.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_recv.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_send.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_start_frame.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-easy.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-env-dbg.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-env.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-errors.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-multi.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-security.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-share.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_cleanup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_duphandle.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_escape.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_getinfo.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_header.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_init.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_nextheader.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_by_id.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_by_name.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_option_next.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_pause.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_perform.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_recv.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_reset.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_send.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_setopt.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_ssls_export.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_ssls_import.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_strerror.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_unescape.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_easy_upkeep.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_escape.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formadd.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formfree.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_formget.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_free.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_getdate.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_getenv.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_cleanup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_init.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_init_mem.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_sslset.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_global_trace.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_addpart.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_data.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_data_cb.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_encoder.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_filedata.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_filename.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_free.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_headers.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_init.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_name.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_subparts.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mime_type.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_mprintf.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_add_handle.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_assign.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_cleanup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_fdset.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_get_handles.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_get_offt.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_info_read.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_init.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_perform.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_poll.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_remove_handle.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_setopt.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket_action.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_socket_all.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_strerror.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_timeout.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_wait.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_waitfds.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_multi_wakeup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_pushheader_byname.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_pushheader_bynum.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_cleanup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_init.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_setopt.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_share_strerror.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_slist_append.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_slist_free_all.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_strequal.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_strnequal.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_unescape.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_cleanup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_dup.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_get.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_set.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_url_strerror.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_version.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_version_info.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_meta.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_recv.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_send.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/curl_ws_start_frame.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-easy.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-env-dbg.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-env.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-errors.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-multi.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-security.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-share.md
 docs/libcurl/curl_easy_cleanup.3: docs/libcurl/libcurl-symbols.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-thread.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-tutorial.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-url.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-ws.md
-docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl.md
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating curl_easy_cleanup.3, curl_easy_duphandle.3, curl_easy_escape.3, curl_easy_getinfo.3, curl_easy_header.3, curl_easy_init.3, curl_easy_nextheader.3, curl_easy_option_by_id.3, curl_easy_option_by_name.3, curl_easy_option_next.3, curl_easy_pause.3, curl_easy_perform.3, curl_easy_recv.3, curl_easy_reset.3, curl_easy_send.3, curl_easy_setopt.3, curl_easy_ssls_export.3, curl_easy_ssls_import.3, curl_easy_strerror.3, curl_easy_unescape.3, curl_easy_upkeep.3, curl_escape.3, curl_formadd.3, curl_formfree.3, curl_formget.3, curl_free.3, curl_getdate.3, curl_getenv.3, curl_global_cleanup.3, curl_global_init.3, curl_global_init_mem.3, curl_global_sslset.3, curl_global_trace.3, curl_mime_addpart.3, curl_mime_data.3, curl_mime_data_cb.3, curl_mime_encoder.3, curl_mime_filedata.3, curl_mime_filename.3, curl_mime_free.3, curl_mime_headers.3, curl_mime_init.3, curl_mime_name.3, curl_mime_subparts.3, curl_mime_type.3, curl_mprintf.3, curl_multi_add_handle.3, curl_multi_assign.3, curl_multi_cleanup.3, curl_multi_fdset.3, curl_multi_get_handles.3, curl_multi_get_offt.3, curl_multi_info_read.3, curl_multi_init.3, curl_multi_perform.3, curl_multi_poll.3, curl_multi_remove_handle.3, curl_multi_setopt.3, curl_multi_socket.3, curl_multi_socket_action.3, curl_multi_socket_all.3, curl_multi_strerror.3, curl_multi_timeout.3, curl_multi_wait.3, curl_multi_waitfds.3, curl_multi_wakeup.3, curl_pushheader_byname.3, curl_pushheader_bynum.3, curl_share_cleanup.3, curl_share_init.3, curl_share_setopt.3, curl_share_strerror.3, curl_slist_append.3, curl_slist_free_all.3, curl_strequal.3, curl_strnequal.3, curl_unescape.3, curl_url.3, curl_url_cleanup.3, curl_url_dup.3, curl_url_get.3, curl_url_set.3, curl_url_strerror.3, curl_version.3, curl_version_info.3, curl_ws_meta.3, curl_ws_recv.3, curl_ws_send.3, curl_ws_start_frame.3, libcurl-easy.3, libcurl-env-dbg.3, libcurl-env.3, libcurl-errors.3, libcurl-multi.3, libcurl-security.3, libcurl-share.3, libcurl-symbols.3, libcurl-thread.3, libcurl-tutorial.3, libcurl-url.3, libcurl-ws.3, libcurl.3"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl && /usr/bin/perl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff -k -d /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl curl_easy_cleanup.md curl_easy_duphandle.md curl_easy_escape.md curl_easy_getinfo.md curl_easy_header.md curl_easy_init.md curl_easy_nextheader.md curl_easy_option_by_id.md curl_easy_option_by_name.md curl_easy_option_next.md curl_easy_pause.md curl_easy_perform.md curl_easy_recv.md curl_easy_reset.md curl_easy_send.md curl_easy_setopt.md curl_easy_ssls_export.md curl_easy_ssls_import.md curl_easy_strerror.md curl_easy_unescape.md curl_easy_upkeep.md curl_escape.md curl_formadd.md curl_formfree.md curl_formget.md curl_free.md curl_getdate.md curl_getenv.md curl_global_cleanup.md curl_global_init.md curl_global_init_mem.md curl_global_sslset.md curl_global_trace.md curl_mime_addpart.md curl_mime_data.md curl_mime_data_cb.md curl_mime_encoder.md curl_mime_filedata.md curl_mime_filename.md curl_mime_free.md curl_mime_headers.md curl_mime_init.md curl_mime_name.md curl_mime_subparts.md curl_mime_type.md curl_mprintf.md curl_multi_add_handle.md curl_multi_assign.md curl_multi_cleanup.md curl_multi_fdset.md curl_multi_get_handles.md curl_multi_get_offt.md curl_multi_info_read.md curl_multi_init.md curl_multi_perform.md curl_multi_poll.md curl_multi_remove_handle.md curl_multi_setopt.md curl_multi_socket.md curl_multi_socket_action.md curl_multi_socket_all.md curl_multi_strerror.md curl_multi_timeout.md curl_multi_wait.md curl_multi_waitfds.md curl_multi_wakeup.md curl_pushheader_byname.md curl_pushheader_bynum.md curl_share_cleanup.md curl_share_init.md curl_share_setopt.md curl_share_strerror.md curl_slist_append.md curl_slist_free_all.md curl_strequal.md curl_strnequal.md curl_unescape.md curl_url.md curl_url_cleanup.md curl_url_dup.md curl_url_get.md curl_url_set.md curl_url_strerror.md curl_version.md curl_version_info.md curl_ws_meta.md curl_ws_recv.md curl_ws_send.md curl_ws_start_frame.md libcurl-easy.md libcurl-env-dbg.md libcurl-env.md libcurl-errors.md libcurl-multi.md libcurl-security.md libcurl-share.md /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl/libcurl-symbols.md libcurl-thread.md libcurl-tutorial.md libcurl-url.md libcurl-ws.md libcurl.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-thread.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-tutorial.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-url.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl-ws.md
+docs/libcurl/curl_easy_cleanup.3: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/libcurl.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating curl_easy_cleanup.3, curl_easy_duphandle.3, curl_easy_escape.3, curl_easy_getinfo.3, curl_easy_header.3, curl_easy_init.3, curl_easy_nextheader.3, curl_easy_option_by_id.3, curl_easy_option_by_name.3, curl_easy_option_next.3, curl_easy_pause.3, curl_easy_perform.3, curl_easy_recv.3, curl_easy_reset.3, curl_easy_send.3, curl_easy_setopt.3, curl_easy_ssls_export.3, curl_easy_ssls_import.3, curl_easy_strerror.3, curl_easy_unescape.3, curl_easy_upkeep.3, curl_escape.3, curl_formadd.3, curl_formfree.3, curl_formget.3, curl_free.3, curl_getdate.3, curl_getenv.3, curl_global_cleanup.3, curl_global_init.3, curl_global_init_mem.3, curl_global_sslset.3, curl_global_trace.3, curl_mime_addpart.3, curl_mime_data.3, curl_mime_data_cb.3, curl_mime_encoder.3, curl_mime_filedata.3, curl_mime_filename.3, curl_mime_free.3, curl_mime_headers.3, curl_mime_init.3, curl_mime_name.3, curl_mime_subparts.3, curl_mime_type.3, curl_mprintf.3, curl_multi_add_handle.3, curl_multi_assign.3, curl_multi_cleanup.3, curl_multi_fdset.3, curl_multi_get_handles.3, curl_multi_get_offt.3, curl_multi_info_read.3, curl_multi_init.3, curl_multi_perform.3, curl_multi_poll.3, curl_multi_remove_handle.3, curl_multi_setopt.3, curl_multi_socket.3, curl_multi_socket_action.3, curl_multi_socket_all.3, curl_multi_strerror.3, curl_multi_timeout.3, curl_multi_wait.3, curl_multi_waitfds.3, curl_multi_wakeup.3, curl_pushheader_byname.3, curl_pushheader_bynum.3, curl_share_cleanup.3, curl_share_init.3, curl_share_setopt.3, curl_share_strerror.3, curl_slist_append.3, curl_slist_free_all.3, curl_strequal.3, curl_strnequal.3, curl_unescape.3, curl_url.3, curl_url_cleanup.3, curl_url_dup.3, curl_url_get.3, curl_url_set.3, curl_url_strerror.3, curl_version.3, curl_version_info.3, curl_ws_meta.3, curl_ws_recv.3, curl_ws_send.3, curl_ws_start_frame.3, libcurl-easy.3, libcurl-env-dbg.3, libcurl-env.3, libcurl-errors.3, libcurl-multi.3, libcurl-security.3, libcurl-share.3, libcurl-symbols.3, libcurl-thread.3, libcurl-tutorial.3, libcurl-url.3, libcurl-ws.3, libcurl.3"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl && /usr/bin/perl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff -k -d /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl curl_easy_cleanup.md curl_easy_duphandle.md curl_easy_escape.md curl_easy_getinfo.md curl_easy_header.md curl_easy_init.md curl_easy_nextheader.md curl_easy_option_by_id.md curl_easy_option_by_name.md curl_easy_option_next.md curl_easy_pause.md curl_easy_perform.md curl_easy_recv.md curl_easy_reset.md curl_easy_send.md curl_easy_setopt.md curl_easy_ssls_export.md curl_easy_ssls_import.md curl_easy_strerror.md curl_easy_unescape.md curl_easy_upkeep.md curl_escape.md curl_formadd.md curl_formfree.md curl_formget.md curl_free.md curl_getdate.md curl_getenv.md curl_global_cleanup.md curl_global_init.md curl_global_init_mem.md curl_global_sslset.md curl_global_trace.md curl_mime_addpart.md curl_mime_data.md curl_mime_data_cb.md curl_mime_encoder.md curl_mime_filedata.md curl_mime_filename.md curl_mime_free.md curl_mime_headers.md curl_mime_init.md curl_mime_name.md curl_mime_subparts.md curl_mime_type.md curl_mprintf.md curl_multi_add_handle.md curl_multi_assign.md curl_multi_cleanup.md curl_multi_fdset.md curl_multi_get_handles.md curl_multi_get_offt.md curl_multi_info_read.md curl_multi_init.md curl_multi_perform.md curl_multi_poll.md curl_multi_remove_handle.md curl_multi_setopt.md curl_multi_socket.md curl_multi_socket_action.md curl_multi_socket_all.md curl_multi_strerror.md curl_multi_timeout.md curl_multi_wait.md curl_multi_waitfds.md curl_multi_wakeup.md curl_pushheader_byname.md curl_pushheader_bynum.md curl_share_cleanup.md curl_share_init.md curl_share_setopt.md curl_share_strerror.md curl_slist_append.md curl_slist_free_all.md curl_strequal.md curl_strnequal.md curl_unescape.md curl_url.md curl_url_cleanup.md curl_url_dup.md curl_url_get.md curl_url_set.md curl_url_strerror.md curl_version.md curl_version_info.md curl_ws_meta.md curl_ws_recv.md curl_ws_send.md curl_ws_start_frame.md libcurl-easy.md libcurl-env-dbg.md libcurl-env.md libcurl-errors.md libcurl-multi.md libcurl-security.md libcurl-share.md /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl/libcurl-symbols.md libcurl-thread.md libcurl-tutorial.md libcurl-url.md libcurl-ws.md libcurl.md
 
 docs/libcurl/curl_easy_duphandle.3: docs/libcurl/curl_easy_cleanup.3
 	@$(CMAKE_COMMAND) -E touch_nocreate docs/libcurl/curl_easy_duphandle.3
@@ -578,10 +578,10 @@ docs/libcurl/libcurl-ws.3: docs/libcurl/curl_easy_cleanup.3
 docs/libcurl/libcurl.3: docs/libcurl/curl_easy_cleanup.3
 	@$(CMAKE_COMMAND) -E touch_nocreate docs/libcurl/libcurl.3
 
-docs/libcurl/libcurl-symbols.md: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/mksymbolsmanpage.pl
-docs/libcurl/libcurl-symbols.md: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/symbols-in-versions
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating libcurl-symbols.md"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl && /usr/bin/perl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/mksymbolsmanpage.pl < /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/symbols-in-versions > libcurl-symbols.md
+docs/libcurl/libcurl-symbols.md: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/mksymbolsmanpage.pl
+docs/libcurl/libcurl-symbols.md: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/symbols-in-versions
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating libcurl-symbols.md"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl && /usr/bin/perl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/mksymbolsmanpage.pl < /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl/symbols-in-versions > libcurl-symbols.md
 
 docs/libcurl/CMakeFiles/curl-man.dir/codegen:
 .PHONY : docs/libcurl/CMakeFiles/curl-man.dir/codegen
@@ -698,10 +698,10 @@ docs/libcurl/CMakeFiles/curl-man.dir/build: curl-man
 .PHONY : docs/libcurl/CMakeFiles/curl-man.dir/build
 
 docs/libcurl/CMakeFiles/curl-man.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl && $(CMAKE_COMMAND) -P CMakeFiles/curl-man.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl && $(CMAKE_COMMAND) -P CMakeFiles/curl-man.dir/cmake_clean.cmake
 .PHONY : docs/libcurl/CMakeFiles/curl-man.dir/clean
 
 docs/libcurl/CMakeFiles/curl-man.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/libcurl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/libcurl/CMakeFiles/curl-man.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/libcurl/CMakeFiles/curl-man.dir/depend
 

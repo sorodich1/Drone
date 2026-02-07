@@ -1,4 +1,4 @@
-prefix=/home/pi/Drone/MAVSDK/build/third_party/install
+prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include 

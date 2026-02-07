@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Utility rule file for curl-generate-testcurl.1.
 
@@ -68,10 +68,10 @@ include docs/CMakeFiles/curl-generate-testcurl.1.dir/progress.make
 
 docs/CMakeFiles/curl-generate-testcurl.1: docs/testcurl.1
 
-docs/testcurl.1: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff
-docs/testcurl.1: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/testcurl.md
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating testcurl.1"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs && /usr/bin/perl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff testcurl.md > /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/testcurl.1
+docs/testcurl.1: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff
+docs/testcurl.1: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/testcurl.md
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating testcurl.1"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs && /usr/bin/perl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/cd2nroff testcurl.md > /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/testcurl.1
 
 docs/CMakeFiles/curl-generate-testcurl.1.dir/codegen:
 .PHONY : docs/CMakeFiles/curl-generate-testcurl.1.dir/codegen
@@ -86,10 +86,10 @@ docs/CMakeFiles/curl-generate-testcurl.1.dir/build: curl-generate-testcurl.1
 .PHONY : docs/CMakeFiles/curl-generate-testcurl.1.dir/build
 
 docs/CMakeFiles/curl-generate-testcurl.1.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs && $(CMAKE_COMMAND) -P CMakeFiles/curl-generate-testcurl.1.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs && $(CMAKE_COMMAND) -P CMakeFiles/curl-generate-testcurl.1.dir/cmake_clean.cmake
 .PHONY : docs/CMakeFiles/curl-generate-testcurl.1.dir/clean
 
 docs/CMakeFiles/curl-generate-testcurl.1.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/CMakeFiles/curl-generate-testcurl.1.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/CMakeFiles/curl-generate-testcurl.1.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : docs/CMakeFiles/curl-generate-testcurl.1.dir/depend
 

@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -101,9 +101,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -111,10 +109,10 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -126,9 +124,10 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o: \
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
  /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/nested_exception.h \
  /usr/include/c++/14/bits/enable_special_members.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/log.h /usr/include/c++/14/bitset \
- /usr/include/c++/14/mutex /usr/include/c++/14/bits/chrono.h \
- /usr/include/c++/14/ratio /usr/include/c++/14/cstdint \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/log.h \
+ /usr/include/c++/14/bitset /usr/include/c++/14/mutex \
+ /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
+ /usr/include/c++/14/cstdint \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
@@ -177,7 +176,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \

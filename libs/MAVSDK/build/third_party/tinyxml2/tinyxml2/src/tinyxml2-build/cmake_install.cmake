@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/MAVSDK/build/third_party/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/libs/MAVSDK/build/third_party/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/libtinyxml2.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/libtinyxml2.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake"
-         "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
+         "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -63,31 +63,31 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets-release.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES
-    "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/cmake/tinyxml2-config.cmake"
-    "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/tinyxml2-config-version.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/cmake/tinyxml2-config.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/tinyxml2-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/tinyxml2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/tinyxml2.pc")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -103,6 +103,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -5,10 +5,10 @@
 # You can do whatever you want with this file.
 #
 
-prefix=/home/pi/Drone/MAVSDK/build/third_party/install
-exec_prefix=/home/pi/Drone/MAVSDK/build/third_party/install
-libdir=/home/pi/Drone/MAVSDK/build/third_party/install/lib
-includedir=/home/pi/Drone/MAVSDK/build/third_party/install/include
+prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install
+exec_prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install
+libdir=/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib
+includedir=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include
 
 Name: liblzma
 Description: General purpose data compression library

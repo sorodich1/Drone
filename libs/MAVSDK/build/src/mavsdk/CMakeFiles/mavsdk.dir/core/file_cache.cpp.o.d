@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache.h \
  /usr/include/c++/14/filesystem \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
@@ -112,9 +112,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -122,7 +120,6 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
@@ -196,10 +193,11 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o: \
  /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
  /usr/include/c++/14/bits/erase_if.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/log.h /usr/include/c++/14/bitset \
- /usr/include/c++/14/mutex /usr/include/c++/14/bits/std_mutex.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/log.h \
+ /usr/include/c++/14/bitset /usr/include/c++/14/mutex \
+ /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/zlib-ng
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/zlib-ng
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/zlib-ng
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng
 
 # Utility rule file for zlib-ng.
 
@@ -76,52 +76,52 @@ CMakeFiles/zlib-ng-complete: zlib-ng/src/zlib-ng-stamp/zlib-ng-patch
 CMakeFiles/zlib-ng-complete: zlib-ng/src/zlib-ng-stamp/zlib-ng-configure
 CMakeFiles/zlib-ng-complete: zlib-ng/src/zlib-ng-stamp/zlib-ng-build
 CMakeFiles/zlib-ng-complete: zlib-ng/src/zlib-ng-stamp/zlib-ng-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'zlib-ng'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'zlib-ng'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-done
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-build: zlib-ng/src/zlib-ng-stamp/zlib-ng-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'zlib-ng'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'zlib-ng'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-build
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-configure: zlib-ng/tmp/zlib-ng-cfgcmd.txt
 zlib-ng/src/zlib-ng-stamp/zlib-ng-configure: zlib-ng/src/zlib-ng-stamp/zlib-ng-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'zlib-ng'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DZLIB_COMPAT=ON -DZLIB_ENABLE_TESTS=OFF -DWITH_GTEST=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng -B /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'zlib-ng'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DBUILD_SHARED_LIBS=OFF -DZLIB_COMPAT=ON -DZLIB_ENABLE_TESTS=OFF -DWITH_GTEST=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng -B /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-configure
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-download: zlib-ng/src/zlib-ng-stamp/download-zlib-ng.cmake
 zlib-ng/src/zlib-ng-stamp/zlib-ng-download: zlib-ng/src/zlib-ng-stamp/zlib-ng-urlinfo.txt
 zlib-ng/src/zlib-ng-stamp/zlib-ng-download: zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'zlib-ng'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/download-zlib-ng.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/verify-zlib-ng.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/extract-zlib-ng.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'zlib-ng'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/download-zlib-ng.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/verify-zlib-ng.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/extract-zlib-ng.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-download
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-install: zlib-ng/src/zlib-ng-stamp/zlib-ng-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'zlib-ng'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'zlib-ng'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-install
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'zlib-ng'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/tmp/zlib-ng-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'zlib-ng'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/tmp/zlib-ng-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-patch: zlib-ng/src/zlib-ng-stamp/zlib-ng-patch-info.txt
 zlib-ng/src/zlib-ng-stamp/zlib-ng-patch: zlib-ng/src/zlib-ng-stamp/zlib-ng-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'zlib-ng'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'zlib-ng'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-patch
 
 zlib-ng/src/zlib-ng-stamp/zlib-ng-update: zlib-ng/src/zlib-ng-stamp/zlib-ng-update-info.txt
 zlib-ng/src/zlib-ng-stamp/zlib-ng-update: zlib-ng/src/zlib-ng-stamp/zlib-ng-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'zlib-ng'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'zlib-ng'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-update
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-update
 
 CMakeFiles/zlib-ng.dir/codegen:
 .PHONY : CMakeFiles/zlib-ng.dir/codegen
@@ -147,6 +147,6 @@ CMakeFiles/zlib-ng.dir/clean:
 .PHONY : CMakeFiles/zlib-ng.dir/clean
 
 CMakeFiles/zlib-ng.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/zlib-ng && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/zlib-ng /home/pi/Drone/MAVSDK/third_party/zlib-ng /home/pi/Drone/MAVSDK/build/third_party/zlib-ng /home/pi/Drone/MAVSDK/build/third_party/zlib-ng /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/zlib-ng /home/pi/Drone/libs/MAVSDK/third_party/zlib-ng /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/zlib-ng.dir/depend
 

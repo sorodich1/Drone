@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt" AND EXISTS "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt" AND
-  "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt" IS_NEWER_THAN "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt")
+if(EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt" AND EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt" AND
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt" IS_NEWER_THAN "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt'"
+    "'/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2'")
+  message(FATAL_ERROR "Failed to remove directory: '/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -37,7 +37,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/leethomason/tinyxml2" "tinyxml2"
-    WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src"
+    WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "9.0.0" --
-  WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
+          checkout "11.0.0" --
+  WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '9.0.0'")
+  message(FATAL_ERROR "Failed to checkout tag: '11.0.0'")
 endif()
 
 set(init_submodules TRUE)
@@ -66,22 +66,22 @@ if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
+    WORKING_DIRECTORY "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2'")
+  message(FATAL_ERROR "Failed to update submodules in: '/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt" "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt" "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-gitclone-lastrun.txt'")
 endif()

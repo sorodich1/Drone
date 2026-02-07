@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/socket_holder.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/socket_holder.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/socket_holder.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/socket_holder.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \

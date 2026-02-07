@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DARM_ACLE -DARM_AUXV_HAS_CRC32 -DARM_FEATURES -DARM_NEON -DARM_NEON_HASLD4 -DHAVE_ALIGNED_ALLOC -DHAVE_ARM_ACLE_H -DHAVE_ATTRIBUTE_ALIGNED -DHAVE_BUILTIN_CTZ -DHAVE_BUILTIN_CTZLL -DHAVE_POSIX_MEMALIGN -DHAVE_SYS_AUXV_H -DHAVE_VISIBILITY_HIDDEN -DHAVE_VISIBILITY_INTERNAL -DWITH_GZFILEOP -DZLIB_COMPAT -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64
 
-C_INCLUDES = -I/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build -I/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng
+C_INCLUDES = -I/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-build -I/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng
 
 C_FLAGS = -O2 -DNDEBUG -std=c11 -fPIC -Wall
 

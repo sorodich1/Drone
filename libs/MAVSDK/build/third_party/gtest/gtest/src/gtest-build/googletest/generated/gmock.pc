@@ -1,5 +1,5 @@
-libdir=/home/pi/Drone/MAVSDK/build/third_party/install/lib
-includedir=/home/pi/Drone/MAVSDK/build/third_party/install/include
+libdir=/home/pi/Drone/libs/MAVSDK/build/third_party/install/lib
+includedir=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include
 
 Name: gmock
 Description: GoogleMock (without main() function)

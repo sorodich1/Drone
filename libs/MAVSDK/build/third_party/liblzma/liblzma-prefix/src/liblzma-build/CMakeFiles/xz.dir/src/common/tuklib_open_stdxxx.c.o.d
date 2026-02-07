@@ -1,9 +1,9 @@
 CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
  /usr/include/inttypes.h /usr/include/features.h \
@@ -59,12 +59,10 @@ CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h /usr/include/errno.h \
- /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h /usr/include/fcntl.h \
  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \

@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/MAVSDK/build/third_party/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/libs/MAVSDK/build/third_party/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,41 +44,41 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/scripts/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/scripts/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs/examples/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/curl-config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/curl-config")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/libcurl.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/libcurl.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets.cmake"
-         "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets.cmake")
+         "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -91,27 +91,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets-release.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/Export/8e83d16133499b505bf3986f4f209a65/CURLTargets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES
-    "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/generated/CURLConfigVersion.cmake"
-    "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/generated/CURLConfig.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/generated/CURLConfigVersion.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/generated/CURLConfig.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/wcurl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/wcurl")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -127,6 +127,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

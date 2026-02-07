@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 # Include any dependencies generated for this target.
 include src/unit_tests/CMakeFiles/unit_tests_runner.dir/depend.make
@@ -73,368 +73,368 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/codegen:
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/codegen
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/callback_list_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/callback_list_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/callback_list_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/callback_list_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/callback_list_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/callback_list_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/callback_list_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/callback_list_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/cli_arg_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/cli_arg_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/cli_arg_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/cli_arg_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/cli_arg_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/cli_arg_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/cli_arg_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/cli_arg_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/file_cache_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/file_cache_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/locked_queue_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/locked_queue_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/locked_queue_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/locked_queue_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/geometry_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/geometry_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/geometry_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/geometry_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/geometry_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/geometry_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/geometry_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/geometry_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/math_utils_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/math_utils_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/math_utils_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/math_utils_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/math_utils_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/math_utils_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/math_utils_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/math_utils_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_client_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_mission_transfer_server_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_statustext_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/ringbuffer_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/unittests_main.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unittests_main.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/unittests_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unittests_main.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/unittests_main.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unittests_main.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/unittests_main.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unittests_main.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_parameter_cache_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/string_utils_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/string_utils_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/string_utils_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/string_utils_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/string_utils_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/string_utils_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/string_utils_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/string_utils_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/base64_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/base64_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/base64_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/base64_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/base64_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/base64_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/base64_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/base64_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_component_metadata_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/camera/camera_definition_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/flags.make
-src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o: /home/pi/Drone/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp
+src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o: /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o -c /home/pi/Drone/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o -MF CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o.d -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o -c /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp > CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/src/mavsdk/plugins/mission_raw/mission_import_test.cpp -o CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
 
 # Object files for target unit_tests_runner
 unit_tests_runner_OBJECTS = \
@@ -496,7 +496,7 @@ src/unit_tests/unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.di
 src/unit_tests/unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o
 src/unit_tests/unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make
 src/unit_tests/unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/compiler_depend.ts
-src/unit_tests/unit_tests_runner: src/mavsdk/libmavsdk.so.3.10.2
+src/unit_tests/unit_tests_runner: src/mavsdk/libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty
 src/unit_tests/unit_tests_runner: third_party/install/lib/libtinyxml2.a
 src/unit_tests/unit_tests_runner: third_party/install/lib/libgtest.a
 src/unit_tests/unit_tests_runner: third_party/install/lib/libgtest_main.a
@@ -504,18 +504,18 @@ src/unit_tests/unit_tests_runner: third_party/install/lib/libgmock.a
 src/unit_tests/unit_tests_runner: third_party/install/lib/libjsoncpp.a
 src/unit_tests/unit_tests_runner: third_party/install/lib/libgtest.a
 src/unit_tests/unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable unit_tests_runner"
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests_runner.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable unit_tests_runner"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests_runner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/build: src/unit_tests/unit_tests_runner
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/build
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/src/unit_tests && $(CMAKE_COMMAND) -P CMakeFiles/unit_tests_runner.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/src/unit_tests && $(CMAKE_COMMAND) -P CMakeFiles/unit_tests_runner.dir/cmake_clean.cmake
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/clean
 
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK /home/pi/Drone/MAVSDK/src/unit_tests /home/pi/Drone/MAVSDK/build /home/pi/Drone/MAVSDK/build/src/unit_tests /home/pi/Drone/MAVSDK/build/src/unit_tests/CMakeFiles/unit_tests_runner.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK /home/pi/Drone/libs/MAVSDK/src/unit_tests /home/pi/Drone/libs/MAVSDK/build /home/pi/Drone/libs/MAVSDK/build/src/unit_tests /home/pi/Drone/libs/MAVSDK/build/src/unit_tests/CMakeFiles/unit_tests_runner.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/depend
 

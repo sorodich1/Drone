@@ -1,7 +1,7 @@
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip_test.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/hostname_to_ip.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/hostname_to_ip.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -101,9 +101,7 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -111,10 +109,10 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -126,7 +124,7 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/c++/14/bits/cxxabi_init_exception.h \
  /usr/include/c++/14/typeinfo /usr/include/c++/14/bits/nested_exception.h \
  /usr/include/c++/14/bits/enable_special_members.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest.h \
  /usr/include/c++/14/cstdint \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
@@ -203,9 +201,9 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-assertion-result.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-message.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-assertion-result.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-message.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port.h \
  /usr/include/c++/14/stdlib.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/14/iostream \
  /usr/include/aarch64-linux-gnu/sys/stat.h \
@@ -215,8 +213,8 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port-arch.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
  /usr/include/aarch64-linux-gnu/bits/environments.h \
  /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -229,9 +227,9 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/c++/14/bits/std_mutex.h \
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/mutex \
  /usr/include/c++/14/any /usr/include/c++/14/variant \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-death-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-death-test-internal.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-death-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-death-test-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-matchers.h \
  /usr/include/c++/14/atomic /usr/include/c++/14/functional \
  /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
@@ -239,9 +237,9 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h /usr/include/c++/14/array \
  /usr/include/c++/14/compare \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-printers.h \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-internal.h \
  /usr/include/aarch64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
@@ -277,17 +275,17 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_te
  /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-filepath.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-string.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-type-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-filepath.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-string.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/14/cxxabi.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-param-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-param-test.h \
  /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-param-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/14/cassert /usr/include/assert.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-test-part.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-typed-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_pred_impl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_prod.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-test-part.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-typed-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest_pred_impl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest_prod.h

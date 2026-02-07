@@ -1,7 +1,7 @@
 CMakeFiles/mav.dir/src/MessageSet.cpp.o: \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageSet.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageSet.h \
  /usr/include/c++/14/utility \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -156,9 +156,7 @@ CMakeFiles/mav.dir/src/MessageSet.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -166,10 +164,10 @@ CMakeFiles/mav.dir/src/MessageSet.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc /usr/include/c++/14/fstream \
@@ -194,23 +192,23 @@ CMakeFiles/mav.dir/src/MessageSet.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \
  /usr/include/c++/14/bits/fstream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageDefinition.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageDefinition.h \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
  /usr/include/c++/14/bits/uniform_int_dist.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/utils.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/utils.h \
  /usr/include/c++/14/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/chrono.h \
  /usr/include/c++/14/ratio /usr/include/c++/14/cstdint \
  /usr/include/c++/14/limits /usr/include/c++/14/ctime \
  /usr/include/c++/14/bits/parse_numbers.h \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/Message.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/Message.h \
  /usr/include/c++/14/array /usr/include/c++/14/compare \
  /usr/include/c++/14/variant \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/tinyxml2.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/tinyxml2.h \
  /usr/include/c++/14/climits \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \

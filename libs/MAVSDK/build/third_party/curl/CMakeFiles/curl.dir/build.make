@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl
 
 # Utility rule file for curl.
 
@@ -76,49 +76,49 @@ CMakeFiles/curl-complete: curl/src/curl-stamp/curl-patch
 CMakeFiles/curl-complete: curl/src/curl-stamp/curl-configure
 CMakeFiles/curl-complete: curl/src/curl-stamp/curl-build
 CMakeFiles/curl-complete: curl/src/curl-stamp/curl-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'curl'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles/curl-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'curl'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles/curl-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-done
 
 curl/src/curl-stamp/curl-build: curl/src/curl-stamp/curl-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'curl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'curl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-build
 
 curl/src/curl-stamp/curl-configure: curl/tmp/curl-cfgcmd.txt
 curl/src/curl-stamp/curl-configure: curl/src/curl-stamp/curl-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'curl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DCURL_USE_OPENSSL=ON -DCURL_USE_LIBSSH2=OFF -DCURL_USE_LIBPSL=OFF -DBUILD_CURL_EXE=OFF -DBUILD_SHARED_LIBS=OFF -DCURL_BROTLI=OFF -DCURL_ZLIB=OFF -DCURL_ZSTD=OFF -DHTTP_ONLY=OFF -DUSE_NGHTTP2=OFF -DBUILD_TESTING=OFF -DUSE_LIBIDN2=OFF -DCMAKE_MODULE_PATH=/home/pi/Drone/MAVSDK/third_party/curl/../../cmake/Modules/non-msvc "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl -B /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'curl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DCURL_USE_OPENSSL=ON -DCURL_USE_LIBSSH2=OFF -DCURL_USE_LIBPSL=OFF -DBUILD_CURL_EXE=OFF -DBUILD_SHARED_LIBS=OFF -DCURL_BROTLI=OFF -DCURL_ZLIB=OFF -DCURL_ZSTD=OFF -DHTTP_ONLY=OFF -DUSE_NGHTTP2=OFF -DBUILD_TESTING=OFF -DUSE_LIBIDN2=OFF -DCMAKE_MODULE_PATH=/home/pi/Drone/libs/MAVSDK/third_party/curl/../../cmake/Modules/non-msvc "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl -B /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-configure
 
 curl/src/curl-stamp/curl-download: curl/src/curl-stamp/curl-gitinfo.txt
 curl/src/curl-stamp/curl-download: curl/src/curl-stamp/curl-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'curl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/curl/curl/tmp/curl-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'curl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/tmp/curl-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-download
 
 curl/src/curl-stamp/curl-install: curl/src/curl-stamp/curl-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'curl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'curl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-install
 
 curl/src/curl-stamp/curl-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'curl'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/curl/curl/tmp/curl-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'curl'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/tmp/curl-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-mkdir
 
 curl/src/curl-stamp/curl-patch: curl/src/curl-stamp/curl-patch-info.txt
 curl/src/curl-stamp/curl-patch: curl/src/curl-stamp/curl-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'curl'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'curl'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-stamp/curl-patch
 
 curl/src/curl-stamp/curl-update: curl/tmp/curl-gitupdate.cmake
 curl/src/curl-stamp/curl-update: curl/src/curl-stamp/curl-update-info.txt
 curl/src/curl-stamp/curl-update: curl/src/curl-stamp/curl-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'curl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/curl/curl/tmp/curl-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'curl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/tmp/curl-gitupdate.cmake
 
 CMakeFiles/curl.dir/codegen:
 .PHONY : CMakeFiles/curl.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/curl.dir/clean:
 .PHONY : CMakeFiles/curl.dir/clean
 
 CMakeFiles/curl.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/curl /home/pi/Drone/MAVSDK/third_party/curl /home/pi/Drone/MAVSDK/build/third_party/curl /home/pi/Drone/MAVSDK/build/third_party/curl /home/pi/Drone/MAVSDK/build/third_party/curl/CMakeFiles/curl.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/curl /home/pi/Drone/libs/MAVSDK/third_party/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/CMakeFiles/curl.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/curl.dir/depend
 

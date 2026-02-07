@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/jsoncpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/jsoncpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/jsoncpp
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp
 
 # Utility rule file for jsoncpp.
 
@@ -76,49 +76,49 @@ CMakeFiles/jsoncpp-complete: jsoncpp/src/jsoncpp-stamp/jsoncpp-patch
 CMakeFiles/jsoncpp-complete: jsoncpp/src/jsoncpp-stamp/jsoncpp-configure
 CMakeFiles/jsoncpp-complete: jsoncpp/src/jsoncpp-stamp/jsoncpp-build
 CMakeFiles/jsoncpp-complete: jsoncpp/src/jsoncpp-stamp/jsoncpp-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'jsoncpp'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles/jsoncpp-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'jsoncpp'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles/jsoncpp-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-done
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-build: jsoncpp/src/jsoncpp-stamp/jsoncpp-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'jsoncpp'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'jsoncpp'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-build
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-configure: jsoncpp/tmp/jsoncpp-cfgcmd.txt
 jsoncpp/src/jsoncpp-stamp/jsoncpp-configure: jsoncpp/src/jsoncpp-stamp/jsoncpp-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'jsoncpp'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DJSONCPP_WITH_CMAKE_PACKAGE=ON -DJSONCPP_WITH_TESTS=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp -B /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'jsoncpp'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DBUILD_SHARED_LIBS=OFF -DJSONCPP_WITH_CMAKE_PACKAGE=ON -DJSONCPP_WITH_TESTS=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp -B /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-configure
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-download: jsoncpp/src/jsoncpp-stamp/jsoncpp-gitinfo.txt
 jsoncpp/src/jsoncpp-stamp/jsoncpp-download: jsoncpp/src/jsoncpp-stamp/jsoncpp-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'jsoncpp'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'jsoncpp'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-download
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-install: jsoncpp/src/jsoncpp-stamp/jsoncpp-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'jsoncpp'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'jsoncpp'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-install
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'jsoncpp'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'jsoncpp'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-mkdir
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-patch: jsoncpp/src/jsoncpp-stamp/jsoncpp-patch-info.txt
 jsoncpp/src/jsoncpp-stamp/jsoncpp-patch: jsoncpp/src/jsoncpp-stamp/jsoncpp-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'jsoncpp'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'jsoncpp'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-stamp/jsoncpp-patch
 
 jsoncpp/src/jsoncpp-stamp/jsoncpp-update: jsoncpp/tmp/jsoncpp-gitupdate.cmake
 jsoncpp/src/jsoncpp-stamp/jsoncpp-update: jsoncpp/src/jsoncpp-stamp/jsoncpp-update-info.txt
 jsoncpp/src/jsoncpp-stamp/jsoncpp-update: jsoncpp/src/jsoncpp-stamp/jsoncpp-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'jsoncpp'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'jsoncpp'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/tmp/jsoncpp-gitupdate.cmake
 
 CMakeFiles/jsoncpp.dir/codegen:
 .PHONY : CMakeFiles/jsoncpp.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/jsoncpp.dir/clean:
 .PHONY : CMakeFiles/jsoncpp.dir/clean
 
 CMakeFiles/jsoncpp.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/jsoncpp /home/pi/Drone/MAVSDK/third_party/jsoncpp /home/pi/Drone/MAVSDK/build/third_party/jsoncpp /home/pi/Drone/MAVSDK/build/third_party/jsoncpp /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/CMakeFiles/jsoncpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/jsoncpp /home/pi/Drone/libs/MAVSDK/third_party/jsoncpp /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/CMakeFiles/jsoncpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/jsoncpp.dir/depend
 

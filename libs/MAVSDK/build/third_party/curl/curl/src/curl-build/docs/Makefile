@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-bu
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/docs//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/docs//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 docs/CMakeFiles/curl-generate-curl-config.1.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-curl-config.1.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-curl-config.1.dir/rule
 .PHONY : docs/CMakeFiles/curl-generate-curl-config.1.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ curl-generate-curl-config.1: docs/CMakeFiles/curl-generate-curl-config.1.dir/rul
 
 # fast build rule for target.
 curl-generate-curl-config.1/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-curl-config.1.dir/build.make docs/CMakeFiles/curl-generate-curl-config.1.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-curl-config.1.dir/build.make docs/CMakeFiles/curl-generate-curl-config.1.dir/build
 .PHONY : curl-generate-curl-config.1/fast
 
 # Convenience name for target.
 docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule
 .PHONY : docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/rule
 
 # Convenience name for target.
@@ -206,12 +206,12 @@ curl-generate-mk-ca-bundle.1: docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/r
 
 # fast build rule for target.
 curl-generate-mk-ca-bundle.1/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build.make docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build.make docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/build
 .PHONY : curl-generate-mk-ca-bundle.1/fast
 
 # Convenience name for target.
 docs/CMakeFiles/curl-generate-wcurl.1.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-wcurl.1.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-wcurl.1.dir/rule
 .PHONY : docs/CMakeFiles/curl-generate-wcurl.1.dir/rule
 
 # Convenience name for target.
@@ -220,12 +220,12 @@ curl-generate-wcurl.1: docs/CMakeFiles/curl-generate-wcurl.1.dir/rule
 
 # fast build rule for target.
 curl-generate-wcurl.1/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-wcurl.1.dir/build.make docs/CMakeFiles/curl-generate-wcurl.1.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-wcurl.1.dir/build.make docs/CMakeFiles/curl-generate-wcurl.1.dir/build
 .PHONY : curl-generate-wcurl.1/fast
 
 # Convenience name for target.
 docs/CMakeFiles/curl-generate-runtests.1.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-runtests.1.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-runtests.1.dir/rule
 .PHONY : docs/CMakeFiles/curl-generate-runtests.1.dir/rule
 
 # Convenience name for target.
@@ -234,12 +234,12 @@ curl-generate-runtests.1: docs/CMakeFiles/curl-generate-runtests.1.dir/rule
 
 # fast build rule for target.
 curl-generate-runtests.1/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-runtests.1.dir/build.make docs/CMakeFiles/curl-generate-runtests.1.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-runtests.1.dir/build.make docs/CMakeFiles/curl-generate-runtests.1.dir/build
 .PHONY : curl-generate-runtests.1/fast
 
 # Convenience name for target.
 docs/CMakeFiles/curl-generate-testcurl.1.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-testcurl.1.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/curl-generate-testcurl.1.dir/rule
 .PHONY : docs/CMakeFiles/curl-generate-testcurl.1.dir/rule
 
 # Convenience name for target.
@@ -248,7 +248,7 @@ curl-generate-testcurl.1: docs/CMakeFiles/curl-generate-testcurl.1.dir/rule
 
 # fast build rule for target.
 curl-generate-testcurl.1/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-testcurl.1.dir/build.make docs/CMakeFiles/curl-generate-testcurl.1.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/curl-generate-testcurl.1.dir/build.make docs/CMakeFiles/curl-generate-testcurl.1.dir/build
 .PHONY : curl-generate-testcurl.1/fast
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

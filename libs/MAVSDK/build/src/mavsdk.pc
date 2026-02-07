@@ -5,7 +5,7 @@ includedir=/usr/local/include
 
 Name: MAVSDK
 Description: API and library for MAVLink compatible systems written in C++17
-Version: 3.10.2
+Version: f740838b-dirty.f740838b-dirty.f740838b-dirty
 Requires.private: libcurl jsoncpp tinyxml2
 Libs: -L"${libdir}" -lmavsdk
 Cflags: -I"${includedir}" -I"${includedir}/mavsdk"

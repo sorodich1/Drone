@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tinyxml2.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/tinyxml2.dir/codegen:
 .PHONY : CMakeFiles/tinyxml2.dir/codegen
 
 CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: CMakeFiles/tinyxml2.dir/flags.make
-CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp
+CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp
 CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: CMakeFiles/tinyxml2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o -MF CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d -o CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o -MF CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d -o CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp
 
 CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp > CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp > CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i
 
 CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp -o CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp -o CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s
 
 # Object files for target tinyxml2
 tinyxml2_OBJECTS = \
@@ -96,7 +96,7 @@ tinyxml2_EXTERNAL_OBJECTS =
 libtinyxml2.a: CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
 libtinyxml2.a: CMakeFiles/tinyxml2.dir/build.make
 libtinyxml2.a: CMakeFiles/tinyxml2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtinyxml2.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtinyxml2.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/tinyxml2.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinyxml2.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/tinyxml2.dir/clean:
 .PHONY : CMakeFiles/tinyxml2.dir/clean
 
 CMakeFiles/tinyxml2.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/tinyxml2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build/CMakeFiles/tinyxml2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tinyxml2.dir/depend
 

@@ -34,6 +34,8 @@ std::function< void()> [NewSystemCallback](#classmavsdk_1_1_mavsdk_1a7a283c6a75e
 [Handle](classmavsdk_1_1_handle.md)<> [NewSystemHandle](#classmavsdk_1_1_mavsdk_1ae0727f2bed9cbf276d161ada0a432b8c) | [Handle](classmavsdk_1_1_handle.md) type to unsubscribe from subscribe_on_new_system.
 [Handle](classmavsdk_1_1_handle.md)< bool([MavlinkMessage](structmavsdk_1_1_mavsdk_1_1_mavlink_message.md))> [InterceptJsonHandle](#classmavsdk_1_1_mavsdk_1a3b40ae4fd8af4c4419b61f0ad955812f) | [Handle](classmavsdk_1_1_handle.md) for intercepting messages.
 std::function< bool([MavlinkMessage](structmavsdk_1_1_mavsdk_1_1_mavlink_message.md))> [InterceptJsonCallback](#classmavsdk_1_1_mavsdk_1a17923db3b1504e911487729114b68f48) | Callback type for intercepting messages.
+std::function< void(const char *bytes, size_t length)> [RawBytesCallback](#classmavsdk_1_1_mavsdk_1acb5be9a1be97d251387ffe87ae8b9eb0) | Callback type for raw bytes subscriptions.
+[Handle](classmavsdk_1_1_handle.md)< const char *, size_t > [RawBytesHandle](#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1) | [Handle](classmavsdk_1_1_handle.md) type for raw bytes subscriptions.
 
 ## Public Member Functions
 
@@ -53,6 +55,8 @@ std::vector< std::shared_ptr< [System](classmavsdk_1_1_system.md) > > | [systems
 std::optional< std::shared_ptr< [System](classmavsdk_1_1_system.md) > > | [first_autopilot](#classmavsdk_1_1_mavsdk_1aa1bcb865693dbd140478e75ce58699b7) (double timeout_s)const | Get the first autopilot that has been discovered.
 void | [set_configuration](#classmavsdk_1_1_mavsdk_1acaeea86253493dc15b6540d2100a1b86) ([Configuration](classmavsdk_1_1_mavsdk_1_1_configuration.md) configuration) | Set [Configuration](classmavsdk_1_1_mavsdk_1_1_configuration.md) of SDK.
 void | [set_timeout_s](#classmavsdk_1_1_mavsdk_1a765f37b61462addcfd961e720585d2c6) (double timeout_s) | Set timeout of MAVLink transfers.
+void | [set_heartbeat_timeout_s](#classmavsdk_1_1_mavsdk_1afbab63cf2a795e4ca7262836d5fe4b46) (double timeout_s) | Set heartbeat timeout.
+double | [get_heartbeat_timeout_s](#classmavsdk_1_1_mavsdk_1a6179b858f74415251ef43da11bc6edbc) () const | Get heartbeat timeout.
 [NewSystemHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ae0727f2bed9cbf276d161ada0a432b8c) | [subscribe_on_new_system](#classmavsdk_1_1_mavsdk_1a5b7c958ad2e4529dc7b950ab26618575) (const [NewSystemCallback](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1a7a283c6a75e852a56be4c5862f8a3fab) & callback) | Get notification about a change in systems.
 void | [unsubscribe_on_new_system](#classmavsdk_1_1_mavsdk_1ad7f77f1295a700ee73cccc345019c1ff) ([NewSystemHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ae0727f2bed9cbf276d161ada0a432b8c) handle) | unsubscribe from subscribe_on_new_system.
 std::shared_ptr< [ServerComponent](classmavsdk_1_1_server_component.md) > | [server_component](#classmavsdk_1_1_mavsdk_1a693a2f665c35d6b01d6144819d353280) (unsigned instance=0) | Get server component with default type of [Mavsdk](classmavsdk_1_1_mavsdk.md) instance.
@@ -64,6 +68,9 @@ void | [unsubscribe_incoming_messages_json](#classmavsdk_1_1_mavsdk_1a4be244c389
 void | [unsubscribe_outgoing_messages_json](#classmavsdk_1_1_mavsdk_1aa3a490358db87cfed617cdad902bb753) ([InterceptJsonHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1a3b40ae4fd8af4c4419b61f0ad955812f) handle) | Unsubscribe from outgoing messages as JSON.
 void | [intercept_incoming_messages_async](#classmavsdk_1_1_mavsdk_1ac80c8909958533131cbdbc61d061794f) (std::function< bool(mavlink_message_t &)> callback) | Intercept incoming messages.
 void | [intercept_outgoing_messages_async](#classmavsdk_1_1_mavsdk_1a040ee5c1d41e71c0d63cf8f76d2db275) (std::function< bool(mavlink_message_t &)> callback) | Intercept outgoing messages.
+void | [pass_received_raw_bytes](#classmavsdk_1_1_mavsdk_1a65329315ac07bae110839d9e054fbc05) (const char * bytes, size_t length) | Pass received raw MAVLink bytes.
+[RawBytesHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1) | [subscribe_raw_bytes_to_be_sent](#classmavsdk_1_1_mavsdk_1a116e9bab0efdf7ec90866107ef517b20) ([RawBytesCallback](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1acb5be9a1be97d251387ffe87ae8b9eb0) callback) | Subscribe to raw bytes to be sent.
+void | [unsubscribe_raw_bytes_to_be_sent](#classmavsdk_1_1_mavsdk_1af6ec813a9728f4258056fa1f5d399eb1) ([RawBytesHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1) handle) | Unsubscribe from raw bytes to be sent.
 
 
 ## Constructor & Destructor Documentation
@@ -174,6 +181,26 @@ using mavsdk::Mavsdk::InterceptJsonCallback =  std::function<bool(MavlinkMessage
 
 
 Callback type for intercepting messages.
+
+
+### typedef RawBytesCallback {#classmavsdk_1_1_mavsdk_1acb5be9a1be97d251387ffe87ae8b9eb0}
+
+```cpp
+using mavsdk::Mavsdk::RawBytesCallback =  std::function<void(const char* bytes, size_t length)>
+```
+
+
+Callback type for raw bytes subscriptions.
+
+
+### typedef RawBytesHandle {#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1}
+
+```cpp
+using mavsdk::Mavsdk::RawBytesHandle =  Handle<const char*, size_t>
+```
+
+
+[Handle](classmavsdk_1_1_handle.md) type for raw bytes subscriptions.
 
 
 ## Member Function Documentation
@@ -398,6 +425,33 @@ The default timeout used is generally DEFAULT_SERIAL_BAUDRATE (0.5 seconds) seco
 
 * double **timeout_s** - 
 
+### set_heartbeat_timeout_s() {#classmavsdk_1_1_mavsdk_1afbab63cf2a795e4ca7262836d5fe4b46}
+```cpp
+void mavsdk::Mavsdk::set_heartbeat_timeout_s(double timeout_s)
+```
+
+
+Set heartbeat timeout.
+
+The default heartbeat timeout is 3 seconds. If no heartbeat is received within this time, the system is considered disconnected.
+
+**Parameters**
+
+* double **timeout_s** - Timeout in seconds.
+
+### get_heartbeat_timeout_s() {#classmavsdk_1_1_mavsdk_1a6179b858f74415251ef43da11bc6edbc}
+```cpp
+double mavsdk::Mavsdk::get_heartbeat_timeout_s() const
+```
+
+
+Get heartbeat timeout.
+
+
+**Returns**
+
+&emsp;double - Timeout in seconds.
+
 ### subscribe_on_new_system() {#classmavsdk_1_1_mavsdk_1a5b7c958ad2e4529dc7b950ab26618575}
 ```cpp
 NewSystemHandle mavsdk::Mavsdk::subscribe_on_new_system(const NewSystemCallback &callback)
@@ -585,3 +639,63 @@ This functionality is provided primarily for testing in order to simulate packet
 **Parameters**
 
 * std::function< bool(mavlink_message_t &)> **callback** - Callback to be called for each outgoing message. To drop a message, return 'false' from the callback.
+
+### pass_received_raw_bytes() {#classmavsdk_1_1_mavsdk_1a65329315ac07bae110839d9e054fbc05}
+```cpp
+void mavsdk::Mavsdk::pass_received_raw_bytes(const char *bytes, size_t length)
+```
+
+
+Pass received raw MAVLink bytes.
+
+This allows passing raw MAVLink message bytes into MAVSDK to be processed. The bytes can contain one or more MAVLink messages.
+
+
+::: info
+Before using this, run add_any_connection("raw://")
+:::
+
+This goes together with subscribe_raw_bytes_to_be_sent.
+
+**Parameters**
+
+* const char\* **bytes** - Pointer to raw MAVLink message bytes.
+* size_t **length** - Number of bytes to send.
+
+### subscribe_raw_bytes_to_be_sent() {#classmavsdk_1_1_mavsdk_1a116e9bab0efdf7ec90866107ef517b20}
+```cpp
+RawBytesHandle mavsdk::Mavsdk::subscribe_raw_bytes_to_be_sent(RawBytesCallback callback)
+```
+
+
+Subscribe to raw bytes to be sent.
+
+This allows getting MAVLink bytes that need to be sent out.
+
+
+::: info
+Before using this, run add_any_connection("raw://")
+:::
+
+This goes together with pass_received_raw_bytes. The bytes contain one mavlink message at a time.
+
+**Parameters**
+
+* [RawBytesCallback](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1acb5be9a1be97d251387ffe87ae8b9eb0) **callback** - Callback to be called with outgoing raw bytes.
+
+**Returns**
+
+&emsp;[RawBytesHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1) - [Handle](classmavsdk_1_1_handle.md) to unsubscribe again.
+
+### unsubscribe_raw_bytes_to_be_sent() {#classmavsdk_1_1_mavsdk_1af6ec813a9728f4258056fa1f5d399eb1}
+```cpp
+void mavsdk::Mavsdk::unsubscribe_raw_bytes_to_be_sent(RawBytesHandle handle)
+```
+
+
+Unsubscribe from raw bytes to be sent.
+
+
+**Parameters**
+
+* [RawBytesHandle](classmavsdk_1_1_mavsdk.md#classmavsdk_1_1_mavsdk_1ac766258f137aa3e8b0dabb5a66435ea1) **handle** - [Handle](classmavsdk_1_1_handle.md) from subscribe_raw_bytes_to_be_sent.

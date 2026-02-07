@@ -97,7 +97,7 @@ void LogFilesImpl::deinit()
         std::lock_guard<std::mutex> lock(_download_data_mutex);
         _system_impl->unregister_timeout_handler(_download_data.timeout_cookie);
     }
-    _system_impl->unregister_all_mavlink_message_handlers(this);
+    _system_impl->unregister_all_mavlink_message_handlers_blocking(this);
 }
 
 std::pair<LogFiles::Result, std::vector<LogFiles::Entry>> LogFilesImpl::get_entries()
@@ -110,11 +110,7 @@ std::pair<LogFiles::Result, std::vector<LogFiles::Entry>> LogFilesImpl::get_entr
         prom->set_value(std::make_pair<>(result, entries));
     });
 
-    auto result = future_result.get();
-
-    _entries_user_callback = nullptr;
-
-    return result;
+    return future_result.get();
 }
 
 void LogFilesImpl::get_entries_async(LogFiles::GetEntriesCallback callback)
@@ -123,6 +119,8 @@ void LogFilesImpl::get_entries_async(LogFiles::GetEntriesCallback callback)
     _log_entries.clear();
     _entries_user_callback = callback;
     _total_entries = 0;
+    _entries_retry_count = 0;
+    _min_entry_id = 0xFFFF; // Reset to detect indexing scheme
 
     _entries_timeout_cookie = _system_impl->register_timeout_handler(
         [this]() { entries_timeout(); }, _system_impl->timeout_s() * 10.0);
@@ -157,17 +155,34 @@ void LogFilesImpl::process_log_entry(const mavlink_message_t& message)
     _system_impl->refresh_timeout_handler(_entries_timeout_cookie);
 
     // Bad data handling
-    if (msg.num_logs == 0 || msg.id >= msg.num_logs) {
+    // PX4 uses 0-based indexing: valid IDs are 0 to num_logs-1
+    // ArduPilot uses 1-based indexing: valid IDs are 1 to num_logs
+    // We detect the scheme by tracking the minimum ID seen
+    if (msg.num_logs == 0 || msg.id > msg.num_logs) {
         LogWarn() << "No logs available";
 
         _system_impl->unregister_timeout_handler(_entries_timeout_cookie);
 
+        // Clear callback before invoking to prevent double-invocation
         const auto cb = _entries_user_callback;
+        _entries_user_callback = nullptr;
         if (cb) {
             _system_impl->call_user_callback(
                 [cb]() { cb(LogFiles::Result::NoLogfiles, std::vector<LogFiles::Entry>()); });
         }
         return;
+    }
+
+    // Track minimum ID to determine indexing scheme (0-based vs 1-based)
+    if (msg.id < _min_entry_id) {
+        _min_entry_id = msg.id;
+    }
+
+    // Initialize vector if this is the first entry
+    if (_total_entries != msg.num_logs) {
+        _total_entries = msg.num_logs;
+        _log_entries.clear();
+        _log_entries.resize(_total_entries);
     }
 
     LogFiles::Entry new_entry;
@@ -181,23 +196,53 @@ void LogFilesImpl::process_log_entry(const mavlink_message_t& message)
     new_entry.date = buf;
     new_entry.size_bytes = msg.size;
 
-    _log_entries[new_entry.id] = new_entry;
-    _total_entries = msg.num_logs;
+    // Store entry using 0-based index (subtract min_entry_id to handle both schemes)
+    const uint16_t storage_index = msg.id - _min_entry_id;
+    if (storage_index >= _log_entries.size()) {
+        LogWarn() << "Log entry ID out of range: " << msg.id;
+        return;
+    }
+    _log_entries[storage_index] = new_entry;
 
     // Check if all entries are received
-    if (_log_entries.size() == _total_entries) {
+    bool all_received =
+        std::all_of(_log_entries.begin(), _log_entries.end(), [](const auto& entry_opt) {
+            return entry_opt.has_value();
+        });
+
+    if (all_received) {
         _system_impl->unregister_timeout_handler(_entries_timeout_cookie);
 
-        // Copy map entries into list to return
-        std::vector<LogFiles::Entry> entry_list{};
-        for (unsigned i = 0; i < _log_entries.size(); i++) {
-            entry_list.push_back(_log_entries[i]);
-        }
+        // Build result list from vector (safe since all entries are present)
+        std::vector<LogFiles::Entry> entry_list;
+        entry_list.reserve(_log_entries.size());
+        std::transform(
+            _log_entries.begin(),
+            _log_entries.end(),
+            std::back_inserter(entry_list),
+            [](const auto& entry_opt) { return entry_opt.value(); });
 
+        // Clear callback before invoking to prevent double-invocation if another
+        // LOG_ENTRY message arrives before the async callback runs
         const auto cb = _entries_user_callback;
+        _entries_user_callback = nullptr;
         if (cb) {
             _system_impl->call_user_callback(
                 [cb, entry_list]() { cb(LogFiles::Result::Success, entry_list); });
+        }
+    } else {
+        // Check for missing entries when we might have all entries
+        // This handles: receiving the last expected entry AND receiving retried entries that might
+        // complete the set
+        if (_total_entries > 0) {
+            // Expected last ID depends on indexing scheme: min_entry_id + num_logs - 1
+            const uint32_t expected_last_entry_id = _min_entry_id + _total_entries - 1;
+            const uint32_t last_storage_index = _total_entries - 1;
+            // Check if this could be the last entry we need (either the expected last one, or a
+            // retried one)
+            if (msg.id == expected_last_entry_id || _log_entries[last_storage_index].has_value()) {
+                check_and_request_missing_entries();
+            }
         }
     }
 }
@@ -206,12 +251,30 @@ void LogFilesImpl::entries_timeout()
 {
     std::lock_guard<std::mutex> lock(_entries_mutex);
 
+    LogDebug() << "Request entries timeout! Retry count: " << _entries_retry_count;
+
+    constexpr uint32_t MAX_RETRIES = 5;
+
+    if (_entries_retry_count < MAX_RETRIES) {
+        // Try to request missing entries
+        check_and_request_missing_entries();
+        _entries_retry_count++;
+
+        // Reset timeout for another attempt (use normal timeout, not * 10.0)
+        _entries_timeout_cookie = _system_impl->register_timeout_handler(
+            [this]() { entries_timeout(); }, _system_impl->timeout_s());
+
+        // Don't call user callback yet - give it another chance
+        return;
+    }
+
+    // Max retries exceeded - give up and call user with timeout error
+    // Clear callback before invoking to prevent double-invocation
     const auto cb = _entries_user_callback;
+    _entries_user_callback = nullptr;
     if (cb) {
-        _system_impl->call_user_callback([cb]() {
-            LogDebug() << "Request entries timeout!";
-            cb(LogFiles::Result::Timeout, std::vector<LogFiles::Entry>());
-        });
+        _system_impl->call_user_callback(
+            [cb]() { cb(LogFiles::Result::Timeout, std::vector<LogFiles::Entry>()); });
     }
 }
 
@@ -237,9 +300,14 @@ void LogFilesImpl::download_log_file_async(
 {
     std::lock_guard<std::mutex> lock(_entries_mutex);
 
-    auto entry_it = _log_entries.find(entry.id);
-    bool error = entry_it == _log_entries.end() || fs::is_directory(fs::path(file_path)) ||
-                 fs::exists(file_path);
+    // Convert entry.id to storage index using detected min_entry_id
+    // Handles both 0-based (PX4) and 1-based (ArduPilot) indexing
+    const bool id_in_range =
+        entry.id >= _min_entry_id && (entry.id - _min_entry_id) < _log_entries.size();
+    const uint16_t storage_index = entry.id - _min_entry_id;
+
+    bool error = !id_in_range || !_log_entries[storage_index].has_value() ||
+                 fs::is_directory(fs::path(file_path)) || fs::exists(file_path);
 
     if (error) {
         LogErr() << "error: download_log_file_async failed";
@@ -252,7 +320,21 @@ void LogFilesImpl::download_log_file_async(
         return;
     }
 
-    _download_data = LogData(entry_it->second, file_path, callback);
+    const auto& found_entry = _log_entries[storage_index].value();
+
+    // Check for zero-sized file and abort early
+    if (found_entry.size_bytes == 0) {
+        LogErr() << "Cannot download zero-sized log file";
+
+        if (callback) {
+            _system_impl->call_user_callback([callback]() {
+                callback(LogFiles::Result::InvalidArgument, LogFiles::ProgressData());
+            });
+        }
+        return;
+    }
+
+    _download_data = LogData(found_entry, file_path, callback);
 
     if (!_download_data.file_is_open()) {
         if (callback) {
@@ -264,7 +346,7 @@ void LogFilesImpl::download_log_file_async(
     }
 
     _download_data.timeout_cookie = _system_impl->register_timeout_handler(
-        [this]() { LogFilesImpl::data_timeout(); }, _system_impl->timeout_s() * 1.0);
+        [this]() { LogFilesImpl::data_timeout(); }, _system_impl->timeout_s());
 
     // Request the first chunk
     request_log_data(_download_data.entry.id, 0, _download_data.current_chunk_size());
@@ -329,20 +411,23 @@ void LogFilesImpl::process_log_data(const mavlink_message_t& message)
 
     _download_data.file.write((char*)msg.data, msg.count);
 
-    // Quietly ignore duplicate packets -- we don't want to record the bytes_written twice
-    if (!_download_data.chunk_bin_table[bin]) {
-        _download_data.chunk_bytes_written += msg.count;
-        _download_data.chunk_bin_table[bin] = true;
-    }
+    // Mark bin as received (quietly ignore duplicates)
+    _download_data.chunk_bin_table[bin] = true;
 
-    bool chunk_complete = _download_data.chunk_bytes_written == _download_data.current_chunk_size();
+    // Check if all bins in the chunk have been received
+    const uint32_t bins_in_chunk = _download_data.bins_in_chunk();
+    bool chunk_complete = std::all_of(
+        _download_data.chunk_bin_table.begin(),
+        _download_data.chunk_bin_table.begin() + bins_in_chunk,
+        [](bool received) { return received; });
 
     if (chunk_complete) {
+        uint32_t chunk_bytes = _download_data.current_chunk_size();
+
         auto result = LogFiles::Result::Next;
 
         _download_data.current_chunk++;
-        _download_data.total_bytes_written += _download_data.chunk_bytes_written;
-        _download_data.chunk_bytes_written = 0;
+        _download_data.total_bytes_written += chunk_bytes;
         _download_data.chunk_bin_table = std::vector<bool>(_download_data.bins_in_chunk(), false);
 
         bool log_complete = _download_data.total_bytes_written == _download_data.entry.size_bytes;
@@ -370,6 +455,18 @@ void LogFilesImpl::process_log_data(const mavlink_message_t& message)
             _system_impl->call_user_callback(
                 [cb, progress_data, result]() { cb(result, progress_data); });
         }
+    } else {
+        // Check for missing bins when we might have all bins for this chunk
+        // This handles: receiving the last expected bin AND receiving retried bins that might
+        // complete the chunk
+        if (bins_in_chunk > 0) {
+            const uint32_t expected_last_bin = bins_in_chunk - 1;
+            // Check if this could be the last bin we need (either the expected last one, or a
+            // retried one)
+            if (bin == expected_last_bin || _download_data.chunk_bin_table[expected_last_bin]) {
+                check_and_request_missing_bins();
+            }
+        }
     }
 }
 
@@ -381,17 +478,85 @@ void LogFilesImpl::data_timeout()
     LogErr() << "Requesting missing chunk:\t" << _download_data.current_chunk << "/"
              << _download_data.total_chunks();
 
-    // Reset chunk data
-    _download_data.chunk_bytes_written = 0;
-    _download_data.chunk_bin_table = std::vector<bool>(_download_data.bins_in_chunk(), false);
-
-    request_log_data(
-        _download_data.entry.id,
-        _download_data.current_chunk * CHUNK_SIZE,
-        _download_data.current_chunk_size());
+    // Don't reset chunk data - preserve what we've received
+    // Instead, request missing ranges based on bin table
+    check_and_request_missing_bins();
 
     _download_data.timeout_cookie = _system_impl->register_timeout_handler(
-        [this]() { LogFilesImpl::data_timeout(); }, _system_impl->timeout_s() * 1.0);
+        [this]() { LogFilesImpl::data_timeout(); }, _system_impl->timeout_s());
+}
+
+void LogFilesImpl::check_and_request_missing_bins()
+{
+    // Note: This function assumes _download_data_mutex is already locked by caller
+
+    // Find missing ranges and request the first one
+    const uint32_t chunk_start = _download_data.current_chunk * CHUNK_SIZE;
+    const uint32_t bins_in_chunk = _download_data.bins_in_chunk();
+
+    uint32_t range_start = 0;
+    bool in_missing_range = false;
+    bool requested_something = false;
+
+    for (uint32_t bin = 0; bin <= bins_in_chunk; ++bin) {
+        bool is_missing = (bin < bins_in_chunk) ? !_download_data.chunk_bin_table[bin] : false;
+
+        if (is_missing && !in_missing_range) {
+            // Start of a missing range
+            range_start = bin;
+            in_missing_range = true;
+        } else if (!is_missing && in_missing_range) {
+            // End of a missing range, request it (but only request the first one)
+            if (!requested_something) {
+                const uint32_t missing_start =
+                    chunk_start + (range_start * MAVLINK_MSG_LOG_DATA_FIELD_DATA_LEN);
+                const uint32_t missing_count =
+                    (bin - range_start) * MAVLINK_MSG_LOG_DATA_FIELD_DATA_LEN;
+
+                LogDebug() << "Requesting missing range from offset " << missing_start << " count "
+                           << missing_count;
+                request_log_data(_download_data.entry.id, missing_start, missing_count);
+                requested_something = true;
+            }
+            in_missing_range = false;
+        }
+    }
+}
+
+void LogFilesImpl::check_and_request_missing_entries()
+{
+    // Note: This function assumes _entries_mutex is already locked by caller
+
+    // Find missing entry ranges and request them
+    std::vector<uint16_t> missing_ids;
+    for (uint16_t i = 0; i < _log_entries.size(); ++i) {
+        if (!_log_entries[i].has_value()) {
+            // Convert storage index back to MAVLink ID using min_entry_id
+            // Works for both 0-based (PX4) and 1-based (ArduPilot) indexing
+            missing_ids.push_back(i + _min_entry_id);
+        }
+    }
+
+    if (missing_ids.empty()) {
+        return;
+    }
+
+    // Group consecutive missing IDs into ranges for efficient requests
+    // For now, request the first missing range (similar to bins approach)
+    uint16_t range_start = missing_ids[0];
+    uint16_t range_end = range_start;
+
+    // Find end of first consecutive range
+    for (size_t i = 1; i < missing_ids.size(); ++i) {
+        if (missing_ids[i] == missing_ids[i - 1] + 1) {
+            range_end = missing_ids[i];
+        } else {
+            break;
+        }
+    }
+
+    LogDebug() << "Requesting missing log entries from " << range_start << " to " << range_end;
+    request_log_list(range_start, range_end);
 }
 
 void LogFilesImpl::request_log_data(unsigned id, unsigned start, unsigned count)

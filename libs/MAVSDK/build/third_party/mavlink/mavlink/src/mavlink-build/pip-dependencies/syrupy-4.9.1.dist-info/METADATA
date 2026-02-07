@@ -1,8 +1,7 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.3
 Name: syrupy
 Version: 4.9.1
 Summary: Pytest Snapshot Test Utility
-Home-page: https://github.com/syrupy-project/syrupy
 License: Apache-2.0
 Author: Noah Ulster
 Requires-Python: >=3.8.1

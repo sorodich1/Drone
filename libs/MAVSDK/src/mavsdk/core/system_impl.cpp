@@ -31,7 +31,7 @@ SystemImpl::SystemImpl(MavsdkImpl& mavsdk_impl) :
         _mavlink_message_handler,
         _mavsdk_impl.timeout_handler,
         [this]() { return timeout_s(); },
-        [this]() { return autopilot(); }),
+        [this]() { return effective_autopilot(); }),
     _mavlink_request_message(
         *this, _command_sender, _mavlink_message_handler, _mavsdk_impl.timeout_handler),
     _mavlink_ftp_client(*this),
@@ -49,7 +49,8 @@ SystemImpl::SystemImpl(MavsdkImpl& mavsdk_impl) :
 SystemImpl::~SystemImpl()
 {
     _should_exit = true;
-    _mavlink_message_handler.unregister_all(this);
+    // Use blocking version to ensure any in-flight callbacks complete before destruction.
+    _mavlink_message_handler.unregister_all_blocking(this);
     // Clear all libmav message callbacks
     _libmav_message_callbacks.clear();
 
@@ -114,6 +115,11 @@ void SystemImpl::unregister_mavlink_message_handler(uint16_t msg_id, const void*
 void SystemImpl::unregister_all_mavlink_message_handlers(const void* cookie)
 {
     _mavlink_message_handler.unregister_all(cookie);
+}
+
+void SystemImpl::unregister_all_mavlink_message_handlers_blocking(const void* cookie)
+{
+    _mavlink_message_handler.unregister_all_blocking(cookie);
 }
 
 void SystemImpl::update_component_id_messages_handler(
@@ -318,11 +324,14 @@ void SystemImpl::process_heartbeat(const mavlink_message_t& message)
         LogErr() << "type received in HEARTBEAT was not recognized";
     } else {
         const auto new_vehicle_type = static_cast<MAV_TYPE>(heartbeat.type);
-        if (heartbeat.autopilot != MAV_AUTOPILOT_INVALID && _vehicle_type != new_vehicle_type &&
-            new_vehicle_type != MAV_TYPE_GENERIC) {
-            LogWarn() << "Vehicle type changed (new type: " << static_cast<unsigned>(heartbeat.type)
-                      << ", old type: " << static_cast<unsigned>(_vehicle_type) << ")";
+        if (heartbeat.autopilot != MAV_AUTOPILOT_INVALID && new_vehicle_type != MAV_TYPE_GENERIC) {
+            if (_vehicle_type_set && _vehicle_type != new_vehicle_type) {
+                LogWarn() << "Vehicle type changed (new type: "
+                          << static_cast<unsigned>(heartbeat.type)
+                          << ", old type: " << static_cast<unsigned>(_vehicle_type) << ")";
+            }
             _vehicle_type = new_vehicle_type;
+            _vehicle_type_set = true;
         }
     }
 
@@ -484,8 +493,8 @@ void SystemImpl::add_new_component(uint8_t component_id)
             component_type(component_id), component_id, [this](const auto& func) {
                 call_user_callback(func);
             });
-        LogDebug() << "Component " << component_name(component_id) << " (" << int(component_id)
-                   << ") added.";
+        LogDebug() << "Component " << component_name(component_id)
+                   << " (component ID: " << int(component_id) << ") added.";
     }
 }
 
@@ -604,7 +613,8 @@ void SystemImpl::set_connected()
             {
                 std::lock_guard<std::mutex> lock(_components_mutex);
                 if (!_components.empty()) {
-                    LogDebug() << "Discovered " << _components.size() << " component(s)";
+                    LogDebug() << "Discovered " << _components.size()
+                               << (_components.size() == 1 ? " component" : " components");
                 }
             }
 
@@ -619,8 +629,8 @@ void SystemImpl::set_connected()
                 });
             }
 
-            _heartbeat_timeout_cookie =
-                register_timeout_handler([this] { heartbeats_timed_out(); }, HEARTBEAT_TIMEOUT_S);
+            _heartbeat_timeout_cookie = register_timeout_handler(
+                [this] { heartbeats_timed_out(); }, _mavsdk_impl.heartbeat_timeout_s());
 
             enable_needed = true;
 
@@ -682,6 +692,11 @@ void SystemImpl::set_disconnected()
 uint8_t SystemImpl::get_system_id() const
 {
     return _target_address.system_id;
+}
+
+Autopilot SystemImpl::effective_autopilot() const
+{
+    return _mavsdk_impl.effective_autopilot(_autopilot);
 }
 
 std::vector<uint8_t> SystemImpl::component_ids() const
@@ -1054,8 +1069,12 @@ ardupilot::PlaneMode SystemImpl::flight_mode_to_ardupilot_plane_mode(FlightMode 
             return ardupilot::PlaneMode::Manual;
         case FlightMode::FBWA:
             return ardupilot::PlaneMode::Fbwa;
+        case FlightMode::FBWB:
+            return ardupilot::PlaneMode::Fbwb;
         case FlightMode::Stabilized:
             return ardupilot::PlaneMode::Stabilize;
+        case FlightMode::Takeoff:
+            return ardupilot::PlaneMode::Takeoff;
         case FlightMode::Offboard:
             return ardupilot::PlaneMode::Guided;
         case FlightMode::Unknown:
@@ -1414,7 +1433,7 @@ MavlinkParameterClient* SystemImpl::param_sender(uint8_t component_id, bool exte
              _mavlink_message_handler,
              _mavsdk_impl.timeout_handler,
              [this]() { return timeout_s(); },
-             [this]() { return autopilot(); },
+             [this]() { return effective_autopilot(); },
              get_system_id(),
              component_id,
              extended),

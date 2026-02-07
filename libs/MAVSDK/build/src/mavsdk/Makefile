@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles /home/pi/Drone/MAVSDK/build/src/mavsdk//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/src/mavsdk//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/clean
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/mavsdk/CMakeFiles/mavsdk.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/CMakeFiles/mavsdk.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mavsdk/CMakeFiles/mavsdk.dir/rule
 .PHONY : src/mavsdk/CMakeFiles/mavsdk.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mavsdk: src/mavsdk/CMakeFiles/mavsdk.dir/rule
 
 # fast build rule for target.
 mavsdk/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/build
 .PHONY : mavsdk/fast
 
 core/autopilot.o: core/autopilot.cpp.o
@@ -180,7 +180,7 @@ core/autopilot.o: core/autopilot.cpp.o
 
 # target to build an object file
 core/autopilot.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.o
 .PHONY : core/autopilot.cpp.o
 
 core/autopilot.i: core/autopilot.cpp.i
@@ -188,7 +188,7 @@ core/autopilot.i: core/autopilot.cpp.i
 
 # target to preprocess a source file
 core/autopilot.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.i
 .PHONY : core/autopilot.cpp.i
 
 core/autopilot.s: core/autopilot.cpp.s
@@ -196,7 +196,7 @@ core/autopilot.s: core/autopilot.cpp.s
 
 # target to generate assembly for a file
 core/autopilot.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/autopilot.cpp.s
 .PHONY : core/autopilot.cpp.s
 
 core/base64.o: core/base64.cpp.o
@@ -204,7 +204,7 @@ core/base64.o: core/base64.cpp.o
 
 # target to build an object file
 core/base64.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.o
 .PHONY : core/base64.cpp.o
 
 core/base64.i: core/base64.cpp.i
@@ -212,7 +212,7 @@ core/base64.i: core/base64.cpp.i
 
 # target to preprocess a source file
 core/base64.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.i
 .PHONY : core/base64.cpp.i
 
 core/base64.s: core/base64.cpp.s
@@ -220,7 +220,7 @@ core/base64.s: core/base64.cpp.s
 
 # target to generate assembly for a file
 core/base64.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/base64.cpp.s
 .PHONY : core/base64.cpp.s
 
 core/call_every_handler.o: core/call_every_handler.cpp.o
@@ -228,7 +228,7 @@ core/call_every_handler.o: core/call_every_handler.cpp.o
 
 # target to build an object file
 core/call_every_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o
 .PHONY : core/call_every_handler.cpp.o
 
 core/call_every_handler.i: core/call_every_handler.cpp.i
@@ -236,7 +236,7 @@ core/call_every_handler.i: core/call_every_handler.cpp.i
 
 # target to preprocess a source file
 core/call_every_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.i
 .PHONY : core/call_every_handler.cpp.i
 
 core/call_every_handler.s: core/call_every_handler.cpp.s
@@ -244,15 +244,39 @@ core/call_every_handler.s: core/call_every_handler.cpp.s
 
 # target to generate assembly for a file
 core/call_every_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.s
 .PHONY : core/call_every_handler.cpp.s
+
+core/callback_tracker.o: core/callback_tracker.cpp.o
+.PHONY : core/callback_tracker.o
+
+# target to build an object file
+core/callback_tracker.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/callback_tracker.cpp.o
+.PHONY : core/callback_tracker.cpp.o
+
+core/callback_tracker.i: core/callback_tracker.cpp.i
+.PHONY : core/callback_tracker.i
+
+# target to preprocess a source file
+core/callback_tracker.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/callback_tracker.cpp.i
+.PHONY : core/callback_tracker.cpp.i
+
+core/callback_tracker.s: core/callback_tracker.cpp.s
+.PHONY : core/callback_tracker.s
+
+# target to generate assembly for a file
+core/callback_tracker.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/callback_tracker.cpp.s
+.PHONY : core/callback_tracker.cpp.s
 
 core/cli_arg.o: core/cli_arg.cpp.o
 .PHONY : core/cli_arg.o
 
 # target to build an object file
 core/cli_arg.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.o
 .PHONY : core/cli_arg.cpp.o
 
 core/cli_arg.i: core/cli_arg.cpp.i
@@ -260,7 +284,7 @@ core/cli_arg.i: core/cli_arg.cpp.i
 
 # target to preprocess a source file
 core/cli_arg.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.i
 .PHONY : core/cli_arg.cpp.i
 
 core/cli_arg.s: core/cli_arg.cpp.s
@@ -268,15 +292,39 @@ core/cli_arg.s: core/cli_arg.cpp.s
 
 # target to generate assembly for a file
 core/cli_arg.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/cli_arg.cpp.s
 .PHONY : core/cli_arg.cpp.s
+
+core/compatibility_mode.o: core/compatibility_mode.cpp.o
+.PHONY : core/compatibility_mode.o
+
+# target to build an object file
+core/compatibility_mode.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/compatibility_mode.cpp.o
+.PHONY : core/compatibility_mode.cpp.o
+
+core/compatibility_mode.i: core/compatibility_mode.cpp.i
+.PHONY : core/compatibility_mode.i
+
+# target to preprocess a source file
+core/compatibility_mode.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/compatibility_mode.cpp.i
+.PHONY : core/compatibility_mode.cpp.i
+
+core/compatibility_mode.s: core/compatibility_mode.cpp.s
+.PHONY : core/compatibility_mode.s
+
+# target to generate assembly for a file
+core/compatibility_mode.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/compatibility_mode.cpp.s
+.PHONY : core/compatibility_mode.cpp.s
 
 core/connection.o: core/connection.cpp.o
 .PHONY : core/connection.o
 
 # target to build an object file
 core/connection.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.o
 .PHONY : core/connection.cpp.o
 
 core/connection.i: core/connection.cpp.i
@@ -284,7 +332,7 @@ core/connection.i: core/connection.cpp.i
 
 # target to preprocess a source file
 core/connection.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.i
 .PHONY : core/connection.cpp.i
 
 core/connection.s: core/connection.cpp.s
@@ -292,7 +340,7 @@ core/connection.s: core/connection.cpp.s
 
 # target to generate assembly for a file
 core/connection.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection.cpp.s
 .PHONY : core/connection.cpp.s
 
 core/connection_result.o: core/connection_result.cpp.o
@@ -300,7 +348,7 @@ core/connection_result.o: core/connection_result.cpp.o
 
 # target to build an object file
 core/connection_result.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.o
 .PHONY : core/connection_result.cpp.o
 
 core/connection_result.i: core/connection_result.cpp.i
@@ -308,7 +356,7 @@ core/connection_result.i: core/connection_result.cpp.i
 
 # target to preprocess a source file
 core/connection_result.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.i
 .PHONY : core/connection_result.cpp.i
 
 core/connection_result.s: core/connection_result.cpp.s
@@ -316,7 +364,7 @@ core/connection_result.s: core/connection_result.cpp.s
 
 # target to generate assembly for a file
 core/connection_result.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/connection_result.cpp.s
 .PHONY : core/connection_result.cpp.s
 
 core/crc32.o: core/crc32.cpp.o
@@ -324,7 +372,7 @@ core/crc32.o: core/crc32.cpp.o
 
 # target to build an object file
 core/crc32.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.o
 .PHONY : core/crc32.cpp.o
 
 core/crc32.i: core/crc32.cpp.i
@@ -332,7 +380,7 @@ core/crc32.i: core/crc32.cpp.i
 
 # target to preprocess a source file
 core/crc32.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.i
 .PHONY : core/crc32.cpp.i
 
 core/crc32.s: core/crc32.cpp.s
@@ -340,7 +388,7 @@ core/crc32.s: core/crc32.cpp.s
 
 # target to generate assembly for a file
 core/crc32.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.s
 .PHONY : core/crc32.cpp.s
 
 core/curl_wrapper.o: core/curl_wrapper.cpp.o
@@ -348,7 +396,7 @@ core/curl_wrapper.o: core/curl_wrapper.cpp.o
 
 # target to build an object file
 core/curl_wrapper.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o
 .PHONY : core/curl_wrapper.cpp.o
 
 core/curl_wrapper.i: core/curl_wrapper.cpp.i
@@ -356,7 +404,7 @@ core/curl_wrapper.i: core/curl_wrapper.cpp.i
 
 # target to preprocess a source file
 core/curl_wrapper.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.i
 .PHONY : core/curl_wrapper.cpp.i
 
 core/curl_wrapper.s: core/curl_wrapper.cpp.s
@@ -364,7 +412,7 @@ core/curl_wrapper.s: core/curl_wrapper.cpp.s
 
 # target to generate assembly for a file
 core/curl_wrapper.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.s
 .PHONY : core/curl_wrapper.cpp.s
 
 core/file_cache.o: core/file_cache.cpp.o
@@ -372,7 +420,7 @@ core/file_cache.o: core/file_cache.cpp.o
 
 # target to build an object file
 core/file_cache.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.o
 .PHONY : core/file_cache.cpp.o
 
 core/file_cache.i: core/file_cache.cpp.i
@@ -380,7 +428,7 @@ core/file_cache.i: core/file_cache.cpp.i
 
 # target to preprocess a source file
 core/file_cache.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.i
 .PHONY : core/file_cache.cpp.i
 
 core/file_cache.s: core/file_cache.cpp.s
@@ -388,7 +436,7 @@ core/file_cache.s: core/file_cache.cpp.s
 
 # target to generate assembly for a file
 core/file_cache.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/file_cache.cpp.s
 .PHONY : core/file_cache.cpp.s
 
 core/flight_mode.o: core/flight_mode.cpp.o
@@ -396,7 +444,7 @@ core/flight_mode.o: core/flight_mode.cpp.o
 
 # target to build an object file
 core/flight_mode.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.o
 .PHONY : core/flight_mode.cpp.o
 
 core/flight_mode.i: core/flight_mode.cpp.i
@@ -404,7 +452,7 @@ core/flight_mode.i: core/flight_mode.cpp.i
 
 # target to preprocess a source file
 core/flight_mode.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.i
 .PHONY : core/flight_mode.cpp.i
 
 core/flight_mode.s: core/flight_mode.cpp.s
@@ -412,7 +460,7 @@ core/flight_mode.s: core/flight_mode.cpp.s
 
 # target to generate assembly for a file
 core/flight_mode.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/flight_mode.cpp.s
 .PHONY : core/flight_mode.cpp.s
 
 core/fs_utils.o: core/fs_utils.cpp.o
@@ -420,7 +468,7 @@ core/fs_utils.o: core/fs_utils.cpp.o
 
 # target to build an object file
 core/fs_utils.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.o
 .PHONY : core/fs_utils.cpp.o
 
 core/fs_utils.i: core/fs_utils.cpp.i
@@ -428,7 +476,7 @@ core/fs_utils.i: core/fs_utils.cpp.i
 
 # target to preprocess a source file
 core/fs_utils.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.i
 .PHONY : core/fs_utils.cpp.i
 
 core/fs_utils.s: core/fs_utils.cpp.s
@@ -436,7 +484,7 @@ core/fs_utils.s: core/fs_utils.cpp.s
 
 # target to generate assembly for a file
 core/fs_utils.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/fs_utils.cpp.s
 .PHONY : core/fs_utils.cpp.s
 
 core/geometry.o: core/geometry.cpp.o
@@ -444,7 +492,7 @@ core/geometry.o: core/geometry.cpp.o
 
 # target to build an object file
 core/geometry.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.o
 .PHONY : core/geometry.cpp.o
 
 core/geometry.i: core/geometry.cpp.i
@@ -452,7 +500,7 @@ core/geometry.i: core/geometry.cpp.i
 
 # target to preprocess a source file
 core/geometry.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.i
 .PHONY : core/geometry.cpp.i
 
 core/geometry.s: core/geometry.cpp.s
@@ -460,7 +508,7 @@ core/geometry.s: core/geometry.cpp.s
 
 # target to generate assembly for a file
 core/geometry.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.s
 .PHONY : core/geometry.cpp.s
 
 core/hostname_to_ip.o: core/hostname_to_ip.cpp.o
@@ -468,7 +516,7 @@ core/hostname_to_ip.o: core/hostname_to_ip.cpp.o
 
 # target to build an object file
 core/hostname_to_ip.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.o
 .PHONY : core/hostname_to_ip.cpp.o
 
 core/hostname_to_ip.i: core/hostname_to_ip.cpp.i
@@ -476,7 +524,7 @@ core/hostname_to_ip.i: core/hostname_to_ip.cpp.i
 
 # target to preprocess a source file
 core/hostname_to_ip.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.i
 .PHONY : core/hostname_to_ip.cpp.i
 
 core/hostname_to_ip.s: core/hostname_to_ip.cpp.s
@@ -484,7 +532,7 @@ core/hostname_to_ip.s: core/hostname_to_ip.cpp.s
 
 # target to generate assembly for a file
 core/hostname_to_ip.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/hostname_to_ip.cpp.s
 .PHONY : core/hostname_to_ip.cpp.s
 
 core/http_loader.o: core/http_loader.cpp.o
@@ -492,7 +540,7 @@ core/http_loader.o: core/http_loader.cpp.o
 
 # target to build an object file
 core/http_loader.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o
 .PHONY : core/http_loader.cpp.o
 
 core/http_loader.i: core/http_loader.cpp.i
@@ -500,7 +548,7 @@ core/http_loader.i: core/http_loader.cpp.i
 
 # target to preprocess a source file
 core/http_loader.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.i
 .PHONY : core/http_loader.cpp.i
 
 core/http_loader.s: core/http_loader.cpp.s
@@ -508,7 +556,7 @@ core/http_loader.s: core/http_loader.cpp.s
 
 # target to generate assembly for a file
 core/http_loader.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.s
 .PHONY : core/http_loader.cpp.s
 
 core/inflate_lzma.o: core/inflate_lzma.cpp.o
@@ -516,7 +564,7 @@ core/inflate_lzma.o: core/inflate_lzma.cpp.o
 
 # target to build an object file
 core/inflate_lzma.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o
 .PHONY : core/inflate_lzma.cpp.o
 
 core/inflate_lzma.i: core/inflate_lzma.cpp.i
@@ -524,7 +572,7 @@ core/inflate_lzma.i: core/inflate_lzma.cpp.i
 
 # target to preprocess a source file
 core/inflate_lzma.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.i
 .PHONY : core/inflate_lzma.cpp.i
 
 core/inflate_lzma.s: core/inflate_lzma.cpp.s
@@ -532,7 +580,7 @@ core/inflate_lzma.s: core/inflate_lzma.cpp.s
 
 # target to generate assembly for a file
 core/inflate_lzma.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.s
 .PHONY : core/inflate_lzma.cpp.s
 
 core/libmav_receiver.o: core/libmav_receiver.cpp.o
@@ -540,7 +588,7 @@ core/libmav_receiver.o: core/libmav_receiver.cpp.o
 
 # target to build an object file
 core/libmav_receiver.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.o
 .PHONY : core/libmav_receiver.cpp.o
 
 core/libmav_receiver.i: core/libmav_receiver.cpp.i
@@ -548,7 +596,7 @@ core/libmav_receiver.i: core/libmav_receiver.cpp.i
 
 # target to preprocess a source file
 core/libmav_receiver.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.i
 .PHONY : core/libmav_receiver.cpp.i
 
 core/libmav_receiver.s: core/libmav_receiver.cpp.s
@@ -556,7 +604,7 @@ core/libmav_receiver.s: core/libmav_receiver.cpp.s
 
 # target to generate assembly for a file
 core/libmav_receiver.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/libmav_receiver.cpp.s
 .PHONY : core/libmav_receiver.cpp.s
 
 core/log.o: core/log.cpp.o
@@ -564,7 +612,7 @@ core/log.o: core/log.cpp.o
 
 # target to build an object file
 core/log.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o
 .PHONY : core/log.cpp.o
 
 core/log.i: core/log.cpp.i
@@ -572,7 +620,7 @@ core/log.i: core/log.cpp.i
 
 # target to preprocess a source file
 core/log.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.i
 .PHONY : core/log.cpp.i
 
 core/log.s: core/log.cpp.s
@@ -580,7 +628,7 @@ core/log.s: core/log.cpp.s
 
 # target to generate assembly for a file
 core/log.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.s
 .PHONY : core/log.cpp.s
 
 core/math_utils.o: core/math_utils.cpp.o
@@ -588,7 +636,7 @@ core/math_utils.o: core/math_utils.cpp.o
 
 # target to build an object file
 core/math_utils.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.o
 .PHONY : core/math_utils.cpp.o
 
 core/math_utils.i: core/math_utils.cpp.i
@@ -596,7 +644,7 @@ core/math_utils.i: core/math_utils.cpp.i
 
 # target to preprocess a source file
 core/math_utils.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.i
 .PHONY : core/math_utils.cpp.i
 
 core/math_utils.s: core/math_utils.cpp.s
@@ -604,15 +652,39 @@ core/math_utils.s: core/math_utils.cpp.s
 
 # target to generate assembly for a file
 core/math_utils.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/math_utils.cpp.s
 .PHONY : core/math_utils.cpp.s
+
+core/mavlink_channel_status.o: core/mavlink_channel_status.cpp.o
+.PHONY : core/mavlink_channel_status.o
+
+# target to build an object file
+core/mavlink_channel_status.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channel_status.cpp.o
+.PHONY : core/mavlink_channel_status.cpp.o
+
+core/mavlink_channel_status.i: core/mavlink_channel_status.cpp.i
+.PHONY : core/mavlink_channel_status.i
+
+# target to preprocess a source file
+core/mavlink_channel_status.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channel_status.cpp.i
+.PHONY : core/mavlink_channel_status.cpp.i
+
+core/mavlink_channel_status.s: core/mavlink_channel_status.cpp.s
+.PHONY : core/mavlink_channel_status.s
+
+# target to generate assembly for a file
+core/mavlink_channel_status.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channel_status.cpp.s
+.PHONY : core/mavlink_channel_status.cpp.s
 
 core/mavlink_channels.o: core/mavlink_channels.cpp.o
 .PHONY : core/mavlink_channels.o
 
 # target to build an object file
 core/mavlink_channels.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.o
 .PHONY : core/mavlink_channels.cpp.o
 
 core/mavlink_channels.i: core/mavlink_channels.cpp.i
@@ -620,7 +692,7 @@ core/mavlink_channels.i: core/mavlink_channels.cpp.i
 
 # target to preprocess a source file
 core/mavlink_channels.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.i
 .PHONY : core/mavlink_channels.cpp.i
 
 core/mavlink_channels.s: core/mavlink_channels.cpp.s
@@ -628,7 +700,7 @@ core/mavlink_channels.s: core/mavlink_channels.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_channels.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.s
 .PHONY : core/mavlink_channels.cpp.s
 
 core/mavlink_command_receiver.o: core/mavlink_command_receiver.cpp.o
@@ -636,7 +708,7 @@ core/mavlink_command_receiver.o: core/mavlink_command_receiver.cpp.o
 
 # target to build an object file
 core/mavlink_command_receiver.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.o
 .PHONY : core/mavlink_command_receiver.cpp.o
 
 core/mavlink_command_receiver.i: core/mavlink_command_receiver.cpp.i
@@ -644,7 +716,7 @@ core/mavlink_command_receiver.i: core/mavlink_command_receiver.cpp.i
 
 # target to preprocess a source file
 core/mavlink_command_receiver.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.i
 .PHONY : core/mavlink_command_receiver.cpp.i
 
 core/mavlink_command_receiver.s: core/mavlink_command_receiver.cpp.s
@@ -652,7 +724,7 @@ core/mavlink_command_receiver.s: core/mavlink_command_receiver.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_command_receiver.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_receiver.cpp.s
 .PHONY : core/mavlink_command_receiver.cpp.s
 
 core/mavlink_command_sender.o: core/mavlink_command_sender.cpp.o
@@ -660,7 +732,7 @@ core/mavlink_command_sender.o: core/mavlink_command_sender.cpp.o
 
 # target to build an object file
 core/mavlink_command_sender.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.o
 .PHONY : core/mavlink_command_sender.cpp.o
 
 core/mavlink_command_sender.i: core/mavlink_command_sender.cpp.i
@@ -668,7 +740,7 @@ core/mavlink_command_sender.i: core/mavlink_command_sender.cpp.i
 
 # target to preprocess a source file
 core/mavlink_command_sender.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.i
 .PHONY : core/mavlink_command_sender.cpp.i
 
 core/mavlink_command_sender.s: core/mavlink_command_sender.cpp.s
@@ -676,7 +748,7 @@ core/mavlink_command_sender.s: core/mavlink_command_sender.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_command_sender.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_command_sender.cpp.s
 .PHONY : core/mavlink_command_sender.cpp.s
 
 core/mavlink_component_metadata.o: core/mavlink_component_metadata.cpp.o
@@ -684,7 +756,7 @@ core/mavlink_component_metadata.o: core/mavlink_component_metadata.cpp.o
 
 # target to build an object file
 core/mavlink_component_metadata.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.o
 .PHONY : core/mavlink_component_metadata.cpp.o
 
 core/mavlink_component_metadata.i: core/mavlink_component_metadata.cpp.i
@@ -692,7 +764,7 @@ core/mavlink_component_metadata.i: core/mavlink_component_metadata.cpp.i
 
 # target to preprocess a source file
 core/mavlink_component_metadata.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.i
 .PHONY : core/mavlink_component_metadata.cpp.i
 
 core/mavlink_component_metadata.s: core/mavlink_component_metadata.cpp.s
@@ -700,7 +772,7 @@ core/mavlink_component_metadata.s: core/mavlink_component_metadata.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_component_metadata.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_component_metadata.cpp.s
 .PHONY : core/mavlink_component_metadata.cpp.s
 
 core/mavlink_ftp_client.o: core/mavlink_ftp_client.cpp.o
@@ -708,7 +780,7 @@ core/mavlink_ftp_client.o: core/mavlink_ftp_client.cpp.o
 
 # target to build an object file
 core/mavlink_ftp_client.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.o
 .PHONY : core/mavlink_ftp_client.cpp.o
 
 core/mavlink_ftp_client.i: core/mavlink_ftp_client.cpp.i
@@ -716,7 +788,7 @@ core/mavlink_ftp_client.i: core/mavlink_ftp_client.cpp.i
 
 # target to preprocess a source file
 core/mavlink_ftp_client.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.i
 .PHONY : core/mavlink_ftp_client.cpp.i
 
 core/mavlink_ftp_client.s: core/mavlink_ftp_client.cpp.s
@@ -724,7 +796,7 @@ core/mavlink_ftp_client.s: core/mavlink_ftp_client.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_ftp_client.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_client.cpp.s
 .PHONY : core/mavlink_ftp_client.cpp.s
 
 core/mavlink_ftp_server.o: core/mavlink_ftp_server.cpp.o
@@ -732,7 +804,7 @@ core/mavlink_ftp_server.o: core/mavlink_ftp_server.cpp.o
 
 # target to build an object file
 core/mavlink_ftp_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.o
 .PHONY : core/mavlink_ftp_server.cpp.o
 
 core/mavlink_ftp_server.i: core/mavlink_ftp_server.cpp.i
@@ -740,7 +812,7 @@ core/mavlink_ftp_server.i: core/mavlink_ftp_server.cpp.i
 
 # target to preprocess a source file
 core/mavlink_ftp_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.i
 .PHONY : core/mavlink_ftp_server.cpp.i
 
 core/mavlink_ftp_server.s: core/mavlink_ftp_server.cpp.s
@@ -748,7 +820,7 @@ core/mavlink_ftp_server.s: core/mavlink_ftp_server.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_ftp_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_ftp_server.cpp.s
 .PHONY : core/mavlink_ftp_server.cpp.s
 
 core/mavlink_message_handler.o: core/mavlink_message_handler.cpp.o
@@ -756,7 +828,7 @@ core/mavlink_message_handler.o: core/mavlink_message_handler.cpp.o
 
 # target to build an object file
 core/mavlink_message_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.o
 .PHONY : core/mavlink_message_handler.cpp.o
 
 core/mavlink_message_handler.i: core/mavlink_message_handler.cpp.i
@@ -764,7 +836,7 @@ core/mavlink_message_handler.i: core/mavlink_message_handler.cpp.i
 
 # target to preprocess a source file
 core/mavlink_message_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.i
 .PHONY : core/mavlink_message_handler.cpp.i
 
 core/mavlink_message_handler.s: core/mavlink_message_handler.cpp.s
@@ -772,7 +844,7 @@ core/mavlink_message_handler.s: core/mavlink_message_handler.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_message_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_message_handler.cpp.s
 .PHONY : core/mavlink_message_handler.cpp.s
 
 core/mavlink_mission_transfer_client.o: core/mavlink_mission_transfer_client.cpp.o
@@ -780,7 +852,7 @@ core/mavlink_mission_transfer_client.o: core/mavlink_mission_transfer_client.cpp
 
 # target to build an object file
 core/mavlink_mission_transfer_client.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.o
 .PHONY : core/mavlink_mission_transfer_client.cpp.o
 
 core/mavlink_mission_transfer_client.i: core/mavlink_mission_transfer_client.cpp.i
@@ -788,7 +860,7 @@ core/mavlink_mission_transfer_client.i: core/mavlink_mission_transfer_client.cpp
 
 # target to preprocess a source file
 core/mavlink_mission_transfer_client.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.i
 .PHONY : core/mavlink_mission_transfer_client.cpp.i
 
 core/mavlink_mission_transfer_client.s: core/mavlink_mission_transfer_client.cpp.s
@@ -796,7 +868,7 @@ core/mavlink_mission_transfer_client.s: core/mavlink_mission_transfer_client.cpp
 
 # target to generate assembly for a file
 core/mavlink_mission_transfer_client.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_client.cpp.s
 .PHONY : core/mavlink_mission_transfer_client.cpp.s
 
 core/mavlink_mission_transfer_server.o: core/mavlink_mission_transfer_server.cpp.o
@@ -804,7 +876,7 @@ core/mavlink_mission_transfer_server.o: core/mavlink_mission_transfer_server.cpp
 
 # target to build an object file
 core/mavlink_mission_transfer_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.o
 .PHONY : core/mavlink_mission_transfer_server.cpp.o
 
 core/mavlink_mission_transfer_server.i: core/mavlink_mission_transfer_server.cpp.i
@@ -812,7 +884,7 @@ core/mavlink_mission_transfer_server.i: core/mavlink_mission_transfer_server.cpp
 
 # target to preprocess a source file
 core/mavlink_mission_transfer_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.i
 .PHONY : core/mavlink_mission_transfer_server.cpp.i
 
 core/mavlink_mission_transfer_server.s: core/mavlink_mission_transfer_server.cpp.s
@@ -820,7 +892,7 @@ core/mavlink_mission_transfer_server.s: core/mavlink_mission_transfer_server.cpp
 
 # target to generate assembly for a file
 core/mavlink_mission_transfer_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_mission_transfer_server.cpp.s
 .PHONY : core/mavlink_mission_transfer_server.cpp.s
 
 core/mavlink_parameter_cache.o: core/mavlink_parameter_cache.cpp.o
@@ -828,7 +900,7 @@ core/mavlink_parameter_cache.o: core/mavlink_parameter_cache.cpp.o
 
 # target to build an object file
 core/mavlink_parameter_cache.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.o
 .PHONY : core/mavlink_parameter_cache.cpp.o
 
 core/mavlink_parameter_cache.i: core/mavlink_parameter_cache.cpp.i
@@ -836,7 +908,7 @@ core/mavlink_parameter_cache.i: core/mavlink_parameter_cache.cpp.i
 
 # target to preprocess a source file
 core/mavlink_parameter_cache.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.i
 .PHONY : core/mavlink_parameter_cache.cpp.i
 
 core/mavlink_parameter_cache.s: core/mavlink_parameter_cache.cpp.s
@@ -844,7 +916,7 @@ core/mavlink_parameter_cache.s: core/mavlink_parameter_cache.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_parameter_cache.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_cache.cpp.s
 .PHONY : core/mavlink_parameter_cache.cpp.s
 
 core/mavlink_parameter_client.o: core/mavlink_parameter_client.cpp.o
@@ -852,7 +924,7 @@ core/mavlink_parameter_client.o: core/mavlink_parameter_client.cpp.o
 
 # target to build an object file
 core/mavlink_parameter_client.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.o
 .PHONY : core/mavlink_parameter_client.cpp.o
 
 core/mavlink_parameter_client.i: core/mavlink_parameter_client.cpp.i
@@ -860,7 +932,7 @@ core/mavlink_parameter_client.i: core/mavlink_parameter_client.cpp.i
 
 # target to preprocess a source file
 core/mavlink_parameter_client.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.i
 .PHONY : core/mavlink_parameter_client.cpp.i
 
 core/mavlink_parameter_client.s: core/mavlink_parameter_client.cpp.s
@@ -868,7 +940,7 @@ core/mavlink_parameter_client.s: core/mavlink_parameter_client.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_parameter_client.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_client.cpp.s
 .PHONY : core/mavlink_parameter_client.cpp.s
 
 core/mavlink_parameter_helper.o: core/mavlink_parameter_helper.cpp.o
@@ -876,7 +948,7 @@ core/mavlink_parameter_helper.o: core/mavlink_parameter_helper.cpp.o
 
 # target to build an object file
 core/mavlink_parameter_helper.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.o
 .PHONY : core/mavlink_parameter_helper.cpp.o
 
 core/mavlink_parameter_helper.i: core/mavlink_parameter_helper.cpp.i
@@ -884,7 +956,7 @@ core/mavlink_parameter_helper.i: core/mavlink_parameter_helper.cpp.i
 
 # target to preprocess a source file
 core/mavlink_parameter_helper.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.i
 .PHONY : core/mavlink_parameter_helper.cpp.i
 
 core/mavlink_parameter_helper.s: core/mavlink_parameter_helper.cpp.s
@@ -892,7 +964,7 @@ core/mavlink_parameter_helper.s: core/mavlink_parameter_helper.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_parameter_helper.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_helper.cpp.s
 .PHONY : core/mavlink_parameter_helper.cpp.s
 
 core/mavlink_parameter_server.o: core/mavlink_parameter_server.cpp.o
@@ -900,7 +972,7 @@ core/mavlink_parameter_server.o: core/mavlink_parameter_server.cpp.o
 
 # target to build an object file
 core/mavlink_parameter_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.o
 .PHONY : core/mavlink_parameter_server.cpp.o
 
 core/mavlink_parameter_server.i: core/mavlink_parameter_server.cpp.i
@@ -908,7 +980,7 @@ core/mavlink_parameter_server.i: core/mavlink_parameter_server.cpp.i
 
 # target to preprocess a source file
 core/mavlink_parameter_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.i
 .PHONY : core/mavlink_parameter_server.cpp.i
 
 core/mavlink_parameter_server.s: core/mavlink_parameter_server.cpp.s
@@ -916,7 +988,7 @@ core/mavlink_parameter_server.s: core/mavlink_parameter_server.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_parameter_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_server.cpp.s
 .PHONY : core/mavlink_parameter_server.cpp.s
 
 core/mavlink_parameter_subscription.o: core/mavlink_parameter_subscription.cpp.o
@@ -924,7 +996,7 @@ core/mavlink_parameter_subscription.o: core/mavlink_parameter_subscription.cpp.o
 
 # target to build an object file
 core/mavlink_parameter_subscription.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.o
 .PHONY : core/mavlink_parameter_subscription.cpp.o
 
 core/mavlink_parameter_subscription.i: core/mavlink_parameter_subscription.cpp.i
@@ -932,7 +1004,7 @@ core/mavlink_parameter_subscription.i: core/mavlink_parameter_subscription.cpp.i
 
 # target to preprocess a source file
 core/mavlink_parameter_subscription.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.i
 .PHONY : core/mavlink_parameter_subscription.cpp.i
 
 core/mavlink_parameter_subscription.s: core/mavlink_parameter_subscription.cpp.s
@@ -940,7 +1012,7 @@ core/mavlink_parameter_subscription.s: core/mavlink_parameter_subscription.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_parameter_subscription.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_parameter_subscription.cpp.s
 .PHONY : core/mavlink_parameter_subscription.cpp.s
 
 core/mavlink_receiver.o: core/mavlink_receiver.cpp.o
@@ -948,7 +1020,7 @@ core/mavlink_receiver.o: core/mavlink_receiver.cpp.o
 
 # target to build an object file
 core/mavlink_receiver.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.o
 .PHONY : core/mavlink_receiver.cpp.o
 
 core/mavlink_receiver.i: core/mavlink_receiver.cpp.i
@@ -956,7 +1028,7 @@ core/mavlink_receiver.i: core/mavlink_receiver.cpp.i
 
 # target to preprocess a source file
 core/mavlink_receiver.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.i
 .PHONY : core/mavlink_receiver.cpp.i
 
 core/mavlink_receiver.s: core/mavlink_receiver.cpp.s
@@ -964,7 +1036,7 @@ core/mavlink_receiver.s: core/mavlink_receiver.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_receiver.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_receiver.cpp.s
 .PHONY : core/mavlink_receiver.cpp.s
 
 core/mavlink_request_message.o: core/mavlink_request_message.cpp.o
@@ -972,7 +1044,7 @@ core/mavlink_request_message.o: core/mavlink_request_message.cpp.o
 
 # target to build an object file
 core/mavlink_request_message.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.o
 .PHONY : core/mavlink_request_message.cpp.o
 
 core/mavlink_request_message.i: core/mavlink_request_message.cpp.i
@@ -980,7 +1052,7 @@ core/mavlink_request_message.i: core/mavlink_request_message.cpp.i
 
 # target to preprocess a source file
 core/mavlink_request_message.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.i
 .PHONY : core/mavlink_request_message.cpp.i
 
 core/mavlink_request_message.s: core/mavlink_request_message.cpp.s
@@ -988,7 +1060,7 @@ core/mavlink_request_message.s: core/mavlink_request_message.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_request_message.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message.cpp.s
 .PHONY : core/mavlink_request_message.cpp.s
 
 core/mavlink_request_message_handler.o: core/mavlink_request_message_handler.cpp.o
@@ -996,7 +1068,7 @@ core/mavlink_request_message_handler.o: core/mavlink_request_message_handler.cpp
 
 # target to build an object file
 core/mavlink_request_message_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.o
 .PHONY : core/mavlink_request_message_handler.cpp.o
 
 core/mavlink_request_message_handler.i: core/mavlink_request_message_handler.cpp.i
@@ -1004,7 +1076,7 @@ core/mavlink_request_message_handler.i: core/mavlink_request_message_handler.cpp
 
 # target to preprocess a source file
 core/mavlink_request_message_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.i
 .PHONY : core/mavlink_request_message_handler.cpp.i
 
 core/mavlink_request_message_handler.s: core/mavlink_request_message_handler.cpp.s
@@ -1012,7 +1084,7 @@ core/mavlink_request_message_handler.s: core/mavlink_request_message_handler.cpp
 
 # target to generate assembly for a file
 core/mavlink_request_message_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_request_message_handler.cpp.s
 .PHONY : core/mavlink_request_message_handler.cpp.s
 
 core/mavlink_statustext_handler.o: core/mavlink_statustext_handler.cpp.o
@@ -1020,7 +1092,7 @@ core/mavlink_statustext_handler.o: core/mavlink_statustext_handler.cpp.o
 
 # target to build an object file
 core/mavlink_statustext_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.o
 .PHONY : core/mavlink_statustext_handler.cpp.o
 
 core/mavlink_statustext_handler.i: core/mavlink_statustext_handler.cpp.i
@@ -1028,7 +1100,7 @@ core/mavlink_statustext_handler.i: core/mavlink_statustext_handler.cpp.i
 
 # target to preprocess a source file
 core/mavlink_statustext_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.i
 .PHONY : core/mavlink_statustext_handler.cpp.i
 
 core/mavlink_statustext_handler.s: core/mavlink_statustext_handler.cpp.s
@@ -1036,7 +1108,7 @@ core/mavlink_statustext_handler.s: core/mavlink_statustext_handler.cpp.s
 
 # target to generate assembly for a file
 core/mavlink_statustext_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_statustext_handler.cpp.s
 .PHONY : core/mavlink_statustext_handler.cpp.s
 
 core/mavsdk.o: core/mavsdk.cpp.o
@@ -1044,7 +1116,7 @@ core/mavsdk.o: core/mavsdk.cpp.o
 
 # target to build an object file
 core/mavsdk.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.o
 .PHONY : core/mavsdk.cpp.o
 
 core/mavsdk.i: core/mavsdk.cpp.i
@@ -1052,7 +1124,7 @@ core/mavsdk.i: core/mavsdk.cpp.i
 
 # target to preprocess a source file
 core/mavsdk.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.i
 .PHONY : core/mavsdk.cpp.i
 
 core/mavsdk.s: core/mavsdk.cpp.s
@@ -1060,7 +1132,7 @@ core/mavsdk.s: core/mavsdk.cpp.s
 
 # target to generate assembly for a file
 core/mavsdk.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk.cpp.s
 .PHONY : core/mavsdk.cpp.s
 
 core/mavsdk_impl.o: core/mavsdk_impl.cpp.o
@@ -1068,7 +1140,7 @@ core/mavsdk_impl.o: core/mavsdk_impl.cpp.o
 
 # target to build an object file
 core/mavsdk_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.o
 .PHONY : core/mavsdk_impl.cpp.o
 
 core/mavsdk_impl.i: core/mavsdk_impl.cpp.i
@@ -1076,7 +1148,7 @@ core/mavsdk_impl.i: core/mavsdk_impl.cpp.i
 
 # target to preprocess a source file
 core/mavsdk_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.i
 .PHONY : core/mavsdk_impl.cpp.i
 
 core/mavsdk_impl.s: core/mavsdk_impl.cpp.s
@@ -1084,7 +1156,7 @@ core/mavsdk_impl.s: core/mavsdk_impl.cpp.s
 
 # target to generate assembly for a file
 core/mavsdk_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_impl.cpp.s
 .PHONY : core/mavsdk_impl.cpp.s
 
 core/mavsdk_time.o: core/mavsdk_time.cpp.o
@@ -1092,7 +1164,7 @@ core/mavsdk_time.o: core/mavsdk_time.cpp.o
 
 # target to build an object file
 core/mavsdk_time.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.o
 .PHONY : core/mavsdk_time.cpp.o
 
 core/mavsdk_time.i: core/mavsdk_time.cpp.i
@@ -1100,7 +1172,7 @@ core/mavsdk_time.i: core/mavsdk_time.cpp.i
 
 # target to preprocess a source file
 core/mavsdk_time.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.i
 .PHONY : core/mavsdk_time.cpp.i
 
 core/mavsdk_time.s: core/mavsdk_time.cpp.s
@@ -1108,7 +1180,7 @@ core/mavsdk_time.s: core/mavsdk_time.cpp.s
 
 # target to generate assembly for a file
 core/mavsdk_time.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/mavsdk_time.cpp.s
 .PHONY : core/mavsdk_time.cpp.s
 
 core/param_value.o: core/param_value.cpp.o
@@ -1116,7 +1188,7 @@ core/param_value.o: core/param_value.cpp.o
 
 # target to build an object file
 core/param_value.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.o
 .PHONY : core/param_value.cpp.o
 
 core/param_value.i: core/param_value.cpp.i
@@ -1124,7 +1196,7 @@ core/param_value.i: core/param_value.cpp.i
 
 # target to preprocess a source file
 core/param_value.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.i
 .PHONY : core/param_value.cpp.i
 
 core/param_value.s: core/param_value.cpp.s
@@ -1132,7 +1204,7 @@ core/param_value.s: core/param_value.cpp.s
 
 # target to generate assembly for a file
 core/param_value.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/param_value.cpp.s
 .PHONY : core/param_value.cpp.s
 
 core/ping.o: core/ping.cpp.o
@@ -1140,7 +1212,7 @@ core/ping.o: core/ping.cpp.o
 
 # target to build an object file
 core/ping.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.o
 .PHONY : core/ping.cpp.o
 
 core/ping.i: core/ping.cpp.i
@@ -1148,7 +1220,7 @@ core/ping.i: core/ping.cpp.i
 
 # target to preprocess a source file
 core/ping.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.i
 .PHONY : core/ping.cpp.i
 
 core/ping.s: core/ping.cpp.s
@@ -1156,7 +1228,7 @@ core/ping.s: core/ping.cpp.s
 
 # target to generate assembly for a file
 core/ping.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/ping.cpp.s
 .PHONY : core/ping.cpp.s
 
 core/plugin_impl_base.o: core/plugin_impl_base.cpp.o
@@ -1164,7 +1236,7 @@ core/plugin_impl_base.o: core/plugin_impl_base.cpp.o
 
 # target to build an object file
 core/plugin_impl_base.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.o
 .PHONY : core/plugin_impl_base.cpp.o
 
 core/plugin_impl_base.i: core/plugin_impl_base.cpp.i
@@ -1172,7 +1244,7 @@ core/plugin_impl_base.i: core/plugin_impl_base.cpp.i
 
 # target to preprocess a source file
 core/plugin_impl_base.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.i
 .PHONY : core/plugin_impl_base.cpp.i
 
 core/plugin_impl_base.s: core/plugin_impl_base.cpp.s
@@ -1180,15 +1252,39 @@ core/plugin_impl_base.s: core/plugin_impl_base.cpp.s
 
 # target to generate assembly for a file
 core/plugin_impl_base.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/plugin_impl_base.cpp.s
 .PHONY : core/plugin_impl_base.cpp.s
+
+core/raw_connection.o: core/raw_connection.cpp.o
+.PHONY : core/raw_connection.o
+
+# target to build an object file
+core/raw_connection.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/raw_connection.cpp.o
+.PHONY : core/raw_connection.cpp.o
+
+core/raw_connection.i: core/raw_connection.cpp.i
+.PHONY : core/raw_connection.i
+
+# target to preprocess a source file
+core/raw_connection.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/raw_connection.cpp.i
+.PHONY : core/raw_connection.cpp.i
+
+core/raw_connection.s: core/raw_connection.cpp.s
+.PHONY : core/raw_connection.s
+
+# target to generate assembly for a file
+core/raw_connection.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/raw_connection.cpp.s
+.PHONY : core/raw_connection.cpp.s
 
 core/serial_connection.o: core/serial_connection.cpp.o
 .PHONY : core/serial_connection.o
 
 # target to build an object file
 core/serial_connection.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.o
 .PHONY : core/serial_connection.cpp.o
 
 core/serial_connection.i: core/serial_connection.cpp.i
@@ -1196,7 +1292,7 @@ core/serial_connection.i: core/serial_connection.cpp.i
 
 # target to preprocess a source file
 core/serial_connection.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.i
 .PHONY : core/serial_connection.cpp.i
 
 core/serial_connection.s: core/serial_connection.cpp.s
@@ -1204,7 +1300,7 @@ core/serial_connection.s: core/serial_connection.cpp.s
 
 # target to generate assembly for a file
 core/serial_connection.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/serial_connection.cpp.s
 .PHONY : core/serial_connection.cpp.s
 
 core/server_component.o: core/server_component.cpp.o
@@ -1212,7 +1308,7 @@ core/server_component.o: core/server_component.cpp.o
 
 # target to build an object file
 core/server_component.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.o
 .PHONY : core/server_component.cpp.o
 
 core/server_component.i: core/server_component.cpp.i
@@ -1220,7 +1316,7 @@ core/server_component.i: core/server_component.cpp.i
 
 # target to preprocess a source file
 core/server_component.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.i
 .PHONY : core/server_component.cpp.i
 
 core/server_component.s: core/server_component.cpp.s
@@ -1228,7 +1324,7 @@ core/server_component.s: core/server_component.cpp.s
 
 # target to generate assembly for a file
 core/server_component.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component.cpp.s
 .PHONY : core/server_component.cpp.s
 
 core/server_component_impl.o: core/server_component_impl.cpp.o
@@ -1236,7 +1332,7 @@ core/server_component_impl.o: core/server_component_impl.cpp.o
 
 # target to build an object file
 core/server_component_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.o
 .PHONY : core/server_component_impl.cpp.o
 
 core/server_component_impl.i: core/server_component_impl.cpp.i
@@ -1244,7 +1340,7 @@ core/server_component_impl.i: core/server_component_impl.cpp.i
 
 # target to preprocess a source file
 core/server_component_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.i
 .PHONY : core/server_component_impl.cpp.i
 
 core/server_component_impl.s: core/server_component_impl.cpp.s
@@ -1252,7 +1348,7 @@ core/server_component_impl.s: core/server_component_impl.cpp.s
 
 # target to generate assembly for a file
 core/server_component_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_component_impl.cpp.s
 .PHONY : core/server_component_impl.cpp.s
 
 core/server_plugin_impl_base.o: core/server_plugin_impl_base.cpp.o
@@ -1260,7 +1356,7 @@ core/server_plugin_impl_base.o: core/server_plugin_impl_base.cpp.o
 
 # target to build an object file
 core/server_plugin_impl_base.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.o
 .PHONY : core/server_plugin_impl_base.cpp.o
 
 core/server_plugin_impl_base.i: core/server_plugin_impl_base.cpp.i
@@ -1268,7 +1364,7 @@ core/server_plugin_impl_base.i: core/server_plugin_impl_base.cpp.i
 
 # target to preprocess a source file
 core/server_plugin_impl_base.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.i
 .PHONY : core/server_plugin_impl_base.cpp.i
 
 core/server_plugin_impl_base.s: core/server_plugin_impl_base.cpp.s
@@ -1276,7 +1372,7 @@ core/server_plugin_impl_base.s: core/server_plugin_impl_base.cpp.s
 
 # target to generate assembly for a file
 core/server_plugin_impl_base.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/server_plugin_impl_base.cpp.s
 .PHONY : core/server_plugin_impl_base.cpp.s
 
 core/socket_holder.o: core/socket_holder.cpp.o
@@ -1284,7 +1380,7 @@ core/socket_holder.o: core/socket_holder.cpp.o
 
 # target to build an object file
 core/socket_holder.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.o
 .PHONY : core/socket_holder.cpp.o
 
 core/socket_holder.i: core/socket_holder.cpp.i
@@ -1292,7 +1388,7 @@ core/socket_holder.i: core/socket_holder.cpp.i
 
 # target to preprocess a source file
 core/socket_holder.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.i
 .PHONY : core/socket_holder.cpp.i
 
 core/socket_holder.s: core/socket_holder.cpp.s
@@ -1300,7 +1396,7 @@ core/socket_holder.s: core/socket_holder.cpp.s
 
 # target to generate assembly for a file
 core/socket_holder.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/socket_holder.cpp.s
 .PHONY : core/socket_holder.cpp.s
 
 core/string_utils.o: core/string_utils.cpp.o
@@ -1308,7 +1404,7 @@ core/string_utils.o: core/string_utils.cpp.o
 
 # target to build an object file
 core/string_utils.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.o
 .PHONY : core/string_utils.cpp.o
 
 core/string_utils.i: core/string_utils.cpp.i
@@ -1316,7 +1412,7 @@ core/string_utils.i: core/string_utils.cpp.i
 
 # target to preprocess a source file
 core/string_utils.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.i
 .PHONY : core/string_utils.cpp.i
 
 core/string_utils.s: core/string_utils.cpp.s
@@ -1324,7 +1420,7 @@ core/string_utils.s: core/string_utils.cpp.s
 
 # target to generate assembly for a file
 core/string_utils.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/string_utils.cpp.s
 .PHONY : core/string_utils.cpp.s
 
 core/system.o: core/system.cpp.o
@@ -1332,7 +1428,7 @@ core/system.o: core/system.cpp.o
 
 # target to build an object file
 core/system.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.o
 .PHONY : core/system.cpp.o
 
 core/system.i: core/system.cpp.i
@@ -1340,7 +1436,7 @@ core/system.i: core/system.cpp.i
 
 # target to preprocess a source file
 core/system.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.i
 .PHONY : core/system.cpp.i
 
 core/system.s: core/system.cpp.s
@@ -1348,7 +1444,7 @@ core/system.s: core/system.cpp.s
 
 # target to generate assembly for a file
 core/system.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system.cpp.s
 .PHONY : core/system.cpp.s
 
 core/system_impl.o: core/system_impl.cpp.o
@@ -1356,7 +1452,7 @@ core/system_impl.o: core/system_impl.cpp.o
 
 # target to build an object file
 core/system_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.o
 .PHONY : core/system_impl.cpp.o
 
 core/system_impl.i: core/system_impl.cpp.i
@@ -1364,7 +1460,7 @@ core/system_impl.i: core/system_impl.cpp.i
 
 # target to preprocess a source file
 core/system_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.i
 .PHONY : core/system_impl.cpp.i
 
 core/system_impl.s: core/system_impl.cpp.s
@@ -1372,7 +1468,7 @@ core/system_impl.s: core/system_impl.cpp.s
 
 # target to generate assembly for a file
 core/system_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/system_impl.cpp.s
 .PHONY : core/system_impl.cpp.s
 
 core/tcp_client_connection.o: core/tcp_client_connection.cpp.o
@@ -1380,7 +1476,7 @@ core/tcp_client_connection.o: core/tcp_client_connection.cpp.o
 
 # target to build an object file
 core/tcp_client_connection.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.o
 .PHONY : core/tcp_client_connection.cpp.o
 
 core/tcp_client_connection.i: core/tcp_client_connection.cpp.i
@@ -1388,7 +1484,7 @@ core/tcp_client_connection.i: core/tcp_client_connection.cpp.i
 
 # target to preprocess a source file
 core/tcp_client_connection.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.i
 .PHONY : core/tcp_client_connection.cpp.i
 
 core/tcp_client_connection.s: core/tcp_client_connection.cpp.s
@@ -1396,7 +1492,7 @@ core/tcp_client_connection.s: core/tcp_client_connection.cpp.s
 
 # target to generate assembly for a file
 core/tcp_client_connection.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_client_connection.cpp.s
 .PHONY : core/tcp_client_connection.cpp.s
 
 core/tcp_server_connection.o: core/tcp_server_connection.cpp.o
@@ -1404,7 +1500,7 @@ core/tcp_server_connection.o: core/tcp_server_connection.cpp.o
 
 # target to build an object file
 core/tcp_server_connection.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.o
 .PHONY : core/tcp_server_connection.cpp.o
 
 core/tcp_server_connection.i: core/tcp_server_connection.cpp.i
@@ -1412,7 +1508,7 @@ core/tcp_server_connection.i: core/tcp_server_connection.cpp.i
 
 # target to preprocess a source file
 core/tcp_server_connection.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.i
 .PHONY : core/tcp_server_connection.cpp.i
 
 core/tcp_server_connection.s: core/tcp_server_connection.cpp.s
@@ -1420,7 +1516,7 @@ core/tcp_server_connection.s: core/tcp_server_connection.cpp.s
 
 # target to generate assembly for a file
 core/tcp_server_connection.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/tcp_server_connection.cpp.s
 .PHONY : core/tcp_server_connection.cpp.s
 
 core/timeout_handler.o: core/timeout_handler.cpp.o
@@ -1428,7 +1524,7 @@ core/timeout_handler.o: core/timeout_handler.cpp.o
 
 # target to build an object file
 core/timeout_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.o
 .PHONY : core/timeout_handler.cpp.o
 
 core/timeout_handler.i: core/timeout_handler.cpp.i
@@ -1436,7 +1532,7 @@ core/timeout_handler.i: core/timeout_handler.cpp.i
 
 # target to preprocess a source file
 core/timeout_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.i
 .PHONY : core/timeout_handler.cpp.i
 
 core/timeout_handler.s: core/timeout_handler.cpp.s
@@ -1444,7 +1540,7 @@ core/timeout_handler.s: core/timeout_handler.cpp.s
 
 # target to generate assembly for a file
 core/timeout_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.s
 .PHONY : core/timeout_handler.cpp.s
 
 core/timesync.o: core/timesync.cpp.o
@@ -1452,7 +1548,7 @@ core/timesync.o: core/timesync.cpp.o
 
 # target to build an object file
 core/timesync.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.o
 .PHONY : core/timesync.cpp.o
 
 core/timesync.i: core/timesync.cpp.i
@@ -1460,7 +1556,7 @@ core/timesync.i: core/timesync.cpp.i
 
 # target to preprocess a source file
 core/timesync.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.i
 .PHONY : core/timesync.cpp.i
 
 core/timesync.s: core/timesync.cpp.s
@@ -1468,7 +1564,7 @@ core/timesync.s: core/timesync.cpp.s
 
 # target to generate assembly for a file
 core/timesync.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/timesync.cpp.s
 .PHONY : core/timesync.cpp.s
 
 core/udp_connection.o: core/udp_connection.cpp.o
@@ -1476,7 +1572,7 @@ core/udp_connection.o: core/udp_connection.cpp.o
 
 # target to build an object file
 core/udp_connection.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.o
 .PHONY : core/udp_connection.cpp.o
 
 core/udp_connection.i: core/udp_connection.cpp.i
@@ -1484,7 +1580,7 @@ core/udp_connection.i: core/udp_connection.cpp.i
 
 # target to preprocess a source file
 core/udp_connection.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.i
 .PHONY : core/udp_connection.cpp.i
 
 core/udp_connection.s: core/udp_connection.cpp.s
@@ -1492,7 +1588,7 @@ core/udp_connection.s: core/udp_connection.cpp.s
 
 # target to generate assembly for a file
 core/udp_connection.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/udp_connection.cpp.s
 .PHONY : core/udp_connection.cpp.s
 
 core/vehicle.o: core/vehicle.cpp.o
@@ -1500,7 +1596,7 @@ core/vehicle.o: core/vehicle.cpp.o
 
 # target to build an object file
 core/vehicle.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.o
 .PHONY : core/vehicle.cpp.o
 
 core/vehicle.i: core/vehicle.cpp.i
@@ -1508,7 +1604,7 @@ core/vehicle.i: core/vehicle.cpp.i
 
 # target to preprocess a source file
 core/vehicle.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.i
 .PHONY : core/vehicle.cpp.i
 
 core/vehicle.s: core/vehicle.cpp.s
@@ -1516,7 +1612,7 @@ core/vehicle.s: core/vehicle.cpp.s
 
 # target to generate assembly for a file
 core/vehicle.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/core/vehicle.cpp.s
 .PHONY : core/vehicle.cpp.s
 
 plugins/action/action.o: plugins/action/action.cpp.o
@@ -1524,7 +1620,7 @@ plugins/action/action.o: plugins/action/action.cpp.o
 
 # target to build an object file
 plugins/action/action.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.o
 .PHONY : plugins/action/action.cpp.o
 
 plugins/action/action.i: plugins/action/action.cpp.i
@@ -1532,7 +1628,7 @@ plugins/action/action.i: plugins/action/action.cpp.i
 
 # target to preprocess a source file
 plugins/action/action.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.i
 .PHONY : plugins/action/action.cpp.i
 
 plugins/action/action.s: plugins/action/action.cpp.s
@@ -1540,7 +1636,7 @@ plugins/action/action.s: plugins/action/action.cpp.s
 
 # target to generate assembly for a file
 plugins/action/action.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action.cpp.s
 .PHONY : plugins/action/action.cpp.s
 
 plugins/action/action_impl.o: plugins/action/action_impl.cpp.o
@@ -1548,7 +1644,7 @@ plugins/action/action_impl.o: plugins/action/action_impl.cpp.o
 
 # target to build an object file
 plugins/action/action_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.o
 .PHONY : plugins/action/action_impl.cpp.o
 
 plugins/action/action_impl.i: plugins/action/action_impl.cpp.i
@@ -1556,7 +1652,7 @@ plugins/action/action_impl.i: plugins/action/action_impl.cpp.i
 
 # target to preprocess a source file
 plugins/action/action_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.i
 .PHONY : plugins/action/action_impl.cpp.i
 
 plugins/action/action_impl.s: plugins/action/action_impl.cpp.s
@@ -1564,7 +1660,7 @@ plugins/action/action_impl.s: plugins/action/action_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/action/action_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action/action_impl.cpp.s
 .PHONY : plugins/action/action_impl.cpp.s
 
 plugins/action_server/action_server.o: plugins/action_server/action_server.cpp.o
@@ -1572,7 +1668,7 @@ plugins/action_server/action_server.o: plugins/action_server/action_server.cpp.o
 
 # target to build an object file
 plugins/action_server/action_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.o
 .PHONY : plugins/action_server/action_server.cpp.o
 
 plugins/action_server/action_server.i: plugins/action_server/action_server.cpp.i
@@ -1580,7 +1676,7 @@ plugins/action_server/action_server.i: plugins/action_server/action_server.cpp.i
 
 # target to preprocess a source file
 plugins/action_server/action_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.i
 .PHONY : plugins/action_server/action_server.cpp.i
 
 plugins/action_server/action_server.s: plugins/action_server/action_server.cpp.s
@@ -1588,7 +1684,7 @@ plugins/action_server/action_server.s: plugins/action_server/action_server.cpp.s
 
 # target to generate assembly for a file
 plugins/action_server/action_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server.cpp.s
 .PHONY : plugins/action_server/action_server.cpp.s
 
 plugins/action_server/action_server_impl.o: plugins/action_server/action_server_impl.cpp.o
@@ -1596,7 +1692,7 @@ plugins/action_server/action_server_impl.o: plugins/action_server/action_server_
 
 # target to build an object file
 plugins/action_server/action_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.o
 .PHONY : plugins/action_server/action_server_impl.cpp.o
 
 plugins/action_server/action_server_impl.i: plugins/action_server/action_server_impl.cpp.i
@@ -1604,7 +1700,7 @@ plugins/action_server/action_server_impl.i: plugins/action_server/action_server_
 
 # target to preprocess a source file
 plugins/action_server/action_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.i
 .PHONY : plugins/action_server/action_server_impl.cpp.i
 
 plugins/action_server/action_server_impl.s: plugins/action_server/action_server_impl.cpp.s
@@ -1612,7 +1708,7 @@ plugins/action_server/action_server_impl.s: plugins/action_server/action_server_
 
 # target to generate assembly for a file
 plugins/action_server/action_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/action_server/action_server_impl.cpp.s
 .PHONY : plugins/action_server/action_server_impl.cpp.s
 
 plugins/arm_authorizer_server/arm_authorizer_server.o: plugins/arm_authorizer_server/arm_authorizer_server.cpp.o
@@ -1620,7 +1716,7 @@ plugins/arm_authorizer_server/arm_authorizer_server.o: plugins/arm_authorizer_se
 
 # target to build an object file
 plugins/arm_authorizer_server/arm_authorizer_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.o
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server.cpp.o
 
 plugins/arm_authorizer_server/arm_authorizer_server.i: plugins/arm_authorizer_server/arm_authorizer_server.cpp.i
@@ -1628,7 +1724,7 @@ plugins/arm_authorizer_server/arm_authorizer_server.i: plugins/arm_authorizer_se
 
 # target to preprocess a source file
 plugins/arm_authorizer_server/arm_authorizer_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.i
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server.cpp.i
 
 plugins/arm_authorizer_server/arm_authorizer_server.s: plugins/arm_authorizer_server/arm_authorizer_server.cpp.s
@@ -1636,7 +1732,7 @@ plugins/arm_authorizer_server/arm_authorizer_server.s: plugins/arm_authorizer_se
 
 # target to generate assembly for a file
 plugins/arm_authorizer_server/arm_authorizer_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server.cpp.s
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server.cpp.s
 
 plugins/arm_authorizer_server/arm_authorizer_server_impl.o: plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.o
@@ -1644,7 +1740,7 @@ plugins/arm_authorizer_server/arm_authorizer_server_impl.o: plugins/arm_authoriz
 
 # target to build an object file
 plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.o
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.o
 
 plugins/arm_authorizer_server/arm_authorizer_server_impl.i: plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.i
@@ -1652,7 +1748,7 @@ plugins/arm_authorizer_server/arm_authorizer_server_impl.i: plugins/arm_authoriz
 
 # target to preprocess a source file
 plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.i
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.i
 
 plugins/arm_authorizer_server/arm_authorizer_server_impl.s: plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.s
@@ -1660,7 +1756,7 @@ plugins/arm_authorizer_server/arm_authorizer_server_impl.s: plugins/arm_authoriz
 
 # target to generate assembly for a file
 plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.s
 .PHONY : plugins/arm_authorizer_server/arm_authorizer_server_impl.cpp.s
 
 plugins/calibration/calibration.o: plugins/calibration/calibration.cpp.o
@@ -1668,7 +1764,7 @@ plugins/calibration/calibration.o: plugins/calibration/calibration.cpp.o
 
 # target to build an object file
 plugins/calibration/calibration.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.o
 .PHONY : plugins/calibration/calibration.cpp.o
 
 plugins/calibration/calibration.i: plugins/calibration/calibration.cpp.i
@@ -1676,7 +1772,7 @@ plugins/calibration/calibration.i: plugins/calibration/calibration.cpp.i
 
 # target to preprocess a source file
 plugins/calibration/calibration.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.i
 .PHONY : plugins/calibration/calibration.cpp.i
 
 plugins/calibration/calibration.s: plugins/calibration/calibration.cpp.s
@@ -1684,7 +1780,7 @@ plugins/calibration/calibration.s: plugins/calibration/calibration.cpp.s
 
 # target to generate assembly for a file
 plugins/calibration/calibration.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration.cpp.s
 .PHONY : plugins/calibration/calibration.cpp.s
 
 plugins/calibration/calibration_impl.o: plugins/calibration/calibration_impl.cpp.o
@@ -1692,7 +1788,7 @@ plugins/calibration/calibration_impl.o: plugins/calibration/calibration_impl.cpp
 
 # target to build an object file
 plugins/calibration/calibration_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.o
 .PHONY : plugins/calibration/calibration_impl.cpp.o
 
 plugins/calibration/calibration_impl.i: plugins/calibration/calibration_impl.cpp.i
@@ -1700,7 +1796,7 @@ plugins/calibration/calibration_impl.i: plugins/calibration/calibration_impl.cpp
 
 # target to preprocess a source file
 plugins/calibration/calibration_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.i
 .PHONY : plugins/calibration/calibration_impl.cpp.i
 
 plugins/calibration/calibration_impl.s: plugins/calibration/calibration_impl.cpp.s
@@ -1708,7 +1804,7 @@ plugins/calibration/calibration_impl.s: plugins/calibration/calibration_impl.cpp
 
 # target to generate assembly for a file
 plugins/calibration/calibration_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_impl.cpp.s
 .PHONY : plugins/calibration/calibration_impl.cpp.s
 
 plugins/calibration/calibration_statustext_parser.o: plugins/calibration/calibration_statustext_parser.cpp.o
@@ -1716,7 +1812,7 @@ plugins/calibration/calibration_statustext_parser.o: plugins/calibration/calibra
 
 # target to build an object file
 plugins/calibration/calibration_statustext_parser.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.o
 .PHONY : plugins/calibration/calibration_statustext_parser.cpp.o
 
 plugins/calibration/calibration_statustext_parser.i: plugins/calibration/calibration_statustext_parser.cpp.i
@@ -1724,7 +1820,7 @@ plugins/calibration/calibration_statustext_parser.i: plugins/calibration/calibra
 
 # target to preprocess a source file
 plugins/calibration/calibration_statustext_parser.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.i
 .PHONY : plugins/calibration/calibration_statustext_parser.cpp.i
 
 plugins/calibration/calibration_statustext_parser.s: plugins/calibration/calibration_statustext_parser.cpp.s
@@ -1732,7 +1828,7 @@ plugins/calibration/calibration_statustext_parser.s: plugins/calibration/calibra
 
 # target to generate assembly for a file
 plugins/calibration/calibration_statustext_parser.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/calibration/calibration_statustext_parser.cpp.s
 .PHONY : plugins/calibration/calibration_statustext_parser.cpp.s
 
 plugins/camera/camera.o: plugins/camera/camera.cpp.o
@@ -1740,7 +1836,7 @@ plugins/camera/camera.o: plugins/camera/camera.cpp.o
 
 # target to build an object file
 plugins/camera/camera.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.o
 .PHONY : plugins/camera/camera.cpp.o
 
 plugins/camera/camera.i: plugins/camera/camera.cpp.i
@@ -1748,7 +1844,7 @@ plugins/camera/camera.i: plugins/camera/camera.cpp.i
 
 # target to preprocess a source file
 plugins/camera/camera.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.i
 .PHONY : plugins/camera/camera.cpp.i
 
 plugins/camera/camera.s: plugins/camera/camera.cpp.s
@@ -1756,7 +1852,7 @@ plugins/camera/camera.s: plugins/camera/camera.cpp.s
 
 # target to generate assembly for a file
 plugins/camera/camera.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera.cpp.s
 .PHONY : plugins/camera/camera.cpp.s
 
 plugins/camera/camera_definition.o: plugins/camera/camera_definition.cpp.o
@@ -1764,7 +1860,7 @@ plugins/camera/camera_definition.o: plugins/camera/camera_definition.cpp.o
 
 # target to build an object file
 plugins/camera/camera_definition.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.o
 .PHONY : plugins/camera/camera_definition.cpp.o
 
 plugins/camera/camera_definition.i: plugins/camera/camera_definition.cpp.i
@@ -1772,7 +1868,7 @@ plugins/camera/camera_definition.i: plugins/camera/camera_definition.cpp.i
 
 # target to preprocess a source file
 plugins/camera/camera_definition.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.i
 .PHONY : plugins/camera/camera_definition.cpp.i
 
 plugins/camera/camera_definition.s: plugins/camera/camera_definition.cpp.s
@@ -1780,7 +1876,7 @@ plugins/camera/camera_definition.s: plugins/camera/camera_definition.cpp.s
 
 # target to generate assembly for a file
 plugins/camera/camera_definition.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_definition.cpp.s
 .PHONY : plugins/camera/camera_definition.cpp.s
 
 plugins/camera/camera_impl.o: plugins/camera/camera_impl.cpp.o
@@ -1788,7 +1884,7 @@ plugins/camera/camera_impl.o: plugins/camera/camera_impl.cpp.o
 
 # target to build an object file
 plugins/camera/camera_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.o
 .PHONY : plugins/camera/camera_impl.cpp.o
 
 plugins/camera/camera_impl.i: plugins/camera/camera_impl.cpp.i
@@ -1796,7 +1892,7 @@ plugins/camera/camera_impl.i: plugins/camera/camera_impl.cpp.i
 
 # target to preprocess a source file
 plugins/camera/camera_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.i
 .PHONY : plugins/camera/camera_impl.cpp.i
 
 plugins/camera/camera_impl.s: plugins/camera/camera_impl.cpp.s
@@ -1804,7 +1900,7 @@ plugins/camera/camera_impl.s: plugins/camera/camera_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/camera/camera_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera/camera_impl.cpp.s
 .PHONY : plugins/camera/camera_impl.cpp.s
 
 plugins/camera_server/camera_server.o: plugins/camera_server/camera_server.cpp.o
@@ -1812,7 +1908,7 @@ plugins/camera_server/camera_server.o: plugins/camera_server/camera_server.cpp.o
 
 # target to build an object file
 plugins/camera_server/camera_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.o
 .PHONY : plugins/camera_server/camera_server.cpp.o
 
 plugins/camera_server/camera_server.i: plugins/camera_server/camera_server.cpp.i
@@ -1820,7 +1916,7 @@ plugins/camera_server/camera_server.i: plugins/camera_server/camera_server.cpp.i
 
 # target to preprocess a source file
 plugins/camera_server/camera_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.i
 .PHONY : plugins/camera_server/camera_server.cpp.i
 
 plugins/camera_server/camera_server.s: plugins/camera_server/camera_server.cpp.s
@@ -1828,7 +1924,7 @@ plugins/camera_server/camera_server.s: plugins/camera_server/camera_server.cpp.s
 
 # target to generate assembly for a file
 plugins/camera_server/camera_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server.cpp.s
 .PHONY : plugins/camera_server/camera_server.cpp.s
 
 plugins/camera_server/camera_server_impl.o: plugins/camera_server/camera_server_impl.cpp.o
@@ -1836,7 +1932,7 @@ plugins/camera_server/camera_server_impl.o: plugins/camera_server/camera_server_
 
 # target to build an object file
 plugins/camera_server/camera_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.o
 .PHONY : plugins/camera_server/camera_server_impl.cpp.o
 
 plugins/camera_server/camera_server_impl.i: plugins/camera_server/camera_server_impl.cpp.i
@@ -1844,7 +1940,7 @@ plugins/camera_server/camera_server_impl.i: plugins/camera_server/camera_server_
 
 # target to preprocess a source file
 plugins/camera_server/camera_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.i
 .PHONY : plugins/camera_server/camera_server_impl.cpp.i
 
 plugins/camera_server/camera_server_impl.s: plugins/camera_server/camera_server_impl.cpp.s
@@ -1852,7 +1948,7 @@ plugins/camera_server/camera_server_impl.s: plugins/camera_server/camera_server_
 
 # target to generate assembly for a file
 plugins/camera_server/camera_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/camera_server/camera_server_impl.cpp.s
 .PHONY : plugins/camera_server/camera_server_impl.cpp.s
 
 plugins/component_metadata/component_metadata.o: plugins/component_metadata/component_metadata.cpp.o
@@ -1860,7 +1956,7 @@ plugins/component_metadata/component_metadata.o: plugins/component_metadata/comp
 
 # target to build an object file
 plugins/component_metadata/component_metadata.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.o
 .PHONY : plugins/component_metadata/component_metadata.cpp.o
 
 plugins/component_metadata/component_metadata.i: plugins/component_metadata/component_metadata.cpp.i
@@ -1868,7 +1964,7 @@ plugins/component_metadata/component_metadata.i: plugins/component_metadata/comp
 
 # target to preprocess a source file
 plugins/component_metadata/component_metadata.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.i
 .PHONY : plugins/component_metadata/component_metadata.cpp.i
 
 plugins/component_metadata/component_metadata.s: plugins/component_metadata/component_metadata.cpp.s
@@ -1876,7 +1972,7 @@ plugins/component_metadata/component_metadata.s: plugins/component_metadata/comp
 
 # target to generate assembly for a file
 plugins/component_metadata/component_metadata.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata.cpp.s
 .PHONY : plugins/component_metadata/component_metadata.cpp.s
 
 plugins/component_metadata/component_metadata_impl.o: plugins/component_metadata/component_metadata_impl.cpp.o
@@ -1884,7 +1980,7 @@ plugins/component_metadata/component_metadata_impl.o: plugins/component_metadata
 
 # target to build an object file
 plugins/component_metadata/component_metadata_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.o
 .PHONY : plugins/component_metadata/component_metadata_impl.cpp.o
 
 plugins/component_metadata/component_metadata_impl.i: plugins/component_metadata/component_metadata_impl.cpp.i
@@ -1892,7 +1988,7 @@ plugins/component_metadata/component_metadata_impl.i: plugins/component_metadata
 
 # target to preprocess a source file
 plugins/component_metadata/component_metadata_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.i
 .PHONY : plugins/component_metadata/component_metadata_impl.cpp.i
 
 plugins/component_metadata/component_metadata_impl.s: plugins/component_metadata/component_metadata_impl.cpp.s
@@ -1900,7 +1996,7 @@ plugins/component_metadata/component_metadata_impl.s: plugins/component_metadata
 
 # target to generate assembly for a file
 plugins/component_metadata/component_metadata_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata/component_metadata_impl.cpp.s
 .PHONY : plugins/component_metadata/component_metadata_impl.cpp.s
 
 plugins/component_metadata_server/component_metadata_server.o: plugins/component_metadata_server/component_metadata_server.cpp.o
@@ -1908,7 +2004,7 @@ plugins/component_metadata_server/component_metadata_server.o: plugins/component
 
 # target to build an object file
 plugins/component_metadata_server/component_metadata_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.o
 .PHONY : plugins/component_metadata_server/component_metadata_server.cpp.o
 
 plugins/component_metadata_server/component_metadata_server.i: plugins/component_metadata_server/component_metadata_server.cpp.i
@@ -1916,7 +2012,7 @@ plugins/component_metadata_server/component_metadata_server.i: plugins/component
 
 # target to preprocess a source file
 plugins/component_metadata_server/component_metadata_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.i
 .PHONY : plugins/component_metadata_server/component_metadata_server.cpp.i
 
 plugins/component_metadata_server/component_metadata_server.s: plugins/component_metadata_server/component_metadata_server.cpp.s
@@ -1924,7 +2020,7 @@ plugins/component_metadata_server/component_metadata_server.s: plugins/component
 
 # target to generate assembly for a file
 plugins/component_metadata_server/component_metadata_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server.cpp.s
 .PHONY : plugins/component_metadata_server/component_metadata_server.cpp.s
 
 plugins/component_metadata_server/component_metadata_server_impl.o: plugins/component_metadata_server/component_metadata_server_impl.cpp.o
@@ -1932,7 +2028,7 @@ plugins/component_metadata_server/component_metadata_server_impl.o: plugins/comp
 
 # target to build an object file
 plugins/component_metadata_server/component_metadata_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.o
 .PHONY : plugins/component_metadata_server/component_metadata_server_impl.cpp.o
 
 plugins/component_metadata_server/component_metadata_server_impl.i: plugins/component_metadata_server/component_metadata_server_impl.cpp.i
@@ -1940,7 +2036,7 @@ plugins/component_metadata_server/component_metadata_server_impl.i: plugins/comp
 
 # target to preprocess a source file
 plugins/component_metadata_server/component_metadata_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.i
 .PHONY : plugins/component_metadata_server/component_metadata_server_impl.cpp.i
 
 plugins/component_metadata_server/component_metadata_server_impl.s: plugins/component_metadata_server/component_metadata_server_impl.cpp.s
@@ -1948,7 +2044,7 @@ plugins/component_metadata_server/component_metadata_server_impl.s: plugins/comp
 
 # target to generate assembly for a file
 plugins/component_metadata_server/component_metadata_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/component_metadata_server/component_metadata_server_impl.cpp.s
 .PHONY : plugins/component_metadata_server/component_metadata_server_impl.cpp.s
 
 plugins/events/event_handler.o: plugins/events/event_handler.cpp.o
@@ -1956,7 +2052,7 @@ plugins/events/event_handler.o: plugins/events/event_handler.cpp.o
 
 # target to build an object file
 plugins/events/event_handler.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.o
 .PHONY : plugins/events/event_handler.cpp.o
 
 plugins/events/event_handler.i: plugins/events/event_handler.cpp.i
@@ -1964,7 +2060,7 @@ plugins/events/event_handler.i: plugins/events/event_handler.cpp.i
 
 # target to preprocess a source file
 plugins/events/event_handler.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.i
 .PHONY : plugins/events/event_handler.cpp.i
 
 plugins/events/event_handler.s: plugins/events/event_handler.cpp.s
@@ -1972,7 +2068,7 @@ plugins/events/event_handler.s: plugins/events/event_handler.cpp.s
 
 # target to generate assembly for a file
 plugins/events/event_handler.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/event_handler.cpp.s
 .PHONY : plugins/events/event_handler.cpp.s
 
 plugins/events/events.o: plugins/events/events.cpp.o
@@ -1980,7 +2076,7 @@ plugins/events/events.o: plugins/events/events.cpp.o
 
 # target to build an object file
 plugins/events/events.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.o
 .PHONY : plugins/events/events.cpp.o
 
 plugins/events/events.i: plugins/events/events.cpp.i
@@ -1988,7 +2084,7 @@ plugins/events/events.i: plugins/events/events.cpp.i
 
 # target to preprocess a source file
 plugins/events/events.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.i
 .PHONY : plugins/events/events.cpp.i
 
 plugins/events/events.s: plugins/events/events.cpp.s
@@ -1996,7 +2092,7 @@ plugins/events/events.s: plugins/events/events.cpp.s
 
 # target to generate assembly for a file
 plugins/events/events.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events.cpp.s
 .PHONY : plugins/events/events.cpp.s
 
 plugins/events/events_impl.o: plugins/events/events_impl.cpp.o
@@ -2004,7 +2100,7 @@ plugins/events/events_impl.o: plugins/events/events_impl.cpp.o
 
 # target to build an object file
 plugins/events/events_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.o
 .PHONY : plugins/events/events_impl.cpp.o
 
 plugins/events/events_impl.i: plugins/events/events_impl.cpp.i
@@ -2012,7 +2108,7 @@ plugins/events/events_impl.i: plugins/events/events_impl.cpp.i
 
 # target to preprocess a source file
 plugins/events/events_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.i
 .PHONY : plugins/events/events_impl.cpp.i
 
 plugins/events/events_impl.s: plugins/events/events_impl.cpp.s
@@ -2020,7 +2116,7 @@ plugins/events/events_impl.s: plugins/events/events_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/events/events_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/events/events_impl.cpp.s
 .PHONY : plugins/events/events_impl.cpp.s
 
 plugins/failure/failure.o: plugins/failure/failure.cpp.o
@@ -2028,7 +2124,7 @@ plugins/failure/failure.o: plugins/failure/failure.cpp.o
 
 # target to build an object file
 plugins/failure/failure.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.o
 .PHONY : plugins/failure/failure.cpp.o
 
 plugins/failure/failure.i: plugins/failure/failure.cpp.i
@@ -2036,7 +2132,7 @@ plugins/failure/failure.i: plugins/failure/failure.cpp.i
 
 # target to preprocess a source file
 plugins/failure/failure.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.i
 .PHONY : plugins/failure/failure.cpp.i
 
 plugins/failure/failure.s: plugins/failure/failure.cpp.s
@@ -2044,7 +2140,7 @@ plugins/failure/failure.s: plugins/failure/failure.cpp.s
 
 # target to generate assembly for a file
 plugins/failure/failure.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure.cpp.s
 .PHONY : plugins/failure/failure.cpp.s
 
 plugins/failure/failure_impl.o: plugins/failure/failure_impl.cpp.o
@@ -2052,7 +2148,7 @@ plugins/failure/failure_impl.o: plugins/failure/failure_impl.cpp.o
 
 # target to build an object file
 plugins/failure/failure_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.o
 .PHONY : plugins/failure/failure_impl.cpp.o
 
 plugins/failure/failure_impl.i: plugins/failure/failure_impl.cpp.i
@@ -2060,7 +2156,7 @@ plugins/failure/failure_impl.i: plugins/failure/failure_impl.cpp.i
 
 # target to preprocess a source file
 plugins/failure/failure_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.i
 .PHONY : plugins/failure/failure_impl.cpp.i
 
 plugins/failure/failure_impl.s: plugins/failure/failure_impl.cpp.s
@@ -2068,7 +2164,7 @@ plugins/failure/failure_impl.s: plugins/failure/failure_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/failure/failure_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/failure/failure_impl.cpp.s
 .PHONY : plugins/failure/failure_impl.cpp.s
 
 plugins/follow_me/follow_me.o: plugins/follow_me/follow_me.cpp.o
@@ -2076,7 +2172,7 @@ plugins/follow_me/follow_me.o: plugins/follow_me/follow_me.cpp.o
 
 # target to build an object file
 plugins/follow_me/follow_me.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.o
 .PHONY : plugins/follow_me/follow_me.cpp.o
 
 plugins/follow_me/follow_me.i: plugins/follow_me/follow_me.cpp.i
@@ -2084,7 +2180,7 @@ plugins/follow_me/follow_me.i: plugins/follow_me/follow_me.cpp.i
 
 # target to preprocess a source file
 plugins/follow_me/follow_me.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.i
 .PHONY : plugins/follow_me/follow_me.cpp.i
 
 plugins/follow_me/follow_me.s: plugins/follow_me/follow_me.cpp.s
@@ -2092,7 +2188,7 @@ plugins/follow_me/follow_me.s: plugins/follow_me/follow_me.cpp.s
 
 # target to generate assembly for a file
 plugins/follow_me/follow_me.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me.cpp.s
 .PHONY : plugins/follow_me/follow_me.cpp.s
 
 plugins/follow_me/follow_me_impl.o: plugins/follow_me/follow_me_impl.cpp.o
@@ -2100,7 +2196,7 @@ plugins/follow_me/follow_me_impl.o: plugins/follow_me/follow_me_impl.cpp.o
 
 # target to build an object file
 plugins/follow_me/follow_me_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.o
 .PHONY : plugins/follow_me/follow_me_impl.cpp.o
 
 plugins/follow_me/follow_me_impl.i: plugins/follow_me/follow_me_impl.cpp.i
@@ -2108,7 +2204,7 @@ plugins/follow_me/follow_me_impl.i: plugins/follow_me/follow_me_impl.cpp.i
 
 # target to preprocess a source file
 plugins/follow_me/follow_me_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.i
 .PHONY : plugins/follow_me/follow_me_impl.cpp.i
 
 plugins/follow_me/follow_me_impl.s: plugins/follow_me/follow_me_impl.cpp.s
@@ -2116,7 +2212,7 @@ plugins/follow_me/follow_me_impl.s: plugins/follow_me/follow_me_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/follow_me/follow_me_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/follow_me/follow_me_impl.cpp.s
 .PHONY : plugins/follow_me/follow_me_impl.cpp.s
 
 plugins/ftp/ftp.o: plugins/ftp/ftp.cpp.o
@@ -2124,7 +2220,7 @@ plugins/ftp/ftp.o: plugins/ftp/ftp.cpp.o
 
 # target to build an object file
 plugins/ftp/ftp.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.o
 .PHONY : plugins/ftp/ftp.cpp.o
 
 plugins/ftp/ftp.i: plugins/ftp/ftp.cpp.i
@@ -2132,7 +2228,7 @@ plugins/ftp/ftp.i: plugins/ftp/ftp.cpp.i
 
 # target to preprocess a source file
 plugins/ftp/ftp.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.i
 .PHONY : plugins/ftp/ftp.cpp.i
 
 plugins/ftp/ftp.s: plugins/ftp/ftp.cpp.s
@@ -2140,7 +2236,7 @@ plugins/ftp/ftp.s: plugins/ftp/ftp.cpp.s
 
 # target to generate assembly for a file
 plugins/ftp/ftp.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp.cpp.s
 .PHONY : plugins/ftp/ftp.cpp.s
 
 plugins/ftp/ftp_impl.o: plugins/ftp/ftp_impl.cpp.o
@@ -2148,7 +2244,7 @@ plugins/ftp/ftp_impl.o: plugins/ftp/ftp_impl.cpp.o
 
 # target to build an object file
 plugins/ftp/ftp_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.o
 .PHONY : plugins/ftp/ftp_impl.cpp.o
 
 plugins/ftp/ftp_impl.i: plugins/ftp/ftp_impl.cpp.i
@@ -2156,7 +2252,7 @@ plugins/ftp/ftp_impl.i: plugins/ftp/ftp_impl.cpp.i
 
 # target to preprocess a source file
 plugins/ftp/ftp_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.i
 .PHONY : plugins/ftp/ftp_impl.cpp.i
 
 plugins/ftp/ftp_impl.s: plugins/ftp/ftp_impl.cpp.s
@@ -2164,7 +2260,7 @@ plugins/ftp/ftp_impl.s: plugins/ftp/ftp_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/ftp/ftp_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp/ftp_impl.cpp.s
 .PHONY : plugins/ftp/ftp_impl.cpp.s
 
 plugins/ftp_server/ftp_server.o: plugins/ftp_server/ftp_server.cpp.o
@@ -2172,7 +2268,7 @@ plugins/ftp_server/ftp_server.o: plugins/ftp_server/ftp_server.cpp.o
 
 # target to build an object file
 plugins/ftp_server/ftp_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.o
 .PHONY : plugins/ftp_server/ftp_server.cpp.o
 
 plugins/ftp_server/ftp_server.i: plugins/ftp_server/ftp_server.cpp.i
@@ -2180,7 +2276,7 @@ plugins/ftp_server/ftp_server.i: plugins/ftp_server/ftp_server.cpp.i
 
 # target to preprocess a source file
 plugins/ftp_server/ftp_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.i
 .PHONY : plugins/ftp_server/ftp_server.cpp.i
 
 plugins/ftp_server/ftp_server.s: plugins/ftp_server/ftp_server.cpp.s
@@ -2188,7 +2284,7 @@ plugins/ftp_server/ftp_server.s: plugins/ftp_server/ftp_server.cpp.s
 
 # target to generate assembly for a file
 plugins/ftp_server/ftp_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server.cpp.s
 .PHONY : plugins/ftp_server/ftp_server.cpp.s
 
 plugins/ftp_server/ftp_server_impl.o: plugins/ftp_server/ftp_server_impl.cpp.o
@@ -2196,7 +2292,7 @@ plugins/ftp_server/ftp_server_impl.o: plugins/ftp_server/ftp_server_impl.cpp.o
 
 # target to build an object file
 plugins/ftp_server/ftp_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.o
 .PHONY : plugins/ftp_server/ftp_server_impl.cpp.o
 
 plugins/ftp_server/ftp_server_impl.i: plugins/ftp_server/ftp_server_impl.cpp.i
@@ -2204,7 +2300,7 @@ plugins/ftp_server/ftp_server_impl.i: plugins/ftp_server/ftp_server_impl.cpp.i
 
 # target to preprocess a source file
 plugins/ftp_server/ftp_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.i
 .PHONY : plugins/ftp_server/ftp_server_impl.cpp.i
 
 plugins/ftp_server/ftp_server_impl.s: plugins/ftp_server/ftp_server_impl.cpp.s
@@ -2212,7 +2308,7 @@ plugins/ftp_server/ftp_server_impl.s: plugins/ftp_server/ftp_server_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/ftp_server/ftp_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/ftp_server/ftp_server_impl.cpp.s
 .PHONY : plugins/ftp_server/ftp_server_impl.cpp.s
 
 plugins/geofence/geofence.o: plugins/geofence/geofence.cpp.o
@@ -2220,7 +2316,7 @@ plugins/geofence/geofence.o: plugins/geofence/geofence.cpp.o
 
 # target to build an object file
 plugins/geofence/geofence.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.o
 .PHONY : plugins/geofence/geofence.cpp.o
 
 plugins/geofence/geofence.i: plugins/geofence/geofence.cpp.i
@@ -2228,7 +2324,7 @@ plugins/geofence/geofence.i: plugins/geofence/geofence.cpp.i
 
 # target to preprocess a source file
 plugins/geofence/geofence.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.i
 .PHONY : plugins/geofence/geofence.cpp.i
 
 plugins/geofence/geofence.s: plugins/geofence/geofence.cpp.s
@@ -2236,7 +2332,7 @@ plugins/geofence/geofence.s: plugins/geofence/geofence.cpp.s
 
 # target to generate assembly for a file
 plugins/geofence/geofence.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence.cpp.s
 .PHONY : plugins/geofence/geofence.cpp.s
 
 plugins/geofence/geofence_impl.o: plugins/geofence/geofence_impl.cpp.o
@@ -2244,7 +2340,7 @@ plugins/geofence/geofence_impl.o: plugins/geofence/geofence_impl.cpp.o
 
 # target to build an object file
 plugins/geofence/geofence_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.o
 .PHONY : plugins/geofence/geofence_impl.cpp.o
 
 plugins/geofence/geofence_impl.i: plugins/geofence/geofence_impl.cpp.i
@@ -2252,7 +2348,7 @@ plugins/geofence/geofence_impl.i: plugins/geofence/geofence_impl.cpp.i
 
 # target to preprocess a source file
 plugins/geofence/geofence_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.i
 .PHONY : plugins/geofence/geofence_impl.cpp.i
 
 plugins/geofence/geofence_impl.s: plugins/geofence/geofence_impl.cpp.s
@@ -2260,7 +2356,7 @@ plugins/geofence/geofence_impl.s: plugins/geofence/geofence_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/geofence/geofence_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/geofence/geofence_impl.cpp.s
 .PHONY : plugins/geofence/geofence_impl.cpp.s
 
 plugins/gimbal/gimbal.o: plugins/gimbal/gimbal.cpp.o
@@ -2268,7 +2364,7 @@ plugins/gimbal/gimbal.o: plugins/gimbal/gimbal.cpp.o
 
 # target to build an object file
 plugins/gimbal/gimbal.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.o
 .PHONY : plugins/gimbal/gimbal.cpp.o
 
 plugins/gimbal/gimbal.i: plugins/gimbal/gimbal.cpp.i
@@ -2276,7 +2372,7 @@ plugins/gimbal/gimbal.i: plugins/gimbal/gimbal.cpp.i
 
 # target to preprocess a source file
 plugins/gimbal/gimbal.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.i
 .PHONY : plugins/gimbal/gimbal.cpp.i
 
 plugins/gimbal/gimbal.s: plugins/gimbal/gimbal.cpp.s
@@ -2284,7 +2380,7 @@ plugins/gimbal/gimbal.s: plugins/gimbal/gimbal.cpp.s
 
 # target to generate assembly for a file
 plugins/gimbal/gimbal.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal.cpp.s
 .PHONY : plugins/gimbal/gimbal.cpp.s
 
 plugins/gimbal/gimbal_impl.o: plugins/gimbal/gimbal_impl.cpp.o
@@ -2292,7 +2388,7 @@ plugins/gimbal/gimbal_impl.o: plugins/gimbal/gimbal_impl.cpp.o
 
 # target to build an object file
 plugins/gimbal/gimbal_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.o
 .PHONY : plugins/gimbal/gimbal_impl.cpp.o
 
 plugins/gimbal/gimbal_impl.i: plugins/gimbal/gimbal_impl.cpp.i
@@ -2300,7 +2396,7 @@ plugins/gimbal/gimbal_impl.i: plugins/gimbal/gimbal_impl.cpp.i
 
 # target to preprocess a source file
 plugins/gimbal/gimbal_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.i
 .PHONY : plugins/gimbal/gimbal_impl.cpp.i
 
 plugins/gimbal/gimbal_impl.s: plugins/gimbal/gimbal_impl.cpp.s
@@ -2308,7 +2404,7 @@ plugins/gimbal/gimbal_impl.s: plugins/gimbal/gimbal_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/gimbal/gimbal_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gimbal/gimbal_impl.cpp.s
 .PHONY : plugins/gimbal/gimbal_impl.cpp.s
 
 plugins/gripper/gripper.o: plugins/gripper/gripper.cpp.o
@@ -2316,7 +2412,7 @@ plugins/gripper/gripper.o: plugins/gripper/gripper.cpp.o
 
 # target to build an object file
 plugins/gripper/gripper.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.o
 .PHONY : plugins/gripper/gripper.cpp.o
 
 plugins/gripper/gripper.i: plugins/gripper/gripper.cpp.i
@@ -2324,7 +2420,7 @@ plugins/gripper/gripper.i: plugins/gripper/gripper.cpp.i
 
 # target to preprocess a source file
 plugins/gripper/gripper.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.i
 .PHONY : plugins/gripper/gripper.cpp.i
 
 plugins/gripper/gripper.s: plugins/gripper/gripper.cpp.s
@@ -2332,7 +2428,7 @@ plugins/gripper/gripper.s: plugins/gripper/gripper.cpp.s
 
 # target to generate assembly for a file
 plugins/gripper/gripper.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper.cpp.s
 .PHONY : plugins/gripper/gripper.cpp.s
 
 plugins/gripper/gripper_impl.o: plugins/gripper/gripper_impl.cpp.o
@@ -2340,7 +2436,7 @@ plugins/gripper/gripper_impl.o: plugins/gripper/gripper_impl.cpp.o
 
 # target to build an object file
 plugins/gripper/gripper_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.o
 .PHONY : plugins/gripper/gripper_impl.cpp.o
 
 plugins/gripper/gripper_impl.i: plugins/gripper/gripper_impl.cpp.i
@@ -2348,7 +2444,7 @@ plugins/gripper/gripper_impl.i: plugins/gripper/gripper_impl.cpp.i
 
 # target to preprocess a source file
 plugins/gripper/gripper_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.i
 .PHONY : plugins/gripper/gripper_impl.cpp.i
 
 plugins/gripper/gripper_impl.s: plugins/gripper/gripper_impl.cpp.s
@@ -2356,7 +2452,7 @@ plugins/gripper/gripper_impl.s: plugins/gripper/gripper_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/gripper/gripper_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/gripper/gripper_impl.cpp.s
 .PHONY : plugins/gripper/gripper_impl.cpp.s
 
 plugins/info/info.o: plugins/info/info.cpp.o
@@ -2364,7 +2460,7 @@ plugins/info/info.o: plugins/info/info.cpp.o
 
 # target to build an object file
 plugins/info/info.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.o
 .PHONY : plugins/info/info.cpp.o
 
 plugins/info/info.i: plugins/info/info.cpp.i
@@ -2372,7 +2468,7 @@ plugins/info/info.i: plugins/info/info.cpp.i
 
 # target to preprocess a source file
 plugins/info/info.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.i
 .PHONY : plugins/info/info.cpp.i
 
 plugins/info/info.s: plugins/info/info.cpp.s
@@ -2380,7 +2476,7 @@ plugins/info/info.s: plugins/info/info.cpp.s
 
 # target to generate assembly for a file
 plugins/info/info.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info.cpp.s
 .PHONY : plugins/info/info.cpp.s
 
 plugins/info/info_impl.o: plugins/info/info_impl.cpp.o
@@ -2388,7 +2484,7 @@ plugins/info/info_impl.o: plugins/info/info_impl.cpp.o
 
 # target to build an object file
 plugins/info/info_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.o
 .PHONY : plugins/info/info_impl.cpp.o
 
 plugins/info/info_impl.i: plugins/info/info_impl.cpp.i
@@ -2396,7 +2492,7 @@ plugins/info/info_impl.i: plugins/info/info_impl.cpp.i
 
 # target to preprocess a source file
 plugins/info/info_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.i
 .PHONY : plugins/info/info_impl.cpp.i
 
 plugins/info/info_impl.s: plugins/info/info_impl.cpp.s
@@ -2404,7 +2500,7 @@ plugins/info/info_impl.s: plugins/info/info_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/info/info_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/info/info_impl.cpp.s
 .PHONY : plugins/info/info_impl.cpp.s
 
 plugins/log_files/log_files.o: plugins/log_files/log_files.cpp.o
@@ -2412,7 +2508,7 @@ plugins/log_files/log_files.o: plugins/log_files/log_files.cpp.o
 
 # target to build an object file
 plugins/log_files/log_files.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.o
 .PHONY : plugins/log_files/log_files.cpp.o
 
 plugins/log_files/log_files.i: plugins/log_files/log_files.cpp.i
@@ -2420,7 +2516,7 @@ plugins/log_files/log_files.i: plugins/log_files/log_files.cpp.i
 
 # target to preprocess a source file
 plugins/log_files/log_files.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.i
 .PHONY : plugins/log_files/log_files.cpp.i
 
 plugins/log_files/log_files.s: plugins/log_files/log_files.cpp.s
@@ -2428,7 +2524,7 @@ plugins/log_files/log_files.s: plugins/log_files/log_files.cpp.s
 
 # target to generate assembly for a file
 plugins/log_files/log_files.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files.cpp.s
 .PHONY : plugins/log_files/log_files.cpp.s
 
 plugins/log_files/log_files_impl.o: plugins/log_files/log_files_impl.cpp.o
@@ -2436,7 +2532,7 @@ plugins/log_files/log_files_impl.o: plugins/log_files/log_files_impl.cpp.o
 
 # target to build an object file
 plugins/log_files/log_files_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.o
 .PHONY : plugins/log_files/log_files_impl.cpp.o
 
 plugins/log_files/log_files_impl.i: plugins/log_files/log_files_impl.cpp.i
@@ -2444,7 +2540,7 @@ plugins/log_files/log_files_impl.i: plugins/log_files/log_files_impl.cpp.i
 
 # target to preprocess a source file
 plugins/log_files/log_files_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.i
 .PHONY : plugins/log_files/log_files_impl.cpp.i
 
 plugins/log_files/log_files_impl.s: plugins/log_files/log_files_impl.cpp.s
@@ -2452,7 +2548,7 @@ plugins/log_files/log_files_impl.s: plugins/log_files/log_files_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/log_files/log_files_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_files/log_files_impl.cpp.s
 .PHONY : plugins/log_files/log_files_impl.cpp.s
 
 plugins/log_streaming/log_streaming.o: plugins/log_streaming/log_streaming.cpp.o
@@ -2460,7 +2556,7 @@ plugins/log_streaming/log_streaming.o: plugins/log_streaming/log_streaming.cpp.o
 
 # target to build an object file
 plugins/log_streaming/log_streaming.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.o
 .PHONY : plugins/log_streaming/log_streaming.cpp.o
 
 plugins/log_streaming/log_streaming.i: plugins/log_streaming/log_streaming.cpp.i
@@ -2468,7 +2564,7 @@ plugins/log_streaming/log_streaming.i: plugins/log_streaming/log_streaming.cpp.i
 
 # target to preprocess a source file
 plugins/log_streaming/log_streaming.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.i
 .PHONY : plugins/log_streaming/log_streaming.cpp.i
 
 plugins/log_streaming/log_streaming.s: plugins/log_streaming/log_streaming.cpp.s
@@ -2476,15 +2572,63 @@ plugins/log_streaming/log_streaming.s: plugins/log_streaming/log_streaming.cpp.s
 
 # target to generate assembly for a file
 plugins/log_streaming/log_streaming.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming.cpp.s
 .PHONY : plugins/log_streaming/log_streaming.cpp.s
+
+plugins/log_streaming/log_streaming_backend_ardupilot.o: plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.o
+
+# target to build an object file
+plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.cpp.o
+
+plugins/log_streaming/log_streaming_backend_ardupilot.i: plugins/log_streaming/log_streaming_backend_ardupilot.cpp.i
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.i
+
+# target to preprocess a source file
+plugins/log_streaming/log_streaming_backend_ardupilot.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_ardupilot.cpp.i
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.cpp.i
+
+plugins/log_streaming/log_streaming_backend_ardupilot.s: plugins/log_streaming/log_streaming_backend_ardupilot.cpp.s
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.s
+
+# target to generate assembly for a file
+plugins/log_streaming/log_streaming_backend_ardupilot.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_ardupilot.cpp.s
+.PHONY : plugins/log_streaming/log_streaming_backend_ardupilot.cpp.s
+
+plugins/log_streaming/log_streaming_backend_px4.o: plugins/log_streaming/log_streaming_backend_px4.cpp.o
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.o
+
+# target to build an object file
+plugins/log_streaming/log_streaming_backend_px4.cpp.o:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_px4.cpp.o
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.cpp.o
+
+plugins/log_streaming/log_streaming_backend_px4.i: plugins/log_streaming/log_streaming_backend_px4.cpp.i
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.i
+
+# target to preprocess a source file
+plugins/log_streaming/log_streaming_backend_px4.cpp.i:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_px4.cpp.i
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.cpp.i
+
+plugins/log_streaming/log_streaming_backend_px4.s: plugins/log_streaming/log_streaming_backend_px4.cpp.s
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.s
+
+# target to generate assembly for a file
+plugins/log_streaming/log_streaming_backend_px4.cpp.s:
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_backend_px4.cpp.s
+.PHONY : plugins/log_streaming/log_streaming_backend_px4.cpp.s
 
 plugins/log_streaming/log_streaming_impl.o: plugins/log_streaming/log_streaming_impl.cpp.o
 .PHONY : plugins/log_streaming/log_streaming_impl.o
 
 # target to build an object file
 plugins/log_streaming/log_streaming_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.o
 .PHONY : plugins/log_streaming/log_streaming_impl.cpp.o
 
 plugins/log_streaming/log_streaming_impl.i: plugins/log_streaming/log_streaming_impl.cpp.i
@@ -2492,7 +2636,7 @@ plugins/log_streaming/log_streaming_impl.i: plugins/log_streaming/log_streaming_
 
 # target to preprocess a source file
 plugins/log_streaming/log_streaming_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.i
 .PHONY : plugins/log_streaming/log_streaming_impl.cpp.i
 
 plugins/log_streaming/log_streaming_impl.s: plugins/log_streaming/log_streaming_impl.cpp.s
@@ -2500,7 +2644,7 @@ plugins/log_streaming/log_streaming_impl.s: plugins/log_streaming/log_streaming_
 
 # target to generate assembly for a file
 plugins/log_streaming/log_streaming_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/log_streaming/log_streaming_impl.cpp.s
 .PHONY : plugins/log_streaming/log_streaming_impl.cpp.s
 
 plugins/manual_control/manual_control.o: plugins/manual_control/manual_control.cpp.o
@@ -2508,7 +2652,7 @@ plugins/manual_control/manual_control.o: plugins/manual_control/manual_control.c
 
 # target to build an object file
 plugins/manual_control/manual_control.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.o
 .PHONY : plugins/manual_control/manual_control.cpp.o
 
 plugins/manual_control/manual_control.i: plugins/manual_control/manual_control.cpp.i
@@ -2516,7 +2660,7 @@ plugins/manual_control/manual_control.i: plugins/manual_control/manual_control.c
 
 # target to preprocess a source file
 plugins/manual_control/manual_control.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.i
 .PHONY : plugins/manual_control/manual_control.cpp.i
 
 plugins/manual_control/manual_control.s: plugins/manual_control/manual_control.cpp.s
@@ -2524,7 +2668,7 @@ plugins/manual_control/manual_control.s: plugins/manual_control/manual_control.c
 
 # target to generate assembly for a file
 plugins/manual_control/manual_control.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control.cpp.s
 .PHONY : plugins/manual_control/manual_control.cpp.s
 
 plugins/manual_control/manual_control_impl.o: plugins/manual_control/manual_control_impl.cpp.o
@@ -2532,7 +2676,7 @@ plugins/manual_control/manual_control_impl.o: plugins/manual_control/manual_cont
 
 # target to build an object file
 plugins/manual_control/manual_control_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.o
 .PHONY : plugins/manual_control/manual_control_impl.cpp.o
 
 plugins/manual_control/manual_control_impl.i: plugins/manual_control/manual_control_impl.cpp.i
@@ -2540,7 +2684,7 @@ plugins/manual_control/manual_control_impl.i: plugins/manual_control/manual_cont
 
 # target to preprocess a source file
 plugins/manual_control/manual_control_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.i
 .PHONY : plugins/manual_control/manual_control_impl.cpp.i
 
 plugins/manual_control/manual_control_impl.s: plugins/manual_control/manual_control_impl.cpp.s
@@ -2548,7 +2692,7 @@ plugins/manual_control/manual_control_impl.s: plugins/manual_control/manual_cont
 
 # target to generate assembly for a file
 plugins/manual_control/manual_control_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/manual_control/manual_control_impl.cpp.s
 .PHONY : plugins/manual_control/manual_control_impl.cpp.s
 
 plugins/mavlink_direct/mavlink_direct.o: plugins/mavlink_direct/mavlink_direct.cpp.o
@@ -2556,7 +2700,7 @@ plugins/mavlink_direct/mavlink_direct.o: plugins/mavlink_direct/mavlink_direct.c
 
 # target to build an object file
 plugins/mavlink_direct/mavlink_direct.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.o
 .PHONY : plugins/mavlink_direct/mavlink_direct.cpp.o
 
 plugins/mavlink_direct/mavlink_direct.i: plugins/mavlink_direct/mavlink_direct.cpp.i
@@ -2564,7 +2708,7 @@ plugins/mavlink_direct/mavlink_direct.i: plugins/mavlink_direct/mavlink_direct.c
 
 # target to preprocess a source file
 plugins/mavlink_direct/mavlink_direct.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.i
 .PHONY : plugins/mavlink_direct/mavlink_direct.cpp.i
 
 plugins/mavlink_direct/mavlink_direct.s: plugins/mavlink_direct/mavlink_direct.cpp.s
@@ -2572,7 +2716,7 @@ plugins/mavlink_direct/mavlink_direct.s: plugins/mavlink_direct/mavlink_direct.c
 
 # target to generate assembly for a file
 plugins/mavlink_direct/mavlink_direct.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct.cpp.s
 .PHONY : plugins/mavlink_direct/mavlink_direct.cpp.s
 
 plugins/mavlink_direct/mavlink_direct_impl.o: plugins/mavlink_direct/mavlink_direct_impl.cpp.o
@@ -2580,7 +2724,7 @@ plugins/mavlink_direct/mavlink_direct_impl.o: plugins/mavlink_direct/mavlink_dir
 
 # target to build an object file
 plugins/mavlink_direct/mavlink_direct_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.o
 .PHONY : plugins/mavlink_direct/mavlink_direct_impl.cpp.o
 
 plugins/mavlink_direct/mavlink_direct_impl.i: plugins/mavlink_direct/mavlink_direct_impl.cpp.i
@@ -2588,7 +2732,7 @@ plugins/mavlink_direct/mavlink_direct_impl.i: plugins/mavlink_direct/mavlink_dir
 
 # target to preprocess a source file
 plugins/mavlink_direct/mavlink_direct_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.i
 .PHONY : plugins/mavlink_direct/mavlink_direct_impl.cpp.i
 
 plugins/mavlink_direct/mavlink_direct_impl.s: plugins/mavlink_direct/mavlink_direct_impl.cpp.s
@@ -2596,7 +2740,7 @@ plugins/mavlink_direct/mavlink_direct_impl.s: plugins/mavlink_direct/mavlink_dir
 
 # target to generate assembly for a file
 plugins/mavlink_direct/mavlink_direct_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_direct/mavlink_direct_impl.cpp.s
 .PHONY : plugins/mavlink_direct/mavlink_direct_impl.cpp.s
 
 plugins/mavlink_passthrough/mavlink_passthrough.o: plugins/mavlink_passthrough/mavlink_passthrough.cpp.o
@@ -2604,7 +2748,7 @@ plugins/mavlink_passthrough/mavlink_passthrough.o: plugins/mavlink_passthrough/m
 
 # target to build an object file
 plugins/mavlink_passthrough/mavlink_passthrough.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.o
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough.cpp.o
 
 plugins/mavlink_passthrough/mavlink_passthrough.i: plugins/mavlink_passthrough/mavlink_passthrough.cpp.i
@@ -2612,7 +2756,7 @@ plugins/mavlink_passthrough/mavlink_passthrough.i: plugins/mavlink_passthrough/m
 
 # target to preprocess a source file
 plugins/mavlink_passthrough/mavlink_passthrough.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.i
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough.cpp.i
 
 plugins/mavlink_passthrough/mavlink_passthrough.s: plugins/mavlink_passthrough/mavlink_passthrough.cpp.s
@@ -2620,7 +2764,7 @@ plugins/mavlink_passthrough/mavlink_passthrough.s: plugins/mavlink_passthrough/m
 
 # target to generate assembly for a file
 plugins/mavlink_passthrough/mavlink_passthrough.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough.cpp.s
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough.cpp.s
 
 plugins/mavlink_passthrough/mavlink_passthrough_impl.o: plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o
@@ -2628,7 +2772,7 @@ plugins/mavlink_passthrough/mavlink_passthrough_impl.o: plugins/mavlink_passthro
 
 # target to build an object file
 plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.o
 
 plugins/mavlink_passthrough/mavlink_passthrough_impl.i: plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.i
@@ -2636,7 +2780,7 @@ plugins/mavlink_passthrough/mavlink_passthrough_impl.i: plugins/mavlink_passthro
 
 # target to preprocess a source file
 plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.i
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.i
 
 plugins/mavlink_passthrough/mavlink_passthrough_impl.s: plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.s
@@ -2644,7 +2788,7 @@ plugins/mavlink_passthrough/mavlink_passthrough_impl.s: plugins/mavlink_passthro
 
 # target to generate assembly for a file
 plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.s
 .PHONY : plugins/mavlink_passthrough/mavlink_passthrough_impl.cpp.s
 
 plugins/mission/mission.o: plugins/mission/mission.cpp.o
@@ -2652,7 +2796,7 @@ plugins/mission/mission.o: plugins/mission/mission.cpp.o
 
 # target to build an object file
 plugins/mission/mission.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.o
 .PHONY : plugins/mission/mission.cpp.o
 
 plugins/mission/mission.i: plugins/mission/mission.cpp.i
@@ -2660,7 +2804,7 @@ plugins/mission/mission.i: plugins/mission/mission.cpp.i
 
 # target to preprocess a source file
 plugins/mission/mission.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.i
 .PHONY : plugins/mission/mission.cpp.i
 
 plugins/mission/mission.s: plugins/mission/mission.cpp.s
@@ -2668,7 +2812,7 @@ plugins/mission/mission.s: plugins/mission/mission.cpp.s
 
 # target to generate assembly for a file
 plugins/mission/mission.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission.cpp.s
 .PHONY : plugins/mission/mission.cpp.s
 
 plugins/mission/mission_impl.o: plugins/mission/mission_impl.cpp.o
@@ -2676,7 +2820,7 @@ plugins/mission/mission_impl.o: plugins/mission/mission_impl.cpp.o
 
 # target to build an object file
 plugins/mission/mission_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.o
 .PHONY : plugins/mission/mission_impl.cpp.o
 
 plugins/mission/mission_impl.i: plugins/mission/mission_impl.cpp.i
@@ -2684,7 +2828,7 @@ plugins/mission/mission_impl.i: plugins/mission/mission_impl.cpp.i
 
 # target to preprocess a source file
 plugins/mission/mission_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.i
 .PHONY : plugins/mission/mission_impl.cpp.i
 
 plugins/mission/mission_impl.s: plugins/mission/mission_impl.cpp.s
@@ -2692,7 +2836,7 @@ plugins/mission/mission_impl.s: plugins/mission/mission_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/mission/mission_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission/mission_impl.cpp.s
 .PHONY : plugins/mission/mission_impl.cpp.s
 
 plugins/mission_raw/mission_import.o: plugins/mission_raw/mission_import.cpp.o
@@ -2700,7 +2844,7 @@ plugins/mission_raw/mission_import.o: plugins/mission_raw/mission_import.cpp.o
 
 # target to build an object file
 plugins/mission_raw/mission_import.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.o
 .PHONY : plugins/mission_raw/mission_import.cpp.o
 
 plugins/mission_raw/mission_import.i: plugins/mission_raw/mission_import.cpp.i
@@ -2708,7 +2852,7 @@ plugins/mission_raw/mission_import.i: plugins/mission_raw/mission_import.cpp.i
 
 # target to preprocess a source file
 plugins/mission_raw/mission_import.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.i
 .PHONY : plugins/mission_raw/mission_import.cpp.i
 
 plugins/mission_raw/mission_import.s: plugins/mission_raw/mission_import.cpp.s
@@ -2716,7 +2860,7 @@ plugins/mission_raw/mission_import.s: plugins/mission_raw/mission_import.cpp.s
 
 # target to generate assembly for a file
 plugins/mission_raw/mission_import.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_import.cpp.s
 .PHONY : plugins/mission_raw/mission_import.cpp.s
 
 plugins/mission_raw/mission_raw.o: plugins/mission_raw/mission_raw.cpp.o
@@ -2724,7 +2868,7 @@ plugins/mission_raw/mission_raw.o: plugins/mission_raw/mission_raw.cpp.o
 
 # target to build an object file
 plugins/mission_raw/mission_raw.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.o
 .PHONY : plugins/mission_raw/mission_raw.cpp.o
 
 plugins/mission_raw/mission_raw.i: plugins/mission_raw/mission_raw.cpp.i
@@ -2732,7 +2876,7 @@ plugins/mission_raw/mission_raw.i: plugins/mission_raw/mission_raw.cpp.i
 
 # target to preprocess a source file
 plugins/mission_raw/mission_raw.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.i
 .PHONY : plugins/mission_raw/mission_raw.cpp.i
 
 plugins/mission_raw/mission_raw.s: plugins/mission_raw/mission_raw.cpp.s
@@ -2740,7 +2884,7 @@ plugins/mission_raw/mission_raw.s: plugins/mission_raw/mission_raw.cpp.s
 
 # target to generate assembly for a file
 plugins/mission_raw/mission_raw.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw.cpp.s
 .PHONY : plugins/mission_raw/mission_raw.cpp.s
 
 plugins/mission_raw/mission_raw_impl.o: plugins/mission_raw/mission_raw_impl.cpp.o
@@ -2748,7 +2892,7 @@ plugins/mission_raw/mission_raw_impl.o: plugins/mission_raw/mission_raw_impl.cpp
 
 # target to build an object file
 plugins/mission_raw/mission_raw_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.o
 .PHONY : plugins/mission_raw/mission_raw_impl.cpp.o
 
 plugins/mission_raw/mission_raw_impl.i: plugins/mission_raw/mission_raw_impl.cpp.i
@@ -2756,7 +2900,7 @@ plugins/mission_raw/mission_raw_impl.i: plugins/mission_raw/mission_raw_impl.cpp
 
 # target to preprocess a source file
 plugins/mission_raw/mission_raw_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.i
 .PHONY : plugins/mission_raw/mission_raw_impl.cpp.i
 
 plugins/mission_raw/mission_raw_impl.s: plugins/mission_raw/mission_raw_impl.cpp.s
@@ -2764,7 +2908,7 @@ plugins/mission_raw/mission_raw_impl.s: plugins/mission_raw/mission_raw_impl.cpp
 
 # target to generate assembly for a file
 plugins/mission_raw/mission_raw_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw/mission_raw_impl.cpp.s
 .PHONY : plugins/mission_raw/mission_raw_impl.cpp.s
 
 plugins/mission_raw_server/mission_raw_server.o: plugins/mission_raw_server/mission_raw_server.cpp.o
@@ -2772,7 +2916,7 @@ plugins/mission_raw_server/mission_raw_server.o: plugins/mission_raw_server/miss
 
 # target to build an object file
 plugins/mission_raw_server/mission_raw_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.o
 .PHONY : plugins/mission_raw_server/mission_raw_server.cpp.o
 
 plugins/mission_raw_server/mission_raw_server.i: plugins/mission_raw_server/mission_raw_server.cpp.i
@@ -2780,7 +2924,7 @@ plugins/mission_raw_server/mission_raw_server.i: plugins/mission_raw_server/miss
 
 # target to preprocess a source file
 plugins/mission_raw_server/mission_raw_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.i
 .PHONY : plugins/mission_raw_server/mission_raw_server.cpp.i
 
 plugins/mission_raw_server/mission_raw_server.s: plugins/mission_raw_server/mission_raw_server.cpp.s
@@ -2788,7 +2932,7 @@ plugins/mission_raw_server/mission_raw_server.s: plugins/mission_raw_server/miss
 
 # target to generate assembly for a file
 plugins/mission_raw_server/mission_raw_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server.cpp.s
 .PHONY : plugins/mission_raw_server/mission_raw_server.cpp.s
 
 plugins/mission_raw_server/mission_raw_server_impl.o: plugins/mission_raw_server/mission_raw_server_impl.cpp.o
@@ -2796,7 +2940,7 @@ plugins/mission_raw_server/mission_raw_server_impl.o: plugins/mission_raw_server
 
 # target to build an object file
 plugins/mission_raw_server/mission_raw_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.o
 .PHONY : plugins/mission_raw_server/mission_raw_server_impl.cpp.o
 
 plugins/mission_raw_server/mission_raw_server_impl.i: plugins/mission_raw_server/mission_raw_server_impl.cpp.i
@@ -2804,7 +2948,7 @@ plugins/mission_raw_server/mission_raw_server_impl.i: plugins/mission_raw_server
 
 # target to preprocess a source file
 plugins/mission_raw_server/mission_raw_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.i
 .PHONY : plugins/mission_raw_server/mission_raw_server_impl.cpp.i
 
 plugins/mission_raw_server/mission_raw_server_impl.s: plugins/mission_raw_server/mission_raw_server_impl.cpp.s
@@ -2812,7 +2956,7 @@ plugins/mission_raw_server/mission_raw_server_impl.s: plugins/mission_raw_server
 
 # target to generate assembly for a file
 plugins/mission_raw_server/mission_raw_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mission_raw_server/mission_raw_server_impl.cpp.s
 .PHONY : plugins/mission_raw_server/mission_raw_server_impl.cpp.s
 
 plugins/mocap/mocap.o: plugins/mocap/mocap.cpp.o
@@ -2820,7 +2964,7 @@ plugins/mocap/mocap.o: plugins/mocap/mocap.cpp.o
 
 # target to build an object file
 plugins/mocap/mocap.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.o
 .PHONY : plugins/mocap/mocap.cpp.o
 
 plugins/mocap/mocap.i: plugins/mocap/mocap.cpp.i
@@ -2828,7 +2972,7 @@ plugins/mocap/mocap.i: plugins/mocap/mocap.cpp.i
 
 # target to preprocess a source file
 plugins/mocap/mocap.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.i
 .PHONY : plugins/mocap/mocap.cpp.i
 
 plugins/mocap/mocap.s: plugins/mocap/mocap.cpp.s
@@ -2836,7 +2980,7 @@ plugins/mocap/mocap.s: plugins/mocap/mocap.cpp.s
 
 # target to generate assembly for a file
 plugins/mocap/mocap.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap.cpp.s
 .PHONY : plugins/mocap/mocap.cpp.s
 
 plugins/mocap/mocap_impl.o: plugins/mocap/mocap_impl.cpp.o
@@ -2844,7 +2988,7 @@ plugins/mocap/mocap_impl.o: plugins/mocap/mocap_impl.cpp.o
 
 # target to build an object file
 plugins/mocap/mocap_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.o
 .PHONY : plugins/mocap/mocap_impl.cpp.o
 
 plugins/mocap/mocap_impl.i: plugins/mocap/mocap_impl.cpp.i
@@ -2852,7 +2996,7 @@ plugins/mocap/mocap_impl.i: plugins/mocap/mocap_impl.cpp.i
 
 # target to preprocess a source file
 plugins/mocap/mocap_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.i
 .PHONY : plugins/mocap/mocap_impl.cpp.i
 
 plugins/mocap/mocap_impl.s: plugins/mocap/mocap_impl.cpp.s
@@ -2860,7 +3004,7 @@ plugins/mocap/mocap_impl.s: plugins/mocap/mocap_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/mocap/mocap_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/mocap/mocap_impl.cpp.s
 .PHONY : plugins/mocap/mocap_impl.cpp.s
 
 plugins/offboard/offboard.o: plugins/offboard/offboard.cpp.o
@@ -2868,7 +3012,7 @@ plugins/offboard/offboard.o: plugins/offboard/offboard.cpp.o
 
 # target to build an object file
 plugins/offboard/offboard.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.o
 .PHONY : plugins/offboard/offboard.cpp.o
 
 plugins/offboard/offboard.i: plugins/offboard/offboard.cpp.i
@@ -2876,7 +3020,7 @@ plugins/offboard/offboard.i: plugins/offboard/offboard.cpp.i
 
 # target to preprocess a source file
 plugins/offboard/offboard.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.i
 .PHONY : plugins/offboard/offboard.cpp.i
 
 plugins/offboard/offboard.s: plugins/offboard/offboard.cpp.s
@@ -2884,7 +3028,7 @@ plugins/offboard/offboard.s: plugins/offboard/offboard.cpp.s
 
 # target to generate assembly for a file
 plugins/offboard/offboard.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard.cpp.s
 .PHONY : plugins/offboard/offboard.cpp.s
 
 plugins/offboard/offboard_impl.o: plugins/offboard/offboard_impl.cpp.o
@@ -2892,7 +3036,7 @@ plugins/offboard/offboard_impl.o: plugins/offboard/offboard_impl.cpp.o
 
 # target to build an object file
 plugins/offboard/offboard_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.o
 .PHONY : plugins/offboard/offboard_impl.cpp.o
 
 plugins/offboard/offboard_impl.i: plugins/offboard/offboard_impl.cpp.i
@@ -2900,7 +3044,7 @@ plugins/offboard/offboard_impl.i: plugins/offboard/offboard_impl.cpp.i
 
 # target to preprocess a source file
 plugins/offboard/offboard_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.i
 .PHONY : plugins/offboard/offboard_impl.cpp.i
 
 plugins/offboard/offboard_impl.s: plugins/offboard/offboard_impl.cpp.s
@@ -2908,7 +3052,7 @@ plugins/offboard/offboard_impl.s: plugins/offboard/offboard_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/offboard/offboard_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/offboard/offboard_impl.cpp.s
 .PHONY : plugins/offboard/offboard_impl.cpp.s
 
 plugins/param/param.o: plugins/param/param.cpp.o
@@ -2916,7 +3060,7 @@ plugins/param/param.o: plugins/param/param.cpp.o
 
 # target to build an object file
 plugins/param/param.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.o
 .PHONY : plugins/param/param.cpp.o
 
 plugins/param/param.i: plugins/param/param.cpp.i
@@ -2924,7 +3068,7 @@ plugins/param/param.i: plugins/param/param.cpp.i
 
 # target to preprocess a source file
 plugins/param/param.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.i
 .PHONY : plugins/param/param.cpp.i
 
 plugins/param/param.s: plugins/param/param.cpp.s
@@ -2932,7 +3076,7 @@ plugins/param/param.s: plugins/param/param.cpp.s
 
 # target to generate assembly for a file
 plugins/param/param.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param.cpp.s
 .PHONY : plugins/param/param.cpp.s
 
 plugins/param/param_impl.o: plugins/param/param_impl.cpp.o
@@ -2940,7 +3084,7 @@ plugins/param/param_impl.o: plugins/param/param_impl.cpp.o
 
 # target to build an object file
 plugins/param/param_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.o
 .PHONY : plugins/param/param_impl.cpp.o
 
 plugins/param/param_impl.i: plugins/param/param_impl.cpp.i
@@ -2948,7 +3092,7 @@ plugins/param/param_impl.i: plugins/param/param_impl.cpp.i
 
 # target to preprocess a source file
 plugins/param/param_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.i
 .PHONY : plugins/param/param_impl.cpp.i
 
 plugins/param/param_impl.s: plugins/param/param_impl.cpp.s
@@ -2956,7 +3100,7 @@ plugins/param/param_impl.s: plugins/param/param_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/param/param_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param/param_impl.cpp.s
 .PHONY : plugins/param/param_impl.cpp.s
 
 plugins/param_server/param_server.o: plugins/param_server/param_server.cpp.o
@@ -2964,7 +3108,7 @@ plugins/param_server/param_server.o: plugins/param_server/param_server.cpp.o
 
 # target to build an object file
 plugins/param_server/param_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.o
 .PHONY : plugins/param_server/param_server.cpp.o
 
 plugins/param_server/param_server.i: plugins/param_server/param_server.cpp.i
@@ -2972,7 +3116,7 @@ plugins/param_server/param_server.i: plugins/param_server/param_server.cpp.i
 
 # target to preprocess a source file
 plugins/param_server/param_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.i
 .PHONY : plugins/param_server/param_server.cpp.i
 
 plugins/param_server/param_server.s: plugins/param_server/param_server.cpp.s
@@ -2980,7 +3124,7 @@ plugins/param_server/param_server.s: plugins/param_server/param_server.cpp.s
 
 # target to generate assembly for a file
 plugins/param_server/param_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server.cpp.s
 .PHONY : plugins/param_server/param_server.cpp.s
 
 plugins/param_server/param_server_impl.o: plugins/param_server/param_server_impl.cpp.o
@@ -2988,7 +3132,7 @@ plugins/param_server/param_server_impl.o: plugins/param_server/param_server_impl
 
 # target to build an object file
 plugins/param_server/param_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.o
 .PHONY : plugins/param_server/param_server_impl.cpp.o
 
 plugins/param_server/param_server_impl.i: plugins/param_server/param_server_impl.cpp.i
@@ -2996,7 +3140,7 @@ plugins/param_server/param_server_impl.i: plugins/param_server/param_server_impl
 
 # target to preprocess a source file
 plugins/param_server/param_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.i
 .PHONY : plugins/param_server/param_server_impl.cpp.i
 
 plugins/param_server/param_server_impl.s: plugins/param_server/param_server_impl.cpp.s
@@ -3004,7 +3148,7 @@ plugins/param_server/param_server_impl.s: plugins/param_server/param_server_impl
 
 # target to generate assembly for a file
 plugins/param_server/param_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/param_server/param_server_impl.cpp.s
 .PHONY : plugins/param_server/param_server_impl.cpp.s
 
 plugins/rtk/rtk.o: plugins/rtk/rtk.cpp.o
@@ -3012,7 +3156,7 @@ plugins/rtk/rtk.o: plugins/rtk/rtk.cpp.o
 
 # target to build an object file
 plugins/rtk/rtk.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.o
 .PHONY : plugins/rtk/rtk.cpp.o
 
 plugins/rtk/rtk.i: plugins/rtk/rtk.cpp.i
@@ -3020,7 +3164,7 @@ plugins/rtk/rtk.i: plugins/rtk/rtk.cpp.i
 
 # target to preprocess a source file
 plugins/rtk/rtk.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.i
 .PHONY : plugins/rtk/rtk.cpp.i
 
 plugins/rtk/rtk.s: plugins/rtk/rtk.cpp.s
@@ -3028,7 +3172,7 @@ plugins/rtk/rtk.s: plugins/rtk/rtk.cpp.s
 
 # target to generate assembly for a file
 plugins/rtk/rtk.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk.cpp.s
 .PHONY : plugins/rtk/rtk.cpp.s
 
 plugins/rtk/rtk_impl.o: plugins/rtk/rtk_impl.cpp.o
@@ -3036,7 +3180,7 @@ plugins/rtk/rtk_impl.o: plugins/rtk/rtk_impl.cpp.o
 
 # target to build an object file
 plugins/rtk/rtk_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.o
 .PHONY : plugins/rtk/rtk_impl.cpp.o
 
 plugins/rtk/rtk_impl.i: plugins/rtk/rtk_impl.cpp.i
@@ -3044,7 +3188,7 @@ plugins/rtk/rtk_impl.i: plugins/rtk/rtk_impl.cpp.i
 
 # target to preprocess a source file
 plugins/rtk/rtk_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.i
 .PHONY : plugins/rtk/rtk_impl.cpp.i
 
 plugins/rtk/rtk_impl.s: plugins/rtk/rtk_impl.cpp.s
@@ -3052,7 +3196,7 @@ plugins/rtk/rtk_impl.s: plugins/rtk/rtk_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/rtk/rtk_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/rtk/rtk_impl.cpp.s
 .PHONY : plugins/rtk/rtk_impl.cpp.s
 
 plugins/server_utility/server_utility.o: plugins/server_utility/server_utility.cpp.o
@@ -3060,7 +3204,7 @@ plugins/server_utility/server_utility.o: plugins/server_utility/server_utility.c
 
 # target to build an object file
 plugins/server_utility/server_utility.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.o
 .PHONY : plugins/server_utility/server_utility.cpp.o
 
 plugins/server_utility/server_utility.i: plugins/server_utility/server_utility.cpp.i
@@ -3068,7 +3212,7 @@ plugins/server_utility/server_utility.i: plugins/server_utility/server_utility.c
 
 # target to preprocess a source file
 plugins/server_utility/server_utility.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.i
 .PHONY : plugins/server_utility/server_utility.cpp.i
 
 plugins/server_utility/server_utility.s: plugins/server_utility/server_utility.cpp.s
@@ -3076,7 +3220,7 @@ plugins/server_utility/server_utility.s: plugins/server_utility/server_utility.c
 
 # target to generate assembly for a file
 plugins/server_utility/server_utility.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility.cpp.s
 .PHONY : plugins/server_utility/server_utility.cpp.s
 
 plugins/server_utility/server_utility_impl.o: plugins/server_utility/server_utility_impl.cpp.o
@@ -3084,7 +3228,7 @@ plugins/server_utility/server_utility_impl.o: plugins/server_utility/server_util
 
 # target to build an object file
 plugins/server_utility/server_utility_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.o
 .PHONY : plugins/server_utility/server_utility_impl.cpp.o
 
 plugins/server_utility/server_utility_impl.i: plugins/server_utility/server_utility_impl.cpp.i
@@ -3092,7 +3236,7 @@ plugins/server_utility/server_utility_impl.i: plugins/server_utility/server_util
 
 # target to preprocess a source file
 plugins/server_utility/server_utility_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.i
 .PHONY : plugins/server_utility/server_utility_impl.cpp.i
 
 plugins/server_utility/server_utility_impl.s: plugins/server_utility/server_utility_impl.cpp.s
@@ -3100,7 +3244,7 @@ plugins/server_utility/server_utility_impl.s: plugins/server_utility/server_util
 
 # target to generate assembly for a file
 plugins/server_utility/server_utility_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/server_utility/server_utility_impl.cpp.s
 .PHONY : plugins/server_utility/server_utility_impl.cpp.s
 
 plugins/shell/shell.o: plugins/shell/shell.cpp.o
@@ -3108,7 +3252,7 @@ plugins/shell/shell.o: plugins/shell/shell.cpp.o
 
 # target to build an object file
 plugins/shell/shell.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.o
 .PHONY : plugins/shell/shell.cpp.o
 
 plugins/shell/shell.i: plugins/shell/shell.cpp.i
@@ -3116,7 +3260,7 @@ plugins/shell/shell.i: plugins/shell/shell.cpp.i
 
 # target to preprocess a source file
 plugins/shell/shell.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.i
 .PHONY : plugins/shell/shell.cpp.i
 
 plugins/shell/shell.s: plugins/shell/shell.cpp.s
@@ -3124,7 +3268,7 @@ plugins/shell/shell.s: plugins/shell/shell.cpp.s
 
 # target to generate assembly for a file
 plugins/shell/shell.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell.cpp.s
 .PHONY : plugins/shell/shell.cpp.s
 
 plugins/shell/shell_impl.o: plugins/shell/shell_impl.cpp.o
@@ -3132,7 +3276,7 @@ plugins/shell/shell_impl.o: plugins/shell/shell_impl.cpp.o
 
 # target to build an object file
 plugins/shell/shell_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.o
 .PHONY : plugins/shell/shell_impl.cpp.o
 
 plugins/shell/shell_impl.i: plugins/shell/shell_impl.cpp.i
@@ -3140,7 +3284,7 @@ plugins/shell/shell_impl.i: plugins/shell/shell_impl.cpp.i
 
 # target to preprocess a source file
 plugins/shell/shell_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.i
 .PHONY : plugins/shell/shell_impl.cpp.i
 
 plugins/shell/shell_impl.s: plugins/shell/shell_impl.cpp.s
@@ -3148,7 +3292,7 @@ plugins/shell/shell_impl.s: plugins/shell/shell_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/shell/shell_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/shell/shell_impl.cpp.s
 .PHONY : plugins/shell/shell_impl.cpp.s
 
 plugins/telemetry/telemetry.o: plugins/telemetry/telemetry.cpp.o
@@ -3156,7 +3300,7 @@ plugins/telemetry/telemetry.o: plugins/telemetry/telemetry.cpp.o
 
 # target to build an object file
 plugins/telemetry/telemetry.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.o
 .PHONY : plugins/telemetry/telemetry.cpp.o
 
 plugins/telemetry/telemetry.i: plugins/telemetry/telemetry.cpp.i
@@ -3164,7 +3308,7 @@ plugins/telemetry/telemetry.i: plugins/telemetry/telemetry.cpp.i
 
 # target to preprocess a source file
 plugins/telemetry/telemetry.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.i
 .PHONY : plugins/telemetry/telemetry.cpp.i
 
 plugins/telemetry/telemetry.s: plugins/telemetry/telemetry.cpp.s
@@ -3172,7 +3316,7 @@ plugins/telemetry/telemetry.s: plugins/telemetry/telemetry.cpp.s
 
 # target to generate assembly for a file
 plugins/telemetry/telemetry.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry.cpp.s
 .PHONY : plugins/telemetry/telemetry.cpp.s
 
 plugins/telemetry/telemetry_impl.o: plugins/telemetry/telemetry_impl.cpp.o
@@ -3180,7 +3324,7 @@ plugins/telemetry/telemetry_impl.o: plugins/telemetry/telemetry_impl.cpp.o
 
 # target to build an object file
 plugins/telemetry/telemetry_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.o
 .PHONY : plugins/telemetry/telemetry_impl.cpp.o
 
 plugins/telemetry/telemetry_impl.i: plugins/telemetry/telemetry_impl.cpp.i
@@ -3188,7 +3332,7 @@ plugins/telemetry/telemetry_impl.i: plugins/telemetry/telemetry_impl.cpp.i
 
 # target to preprocess a source file
 plugins/telemetry/telemetry_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.i
 .PHONY : plugins/telemetry/telemetry_impl.cpp.i
 
 plugins/telemetry/telemetry_impl.s: plugins/telemetry/telemetry_impl.cpp.s
@@ -3196,7 +3340,7 @@ plugins/telemetry/telemetry_impl.s: plugins/telemetry/telemetry_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/telemetry/telemetry_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry/telemetry_impl.cpp.s
 .PHONY : plugins/telemetry/telemetry_impl.cpp.s
 
 plugins/telemetry_server/telemetry_server.o: plugins/telemetry_server/telemetry_server.cpp.o
@@ -3204,7 +3348,7 @@ plugins/telemetry_server/telemetry_server.o: plugins/telemetry_server/telemetry_
 
 # target to build an object file
 plugins/telemetry_server/telemetry_server.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.o
 .PHONY : plugins/telemetry_server/telemetry_server.cpp.o
 
 plugins/telemetry_server/telemetry_server.i: plugins/telemetry_server/telemetry_server.cpp.i
@@ -3212,7 +3356,7 @@ plugins/telemetry_server/telemetry_server.i: plugins/telemetry_server/telemetry_
 
 # target to preprocess a source file
 plugins/telemetry_server/telemetry_server.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.i
 .PHONY : plugins/telemetry_server/telemetry_server.cpp.i
 
 plugins/telemetry_server/telemetry_server.s: plugins/telemetry_server/telemetry_server.cpp.s
@@ -3220,7 +3364,7 @@ plugins/telemetry_server/telemetry_server.s: plugins/telemetry_server/telemetry_
 
 # target to generate assembly for a file
 plugins/telemetry_server/telemetry_server.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server.cpp.s
 .PHONY : plugins/telemetry_server/telemetry_server.cpp.s
 
 plugins/telemetry_server/telemetry_server_impl.o: plugins/telemetry_server/telemetry_server_impl.cpp.o
@@ -3228,7 +3372,7 @@ plugins/telemetry_server/telemetry_server_impl.o: plugins/telemetry_server/telem
 
 # target to build an object file
 plugins/telemetry_server/telemetry_server_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.o
 .PHONY : plugins/telemetry_server/telemetry_server_impl.cpp.o
 
 plugins/telemetry_server/telemetry_server_impl.i: plugins/telemetry_server/telemetry_server_impl.cpp.i
@@ -3236,7 +3380,7 @@ plugins/telemetry_server/telemetry_server_impl.i: plugins/telemetry_server/telem
 
 # target to preprocess a source file
 plugins/telemetry_server/telemetry_server_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.i
 .PHONY : plugins/telemetry_server/telemetry_server_impl.cpp.i
 
 plugins/telemetry_server/telemetry_server_impl.s: plugins/telemetry_server/telemetry_server_impl.cpp.s
@@ -3244,7 +3388,7 @@ plugins/telemetry_server/telemetry_server_impl.s: plugins/telemetry_server/telem
 
 # target to generate assembly for a file
 plugins/telemetry_server/telemetry_server_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/telemetry_server/telemetry_server_impl.cpp.s
 .PHONY : plugins/telemetry_server/telemetry_server_impl.cpp.s
 
 plugins/transponder/transponder.o: plugins/transponder/transponder.cpp.o
@@ -3252,7 +3396,7 @@ plugins/transponder/transponder.o: plugins/transponder/transponder.cpp.o
 
 # target to build an object file
 plugins/transponder/transponder.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.o
 .PHONY : plugins/transponder/transponder.cpp.o
 
 plugins/transponder/transponder.i: plugins/transponder/transponder.cpp.i
@@ -3260,7 +3404,7 @@ plugins/transponder/transponder.i: plugins/transponder/transponder.cpp.i
 
 # target to preprocess a source file
 plugins/transponder/transponder.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.i
 .PHONY : plugins/transponder/transponder.cpp.i
 
 plugins/transponder/transponder.s: plugins/transponder/transponder.cpp.s
@@ -3268,7 +3412,7 @@ plugins/transponder/transponder.s: plugins/transponder/transponder.cpp.s
 
 # target to generate assembly for a file
 plugins/transponder/transponder.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder.cpp.s
 .PHONY : plugins/transponder/transponder.cpp.s
 
 plugins/transponder/transponder_impl.o: plugins/transponder/transponder_impl.cpp.o
@@ -3276,7 +3420,7 @@ plugins/transponder/transponder_impl.o: plugins/transponder/transponder_impl.cpp
 
 # target to build an object file
 plugins/transponder/transponder_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.o
 .PHONY : plugins/transponder/transponder_impl.cpp.o
 
 plugins/transponder/transponder_impl.i: plugins/transponder/transponder_impl.cpp.i
@@ -3284,7 +3428,7 @@ plugins/transponder/transponder_impl.i: plugins/transponder/transponder_impl.cpp
 
 # target to preprocess a source file
 plugins/transponder/transponder_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.i
 .PHONY : plugins/transponder/transponder_impl.cpp.i
 
 plugins/transponder/transponder_impl.s: plugins/transponder/transponder_impl.cpp.s
@@ -3292,7 +3436,7 @@ plugins/transponder/transponder_impl.s: plugins/transponder/transponder_impl.cpp
 
 # target to generate assembly for a file
 plugins/transponder/transponder_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/transponder/transponder_impl.cpp.s
 .PHONY : plugins/transponder/transponder_impl.cpp.s
 
 plugins/tune/tune.o: plugins/tune/tune.cpp.o
@@ -3300,7 +3444,7 @@ plugins/tune/tune.o: plugins/tune/tune.cpp.o
 
 # target to build an object file
 plugins/tune/tune.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.o
 .PHONY : plugins/tune/tune.cpp.o
 
 plugins/tune/tune.i: plugins/tune/tune.cpp.i
@@ -3308,7 +3452,7 @@ plugins/tune/tune.i: plugins/tune/tune.cpp.i
 
 # target to preprocess a source file
 plugins/tune/tune.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.i
 .PHONY : plugins/tune/tune.cpp.i
 
 plugins/tune/tune.s: plugins/tune/tune.cpp.s
@@ -3316,7 +3460,7 @@ plugins/tune/tune.s: plugins/tune/tune.cpp.s
 
 # target to generate assembly for a file
 plugins/tune/tune.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune.cpp.s
 .PHONY : plugins/tune/tune.cpp.s
 
 plugins/tune/tune_impl.o: plugins/tune/tune_impl.cpp.o
@@ -3324,7 +3468,7 @@ plugins/tune/tune_impl.o: plugins/tune/tune_impl.cpp.o
 
 # target to build an object file
 plugins/tune/tune_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.o
 .PHONY : plugins/tune/tune_impl.cpp.o
 
 plugins/tune/tune_impl.i: plugins/tune/tune_impl.cpp.i
@@ -3332,7 +3476,7 @@ plugins/tune/tune_impl.i: plugins/tune/tune_impl.cpp.i
 
 # target to preprocess a source file
 plugins/tune/tune_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.i
 .PHONY : plugins/tune/tune_impl.cpp.i
 
 plugins/tune/tune_impl.s: plugins/tune/tune_impl.cpp.s
@@ -3340,7 +3484,7 @@ plugins/tune/tune_impl.s: plugins/tune/tune_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/tune/tune_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/tune/tune_impl.cpp.s
 .PHONY : plugins/tune/tune_impl.cpp.s
 
 plugins/winch/winch.o: plugins/winch/winch.cpp.o
@@ -3348,7 +3492,7 @@ plugins/winch/winch.o: plugins/winch/winch.cpp.o
 
 # target to build an object file
 plugins/winch/winch.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.o
 .PHONY : plugins/winch/winch.cpp.o
 
 plugins/winch/winch.i: plugins/winch/winch.cpp.i
@@ -3356,7 +3500,7 @@ plugins/winch/winch.i: plugins/winch/winch.cpp.i
 
 # target to preprocess a source file
 plugins/winch/winch.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.i
 .PHONY : plugins/winch/winch.cpp.i
 
 plugins/winch/winch.s: plugins/winch/winch.cpp.s
@@ -3364,7 +3508,7 @@ plugins/winch/winch.s: plugins/winch/winch.cpp.s
 
 # target to generate assembly for a file
 plugins/winch/winch.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch.cpp.s
 .PHONY : plugins/winch/winch.cpp.s
 
 plugins/winch/winch_impl.o: plugins/winch/winch_impl.cpp.o
@@ -3372,7 +3516,7 @@ plugins/winch/winch_impl.o: plugins/winch/winch_impl.cpp.o
 
 # target to build an object file
 plugins/winch/winch_impl.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.o
 .PHONY : plugins/winch/winch_impl.cpp.o
 
 plugins/winch/winch_impl.i: plugins/winch/winch_impl.cpp.i
@@ -3380,7 +3524,7 @@ plugins/winch/winch_impl.i: plugins/winch/winch_impl.cpp.i
 
 # target to preprocess a source file
 plugins/winch/winch_impl.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.i
 .PHONY : plugins/winch/winch_impl.cpp.i
 
 plugins/winch/winch_impl.s: plugins/winch/winch_impl.cpp.s
@@ -3388,7 +3532,7 @@ plugins/winch/winch_impl.s: plugins/winch/winch_impl.cpp.s
 
 # target to generate assembly for a file
 plugins/winch/winch_impl.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/mavsdk/CMakeFiles/mavsdk.dir/build.make src/mavsdk/CMakeFiles/mavsdk.dir/plugins/winch/winch_impl.cpp.s
 .PHONY : plugins/winch/winch_impl.cpp.s
 
 # Help Target
@@ -3413,9 +3557,15 @@ help:
 	@echo "... core/call_every_handler.o"
 	@echo "... core/call_every_handler.i"
 	@echo "... core/call_every_handler.s"
+	@echo "... core/callback_tracker.o"
+	@echo "... core/callback_tracker.i"
+	@echo "... core/callback_tracker.s"
 	@echo "... core/cli_arg.o"
 	@echo "... core/cli_arg.i"
 	@echo "... core/cli_arg.s"
+	@echo "... core/compatibility_mode.o"
+	@echo "... core/compatibility_mode.i"
+	@echo "... core/compatibility_mode.s"
 	@echo "... core/connection.o"
 	@echo "... core/connection.i"
 	@echo "... core/connection.s"
@@ -3458,6 +3608,9 @@ help:
 	@echo "... core/math_utils.o"
 	@echo "... core/math_utils.i"
 	@echo "... core/math_utils.s"
+	@echo "... core/mavlink_channel_status.o"
+	@echo "... core/mavlink_channel_status.i"
+	@echo "... core/mavlink_channel_status.s"
 	@echo "... core/mavlink_channels.o"
 	@echo "... core/mavlink_channels.i"
 	@echo "... core/mavlink_channels.s"
@@ -3530,6 +3683,9 @@ help:
 	@echo "... core/plugin_impl_base.o"
 	@echo "... core/plugin_impl_base.i"
 	@echo "... core/plugin_impl_base.s"
+	@echo "... core/raw_connection.o"
+	@echo "... core/raw_connection.i"
+	@echo "... core/raw_connection.s"
 	@echo "... core/serial_connection.o"
 	@echo "... core/serial_connection.i"
 	@echo "... core/serial_connection.s"
@@ -3692,6 +3848,12 @@ help:
 	@echo "... plugins/log_streaming/log_streaming.o"
 	@echo "... plugins/log_streaming/log_streaming.i"
 	@echo "... plugins/log_streaming/log_streaming.s"
+	@echo "... plugins/log_streaming/log_streaming_backend_ardupilot.o"
+	@echo "... plugins/log_streaming/log_streaming_backend_ardupilot.i"
+	@echo "... plugins/log_streaming/log_streaming_backend_ardupilot.s"
+	@echo "... plugins/log_streaming/log_streaming_backend_px4.o"
+	@echo "... plugins/log_streaming/log_streaming_backend_px4.i"
+	@echo "... plugins/log_streaming/log_streaming_backend_px4.s"
 	@echo "... plugins/log_streaming/log_streaming_impl.o"
 	@echo "... plugins/log_streaming/log_streaming_impl.i"
 	@echo "... plugins/log_streaming/log_streaming_impl.s"
@@ -3817,6 +3979,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

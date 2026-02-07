@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-update.rule"
 		}
 	],
 	"target" : 

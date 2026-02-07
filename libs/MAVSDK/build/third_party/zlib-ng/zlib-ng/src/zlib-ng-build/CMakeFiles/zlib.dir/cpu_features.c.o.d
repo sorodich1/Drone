@@ -1,7 +1,7 @@
 CMakeFiles/zlib.dir/cpu_features.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cpu_features.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cpu_features.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zbuild.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/zbuild.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h /usr/include/string.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -27,7 +27,7 @@ CMakeFiles/zlib.dir/cpu_features.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cpu_features.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/adler32_fold.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/crc32_fold.h \
- /home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/arch/arm/arm_features.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/cpu_features.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/adler32_fold.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/crc32_fold.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng/arch/arm/arm_features.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/smtp-mail.c" "docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/smtp-mail.c" "docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-smtp-mail.dir/smtp-mail.c.o.d"
   "" "docs/examples/smtp-mail" "gcc" "docs/examples/CMakeFiles/curl-example-smtp-mail.dir/link.d"
   )
 

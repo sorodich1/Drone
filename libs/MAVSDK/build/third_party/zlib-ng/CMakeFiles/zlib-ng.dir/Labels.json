@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/CMakeFiles/zlib-ng-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/zlib-ng/zlib-ng/src/zlib-ng-stamp/zlib-ng-update.rule"
 		}
 	],
 	"target" : 

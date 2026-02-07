@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       The system is: Linux - 6.12.47+rpt-rpi-2712 - aarch64
   -
@@ -14,7 +14,7 @@ events:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /usr/bin/cc 
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/pi/Drone/MAVSDK/build/CMakeFiles/3.31.6/CompilerIdC/a.out
+        /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/3.31.6/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -36,7 +36,7 @@ events:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /usr/bin/c++ 
@@ -50,19 +50,19 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/pi/Drone/MAVSDK/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+        /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_350ea/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_350ea.dir/build.make CMakeFiles/cmTC_350ea.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd'
-        Building C object CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_93110/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_93110.dir/build.make CMakeFiles/cmTC_93110.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0'
+        Building C object CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -87,8 +87,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Debian 14.2.0-19) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_350ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccT3lv45.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_93110.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cccgqESK.s
         GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -106,14 +106,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o /tmp/ccT3lv45.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o /tmp/cccgqESK.s
         GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_350ea
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_350ea.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_93110
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93110.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
@@ -126,14 +126,14 @@ events:
         gcc version 14.2.0 (Debian 14.2.0-19) 
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_350ea' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_350ea.'
-         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1h6H7U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_350ea /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_93110' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93110.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ql6pN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_93110 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
         collect2 version 14.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1h6H7U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_350ea /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ql6pN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_93110 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Debian) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_350ea' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_350ea.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -o cmTC_350ea
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_93110' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93110.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -o cmTC_93110
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0'
         
       exitCode: 0
   -
@@ -141,7 +141,7 @@ events:
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -163,18 +163,18 @@ events:
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd']
+        ignore line: [Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_350ea/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_350ea.dir/build.make CMakeFiles/cmTC_350ea.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-w4sAUd']
-        ignore line: [Building C object CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_93110/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_93110.dir/build.make CMakeFiles/cmTC_93110.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Tgb2Y0']
+        ignore line: [Building C object CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -184,8 +184,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/']
-        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_350ea.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/ccT3lv45.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1 -quiet -v -imultiarch aarch64-linux-gnu /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_93110.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cccgqESK.s]
         ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -203,14 +203,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 07cded30d2a9b3cda97e4b164823fd45]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/']
-        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o /tmp/ccT3lv45.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o /tmp/cccgqESK.s]
         ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_350ea]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_350ea.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_93110]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93110.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
@@ -223,13 +223,13 @@ events:
         ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_350ea' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_350ea.']
-        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1h6H7U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_350ea /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_93110' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93110.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ql6pN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_93110 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc1h6H7U.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1ql6pN.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -247,7 +247,7 @@ events:
           arg [--fix-cortex-a53-843419] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_350ea] ==> ignore
+          arg [cmTC_93110] ==> ignore
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
@@ -260,7 +260,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -275,7 +275,7 @@ events:
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1h6H7U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_350ea /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_350ea.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1ql6pN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_93110 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_93110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
@@ -300,7 +300,7 @@ events:
       - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Running the C compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Debian) 2.44
@@ -309,12 +309,12 @@ events:
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -324,13 +324,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df9a0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_df9a0.dir/build.make CMakeFiles/cmTC_df9a0.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo'
-        Building CXX object CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_645d1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_645d1.dir/build.make CMakeFiles/cmTC_645d1.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f'
+        Building CXX object CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -340,8 +340,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Debian 14.2.0-19) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/'
-         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_df9a0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cclbqUpI.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_645d1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cce1QJJO.s
         GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -363,14 +363,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/'
-         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclbqUpI.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cce1QJJO.s
         GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_df9a0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df9a0.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_645d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_645d1.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper
@@ -383,14 +383,14 @@ events:
         gcc version 14.2.0 (Debian 14.2.0-19) 
         COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_df9a0' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_df9a0.'
-         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCe2TxX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_df9a0 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_645d1' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_645d1.'
+         /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4kRH9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_645d1 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
         collect2 version 14.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCe2TxX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_df9a0 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4kRH9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_645d1 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Debian) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_df9a0' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_df9a0.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_df9a0
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_645d1' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_645d1.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_645d1
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f'
         
       exitCode: 0
   -
@@ -398,7 +398,7 @@ events:
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -426,18 +426,18 @@ events:
     backtrace:
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo']
+        ignore line: [Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df9a0/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_df9a0.dir/build.make CMakeFiles/cmTC_df9a0.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-luFeFo']
-        ignore line: [Building CXX object CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_645d1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_645d1.dir/build.make CMakeFiles/cmTC_645d1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-b3vc4f']
+        ignore line: [Building CXX object CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -447,8 +447,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/']
-        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_df9a0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cclbqUpI.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_645d1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fasynchronous-unwind-tables -o /tmp/cce1QJJO.s]
         ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (aarch64-linux-gnu)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -470,14 +470,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b3582c6e46343b7ca116e1e8d6c2f0f8]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/']
-        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclbqUpI.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o /tmp/cce1QJJO.s]
         ignore line: [GNU assembler version 2.44 (aarch64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_df9a0]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df9a0.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_645d1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_645d1.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper]
@@ -490,13 +490,13 @@ events:
         ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/14/:/usr/libexec/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/14/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/14/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_df9a0' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_df9a0.']
-        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCe2TxX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_df9a0 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_645d1' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_645d1.']
+        link line: [ /usr/libexec/gcc/aarch64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4kRH9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_645d1 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/aarch64-linux-gnu/14/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccCe2TxX.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc4kRH9Z.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -514,7 +514,7 @@ events:
           arg [--fix-cortex-a53-843419] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_df9a0] ==> ignore
+          arg [cmTC_645d1] ==> ignore
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o]
@@ -527,7 +527,7 @@ events:
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/aarch64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/14/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -538,7 +538,7 @@ events:
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o]
           arg [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCe2TxX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_df9a0 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_df9a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/aarch64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4kRH9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -o cmTC_645d1 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/14 -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/14/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/14/../../.. -v CMakeFiles/cmTC_645d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
@@ -563,7 +563,7 @@ events:
       - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
       - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
       - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:44 (project)"
+      - "CMakeLists.txt:45 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Debian) 2.44
@@ -578,8 +578,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -589,17 +589,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_00633/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_00633.dir/build.make CMakeFiles/cmTC_00633.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop'
-        Building C object CMakeFiles/cmTC_00633.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_00633.dir/src.c.o -c /home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop/src.c
-        Linking C executable cmTC_00633
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00633.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_00633.dir/src.c.o -o cmTC_00633
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-LJ7lop'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_01c94/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_01c94.dir/build.make CMakeFiles/cmTC_01c94.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua'
+        Building C object CMakeFiles/cmTC_01c94.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_01c94.dir/src.c.o -c /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua/src.c
+        Linking C executable cmTC_01c94
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c94.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_01c94.dir/src.c.o -o cmTC_01c94
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-RUugua'
         
       exitCode: 0
   -
@@ -609,31 +609,31 @@ events:
       - "/usr/share/cmake-3.31/Modules/FindLibLZMA.cmake:100 (CHECK_LIBRARY_EXISTS)"
       - "src/CMakeLists.txt:50 (find_package)"
     checks:
-      - "Looking for lzma_auto_decoder in /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a"
+      - "Looking for lzma_auto_decoder in /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/pi/Drone/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/MAVSDK/src/../cmake/Modules/non-msvc"
+      CMAKE_MODULE_PATH: "/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/non-msvc"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "LIBLZMA_HAS_AUTO_DECODER"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a006/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5a006.dir/build.make CMakeFiles/cmTC_5a006.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g'
-        Building C object CMakeFiles/cmTC_5a006.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder -fPIE -o CMakeFiles/cmTC_5a006.dir/CheckFunctionExists.c.o -c /home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g/CheckFunctionExists.c
-        Linking C executable cmTC_5a006
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a006.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder CMakeFiles/cmTC_5a006.dir/CheckFunctionExists.c.o -o cmTC_5a006  /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-Qw1J6g'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f8cf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7f8cf.dir/build.make CMakeFiles/cmTC_7f8cf.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT'
+        Building C object CMakeFiles/cmTC_7f8cf.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder -fPIE -o CMakeFiles/cmTC_7f8cf.dir/CheckFunctionExists.c.o -c /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT/CheckFunctionExists.c
+        Linking C executable cmTC_7f8cf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f8cf.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder CMakeFiles/cmTC_7f8cf.dir/CheckFunctionExists.c.o -o cmTC_7f8cf  /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3KsTQT'
         
       exitCode: 0
   -
@@ -643,31 +643,31 @@ events:
       - "/usr/share/cmake-3.31/Modules/FindLibLZMA.cmake:101 (CHECK_LIBRARY_EXISTS)"
       - "src/CMakeLists.txt:50 (find_package)"
     checks:
-      - "Looking for lzma_easy_encoder in /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a"
+      - "Looking for lzma_easy_encoder in /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/pi/Drone/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/MAVSDK/src/../cmake/Modules/non-msvc"
+      CMAKE_MODULE_PATH: "/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/non-msvc"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "LIBLZMA_HAS_EASY_ENCODER"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d460/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5d460.dir/build.make CMakeFiles/cmTC_5d460.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD'
-        Building C object CMakeFiles/cmTC_5d460.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder -fPIE -o CMakeFiles/cmTC_5d460.dir/CheckFunctionExists.c.o -c /home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD/CheckFunctionExists.c
-        Linking C executable cmTC_5d460
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d460.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder CMakeFiles/cmTC_5d460.dir/CheckFunctionExists.c.o -o cmTC_5d460  /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-3ACpBD'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_34038/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_34038.dir/build.make CMakeFiles/cmTC_34038.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB'
+        Building C object CMakeFiles/cmTC_34038.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder -fPIE -o CMakeFiles/cmTC_34038.dir/CheckFunctionExists.c.o -c /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB/CheckFunctionExists.c
+        Linking C executable cmTC_34038
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34038.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder CMakeFiles/cmTC_34038.dir/CheckFunctionExists.c.o -o cmTC_34038  /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-xVAmbB'
         
       exitCode: 0
   -
@@ -677,31 +677,31 @@ events:
       - "/usr/share/cmake-3.31/Modules/FindLibLZMA.cmake:102 (CHECK_LIBRARY_EXISTS)"
       - "src/CMakeLists.txt:50 (find_package)"
     checks:
-      - "Looking for lzma_lzma_preset in /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a"
+      - "Looking for lzma_lzma_preset in /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a"
     directories:
-      source: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM"
-      binary: "/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM"
+      source: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz"
+      binary: "/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/pi/Drone/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/MAVSDK/src/../cmake/Modules/non-msvc"
+      CMAKE_MODULE_PATH: "/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/common;/home/pi/Drone/libs/MAVSDK/src/../cmake/Modules/non-msvc"
       CMAKE_POSITION_INDEPENDENT_CODE: "ON"
     buildResult:
       variable: "LIBLZMA_HAS_LZMA_PRESET"
       cached: true
       stdout: |
-        Change Dir: '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM'
+        Change Dir: '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62af5/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_62af5.dir/build.make CMakeFiles/cmTC_62af5.dir/build
-        gmake[1]: Entering directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM'
-        Building C object CMakeFiles/cmTC_62af5.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset -fPIE -o CMakeFiles/cmTC_62af5.dir/CheckFunctionExists.c.o -c /home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM/CheckFunctionExists.c
-        Linking C executable cmTC_62af5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62af5.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset CMakeFiles/cmTC_62af5.dir/CheckFunctionExists.c.o -o cmTC_62af5  /home/pi/Drone/MAVSDK/build/third_party/install/lib/liblzma.a
-        gmake[1]: Leaving directory '/home/pi/Drone/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-e57iCM'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ee9eb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ee9eb.dir/build.make CMakeFiles/cmTC_ee9eb.dir/build
+        gmake[1]: Entering directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz'
+        Building C object CMakeFiles/cmTC_ee9eb.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset -fPIE -o CMakeFiles/cmTC_ee9eb.dir/CheckFunctionExists.c.o -c /home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz/CheckFunctionExists.c
+        Linking C executable cmTC_ee9eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee9eb.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset CMakeFiles/cmTC_ee9eb.dir/CheckFunctionExists.c.o -o cmTC_ee9eb  /home/pi/Drone/libs/MAVSDK/build/third_party/install/lib/liblzma.a
+        gmake[1]: Leaving directory '/home/pi/Drone/libs/MAVSDK/build/CMakeFiles/CMakeScratch/TryCompile-1EWjBz'
         
       exitCode: 0
 ...

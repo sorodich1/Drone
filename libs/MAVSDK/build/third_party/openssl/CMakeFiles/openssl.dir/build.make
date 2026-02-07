@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/openssl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/openssl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/openssl
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/openssl
 
 # Utility rule file for openssl.
 
@@ -76,52 +76,52 @@ CMakeFiles/openssl-complete: openssl/src/openssl-stamp/openssl-patch
 CMakeFiles/openssl-complete: openssl/src/openssl-stamp/openssl-configure
 CMakeFiles/openssl-complete: openssl/src/openssl-stamp/openssl-build
 CMakeFiles/openssl-complete: openssl/src/openssl-stamp/openssl-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'openssl'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles/openssl-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'openssl'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles/openssl-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-done
 
 openssl/src/openssl-stamp/openssl-build: openssl/src/openssl-stamp/openssl-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'openssl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && make -j4 build_libs
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'openssl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && make -j4 build_libs
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-build
 
 openssl/src/openssl-stamp/openssl-configure: openssl/tmp/openssl-cfgcmd.txt
 openssl/src/openssl-stamp/openssl-configure: openssl/src/openssl-stamp/openssl-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'openssl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/config --release --prefix=/home/pi/Drone/MAVSDK/build/third_party/install no-shared
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'openssl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/config --release --prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install --libdir=lib no-shared
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-configure
 
 openssl/src/openssl-stamp/openssl-download: openssl/src/openssl-stamp/download-openssl.cmake
 openssl/src/openssl-stamp/openssl-download: openssl/src/openssl-stamp/openssl-urlinfo.txt
 openssl/src/openssl-stamp/openssl-download: openssl/src/openssl-stamp/openssl-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'openssl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/download-openssl.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/verify-openssl.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/extract-openssl.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'openssl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/download-openssl.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/verify-openssl.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/extract-openssl.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-download
 
 openssl/src/openssl-stamp/openssl-install: openssl/src/openssl-stamp/openssl-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'openssl'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && make install_dev
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'openssl'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && make install_dev
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-install
 
 openssl/src/openssl-stamp/openssl-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'openssl'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/tmp/openssl-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'openssl'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/tmp/openssl-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-mkdir
 
 openssl/src/openssl-stamp/openssl-patch: openssl/src/openssl-stamp/openssl-patch-info.txt
 openssl/src/openssl-stamp/openssl-patch: openssl/src/openssl-stamp/openssl-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'openssl'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'openssl'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-patch
 
 openssl/src/openssl-stamp/openssl-update: openssl/src/openssl-stamp/openssl-update-info.txt
 openssl/src/openssl-stamp/openssl-update: openssl/src/openssl-stamp/openssl-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'openssl'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'openssl'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-update
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-update
 
 CMakeFiles/openssl.dir/codegen:
 .PHONY : CMakeFiles/openssl.dir/codegen
@@ -147,6 +147,6 @@ CMakeFiles/openssl.dir/clean:
 .PHONY : CMakeFiles/openssl.dir/clean
 
 CMakeFiles/openssl.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/openssl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/openssl /home/pi/Drone/MAVSDK/third_party/openssl /home/pi/Drone/MAVSDK/build/third_party/openssl /home/pi/Drone/MAVSDK/build/third_party/openssl /home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles/openssl.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/openssl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/openssl /home/pi/Drone/libs/MAVSDK/third_party/openssl /home/pi/Drone/libs/MAVSDK/build/third_party/openssl /home/pi/Drone/libs/MAVSDK/build/third_party/openssl /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles/openssl.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/openssl.dir/depend
 

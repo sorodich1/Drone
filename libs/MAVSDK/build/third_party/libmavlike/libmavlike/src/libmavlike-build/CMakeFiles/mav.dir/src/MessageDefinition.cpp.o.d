@@ -1,7 +1,7 @@
 CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageDefinition.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/MessageDefinition.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -95,13 +95,11 @@ CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/utils.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include/mav/utils.h \
  /usr/include/c++/14/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/istream \
  /usr/include/c++/14/ios /usr/include/c++/14/iosfwd \
@@ -158,10 +156,10 @@ CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \

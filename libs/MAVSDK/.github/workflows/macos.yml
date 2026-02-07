@@ -23,21 +23,21 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: macOS x64
+          - name: macOS 15 x64
             build-framework: OFF
-            runner: macos-13
+            runner: macos-15-intel
             architecture: 'x64'
-          - name: macOS arm64
+          - name: macOS 15 arm64
             build-framework: OFF
-            runner: macos-14
+            runner: macos-15
             architecture: 'arm64'
-          - name: macOS framework x64
+          - name: macOS 15 framework x64
             build-framework: ON
-            runner: macos-13
+            runner: macos-15-intel
             architecture: 'x64'
-          - name: macOS framework arm64
+          - name: macOS 15 framework arm64
             build-framework: ON
-            runner: macos-14
+            runner: macos-15
             architecture: 'arm64'
     steps:
       - name: Install Python
@@ -52,7 +52,7 @@ jobs:
         id: cache
         with:
           path: ./build/macos/third_party/install
-          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -104,15 +104,15 @@ jobs:
           - name: ios
             platform: OS64
             sdk: iphoneos
-            runner: macos-14
+            runner: macos-15
           - name: ios_simulator_x64
             platform: SIMULATOR64
             sdk: iphonesimulator
-            runner: macos-13
+            runner: macos-15-intel
           - name: ios_simulator_arm64
             platform: SIMULATORARM64
             sdk: iphonesimulator
-            runner: macos-14
+            runner: macos-15
     steps:
       - name: Install Python
         uses: actions/setup-python@v5
@@ -127,7 +127,7 @@ jobs:
         id: cache
         with:
           path: ./build/${{ matrix.name }}/third_party/install
-          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**', './cmake/ios.toolchain.cmake') }}
+          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**', './cmake/ios.toolchain.cmake') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -154,7 +154,7 @@ jobs:
   iOS-XCFramework:
     name: iOS XCFramework
     needs: [macOS, iOS]
-    runs-on: macos-13
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
         with:

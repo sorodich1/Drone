@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_block_header.c" "CMakeFiles/test_block_header.dir/tests/test_block_header.c.o" "gcc" "CMakeFiles/test_block_header.dir/tests/test_block_header.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_block_header.c" "CMakeFiles/test_block_header.dir/tests/test_block_header.c.o" "gcc" "CMakeFiles/test_block_header.dir/tests/test_block_header.c.o.d"
   "" "tests_bin/test_block_header" "gcc" "CMakeFiles/test_block_header.dir/link.d"
   )
 

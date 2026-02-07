@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Utility rule file for curl_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/curl_uninstall.dir/compiler_depend.make
 include CMakeFiles/curl_uninstall.dir/progress.make
 
 CMakeFiles/curl_uninstall:
-	/usr/bin/cmake -P /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMake/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMake/cmake_uninstall.cmake
 
 CMakeFiles/curl_uninstall.dir/codegen:
 .PHONY : CMakeFiles/curl_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/curl_uninstall.dir/clean:
 .PHONY : CMakeFiles/curl_uninstall.dir/clean
 
 CMakeFiles/curl_uninstall.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/curl_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/curl_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/curl_uninstall.dir/depend
 

@@ -18,23 +18,23 @@ our @EXPORT = qw(
     $VERSION @LDLIBS
 );
 
-our @PREFIX                     = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
-our @libdir                     = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
-our @BINDIR                     = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/apps' );
+our @PREFIX                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
+our @libdir                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
+our @BINDIR                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/apps' );
 our @BINDIR_REL_PREFIX          = ( 'apps' );
-our @LIBDIR                     = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
+our @LIBDIR                     = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
 our @LIBDIR_REL_PREFIX          = ( '' );
-our @INCLUDEDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/include', '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/../openssl/include' );
+our @INCLUDEDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/include', '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/../openssl/include' );
 our @INCLUDEDIR_REL_PREFIX      = ( 'include', '../openssl/include' );
-our @APPLINKDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/ms' );
+our @APPLINKDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/ms' );
 our @APPLINKDIR_REL_PREFIX      = ( 'ms' );
-our @ENGINESDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/engines' );
+our @ENGINESDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/engines' );
 our @ENGINESDIR_REL_LIBDIR      = ( 'engines' );
-our @MODULESDIR                 = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/providers' );
+our @MODULESDIR                 = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build/providers' );
 our @MODULESDIR_REL_LIBDIR      = ( 'providers' );
-our @PKGCONFIGDIR               = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
+our @PKGCONFIGDIR               = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
 our @PKGCONFIGDIR_REL_LIBDIR    = ( '.' );
-our @CMAKECONFIGDIR             = ( '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
+our @CMAKECONFIGDIR             = ( '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build' );
 our @CMAKECONFIGDIR_REL_LIBDIR  = ( '.' );
 our $VERSION                    = '3.6.0';
 our @LDLIBS                     =

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/xzdec.dir/depend.make
@@ -73,46 +73,46 @@ CMakeFiles/xzdec.dir/codegen:
 .PHONY : CMakeFiles/xzdec.dir/codegen
 
 CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: CMakeFiles/xzdec.dir/flags.make
-CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
+CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
 CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: CMakeFiles/xzdec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o -MF CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o.d -o CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o -MF CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o.d -o CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
 
 CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c > CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c > CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.i
 
 CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c -o CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c -o CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.s
 
 CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o: CMakeFiles/xzdec.dir/flags.make
-CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
+CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
 CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o: CMakeFiles/xzdec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o -MF CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o.d -o CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o -MF CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o.d -o CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
 
 CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c > CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c > CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.i
 
 CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c -o CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c -o CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.s
 
 CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o: CMakeFiles/xzdec.dir/flags.make
-CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c
+CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c
 CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o: CMakeFiles/xzdec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o -MF CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o.d -o CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o -MF CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o.d -o CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c
 
 CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c > CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c > CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.i
 
 CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c -o CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c -o CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.s
 
 # Object files for target xzdec
 xzdec_OBJECTS = \
@@ -130,7 +130,7 @@ xzdec: CMakeFiles/xzdec.dir/build.make
 xzdec: CMakeFiles/xzdec.dir/compiler_depend.ts
 xzdec: liblzma.a
 xzdec: CMakeFiles/xzdec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable xzdec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable xzdec"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xzdec.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/xzdec.dir/clean:
 .PHONY : CMakeFiles/xzdec.dir/clean
 
 CMakeFiles/xzdec.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/xzdec.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/xzdec.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/xzdec.dir/depend
 

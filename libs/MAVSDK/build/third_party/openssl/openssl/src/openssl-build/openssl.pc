@@ -1,4 +1,4 @@
-prefix=/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-build
+prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-build
 exec_prefix=${prefix}
 libdir=${exec_prefix}
 includedir=${prefix}/include ${prefix}/../openssl/include 

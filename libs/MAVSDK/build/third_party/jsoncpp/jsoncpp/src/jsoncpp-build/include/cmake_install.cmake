@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/MAVSDK/build/third_party/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/libs/MAVSDK/build/third_party/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,22 +44,22 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/json" TYPE FILE FILES
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/allocator.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/assertions.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/config.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/forwards.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/json.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/json_features.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/reader.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/version.h"
-    "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/writer.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/allocator.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/assertions.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/config.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/forwards.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/json.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/json_features.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/reader.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/value.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/version.h"
+    "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include/json/writer.h"
     )
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/include/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/include/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

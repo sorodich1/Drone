@@ -1,6 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/crc32.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/crc32.cpp \
- /usr/include/stdc-predef.h /home/pi/Drone/MAVSDK/src/mavsdk/core/crc32.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/crc32.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/crc32.h \
  /usr/include/c++/14/cstdint \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \

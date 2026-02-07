@@ -28,7 +28,7 @@ unit_tests_runner: \
   CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o \
   CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o \
   CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o \
-  ../mavsdk/libmavsdk.so.3.10.2 \
+  ../mavsdk/libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty \
   ../../third_party/install/lib/libtinyxml2.a \
   ../../third_party/install/lib/libgtest.a \
   ../../third_party/install/lib/libgtest_main.a \
@@ -62,14 +62,7 @@ unit_tests_runner: \
   /usr/lib/gcc/aarch64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/aarch64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o \
-  /lib/aarch64-linux-gnu/libldap.so.2 \
-  /lib/aarch64-linux-gnu/liblber.so.2 \
-  /lib/ld-linux-aarch64.so.1 \
-  /lib/aarch64-linux-gnu/libsasl2.so.2 \
-  /lib/aarch64-linux-gnu/libssl.so.3 \
-  /lib/aarch64-linux-gnu/libcrypto.so.3 \
-  /lib/aarch64-linux-gnu/libz.so.1 \
-  /lib/aarch64-linux-gnu/libzstd.so.1
+  /lib/ld-linux-aarch64.so.1
 
 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o:
 
@@ -129,7 +122,7 @@ CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test
 
 CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o:
 
-../mavsdk/libmavsdk.so.3.10.2:
+../mavsdk/libmavsdk.so.f740838b-dirty.f740838b-dirty.f740838b-dirty:
 
 ../../third_party/install/lib/libtinyxml2.a:
 
@@ -197,18 +190,4 @@ CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_te
 
 /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crtn.o:
 
-/lib/aarch64-linux-gnu/libldap.so.2:
-
-/lib/aarch64-linux-gnu/liblber.so.2:
-
 /lib/ld-linux-aarch64.so.1:
-
-/lib/aarch64-linux-gnu/libsasl2.so.2:
-
-/lib/aarch64-linux-gnu/libssl.so.3:
-
-/lib/aarch64-linux-gnu/libcrypto.so.3:
-
-/lib/aarch64-linux-gnu/libz.so.1:
-
-/lib/aarch64-linux-gnu/libzstd.so.1:

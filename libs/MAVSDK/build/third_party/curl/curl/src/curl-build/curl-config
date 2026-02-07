@@ -25,7 +25,7 @@
 
 # shellcheck disable=SC2006
 
-prefix='/home/pi/Drone/MAVSDK/build/third_party/install'
+prefix='/home/pi/Drone/libs/MAVSDK/build/third_party/install'
 # Used in 'libdir'
 # shellcheck disable=SC2034
 exec_prefix="${prefix}"
@@ -89,7 +89,7 @@ while test "$#" -gt 0; do
 
   --protocols)
     # shellcheck disable=SC2043
-    for protocol in DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS IPFS IPNS LDAP LDAPS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP WS WSS; do
+    for protocol in DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS IPFS IPNS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP WS WSS; do
       echo "$protocol"
     done
     ;;
@@ -155,7 +155,7 @@ while test "$#" -gt 0; do
       curllibdir=''
     fi
     if test 'no' = 'no'; then
-      echo "${curllibdir}-lcurl -lldap -llber -lssl -lcrypto"
+      echo "${curllibdir}-lcurl -lssl -lcrypto"
     else
       echo "${curllibdir}-lcurl"
     fi
@@ -167,7 +167,7 @@ while test "$#" -gt 0; do
 
   --static-libs)
     if test 'yes' != 'no'; then
-      echo "${exec_prefix}/lib/libcurl.a  -lldap -llber -lssl -lcrypto"
+      echo "${exec_prefix}/lib/libcurl.a  -lssl -lcrypto"
     else
       echo 'curl was built with static libraries disabled' >&2
       exit 1

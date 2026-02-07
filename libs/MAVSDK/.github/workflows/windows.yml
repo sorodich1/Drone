@@ -18,7 +18,7 @@ on:
 jobs:
   Windows-mavsdk_server:
     name: Windows mavsdk_server build
-    runs-on: windows-2022
+    runs-on: windows-2025
     strategy:
       fail-fast: false
       matrix:
@@ -44,7 +44,7 @@ jobs:
         id: cache
         with:
           path: ./build/third_party/install
-          key: ${{ github.job }}-${{ matrix.arch }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.arch }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -87,7 +87,7 @@ jobs:
 
   Windows-mavsdk-library-builds:
     name: Windows mavsdk library build (${{ matrix.arch }}-${{ matrix.config }})
-    runs-on: windows-2022
+    runs-on: windows-2025
     strategy:
       fail-fast: false
       matrix:
@@ -129,7 +129,7 @@ jobs:
         id: cache
         with:
           path: ./build/third_party/install
-          key: ${{ github.job }}-${{ matrix.arch }}-${{ matrix.config }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.arch }}-${{ matrix.config }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -174,7 +174,7 @@ jobs:
 
   Windows-mavsdk-library-combine:
     name: Combine Windows mavsdk library artifacts
-    runs-on: windows-2022
+    runs-on: windows-2025
     needs: Windows-mavsdk-library-builds
     strategy:
       matrix:

@@ -1,8 +1,8 @@
 CMakeFiles/test_filter_str.dir/tests/test_filter_str.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_filter_str.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_filter_str.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/tests.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/sysdefs.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/tests.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/sysdefs.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
  /usr/include/inttypes.h /usr/include/features.h \
  /usr/include/features-time64.h \
@@ -57,30 +57,29 @@ CMakeFiles/test_filter_str.dir/tests/test_filter_str.c.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h /usr/include/assert.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/assert.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
  /usr/include/string.h /usr/include/strings.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_integer.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/version.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/base.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/vli.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/check.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/filter.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/bcj.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/delta.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/lzma12.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/container.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/stream_flags.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/block.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/index.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/index_hash.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/hardware.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/tuktest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_integer.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/version.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/base.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/vli.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/check.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/filter.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/bcj.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/delta.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/lzma12.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/container.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/stream_flags.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/block.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/index.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/index_hash.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/liblzma/api/lzma/hardware.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/tuktest.h \
  /usr/include/setjmp.h /usr/include/aarch64-linux-gnu/bits/setjmp.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/stdio.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
@@ -91,5 +90,4 @@ CMakeFiles/test_filter_str.dir/tests/test_filter_str.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h

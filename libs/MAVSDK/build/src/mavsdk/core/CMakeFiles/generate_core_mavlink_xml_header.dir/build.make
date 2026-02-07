@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 # Utility rule file for generate_core_mavlink_xml_header.
 
@@ -72,8 +72,8 @@ src/mavsdk/core/embedded_mavlink_xml.h: third_party/install/include/mavlink/mess
 src/mavsdk/core/embedded_mavlink_xml.h: third_party/install/include/mavlink/message_definitions/v1.0/standard.xml
 src/mavsdk/core/embedded_mavlink_xml.h: third_party/install/include/mavlink/message_definitions/v1.0/common.xml
 src/mavsdk/core/embedded_mavlink_xml.h: third_party/install/include/mavlink/message_definitions/v1.0/ardupilotmega.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating embedded MAVLink XML header for core"
-	cd /home/pi/Drone/MAVSDK/build/src/mavsdk/core && /usr/bin/cmake -DMINIMAL_XML_PATH=/home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/minimal.xml -DSTANDARD_XML_PATH=/home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/standard.xml -DCOMMON_XML_PATH=/home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/common.xml -DARDUPILOTMEGA_XML_PATH=/home/pi/Drone/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/ardupilotmega.xml -DOUTPUT_HEADER=/home/pi/Drone/MAVSDK/build/src/mavsdk/core/embedded_mavlink_xml.h -P /home/pi/Drone/MAVSDK/cmake/generate_embedded_xml.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating embedded MAVLink XML header for core"
+	cd /home/pi/Drone/libs/MAVSDK/build/src/mavsdk/core && /usr/bin/cmake -DMINIMAL_XML_PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/minimal.xml -DSTANDARD_XML_PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/standard.xml -DCOMMON_XML_PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/common.xml -DARDUPILOTMEGA_XML_PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install/include/mavlink/message_definitions/v1.0/ardupilotmega.xml -DOUTPUT_HEADER=/home/pi/Drone/libs/MAVSDK/build/src/mavsdk/core/embedded_mavlink_xml.h -P /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/../../../cmake/generate_embedded_xml.cmake
 
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/codegen:
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/codegen
@@ -88,10 +88,10 @@ src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build: generate_
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/build
 
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/src/mavsdk/core && $(CMAKE_COMMAND) -P CMakeFiles/generate_core_mavlink_xml_header.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/src/mavsdk/core && $(CMAKE_COMMAND) -P CMakeFiles/generate_core_mavlink_xml_header.dir/cmake_clean.cmake
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/clean
 
 src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK /home/pi/Drone/MAVSDK/src/mavsdk/core /home/pi/Drone/MAVSDK/build /home/pi/Drone/MAVSDK/build/src/mavsdk/core /home/pi/Drone/MAVSDK/build/src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK /home/pi/Drone/libs/MAVSDK/src/mavsdk/core /home/pi/Drone/libs/MAVSDK/build /home/pi/Drone/libs/MAVSDK/build/src/mavsdk/core /home/pi/Drone/libs/MAVSDK/build/src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/mavsdk/core/CMakeFiles/generate_core_mavlink_xml_header.dir/depend
 

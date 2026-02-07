@@ -1,8 +1,8 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/geometry.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/geometry.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/geometry.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/math_utils.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/geometry.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/math_utils.h \
  /usr/include/c++/14/cmath /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -62,9 +62,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/geometry.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/specfun.h \
  /usr/include/c++/14/bits/stl_algobase.h \
  /usr/include/c++/14/bits/functexcept.h \

@@ -165,8 +165,8 @@ our %config = (
         "-Wa,--noexecstack"
     ],
     "conf_files" => [
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf"
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf"
     ],
     "cppflags" => [],
     "cxxflags" => [],
@@ -184,7 +184,7 @@ our %config = (
     "lib_defines" => [
         "OPENSSL_PIC"
     ],
-    "libdir" => "",
+    "libdir" => "lib",
     "major" => "3",
     "makedep_scheme" => "gcc",
     "minor" => "6",
@@ -243,14 +243,15 @@ our %config = (
     ],
     "openssl_sys_defines" => [],
     "openssldir" => "",
-    "options" => "--release --prefix=/home/pi/Drone/MAVSDK/build/third_party/install no-acvp-tests no-allocfail-tests no-asan no-brotli no-brotli-dynamic no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-demos no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fips no-fips-jitter no-fips-post no-fips-securitychecks no-fuzz-afl no-fuzz-libfuzzer no-h3demo no-hqinterop no-jitter no-ktls no-lms no-loadereng no-md2 no-msan no-pie no-rc5 no-sctp no-shared no-ssl3 no-ssl3-method no-sslkeylog no-tfo no-trace no-ubsan no-unit-test no-uplink no-weak-ssl-ciphers no-winstore no-zlib no-zlib-dynamic no-zstd no-zstd-dynamic",
+    "options" => "--release --prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install --libdir=lib no-acvp-tests no-allocfail-tests no-asan no-brotli no-brotli-dynamic no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-demos no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fips no-fips-jitter no-fips-post no-fips-securitychecks no-fuzz-afl no-fuzz-libfuzzer no-h3demo no-hqinterop no-jitter no-ktls no-lms no-loadereng no-md2 no-msan no-pie no-rc5 no-sctp no-shared no-ssl3 no-ssl3-method no-sslkeylog no-tfo no-trace no-ubsan no-unit-test no-uplink no-weak-ssl-ciphers no-winstore no-zlib no-zlib-dynamic no-zstd no-zstd-dynamic",
     "patch" => "0",
     "perl_archname" => "aarch64-linux-gnu-thread-multi",
     "perl_cmd" => "/usr/bin/perl",
     "perl_version" => "5.40.1",
     "perlargv" => [
         "--release",
-        "--prefix=/home/pi/Drone/MAVSDK/build/third_party/install",
+        "--prefix=/home/pi/Drone/libs/MAVSDK/build/third_party/install",
+        "--libdir=lib",
         "no-shared"
     ],
     "perlenv" => {
@@ -290,7 +291,7 @@ our %config = (
         "__CNF_LDFLAGS" => undef,
         "__CNF_LDLIBS" => undef
     },
-    "prefix" => "/home/pi/Drone/MAVSDK/build/third_party/install",
+    "prefix" => "/home/pi/Drone/libs/MAVSDK/build/third_party/install",
     "prerelease" => "",
     "processor" => "",
     "rc4_int" => "unsigned char",
@@ -312,12 +313,12 @@ our %target = (
     "RANLIB" => "ranlib",
     "RC" => "windres",
     "_conf_fname_int" => [
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
-        "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/shared-info.pl"
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/00-base-templates.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/10-main.conf",
+        "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations/shared-info.pl"
     ],
     "asm_arch" => "aarch64",
     "bin_cflags" => "",
@@ -33093,8 +33094,8 @@ unless (caller) {
     use File::Copy;
     use Pod::Usage;
 
-    use lib '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/util/perl';
-    use OpenSSL::fallback '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/external/perl/MODULES.txt';
+    use lib '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/util/perl';
+    use OpenSSL::fallback '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/external/perl/MODULES.txt';
 
     my $here = dirname($0);
 
@@ -33121,7 +33122,7 @@ unless (caller) {
             );
 
         use lib '.';
-        use lib '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations';
+        use lib '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations';
         use gentemplate;
 
         open my $buildfile_template_fh, ">$buildfile_template"
@@ -33138,8 +33139,8 @@ unless (caller) {
 
         my $prepend = <<'_____';
 use File::Spec::Functions;
-use lib '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/util/perl';
-use lib '/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations';
+use lib '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/util/perl';
+use lib '/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl/Configurations';
 use lib '.';
 use platform;
 _____

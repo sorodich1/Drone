@@ -42,6 +42,12 @@ public:
         TooManyParams,
         ParamNotFound,
         Unknown,
+        ValueOutOfRange,
+        PermissionDenied,
+        ReadOnly,
+        TypeUnsupported,
+        TypeMismatch,
+        ReadFail,
     };
 
     Result provide_server_param(const std::string& name, const ParamValue& param_value);
@@ -57,6 +63,8 @@ public:
 
     void set_extended_protocol(bool extended_protocol) { _extended_protocol = extended_protocol; };
     void do_work();
+
+    bool params_locked_down() const;
 
     friend std::ostream& operator<<(std::ostream&, const Result&);
 
@@ -82,6 +90,8 @@ private:
 
     bool target_matches(uint16_t target_sys_id, uint16_t target_comp_id, bool is_request);
     void log_target_mismatch(uint16_t target_sys_id, uint16_t target_comp_id);
+
+    void send_param_error(const std::string& param_id, int16_t param_index, uint8_t error_code);
 
     static std::variant<std::monostate, std::string, std::uint16_t>
     extract_request_read_param_identifier(int16_t param_index, const char* param_id);
@@ -113,7 +123,7 @@ private:
     Sender& _sender;
     MavlinkMessageHandler& _message_handler;
 
-    std::mutex _all_params_mutex{};
+    mutable std::mutex _all_params_mutex{};
     MavlinkParameterCache _param_cache{};
 
     LockedQueue<WorkItem> _work_queue{};
@@ -121,6 +131,8 @@ private:
     bool _extended_protocol = true;
     bool _parameter_debugging = false;
     bool _last_extended = true;
+
+    bool _params_locked_down = false;
 };
 
 } // namespace mavsdk

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Utility rule file for curl-ca-bundle.
 
@@ -66,9 +66,9 @@ include CMakeFiles/curl-ca-bundle.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/curl-ca-bundle.dir/progress.make
 
-CMakeFiles/curl-ca-bundle: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/mk-ca-bundle.pl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating a fresh ca-bundle.crt"
-	/usr/bin/perl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/scripts/mk-ca-bundle.pl -b -l -u lib/ca-bundle.crt
+CMakeFiles/curl-ca-bundle: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/mk-ca-bundle.pl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating a fresh ca-bundle.crt"
+	/usr/bin/perl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/scripts/mk-ca-bundle.pl -b -l -u lib/ca-bundle.crt
 
 CMakeFiles/curl-ca-bundle.dir/codegen:
 .PHONY : CMakeFiles/curl-ca-bundle.dir/codegen
@@ -86,6 +86,6 @@ CMakeFiles/curl-ca-bundle.dir/clean:
 .PHONY : CMakeFiles/curl-ca-bundle.dir/clean
 
 CMakeFiles/curl-ca-bundle.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/curl-ca-bundle.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles/curl-ca-bundle.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/curl-ca-bundle.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include -I/home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/../../include
+CXX_INCLUDES = -I/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/include -I/home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp/src/lib_json/../../include
 
-CXX_FLAGS = -O3 -DNDEBUG -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
+CXX_FLAGS = -std=c++11 -Wall -Wconversion -Wshadow -Wextra -Wpedantic -Werror=strict-aliasing
 

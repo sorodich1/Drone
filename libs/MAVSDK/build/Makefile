@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles /home/pi/Drone/MAVSDK/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -188,32 +188,6 @@ generate_core_mavlink_xml_header/fast:
 .PHONY : generate_core_mavlink_xml_header/fast
 
 #=============================================================================
-# Target rules for targets named check
-
-# Build rule for target.
-check: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check
-.PHONY : check
-
-# fast build rule for target.
-check/fast:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/check.dir/build.make src/integration_tests/CMakeFiles/check.dir/build
-.PHONY : check/fast
-
-#=============================================================================
-# Target rules for targets named integration_tests_runner
-
-# Build rule for target.
-integration_tests_runner: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 integration_tests_runner
-.PHONY : integration_tests_runner
-
-# fast build rule for target.
-integration_tests_runner/fast:
-	$(MAKE) $(MAKESILENT) -f src/integration_tests/CMakeFiles/integration_tests_runner.dir/build.make src/integration_tests/CMakeFiles/integration_tests_runner.dir/build
-.PHONY : integration_tests_runner/fast
-
-#=============================================================================
 # Target rules for targets named unit_tests_runner
 
 # Build rule for target.
@@ -251,9 +225,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... check"
 	@echo "... generate_core_mavlink_xml_header"
-	@echo "... integration_tests_runner"
 	@echo "... mavsdk"
 	@echo "... system_tests_runner"
 	@echo "... unit_tests_runner"

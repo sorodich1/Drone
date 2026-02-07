@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/libcurl_static.dir/depend.make
@@ -73,2496 +73,2496 @@ lib/CMakeFiles/libcurl_static.dir/codegen:
 .PHONY : lib/CMakeFiles/libcurl_static.dir/codegen
 
 lib/CMakeFiles/libcurl_static.dir/altsvc.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/altsvc.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c
+lib/CMakeFiles/libcurl_static.dir/altsvc.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c
 lib/CMakeFiles/libcurl_static.dir/altsvc.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/libcurl_static.dir/altsvc.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/altsvc.c.o -MF CMakeFiles/libcurl_static.dir/altsvc.c.o.d -o CMakeFiles/libcurl_static.dir/altsvc.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/libcurl_static.dir/altsvc.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/altsvc.c.o -MF CMakeFiles/libcurl_static.dir/altsvc.c.o.d -o CMakeFiles/libcurl_static.dir/altsvc.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c
 
 lib/CMakeFiles/libcurl_static.dir/altsvc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/altsvc.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c > CMakeFiles/libcurl_static.dir/altsvc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c > CMakeFiles/libcurl_static.dir/altsvc.c.i
 
 lib/CMakeFiles/libcurl_static.dir/altsvc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/altsvc.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c -o CMakeFiles/libcurl_static.dir/altsvc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/altsvc.c -o CMakeFiles/libcurl_static.dir/altsvc.c.s
 
 lib/CMakeFiles/libcurl_static.dir/amigaos.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/amigaos.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c
+lib/CMakeFiles/libcurl_static.dir/amigaos.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c
 lib/CMakeFiles/libcurl_static.dir/amigaos.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/CMakeFiles/libcurl_static.dir/amigaos.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/amigaos.c.o -MF CMakeFiles/libcurl_static.dir/amigaos.c.o.d -o CMakeFiles/libcurl_static.dir/amigaos.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/CMakeFiles/libcurl_static.dir/amigaos.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/amigaos.c.o -MF CMakeFiles/libcurl_static.dir/amigaos.c.o.d -o CMakeFiles/libcurl_static.dir/amigaos.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c
 
 lib/CMakeFiles/libcurl_static.dir/amigaos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/amigaos.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c > CMakeFiles/libcurl_static.dir/amigaos.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c > CMakeFiles/libcurl_static.dir/amigaos.c.i
 
 lib/CMakeFiles/libcurl_static.dir/amigaos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/amigaos.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c -o CMakeFiles/libcurl_static.dir/amigaos.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/amigaos.c -o CMakeFiles/libcurl_static.dir/amigaos.c.s
 
 lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c
+lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c
 lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o -MF CMakeFiles/libcurl_static.dir/asyn-ares.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-ares.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o -MF CMakeFiles/libcurl_static.dir/asyn-ares.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-ares.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c
 
 lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/asyn-ares.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c > CMakeFiles/libcurl_static.dir/asyn-ares.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c > CMakeFiles/libcurl_static.dir/asyn-ares.c.i
 
 lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/asyn-ares.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c -o CMakeFiles/libcurl_static.dir/asyn-ares.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c -o CMakeFiles/libcurl_static.dir/asyn-ares.c.s
 
 lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c
+lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c
 lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o -MF CMakeFiles/libcurl_static.dir/asyn-base.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-base.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o -MF CMakeFiles/libcurl_static.dir/asyn-base.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-base.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c
 
 lib/CMakeFiles/libcurl_static.dir/asyn-base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/asyn-base.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c > CMakeFiles/libcurl_static.dir/asyn-base.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c > CMakeFiles/libcurl_static.dir/asyn-base.c.i
 
 lib/CMakeFiles/libcurl_static.dir/asyn-base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/asyn-base.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c -o CMakeFiles/libcurl_static.dir/asyn-base.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-base.c -o CMakeFiles/libcurl_static.dir/asyn-base.c.s
 
 lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c
+lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c
 lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o -MF CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o -MF CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o.d -o CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c
 
 lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c > CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c > CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i
 
 lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c -o CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-thrdd.c -o CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s
 
 lib/CMakeFiles/libcurl_static.dir/bufq.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/bufq.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c
+lib/CMakeFiles/libcurl_static.dir/bufq.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c
 lib/CMakeFiles/libcurl_static.dir/bufq.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/CMakeFiles/libcurl_static.dir/bufq.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/bufq.c.o -MF CMakeFiles/libcurl_static.dir/bufq.c.o.d -o CMakeFiles/libcurl_static.dir/bufq.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/CMakeFiles/libcurl_static.dir/bufq.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/bufq.c.o -MF CMakeFiles/libcurl_static.dir/bufq.c.o.d -o CMakeFiles/libcurl_static.dir/bufq.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c
 
 lib/CMakeFiles/libcurl_static.dir/bufq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/bufq.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c > CMakeFiles/libcurl_static.dir/bufq.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c > CMakeFiles/libcurl_static.dir/bufq.c.i
 
 lib/CMakeFiles/libcurl_static.dir/bufq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/bufq.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c -o CMakeFiles/libcurl_static.dir/bufq.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufq.c -o CMakeFiles/libcurl_static.dir/bufq.c.s
 
 lib/CMakeFiles/libcurl_static.dir/bufref.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/bufref.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c
+lib/CMakeFiles/libcurl_static.dir/bufref.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c
 lib/CMakeFiles/libcurl_static.dir/bufref.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/CMakeFiles/libcurl_static.dir/bufref.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/bufref.c.o -MF CMakeFiles/libcurl_static.dir/bufref.c.o.d -o CMakeFiles/libcurl_static.dir/bufref.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/CMakeFiles/libcurl_static.dir/bufref.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/bufref.c.o -MF CMakeFiles/libcurl_static.dir/bufref.c.o.d -o CMakeFiles/libcurl_static.dir/bufref.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c
 
 lib/CMakeFiles/libcurl_static.dir/bufref.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/bufref.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c > CMakeFiles/libcurl_static.dir/bufref.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c > CMakeFiles/libcurl_static.dir/bufref.c.i
 
 lib/CMakeFiles/libcurl_static.dir/bufref.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/bufref.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c -o CMakeFiles/libcurl_static.dir/bufref.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/bufref.c -o CMakeFiles/libcurl_static.dir/bufref.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c
+lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c
 lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c > CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c > CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c -o CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h1-proxy.c -o CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c
+lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c
 lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c > CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c > CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c -o CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-h2-proxy.c -o CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c
+lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c
 lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-haproxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-haproxy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o -MF CMakeFiles/libcurl_static.dir/cf-haproxy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-haproxy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-haproxy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c > CMakeFiles/libcurl_static.dir/cf-haproxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c > CMakeFiles/libcurl_static.dir/cf-haproxy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-haproxy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c -o CMakeFiles/libcurl_static.dir/cf-haproxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-haproxy.c -o CMakeFiles/libcurl_static.dir/cf-haproxy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c
+lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c
 lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o -MF CMakeFiles/libcurl_static.dir/cf-https-connect.c.o.d -o CMakeFiles/libcurl_static.dir/cf-https-connect.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o -MF CMakeFiles/libcurl_static.dir/cf-https-connect.c.o.d -o CMakeFiles/libcurl_static.dir/cf-https-connect.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-https-connect.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c > CMakeFiles/libcurl_static.dir/cf-https-connect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c > CMakeFiles/libcurl_static.dir/cf-https-connect.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-https-connect.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c -o CMakeFiles/libcurl_static.dir/cf-https-connect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-https-connect.c -o CMakeFiles/libcurl_static.dir/cf-https-connect.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c
+lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c
 lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o -MF CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o -MF CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o.d -o CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c > CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c > CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c -o CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-ip-happy.c -o CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c
+lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c
 lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o -MF CMakeFiles/libcurl_static.dir/cf-socket.c.o.d -o CMakeFiles/libcurl_static.dir/cf-socket.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o -MF CMakeFiles/libcurl_static.dir/cf-socket.c.o.d -o CMakeFiles/libcurl_static.dir/cf-socket.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c
 
 lib/CMakeFiles/libcurl_static.dir/cf-socket.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cf-socket.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c > CMakeFiles/libcurl_static.dir/cf-socket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c > CMakeFiles/libcurl_static.dir/cf-socket.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cf-socket.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cf-socket.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c -o CMakeFiles/libcurl_static.dir/cf-socket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cf-socket.c -o CMakeFiles/libcurl_static.dir/cf-socket.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cfilters.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cfilters.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c
+lib/CMakeFiles/libcurl_static.dir/cfilters.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c
 lib/CMakeFiles/libcurl_static.dir/cfilters.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/CMakeFiles/libcurl_static.dir/cfilters.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cfilters.c.o -MF CMakeFiles/libcurl_static.dir/cfilters.c.o.d -o CMakeFiles/libcurl_static.dir/cfilters.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/CMakeFiles/libcurl_static.dir/cfilters.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cfilters.c.o -MF CMakeFiles/libcurl_static.dir/cfilters.c.o.d -o CMakeFiles/libcurl_static.dir/cfilters.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c
 
 lib/CMakeFiles/libcurl_static.dir/cfilters.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cfilters.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c > CMakeFiles/libcurl_static.dir/cfilters.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c > CMakeFiles/libcurl_static.dir/cfilters.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cfilters.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cfilters.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c -o CMakeFiles/libcurl_static.dir/cfilters.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cfilters.c -o CMakeFiles/libcurl_static.dir/cfilters.c.s
 
 lib/CMakeFiles/libcurl_static.dir/conncache.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/conncache.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c
+lib/CMakeFiles/libcurl_static.dir/conncache.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c
 lib/CMakeFiles/libcurl_static.dir/conncache.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/CMakeFiles/libcurl_static.dir/conncache.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/conncache.c.o -MF CMakeFiles/libcurl_static.dir/conncache.c.o.d -o CMakeFiles/libcurl_static.dir/conncache.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/CMakeFiles/libcurl_static.dir/conncache.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/conncache.c.o -MF CMakeFiles/libcurl_static.dir/conncache.c.o.d -o CMakeFiles/libcurl_static.dir/conncache.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c
 
 lib/CMakeFiles/libcurl_static.dir/conncache.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/conncache.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c > CMakeFiles/libcurl_static.dir/conncache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c > CMakeFiles/libcurl_static.dir/conncache.c.i
 
 lib/CMakeFiles/libcurl_static.dir/conncache.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/conncache.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c -o CMakeFiles/libcurl_static.dir/conncache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/conncache.c -o CMakeFiles/libcurl_static.dir/conncache.c.s
 
 lib/CMakeFiles/libcurl_static.dir/connect.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/connect.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c
+lib/CMakeFiles/libcurl_static.dir/connect.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c
 lib/CMakeFiles/libcurl_static.dir/connect.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/CMakeFiles/libcurl_static.dir/connect.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/connect.c.o -MF CMakeFiles/libcurl_static.dir/connect.c.o.d -o CMakeFiles/libcurl_static.dir/connect.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/CMakeFiles/libcurl_static.dir/connect.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/connect.c.o -MF CMakeFiles/libcurl_static.dir/connect.c.o.d -o CMakeFiles/libcurl_static.dir/connect.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c
 
 lib/CMakeFiles/libcurl_static.dir/connect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/connect.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c > CMakeFiles/libcurl_static.dir/connect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c > CMakeFiles/libcurl_static.dir/connect.c.i
 
 lib/CMakeFiles/libcurl_static.dir/connect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/connect.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c -o CMakeFiles/libcurl_static.dir/connect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/connect.c -o CMakeFiles/libcurl_static.dir/connect.c.s
 
 lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c
+lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c
 lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o -MF CMakeFiles/libcurl_static.dir/content_encoding.c.o.d -o CMakeFiles/libcurl_static.dir/content_encoding.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o -MF CMakeFiles/libcurl_static.dir/content_encoding.c.o.d -o CMakeFiles/libcurl_static.dir/content_encoding.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c
 
 lib/CMakeFiles/libcurl_static.dir/content_encoding.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/content_encoding.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c > CMakeFiles/libcurl_static.dir/content_encoding.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c > CMakeFiles/libcurl_static.dir/content_encoding.c.i
 
 lib/CMakeFiles/libcurl_static.dir/content_encoding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/content_encoding.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c -o CMakeFiles/libcurl_static.dir/content_encoding.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/content_encoding.c -o CMakeFiles/libcurl_static.dir/content_encoding.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cookie.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cookie.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c
+lib/CMakeFiles/libcurl_static.dir/cookie.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c
 lib/CMakeFiles/libcurl_static.dir/cookie.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/CMakeFiles/libcurl_static.dir/cookie.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cookie.c.o -MF CMakeFiles/libcurl_static.dir/cookie.c.o.d -o CMakeFiles/libcurl_static.dir/cookie.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/CMakeFiles/libcurl_static.dir/cookie.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cookie.c.o -MF CMakeFiles/libcurl_static.dir/cookie.c.o.d -o CMakeFiles/libcurl_static.dir/cookie.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c
 
 lib/CMakeFiles/libcurl_static.dir/cookie.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cookie.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c > CMakeFiles/libcurl_static.dir/cookie.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c > CMakeFiles/libcurl_static.dir/cookie.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cookie.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cookie.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c -o CMakeFiles/libcurl_static.dir/cookie.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cookie.c -o CMakeFiles/libcurl_static.dir/cookie.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c
+lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c
 lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o -MF CMakeFiles/libcurl_static.dir/cshutdn.c.o.d -o CMakeFiles/libcurl_static.dir/cshutdn.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o -MF CMakeFiles/libcurl_static.dir/cshutdn.c.o.d -o CMakeFiles/libcurl_static.dir/cshutdn.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c
 
 lib/CMakeFiles/libcurl_static.dir/cshutdn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cshutdn.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c > CMakeFiles/libcurl_static.dir/cshutdn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c > CMakeFiles/libcurl_static.dir/cshutdn.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cshutdn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cshutdn.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c -o CMakeFiles/libcurl_static.dir/cshutdn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cshutdn.c -o CMakeFiles/libcurl_static.dir/cshutdn.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c
+lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c
 lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o -MF CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o.d -o CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o -MF CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o.d -o CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c > CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c > CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c -o CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_addrinfo.c -o CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_des.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_des.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c
+lib/CMakeFiles/libcurl_static.dir/curl_des.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c
 lib/CMakeFiles/libcurl_static.dir/curl_des.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_des.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_des.c.o -MF CMakeFiles/libcurl_static.dir/curl_des.c.o.d -o CMakeFiles/libcurl_static.dir/curl_des.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_des.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_des.c.o -MF CMakeFiles/libcurl_static.dir/curl_des.c.o.d -o CMakeFiles/libcurl_static.dir/curl_des.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_des.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_des.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c > CMakeFiles/libcurl_static.dir/curl_des.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c > CMakeFiles/libcurl_static.dir/curl_des.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_des.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_des.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c -o CMakeFiles/libcurl_static.dir/curl_des.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_des.c -o CMakeFiles/libcurl_static.dir/curl_des.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c
+lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c
 lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o -MF CMakeFiles/libcurl_static.dir/curl_endian.c.o.d -o CMakeFiles/libcurl_static.dir/curl_endian.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o -MF CMakeFiles/libcurl_static.dir/curl_endian.c.o.d -o CMakeFiles/libcurl_static.dir/curl_endian.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_endian.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_endian.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c > CMakeFiles/libcurl_static.dir/curl_endian.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c > CMakeFiles/libcurl_static.dir/curl_endian.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_endian.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_endian.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c -o CMakeFiles/libcurl_static.dir/curl_endian.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_endian.c -o CMakeFiles/libcurl_static.dir/curl_endian.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c
+lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c
 lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o -MF CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o.d -o CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o -MF CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o.d -o CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c > CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c > CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c -o CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_fnmatch.c -o CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c
+lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c
 lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o -MF CMakeFiles/libcurl_static.dir/curl_get_line.c.o.d -o CMakeFiles/libcurl_static.dir/curl_get_line.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o -MF CMakeFiles/libcurl_static.dir/curl_get_line.c.o.d -o CMakeFiles/libcurl_static.dir/curl_get_line.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_get_line.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c > CMakeFiles/libcurl_static.dir/curl_get_line.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c > CMakeFiles/libcurl_static.dir/curl_get_line.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_get_line.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c -o CMakeFiles/libcurl_static.dir/curl_get_line.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_get_line.c -o CMakeFiles/libcurl_static.dir/curl_get_line.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c
+lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c
 lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o -MF CMakeFiles/libcurl_static.dir/curl_gethostname.c.o.d -o CMakeFiles/libcurl_static.dir/curl_gethostname.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o -MF CMakeFiles/libcurl_static.dir/curl_gethostname.c.o.d -o CMakeFiles/libcurl_static.dir/curl_gethostname.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_gethostname.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c > CMakeFiles/libcurl_static.dir/curl_gethostname.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c > CMakeFiles/libcurl_static.dir/curl_gethostname.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_gethostname.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c -o CMakeFiles/libcurl_static.dir/curl_gethostname.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gethostname.c -o CMakeFiles/libcurl_static.dir/curl_gethostname.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c
+lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c
 lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/curl_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/curl_gssapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/curl_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/curl_gssapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_gssapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c > CMakeFiles/libcurl_static.dir/curl_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c > CMakeFiles/libcurl_static.dir/curl_gssapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_gssapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c -o CMakeFiles/libcurl_static.dir/curl_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_gssapi.c -o CMakeFiles/libcurl_static.dir/curl_gssapi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c
+lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c
 lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o -MF CMakeFiles/libcurl_static.dir/curl_memrchr.c.o.d -o CMakeFiles/libcurl_static.dir/curl_memrchr.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o -MF CMakeFiles/libcurl_static.dir/curl_memrchr.c.o.d -o CMakeFiles/libcurl_static.dir/curl_memrchr.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_memrchr.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c > CMakeFiles/libcurl_static.dir/curl_memrchr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c > CMakeFiles/libcurl_static.dir/curl_memrchr.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_memrchr.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c -o CMakeFiles/libcurl_static.dir/curl_memrchr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_memrchr.c -o CMakeFiles/libcurl_static.dir/curl_memrchr.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c
+lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c
 lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o -MF CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o.d -o CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o -MF CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o.d -o CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c > CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c > CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c -o CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ntlm_core.c -o CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c
+lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c
 lib/CMakeFiles/libcurl_static.dir/curl_range.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_range.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_range.c.o -MF CMakeFiles/libcurl_static.dir/curl_range.c.o.d -o CMakeFiles/libcurl_static.dir/curl_range.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_range.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_range.c.o -MF CMakeFiles/libcurl_static.dir/curl_range.c.o.d -o CMakeFiles/libcurl_static.dir/curl_range.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_range.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_range.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c > CMakeFiles/libcurl_static.dir/curl_range.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c > CMakeFiles/libcurl_static.dir/curl_range.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_range.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_range.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c -o CMakeFiles/libcurl_static.dir/curl_range.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_range.c -o CMakeFiles/libcurl_static.dir/curl_range.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c
+lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c
 lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o -MF CMakeFiles/libcurl_static.dir/curl_rtmp.c.o.d -o CMakeFiles/libcurl_static.dir/curl_rtmp.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o -MF CMakeFiles/libcurl_static.dir/curl_rtmp.c.o.d -o CMakeFiles/libcurl_static.dir/curl_rtmp.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_rtmp.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c > CMakeFiles/libcurl_static.dir/curl_rtmp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c > CMakeFiles/libcurl_static.dir/curl_rtmp.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_rtmp.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c -o CMakeFiles/libcurl_static.dir/curl_rtmp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_rtmp.c -o CMakeFiles/libcurl_static.dir/curl_rtmp.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c
+lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c
 lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o -MF CMakeFiles/libcurl_static.dir/curl_sasl.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sasl.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o -MF CMakeFiles/libcurl_static.dir/curl_sasl.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sasl.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_sasl.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c > CMakeFiles/libcurl_static.dir/curl_sasl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c > CMakeFiles/libcurl_static.dir/curl_sasl.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_sasl.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c -o CMakeFiles/libcurl_static.dir/curl_sasl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sasl.c -o CMakeFiles/libcurl_static.dir/curl_sasl.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c
+lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c
 lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o -MF CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o -MF CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c > CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c > CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c -o CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sha512_256.c -o CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c
+lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c
 lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o -MF CMakeFiles/libcurl_static.dir/curl_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o -MF CMakeFiles/libcurl_static.dir/curl_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/curl_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c > CMakeFiles/libcurl_static.dir/curl_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c > CMakeFiles/libcurl_static.dir/curl_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c -o CMakeFiles/libcurl_static.dir/curl_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_sspi.c -o CMakeFiles/libcurl_static.dir/curl_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c
+lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c
 lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o -MF CMakeFiles/libcurl_static.dir/curl_threads.c.o.d -o CMakeFiles/libcurl_static.dir/curl_threads.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o -MF CMakeFiles/libcurl_static.dir/curl_threads.c.o.d -o CMakeFiles/libcurl_static.dir/curl_threads.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_threads.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_threads.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c > CMakeFiles/libcurl_static.dir/curl_threads.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c > CMakeFiles/libcurl_static.dir/curl_threads.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_threads.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_threads.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c -o CMakeFiles/libcurl_static.dir/curl_threads.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_threads.c -o CMakeFiles/libcurl_static.dir/curl_threads.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c
+lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c
 lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o -MF CMakeFiles/libcurl_static.dir/curl_trc.c.o.d -o CMakeFiles/libcurl_static.dir/curl_trc.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o -MF CMakeFiles/libcurl_static.dir/curl_trc.c.o.d -o CMakeFiles/libcurl_static.dir/curl_trc.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c
 
 lib/CMakeFiles/libcurl_static.dir/curl_trc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curl_trc.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c > CMakeFiles/libcurl_static.dir/curl_trc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c > CMakeFiles/libcurl_static.dir/curl_trc.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curl_trc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curl_trc.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c -o CMakeFiles/libcurl_static.dir/curl_trc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_trc.c -o CMakeFiles/libcurl_static.dir/curl_trc.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cw-out.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cw-out.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c
+lib/CMakeFiles/libcurl_static.dir/cw-out.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c
 lib/CMakeFiles/libcurl_static.dir/cw-out.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object lib/CMakeFiles/libcurl_static.dir/cw-out.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cw-out.c.o -MF CMakeFiles/libcurl_static.dir/cw-out.c.o.d -o CMakeFiles/libcurl_static.dir/cw-out.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object lib/CMakeFiles/libcurl_static.dir/cw-out.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cw-out.c.o -MF CMakeFiles/libcurl_static.dir/cw-out.c.o.d -o CMakeFiles/libcurl_static.dir/cw-out.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c
 
 lib/CMakeFiles/libcurl_static.dir/cw-out.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cw-out.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c > CMakeFiles/libcurl_static.dir/cw-out.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c > CMakeFiles/libcurl_static.dir/cw-out.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cw-out.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cw-out.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c -o CMakeFiles/libcurl_static.dir/cw-out.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-out.c -o CMakeFiles/libcurl_static.dir/cw-out.c.s
 
 lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c
+lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c
 lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o -MF CMakeFiles/libcurl_static.dir/cw-pause.c.o.d -o CMakeFiles/libcurl_static.dir/cw-pause.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o -MF CMakeFiles/libcurl_static.dir/cw-pause.c.o.d -o CMakeFiles/libcurl_static.dir/cw-pause.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c
 
 lib/CMakeFiles/libcurl_static.dir/cw-pause.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/cw-pause.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c > CMakeFiles/libcurl_static.dir/cw-pause.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c > CMakeFiles/libcurl_static.dir/cw-pause.c.i
 
 lib/CMakeFiles/libcurl_static.dir/cw-pause.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/cw-pause.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c -o CMakeFiles/libcurl_static.dir/cw-pause.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/cw-pause.c -o CMakeFiles/libcurl_static.dir/cw-pause.c.s
 
 lib/CMakeFiles/libcurl_static.dir/dict.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/dict.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c
+lib/CMakeFiles/libcurl_static.dir/dict.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c
 lib/CMakeFiles/libcurl_static.dir/dict.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object lib/CMakeFiles/libcurl_static.dir/dict.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/dict.c.o -MF CMakeFiles/libcurl_static.dir/dict.c.o.d -o CMakeFiles/libcurl_static.dir/dict.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object lib/CMakeFiles/libcurl_static.dir/dict.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/dict.c.o -MF CMakeFiles/libcurl_static.dir/dict.c.o.d -o CMakeFiles/libcurl_static.dir/dict.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c
 
 lib/CMakeFiles/libcurl_static.dir/dict.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/dict.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c > CMakeFiles/libcurl_static.dir/dict.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c > CMakeFiles/libcurl_static.dir/dict.c.i
 
 lib/CMakeFiles/libcurl_static.dir/dict.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/dict.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c -o CMakeFiles/libcurl_static.dir/dict.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dict.c -o CMakeFiles/libcurl_static.dir/dict.c.s
 
 lib/CMakeFiles/libcurl_static.dir/doh.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/doh.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c
+lib/CMakeFiles/libcurl_static.dir/doh.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c
 lib/CMakeFiles/libcurl_static.dir/doh.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object lib/CMakeFiles/libcurl_static.dir/doh.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/doh.c.o -MF CMakeFiles/libcurl_static.dir/doh.c.o.d -o CMakeFiles/libcurl_static.dir/doh.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object lib/CMakeFiles/libcurl_static.dir/doh.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/doh.c.o -MF CMakeFiles/libcurl_static.dir/doh.c.o.d -o CMakeFiles/libcurl_static.dir/doh.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c
 
 lib/CMakeFiles/libcurl_static.dir/doh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/doh.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c > CMakeFiles/libcurl_static.dir/doh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c > CMakeFiles/libcurl_static.dir/doh.c.i
 
 lib/CMakeFiles/libcurl_static.dir/doh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/doh.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c -o CMakeFiles/libcurl_static.dir/doh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/doh.c -o CMakeFiles/libcurl_static.dir/doh.c.s
 
 lib/CMakeFiles/libcurl_static.dir/dynhds.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/dynhds.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c
+lib/CMakeFiles/libcurl_static.dir/dynhds.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c
 lib/CMakeFiles/libcurl_static.dir/dynhds.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object lib/CMakeFiles/libcurl_static.dir/dynhds.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/dynhds.c.o -MF CMakeFiles/libcurl_static.dir/dynhds.c.o.d -o CMakeFiles/libcurl_static.dir/dynhds.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object lib/CMakeFiles/libcurl_static.dir/dynhds.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/dynhds.c.o -MF CMakeFiles/libcurl_static.dir/dynhds.c.o.d -o CMakeFiles/libcurl_static.dir/dynhds.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c
 
 lib/CMakeFiles/libcurl_static.dir/dynhds.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/dynhds.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c > CMakeFiles/libcurl_static.dir/dynhds.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c > CMakeFiles/libcurl_static.dir/dynhds.c.i
 
 lib/CMakeFiles/libcurl_static.dir/dynhds.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/dynhds.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c -o CMakeFiles/libcurl_static.dir/dynhds.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/dynhds.c -o CMakeFiles/libcurl_static.dir/dynhds.c.s
 
 lib/CMakeFiles/libcurl_static.dir/easy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/easy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c
+lib/CMakeFiles/libcurl_static.dir/easy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c
 lib/CMakeFiles/libcurl_static.dir/easy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object lib/CMakeFiles/libcurl_static.dir/easy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easy.c.o -MF CMakeFiles/libcurl_static.dir/easy.c.o.d -o CMakeFiles/libcurl_static.dir/easy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object lib/CMakeFiles/libcurl_static.dir/easy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easy.c.o -MF CMakeFiles/libcurl_static.dir/easy.c.o.d -o CMakeFiles/libcurl_static.dir/easy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c
 
 lib/CMakeFiles/libcurl_static.dir/easy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/easy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c > CMakeFiles/libcurl_static.dir/easy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c > CMakeFiles/libcurl_static.dir/easy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/easy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/easy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c -o CMakeFiles/libcurl_static.dir/easy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easy.c -o CMakeFiles/libcurl_static.dir/easy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c
+lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c
 lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o -MF CMakeFiles/libcurl_static.dir/easygetopt.c.o.d -o CMakeFiles/libcurl_static.dir/easygetopt.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o -MF CMakeFiles/libcurl_static.dir/easygetopt.c.o.d -o CMakeFiles/libcurl_static.dir/easygetopt.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c
 
 lib/CMakeFiles/libcurl_static.dir/easygetopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/easygetopt.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c > CMakeFiles/libcurl_static.dir/easygetopt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c > CMakeFiles/libcurl_static.dir/easygetopt.c.i
 
 lib/CMakeFiles/libcurl_static.dir/easygetopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/easygetopt.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c -o CMakeFiles/libcurl_static.dir/easygetopt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easygetopt.c -o CMakeFiles/libcurl_static.dir/easygetopt.c.s
 
 lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c
+lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c
 lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o -MF CMakeFiles/libcurl_static.dir/easyoptions.c.o.d -o CMakeFiles/libcurl_static.dir/easyoptions.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o -MF CMakeFiles/libcurl_static.dir/easyoptions.c.o.d -o CMakeFiles/libcurl_static.dir/easyoptions.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c
 
 lib/CMakeFiles/libcurl_static.dir/easyoptions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/easyoptions.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c > CMakeFiles/libcurl_static.dir/easyoptions.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c > CMakeFiles/libcurl_static.dir/easyoptions.c.i
 
 lib/CMakeFiles/libcurl_static.dir/easyoptions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/easyoptions.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c -o CMakeFiles/libcurl_static.dir/easyoptions.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/easyoptions.c -o CMakeFiles/libcurl_static.dir/easyoptions.c.s
 
 lib/CMakeFiles/libcurl_static.dir/escape.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/escape.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c
+lib/CMakeFiles/libcurl_static.dir/escape.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c
 lib/CMakeFiles/libcurl_static.dir/escape.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object lib/CMakeFiles/libcurl_static.dir/escape.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/escape.c.o -MF CMakeFiles/libcurl_static.dir/escape.c.o.d -o CMakeFiles/libcurl_static.dir/escape.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object lib/CMakeFiles/libcurl_static.dir/escape.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/escape.c.o -MF CMakeFiles/libcurl_static.dir/escape.c.o.d -o CMakeFiles/libcurl_static.dir/escape.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c
 
 lib/CMakeFiles/libcurl_static.dir/escape.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/escape.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c > CMakeFiles/libcurl_static.dir/escape.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c > CMakeFiles/libcurl_static.dir/escape.c.i
 
 lib/CMakeFiles/libcurl_static.dir/escape.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/escape.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c -o CMakeFiles/libcurl_static.dir/escape.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/escape.c -o CMakeFiles/libcurl_static.dir/escape.c.s
 
 lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c
+lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c
 lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o -MF CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o.d -o CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o -MF CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o.d -o CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c
 
 lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c > CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c > CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i
 
 lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c -o CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fake_addrinfo.c -o CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s
 
 lib/CMakeFiles/libcurl_static.dir/file.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/file.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c
+lib/CMakeFiles/libcurl_static.dir/file.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c
 lib/CMakeFiles/libcurl_static.dir/file.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object lib/CMakeFiles/libcurl_static.dir/file.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/file.c.o -MF CMakeFiles/libcurl_static.dir/file.c.o.d -o CMakeFiles/libcurl_static.dir/file.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object lib/CMakeFiles/libcurl_static.dir/file.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/file.c.o -MF CMakeFiles/libcurl_static.dir/file.c.o.d -o CMakeFiles/libcurl_static.dir/file.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c
 
 lib/CMakeFiles/libcurl_static.dir/file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/file.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c > CMakeFiles/libcurl_static.dir/file.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c > CMakeFiles/libcurl_static.dir/file.c.i
 
 lib/CMakeFiles/libcurl_static.dir/file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/file.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c -o CMakeFiles/libcurl_static.dir/file.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/file.c -o CMakeFiles/libcurl_static.dir/file.c.s
 
 lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c
+lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c
 lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o -MF CMakeFiles/libcurl_static.dir/fileinfo.c.o.d -o CMakeFiles/libcurl_static.dir/fileinfo.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o -MF CMakeFiles/libcurl_static.dir/fileinfo.c.o.d -o CMakeFiles/libcurl_static.dir/fileinfo.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c
 
 lib/CMakeFiles/libcurl_static.dir/fileinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/fileinfo.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c > CMakeFiles/libcurl_static.dir/fileinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c > CMakeFiles/libcurl_static.dir/fileinfo.c.i
 
 lib/CMakeFiles/libcurl_static.dir/fileinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/fileinfo.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c -o CMakeFiles/libcurl_static.dir/fileinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fileinfo.c -o CMakeFiles/libcurl_static.dir/fileinfo.c.s
 
 lib/CMakeFiles/libcurl_static.dir/fopen.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/fopen.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c
+lib/CMakeFiles/libcurl_static.dir/fopen.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c
 lib/CMakeFiles/libcurl_static.dir/fopen.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object lib/CMakeFiles/libcurl_static.dir/fopen.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fopen.c.o -MF CMakeFiles/libcurl_static.dir/fopen.c.o.d -o CMakeFiles/libcurl_static.dir/fopen.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object lib/CMakeFiles/libcurl_static.dir/fopen.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/fopen.c.o -MF CMakeFiles/libcurl_static.dir/fopen.c.o.d -o CMakeFiles/libcurl_static.dir/fopen.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c
 
 lib/CMakeFiles/libcurl_static.dir/fopen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/fopen.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c > CMakeFiles/libcurl_static.dir/fopen.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c > CMakeFiles/libcurl_static.dir/fopen.c.i
 
 lib/CMakeFiles/libcurl_static.dir/fopen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/fopen.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c -o CMakeFiles/libcurl_static.dir/fopen.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/fopen.c -o CMakeFiles/libcurl_static.dir/fopen.c.s
 
 lib/CMakeFiles/libcurl_static.dir/formdata.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/formdata.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c
+lib/CMakeFiles/libcurl_static.dir/formdata.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c
 lib/CMakeFiles/libcurl_static.dir/formdata.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object lib/CMakeFiles/libcurl_static.dir/formdata.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/formdata.c.o -MF CMakeFiles/libcurl_static.dir/formdata.c.o.d -o CMakeFiles/libcurl_static.dir/formdata.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object lib/CMakeFiles/libcurl_static.dir/formdata.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/formdata.c.o -MF CMakeFiles/libcurl_static.dir/formdata.c.o.d -o CMakeFiles/libcurl_static.dir/formdata.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c
 
 lib/CMakeFiles/libcurl_static.dir/formdata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/formdata.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c > CMakeFiles/libcurl_static.dir/formdata.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c > CMakeFiles/libcurl_static.dir/formdata.c.i
 
 lib/CMakeFiles/libcurl_static.dir/formdata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/formdata.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c -o CMakeFiles/libcurl_static.dir/formdata.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/formdata.c -o CMakeFiles/libcurl_static.dir/formdata.c.s
 
 lib/CMakeFiles/libcurl_static.dir/ftp.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/ftp.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c
+lib/CMakeFiles/libcurl_static.dir/ftp.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c
 lib/CMakeFiles/libcurl_static.dir/ftp.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object lib/CMakeFiles/libcurl_static.dir/ftp.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ftp.c.o -MF CMakeFiles/libcurl_static.dir/ftp.c.o.d -o CMakeFiles/libcurl_static.dir/ftp.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object lib/CMakeFiles/libcurl_static.dir/ftp.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ftp.c.o -MF CMakeFiles/libcurl_static.dir/ftp.c.o.d -o CMakeFiles/libcurl_static.dir/ftp.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c
 
 lib/CMakeFiles/libcurl_static.dir/ftp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/ftp.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c > CMakeFiles/libcurl_static.dir/ftp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c > CMakeFiles/libcurl_static.dir/ftp.c.i
 
 lib/CMakeFiles/libcurl_static.dir/ftp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/ftp.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c -o CMakeFiles/libcurl_static.dir/ftp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftp.c -o CMakeFiles/libcurl_static.dir/ftp.c.s
 
 lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c
+lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c
 lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o -MF CMakeFiles/libcurl_static.dir/ftplistparser.c.o.d -o CMakeFiles/libcurl_static.dir/ftplistparser.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o -MF CMakeFiles/libcurl_static.dir/ftplistparser.c.o.d -o CMakeFiles/libcurl_static.dir/ftplistparser.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c
 
 lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/ftplistparser.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c > CMakeFiles/libcurl_static.dir/ftplistparser.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c > CMakeFiles/libcurl_static.dir/ftplistparser.c.i
 
 lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/ftplistparser.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c -o CMakeFiles/libcurl_static.dir/ftplistparser.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ftplistparser.c -o CMakeFiles/libcurl_static.dir/ftplistparser.c.s
 
 lib/CMakeFiles/libcurl_static.dir/getenv.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/getenv.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c
+lib/CMakeFiles/libcurl_static.dir/getenv.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c
 lib/CMakeFiles/libcurl_static.dir/getenv.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object lib/CMakeFiles/libcurl_static.dir/getenv.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/getenv.c.o -MF CMakeFiles/libcurl_static.dir/getenv.c.o.d -o CMakeFiles/libcurl_static.dir/getenv.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object lib/CMakeFiles/libcurl_static.dir/getenv.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/getenv.c.o -MF CMakeFiles/libcurl_static.dir/getenv.c.o.d -o CMakeFiles/libcurl_static.dir/getenv.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c
 
 lib/CMakeFiles/libcurl_static.dir/getenv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/getenv.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c > CMakeFiles/libcurl_static.dir/getenv.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c > CMakeFiles/libcurl_static.dir/getenv.c.i
 
 lib/CMakeFiles/libcurl_static.dir/getenv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/getenv.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c -o CMakeFiles/libcurl_static.dir/getenv.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getenv.c -o CMakeFiles/libcurl_static.dir/getenv.c.s
 
 lib/CMakeFiles/libcurl_static.dir/getinfo.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/getinfo.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c
+lib/CMakeFiles/libcurl_static.dir/getinfo.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c
 lib/CMakeFiles/libcurl_static.dir/getinfo.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object lib/CMakeFiles/libcurl_static.dir/getinfo.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/getinfo.c.o -MF CMakeFiles/libcurl_static.dir/getinfo.c.o.d -o CMakeFiles/libcurl_static.dir/getinfo.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object lib/CMakeFiles/libcurl_static.dir/getinfo.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/getinfo.c.o -MF CMakeFiles/libcurl_static.dir/getinfo.c.o.d -o CMakeFiles/libcurl_static.dir/getinfo.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c
 
 lib/CMakeFiles/libcurl_static.dir/getinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/getinfo.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c > CMakeFiles/libcurl_static.dir/getinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c > CMakeFiles/libcurl_static.dir/getinfo.c.i
 
 lib/CMakeFiles/libcurl_static.dir/getinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/getinfo.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c -o CMakeFiles/libcurl_static.dir/getinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/getinfo.c -o CMakeFiles/libcurl_static.dir/getinfo.c.s
 
 lib/CMakeFiles/libcurl_static.dir/gopher.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/gopher.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c
+lib/CMakeFiles/libcurl_static.dir/gopher.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c
 lib/CMakeFiles/libcurl_static.dir/gopher.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object lib/CMakeFiles/libcurl_static.dir/gopher.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/gopher.c.o -MF CMakeFiles/libcurl_static.dir/gopher.c.o.d -o CMakeFiles/libcurl_static.dir/gopher.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object lib/CMakeFiles/libcurl_static.dir/gopher.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/gopher.c.o -MF CMakeFiles/libcurl_static.dir/gopher.c.o.d -o CMakeFiles/libcurl_static.dir/gopher.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c
 
 lib/CMakeFiles/libcurl_static.dir/gopher.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/gopher.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c > CMakeFiles/libcurl_static.dir/gopher.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c > CMakeFiles/libcurl_static.dir/gopher.c.i
 
 lib/CMakeFiles/libcurl_static.dir/gopher.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/gopher.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c -o CMakeFiles/libcurl_static.dir/gopher.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/gopher.c -o CMakeFiles/libcurl_static.dir/gopher.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hash.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hash.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c
+lib/CMakeFiles/libcurl_static.dir/hash.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c
 lib/CMakeFiles/libcurl_static.dir/hash.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object lib/CMakeFiles/libcurl_static.dir/hash.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hash.c.o -MF CMakeFiles/libcurl_static.dir/hash.c.o.d -o CMakeFiles/libcurl_static.dir/hash.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object lib/CMakeFiles/libcurl_static.dir/hash.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hash.c.o -MF CMakeFiles/libcurl_static.dir/hash.c.o.d -o CMakeFiles/libcurl_static.dir/hash.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c
 
 lib/CMakeFiles/libcurl_static.dir/hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hash.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c > CMakeFiles/libcurl_static.dir/hash.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c > CMakeFiles/libcurl_static.dir/hash.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hash.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c -o CMakeFiles/libcurl_static.dir/hash.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hash.c -o CMakeFiles/libcurl_static.dir/hash.c.s
 
 lib/CMakeFiles/libcurl_static.dir/headers.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/headers.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c
+lib/CMakeFiles/libcurl_static.dir/headers.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c
 lib/CMakeFiles/libcurl_static.dir/headers.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object lib/CMakeFiles/libcurl_static.dir/headers.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/headers.c.o -MF CMakeFiles/libcurl_static.dir/headers.c.o.d -o CMakeFiles/libcurl_static.dir/headers.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object lib/CMakeFiles/libcurl_static.dir/headers.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/headers.c.o -MF CMakeFiles/libcurl_static.dir/headers.c.o.d -o CMakeFiles/libcurl_static.dir/headers.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c
 
 lib/CMakeFiles/libcurl_static.dir/headers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/headers.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c > CMakeFiles/libcurl_static.dir/headers.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c > CMakeFiles/libcurl_static.dir/headers.c.i
 
 lib/CMakeFiles/libcurl_static.dir/headers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/headers.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c -o CMakeFiles/libcurl_static.dir/headers.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/headers.c -o CMakeFiles/libcurl_static.dir/headers.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hmac.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hmac.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c
+lib/CMakeFiles/libcurl_static.dir/hmac.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c
 lib/CMakeFiles/libcurl_static.dir/hmac.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object lib/CMakeFiles/libcurl_static.dir/hmac.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hmac.c.o -MF CMakeFiles/libcurl_static.dir/hmac.c.o.d -o CMakeFiles/libcurl_static.dir/hmac.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object lib/CMakeFiles/libcurl_static.dir/hmac.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hmac.c.o -MF CMakeFiles/libcurl_static.dir/hmac.c.o.d -o CMakeFiles/libcurl_static.dir/hmac.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c
 
 lib/CMakeFiles/libcurl_static.dir/hmac.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hmac.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c > CMakeFiles/libcurl_static.dir/hmac.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c > CMakeFiles/libcurl_static.dir/hmac.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hmac.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hmac.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c -o CMakeFiles/libcurl_static.dir/hmac.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hmac.c -o CMakeFiles/libcurl_static.dir/hmac.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hostip.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hostip.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c
+lib/CMakeFiles/libcurl_static.dir/hostip.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c
 lib/CMakeFiles/libcurl_static.dir/hostip.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip.c.o -MF CMakeFiles/libcurl_static.dir/hostip.c.o.d -o CMakeFiles/libcurl_static.dir/hostip.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip.c.o -MF CMakeFiles/libcurl_static.dir/hostip.c.o.d -o CMakeFiles/libcurl_static.dir/hostip.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c
 
 lib/CMakeFiles/libcurl_static.dir/hostip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hostip.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c > CMakeFiles/libcurl_static.dir/hostip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c > CMakeFiles/libcurl_static.dir/hostip.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hostip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hostip.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c -o CMakeFiles/libcurl_static.dir/hostip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip.c -o CMakeFiles/libcurl_static.dir/hostip.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hostip4.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hostip4.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c
+lib/CMakeFiles/libcurl_static.dir/hostip4.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c
 lib/CMakeFiles/libcurl_static.dir/hostip4.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip4.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip4.c.o -MF CMakeFiles/libcurl_static.dir/hostip4.c.o.d -o CMakeFiles/libcurl_static.dir/hostip4.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip4.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip4.c.o -MF CMakeFiles/libcurl_static.dir/hostip4.c.o.d -o CMakeFiles/libcurl_static.dir/hostip4.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c
 
 lib/CMakeFiles/libcurl_static.dir/hostip4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hostip4.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c > CMakeFiles/libcurl_static.dir/hostip4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c > CMakeFiles/libcurl_static.dir/hostip4.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hostip4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hostip4.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c -o CMakeFiles/libcurl_static.dir/hostip4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip4.c -o CMakeFiles/libcurl_static.dir/hostip4.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hostip6.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hostip6.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c
+lib/CMakeFiles/libcurl_static.dir/hostip6.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c
 lib/CMakeFiles/libcurl_static.dir/hostip6.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip6.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip6.c.o -MF CMakeFiles/libcurl_static.dir/hostip6.c.o.d -o CMakeFiles/libcurl_static.dir/hostip6.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object lib/CMakeFiles/libcurl_static.dir/hostip6.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hostip6.c.o -MF CMakeFiles/libcurl_static.dir/hostip6.c.o.d -o CMakeFiles/libcurl_static.dir/hostip6.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c
 
 lib/CMakeFiles/libcurl_static.dir/hostip6.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hostip6.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c > CMakeFiles/libcurl_static.dir/hostip6.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c > CMakeFiles/libcurl_static.dir/hostip6.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hostip6.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hostip6.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c -o CMakeFiles/libcurl_static.dir/hostip6.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hostip6.c -o CMakeFiles/libcurl_static.dir/hostip6.c.s
 
 lib/CMakeFiles/libcurl_static.dir/hsts.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/hsts.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c
+lib/CMakeFiles/libcurl_static.dir/hsts.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c
 lib/CMakeFiles/libcurl_static.dir/hsts.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object lib/CMakeFiles/libcurl_static.dir/hsts.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hsts.c.o -MF CMakeFiles/libcurl_static.dir/hsts.c.o.d -o CMakeFiles/libcurl_static.dir/hsts.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object lib/CMakeFiles/libcurl_static.dir/hsts.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/hsts.c.o -MF CMakeFiles/libcurl_static.dir/hsts.c.o.d -o CMakeFiles/libcurl_static.dir/hsts.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c
 
 lib/CMakeFiles/libcurl_static.dir/hsts.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/hsts.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c > CMakeFiles/libcurl_static.dir/hsts.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c > CMakeFiles/libcurl_static.dir/hsts.c.i
 
 lib/CMakeFiles/libcurl_static.dir/hsts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/hsts.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c -o CMakeFiles/libcurl_static.dir/hsts.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/hsts.c -o CMakeFiles/libcurl_static.dir/hsts.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c
+lib/CMakeFiles/libcurl_static.dir/http.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c
 lib/CMakeFiles/libcurl_static.dir/http.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object lib/CMakeFiles/libcurl_static.dir/http.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http.c.o -MF CMakeFiles/libcurl_static.dir/http.c.o.d -o CMakeFiles/libcurl_static.dir/http.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object lib/CMakeFiles/libcurl_static.dir/http.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http.c.o -MF CMakeFiles/libcurl_static.dir/http.c.o.d -o CMakeFiles/libcurl_static.dir/http.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c
 
 lib/CMakeFiles/libcurl_static.dir/http.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c > CMakeFiles/libcurl_static.dir/http.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c > CMakeFiles/libcurl_static.dir/http.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c -o CMakeFiles/libcurl_static.dir/http.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http.c -o CMakeFiles/libcurl_static.dir/http.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http1.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http1.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c
+lib/CMakeFiles/libcurl_static.dir/http1.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c
 lib/CMakeFiles/libcurl_static.dir/http1.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object lib/CMakeFiles/libcurl_static.dir/http1.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http1.c.o -MF CMakeFiles/libcurl_static.dir/http1.c.o.d -o CMakeFiles/libcurl_static.dir/http1.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object lib/CMakeFiles/libcurl_static.dir/http1.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http1.c.o -MF CMakeFiles/libcurl_static.dir/http1.c.o.d -o CMakeFiles/libcurl_static.dir/http1.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c
 
 lib/CMakeFiles/libcurl_static.dir/http1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http1.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c > CMakeFiles/libcurl_static.dir/http1.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c > CMakeFiles/libcurl_static.dir/http1.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http1.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c -o CMakeFiles/libcurl_static.dir/http1.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http1.c -o CMakeFiles/libcurl_static.dir/http1.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http2.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http2.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c
+lib/CMakeFiles/libcurl_static.dir/http2.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c
 lib/CMakeFiles/libcurl_static.dir/http2.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object lib/CMakeFiles/libcurl_static.dir/http2.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http2.c.o -MF CMakeFiles/libcurl_static.dir/http2.c.o.d -o CMakeFiles/libcurl_static.dir/http2.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object lib/CMakeFiles/libcurl_static.dir/http2.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http2.c.o -MF CMakeFiles/libcurl_static.dir/http2.c.o.d -o CMakeFiles/libcurl_static.dir/http2.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c
 
 lib/CMakeFiles/libcurl_static.dir/http2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http2.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c > CMakeFiles/libcurl_static.dir/http2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c > CMakeFiles/libcurl_static.dir/http2.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http2.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c -o CMakeFiles/libcurl_static.dir/http2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http2.c -o CMakeFiles/libcurl_static.dir/http2.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c
+lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c
 lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o -MF CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o.d -o CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o -MF CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o.d -o CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c
 
 lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c > CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c > CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c -o CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_aws_sigv4.c -o CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c
+lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c
 lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o -MF CMakeFiles/libcurl_static.dir/http_chunks.c.o.d -o CMakeFiles/libcurl_static.dir/http_chunks.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o -MF CMakeFiles/libcurl_static.dir/http_chunks.c.o.d -o CMakeFiles/libcurl_static.dir/http_chunks.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c
 
 lib/CMakeFiles/libcurl_static.dir/http_chunks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_chunks.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c > CMakeFiles/libcurl_static.dir/http_chunks.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c > CMakeFiles/libcurl_static.dir/http_chunks.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_chunks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_chunks.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c -o CMakeFiles/libcurl_static.dir/http_chunks.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_chunks.c -o CMakeFiles/libcurl_static.dir/http_chunks.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_digest.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_digest.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c
+lib/CMakeFiles/libcurl_static.dir/http_digest.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c
 lib/CMakeFiles/libcurl_static.dir/http_digest.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object lib/CMakeFiles/libcurl_static.dir/http_digest.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_digest.c.o -MF CMakeFiles/libcurl_static.dir/http_digest.c.o.d -o CMakeFiles/libcurl_static.dir/http_digest.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object lib/CMakeFiles/libcurl_static.dir/http_digest.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_digest.c.o -MF CMakeFiles/libcurl_static.dir/http_digest.c.o.d -o CMakeFiles/libcurl_static.dir/http_digest.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c
 
 lib/CMakeFiles/libcurl_static.dir/http_digest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_digest.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c > CMakeFiles/libcurl_static.dir/http_digest.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c > CMakeFiles/libcurl_static.dir/http_digest.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_digest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_digest.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c -o CMakeFiles/libcurl_static.dir/http_digest.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_digest.c -o CMakeFiles/libcurl_static.dir/http_digest.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c
+lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c
 lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o -MF CMakeFiles/libcurl_static.dir/http_negotiate.c.o.d -o CMakeFiles/libcurl_static.dir/http_negotiate.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o -MF CMakeFiles/libcurl_static.dir/http_negotiate.c.o.d -o CMakeFiles/libcurl_static.dir/http_negotiate.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c
 
 lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_negotiate.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c > CMakeFiles/libcurl_static.dir/http_negotiate.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c > CMakeFiles/libcurl_static.dir/http_negotiate.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_negotiate.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c -o CMakeFiles/libcurl_static.dir/http_negotiate.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_negotiate.c -o CMakeFiles/libcurl_static.dir/http_negotiate.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c
+lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c
 lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o -MF CMakeFiles/libcurl_static.dir/http_ntlm.c.o.d -o CMakeFiles/libcurl_static.dir/http_ntlm.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o -MF CMakeFiles/libcurl_static.dir/http_ntlm.c.o.d -o CMakeFiles/libcurl_static.dir/http_ntlm.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c
 
 lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_ntlm.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c > CMakeFiles/libcurl_static.dir/http_ntlm.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c > CMakeFiles/libcurl_static.dir/http_ntlm.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_ntlm.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c -o CMakeFiles/libcurl_static.dir/http_ntlm.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_ntlm.c -o CMakeFiles/libcurl_static.dir/http_ntlm.c.s
 
 lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c
+lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c
 lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o -MF CMakeFiles/libcurl_static.dir/http_proxy.c.o.d -o CMakeFiles/libcurl_static.dir/http_proxy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o -MF CMakeFiles/libcurl_static.dir/http_proxy.c.o.d -o CMakeFiles/libcurl_static.dir/http_proxy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c
 
 lib/CMakeFiles/libcurl_static.dir/http_proxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/http_proxy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c > CMakeFiles/libcurl_static.dir/http_proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c > CMakeFiles/libcurl_static.dir/http_proxy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/http_proxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/http_proxy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c -o CMakeFiles/libcurl_static.dir/http_proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/http_proxy.c -o CMakeFiles/libcurl_static.dir/http_proxy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c
+lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c
 lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o -MF CMakeFiles/libcurl_static.dir/httpsrr.c.o.d -o CMakeFiles/libcurl_static.dir/httpsrr.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o -MF CMakeFiles/libcurl_static.dir/httpsrr.c.o.d -o CMakeFiles/libcurl_static.dir/httpsrr.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c
 
 lib/CMakeFiles/libcurl_static.dir/httpsrr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/httpsrr.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c > CMakeFiles/libcurl_static.dir/httpsrr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c > CMakeFiles/libcurl_static.dir/httpsrr.c.i
 
 lib/CMakeFiles/libcurl_static.dir/httpsrr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/httpsrr.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c -o CMakeFiles/libcurl_static.dir/httpsrr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/httpsrr.c -o CMakeFiles/libcurl_static.dir/httpsrr.c.s
 
 lib/CMakeFiles/libcurl_static.dir/idn.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/idn.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c
+lib/CMakeFiles/libcurl_static.dir/idn.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c
 lib/CMakeFiles/libcurl_static.dir/idn.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object lib/CMakeFiles/libcurl_static.dir/idn.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/idn.c.o -MF CMakeFiles/libcurl_static.dir/idn.c.o.d -o CMakeFiles/libcurl_static.dir/idn.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object lib/CMakeFiles/libcurl_static.dir/idn.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/idn.c.o -MF CMakeFiles/libcurl_static.dir/idn.c.o.d -o CMakeFiles/libcurl_static.dir/idn.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c
 
 lib/CMakeFiles/libcurl_static.dir/idn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/idn.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c > CMakeFiles/libcurl_static.dir/idn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c > CMakeFiles/libcurl_static.dir/idn.c.i
 
 lib/CMakeFiles/libcurl_static.dir/idn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/idn.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c -o CMakeFiles/libcurl_static.dir/idn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/idn.c -o CMakeFiles/libcurl_static.dir/idn.c.s
 
 lib/CMakeFiles/libcurl_static.dir/if2ip.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/if2ip.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c
+lib/CMakeFiles/libcurl_static.dir/if2ip.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c
 lib/CMakeFiles/libcurl_static.dir/if2ip.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object lib/CMakeFiles/libcurl_static.dir/if2ip.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/if2ip.c.o -MF CMakeFiles/libcurl_static.dir/if2ip.c.o.d -o CMakeFiles/libcurl_static.dir/if2ip.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object lib/CMakeFiles/libcurl_static.dir/if2ip.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/if2ip.c.o -MF CMakeFiles/libcurl_static.dir/if2ip.c.o.d -o CMakeFiles/libcurl_static.dir/if2ip.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c
 
 lib/CMakeFiles/libcurl_static.dir/if2ip.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/if2ip.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c > CMakeFiles/libcurl_static.dir/if2ip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c > CMakeFiles/libcurl_static.dir/if2ip.c.i
 
 lib/CMakeFiles/libcurl_static.dir/if2ip.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/if2ip.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c -o CMakeFiles/libcurl_static.dir/if2ip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/if2ip.c -o CMakeFiles/libcurl_static.dir/if2ip.c.s
 
 lib/CMakeFiles/libcurl_static.dir/imap.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/imap.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c
+lib/CMakeFiles/libcurl_static.dir/imap.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c
 lib/CMakeFiles/libcurl_static.dir/imap.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object lib/CMakeFiles/libcurl_static.dir/imap.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/imap.c.o -MF CMakeFiles/libcurl_static.dir/imap.c.o.d -o CMakeFiles/libcurl_static.dir/imap.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object lib/CMakeFiles/libcurl_static.dir/imap.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/imap.c.o -MF CMakeFiles/libcurl_static.dir/imap.c.o.d -o CMakeFiles/libcurl_static.dir/imap.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c
 
 lib/CMakeFiles/libcurl_static.dir/imap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/imap.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c > CMakeFiles/libcurl_static.dir/imap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c > CMakeFiles/libcurl_static.dir/imap.c.i
 
 lib/CMakeFiles/libcurl_static.dir/imap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/imap.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c -o CMakeFiles/libcurl_static.dir/imap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/imap.c -o CMakeFiles/libcurl_static.dir/imap.c.s
 
 lib/CMakeFiles/libcurl_static.dir/krb5.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/krb5.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c
+lib/CMakeFiles/libcurl_static.dir/krb5.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c
 lib/CMakeFiles/libcurl_static.dir/krb5.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object lib/CMakeFiles/libcurl_static.dir/krb5.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/krb5.c.o -MF CMakeFiles/libcurl_static.dir/krb5.c.o.d -o CMakeFiles/libcurl_static.dir/krb5.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object lib/CMakeFiles/libcurl_static.dir/krb5.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/krb5.c.o -MF CMakeFiles/libcurl_static.dir/krb5.c.o.d -o CMakeFiles/libcurl_static.dir/krb5.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c
 
 lib/CMakeFiles/libcurl_static.dir/krb5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/krb5.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c > CMakeFiles/libcurl_static.dir/krb5.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c > CMakeFiles/libcurl_static.dir/krb5.c.i
 
 lib/CMakeFiles/libcurl_static.dir/krb5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/krb5.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c -o CMakeFiles/libcurl_static.dir/krb5.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/krb5.c -o CMakeFiles/libcurl_static.dir/krb5.c.s
 
 lib/CMakeFiles/libcurl_static.dir/ldap.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/ldap.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c
+lib/CMakeFiles/libcurl_static.dir/ldap.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c
 lib/CMakeFiles/libcurl_static.dir/ldap.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object lib/CMakeFiles/libcurl_static.dir/ldap.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ldap.c.o -MF CMakeFiles/libcurl_static.dir/ldap.c.o.d -o CMakeFiles/libcurl_static.dir/ldap.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object lib/CMakeFiles/libcurl_static.dir/ldap.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ldap.c.o -MF CMakeFiles/libcurl_static.dir/ldap.c.o.d -o CMakeFiles/libcurl_static.dir/ldap.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c
 
 lib/CMakeFiles/libcurl_static.dir/ldap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/ldap.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c > CMakeFiles/libcurl_static.dir/ldap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c > CMakeFiles/libcurl_static.dir/ldap.c.i
 
 lib/CMakeFiles/libcurl_static.dir/ldap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/ldap.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c -o CMakeFiles/libcurl_static.dir/ldap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ldap.c -o CMakeFiles/libcurl_static.dir/ldap.c.s
 
 lib/CMakeFiles/libcurl_static.dir/llist.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/llist.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c
+lib/CMakeFiles/libcurl_static.dir/llist.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c
 lib/CMakeFiles/libcurl_static.dir/llist.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object lib/CMakeFiles/libcurl_static.dir/llist.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/llist.c.o -MF CMakeFiles/libcurl_static.dir/llist.c.o.d -o CMakeFiles/libcurl_static.dir/llist.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object lib/CMakeFiles/libcurl_static.dir/llist.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/llist.c.o -MF CMakeFiles/libcurl_static.dir/llist.c.o.d -o CMakeFiles/libcurl_static.dir/llist.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c
 
 lib/CMakeFiles/libcurl_static.dir/llist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/llist.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c > CMakeFiles/libcurl_static.dir/llist.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c > CMakeFiles/libcurl_static.dir/llist.c.i
 
 lib/CMakeFiles/libcurl_static.dir/llist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/llist.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c -o CMakeFiles/libcurl_static.dir/llist.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/llist.c -o CMakeFiles/libcurl_static.dir/llist.c.s
 
 lib/CMakeFiles/libcurl_static.dir/macos.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/macos.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c
+lib/CMakeFiles/libcurl_static.dir/macos.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c
 lib/CMakeFiles/libcurl_static.dir/macos.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object lib/CMakeFiles/libcurl_static.dir/macos.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/macos.c.o -MF CMakeFiles/libcurl_static.dir/macos.c.o.d -o CMakeFiles/libcurl_static.dir/macos.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object lib/CMakeFiles/libcurl_static.dir/macos.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/macos.c.o -MF CMakeFiles/libcurl_static.dir/macos.c.o.d -o CMakeFiles/libcurl_static.dir/macos.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c
 
 lib/CMakeFiles/libcurl_static.dir/macos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/macos.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c > CMakeFiles/libcurl_static.dir/macos.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c > CMakeFiles/libcurl_static.dir/macos.c.i
 
 lib/CMakeFiles/libcurl_static.dir/macos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/macos.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c -o CMakeFiles/libcurl_static.dir/macos.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/macos.c -o CMakeFiles/libcurl_static.dir/macos.c.s
 
 lib/CMakeFiles/libcurl_static.dir/md4.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/md4.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c
+lib/CMakeFiles/libcurl_static.dir/md4.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c
 lib/CMakeFiles/libcurl_static.dir/md4.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object lib/CMakeFiles/libcurl_static.dir/md4.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/md4.c.o -MF CMakeFiles/libcurl_static.dir/md4.c.o.d -o CMakeFiles/libcurl_static.dir/md4.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object lib/CMakeFiles/libcurl_static.dir/md4.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/md4.c.o -MF CMakeFiles/libcurl_static.dir/md4.c.o.d -o CMakeFiles/libcurl_static.dir/md4.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c
 
 lib/CMakeFiles/libcurl_static.dir/md4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/md4.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c > CMakeFiles/libcurl_static.dir/md4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c > CMakeFiles/libcurl_static.dir/md4.c.i
 
 lib/CMakeFiles/libcurl_static.dir/md4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/md4.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c -o CMakeFiles/libcurl_static.dir/md4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md4.c -o CMakeFiles/libcurl_static.dir/md4.c.s
 
 lib/CMakeFiles/libcurl_static.dir/md5.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/md5.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c
+lib/CMakeFiles/libcurl_static.dir/md5.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c
 lib/CMakeFiles/libcurl_static.dir/md5.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object lib/CMakeFiles/libcurl_static.dir/md5.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/md5.c.o -MF CMakeFiles/libcurl_static.dir/md5.c.o.d -o CMakeFiles/libcurl_static.dir/md5.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object lib/CMakeFiles/libcurl_static.dir/md5.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/md5.c.o -MF CMakeFiles/libcurl_static.dir/md5.c.o.d -o CMakeFiles/libcurl_static.dir/md5.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c
 
 lib/CMakeFiles/libcurl_static.dir/md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/md5.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c > CMakeFiles/libcurl_static.dir/md5.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c > CMakeFiles/libcurl_static.dir/md5.c.i
 
 lib/CMakeFiles/libcurl_static.dir/md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/md5.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c -o CMakeFiles/libcurl_static.dir/md5.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/md5.c -o CMakeFiles/libcurl_static.dir/md5.c.s
 
 lib/CMakeFiles/libcurl_static.dir/memdebug.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/memdebug.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c
+lib/CMakeFiles/libcurl_static.dir/memdebug.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c
 lib/CMakeFiles/libcurl_static.dir/memdebug.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object lib/CMakeFiles/libcurl_static.dir/memdebug.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/memdebug.c.o -MF CMakeFiles/libcurl_static.dir/memdebug.c.o.d -o CMakeFiles/libcurl_static.dir/memdebug.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object lib/CMakeFiles/libcurl_static.dir/memdebug.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/memdebug.c.o -MF CMakeFiles/libcurl_static.dir/memdebug.c.o.d -o CMakeFiles/libcurl_static.dir/memdebug.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c
 
 lib/CMakeFiles/libcurl_static.dir/memdebug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/memdebug.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c > CMakeFiles/libcurl_static.dir/memdebug.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c > CMakeFiles/libcurl_static.dir/memdebug.c.i
 
 lib/CMakeFiles/libcurl_static.dir/memdebug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/memdebug.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c -o CMakeFiles/libcurl_static.dir/memdebug.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/memdebug.c -o CMakeFiles/libcurl_static.dir/memdebug.c.s
 
 lib/CMakeFiles/libcurl_static.dir/mime.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/mime.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c
+lib/CMakeFiles/libcurl_static.dir/mime.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c
 lib/CMakeFiles/libcurl_static.dir/mime.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object lib/CMakeFiles/libcurl_static.dir/mime.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mime.c.o -MF CMakeFiles/libcurl_static.dir/mime.c.o.d -o CMakeFiles/libcurl_static.dir/mime.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object lib/CMakeFiles/libcurl_static.dir/mime.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mime.c.o -MF CMakeFiles/libcurl_static.dir/mime.c.o.d -o CMakeFiles/libcurl_static.dir/mime.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c
 
 lib/CMakeFiles/libcurl_static.dir/mime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/mime.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c > CMakeFiles/libcurl_static.dir/mime.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c > CMakeFiles/libcurl_static.dir/mime.c.i
 
 lib/CMakeFiles/libcurl_static.dir/mime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/mime.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c -o CMakeFiles/libcurl_static.dir/mime.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mime.c -o CMakeFiles/libcurl_static.dir/mime.c.s
 
 lib/CMakeFiles/libcurl_static.dir/mprintf.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/mprintf.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c
+lib/CMakeFiles/libcurl_static.dir/mprintf.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c
 lib/CMakeFiles/libcurl_static.dir/mprintf.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object lib/CMakeFiles/libcurl_static.dir/mprintf.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mprintf.c.o -MF CMakeFiles/libcurl_static.dir/mprintf.c.o.d -o CMakeFiles/libcurl_static.dir/mprintf.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object lib/CMakeFiles/libcurl_static.dir/mprintf.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mprintf.c.o -MF CMakeFiles/libcurl_static.dir/mprintf.c.o.d -o CMakeFiles/libcurl_static.dir/mprintf.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c
 
 lib/CMakeFiles/libcurl_static.dir/mprintf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/mprintf.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c > CMakeFiles/libcurl_static.dir/mprintf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c > CMakeFiles/libcurl_static.dir/mprintf.c.i
 
 lib/CMakeFiles/libcurl_static.dir/mprintf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/mprintf.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c -o CMakeFiles/libcurl_static.dir/mprintf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mprintf.c -o CMakeFiles/libcurl_static.dir/mprintf.c.s
 
 lib/CMakeFiles/libcurl_static.dir/mqtt.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/mqtt.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c
+lib/CMakeFiles/libcurl_static.dir/mqtt.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c
 lib/CMakeFiles/libcurl_static.dir/mqtt.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object lib/CMakeFiles/libcurl_static.dir/mqtt.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mqtt.c.o -MF CMakeFiles/libcurl_static.dir/mqtt.c.o.d -o CMakeFiles/libcurl_static.dir/mqtt.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object lib/CMakeFiles/libcurl_static.dir/mqtt.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/mqtt.c.o -MF CMakeFiles/libcurl_static.dir/mqtt.c.o.d -o CMakeFiles/libcurl_static.dir/mqtt.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c
 
 lib/CMakeFiles/libcurl_static.dir/mqtt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/mqtt.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c > CMakeFiles/libcurl_static.dir/mqtt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c > CMakeFiles/libcurl_static.dir/mqtt.c.i
 
 lib/CMakeFiles/libcurl_static.dir/mqtt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/mqtt.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c -o CMakeFiles/libcurl_static.dir/mqtt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/mqtt.c -o CMakeFiles/libcurl_static.dir/mqtt.c.s
 
 lib/CMakeFiles/libcurl_static.dir/multi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/multi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c
+lib/CMakeFiles/libcurl_static.dir/multi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c
 lib/CMakeFiles/libcurl_static.dir/multi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object lib/CMakeFiles/libcurl_static.dir/multi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/multi.c.o -MF CMakeFiles/libcurl_static.dir/multi.c.o.d -o CMakeFiles/libcurl_static.dir/multi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object lib/CMakeFiles/libcurl_static.dir/multi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/multi.c.o -MF CMakeFiles/libcurl_static.dir/multi.c.o.d -o CMakeFiles/libcurl_static.dir/multi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c
 
 lib/CMakeFiles/libcurl_static.dir/multi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/multi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c > CMakeFiles/libcurl_static.dir/multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c > CMakeFiles/libcurl_static.dir/multi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/multi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/multi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c -o CMakeFiles/libcurl_static.dir/multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi.c -o CMakeFiles/libcurl_static.dir/multi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c
+lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c
 lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o -MF CMakeFiles/libcurl_static.dir/multi_ev.c.o.d -o CMakeFiles/libcurl_static.dir/multi_ev.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o -MF CMakeFiles/libcurl_static.dir/multi_ev.c.o.d -o CMakeFiles/libcurl_static.dir/multi_ev.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c
 
 lib/CMakeFiles/libcurl_static.dir/multi_ev.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/multi_ev.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c > CMakeFiles/libcurl_static.dir/multi_ev.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c > CMakeFiles/libcurl_static.dir/multi_ev.c.i
 
 lib/CMakeFiles/libcurl_static.dir/multi_ev.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/multi_ev.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c -o CMakeFiles/libcurl_static.dir/multi_ev.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/multi_ev.c -o CMakeFiles/libcurl_static.dir/multi_ev.c.s
 
 lib/CMakeFiles/libcurl_static.dir/netrc.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/netrc.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c
+lib/CMakeFiles/libcurl_static.dir/netrc.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c
 lib/CMakeFiles/libcurl_static.dir/netrc.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object lib/CMakeFiles/libcurl_static.dir/netrc.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/netrc.c.o -MF CMakeFiles/libcurl_static.dir/netrc.c.o.d -o CMakeFiles/libcurl_static.dir/netrc.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object lib/CMakeFiles/libcurl_static.dir/netrc.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/netrc.c.o -MF CMakeFiles/libcurl_static.dir/netrc.c.o.d -o CMakeFiles/libcurl_static.dir/netrc.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c
 
 lib/CMakeFiles/libcurl_static.dir/netrc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/netrc.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c > CMakeFiles/libcurl_static.dir/netrc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c > CMakeFiles/libcurl_static.dir/netrc.c.i
 
 lib/CMakeFiles/libcurl_static.dir/netrc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/netrc.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c -o CMakeFiles/libcurl_static.dir/netrc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/netrc.c -o CMakeFiles/libcurl_static.dir/netrc.c.s
 
 lib/CMakeFiles/libcurl_static.dir/noproxy.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/noproxy.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c
+lib/CMakeFiles/libcurl_static.dir/noproxy.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c
 lib/CMakeFiles/libcurl_static.dir/noproxy.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object lib/CMakeFiles/libcurl_static.dir/noproxy.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/noproxy.c.o -MF CMakeFiles/libcurl_static.dir/noproxy.c.o.d -o CMakeFiles/libcurl_static.dir/noproxy.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object lib/CMakeFiles/libcurl_static.dir/noproxy.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/noproxy.c.o -MF CMakeFiles/libcurl_static.dir/noproxy.c.o.d -o CMakeFiles/libcurl_static.dir/noproxy.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c
 
 lib/CMakeFiles/libcurl_static.dir/noproxy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/noproxy.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c > CMakeFiles/libcurl_static.dir/noproxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c > CMakeFiles/libcurl_static.dir/noproxy.c.i
 
 lib/CMakeFiles/libcurl_static.dir/noproxy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/noproxy.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c -o CMakeFiles/libcurl_static.dir/noproxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/noproxy.c -o CMakeFiles/libcurl_static.dir/noproxy.c.s
 
 lib/CMakeFiles/libcurl_static.dir/openldap.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/openldap.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c
+lib/CMakeFiles/libcurl_static.dir/openldap.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c
 lib/CMakeFiles/libcurl_static.dir/openldap.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object lib/CMakeFiles/libcurl_static.dir/openldap.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/openldap.c.o -MF CMakeFiles/libcurl_static.dir/openldap.c.o.d -o CMakeFiles/libcurl_static.dir/openldap.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object lib/CMakeFiles/libcurl_static.dir/openldap.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/openldap.c.o -MF CMakeFiles/libcurl_static.dir/openldap.c.o.d -o CMakeFiles/libcurl_static.dir/openldap.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c
 
 lib/CMakeFiles/libcurl_static.dir/openldap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/openldap.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c > CMakeFiles/libcurl_static.dir/openldap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c > CMakeFiles/libcurl_static.dir/openldap.c.i
 
 lib/CMakeFiles/libcurl_static.dir/openldap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/openldap.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c -o CMakeFiles/libcurl_static.dir/openldap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/openldap.c -o CMakeFiles/libcurl_static.dir/openldap.c.s
 
 lib/CMakeFiles/libcurl_static.dir/parsedate.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/parsedate.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c
+lib/CMakeFiles/libcurl_static.dir/parsedate.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c
 lib/CMakeFiles/libcurl_static.dir/parsedate.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object lib/CMakeFiles/libcurl_static.dir/parsedate.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/parsedate.c.o -MF CMakeFiles/libcurl_static.dir/parsedate.c.o.d -o CMakeFiles/libcurl_static.dir/parsedate.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object lib/CMakeFiles/libcurl_static.dir/parsedate.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/parsedate.c.o -MF CMakeFiles/libcurl_static.dir/parsedate.c.o.d -o CMakeFiles/libcurl_static.dir/parsedate.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c
 
 lib/CMakeFiles/libcurl_static.dir/parsedate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/parsedate.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c > CMakeFiles/libcurl_static.dir/parsedate.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c > CMakeFiles/libcurl_static.dir/parsedate.c.i
 
 lib/CMakeFiles/libcurl_static.dir/parsedate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/parsedate.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c -o CMakeFiles/libcurl_static.dir/parsedate.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/parsedate.c -o CMakeFiles/libcurl_static.dir/parsedate.c.s
 
 lib/CMakeFiles/libcurl_static.dir/pingpong.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/pingpong.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c
+lib/CMakeFiles/libcurl_static.dir/pingpong.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c
 lib/CMakeFiles/libcurl_static.dir/pingpong.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object lib/CMakeFiles/libcurl_static.dir/pingpong.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/pingpong.c.o -MF CMakeFiles/libcurl_static.dir/pingpong.c.o.d -o CMakeFiles/libcurl_static.dir/pingpong.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object lib/CMakeFiles/libcurl_static.dir/pingpong.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/pingpong.c.o -MF CMakeFiles/libcurl_static.dir/pingpong.c.o.d -o CMakeFiles/libcurl_static.dir/pingpong.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c
 
 lib/CMakeFiles/libcurl_static.dir/pingpong.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/pingpong.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c > CMakeFiles/libcurl_static.dir/pingpong.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c > CMakeFiles/libcurl_static.dir/pingpong.c.i
 
 lib/CMakeFiles/libcurl_static.dir/pingpong.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/pingpong.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c -o CMakeFiles/libcurl_static.dir/pingpong.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pingpong.c -o CMakeFiles/libcurl_static.dir/pingpong.c.s
 
 lib/CMakeFiles/libcurl_static.dir/pop3.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/pop3.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c
+lib/CMakeFiles/libcurl_static.dir/pop3.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c
 lib/CMakeFiles/libcurl_static.dir/pop3.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object lib/CMakeFiles/libcurl_static.dir/pop3.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/pop3.c.o -MF CMakeFiles/libcurl_static.dir/pop3.c.o.d -o CMakeFiles/libcurl_static.dir/pop3.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object lib/CMakeFiles/libcurl_static.dir/pop3.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/pop3.c.o -MF CMakeFiles/libcurl_static.dir/pop3.c.o.d -o CMakeFiles/libcurl_static.dir/pop3.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c
 
 lib/CMakeFiles/libcurl_static.dir/pop3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/pop3.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c > CMakeFiles/libcurl_static.dir/pop3.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c > CMakeFiles/libcurl_static.dir/pop3.c.i
 
 lib/CMakeFiles/libcurl_static.dir/pop3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/pop3.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c -o CMakeFiles/libcurl_static.dir/pop3.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/pop3.c -o CMakeFiles/libcurl_static.dir/pop3.c.s
 
 lib/CMakeFiles/libcurl_static.dir/progress.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/progress.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c
+lib/CMakeFiles/libcurl_static.dir/progress.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c
 lib/CMakeFiles/libcurl_static.dir/progress.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object lib/CMakeFiles/libcurl_static.dir/progress.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/progress.c.o -MF CMakeFiles/libcurl_static.dir/progress.c.o.d -o CMakeFiles/libcurl_static.dir/progress.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object lib/CMakeFiles/libcurl_static.dir/progress.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/progress.c.o -MF CMakeFiles/libcurl_static.dir/progress.c.o.d -o CMakeFiles/libcurl_static.dir/progress.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c
 
 lib/CMakeFiles/libcurl_static.dir/progress.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/progress.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c > CMakeFiles/libcurl_static.dir/progress.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c > CMakeFiles/libcurl_static.dir/progress.c.i
 
 lib/CMakeFiles/libcurl_static.dir/progress.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/progress.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c -o CMakeFiles/libcurl_static.dir/progress.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/progress.c -o CMakeFiles/libcurl_static.dir/progress.c.s
 
 lib/CMakeFiles/libcurl_static.dir/psl.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/psl.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c
+lib/CMakeFiles/libcurl_static.dir/psl.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c
 lib/CMakeFiles/libcurl_static.dir/psl.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object lib/CMakeFiles/libcurl_static.dir/psl.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/psl.c.o -MF CMakeFiles/libcurl_static.dir/psl.c.o.d -o CMakeFiles/libcurl_static.dir/psl.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object lib/CMakeFiles/libcurl_static.dir/psl.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/psl.c.o -MF CMakeFiles/libcurl_static.dir/psl.c.o.d -o CMakeFiles/libcurl_static.dir/psl.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c
 
 lib/CMakeFiles/libcurl_static.dir/psl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/psl.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c > CMakeFiles/libcurl_static.dir/psl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c > CMakeFiles/libcurl_static.dir/psl.c.i
 
 lib/CMakeFiles/libcurl_static.dir/psl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/psl.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c -o CMakeFiles/libcurl_static.dir/psl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/psl.c -o CMakeFiles/libcurl_static.dir/psl.c.s
 
 lib/CMakeFiles/libcurl_static.dir/rand.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/rand.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c
+lib/CMakeFiles/libcurl_static.dir/rand.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c
 lib/CMakeFiles/libcurl_static.dir/rand.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object lib/CMakeFiles/libcurl_static.dir/rand.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rand.c.o -MF CMakeFiles/libcurl_static.dir/rand.c.o.d -o CMakeFiles/libcurl_static.dir/rand.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object lib/CMakeFiles/libcurl_static.dir/rand.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rand.c.o -MF CMakeFiles/libcurl_static.dir/rand.c.o.d -o CMakeFiles/libcurl_static.dir/rand.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c
 
 lib/CMakeFiles/libcurl_static.dir/rand.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/rand.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c > CMakeFiles/libcurl_static.dir/rand.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c > CMakeFiles/libcurl_static.dir/rand.c.i
 
 lib/CMakeFiles/libcurl_static.dir/rand.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/rand.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c -o CMakeFiles/libcurl_static.dir/rand.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rand.c -o CMakeFiles/libcurl_static.dir/rand.c.s
 
 lib/CMakeFiles/libcurl_static.dir/rename.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/rename.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c
+lib/CMakeFiles/libcurl_static.dir/rename.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c
 lib/CMakeFiles/libcurl_static.dir/rename.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object lib/CMakeFiles/libcurl_static.dir/rename.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rename.c.o -MF CMakeFiles/libcurl_static.dir/rename.c.o.d -o CMakeFiles/libcurl_static.dir/rename.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object lib/CMakeFiles/libcurl_static.dir/rename.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rename.c.o -MF CMakeFiles/libcurl_static.dir/rename.c.o.d -o CMakeFiles/libcurl_static.dir/rename.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c
 
 lib/CMakeFiles/libcurl_static.dir/rename.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/rename.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c > CMakeFiles/libcurl_static.dir/rename.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c > CMakeFiles/libcurl_static.dir/rename.c.i
 
 lib/CMakeFiles/libcurl_static.dir/rename.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/rename.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c -o CMakeFiles/libcurl_static.dir/rename.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rename.c -o CMakeFiles/libcurl_static.dir/rename.c.s
 
 lib/CMakeFiles/libcurl_static.dir/request.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/request.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c
+lib/CMakeFiles/libcurl_static.dir/request.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c
 lib/CMakeFiles/libcurl_static.dir/request.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object lib/CMakeFiles/libcurl_static.dir/request.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/request.c.o -MF CMakeFiles/libcurl_static.dir/request.c.o.d -o CMakeFiles/libcurl_static.dir/request.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object lib/CMakeFiles/libcurl_static.dir/request.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/request.c.o -MF CMakeFiles/libcurl_static.dir/request.c.o.d -o CMakeFiles/libcurl_static.dir/request.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c
 
 lib/CMakeFiles/libcurl_static.dir/request.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/request.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c > CMakeFiles/libcurl_static.dir/request.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c > CMakeFiles/libcurl_static.dir/request.c.i
 
 lib/CMakeFiles/libcurl_static.dir/request.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/request.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c -o CMakeFiles/libcurl_static.dir/request.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/request.c -o CMakeFiles/libcurl_static.dir/request.c.s
 
 lib/CMakeFiles/libcurl_static.dir/rtsp.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/rtsp.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c
+lib/CMakeFiles/libcurl_static.dir/rtsp.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c
 lib/CMakeFiles/libcurl_static.dir/rtsp.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object lib/CMakeFiles/libcurl_static.dir/rtsp.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rtsp.c.o -MF CMakeFiles/libcurl_static.dir/rtsp.c.o.d -o CMakeFiles/libcurl_static.dir/rtsp.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object lib/CMakeFiles/libcurl_static.dir/rtsp.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/rtsp.c.o -MF CMakeFiles/libcurl_static.dir/rtsp.c.o.d -o CMakeFiles/libcurl_static.dir/rtsp.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c
 
 lib/CMakeFiles/libcurl_static.dir/rtsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/rtsp.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c > CMakeFiles/libcurl_static.dir/rtsp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c > CMakeFiles/libcurl_static.dir/rtsp.c.i
 
 lib/CMakeFiles/libcurl_static.dir/rtsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/rtsp.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c -o CMakeFiles/libcurl_static.dir/rtsp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/rtsp.c -o CMakeFiles/libcurl_static.dir/rtsp.c.s
 
 lib/CMakeFiles/libcurl_static.dir/select.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/select.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c
+lib/CMakeFiles/libcurl_static.dir/select.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c
 lib/CMakeFiles/libcurl_static.dir/select.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object lib/CMakeFiles/libcurl_static.dir/select.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/select.c.o -MF CMakeFiles/libcurl_static.dir/select.c.o.d -o CMakeFiles/libcurl_static.dir/select.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object lib/CMakeFiles/libcurl_static.dir/select.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/select.c.o -MF CMakeFiles/libcurl_static.dir/select.c.o.d -o CMakeFiles/libcurl_static.dir/select.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c
 
 lib/CMakeFiles/libcurl_static.dir/select.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/select.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c > CMakeFiles/libcurl_static.dir/select.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c > CMakeFiles/libcurl_static.dir/select.c.i
 
 lib/CMakeFiles/libcurl_static.dir/select.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/select.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c -o CMakeFiles/libcurl_static.dir/select.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/select.c -o CMakeFiles/libcurl_static.dir/select.c.s
 
 lib/CMakeFiles/libcurl_static.dir/sendf.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/sendf.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c
+lib/CMakeFiles/libcurl_static.dir/sendf.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c
 lib/CMakeFiles/libcurl_static.dir/sendf.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object lib/CMakeFiles/libcurl_static.dir/sendf.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/sendf.c.o -MF CMakeFiles/libcurl_static.dir/sendf.c.o.d -o CMakeFiles/libcurl_static.dir/sendf.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object lib/CMakeFiles/libcurl_static.dir/sendf.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/sendf.c.o -MF CMakeFiles/libcurl_static.dir/sendf.c.o.d -o CMakeFiles/libcurl_static.dir/sendf.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c
 
 lib/CMakeFiles/libcurl_static.dir/sendf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/sendf.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c > CMakeFiles/libcurl_static.dir/sendf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c > CMakeFiles/libcurl_static.dir/sendf.c.i
 
 lib/CMakeFiles/libcurl_static.dir/sendf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/sendf.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c -o CMakeFiles/libcurl_static.dir/sendf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sendf.c -o CMakeFiles/libcurl_static.dir/sendf.c.s
 
 lib/CMakeFiles/libcurl_static.dir/setopt.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/setopt.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c
+lib/CMakeFiles/libcurl_static.dir/setopt.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c
 lib/CMakeFiles/libcurl_static.dir/setopt.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object lib/CMakeFiles/libcurl_static.dir/setopt.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/setopt.c.o -MF CMakeFiles/libcurl_static.dir/setopt.c.o.d -o CMakeFiles/libcurl_static.dir/setopt.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object lib/CMakeFiles/libcurl_static.dir/setopt.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/setopt.c.o -MF CMakeFiles/libcurl_static.dir/setopt.c.o.d -o CMakeFiles/libcurl_static.dir/setopt.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c
 
 lib/CMakeFiles/libcurl_static.dir/setopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/setopt.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c > CMakeFiles/libcurl_static.dir/setopt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c > CMakeFiles/libcurl_static.dir/setopt.c.i
 
 lib/CMakeFiles/libcurl_static.dir/setopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/setopt.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c -o CMakeFiles/libcurl_static.dir/setopt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/setopt.c -o CMakeFiles/libcurl_static.dir/setopt.c.s
 
 lib/CMakeFiles/libcurl_static.dir/sha256.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/sha256.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c
+lib/CMakeFiles/libcurl_static.dir/sha256.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c
 lib/CMakeFiles/libcurl_static.dir/sha256.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object lib/CMakeFiles/libcurl_static.dir/sha256.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/sha256.c.o -MF CMakeFiles/libcurl_static.dir/sha256.c.o.d -o CMakeFiles/libcurl_static.dir/sha256.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object lib/CMakeFiles/libcurl_static.dir/sha256.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/sha256.c.o -MF CMakeFiles/libcurl_static.dir/sha256.c.o.d -o CMakeFiles/libcurl_static.dir/sha256.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c
 
 lib/CMakeFiles/libcurl_static.dir/sha256.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/sha256.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c > CMakeFiles/libcurl_static.dir/sha256.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c > CMakeFiles/libcurl_static.dir/sha256.c.i
 
 lib/CMakeFiles/libcurl_static.dir/sha256.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/sha256.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c -o CMakeFiles/libcurl_static.dir/sha256.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/sha256.c -o CMakeFiles/libcurl_static.dir/sha256.c.s
 
 lib/CMakeFiles/libcurl_static.dir/share.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/share.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c
+lib/CMakeFiles/libcurl_static.dir/share.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c
 lib/CMakeFiles/libcurl_static.dir/share.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object lib/CMakeFiles/libcurl_static.dir/share.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/share.c.o -MF CMakeFiles/libcurl_static.dir/share.c.o.d -o CMakeFiles/libcurl_static.dir/share.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object lib/CMakeFiles/libcurl_static.dir/share.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/share.c.o -MF CMakeFiles/libcurl_static.dir/share.c.o.d -o CMakeFiles/libcurl_static.dir/share.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c
 
 lib/CMakeFiles/libcurl_static.dir/share.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/share.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c > CMakeFiles/libcurl_static.dir/share.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c > CMakeFiles/libcurl_static.dir/share.c.i
 
 lib/CMakeFiles/libcurl_static.dir/share.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/share.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c -o CMakeFiles/libcurl_static.dir/share.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/share.c -o CMakeFiles/libcurl_static.dir/share.c.s
 
 lib/CMakeFiles/libcurl_static.dir/slist.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/slist.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c
+lib/CMakeFiles/libcurl_static.dir/slist.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c
 lib/CMakeFiles/libcurl_static.dir/slist.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object lib/CMakeFiles/libcurl_static.dir/slist.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/slist.c.o -MF CMakeFiles/libcurl_static.dir/slist.c.o.d -o CMakeFiles/libcurl_static.dir/slist.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object lib/CMakeFiles/libcurl_static.dir/slist.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/slist.c.o -MF CMakeFiles/libcurl_static.dir/slist.c.o.d -o CMakeFiles/libcurl_static.dir/slist.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c
 
 lib/CMakeFiles/libcurl_static.dir/slist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/slist.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c > CMakeFiles/libcurl_static.dir/slist.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c > CMakeFiles/libcurl_static.dir/slist.c.i
 
 lib/CMakeFiles/libcurl_static.dir/slist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/slist.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c -o CMakeFiles/libcurl_static.dir/slist.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/slist.c -o CMakeFiles/libcurl_static.dir/slist.c.s
 
 lib/CMakeFiles/libcurl_static.dir/smb.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/smb.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c
+lib/CMakeFiles/libcurl_static.dir/smb.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c
 lib/CMakeFiles/libcurl_static.dir/smb.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object lib/CMakeFiles/libcurl_static.dir/smb.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/smb.c.o -MF CMakeFiles/libcurl_static.dir/smb.c.o.d -o CMakeFiles/libcurl_static.dir/smb.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object lib/CMakeFiles/libcurl_static.dir/smb.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/smb.c.o -MF CMakeFiles/libcurl_static.dir/smb.c.o.d -o CMakeFiles/libcurl_static.dir/smb.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c
 
 lib/CMakeFiles/libcurl_static.dir/smb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/smb.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c > CMakeFiles/libcurl_static.dir/smb.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c > CMakeFiles/libcurl_static.dir/smb.c.i
 
 lib/CMakeFiles/libcurl_static.dir/smb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/smb.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c -o CMakeFiles/libcurl_static.dir/smb.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smb.c -o CMakeFiles/libcurl_static.dir/smb.c.s
 
 lib/CMakeFiles/libcurl_static.dir/smtp.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/smtp.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c
+lib/CMakeFiles/libcurl_static.dir/smtp.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c
 lib/CMakeFiles/libcurl_static.dir/smtp.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object lib/CMakeFiles/libcurl_static.dir/smtp.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/smtp.c.o -MF CMakeFiles/libcurl_static.dir/smtp.c.o.d -o CMakeFiles/libcurl_static.dir/smtp.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object lib/CMakeFiles/libcurl_static.dir/smtp.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/smtp.c.o -MF CMakeFiles/libcurl_static.dir/smtp.c.o.d -o CMakeFiles/libcurl_static.dir/smtp.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c
 
 lib/CMakeFiles/libcurl_static.dir/smtp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/smtp.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c > CMakeFiles/libcurl_static.dir/smtp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c > CMakeFiles/libcurl_static.dir/smtp.c.i
 
 lib/CMakeFiles/libcurl_static.dir/smtp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/smtp.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c -o CMakeFiles/libcurl_static.dir/smtp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/smtp.c -o CMakeFiles/libcurl_static.dir/smtp.c.s
 
 lib/CMakeFiles/libcurl_static.dir/socketpair.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/socketpair.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c
+lib/CMakeFiles/libcurl_static.dir/socketpair.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c
 lib/CMakeFiles/libcurl_static.dir/socketpair.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object lib/CMakeFiles/libcurl_static.dir/socketpair.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socketpair.c.o -MF CMakeFiles/libcurl_static.dir/socketpair.c.o.d -o CMakeFiles/libcurl_static.dir/socketpair.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object lib/CMakeFiles/libcurl_static.dir/socketpair.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socketpair.c.o -MF CMakeFiles/libcurl_static.dir/socketpair.c.o.d -o CMakeFiles/libcurl_static.dir/socketpair.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c
 
 lib/CMakeFiles/libcurl_static.dir/socketpair.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/socketpair.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c > CMakeFiles/libcurl_static.dir/socketpair.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c > CMakeFiles/libcurl_static.dir/socketpair.c.i
 
 lib/CMakeFiles/libcurl_static.dir/socketpair.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/socketpair.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c -o CMakeFiles/libcurl_static.dir/socketpair.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socketpair.c -o CMakeFiles/libcurl_static.dir/socketpair.c.s
 
 lib/CMakeFiles/libcurl_static.dir/socks.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/socks.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c
+lib/CMakeFiles/libcurl_static.dir/socks.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c
 lib/CMakeFiles/libcurl_static.dir/socks.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object lib/CMakeFiles/libcurl_static.dir/socks.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks.c.o -MF CMakeFiles/libcurl_static.dir/socks.c.o.d -o CMakeFiles/libcurl_static.dir/socks.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object lib/CMakeFiles/libcurl_static.dir/socks.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks.c.o -MF CMakeFiles/libcurl_static.dir/socks.c.o.d -o CMakeFiles/libcurl_static.dir/socks.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c
 
 lib/CMakeFiles/libcurl_static.dir/socks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/socks.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c > CMakeFiles/libcurl_static.dir/socks.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c > CMakeFiles/libcurl_static.dir/socks.c.i
 
 lib/CMakeFiles/libcurl_static.dir/socks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/socks.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c -o CMakeFiles/libcurl_static.dir/socks.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks.c -o CMakeFiles/libcurl_static.dir/socks.c.s
 
 lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c
+lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c
 lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/socks_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/socks_gssapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/socks_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/socks_gssapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c
 
 lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/socks_gssapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c > CMakeFiles/libcurl_static.dir/socks_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c > CMakeFiles/libcurl_static.dir/socks_gssapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/socks_gssapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c -o CMakeFiles/libcurl_static.dir/socks_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_gssapi.c -o CMakeFiles/libcurl_static.dir/socks_gssapi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c
+lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c
 lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o -MF CMakeFiles/libcurl_static.dir/socks_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/socks_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o -MF CMakeFiles/libcurl_static.dir/socks_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/socks_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/socks_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c > CMakeFiles/libcurl_static.dir/socks_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c > CMakeFiles/libcurl_static.dir/socks_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/socks_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c -o CMakeFiles/libcurl_static.dir/socks_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/socks_sspi.c -o CMakeFiles/libcurl_static.dir/socks_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c
+lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c
 lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o -MF CMakeFiles/libcurl_static.dir/speedcheck.c.o.d -o CMakeFiles/libcurl_static.dir/speedcheck.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o -MF CMakeFiles/libcurl_static.dir/speedcheck.c.o.d -o CMakeFiles/libcurl_static.dir/speedcheck.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c
 
 lib/CMakeFiles/libcurl_static.dir/speedcheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/speedcheck.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c > CMakeFiles/libcurl_static.dir/speedcheck.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c > CMakeFiles/libcurl_static.dir/speedcheck.c.i
 
 lib/CMakeFiles/libcurl_static.dir/speedcheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/speedcheck.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c -o CMakeFiles/libcurl_static.dir/speedcheck.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/speedcheck.c -o CMakeFiles/libcurl_static.dir/speedcheck.c.s
 
 lib/CMakeFiles/libcurl_static.dir/splay.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/splay.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c
+lib/CMakeFiles/libcurl_static.dir/splay.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c
 lib/CMakeFiles/libcurl_static.dir/splay.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object lib/CMakeFiles/libcurl_static.dir/splay.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/splay.c.o -MF CMakeFiles/libcurl_static.dir/splay.c.o.d -o CMakeFiles/libcurl_static.dir/splay.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object lib/CMakeFiles/libcurl_static.dir/splay.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/splay.c.o -MF CMakeFiles/libcurl_static.dir/splay.c.o.d -o CMakeFiles/libcurl_static.dir/splay.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c
 
 lib/CMakeFiles/libcurl_static.dir/splay.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/splay.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c > CMakeFiles/libcurl_static.dir/splay.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c > CMakeFiles/libcurl_static.dir/splay.c.i
 
 lib/CMakeFiles/libcurl_static.dir/splay.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/splay.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c -o CMakeFiles/libcurl_static.dir/splay.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/splay.c -o CMakeFiles/libcurl_static.dir/splay.c.s
 
 lib/CMakeFiles/libcurl_static.dir/strcase.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/strcase.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c
+lib/CMakeFiles/libcurl_static.dir/strcase.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c
 lib/CMakeFiles/libcurl_static.dir/strcase.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object lib/CMakeFiles/libcurl_static.dir/strcase.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strcase.c.o -MF CMakeFiles/libcurl_static.dir/strcase.c.o.d -o CMakeFiles/libcurl_static.dir/strcase.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object lib/CMakeFiles/libcurl_static.dir/strcase.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strcase.c.o -MF CMakeFiles/libcurl_static.dir/strcase.c.o.d -o CMakeFiles/libcurl_static.dir/strcase.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c
 
 lib/CMakeFiles/libcurl_static.dir/strcase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/strcase.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c > CMakeFiles/libcurl_static.dir/strcase.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c > CMakeFiles/libcurl_static.dir/strcase.c.i
 
 lib/CMakeFiles/libcurl_static.dir/strcase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/strcase.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c -o CMakeFiles/libcurl_static.dir/strcase.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strcase.c -o CMakeFiles/libcurl_static.dir/strcase.c.s
 
 lib/CMakeFiles/libcurl_static.dir/strdup.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/strdup.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c
+lib/CMakeFiles/libcurl_static.dir/strdup.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c
 lib/CMakeFiles/libcurl_static.dir/strdup.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object lib/CMakeFiles/libcurl_static.dir/strdup.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strdup.c.o -MF CMakeFiles/libcurl_static.dir/strdup.c.o.d -o CMakeFiles/libcurl_static.dir/strdup.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object lib/CMakeFiles/libcurl_static.dir/strdup.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strdup.c.o -MF CMakeFiles/libcurl_static.dir/strdup.c.o.d -o CMakeFiles/libcurl_static.dir/strdup.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c
 
 lib/CMakeFiles/libcurl_static.dir/strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/strdup.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c > CMakeFiles/libcurl_static.dir/strdup.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c > CMakeFiles/libcurl_static.dir/strdup.c.i
 
 lib/CMakeFiles/libcurl_static.dir/strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/strdup.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c -o CMakeFiles/libcurl_static.dir/strdup.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strdup.c -o CMakeFiles/libcurl_static.dir/strdup.c.s
 
 lib/CMakeFiles/libcurl_static.dir/strequal.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/strequal.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c
+lib/CMakeFiles/libcurl_static.dir/strequal.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c
 lib/CMakeFiles/libcurl_static.dir/strequal.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object lib/CMakeFiles/libcurl_static.dir/strequal.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strequal.c.o -MF CMakeFiles/libcurl_static.dir/strequal.c.o.d -o CMakeFiles/libcurl_static.dir/strequal.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object lib/CMakeFiles/libcurl_static.dir/strequal.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strequal.c.o -MF CMakeFiles/libcurl_static.dir/strequal.c.o.d -o CMakeFiles/libcurl_static.dir/strequal.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c
 
 lib/CMakeFiles/libcurl_static.dir/strequal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/strequal.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c > CMakeFiles/libcurl_static.dir/strequal.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c > CMakeFiles/libcurl_static.dir/strequal.c.i
 
 lib/CMakeFiles/libcurl_static.dir/strequal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/strequal.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c -o CMakeFiles/libcurl_static.dir/strequal.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strequal.c -o CMakeFiles/libcurl_static.dir/strequal.c.s
 
 lib/CMakeFiles/libcurl_static.dir/strerror.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/strerror.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c
+lib/CMakeFiles/libcurl_static.dir/strerror.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c
 lib/CMakeFiles/libcurl_static.dir/strerror.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object lib/CMakeFiles/libcurl_static.dir/strerror.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strerror.c.o -MF CMakeFiles/libcurl_static.dir/strerror.c.o.d -o CMakeFiles/libcurl_static.dir/strerror.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object lib/CMakeFiles/libcurl_static.dir/strerror.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/strerror.c.o -MF CMakeFiles/libcurl_static.dir/strerror.c.o.d -o CMakeFiles/libcurl_static.dir/strerror.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c
 
 lib/CMakeFiles/libcurl_static.dir/strerror.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/strerror.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c > CMakeFiles/libcurl_static.dir/strerror.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c > CMakeFiles/libcurl_static.dir/strerror.c.i
 
 lib/CMakeFiles/libcurl_static.dir/strerror.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/strerror.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c -o CMakeFiles/libcurl_static.dir/strerror.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/strerror.c -o CMakeFiles/libcurl_static.dir/strerror.c.s
 
 lib/CMakeFiles/libcurl_static.dir/system_win32.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/system_win32.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c
+lib/CMakeFiles/libcurl_static.dir/system_win32.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c
 lib/CMakeFiles/libcurl_static.dir/system_win32.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object lib/CMakeFiles/libcurl_static.dir/system_win32.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/system_win32.c.o -MF CMakeFiles/libcurl_static.dir/system_win32.c.o.d -o CMakeFiles/libcurl_static.dir/system_win32.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object lib/CMakeFiles/libcurl_static.dir/system_win32.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/system_win32.c.o -MF CMakeFiles/libcurl_static.dir/system_win32.c.o.d -o CMakeFiles/libcurl_static.dir/system_win32.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c
 
 lib/CMakeFiles/libcurl_static.dir/system_win32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/system_win32.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c > CMakeFiles/libcurl_static.dir/system_win32.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c > CMakeFiles/libcurl_static.dir/system_win32.c.i
 
 lib/CMakeFiles/libcurl_static.dir/system_win32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/system_win32.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c -o CMakeFiles/libcurl_static.dir/system_win32.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/system_win32.c -o CMakeFiles/libcurl_static.dir/system_win32.c.s
 
 lib/CMakeFiles/libcurl_static.dir/telnet.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/telnet.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c
+lib/CMakeFiles/libcurl_static.dir/telnet.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c
 lib/CMakeFiles/libcurl_static.dir/telnet.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object lib/CMakeFiles/libcurl_static.dir/telnet.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/telnet.c.o -MF CMakeFiles/libcurl_static.dir/telnet.c.o.d -o CMakeFiles/libcurl_static.dir/telnet.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object lib/CMakeFiles/libcurl_static.dir/telnet.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/telnet.c.o -MF CMakeFiles/libcurl_static.dir/telnet.c.o.d -o CMakeFiles/libcurl_static.dir/telnet.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c
 
 lib/CMakeFiles/libcurl_static.dir/telnet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/telnet.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c > CMakeFiles/libcurl_static.dir/telnet.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c > CMakeFiles/libcurl_static.dir/telnet.c.i
 
 lib/CMakeFiles/libcurl_static.dir/telnet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/telnet.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c -o CMakeFiles/libcurl_static.dir/telnet.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/telnet.c -o CMakeFiles/libcurl_static.dir/telnet.c.s
 
 lib/CMakeFiles/libcurl_static.dir/tftp.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/tftp.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c
+lib/CMakeFiles/libcurl_static.dir/tftp.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c
 lib/CMakeFiles/libcurl_static.dir/tftp.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object lib/CMakeFiles/libcurl_static.dir/tftp.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/tftp.c.o -MF CMakeFiles/libcurl_static.dir/tftp.c.o.d -o CMakeFiles/libcurl_static.dir/tftp.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object lib/CMakeFiles/libcurl_static.dir/tftp.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/tftp.c.o -MF CMakeFiles/libcurl_static.dir/tftp.c.o.d -o CMakeFiles/libcurl_static.dir/tftp.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c
 
 lib/CMakeFiles/libcurl_static.dir/tftp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/tftp.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c > CMakeFiles/libcurl_static.dir/tftp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c > CMakeFiles/libcurl_static.dir/tftp.c.i
 
 lib/CMakeFiles/libcurl_static.dir/tftp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/tftp.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c -o CMakeFiles/libcurl_static.dir/tftp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/tftp.c -o CMakeFiles/libcurl_static.dir/tftp.c.s
 
 lib/CMakeFiles/libcurl_static.dir/transfer.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/transfer.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c
+lib/CMakeFiles/libcurl_static.dir/transfer.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c
 lib/CMakeFiles/libcurl_static.dir/transfer.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object lib/CMakeFiles/libcurl_static.dir/transfer.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/transfer.c.o -MF CMakeFiles/libcurl_static.dir/transfer.c.o.d -o CMakeFiles/libcurl_static.dir/transfer.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object lib/CMakeFiles/libcurl_static.dir/transfer.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/transfer.c.o -MF CMakeFiles/libcurl_static.dir/transfer.c.o.d -o CMakeFiles/libcurl_static.dir/transfer.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c
 
 lib/CMakeFiles/libcurl_static.dir/transfer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/transfer.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c > CMakeFiles/libcurl_static.dir/transfer.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c > CMakeFiles/libcurl_static.dir/transfer.c.i
 
 lib/CMakeFiles/libcurl_static.dir/transfer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/transfer.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c -o CMakeFiles/libcurl_static.dir/transfer.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/transfer.c -o CMakeFiles/libcurl_static.dir/transfer.c.s
 
 lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c
+lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c
 lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o -MF CMakeFiles/libcurl_static.dir/uint-bset.c.o.d -o CMakeFiles/libcurl_static.dir/uint-bset.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o -MF CMakeFiles/libcurl_static.dir/uint-bset.c.o.d -o CMakeFiles/libcurl_static.dir/uint-bset.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c
 
 lib/CMakeFiles/libcurl_static.dir/uint-bset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/uint-bset.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c > CMakeFiles/libcurl_static.dir/uint-bset.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c > CMakeFiles/libcurl_static.dir/uint-bset.c.i
 
 lib/CMakeFiles/libcurl_static.dir/uint-bset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/uint-bset.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c -o CMakeFiles/libcurl_static.dir/uint-bset.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-bset.c -o CMakeFiles/libcurl_static.dir/uint-bset.c.s
 
 lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c
+lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c
 lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o -MF CMakeFiles/libcurl_static.dir/uint-hash.c.o.d -o CMakeFiles/libcurl_static.dir/uint-hash.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o -MF CMakeFiles/libcurl_static.dir/uint-hash.c.o.d -o CMakeFiles/libcurl_static.dir/uint-hash.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c
 
 lib/CMakeFiles/libcurl_static.dir/uint-hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/uint-hash.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c > CMakeFiles/libcurl_static.dir/uint-hash.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c > CMakeFiles/libcurl_static.dir/uint-hash.c.i
 
 lib/CMakeFiles/libcurl_static.dir/uint-hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/uint-hash.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c -o CMakeFiles/libcurl_static.dir/uint-hash.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-hash.c -o CMakeFiles/libcurl_static.dir/uint-hash.c.s
 
 lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c
+lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c
 lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o -MF CMakeFiles/libcurl_static.dir/uint-spbset.c.o.d -o CMakeFiles/libcurl_static.dir/uint-spbset.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o -MF CMakeFiles/libcurl_static.dir/uint-spbset.c.o.d -o CMakeFiles/libcurl_static.dir/uint-spbset.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c
 
 lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/uint-spbset.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c > CMakeFiles/libcurl_static.dir/uint-spbset.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c > CMakeFiles/libcurl_static.dir/uint-spbset.c.i
 
 lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/uint-spbset.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c -o CMakeFiles/libcurl_static.dir/uint-spbset.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-spbset.c -o CMakeFiles/libcurl_static.dir/uint-spbset.c.s
 
 lib/CMakeFiles/libcurl_static.dir/uint-table.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/uint-table.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c
+lib/CMakeFiles/libcurl_static.dir/uint-table.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c
 lib/CMakeFiles/libcurl_static.dir/uint-table.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-table.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-table.c.o -MF CMakeFiles/libcurl_static.dir/uint-table.c.o.d -o CMakeFiles/libcurl_static.dir/uint-table.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object lib/CMakeFiles/libcurl_static.dir/uint-table.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/uint-table.c.o -MF CMakeFiles/libcurl_static.dir/uint-table.c.o.d -o CMakeFiles/libcurl_static.dir/uint-table.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c
 
 lib/CMakeFiles/libcurl_static.dir/uint-table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/uint-table.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c > CMakeFiles/libcurl_static.dir/uint-table.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c > CMakeFiles/libcurl_static.dir/uint-table.c.i
 
 lib/CMakeFiles/libcurl_static.dir/uint-table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/uint-table.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c -o CMakeFiles/libcurl_static.dir/uint-table.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/uint-table.c -o CMakeFiles/libcurl_static.dir/uint-table.c.s
 
 lib/CMakeFiles/libcurl_static.dir/url.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/url.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c
+lib/CMakeFiles/libcurl_static.dir/url.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c
 lib/CMakeFiles/libcurl_static.dir/url.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object lib/CMakeFiles/libcurl_static.dir/url.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/url.c.o -MF CMakeFiles/libcurl_static.dir/url.c.o.d -o CMakeFiles/libcurl_static.dir/url.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object lib/CMakeFiles/libcurl_static.dir/url.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/url.c.o -MF CMakeFiles/libcurl_static.dir/url.c.o.d -o CMakeFiles/libcurl_static.dir/url.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c
 
 lib/CMakeFiles/libcurl_static.dir/url.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/url.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c > CMakeFiles/libcurl_static.dir/url.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c > CMakeFiles/libcurl_static.dir/url.c.i
 
 lib/CMakeFiles/libcurl_static.dir/url.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/url.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c -o CMakeFiles/libcurl_static.dir/url.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/url.c -o CMakeFiles/libcurl_static.dir/url.c.s
 
 lib/CMakeFiles/libcurl_static.dir/urlapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/urlapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c
+lib/CMakeFiles/libcurl_static.dir/urlapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c
 lib/CMakeFiles/libcurl_static.dir/urlapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object lib/CMakeFiles/libcurl_static.dir/urlapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/urlapi.c.o -MF CMakeFiles/libcurl_static.dir/urlapi.c.o.d -o CMakeFiles/libcurl_static.dir/urlapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object lib/CMakeFiles/libcurl_static.dir/urlapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/urlapi.c.o -MF CMakeFiles/libcurl_static.dir/urlapi.c.o.d -o CMakeFiles/libcurl_static.dir/urlapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c
 
 lib/CMakeFiles/libcurl_static.dir/urlapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/urlapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c > CMakeFiles/libcurl_static.dir/urlapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c > CMakeFiles/libcurl_static.dir/urlapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/urlapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/urlapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c -o CMakeFiles/libcurl_static.dir/urlapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/urlapi.c -o CMakeFiles/libcurl_static.dir/urlapi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/version.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/version.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c
+lib/CMakeFiles/libcurl_static.dir/version.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c
 lib/CMakeFiles/libcurl_static.dir/version.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object lib/CMakeFiles/libcurl_static.dir/version.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/version.c.o -MF CMakeFiles/libcurl_static.dir/version.c.o.d -o CMakeFiles/libcurl_static.dir/version.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object lib/CMakeFiles/libcurl_static.dir/version.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/version.c.o -MF CMakeFiles/libcurl_static.dir/version.c.o.d -o CMakeFiles/libcurl_static.dir/version.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c
 
 lib/CMakeFiles/libcurl_static.dir/version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/version.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c > CMakeFiles/libcurl_static.dir/version.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c > CMakeFiles/libcurl_static.dir/version.c.i
 
 lib/CMakeFiles/libcurl_static.dir/version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/version.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c -o CMakeFiles/libcurl_static.dir/version.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/version.c -o CMakeFiles/libcurl_static.dir/version.c.s
 
 lib/CMakeFiles/libcurl_static.dir/ws.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/ws.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c
+lib/CMakeFiles/libcurl_static.dir/ws.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c
 lib/CMakeFiles/libcurl_static.dir/ws.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object lib/CMakeFiles/libcurl_static.dir/ws.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ws.c.o -MF CMakeFiles/libcurl_static.dir/ws.c.o.d -o CMakeFiles/libcurl_static.dir/ws.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object lib/CMakeFiles/libcurl_static.dir/ws.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/ws.c.o -MF CMakeFiles/libcurl_static.dir/ws.c.o.d -o CMakeFiles/libcurl_static.dir/ws.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c
 
 lib/CMakeFiles/libcurl_static.dir/ws.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/ws.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c > CMakeFiles/libcurl_static.dir/ws.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c > CMakeFiles/libcurl_static.dir/ws.c.i
 
 lib/CMakeFiles/libcurl_static.dir/ws.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/ws.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c -o CMakeFiles/libcurl_static.dir/ws.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/ws.c -o CMakeFiles/libcurl_static.dir/ws.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c
+lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c
 lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o -MF CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o -MF CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c > CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c > CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c -o CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cleartext.c -o CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c
+lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c
 lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o -MF CMakeFiles/libcurl_static.dir/vauth/cram.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/cram.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o -MF CMakeFiles/libcurl_static.dir/vauth/cram.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/cram.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/cram.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c > CMakeFiles/libcurl_static.dir/vauth/cram.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c > CMakeFiles/libcurl_static.dir/vauth/cram.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/cram.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c -o CMakeFiles/libcurl_static.dir/vauth/cram.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/cram.c -o CMakeFiles/libcurl_static.dir/vauth/cram.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c
+lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c
 lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o -MF CMakeFiles/libcurl_static.dir/vauth/digest.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/digest.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o -MF CMakeFiles/libcurl_static.dir/vauth/digest.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/digest.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/digest.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c > CMakeFiles/libcurl_static.dir/vauth/digest.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c > CMakeFiles/libcurl_static.dir/vauth/digest.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/digest.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c -o CMakeFiles/libcurl_static.dir/vauth/digest.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest.c -o CMakeFiles/libcurl_static.dir/vauth/digest.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c > CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c > CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/digest_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c
+lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c
 lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o -MF CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o -MF CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c > CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c > CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c -o CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/gsasl.c -o CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c > CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c > CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c -o CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_gssapi.c -o CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c > CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c > CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/krb5_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c
+lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o -MF CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o -MF CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c > CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c > CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c -o CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm.c -o CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c > CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c > CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/ntlm_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c
+lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c
 lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o -MF CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o -MF CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c > CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c > CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c -o CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/oauth2.c -o CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c > CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c > CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c -o CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_gssapi.c -o CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c
+lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o -MF CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c > CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c > CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/spnego_sspi.c -o CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c
+lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c
 lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o -MF CMakeFiles/libcurl_static.dir/vauth/vauth.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/vauth.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o -MF CMakeFiles/libcurl_static.dir/vauth/vauth.c.o.d -o CMakeFiles/libcurl_static.dir/vauth/vauth.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c
 
 lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vauth/vauth.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c > CMakeFiles/libcurl_static.dir/vauth/vauth.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c > CMakeFiles/libcurl_static.dir/vauth/vauth.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vauth/vauth.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c -o CMakeFiles/libcurl_static.dir/vauth/vauth.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vauth/vauth.c -o CMakeFiles/libcurl_static.dir/vauth/vauth.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c
+lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c
 lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o -MF CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o -MF CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c > CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c > CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c -o CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/cipher_suite.c -o CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c
+lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c
 lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/gtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/gtls.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/gtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/gtls.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/gtls.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c > CMakeFiles/libcurl_static.dir/vtls/gtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c > CMakeFiles/libcurl_static.dir/vtls/gtls.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/gtls.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c -o CMakeFiles/libcurl_static.dir/vtls/gtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/gtls.c -o CMakeFiles/libcurl_static.dir/vtls/gtls.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c
+lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c
 lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o -MF CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o -MF CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c > CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c > CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c -o CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/hostcheck.c -o CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c
+lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c
 lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o -MF CMakeFiles/libcurl_static.dir/vtls/keylog.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/keylog.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o -MF CMakeFiles/libcurl_static.dir/vtls/keylog.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/keylog.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/keylog.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c > CMakeFiles/libcurl_static.dir/vtls/keylog.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c > CMakeFiles/libcurl_static.dir/vtls/keylog.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/keylog.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c -o CMakeFiles/libcurl_static.dir/vtls/keylog.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/keylog.c -o CMakeFiles/libcurl_static.dir/vtls/keylog.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c
+lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c > CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c > CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c -o CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls.c -o CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c
+lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o -MF CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o -MF CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c > CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c > CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c -o CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/mbedtls_threadlock.c -o CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c
+lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c
 lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o -MF CMakeFiles/libcurl_static.dir/vtls/openssl.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/openssl.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o -MF CMakeFiles/libcurl_static.dir/vtls/openssl.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/openssl.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/openssl.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c > CMakeFiles/libcurl_static.dir/vtls/openssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c > CMakeFiles/libcurl_static.dir/vtls/openssl.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/openssl.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c -o CMakeFiles/libcurl_static.dir/vtls/openssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/openssl.c -o CMakeFiles/libcurl_static.dir/vtls/openssl.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c
+lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c
 lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/rustls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/rustls.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/rustls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/rustls.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/rustls.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c > CMakeFiles/libcurl_static.dir/vtls/rustls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c > CMakeFiles/libcurl_static.dir/vtls/rustls.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/rustls.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c -o CMakeFiles/libcurl_static.dir/vtls/rustls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/rustls.c -o CMakeFiles/libcurl_static.dir/vtls/rustls.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c
+lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o -MF CMakeFiles/libcurl_static.dir/vtls/schannel.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/schannel.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o -MF CMakeFiles/libcurl_static.dir/vtls/schannel.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/schannel.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/schannel.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c > CMakeFiles/libcurl_static.dir/vtls/schannel.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c > CMakeFiles/libcurl_static.dir/vtls/schannel.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/schannel.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c -o CMakeFiles/libcurl_static.dir/vtls/schannel.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel.c -o CMakeFiles/libcurl_static.dir/vtls/schannel.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c
+lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o -MF CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o -MF CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c > CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c > CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c -o CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/schannel_verify.c -o CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c
+lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/vtls.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c > CMakeFiles/libcurl_static.dir/vtls/vtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c > CMakeFiles/libcurl_static.dir/vtls/vtls.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/vtls.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c -o CMakeFiles/libcurl_static.dir/vtls/vtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls.c -o CMakeFiles/libcurl_static.dir/vtls/vtls.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c
+lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c > CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c > CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c -o CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_scache.c -o CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c
+lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o -MF CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c > CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c > CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c -o CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/vtls_spack.c -o CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c
+lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c
 lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o -MF CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o -MF CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c > CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c > CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c -o CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/wolfssl.c -o CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c
+lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c
 lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o -MF CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o -MF CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o.d -o CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c
 
 lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c > CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c > CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c -o CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vtls/x509asn1.c -o CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c
+lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c > CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c > CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c -o CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_ngtcp2.c -o CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c
+lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c > CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c > CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c -o CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_osslq.c -o CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c
+lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o -MF CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c > CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c > CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c -o CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/curl_quiche.c -o CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c
+lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o -MF CMakeFiles/libcurl_static.dir/vquic/vquic.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/vquic.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o -MF CMakeFiles/libcurl_static.dir/vquic/vquic.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/vquic.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vquic/vquic.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c > CMakeFiles/libcurl_static.dir/vquic/vquic.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c > CMakeFiles/libcurl_static.dir/vquic/vquic.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vquic/vquic.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c -o CMakeFiles/libcurl_static.dir/vquic/vquic.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic.c -o CMakeFiles/libcurl_static.dir/vquic/vquic.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c
+lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o -MF CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o -MF CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o.d -o CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c > CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c > CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c -o CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vquic/vquic-tls.c -o CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c
+lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o -MF CMakeFiles/libcurl_static.dir/vssh/libssh.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/libssh.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o -MF CMakeFiles/libcurl_static.dir/vssh/libssh.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/libssh.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vssh/libssh.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c > CMakeFiles/libcurl_static.dir/vssh/libssh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c > CMakeFiles/libcurl_static.dir/vssh/libssh.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vssh/libssh.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c -o CMakeFiles/libcurl_static.dir/vssh/libssh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh.c -o CMakeFiles/libcurl_static.dir/vssh/libssh.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c
+lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o -MF CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o -MF CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c > CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c > CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c -o CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/libssh2.c -o CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c
+lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c
 lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o -MF CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o -MF CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c
 
 lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c > CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c > CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c -o CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/curl_path.c -o CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s
 
 lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c
+lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c
 lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o -MF CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o -MF CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o.d -o CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c
 
 lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c > CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c > CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i
 
 lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c -o CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/vssh/wolfssh.c -o CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c
+lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c
 lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o -MF CMakeFiles/libcurl_static.dir/curlx/base64.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/base64.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o -MF CMakeFiles/libcurl_static.dir/curlx/base64.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/base64.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/base64.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c > CMakeFiles/libcurl_static.dir/curlx/base64.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c > CMakeFiles/libcurl_static.dir/curlx/base64.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/base64.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c -o CMakeFiles/libcurl_static.dir/curlx/base64.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/base64.c -o CMakeFiles/libcurl_static.dir/curlx/base64.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c
+lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c
 lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o -MF CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o -MF CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c > CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c > CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c -o CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/dynbuf.c -o CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c
+lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o -MF CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o -MF CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c > CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c > CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c -o CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_ntop.c -o CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c
+lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o -MF CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o -MF CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c > CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c > CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c -o CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/inet_pton.c -o CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c
+lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c
 lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o -MF CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o -MF CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c > CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c > CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c -o CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/multibyte.c -o CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c
+lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c
 lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o -MF CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o -MF CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c > CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c > CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c -o CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/nonblock.c -o CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c
+lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c
 lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o -MF CMakeFiles/libcurl_static.dir/curlx/strparse.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/strparse.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o -MF CMakeFiles/libcurl_static.dir/curlx/strparse.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/strparse.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/strparse.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c > CMakeFiles/libcurl_static.dir/curlx/strparse.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c > CMakeFiles/libcurl_static.dir/curlx/strparse.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/strparse.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c -o CMakeFiles/libcurl_static.dir/curlx/strparse.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/strparse.c -o CMakeFiles/libcurl_static.dir/curlx/strparse.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c
+lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c
 lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o -MF CMakeFiles/libcurl_static.dir/curlx/timediff.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/timediff.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o -MF CMakeFiles/libcurl_static.dir/curlx/timediff.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/timediff.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/timediff.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c > CMakeFiles/libcurl_static.dir/curlx/timediff.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c > CMakeFiles/libcurl_static.dir/curlx/timediff.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/timediff.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c -o CMakeFiles/libcurl_static.dir/curlx/timediff.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timediff.c -o CMakeFiles/libcurl_static.dir/curlx/timediff.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c
+lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c
 lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o -MF CMakeFiles/libcurl_static.dir/curlx/timeval.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/timeval.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o -MF CMakeFiles/libcurl_static.dir/curlx/timeval.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/timeval.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/timeval.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c > CMakeFiles/libcurl_static.dir/curlx/timeval.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c > CMakeFiles/libcurl_static.dir/curlx/timeval.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/timeval.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c -o CMakeFiles/libcurl_static.dir/curlx/timeval.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/timeval.c -o CMakeFiles/libcurl_static.dir/curlx/timeval.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c
+lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c
 lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o -MF CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o -MF CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c > CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c > CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c -o CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/version_win32.c -o CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c
+lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c
 lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o -MF CMakeFiles/libcurl_static.dir/curlx/wait.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/wait.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o -MF CMakeFiles/libcurl_static.dir/curlx/wait.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/wait.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/wait.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c > CMakeFiles/libcurl_static.dir/curlx/wait.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c > CMakeFiles/libcurl_static.dir/curlx/wait.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/wait.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c -o CMakeFiles/libcurl_static.dir/curlx/wait.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/wait.c -o CMakeFiles/libcurl_static.dir/curlx/wait.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c
+lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c
 lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o -MF CMakeFiles/libcurl_static.dir/curlx/warnless.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/warnless.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o -MF CMakeFiles/libcurl_static.dir/curlx/warnless.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/warnless.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/warnless.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c > CMakeFiles/libcurl_static.dir/curlx/warnless.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c > CMakeFiles/libcurl_static.dir/curlx/warnless.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/warnless.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c -o CMakeFiles/libcurl_static.dir/curlx/warnless.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/warnless.c -o CMakeFiles/libcurl_static.dir/curlx/warnless.c.s
 
 lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o: lib/CMakeFiles/libcurl_static.dir/flags.make
-lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c
+lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c
 lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o: lib/CMakeFiles/libcurl_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o -MF CMakeFiles/libcurl_static.dir/curlx/winapi.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/winapi.c.o -c /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building C object lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o -MF CMakeFiles/libcurl_static.dir/curlx/winapi.c.o.d -o CMakeFiles/libcurl_static.dir/curlx/winapi.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c
 
 lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libcurl_static.dir/curlx/winapi.c.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c > CMakeFiles/libcurl_static.dir/curlx/winapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c > CMakeFiles/libcurl_static.dir/curlx/winapi.c.i
 
 lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libcurl_static.dir/curlx/winapi.c.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c -o CMakeFiles/libcurl_static.dir/curlx/winapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curlx/winapi.c -o CMakeFiles/libcurl_static.dir/curlx/winapi.c.s
 
 # Object files for target libcurl_static
 libcurl_static_OBJECTS = \
@@ -2928,19 +2928,19 @@ lib/libcurl.a: lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o
 lib/libcurl.a: lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o
 lib/libcurl.a: lib/CMakeFiles/libcurl_static.dir/build.make
 lib/libcurl.a: lib/CMakeFiles/libcurl_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Linking C static library libcurl.a"
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -P CMakeFiles/libcurl_static.dir/cmake_clean_target.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libcurl_static.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Linking C static library libcurl.a"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -P CMakeFiles/libcurl_static.dir/cmake_clean_target.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libcurl_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/libcurl_static.dir/build: lib/libcurl.a
 .PHONY : lib/CMakeFiles/libcurl_static.dir/build
 
 lib/CMakeFiles/libcurl_static.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -P CMakeFiles/libcurl_static.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib && $(CMAKE_COMMAND) -P CMakeFiles/libcurl_static.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/libcurl_static.dir/clean
 
 lib/CMakeFiles/libcurl_static.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/CMakeFiles/libcurl_static.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/CMakeFiles/libcurl_static.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/CMakeFiles/libcurl_static.dir/depend
 

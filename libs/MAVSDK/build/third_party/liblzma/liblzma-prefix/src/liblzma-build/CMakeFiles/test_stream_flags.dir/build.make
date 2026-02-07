@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_stream_flags.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test_stream_flags.dir/codegen:
 .PHONY : CMakeFiles/test_stream_flags.dir/codegen
 
 CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o: CMakeFiles/test_stream_flags.dir/flags.make
-CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c
+CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c
 CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o: CMakeFiles/test_stream_flags.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o -MF CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o.d -o CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o -MF CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o.d -o CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c
 
 CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c > CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c > CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.i
 
 CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c -o CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_stream_flags.c -o CMakeFiles/test_stream_flags.dir/tests/test_stream_flags.c.s
 
 # Object files for target test_stream_flags
 test_stream_flags_OBJECTS = \
@@ -98,7 +98,7 @@ tests_bin/test_stream_flags: CMakeFiles/test_stream_flags.dir/build.make
 tests_bin/test_stream_flags: CMakeFiles/test_stream_flags.dir/compiler_depend.ts
 tests_bin/test_stream_flags: liblzma.a
 tests_bin/test_stream_flags: CMakeFiles/test_stream_flags.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_stream_flags"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests_bin/test_stream_flags"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_stream_flags.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/test_stream_flags.dir/clean:
 .PHONY : CMakeFiles/test_stream_flags.dir/clean
 
 CMakeFiles/test_stream_flags.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_stream_flags.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/test_stream_flags.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_stream_flags.dir/depend
 

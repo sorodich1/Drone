@@ -65,25 +65,25 @@ set_target_properties(libevents PROPERTIES
   INTERFACE_LINK_LIBRARIES "libevents_parser;libevents_health_and_arming_checks;libevents_receive"
 )
 
-# Import target "libevents_parser" for configuration "Release"
-set_property(TARGET libevents_parser APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "libevents_parser" for configuration ""
+set_property(TARGET libevents_parser APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(libevents_parser PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/liblibevents_parser.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/liblibevents_parser.a"
   )
 
-# Import target "libevents_health_and_arming_checks" for configuration "Release"
-set_property(TARGET libevents_health_and_arming_checks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "libevents_health_and_arming_checks" for configuration ""
+set_property(TARGET libevents_health_and_arming_checks APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(libevents_health_and_arming_checks PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/liblibevents_health_and_arming_checks.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/liblibevents_health_and_arming_checks.a"
   )
 
-# Import target "libevents" for configuration "Release"
-set_property(TARGET libevents APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "libevents" for configuration ""
+set_property(TARGET libevents APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(libevents PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/liblibevents.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/liblibevents.a"
   )
 
 # This file does not depend on other imported targets which have

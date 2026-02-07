@@ -1,8 +1,8 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/timeout_handler.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/timeout_handler.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -162,8 +162,6 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/timeout_handler.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h

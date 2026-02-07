@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libevents.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/libevents.dir/codegen:
 .PHONY : CMakeFiles/libevents.dir/codegen
 
 CMakeFiles/libevents.dir/empty.cpp.o: CMakeFiles/libevents.dir/flags.make
-CMakeFiles/libevents.dir/empty.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp
+CMakeFiles/libevents.dir/empty.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp
 CMakeFiles/libevents.dir/empty.cpp.o: CMakeFiles/libevents.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libevents.dir/empty.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libevents.dir/empty.cpp.o -MF CMakeFiles/libevents.dir/empty.cpp.o.d -o CMakeFiles/libevents.dir/empty.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libevents.dir/empty.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libevents.dir/empty.cpp.o -MF CMakeFiles/libevents.dir/empty.cpp.o.d -o CMakeFiles/libevents.dir/empty.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp
 
 CMakeFiles/libevents.dir/empty.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libevents.dir/empty.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp > CMakeFiles/libevents.dir/empty.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp > CMakeFiles/libevents.dir/empty.cpp.i
 
 CMakeFiles/libevents.dir/empty.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libevents.dir/empty.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp -o CMakeFiles/libevents.dir/empty.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/empty.cpp -o CMakeFiles/libevents.dir/empty.cpp.s
 
 # Object files for target libevents
 libevents_OBJECTS = \
@@ -96,7 +96,7 @@ libevents_EXTERNAL_OBJECTS =
 liblibevents.a: CMakeFiles/libevents.dir/empty.cpp.o
 liblibevents.a: CMakeFiles/libevents.dir/build.make
 liblibevents.a: CMakeFiles/libevents.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibevents.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibevents.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libevents.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libevents.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/libevents.dir/clean:
 .PHONY : CMakeFiles/libevents.dir/clean
 
 CMakeFiles/libevents.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles/libevents.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles/libevents.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/libevents.dir/depend
 

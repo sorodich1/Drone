@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/http_loader.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/http_loader.h \
  /usr/include/c++/14/thread /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -152,9 +152,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -162,7 +160,6 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
@@ -181,7 +178,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
  /usr/include/c++/14/compare \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/locked_queue.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/locked_queue.h \
  /usr/include/c++/14/queue /usr/include/c++/14/deque \
  /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
  /usr/include/c++/14/bits/stl_heap.h /usr/include/c++/14/bits/stl_queue.h \
@@ -189,11 +186,11 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
  /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/error_constants.h \
  /usr/include/c++/14/condition_variable \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_include.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curlver.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_include.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curlver.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/system.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
@@ -212,14 +209,14 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/http_loader.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/multi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/urlapi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/options.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/header.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/websockets.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/mprintf.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/overloaded.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/multi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/urlapi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/options.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/header.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/websockets.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/mprintf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/overloaded.h

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/src/lib_json//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/lib_json/CMakeFiles/jsoncpp_static.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/CMakeFiles/jsoncpp_static.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/CMakeFiles/jsoncpp_static.dir/rule
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_static.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ jsoncpp_static: src/lib_json/CMakeFiles/jsoncpp_static.dir/rule
 
 # fast build rule for target.
 jsoncpp_static/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/build
 .PHONY : jsoncpp_static/fast
 
 # Convenience name for target.
 src/lib_json/CMakeFiles/jsoncpp_object.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/CMakeFiles/jsoncpp_object.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/lib_json/CMakeFiles/jsoncpp_object.dir/rule
 .PHONY : src/lib_json/CMakeFiles/jsoncpp_object.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ jsoncpp_object: src/lib_json/CMakeFiles/jsoncpp_object.dir/rule
 
 # fast build rule for target.
 jsoncpp_object/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/build
 .PHONY : jsoncpp_object/fast
 
 json_reader.o: json_reader.cpp.o
@@ -194,8 +194,8 @@ json_reader.o: json_reader.cpp.o
 
 # target to build an object file
 json_reader.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.o
 .PHONY : json_reader.cpp.o
 
 json_reader.i: json_reader.cpp.i
@@ -203,8 +203,8 @@ json_reader.i: json_reader.cpp.i
 
 # target to preprocess a source file
 json_reader.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.i
 .PHONY : json_reader.cpp.i
 
 json_reader.s: json_reader.cpp.s
@@ -212,8 +212,8 @@ json_reader.s: json_reader.cpp.s
 
 # target to generate assembly for a file
 json_reader.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_reader.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_reader.cpp.s
 .PHONY : json_reader.cpp.s
 
 json_value.o: json_value.cpp.o
@@ -221,8 +221,8 @@ json_value.o: json_value.cpp.o
 
 # target to build an object file
 json_value.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.o
 .PHONY : json_value.cpp.o
 
 json_value.i: json_value.cpp.i
@@ -230,8 +230,8 @@ json_value.i: json_value.cpp.i
 
 # target to preprocess a source file
 json_value.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.i
 .PHONY : json_value.cpp.i
 
 json_value.s: json_value.cpp.s
@@ -239,8 +239,8 @@ json_value.s: json_value.cpp.s
 
 # target to generate assembly for a file
 json_value.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_value.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_value.cpp.s
 .PHONY : json_value.cpp.s
 
 json_writer.o: json_writer.cpp.o
@@ -248,8 +248,8 @@ json_writer.o: json_writer.cpp.o
 
 # target to build an object file
 json_writer.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.o
 .PHONY : json_writer.cpp.o
 
 json_writer.i: json_writer.cpp.i
@@ -257,8 +257,8 @@ json_writer.i: json_writer.cpp.i
 
 # target to preprocess a source file
 json_writer.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.i
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.i
 .PHONY : json_writer.cpp.i
 
 json_writer.s: json_writer.cpp.s
@@ -266,8 +266,8 @@ json_writer.s: json_writer.cpp.s
 
 # target to generate assembly for a file
 json_writer.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.s
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_static.dir/build.make src/lib_json/CMakeFiles/jsoncpp_static.dir/json_writer.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(MAKE) $(MAKESILENT) -f src/lib_json/CMakeFiles/jsoncpp_object.dir/build.make src/lib_json/CMakeFiles/jsoncpp_object.dir/json_writer.cpp.s
 .PHONY : json_writer.cpp.s
 
 # Help Target
@@ -304,6 +304,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/jsoncpp/jsoncpp/src/jsoncpp-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/mavlink_channels.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavlink_channels.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavlink_channels.h \
  /usr/include/c++/14/cstdint \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \

@@ -4,9 +4,6 @@ module for loading/saving waypoints
 Copyright the ArduPilot Project
 Released under GNU LGPL version 3 or later
 '''
-from __future__ import print_function
-from builtins import range
-from builtins import object
 
 import time, copy
 import logging
@@ -29,7 +26,7 @@ class MAVWPError(Exception):
 
 
 class MissionItemProtocol(object):
-    '''Base class for transfering items based on the MISSION_ITEM protocol'''
+    '''Base class for transferring items based on the MISSION_ITEM protocol'''
     def __init__(self, target_system=0, target_component=0):
         self.wpoints = []
         self.target_system = target_system
@@ -37,7 +34,9 @@ class MissionItemProtocol(object):
         self.last_change = 0
         self.colour_for_polygon = {
             mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_EXCLUSION : (255,0,0),
-            mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_INCLUSION : (0,255,0)
+            mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_INCLUSION : (0,255,0),
+            mavutil.mavlink.MAV_CMD_DO_LAND_START: (255, 127, 0),
+            mavutil.mavlink.MAV_CMD_DO_RETURN_PATH_START: (127, 255, 0),
         }
 
     def count(self):
@@ -289,16 +288,20 @@ class MissionItemProtocol(object):
                 break
             idx += 1
 
-        exclusion_start = -1
-        exclusion_count = -1
-        inclusion_start = -1
-        inclusion_count = -1
         while idx < self.count():
             w = self.wp(idx)
             if idx in done:
                 if self.is_location_wp(w):
                     ret.append(idx)
                 break
+            if w.command in [mavutil.mavlink.MAV_CMD_DO_LAND_START, mavutil.mavlink.MAV_CMD_DO_RETURN_PATH_START]:
+                # these are starting points; we should never fly to
+                # one of these.... but we want an edge *from* one of these
+                if len(ret) == 0:
+                    ret.append(idx)
+                    done.add(idx)
+                idx += 1
+                continue
             done.add(idx)
             if w.command == mavutil.mavlink.MAV_CMD_DO_JUMP:
                 idx = int(w.param1)
@@ -306,34 +309,11 @@ class MissionItemProtocol(object):
                 if self.is_location_wp(w):
                     ret.append(idx)
                 continue
-            # display loops for exclusion and inclusion zones
-            if w.command == mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_EXCLUSION:
-                if exclusion_start == -1:
-                    exclusion_count = int(w.param1)
-                    exclusion_start = idx
-                if idx == exclusion_start + exclusion_count - 1:
-                    ret.append(idx)
-                    ret.append(exclusion_start)
-                    return ret
-            if w.command == mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_INCLUSION:
-                if inclusion_start == -1:
-                    inclusion_count = int(w.param1)
-                    inclusion_start = idx
-                if idx == inclusion_start + inclusion_count - 1:
-                    ret.append(idx)
-                    ret.append(inclusion_start)
-                    return ret
             if self.is_location_wp(w):
                 ret.append(idx)
             if w.command in [ mavutil.mavlink.MAV_CMD_NAV_LAND,
                               mavutil.mavlink.MAV_CMD_NAV_VTOL_LAND ]:
                 # stop at landing points
-                return ret
-            exc_zones = [mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_EXCLUSION,
-                         mavutil.mavlink.MAV_CMD_NAV_FENCE_POLYGON_VERTEX_INCLUSION]
-            w2 = self.wp(idx+1)
-            if w2 is not None and w.command not in exc_zones and w2.command in exc_zones:
-                # don't draw a line from last WP to first exc zone
                 return ret
             idx += 1
         return ret
@@ -462,6 +442,9 @@ class MAVWPLoader(MissionItemProtocol):
 
     def is_location_wp(self, w):
         '''see if w.command is a MAV_CMD with a latitude/longitude'''
+        if w.command == mavutil.mavlink.MAV_CMD_DO_LAND_START:
+            # technically stores a location, but we do not navigate there!
+            return False
         if w.x == 0 and w.y == 0:
             return False
         return self.is_location_command(w.command)
@@ -502,7 +485,7 @@ class MissionItemProtocol_Fence(MissionItemProtocol):
         version_line = get_first_line_from_file(filename)
 
         if (version_line is None or
-            not re.match("[-0-9.]+\s+[-0-9.]+", version_line)):
+            not re.match(r"[-0-9.]+\s+[-0-9.]+", version_line)):
             return super(MissionItemProtocol_Fence, self).load(filename)
 
         # shamelessly copy-and-pasted from traditional loader, below

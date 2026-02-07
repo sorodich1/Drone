@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-bu
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/libcurl_static.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/libcurl_static.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/libcurl_static.dir/rule
 .PHONY : lib/CMakeFiles/libcurl_static.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ libcurl_static: lib/CMakeFiles/libcurl_static.dir/rule
 
 # fast build rule for target.
 libcurl_static/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/build
 .PHONY : libcurl_static/fast
 
 altsvc.o: altsvc.c.o
@@ -200,7 +200,7 @@ altsvc.o: altsvc.c.o
 
 # target to build an object file
 altsvc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.o
 .PHONY : altsvc.c.o
 
 altsvc.i: altsvc.c.i
@@ -208,7 +208,7 @@ altsvc.i: altsvc.c.i
 
 # target to preprocess a source file
 altsvc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.i
 .PHONY : altsvc.c.i
 
 altsvc.s: altsvc.c.s
@@ -216,7 +216,7 @@ altsvc.s: altsvc.c.s
 
 # target to generate assembly for a file
 altsvc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/altsvc.c.s
 .PHONY : altsvc.c.s
 
 amigaos.o: amigaos.c.o
@@ -224,7 +224,7 @@ amigaos.o: amigaos.c.o
 
 # target to build an object file
 amigaos.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.o
 .PHONY : amigaos.c.o
 
 amigaos.i: amigaos.c.i
@@ -232,7 +232,7 @@ amigaos.i: amigaos.c.i
 
 # target to preprocess a source file
 amigaos.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.i
 .PHONY : amigaos.c.i
 
 amigaos.s: amigaos.c.s
@@ -240,7 +240,7 @@ amigaos.s: amigaos.c.s
 
 # target to generate assembly for a file
 amigaos.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/amigaos.c.s
 .PHONY : amigaos.c.s
 
 asyn-ares.o: asyn-ares.c.o
@@ -248,7 +248,7 @@ asyn-ares.o: asyn-ares.c.o
 
 # target to build an object file
 asyn-ares.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o
 .PHONY : asyn-ares.c.o
 
 asyn-ares.i: asyn-ares.c.i
@@ -256,7 +256,7 @@ asyn-ares.i: asyn-ares.c.i
 
 # target to preprocess a source file
 asyn-ares.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.i
 .PHONY : asyn-ares.c.i
 
 asyn-ares.s: asyn-ares.c.s
@@ -264,7 +264,7 @@ asyn-ares.s: asyn-ares.c.s
 
 # target to generate assembly for a file
 asyn-ares.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.s
 .PHONY : asyn-ares.c.s
 
 asyn-base.o: asyn-base.c.o
@@ -272,7 +272,7 @@ asyn-base.o: asyn-base.c.o
 
 # target to build an object file
 asyn-base.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.o
 .PHONY : asyn-base.c.o
 
 asyn-base.i: asyn-base.c.i
@@ -280,7 +280,7 @@ asyn-base.i: asyn-base.c.i
 
 # target to preprocess a source file
 asyn-base.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.i
 .PHONY : asyn-base.c.i
 
 asyn-base.s: asyn-base.c.s
@@ -288,7 +288,7 @@ asyn-base.s: asyn-base.c.s
 
 # target to generate assembly for a file
 asyn-base.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-base.c.s
 .PHONY : asyn-base.c.s
 
 asyn-thrdd.o: asyn-thrdd.c.o
@@ -296,7 +296,7 @@ asyn-thrdd.o: asyn-thrdd.c.o
 
 # target to build an object file
 asyn-thrdd.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.o
 .PHONY : asyn-thrdd.c.o
 
 asyn-thrdd.i: asyn-thrdd.c.i
@@ -304,7 +304,7 @@ asyn-thrdd.i: asyn-thrdd.c.i
 
 # target to preprocess a source file
 asyn-thrdd.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.i
 .PHONY : asyn-thrdd.c.i
 
 asyn-thrdd.s: asyn-thrdd.c.s
@@ -312,7 +312,7 @@ asyn-thrdd.s: asyn-thrdd.c.s
 
 # target to generate assembly for a file
 asyn-thrdd.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/asyn-thrdd.c.s
 .PHONY : asyn-thrdd.c.s
 
 bufq.o: bufq.c.o
@@ -320,7 +320,7 @@ bufq.o: bufq.c.o
 
 # target to build an object file
 bufq.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.o
 .PHONY : bufq.c.o
 
 bufq.i: bufq.c.i
@@ -328,7 +328,7 @@ bufq.i: bufq.c.i
 
 # target to preprocess a source file
 bufq.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.i
 .PHONY : bufq.c.i
 
 bufq.s: bufq.c.s
@@ -336,7 +336,7 @@ bufq.s: bufq.c.s
 
 # target to generate assembly for a file
 bufq.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufq.c.s
 .PHONY : bufq.c.s
 
 bufref.o: bufref.c.o
@@ -344,7 +344,7 @@ bufref.o: bufref.c.o
 
 # target to build an object file
 bufref.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.o
 .PHONY : bufref.c.o
 
 bufref.i: bufref.c.i
@@ -352,7 +352,7 @@ bufref.i: bufref.c.i
 
 # target to preprocess a source file
 bufref.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.i
 .PHONY : bufref.c.i
 
 bufref.s: bufref.c.s
@@ -360,7 +360,7 @@ bufref.s: bufref.c.s
 
 # target to generate assembly for a file
 bufref.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/bufref.c.s
 .PHONY : bufref.c.s
 
 cf-h1-proxy.o: cf-h1-proxy.c.o
@@ -368,7 +368,7 @@ cf-h1-proxy.o: cf-h1-proxy.c.o
 
 # target to build an object file
 cf-h1-proxy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.o
 .PHONY : cf-h1-proxy.c.o
 
 cf-h1-proxy.i: cf-h1-proxy.c.i
@@ -376,7 +376,7 @@ cf-h1-proxy.i: cf-h1-proxy.c.i
 
 # target to preprocess a source file
 cf-h1-proxy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.i
 .PHONY : cf-h1-proxy.c.i
 
 cf-h1-proxy.s: cf-h1-proxy.c.s
@@ -384,7 +384,7 @@ cf-h1-proxy.s: cf-h1-proxy.c.s
 
 # target to generate assembly for a file
 cf-h1-proxy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h1-proxy.c.s
 .PHONY : cf-h1-proxy.c.s
 
 cf-h2-proxy.o: cf-h2-proxy.c.o
@@ -392,7 +392,7 @@ cf-h2-proxy.o: cf-h2-proxy.c.o
 
 # target to build an object file
 cf-h2-proxy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.o
 .PHONY : cf-h2-proxy.c.o
 
 cf-h2-proxy.i: cf-h2-proxy.c.i
@@ -400,7 +400,7 @@ cf-h2-proxy.i: cf-h2-proxy.c.i
 
 # target to preprocess a source file
 cf-h2-proxy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.i
 .PHONY : cf-h2-proxy.c.i
 
 cf-h2-proxy.s: cf-h2-proxy.c.s
@@ -408,7 +408,7 @@ cf-h2-proxy.s: cf-h2-proxy.c.s
 
 # target to generate assembly for a file
 cf-h2-proxy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-h2-proxy.c.s
 .PHONY : cf-h2-proxy.c.s
 
 cf-haproxy.o: cf-haproxy.c.o
@@ -416,7 +416,7 @@ cf-haproxy.o: cf-haproxy.c.o
 
 # target to build an object file
 cf-haproxy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.o
 .PHONY : cf-haproxy.c.o
 
 cf-haproxy.i: cf-haproxy.c.i
@@ -424,7 +424,7 @@ cf-haproxy.i: cf-haproxy.c.i
 
 # target to preprocess a source file
 cf-haproxy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.i
 .PHONY : cf-haproxy.c.i
 
 cf-haproxy.s: cf-haproxy.c.s
@@ -432,7 +432,7 @@ cf-haproxy.s: cf-haproxy.c.s
 
 # target to generate assembly for a file
 cf-haproxy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-haproxy.c.s
 .PHONY : cf-haproxy.c.s
 
 cf-https-connect.o: cf-https-connect.c.o
@@ -440,7 +440,7 @@ cf-https-connect.o: cf-https-connect.c.o
 
 # target to build an object file
 cf-https-connect.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.o
 .PHONY : cf-https-connect.c.o
 
 cf-https-connect.i: cf-https-connect.c.i
@@ -448,7 +448,7 @@ cf-https-connect.i: cf-https-connect.c.i
 
 # target to preprocess a source file
 cf-https-connect.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.i
 .PHONY : cf-https-connect.c.i
 
 cf-https-connect.s: cf-https-connect.c.s
@@ -456,7 +456,7 @@ cf-https-connect.s: cf-https-connect.c.s
 
 # target to generate assembly for a file
 cf-https-connect.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-https-connect.c.s
 .PHONY : cf-https-connect.c.s
 
 cf-ip-happy.o: cf-ip-happy.c.o
@@ -464,7 +464,7 @@ cf-ip-happy.o: cf-ip-happy.c.o
 
 # target to build an object file
 cf-ip-happy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.o
 .PHONY : cf-ip-happy.c.o
 
 cf-ip-happy.i: cf-ip-happy.c.i
@@ -472,7 +472,7 @@ cf-ip-happy.i: cf-ip-happy.c.i
 
 # target to preprocess a source file
 cf-ip-happy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.i
 .PHONY : cf-ip-happy.c.i
 
 cf-ip-happy.s: cf-ip-happy.c.s
@@ -480,7 +480,7 @@ cf-ip-happy.s: cf-ip-happy.c.s
 
 # target to generate assembly for a file
 cf-ip-happy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-ip-happy.c.s
 .PHONY : cf-ip-happy.c.s
 
 cf-socket.o: cf-socket.c.o
@@ -488,7 +488,7 @@ cf-socket.o: cf-socket.c.o
 
 # target to build an object file
 cf-socket.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.o
 .PHONY : cf-socket.c.o
 
 cf-socket.i: cf-socket.c.i
@@ -496,7 +496,7 @@ cf-socket.i: cf-socket.c.i
 
 # target to preprocess a source file
 cf-socket.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.i
 .PHONY : cf-socket.c.i
 
 cf-socket.s: cf-socket.c.s
@@ -504,7 +504,7 @@ cf-socket.s: cf-socket.c.s
 
 # target to generate assembly for a file
 cf-socket.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cf-socket.c.s
 .PHONY : cf-socket.c.s
 
 cfilters.o: cfilters.c.o
@@ -512,7 +512,7 @@ cfilters.o: cfilters.c.o
 
 # target to build an object file
 cfilters.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.o
 .PHONY : cfilters.c.o
 
 cfilters.i: cfilters.c.i
@@ -520,7 +520,7 @@ cfilters.i: cfilters.c.i
 
 # target to preprocess a source file
 cfilters.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.i
 .PHONY : cfilters.c.i
 
 cfilters.s: cfilters.c.s
@@ -528,7 +528,7 @@ cfilters.s: cfilters.c.s
 
 # target to generate assembly for a file
 cfilters.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cfilters.c.s
 .PHONY : cfilters.c.s
 
 conncache.o: conncache.c.o
@@ -536,7 +536,7 @@ conncache.o: conncache.c.o
 
 # target to build an object file
 conncache.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.o
 .PHONY : conncache.c.o
 
 conncache.i: conncache.c.i
@@ -544,7 +544,7 @@ conncache.i: conncache.c.i
 
 # target to preprocess a source file
 conncache.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.i
 .PHONY : conncache.c.i
 
 conncache.s: conncache.c.s
@@ -552,7 +552,7 @@ conncache.s: conncache.c.s
 
 # target to generate assembly for a file
 conncache.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/conncache.c.s
 .PHONY : conncache.c.s
 
 connect.o: connect.c.o
@@ -560,7 +560,7 @@ connect.o: connect.c.o
 
 # target to build an object file
 connect.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.o
 .PHONY : connect.c.o
 
 connect.i: connect.c.i
@@ -568,7 +568,7 @@ connect.i: connect.c.i
 
 # target to preprocess a source file
 connect.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.i
 .PHONY : connect.c.i
 
 connect.s: connect.c.s
@@ -576,7 +576,7 @@ connect.s: connect.c.s
 
 # target to generate assembly for a file
 connect.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/connect.c.s
 .PHONY : connect.c.s
 
 content_encoding.o: content_encoding.c.o
@@ -584,7 +584,7 @@ content_encoding.o: content_encoding.c.o
 
 # target to build an object file
 content_encoding.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.o
 .PHONY : content_encoding.c.o
 
 content_encoding.i: content_encoding.c.i
@@ -592,7 +592,7 @@ content_encoding.i: content_encoding.c.i
 
 # target to preprocess a source file
 content_encoding.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.i
 .PHONY : content_encoding.c.i
 
 content_encoding.s: content_encoding.c.s
@@ -600,7 +600,7 @@ content_encoding.s: content_encoding.c.s
 
 # target to generate assembly for a file
 content_encoding.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/content_encoding.c.s
 .PHONY : content_encoding.c.s
 
 cookie.o: cookie.c.o
@@ -608,7 +608,7 @@ cookie.o: cookie.c.o
 
 # target to build an object file
 cookie.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.o
 .PHONY : cookie.c.o
 
 cookie.i: cookie.c.i
@@ -616,7 +616,7 @@ cookie.i: cookie.c.i
 
 # target to preprocess a source file
 cookie.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.i
 .PHONY : cookie.c.i
 
 cookie.s: cookie.c.s
@@ -624,7 +624,7 @@ cookie.s: cookie.c.s
 
 # target to generate assembly for a file
 cookie.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cookie.c.s
 .PHONY : cookie.c.s
 
 cshutdn.o: cshutdn.c.o
@@ -632,7 +632,7 @@ cshutdn.o: cshutdn.c.o
 
 # target to build an object file
 cshutdn.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.o
 .PHONY : cshutdn.c.o
 
 cshutdn.i: cshutdn.c.i
@@ -640,7 +640,7 @@ cshutdn.i: cshutdn.c.i
 
 # target to preprocess a source file
 cshutdn.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.i
 .PHONY : cshutdn.c.i
 
 cshutdn.s: cshutdn.c.s
@@ -648,7 +648,7 @@ cshutdn.s: cshutdn.c.s
 
 # target to generate assembly for a file
 cshutdn.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cshutdn.c.s
 .PHONY : cshutdn.c.s
 
 curl_addrinfo.o: curl_addrinfo.c.o
@@ -656,7 +656,7 @@ curl_addrinfo.o: curl_addrinfo.c.o
 
 # target to build an object file
 curl_addrinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.o
 .PHONY : curl_addrinfo.c.o
 
 curl_addrinfo.i: curl_addrinfo.c.i
@@ -664,7 +664,7 @@ curl_addrinfo.i: curl_addrinfo.c.i
 
 # target to preprocess a source file
 curl_addrinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.i
 .PHONY : curl_addrinfo.c.i
 
 curl_addrinfo.s: curl_addrinfo.c.s
@@ -672,7 +672,7 @@ curl_addrinfo.s: curl_addrinfo.c.s
 
 # target to generate assembly for a file
 curl_addrinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_addrinfo.c.s
 .PHONY : curl_addrinfo.c.s
 
 curl_des.o: curl_des.c.o
@@ -680,7 +680,7 @@ curl_des.o: curl_des.c.o
 
 # target to build an object file
 curl_des.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.o
 .PHONY : curl_des.c.o
 
 curl_des.i: curl_des.c.i
@@ -688,7 +688,7 @@ curl_des.i: curl_des.c.i
 
 # target to preprocess a source file
 curl_des.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.i
 .PHONY : curl_des.c.i
 
 curl_des.s: curl_des.c.s
@@ -696,7 +696,7 @@ curl_des.s: curl_des.c.s
 
 # target to generate assembly for a file
 curl_des.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_des.c.s
 .PHONY : curl_des.c.s
 
 curl_endian.o: curl_endian.c.o
@@ -704,7 +704,7 @@ curl_endian.o: curl_endian.c.o
 
 # target to build an object file
 curl_endian.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.o
 .PHONY : curl_endian.c.o
 
 curl_endian.i: curl_endian.c.i
@@ -712,7 +712,7 @@ curl_endian.i: curl_endian.c.i
 
 # target to preprocess a source file
 curl_endian.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.i
 .PHONY : curl_endian.c.i
 
 curl_endian.s: curl_endian.c.s
@@ -720,7 +720,7 @@ curl_endian.s: curl_endian.c.s
 
 # target to generate assembly for a file
 curl_endian.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_endian.c.s
 .PHONY : curl_endian.c.s
 
 curl_fnmatch.o: curl_fnmatch.c.o
@@ -728,7 +728,7 @@ curl_fnmatch.o: curl_fnmatch.c.o
 
 # target to build an object file
 curl_fnmatch.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.o
 .PHONY : curl_fnmatch.c.o
 
 curl_fnmatch.i: curl_fnmatch.c.i
@@ -736,7 +736,7 @@ curl_fnmatch.i: curl_fnmatch.c.i
 
 # target to preprocess a source file
 curl_fnmatch.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.i
 .PHONY : curl_fnmatch.c.i
 
 curl_fnmatch.s: curl_fnmatch.c.s
@@ -744,7 +744,7 @@ curl_fnmatch.s: curl_fnmatch.c.s
 
 # target to generate assembly for a file
 curl_fnmatch.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_fnmatch.c.s
 .PHONY : curl_fnmatch.c.s
 
 curl_get_line.o: curl_get_line.c.o
@@ -752,7 +752,7 @@ curl_get_line.o: curl_get_line.c.o
 
 # target to build an object file
 curl_get_line.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.o
 .PHONY : curl_get_line.c.o
 
 curl_get_line.i: curl_get_line.c.i
@@ -760,7 +760,7 @@ curl_get_line.i: curl_get_line.c.i
 
 # target to preprocess a source file
 curl_get_line.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.i
 .PHONY : curl_get_line.c.i
 
 curl_get_line.s: curl_get_line.c.s
@@ -768,7 +768,7 @@ curl_get_line.s: curl_get_line.c.s
 
 # target to generate assembly for a file
 curl_get_line.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_get_line.c.s
 .PHONY : curl_get_line.c.s
 
 curl_gethostname.o: curl_gethostname.c.o
@@ -776,7 +776,7 @@ curl_gethostname.o: curl_gethostname.c.o
 
 # target to build an object file
 curl_gethostname.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.o
 .PHONY : curl_gethostname.c.o
 
 curl_gethostname.i: curl_gethostname.c.i
@@ -784,7 +784,7 @@ curl_gethostname.i: curl_gethostname.c.i
 
 # target to preprocess a source file
 curl_gethostname.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.i
 .PHONY : curl_gethostname.c.i
 
 curl_gethostname.s: curl_gethostname.c.s
@@ -792,7 +792,7 @@ curl_gethostname.s: curl_gethostname.c.s
 
 # target to generate assembly for a file
 curl_gethostname.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gethostname.c.s
 .PHONY : curl_gethostname.c.s
 
 curl_gssapi.o: curl_gssapi.c.o
@@ -800,7 +800,7 @@ curl_gssapi.o: curl_gssapi.c.o
 
 # target to build an object file
 curl_gssapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.o
 .PHONY : curl_gssapi.c.o
 
 curl_gssapi.i: curl_gssapi.c.i
@@ -808,7 +808,7 @@ curl_gssapi.i: curl_gssapi.c.i
 
 # target to preprocess a source file
 curl_gssapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.i
 .PHONY : curl_gssapi.c.i
 
 curl_gssapi.s: curl_gssapi.c.s
@@ -816,7 +816,7 @@ curl_gssapi.s: curl_gssapi.c.s
 
 # target to generate assembly for a file
 curl_gssapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_gssapi.c.s
 .PHONY : curl_gssapi.c.s
 
 curl_memrchr.o: curl_memrchr.c.o
@@ -824,7 +824,7 @@ curl_memrchr.o: curl_memrchr.c.o
 
 # target to build an object file
 curl_memrchr.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.o
 .PHONY : curl_memrchr.c.o
 
 curl_memrchr.i: curl_memrchr.c.i
@@ -832,7 +832,7 @@ curl_memrchr.i: curl_memrchr.c.i
 
 # target to preprocess a source file
 curl_memrchr.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.i
 .PHONY : curl_memrchr.c.i
 
 curl_memrchr.s: curl_memrchr.c.s
@@ -840,7 +840,7 @@ curl_memrchr.s: curl_memrchr.c.s
 
 # target to generate assembly for a file
 curl_memrchr.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_memrchr.c.s
 .PHONY : curl_memrchr.c.s
 
 curl_ntlm_core.o: curl_ntlm_core.c.o
@@ -848,7 +848,7 @@ curl_ntlm_core.o: curl_ntlm_core.c.o
 
 # target to build an object file
 curl_ntlm_core.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.o
 .PHONY : curl_ntlm_core.c.o
 
 curl_ntlm_core.i: curl_ntlm_core.c.i
@@ -856,7 +856,7 @@ curl_ntlm_core.i: curl_ntlm_core.c.i
 
 # target to preprocess a source file
 curl_ntlm_core.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.i
 .PHONY : curl_ntlm_core.c.i
 
 curl_ntlm_core.s: curl_ntlm_core.c.s
@@ -864,7 +864,7 @@ curl_ntlm_core.s: curl_ntlm_core.c.s
 
 # target to generate assembly for a file
 curl_ntlm_core.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_ntlm_core.c.s
 .PHONY : curl_ntlm_core.c.s
 
 curl_range.o: curl_range.c.o
@@ -872,7 +872,7 @@ curl_range.o: curl_range.c.o
 
 # target to build an object file
 curl_range.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.o
 .PHONY : curl_range.c.o
 
 curl_range.i: curl_range.c.i
@@ -880,7 +880,7 @@ curl_range.i: curl_range.c.i
 
 # target to preprocess a source file
 curl_range.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.i
 .PHONY : curl_range.c.i
 
 curl_range.s: curl_range.c.s
@@ -888,7 +888,7 @@ curl_range.s: curl_range.c.s
 
 # target to generate assembly for a file
 curl_range.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_range.c.s
 .PHONY : curl_range.c.s
 
 curl_rtmp.o: curl_rtmp.c.o
@@ -896,7 +896,7 @@ curl_rtmp.o: curl_rtmp.c.o
 
 # target to build an object file
 curl_rtmp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.o
 .PHONY : curl_rtmp.c.o
 
 curl_rtmp.i: curl_rtmp.c.i
@@ -904,7 +904,7 @@ curl_rtmp.i: curl_rtmp.c.i
 
 # target to preprocess a source file
 curl_rtmp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.i
 .PHONY : curl_rtmp.c.i
 
 curl_rtmp.s: curl_rtmp.c.s
@@ -912,7 +912,7 @@ curl_rtmp.s: curl_rtmp.c.s
 
 # target to generate assembly for a file
 curl_rtmp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_rtmp.c.s
 .PHONY : curl_rtmp.c.s
 
 curl_sasl.o: curl_sasl.c.o
@@ -920,7 +920,7 @@ curl_sasl.o: curl_sasl.c.o
 
 # target to build an object file
 curl_sasl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.o
 .PHONY : curl_sasl.c.o
 
 curl_sasl.i: curl_sasl.c.i
@@ -928,7 +928,7 @@ curl_sasl.i: curl_sasl.c.i
 
 # target to preprocess a source file
 curl_sasl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.i
 .PHONY : curl_sasl.c.i
 
 curl_sasl.s: curl_sasl.c.s
@@ -936,7 +936,7 @@ curl_sasl.s: curl_sasl.c.s
 
 # target to generate assembly for a file
 curl_sasl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sasl.c.s
 .PHONY : curl_sasl.c.s
 
 curl_sha512_256.o: curl_sha512_256.c.o
@@ -944,7 +944,7 @@ curl_sha512_256.o: curl_sha512_256.c.o
 
 # target to build an object file
 curl_sha512_256.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.o
 .PHONY : curl_sha512_256.c.o
 
 curl_sha512_256.i: curl_sha512_256.c.i
@@ -952,7 +952,7 @@ curl_sha512_256.i: curl_sha512_256.c.i
 
 # target to preprocess a source file
 curl_sha512_256.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.i
 .PHONY : curl_sha512_256.c.i
 
 curl_sha512_256.s: curl_sha512_256.c.s
@@ -960,7 +960,7 @@ curl_sha512_256.s: curl_sha512_256.c.s
 
 # target to generate assembly for a file
 curl_sha512_256.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sha512_256.c.s
 .PHONY : curl_sha512_256.c.s
 
 curl_sspi.o: curl_sspi.c.o
@@ -968,7 +968,7 @@ curl_sspi.o: curl_sspi.c.o
 
 # target to build an object file
 curl_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.o
 .PHONY : curl_sspi.c.o
 
 curl_sspi.i: curl_sspi.c.i
@@ -976,7 +976,7 @@ curl_sspi.i: curl_sspi.c.i
 
 # target to preprocess a source file
 curl_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.i
 .PHONY : curl_sspi.c.i
 
 curl_sspi.s: curl_sspi.c.s
@@ -984,7 +984,7 @@ curl_sspi.s: curl_sspi.c.s
 
 # target to generate assembly for a file
 curl_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_sspi.c.s
 .PHONY : curl_sspi.c.s
 
 curl_threads.o: curl_threads.c.o
@@ -992,7 +992,7 @@ curl_threads.o: curl_threads.c.o
 
 # target to build an object file
 curl_threads.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.o
 .PHONY : curl_threads.c.o
 
 curl_threads.i: curl_threads.c.i
@@ -1000,7 +1000,7 @@ curl_threads.i: curl_threads.c.i
 
 # target to preprocess a source file
 curl_threads.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.i
 .PHONY : curl_threads.c.i
 
 curl_threads.s: curl_threads.c.s
@@ -1008,7 +1008,7 @@ curl_threads.s: curl_threads.c.s
 
 # target to generate assembly for a file
 curl_threads.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_threads.c.s
 .PHONY : curl_threads.c.s
 
 curl_trc.o: curl_trc.c.o
@@ -1016,7 +1016,7 @@ curl_trc.o: curl_trc.c.o
 
 # target to build an object file
 curl_trc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.o
 .PHONY : curl_trc.c.o
 
 curl_trc.i: curl_trc.c.i
@@ -1024,7 +1024,7 @@ curl_trc.i: curl_trc.c.i
 
 # target to preprocess a source file
 curl_trc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.i
 .PHONY : curl_trc.c.i
 
 curl_trc.s: curl_trc.c.s
@@ -1032,7 +1032,7 @@ curl_trc.s: curl_trc.c.s
 
 # target to generate assembly for a file
 curl_trc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curl_trc.c.s
 .PHONY : curl_trc.c.s
 
 curlx/base64.o: curlx/base64.c.o
@@ -1040,7 +1040,7 @@ curlx/base64.o: curlx/base64.c.o
 
 # target to build an object file
 curlx/base64.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.o
 .PHONY : curlx/base64.c.o
 
 curlx/base64.i: curlx/base64.c.i
@@ -1048,7 +1048,7 @@ curlx/base64.i: curlx/base64.c.i
 
 # target to preprocess a source file
 curlx/base64.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.i
 .PHONY : curlx/base64.c.i
 
 curlx/base64.s: curlx/base64.c.s
@@ -1056,7 +1056,7 @@ curlx/base64.s: curlx/base64.c.s
 
 # target to generate assembly for a file
 curlx/base64.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/base64.c.s
 .PHONY : curlx/base64.c.s
 
 curlx/dynbuf.o: curlx/dynbuf.c.o
@@ -1064,7 +1064,7 @@ curlx/dynbuf.o: curlx/dynbuf.c.o
 
 # target to build an object file
 curlx/dynbuf.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.o
 .PHONY : curlx/dynbuf.c.o
 
 curlx/dynbuf.i: curlx/dynbuf.c.i
@@ -1072,7 +1072,7 @@ curlx/dynbuf.i: curlx/dynbuf.c.i
 
 # target to preprocess a source file
 curlx/dynbuf.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.i
 .PHONY : curlx/dynbuf.c.i
 
 curlx/dynbuf.s: curlx/dynbuf.c.s
@@ -1080,7 +1080,7 @@ curlx/dynbuf.s: curlx/dynbuf.c.s
 
 # target to generate assembly for a file
 curlx/dynbuf.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/dynbuf.c.s
 .PHONY : curlx/dynbuf.c.s
 
 curlx/inet_ntop.o: curlx/inet_ntop.c.o
@@ -1088,7 +1088,7 @@ curlx/inet_ntop.o: curlx/inet_ntop.c.o
 
 # target to build an object file
 curlx/inet_ntop.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.o
 .PHONY : curlx/inet_ntop.c.o
 
 curlx/inet_ntop.i: curlx/inet_ntop.c.i
@@ -1096,7 +1096,7 @@ curlx/inet_ntop.i: curlx/inet_ntop.c.i
 
 # target to preprocess a source file
 curlx/inet_ntop.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.i
 .PHONY : curlx/inet_ntop.c.i
 
 curlx/inet_ntop.s: curlx/inet_ntop.c.s
@@ -1104,7 +1104,7 @@ curlx/inet_ntop.s: curlx/inet_ntop.c.s
 
 # target to generate assembly for a file
 curlx/inet_ntop.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_ntop.c.s
 .PHONY : curlx/inet_ntop.c.s
 
 curlx/inet_pton.o: curlx/inet_pton.c.o
@@ -1112,7 +1112,7 @@ curlx/inet_pton.o: curlx/inet_pton.c.o
 
 # target to build an object file
 curlx/inet_pton.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.o
 .PHONY : curlx/inet_pton.c.o
 
 curlx/inet_pton.i: curlx/inet_pton.c.i
@@ -1120,7 +1120,7 @@ curlx/inet_pton.i: curlx/inet_pton.c.i
 
 # target to preprocess a source file
 curlx/inet_pton.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.i
 .PHONY : curlx/inet_pton.c.i
 
 curlx/inet_pton.s: curlx/inet_pton.c.s
@@ -1128,7 +1128,7 @@ curlx/inet_pton.s: curlx/inet_pton.c.s
 
 # target to generate assembly for a file
 curlx/inet_pton.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/inet_pton.c.s
 .PHONY : curlx/inet_pton.c.s
 
 curlx/multibyte.o: curlx/multibyte.c.o
@@ -1136,7 +1136,7 @@ curlx/multibyte.o: curlx/multibyte.c.o
 
 # target to build an object file
 curlx/multibyte.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.o
 .PHONY : curlx/multibyte.c.o
 
 curlx/multibyte.i: curlx/multibyte.c.i
@@ -1144,7 +1144,7 @@ curlx/multibyte.i: curlx/multibyte.c.i
 
 # target to preprocess a source file
 curlx/multibyte.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.i
 .PHONY : curlx/multibyte.c.i
 
 curlx/multibyte.s: curlx/multibyte.c.s
@@ -1152,7 +1152,7 @@ curlx/multibyte.s: curlx/multibyte.c.s
 
 # target to generate assembly for a file
 curlx/multibyte.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/multibyte.c.s
 .PHONY : curlx/multibyte.c.s
 
 curlx/nonblock.o: curlx/nonblock.c.o
@@ -1160,7 +1160,7 @@ curlx/nonblock.o: curlx/nonblock.c.o
 
 # target to build an object file
 curlx/nonblock.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.o
 .PHONY : curlx/nonblock.c.o
 
 curlx/nonblock.i: curlx/nonblock.c.i
@@ -1168,7 +1168,7 @@ curlx/nonblock.i: curlx/nonblock.c.i
 
 # target to preprocess a source file
 curlx/nonblock.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.i
 .PHONY : curlx/nonblock.c.i
 
 curlx/nonblock.s: curlx/nonblock.c.s
@@ -1176,7 +1176,7 @@ curlx/nonblock.s: curlx/nonblock.c.s
 
 # target to generate assembly for a file
 curlx/nonblock.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/nonblock.c.s
 .PHONY : curlx/nonblock.c.s
 
 curlx/strparse.o: curlx/strparse.c.o
@@ -1184,7 +1184,7 @@ curlx/strparse.o: curlx/strparse.c.o
 
 # target to build an object file
 curlx/strparse.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.o
 .PHONY : curlx/strparse.c.o
 
 curlx/strparse.i: curlx/strparse.c.i
@@ -1192,7 +1192,7 @@ curlx/strparse.i: curlx/strparse.c.i
 
 # target to preprocess a source file
 curlx/strparse.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.i
 .PHONY : curlx/strparse.c.i
 
 curlx/strparse.s: curlx/strparse.c.s
@@ -1200,7 +1200,7 @@ curlx/strparse.s: curlx/strparse.c.s
 
 # target to generate assembly for a file
 curlx/strparse.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/strparse.c.s
 .PHONY : curlx/strparse.c.s
 
 curlx/timediff.o: curlx/timediff.c.o
@@ -1208,7 +1208,7 @@ curlx/timediff.o: curlx/timediff.c.o
 
 # target to build an object file
 curlx/timediff.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.o
 .PHONY : curlx/timediff.c.o
 
 curlx/timediff.i: curlx/timediff.c.i
@@ -1216,7 +1216,7 @@ curlx/timediff.i: curlx/timediff.c.i
 
 # target to preprocess a source file
 curlx/timediff.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.i
 .PHONY : curlx/timediff.c.i
 
 curlx/timediff.s: curlx/timediff.c.s
@@ -1224,7 +1224,7 @@ curlx/timediff.s: curlx/timediff.c.s
 
 # target to generate assembly for a file
 curlx/timediff.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timediff.c.s
 .PHONY : curlx/timediff.c.s
 
 curlx/timeval.o: curlx/timeval.c.o
@@ -1232,7 +1232,7 @@ curlx/timeval.o: curlx/timeval.c.o
 
 # target to build an object file
 curlx/timeval.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.o
 .PHONY : curlx/timeval.c.o
 
 curlx/timeval.i: curlx/timeval.c.i
@@ -1240,7 +1240,7 @@ curlx/timeval.i: curlx/timeval.c.i
 
 # target to preprocess a source file
 curlx/timeval.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.i
 .PHONY : curlx/timeval.c.i
 
 curlx/timeval.s: curlx/timeval.c.s
@@ -1248,7 +1248,7 @@ curlx/timeval.s: curlx/timeval.c.s
 
 # target to generate assembly for a file
 curlx/timeval.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/timeval.c.s
 .PHONY : curlx/timeval.c.s
 
 curlx/version_win32.o: curlx/version_win32.c.o
@@ -1256,7 +1256,7 @@ curlx/version_win32.o: curlx/version_win32.c.o
 
 # target to build an object file
 curlx/version_win32.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.o
 .PHONY : curlx/version_win32.c.o
 
 curlx/version_win32.i: curlx/version_win32.c.i
@@ -1264,7 +1264,7 @@ curlx/version_win32.i: curlx/version_win32.c.i
 
 # target to preprocess a source file
 curlx/version_win32.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.i
 .PHONY : curlx/version_win32.c.i
 
 curlx/version_win32.s: curlx/version_win32.c.s
@@ -1272,7 +1272,7 @@ curlx/version_win32.s: curlx/version_win32.c.s
 
 # target to generate assembly for a file
 curlx/version_win32.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/version_win32.c.s
 .PHONY : curlx/version_win32.c.s
 
 curlx/wait.o: curlx/wait.c.o
@@ -1280,7 +1280,7 @@ curlx/wait.o: curlx/wait.c.o
 
 # target to build an object file
 curlx/wait.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.o
 .PHONY : curlx/wait.c.o
 
 curlx/wait.i: curlx/wait.c.i
@@ -1288,7 +1288,7 @@ curlx/wait.i: curlx/wait.c.i
 
 # target to preprocess a source file
 curlx/wait.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.i
 .PHONY : curlx/wait.c.i
 
 curlx/wait.s: curlx/wait.c.s
@@ -1296,7 +1296,7 @@ curlx/wait.s: curlx/wait.c.s
 
 # target to generate assembly for a file
 curlx/wait.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/wait.c.s
 .PHONY : curlx/wait.c.s
 
 curlx/warnless.o: curlx/warnless.c.o
@@ -1304,7 +1304,7 @@ curlx/warnless.o: curlx/warnless.c.o
 
 # target to build an object file
 curlx/warnless.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.o
 .PHONY : curlx/warnless.c.o
 
 curlx/warnless.i: curlx/warnless.c.i
@@ -1312,7 +1312,7 @@ curlx/warnless.i: curlx/warnless.c.i
 
 # target to preprocess a source file
 curlx/warnless.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.i
 .PHONY : curlx/warnless.c.i
 
 curlx/warnless.s: curlx/warnless.c.s
@@ -1320,7 +1320,7 @@ curlx/warnless.s: curlx/warnless.c.s
 
 # target to generate assembly for a file
 curlx/warnless.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/warnless.c.s
 .PHONY : curlx/warnless.c.s
 
 curlx/winapi.o: curlx/winapi.c.o
@@ -1328,7 +1328,7 @@ curlx/winapi.o: curlx/winapi.c.o
 
 # target to build an object file
 curlx/winapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.o
 .PHONY : curlx/winapi.c.o
 
 curlx/winapi.i: curlx/winapi.c.i
@@ -1336,7 +1336,7 @@ curlx/winapi.i: curlx/winapi.c.i
 
 # target to preprocess a source file
 curlx/winapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.i
 .PHONY : curlx/winapi.c.i
 
 curlx/winapi.s: curlx/winapi.c.s
@@ -1344,7 +1344,7 @@ curlx/winapi.s: curlx/winapi.c.s
 
 # target to generate assembly for a file
 curlx/winapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/curlx/winapi.c.s
 .PHONY : curlx/winapi.c.s
 
 cw-out.o: cw-out.c.o
@@ -1352,7 +1352,7 @@ cw-out.o: cw-out.c.o
 
 # target to build an object file
 cw-out.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.o
 .PHONY : cw-out.c.o
 
 cw-out.i: cw-out.c.i
@@ -1360,7 +1360,7 @@ cw-out.i: cw-out.c.i
 
 # target to preprocess a source file
 cw-out.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.i
 .PHONY : cw-out.c.i
 
 cw-out.s: cw-out.c.s
@@ -1368,7 +1368,7 @@ cw-out.s: cw-out.c.s
 
 # target to generate assembly for a file
 cw-out.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-out.c.s
 .PHONY : cw-out.c.s
 
 cw-pause.o: cw-pause.c.o
@@ -1376,7 +1376,7 @@ cw-pause.o: cw-pause.c.o
 
 # target to build an object file
 cw-pause.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.o
 .PHONY : cw-pause.c.o
 
 cw-pause.i: cw-pause.c.i
@@ -1384,7 +1384,7 @@ cw-pause.i: cw-pause.c.i
 
 # target to preprocess a source file
 cw-pause.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.i
 .PHONY : cw-pause.c.i
 
 cw-pause.s: cw-pause.c.s
@@ -1392,7 +1392,7 @@ cw-pause.s: cw-pause.c.s
 
 # target to generate assembly for a file
 cw-pause.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/cw-pause.c.s
 .PHONY : cw-pause.c.s
 
 dict.o: dict.c.o
@@ -1400,7 +1400,7 @@ dict.o: dict.c.o
 
 # target to build an object file
 dict.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.o
 .PHONY : dict.c.o
 
 dict.i: dict.c.i
@@ -1408,7 +1408,7 @@ dict.i: dict.c.i
 
 # target to preprocess a source file
 dict.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.i
 .PHONY : dict.c.i
 
 dict.s: dict.c.s
@@ -1416,7 +1416,7 @@ dict.s: dict.c.s
 
 # target to generate assembly for a file
 dict.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dict.c.s
 .PHONY : dict.c.s
 
 doh.o: doh.c.o
@@ -1424,7 +1424,7 @@ doh.o: doh.c.o
 
 # target to build an object file
 doh.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.o
 .PHONY : doh.c.o
 
 doh.i: doh.c.i
@@ -1432,7 +1432,7 @@ doh.i: doh.c.i
 
 # target to preprocess a source file
 doh.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.i
 .PHONY : doh.c.i
 
 doh.s: doh.c.s
@@ -1440,7 +1440,7 @@ doh.s: doh.c.s
 
 # target to generate assembly for a file
 doh.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/doh.c.s
 .PHONY : doh.c.s
 
 dynhds.o: dynhds.c.o
@@ -1448,7 +1448,7 @@ dynhds.o: dynhds.c.o
 
 # target to build an object file
 dynhds.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.o
 .PHONY : dynhds.c.o
 
 dynhds.i: dynhds.c.i
@@ -1456,7 +1456,7 @@ dynhds.i: dynhds.c.i
 
 # target to preprocess a source file
 dynhds.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.i
 .PHONY : dynhds.c.i
 
 dynhds.s: dynhds.c.s
@@ -1464,7 +1464,7 @@ dynhds.s: dynhds.c.s
 
 # target to generate assembly for a file
 dynhds.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/dynhds.c.s
 .PHONY : dynhds.c.s
 
 easy.o: easy.c.o
@@ -1472,7 +1472,7 @@ easy.o: easy.c.o
 
 # target to build an object file
 easy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.o
 .PHONY : easy.c.o
 
 easy.i: easy.c.i
@@ -1480,7 +1480,7 @@ easy.i: easy.c.i
 
 # target to preprocess a source file
 easy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.i
 .PHONY : easy.c.i
 
 easy.s: easy.c.s
@@ -1488,7 +1488,7 @@ easy.s: easy.c.s
 
 # target to generate assembly for a file
 easy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easy.c.s
 .PHONY : easy.c.s
 
 easygetopt.o: easygetopt.c.o
@@ -1496,7 +1496,7 @@ easygetopt.o: easygetopt.c.o
 
 # target to build an object file
 easygetopt.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.o
 .PHONY : easygetopt.c.o
 
 easygetopt.i: easygetopt.c.i
@@ -1504,7 +1504,7 @@ easygetopt.i: easygetopt.c.i
 
 # target to preprocess a source file
 easygetopt.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.i
 .PHONY : easygetopt.c.i
 
 easygetopt.s: easygetopt.c.s
@@ -1512,7 +1512,7 @@ easygetopt.s: easygetopt.c.s
 
 # target to generate assembly for a file
 easygetopt.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easygetopt.c.s
 .PHONY : easygetopt.c.s
 
 easyoptions.o: easyoptions.c.o
@@ -1520,7 +1520,7 @@ easyoptions.o: easyoptions.c.o
 
 # target to build an object file
 easyoptions.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.o
 .PHONY : easyoptions.c.o
 
 easyoptions.i: easyoptions.c.i
@@ -1528,7 +1528,7 @@ easyoptions.i: easyoptions.c.i
 
 # target to preprocess a source file
 easyoptions.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.i
 .PHONY : easyoptions.c.i
 
 easyoptions.s: easyoptions.c.s
@@ -1536,7 +1536,7 @@ easyoptions.s: easyoptions.c.s
 
 # target to generate assembly for a file
 easyoptions.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/easyoptions.c.s
 .PHONY : easyoptions.c.s
 
 escape.o: escape.c.o
@@ -1544,7 +1544,7 @@ escape.o: escape.c.o
 
 # target to build an object file
 escape.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.o
 .PHONY : escape.c.o
 
 escape.i: escape.c.i
@@ -1552,7 +1552,7 @@ escape.i: escape.c.i
 
 # target to preprocess a source file
 escape.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.i
 .PHONY : escape.c.i
 
 escape.s: escape.c.s
@@ -1560,7 +1560,7 @@ escape.s: escape.c.s
 
 # target to generate assembly for a file
 escape.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/escape.c.s
 .PHONY : escape.c.s
 
 fake_addrinfo.o: fake_addrinfo.c.o
@@ -1568,7 +1568,7 @@ fake_addrinfo.o: fake_addrinfo.c.o
 
 # target to build an object file
 fake_addrinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.o
 .PHONY : fake_addrinfo.c.o
 
 fake_addrinfo.i: fake_addrinfo.c.i
@@ -1576,7 +1576,7 @@ fake_addrinfo.i: fake_addrinfo.c.i
 
 # target to preprocess a source file
 fake_addrinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.i
 .PHONY : fake_addrinfo.c.i
 
 fake_addrinfo.s: fake_addrinfo.c.s
@@ -1584,7 +1584,7 @@ fake_addrinfo.s: fake_addrinfo.c.s
 
 # target to generate assembly for a file
 fake_addrinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fake_addrinfo.c.s
 .PHONY : fake_addrinfo.c.s
 
 file.o: file.c.o
@@ -1592,7 +1592,7 @@ file.o: file.c.o
 
 # target to build an object file
 file.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.o
 .PHONY : file.c.o
 
 file.i: file.c.i
@@ -1600,7 +1600,7 @@ file.i: file.c.i
 
 # target to preprocess a source file
 file.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.i
 .PHONY : file.c.i
 
 file.s: file.c.s
@@ -1608,7 +1608,7 @@ file.s: file.c.s
 
 # target to generate assembly for a file
 file.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/file.c.s
 .PHONY : file.c.s
 
 fileinfo.o: fileinfo.c.o
@@ -1616,7 +1616,7 @@ fileinfo.o: fileinfo.c.o
 
 # target to build an object file
 fileinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.o
 .PHONY : fileinfo.c.o
 
 fileinfo.i: fileinfo.c.i
@@ -1624,7 +1624,7 @@ fileinfo.i: fileinfo.c.i
 
 # target to preprocess a source file
 fileinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.i
 .PHONY : fileinfo.c.i
 
 fileinfo.s: fileinfo.c.s
@@ -1632,7 +1632,7 @@ fileinfo.s: fileinfo.c.s
 
 # target to generate assembly for a file
 fileinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fileinfo.c.s
 .PHONY : fileinfo.c.s
 
 fopen.o: fopen.c.o
@@ -1640,7 +1640,7 @@ fopen.o: fopen.c.o
 
 # target to build an object file
 fopen.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.o
 .PHONY : fopen.c.o
 
 fopen.i: fopen.c.i
@@ -1648,7 +1648,7 @@ fopen.i: fopen.c.i
 
 # target to preprocess a source file
 fopen.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.i
 .PHONY : fopen.c.i
 
 fopen.s: fopen.c.s
@@ -1656,7 +1656,7 @@ fopen.s: fopen.c.s
 
 # target to generate assembly for a file
 fopen.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/fopen.c.s
 .PHONY : fopen.c.s
 
 formdata.o: formdata.c.o
@@ -1664,7 +1664,7 @@ formdata.o: formdata.c.o
 
 # target to build an object file
 formdata.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.o
 .PHONY : formdata.c.o
 
 formdata.i: formdata.c.i
@@ -1672,7 +1672,7 @@ formdata.i: formdata.c.i
 
 # target to preprocess a source file
 formdata.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.i
 .PHONY : formdata.c.i
 
 formdata.s: formdata.c.s
@@ -1680,7 +1680,7 @@ formdata.s: formdata.c.s
 
 # target to generate assembly for a file
 formdata.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/formdata.c.s
 .PHONY : formdata.c.s
 
 ftp.o: ftp.c.o
@@ -1688,7 +1688,7 @@ ftp.o: ftp.c.o
 
 # target to build an object file
 ftp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.o
 .PHONY : ftp.c.o
 
 ftp.i: ftp.c.i
@@ -1696,7 +1696,7 @@ ftp.i: ftp.c.i
 
 # target to preprocess a source file
 ftp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.i
 .PHONY : ftp.c.i
 
 ftp.s: ftp.c.s
@@ -1704,7 +1704,7 @@ ftp.s: ftp.c.s
 
 # target to generate assembly for a file
 ftp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftp.c.s
 .PHONY : ftp.c.s
 
 ftplistparser.o: ftplistparser.c.o
@@ -1712,7 +1712,7 @@ ftplistparser.o: ftplistparser.c.o
 
 # target to build an object file
 ftplistparser.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.o
 .PHONY : ftplistparser.c.o
 
 ftplistparser.i: ftplistparser.c.i
@@ -1720,7 +1720,7 @@ ftplistparser.i: ftplistparser.c.i
 
 # target to preprocess a source file
 ftplistparser.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.i
 .PHONY : ftplistparser.c.i
 
 ftplistparser.s: ftplistparser.c.s
@@ -1728,7 +1728,7 @@ ftplistparser.s: ftplistparser.c.s
 
 # target to generate assembly for a file
 ftplistparser.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ftplistparser.c.s
 .PHONY : ftplistparser.c.s
 
 getenv.o: getenv.c.o
@@ -1736,7 +1736,7 @@ getenv.o: getenv.c.o
 
 # target to build an object file
 getenv.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.o
 .PHONY : getenv.c.o
 
 getenv.i: getenv.c.i
@@ -1744,7 +1744,7 @@ getenv.i: getenv.c.i
 
 # target to preprocess a source file
 getenv.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.i
 .PHONY : getenv.c.i
 
 getenv.s: getenv.c.s
@@ -1752,7 +1752,7 @@ getenv.s: getenv.c.s
 
 # target to generate assembly for a file
 getenv.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getenv.c.s
 .PHONY : getenv.c.s
 
 getinfo.o: getinfo.c.o
@@ -1760,7 +1760,7 @@ getinfo.o: getinfo.c.o
 
 # target to build an object file
 getinfo.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.o
 .PHONY : getinfo.c.o
 
 getinfo.i: getinfo.c.i
@@ -1768,7 +1768,7 @@ getinfo.i: getinfo.c.i
 
 # target to preprocess a source file
 getinfo.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.i
 .PHONY : getinfo.c.i
 
 getinfo.s: getinfo.c.s
@@ -1776,7 +1776,7 @@ getinfo.s: getinfo.c.s
 
 # target to generate assembly for a file
 getinfo.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/getinfo.c.s
 .PHONY : getinfo.c.s
 
 gopher.o: gopher.c.o
@@ -1784,7 +1784,7 @@ gopher.o: gopher.c.o
 
 # target to build an object file
 gopher.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.o
 .PHONY : gopher.c.o
 
 gopher.i: gopher.c.i
@@ -1792,7 +1792,7 @@ gopher.i: gopher.c.i
 
 # target to preprocess a source file
 gopher.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.i
 .PHONY : gopher.c.i
 
 gopher.s: gopher.c.s
@@ -1800,7 +1800,7 @@ gopher.s: gopher.c.s
 
 # target to generate assembly for a file
 gopher.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/gopher.c.s
 .PHONY : gopher.c.s
 
 hash.o: hash.c.o
@@ -1808,7 +1808,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -1816,7 +1816,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -1824,7 +1824,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hash.c.s
 .PHONY : hash.c.s
 
 headers.o: headers.c.o
@@ -1832,7 +1832,7 @@ headers.o: headers.c.o
 
 # target to build an object file
 headers.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.o
 .PHONY : headers.c.o
 
 headers.i: headers.c.i
@@ -1840,7 +1840,7 @@ headers.i: headers.c.i
 
 # target to preprocess a source file
 headers.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.i
 .PHONY : headers.c.i
 
 headers.s: headers.c.s
@@ -1848,7 +1848,7 @@ headers.s: headers.c.s
 
 # target to generate assembly for a file
 headers.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/headers.c.s
 .PHONY : headers.c.s
 
 hmac.o: hmac.c.o
@@ -1856,7 +1856,7 @@ hmac.o: hmac.c.o
 
 # target to build an object file
 hmac.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.o
 .PHONY : hmac.c.o
 
 hmac.i: hmac.c.i
@@ -1864,7 +1864,7 @@ hmac.i: hmac.c.i
 
 # target to preprocess a source file
 hmac.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.i
 .PHONY : hmac.c.i
 
 hmac.s: hmac.c.s
@@ -1872,7 +1872,7 @@ hmac.s: hmac.c.s
 
 # target to generate assembly for a file
 hmac.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hmac.c.s
 .PHONY : hmac.c.s
 
 hostip.o: hostip.c.o
@@ -1880,7 +1880,7 @@ hostip.o: hostip.c.o
 
 # target to build an object file
 hostip.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.o
 .PHONY : hostip.c.o
 
 hostip.i: hostip.c.i
@@ -1888,7 +1888,7 @@ hostip.i: hostip.c.i
 
 # target to preprocess a source file
 hostip.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.i
 .PHONY : hostip.c.i
 
 hostip.s: hostip.c.s
@@ -1896,7 +1896,7 @@ hostip.s: hostip.c.s
 
 # target to generate assembly for a file
 hostip.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip.c.s
 .PHONY : hostip.c.s
 
 hostip4.o: hostip4.c.o
@@ -1904,7 +1904,7 @@ hostip4.o: hostip4.c.o
 
 # target to build an object file
 hostip4.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.o
 .PHONY : hostip4.c.o
 
 hostip4.i: hostip4.c.i
@@ -1912,7 +1912,7 @@ hostip4.i: hostip4.c.i
 
 # target to preprocess a source file
 hostip4.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.i
 .PHONY : hostip4.c.i
 
 hostip4.s: hostip4.c.s
@@ -1920,7 +1920,7 @@ hostip4.s: hostip4.c.s
 
 # target to generate assembly for a file
 hostip4.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip4.c.s
 .PHONY : hostip4.c.s
 
 hostip6.o: hostip6.c.o
@@ -1928,7 +1928,7 @@ hostip6.o: hostip6.c.o
 
 # target to build an object file
 hostip6.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.o
 .PHONY : hostip6.c.o
 
 hostip6.i: hostip6.c.i
@@ -1936,7 +1936,7 @@ hostip6.i: hostip6.c.i
 
 # target to preprocess a source file
 hostip6.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.i
 .PHONY : hostip6.c.i
 
 hostip6.s: hostip6.c.s
@@ -1944,7 +1944,7 @@ hostip6.s: hostip6.c.s
 
 # target to generate assembly for a file
 hostip6.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hostip6.c.s
 .PHONY : hostip6.c.s
 
 hsts.o: hsts.c.o
@@ -1952,7 +1952,7 @@ hsts.o: hsts.c.o
 
 # target to build an object file
 hsts.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.o
 .PHONY : hsts.c.o
 
 hsts.i: hsts.c.i
@@ -1960,7 +1960,7 @@ hsts.i: hsts.c.i
 
 # target to preprocess a source file
 hsts.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.i
 .PHONY : hsts.c.i
 
 hsts.s: hsts.c.s
@@ -1968,7 +1968,7 @@ hsts.s: hsts.c.s
 
 # target to generate assembly for a file
 hsts.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/hsts.c.s
 .PHONY : hsts.c.s
 
 http.o: http.c.o
@@ -1976,7 +1976,7 @@ http.o: http.c.o
 
 # target to build an object file
 http.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.o
 .PHONY : http.c.o
 
 http.i: http.c.i
@@ -1984,7 +1984,7 @@ http.i: http.c.i
 
 # target to preprocess a source file
 http.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.i
 .PHONY : http.c.i
 
 http.s: http.c.s
@@ -1992,7 +1992,7 @@ http.s: http.c.s
 
 # target to generate assembly for a file
 http.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http.c.s
 .PHONY : http.c.s
 
 http1.o: http1.c.o
@@ -2000,7 +2000,7 @@ http1.o: http1.c.o
 
 # target to build an object file
 http1.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.o
 .PHONY : http1.c.o
 
 http1.i: http1.c.i
@@ -2008,7 +2008,7 @@ http1.i: http1.c.i
 
 # target to preprocess a source file
 http1.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.i
 .PHONY : http1.c.i
 
 http1.s: http1.c.s
@@ -2016,7 +2016,7 @@ http1.s: http1.c.s
 
 # target to generate assembly for a file
 http1.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http1.c.s
 .PHONY : http1.c.s
 
 http2.o: http2.c.o
@@ -2024,7 +2024,7 @@ http2.o: http2.c.o
 
 # target to build an object file
 http2.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.o
 .PHONY : http2.c.o
 
 http2.i: http2.c.i
@@ -2032,7 +2032,7 @@ http2.i: http2.c.i
 
 # target to preprocess a source file
 http2.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.i
 .PHONY : http2.c.i
 
 http2.s: http2.c.s
@@ -2040,7 +2040,7 @@ http2.s: http2.c.s
 
 # target to generate assembly for a file
 http2.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http2.c.s
 .PHONY : http2.c.s
 
 http_aws_sigv4.o: http_aws_sigv4.c.o
@@ -2048,7 +2048,7 @@ http_aws_sigv4.o: http_aws_sigv4.c.o
 
 # target to build an object file
 http_aws_sigv4.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.o
 .PHONY : http_aws_sigv4.c.o
 
 http_aws_sigv4.i: http_aws_sigv4.c.i
@@ -2056,7 +2056,7 @@ http_aws_sigv4.i: http_aws_sigv4.c.i
 
 # target to preprocess a source file
 http_aws_sigv4.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.i
 .PHONY : http_aws_sigv4.c.i
 
 http_aws_sigv4.s: http_aws_sigv4.c.s
@@ -2064,7 +2064,7 @@ http_aws_sigv4.s: http_aws_sigv4.c.s
 
 # target to generate assembly for a file
 http_aws_sigv4.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_aws_sigv4.c.s
 .PHONY : http_aws_sigv4.c.s
 
 http_chunks.o: http_chunks.c.o
@@ -2072,7 +2072,7 @@ http_chunks.o: http_chunks.c.o
 
 # target to build an object file
 http_chunks.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.o
 .PHONY : http_chunks.c.o
 
 http_chunks.i: http_chunks.c.i
@@ -2080,7 +2080,7 @@ http_chunks.i: http_chunks.c.i
 
 # target to preprocess a source file
 http_chunks.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.i
 .PHONY : http_chunks.c.i
 
 http_chunks.s: http_chunks.c.s
@@ -2088,7 +2088,7 @@ http_chunks.s: http_chunks.c.s
 
 # target to generate assembly for a file
 http_chunks.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_chunks.c.s
 .PHONY : http_chunks.c.s
 
 http_digest.o: http_digest.c.o
@@ -2096,7 +2096,7 @@ http_digest.o: http_digest.c.o
 
 # target to build an object file
 http_digest.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.o
 .PHONY : http_digest.c.o
 
 http_digest.i: http_digest.c.i
@@ -2104,7 +2104,7 @@ http_digest.i: http_digest.c.i
 
 # target to preprocess a source file
 http_digest.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.i
 .PHONY : http_digest.c.i
 
 http_digest.s: http_digest.c.s
@@ -2112,7 +2112,7 @@ http_digest.s: http_digest.c.s
 
 # target to generate assembly for a file
 http_digest.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_digest.c.s
 .PHONY : http_digest.c.s
 
 http_negotiate.o: http_negotiate.c.o
@@ -2120,7 +2120,7 @@ http_negotiate.o: http_negotiate.c.o
 
 # target to build an object file
 http_negotiate.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.o
 .PHONY : http_negotiate.c.o
 
 http_negotiate.i: http_negotiate.c.i
@@ -2128,7 +2128,7 @@ http_negotiate.i: http_negotiate.c.i
 
 # target to preprocess a source file
 http_negotiate.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.i
 .PHONY : http_negotiate.c.i
 
 http_negotiate.s: http_negotiate.c.s
@@ -2136,7 +2136,7 @@ http_negotiate.s: http_negotiate.c.s
 
 # target to generate assembly for a file
 http_negotiate.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_negotiate.c.s
 .PHONY : http_negotiate.c.s
 
 http_ntlm.o: http_ntlm.c.o
@@ -2144,7 +2144,7 @@ http_ntlm.o: http_ntlm.c.o
 
 # target to build an object file
 http_ntlm.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.o
 .PHONY : http_ntlm.c.o
 
 http_ntlm.i: http_ntlm.c.i
@@ -2152,7 +2152,7 @@ http_ntlm.i: http_ntlm.c.i
 
 # target to preprocess a source file
 http_ntlm.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.i
 .PHONY : http_ntlm.c.i
 
 http_ntlm.s: http_ntlm.c.s
@@ -2160,7 +2160,7 @@ http_ntlm.s: http_ntlm.c.s
 
 # target to generate assembly for a file
 http_ntlm.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_ntlm.c.s
 .PHONY : http_ntlm.c.s
 
 http_proxy.o: http_proxy.c.o
@@ -2168,7 +2168,7 @@ http_proxy.o: http_proxy.c.o
 
 # target to build an object file
 http_proxy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.o
 .PHONY : http_proxy.c.o
 
 http_proxy.i: http_proxy.c.i
@@ -2176,7 +2176,7 @@ http_proxy.i: http_proxy.c.i
 
 # target to preprocess a source file
 http_proxy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.i
 .PHONY : http_proxy.c.i
 
 http_proxy.s: http_proxy.c.s
@@ -2184,7 +2184,7 @@ http_proxy.s: http_proxy.c.s
 
 # target to generate assembly for a file
 http_proxy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/http_proxy.c.s
 .PHONY : http_proxy.c.s
 
 httpsrr.o: httpsrr.c.o
@@ -2192,7 +2192,7 @@ httpsrr.o: httpsrr.c.o
 
 # target to build an object file
 httpsrr.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.o
 .PHONY : httpsrr.c.o
 
 httpsrr.i: httpsrr.c.i
@@ -2200,7 +2200,7 @@ httpsrr.i: httpsrr.c.i
 
 # target to preprocess a source file
 httpsrr.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.i
 .PHONY : httpsrr.c.i
 
 httpsrr.s: httpsrr.c.s
@@ -2208,7 +2208,7 @@ httpsrr.s: httpsrr.c.s
 
 # target to generate assembly for a file
 httpsrr.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/httpsrr.c.s
 .PHONY : httpsrr.c.s
 
 idn.o: idn.c.o
@@ -2216,7 +2216,7 @@ idn.o: idn.c.o
 
 # target to build an object file
 idn.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.o
 .PHONY : idn.c.o
 
 idn.i: idn.c.i
@@ -2224,7 +2224,7 @@ idn.i: idn.c.i
 
 # target to preprocess a source file
 idn.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.i
 .PHONY : idn.c.i
 
 idn.s: idn.c.s
@@ -2232,7 +2232,7 @@ idn.s: idn.c.s
 
 # target to generate assembly for a file
 idn.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/idn.c.s
 .PHONY : idn.c.s
 
 if2ip.o: if2ip.c.o
@@ -2240,7 +2240,7 @@ if2ip.o: if2ip.c.o
 
 # target to build an object file
 if2ip.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.o
 .PHONY : if2ip.c.o
 
 if2ip.i: if2ip.c.i
@@ -2248,7 +2248,7 @@ if2ip.i: if2ip.c.i
 
 # target to preprocess a source file
 if2ip.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.i
 .PHONY : if2ip.c.i
 
 if2ip.s: if2ip.c.s
@@ -2256,7 +2256,7 @@ if2ip.s: if2ip.c.s
 
 # target to generate assembly for a file
 if2ip.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/if2ip.c.s
 .PHONY : if2ip.c.s
 
 imap.o: imap.c.o
@@ -2264,7 +2264,7 @@ imap.o: imap.c.o
 
 # target to build an object file
 imap.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.o
 .PHONY : imap.c.o
 
 imap.i: imap.c.i
@@ -2272,7 +2272,7 @@ imap.i: imap.c.i
 
 # target to preprocess a source file
 imap.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.i
 .PHONY : imap.c.i
 
 imap.s: imap.c.s
@@ -2280,7 +2280,7 @@ imap.s: imap.c.s
 
 # target to generate assembly for a file
 imap.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/imap.c.s
 .PHONY : imap.c.s
 
 krb5.o: krb5.c.o
@@ -2288,7 +2288,7 @@ krb5.o: krb5.c.o
 
 # target to build an object file
 krb5.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.o
 .PHONY : krb5.c.o
 
 krb5.i: krb5.c.i
@@ -2296,7 +2296,7 @@ krb5.i: krb5.c.i
 
 # target to preprocess a source file
 krb5.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.i
 .PHONY : krb5.c.i
 
 krb5.s: krb5.c.s
@@ -2304,7 +2304,7 @@ krb5.s: krb5.c.s
 
 # target to generate assembly for a file
 krb5.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/krb5.c.s
 .PHONY : krb5.c.s
 
 ldap.o: ldap.c.o
@@ -2312,7 +2312,7 @@ ldap.o: ldap.c.o
 
 # target to build an object file
 ldap.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.o
 .PHONY : ldap.c.o
 
 ldap.i: ldap.c.i
@@ -2320,7 +2320,7 @@ ldap.i: ldap.c.i
 
 # target to preprocess a source file
 ldap.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.i
 .PHONY : ldap.c.i
 
 ldap.s: ldap.c.s
@@ -2328,7 +2328,7 @@ ldap.s: ldap.c.s
 
 # target to generate assembly for a file
 ldap.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ldap.c.s
 .PHONY : ldap.c.s
 
 llist.o: llist.c.o
@@ -2336,7 +2336,7 @@ llist.o: llist.c.o
 
 # target to build an object file
 llist.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.o
 .PHONY : llist.c.o
 
 llist.i: llist.c.i
@@ -2344,7 +2344,7 @@ llist.i: llist.c.i
 
 # target to preprocess a source file
 llist.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.i
 .PHONY : llist.c.i
 
 llist.s: llist.c.s
@@ -2352,7 +2352,7 @@ llist.s: llist.c.s
 
 # target to generate assembly for a file
 llist.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/llist.c.s
 .PHONY : llist.c.s
 
 macos.o: macos.c.o
@@ -2360,7 +2360,7 @@ macos.o: macos.c.o
 
 # target to build an object file
 macos.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.o
 .PHONY : macos.c.o
 
 macos.i: macos.c.i
@@ -2368,7 +2368,7 @@ macos.i: macos.c.i
 
 # target to preprocess a source file
 macos.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.i
 .PHONY : macos.c.i
 
 macos.s: macos.c.s
@@ -2376,7 +2376,7 @@ macos.s: macos.c.s
 
 # target to generate assembly for a file
 macos.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/macos.c.s
 .PHONY : macos.c.s
 
 md4.o: md4.c.o
@@ -2384,7 +2384,7 @@ md4.o: md4.c.o
 
 # target to build an object file
 md4.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.o
 .PHONY : md4.c.o
 
 md4.i: md4.c.i
@@ -2392,7 +2392,7 @@ md4.i: md4.c.i
 
 # target to preprocess a source file
 md4.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.i
 .PHONY : md4.c.i
 
 md4.s: md4.c.s
@@ -2400,7 +2400,7 @@ md4.s: md4.c.s
 
 # target to generate assembly for a file
 md4.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md4.c.s
 .PHONY : md4.c.s
 
 md5.o: md5.c.o
@@ -2408,7 +2408,7 @@ md5.o: md5.c.o
 
 # target to build an object file
 md5.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.o
 .PHONY : md5.c.o
 
 md5.i: md5.c.i
@@ -2416,7 +2416,7 @@ md5.i: md5.c.i
 
 # target to preprocess a source file
 md5.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.i
 .PHONY : md5.c.i
 
 md5.s: md5.c.s
@@ -2424,7 +2424,7 @@ md5.s: md5.c.s
 
 # target to generate assembly for a file
 md5.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/md5.c.s
 .PHONY : md5.c.s
 
 memdebug.o: memdebug.c.o
@@ -2432,7 +2432,7 @@ memdebug.o: memdebug.c.o
 
 # target to build an object file
 memdebug.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.o
 .PHONY : memdebug.c.o
 
 memdebug.i: memdebug.c.i
@@ -2440,7 +2440,7 @@ memdebug.i: memdebug.c.i
 
 # target to preprocess a source file
 memdebug.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.i
 .PHONY : memdebug.c.i
 
 memdebug.s: memdebug.c.s
@@ -2448,7 +2448,7 @@ memdebug.s: memdebug.c.s
 
 # target to generate assembly for a file
 memdebug.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/memdebug.c.s
 .PHONY : memdebug.c.s
 
 mime.o: mime.c.o
@@ -2456,7 +2456,7 @@ mime.o: mime.c.o
 
 # target to build an object file
 mime.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.o
 .PHONY : mime.c.o
 
 mime.i: mime.c.i
@@ -2464,7 +2464,7 @@ mime.i: mime.c.i
 
 # target to preprocess a source file
 mime.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.i
 .PHONY : mime.c.i
 
 mime.s: mime.c.s
@@ -2472,7 +2472,7 @@ mime.s: mime.c.s
 
 # target to generate assembly for a file
 mime.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mime.c.s
 .PHONY : mime.c.s
 
 mprintf.o: mprintf.c.o
@@ -2480,7 +2480,7 @@ mprintf.o: mprintf.c.o
 
 # target to build an object file
 mprintf.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.o
 .PHONY : mprintf.c.o
 
 mprintf.i: mprintf.c.i
@@ -2488,7 +2488,7 @@ mprintf.i: mprintf.c.i
 
 # target to preprocess a source file
 mprintf.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.i
 .PHONY : mprintf.c.i
 
 mprintf.s: mprintf.c.s
@@ -2496,7 +2496,7 @@ mprintf.s: mprintf.c.s
 
 # target to generate assembly for a file
 mprintf.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mprintf.c.s
 .PHONY : mprintf.c.s
 
 mqtt.o: mqtt.c.o
@@ -2504,7 +2504,7 @@ mqtt.o: mqtt.c.o
 
 # target to build an object file
 mqtt.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.o
 .PHONY : mqtt.c.o
 
 mqtt.i: mqtt.c.i
@@ -2512,7 +2512,7 @@ mqtt.i: mqtt.c.i
 
 # target to preprocess a source file
 mqtt.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.i
 .PHONY : mqtt.c.i
 
 mqtt.s: mqtt.c.s
@@ -2520,7 +2520,7 @@ mqtt.s: mqtt.c.s
 
 # target to generate assembly for a file
 mqtt.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/mqtt.c.s
 .PHONY : mqtt.c.s
 
 multi.o: multi.c.o
@@ -2528,7 +2528,7 @@ multi.o: multi.c.o
 
 # target to build an object file
 multi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.o
 .PHONY : multi.c.o
 
 multi.i: multi.c.i
@@ -2536,7 +2536,7 @@ multi.i: multi.c.i
 
 # target to preprocess a source file
 multi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.i
 .PHONY : multi.c.i
 
 multi.s: multi.c.s
@@ -2544,7 +2544,7 @@ multi.s: multi.c.s
 
 # target to generate assembly for a file
 multi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi.c.s
 .PHONY : multi.c.s
 
 multi_ev.o: multi_ev.c.o
@@ -2552,7 +2552,7 @@ multi_ev.o: multi_ev.c.o
 
 # target to build an object file
 multi_ev.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.o
 .PHONY : multi_ev.c.o
 
 multi_ev.i: multi_ev.c.i
@@ -2560,7 +2560,7 @@ multi_ev.i: multi_ev.c.i
 
 # target to preprocess a source file
 multi_ev.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.i
 .PHONY : multi_ev.c.i
 
 multi_ev.s: multi_ev.c.s
@@ -2568,7 +2568,7 @@ multi_ev.s: multi_ev.c.s
 
 # target to generate assembly for a file
 multi_ev.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/multi_ev.c.s
 .PHONY : multi_ev.c.s
 
 netrc.o: netrc.c.o
@@ -2576,7 +2576,7 @@ netrc.o: netrc.c.o
 
 # target to build an object file
 netrc.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.o
 .PHONY : netrc.c.o
 
 netrc.i: netrc.c.i
@@ -2584,7 +2584,7 @@ netrc.i: netrc.c.i
 
 # target to preprocess a source file
 netrc.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.i
 .PHONY : netrc.c.i
 
 netrc.s: netrc.c.s
@@ -2592,7 +2592,7 @@ netrc.s: netrc.c.s
 
 # target to generate assembly for a file
 netrc.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/netrc.c.s
 .PHONY : netrc.c.s
 
 noproxy.o: noproxy.c.o
@@ -2600,7 +2600,7 @@ noproxy.o: noproxy.c.o
 
 # target to build an object file
 noproxy.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.o
 .PHONY : noproxy.c.o
 
 noproxy.i: noproxy.c.i
@@ -2608,7 +2608,7 @@ noproxy.i: noproxy.c.i
 
 # target to preprocess a source file
 noproxy.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.i
 .PHONY : noproxy.c.i
 
 noproxy.s: noproxy.c.s
@@ -2616,7 +2616,7 @@ noproxy.s: noproxy.c.s
 
 # target to generate assembly for a file
 noproxy.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/noproxy.c.s
 .PHONY : noproxy.c.s
 
 openldap.o: openldap.c.o
@@ -2624,7 +2624,7 @@ openldap.o: openldap.c.o
 
 # target to build an object file
 openldap.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.o
 .PHONY : openldap.c.o
 
 openldap.i: openldap.c.i
@@ -2632,7 +2632,7 @@ openldap.i: openldap.c.i
 
 # target to preprocess a source file
 openldap.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.i
 .PHONY : openldap.c.i
 
 openldap.s: openldap.c.s
@@ -2640,7 +2640,7 @@ openldap.s: openldap.c.s
 
 # target to generate assembly for a file
 openldap.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/openldap.c.s
 .PHONY : openldap.c.s
 
 parsedate.o: parsedate.c.o
@@ -2648,7 +2648,7 @@ parsedate.o: parsedate.c.o
 
 # target to build an object file
 parsedate.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.o
 .PHONY : parsedate.c.o
 
 parsedate.i: parsedate.c.i
@@ -2656,7 +2656,7 @@ parsedate.i: parsedate.c.i
 
 # target to preprocess a source file
 parsedate.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.i
 .PHONY : parsedate.c.i
 
 parsedate.s: parsedate.c.s
@@ -2664,7 +2664,7 @@ parsedate.s: parsedate.c.s
 
 # target to generate assembly for a file
 parsedate.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/parsedate.c.s
 .PHONY : parsedate.c.s
 
 pingpong.o: pingpong.c.o
@@ -2672,7 +2672,7 @@ pingpong.o: pingpong.c.o
 
 # target to build an object file
 pingpong.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.o
 .PHONY : pingpong.c.o
 
 pingpong.i: pingpong.c.i
@@ -2680,7 +2680,7 @@ pingpong.i: pingpong.c.i
 
 # target to preprocess a source file
 pingpong.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.i
 .PHONY : pingpong.c.i
 
 pingpong.s: pingpong.c.s
@@ -2688,7 +2688,7 @@ pingpong.s: pingpong.c.s
 
 # target to generate assembly for a file
 pingpong.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pingpong.c.s
 .PHONY : pingpong.c.s
 
 pop3.o: pop3.c.o
@@ -2696,7 +2696,7 @@ pop3.o: pop3.c.o
 
 # target to build an object file
 pop3.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.o
 .PHONY : pop3.c.o
 
 pop3.i: pop3.c.i
@@ -2704,7 +2704,7 @@ pop3.i: pop3.c.i
 
 # target to preprocess a source file
 pop3.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.i
 .PHONY : pop3.c.i
 
 pop3.s: pop3.c.s
@@ -2712,7 +2712,7 @@ pop3.s: pop3.c.s
 
 # target to generate assembly for a file
 pop3.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/pop3.c.s
 .PHONY : pop3.c.s
 
 progress.o: progress.c.o
@@ -2720,7 +2720,7 @@ progress.o: progress.c.o
 
 # target to build an object file
 progress.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.o
 .PHONY : progress.c.o
 
 progress.i: progress.c.i
@@ -2728,7 +2728,7 @@ progress.i: progress.c.i
 
 # target to preprocess a source file
 progress.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.i
 .PHONY : progress.c.i
 
 progress.s: progress.c.s
@@ -2736,7 +2736,7 @@ progress.s: progress.c.s
 
 # target to generate assembly for a file
 progress.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/progress.c.s
 .PHONY : progress.c.s
 
 psl.o: psl.c.o
@@ -2744,7 +2744,7 @@ psl.o: psl.c.o
 
 # target to build an object file
 psl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.o
 .PHONY : psl.c.o
 
 psl.i: psl.c.i
@@ -2752,7 +2752,7 @@ psl.i: psl.c.i
 
 # target to preprocess a source file
 psl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.i
 .PHONY : psl.c.i
 
 psl.s: psl.c.s
@@ -2760,7 +2760,7 @@ psl.s: psl.c.s
 
 # target to generate assembly for a file
 psl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/psl.c.s
 .PHONY : psl.c.s
 
 rand.o: rand.c.o
@@ -2768,7 +2768,7 @@ rand.o: rand.c.o
 
 # target to build an object file
 rand.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.o
 .PHONY : rand.c.o
 
 rand.i: rand.c.i
@@ -2776,7 +2776,7 @@ rand.i: rand.c.i
 
 # target to preprocess a source file
 rand.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.i
 .PHONY : rand.c.i
 
 rand.s: rand.c.s
@@ -2784,7 +2784,7 @@ rand.s: rand.c.s
 
 # target to generate assembly for a file
 rand.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rand.c.s
 .PHONY : rand.c.s
 
 rename.o: rename.c.o
@@ -2792,7 +2792,7 @@ rename.o: rename.c.o
 
 # target to build an object file
 rename.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.o
 .PHONY : rename.c.o
 
 rename.i: rename.c.i
@@ -2800,7 +2800,7 @@ rename.i: rename.c.i
 
 # target to preprocess a source file
 rename.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.i
 .PHONY : rename.c.i
 
 rename.s: rename.c.s
@@ -2808,7 +2808,7 @@ rename.s: rename.c.s
 
 # target to generate assembly for a file
 rename.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rename.c.s
 .PHONY : rename.c.s
 
 request.o: request.c.o
@@ -2816,7 +2816,7 @@ request.o: request.c.o
 
 # target to build an object file
 request.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.o
 .PHONY : request.c.o
 
 request.i: request.c.i
@@ -2824,7 +2824,7 @@ request.i: request.c.i
 
 # target to preprocess a source file
 request.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.i
 .PHONY : request.c.i
 
 request.s: request.c.s
@@ -2832,7 +2832,7 @@ request.s: request.c.s
 
 # target to generate assembly for a file
 request.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/request.c.s
 .PHONY : request.c.s
 
 rtsp.o: rtsp.c.o
@@ -2840,7 +2840,7 @@ rtsp.o: rtsp.c.o
 
 # target to build an object file
 rtsp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.o
 .PHONY : rtsp.c.o
 
 rtsp.i: rtsp.c.i
@@ -2848,7 +2848,7 @@ rtsp.i: rtsp.c.i
 
 # target to preprocess a source file
 rtsp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.i
 .PHONY : rtsp.c.i
 
 rtsp.s: rtsp.c.s
@@ -2856,7 +2856,7 @@ rtsp.s: rtsp.c.s
 
 # target to generate assembly for a file
 rtsp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/rtsp.c.s
 .PHONY : rtsp.c.s
 
 select.o: select.c.o
@@ -2864,7 +2864,7 @@ select.o: select.c.o
 
 # target to build an object file
 select.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.o
 .PHONY : select.c.o
 
 select.i: select.c.i
@@ -2872,7 +2872,7 @@ select.i: select.c.i
 
 # target to preprocess a source file
 select.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.i
 .PHONY : select.c.i
 
 select.s: select.c.s
@@ -2880,7 +2880,7 @@ select.s: select.c.s
 
 # target to generate assembly for a file
 select.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/select.c.s
 .PHONY : select.c.s
 
 sendf.o: sendf.c.o
@@ -2888,7 +2888,7 @@ sendf.o: sendf.c.o
 
 # target to build an object file
 sendf.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.o
 .PHONY : sendf.c.o
 
 sendf.i: sendf.c.i
@@ -2896,7 +2896,7 @@ sendf.i: sendf.c.i
 
 # target to preprocess a source file
 sendf.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.i
 .PHONY : sendf.c.i
 
 sendf.s: sendf.c.s
@@ -2904,7 +2904,7 @@ sendf.s: sendf.c.s
 
 # target to generate assembly for a file
 sendf.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sendf.c.s
 .PHONY : sendf.c.s
 
 setopt.o: setopt.c.o
@@ -2912,7 +2912,7 @@ setopt.o: setopt.c.o
 
 # target to build an object file
 setopt.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.o
 .PHONY : setopt.c.o
 
 setopt.i: setopt.c.i
@@ -2920,7 +2920,7 @@ setopt.i: setopt.c.i
 
 # target to preprocess a source file
 setopt.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.i
 .PHONY : setopt.c.i
 
 setopt.s: setopt.c.s
@@ -2928,7 +2928,7 @@ setopt.s: setopt.c.s
 
 # target to generate assembly for a file
 setopt.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/setopt.c.s
 .PHONY : setopt.c.s
 
 sha256.o: sha256.c.o
@@ -2936,7 +2936,7 @@ sha256.o: sha256.c.o
 
 # target to build an object file
 sha256.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.o
 .PHONY : sha256.c.o
 
 sha256.i: sha256.c.i
@@ -2944,7 +2944,7 @@ sha256.i: sha256.c.i
 
 # target to preprocess a source file
 sha256.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.i
 .PHONY : sha256.c.i
 
 sha256.s: sha256.c.s
@@ -2952,7 +2952,7 @@ sha256.s: sha256.c.s
 
 # target to generate assembly for a file
 sha256.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/sha256.c.s
 .PHONY : sha256.c.s
 
 share.o: share.c.o
@@ -2960,7 +2960,7 @@ share.o: share.c.o
 
 # target to build an object file
 share.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.o
 .PHONY : share.c.o
 
 share.i: share.c.i
@@ -2968,7 +2968,7 @@ share.i: share.c.i
 
 # target to preprocess a source file
 share.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.i
 .PHONY : share.c.i
 
 share.s: share.c.s
@@ -2976,7 +2976,7 @@ share.s: share.c.s
 
 # target to generate assembly for a file
 share.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/share.c.s
 .PHONY : share.c.s
 
 slist.o: slist.c.o
@@ -2984,7 +2984,7 @@ slist.o: slist.c.o
 
 # target to build an object file
 slist.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.o
 .PHONY : slist.c.o
 
 slist.i: slist.c.i
@@ -2992,7 +2992,7 @@ slist.i: slist.c.i
 
 # target to preprocess a source file
 slist.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.i
 .PHONY : slist.c.i
 
 slist.s: slist.c.s
@@ -3000,7 +3000,7 @@ slist.s: slist.c.s
 
 # target to generate assembly for a file
 slist.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/slist.c.s
 .PHONY : slist.c.s
 
 smb.o: smb.c.o
@@ -3008,7 +3008,7 @@ smb.o: smb.c.o
 
 # target to build an object file
 smb.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.o
 .PHONY : smb.c.o
 
 smb.i: smb.c.i
@@ -3016,7 +3016,7 @@ smb.i: smb.c.i
 
 # target to preprocess a source file
 smb.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.i
 .PHONY : smb.c.i
 
 smb.s: smb.c.s
@@ -3024,7 +3024,7 @@ smb.s: smb.c.s
 
 # target to generate assembly for a file
 smb.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smb.c.s
 .PHONY : smb.c.s
 
 smtp.o: smtp.c.o
@@ -3032,7 +3032,7 @@ smtp.o: smtp.c.o
 
 # target to build an object file
 smtp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.o
 .PHONY : smtp.c.o
 
 smtp.i: smtp.c.i
@@ -3040,7 +3040,7 @@ smtp.i: smtp.c.i
 
 # target to preprocess a source file
 smtp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.i
 .PHONY : smtp.c.i
 
 smtp.s: smtp.c.s
@@ -3048,7 +3048,7 @@ smtp.s: smtp.c.s
 
 # target to generate assembly for a file
 smtp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/smtp.c.s
 .PHONY : smtp.c.s
 
 socketpair.o: socketpair.c.o
@@ -3056,7 +3056,7 @@ socketpair.o: socketpair.c.o
 
 # target to build an object file
 socketpair.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.o
 .PHONY : socketpair.c.o
 
 socketpair.i: socketpair.c.i
@@ -3064,7 +3064,7 @@ socketpair.i: socketpair.c.i
 
 # target to preprocess a source file
 socketpair.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.i
 .PHONY : socketpair.c.i
 
 socketpair.s: socketpair.c.s
@@ -3072,7 +3072,7 @@ socketpair.s: socketpair.c.s
 
 # target to generate assembly for a file
 socketpair.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socketpair.c.s
 .PHONY : socketpair.c.s
 
 socks.o: socks.c.o
@@ -3080,7 +3080,7 @@ socks.o: socks.c.o
 
 # target to build an object file
 socks.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.o
 .PHONY : socks.c.o
 
 socks.i: socks.c.i
@@ -3088,7 +3088,7 @@ socks.i: socks.c.i
 
 # target to preprocess a source file
 socks.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.i
 .PHONY : socks.c.i
 
 socks.s: socks.c.s
@@ -3096,7 +3096,7 @@ socks.s: socks.c.s
 
 # target to generate assembly for a file
 socks.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks.c.s
 .PHONY : socks.c.s
 
 socks_gssapi.o: socks_gssapi.c.o
@@ -3104,7 +3104,7 @@ socks_gssapi.o: socks_gssapi.c.o
 
 # target to build an object file
 socks_gssapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.o
 .PHONY : socks_gssapi.c.o
 
 socks_gssapi.i: socks_gssapi.c.i
@@ -3112,7 +3112,7 @@ socks_gssapi.i: socks_gssapi.c.i
 
 # target to preprocess a source file
 socks_gssapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.i
 .PHONY : socks_gssapi.c.i
 
 socks_gssapi.s: socks_gssapi.c.s
@@ -3120,7 +3120,7 @@ socks_gssapi.s: socks_gssapi.c.s
 
 # target to generate assembly for a file
 socks_gssapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_gssapi.c.s
 .PHONY : socks_gssapi.c.s
 
 socks_sspi.o: socks_sspi.c.o
@@ -3128,7 +3128,7 @@ socks_sspi.o: socks_sspi.c.o
 
 # target to build an object file
 socks_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.o
 .PHONY : socks_sspi.c.o
 
 socks_sspi.i: socks_sspi.c.i
@@ -3136,7 +3136,7 @@ socks_sspi.i: socks_sspi.c.i
 
 # target to preprocess a source file
 socks_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.i
 .PHONY : socks_sspi.c.i
 
 socks_sspi.s: socks_sspi.c.s
@@ -3144,7 +3144,7 @@ socks_sspi.s: socks_sspi.c.s
 
 # target to generate assembly for a file
 socks_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/socks_sspi.c.s
 .PHONY : socks_sspi.c.s
 
 speedcheck.o: speedcheck.c.o
@@ -3152,7 +3152,7 @@ speedcheck.o: speedcheck.c.o
 
 # target to build an object file
 speedcheck.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.o
 .PHONY : speedcheck.c.o
 
 speedcheck.i: speedcheck.c.i
@@ -3160,7 +3160,7 @@ speedcheck.i: speedcheck.c.i
 
 # target to preprocess a source file
 speedcheck.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.i
 .PHONY : speedcheck.c.i
 
 speedcheck.s: speedcheck.c.s
@@ -3168,7 +3168,7 @@ speedcheck.s: speedcheck.c.s
 
 # target to generate assembly for a file
 speedcheck.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/speedcheck.c.s
 .PHONY : speedcheck.c.s
 
 splay.o: splay.c.o
@@ -3176,7 +3176,7 @@ splay.o: splay.c.o
 
 # target to build an object file
 splay.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.o
 .PHONY : splay.c.o
 
 splay.i: splay.c.i
@@ -3184,7 +3184,7 @@ splay.i: splay.c.i
 
 # target to preprocess a source file
 splay.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.i
 .PHONY : splay.c.i
 
 splay.s: splay.c.s
@@ -3192,7 +3192,7 @@ splay.s: splay.c.s
 
 # target to generate assembly for a file
 splay.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/splay.c.s
 .PHONY : splay.c.s
 
 strcase.o: strcase.c.o
@@ -3200,7 +3200,7 @@ strcase.o: strcase.c.o
 
 # target to build an object file
 strcase.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.o
 .PHONY : strcase.c.o
 
 strcase.i: strcase.c.i
@@ -3208,7 +3208,7 @@ strcase.i: strcase.c.i
 
 # target to preprocess a source file
 strcase.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.i
 .PHONY : strcase.c.i
 
 strcase.s: strcase.c.s
@@ -3216,7 +3216,7 @@ strcase.s: strcase.c.s
 
 # target to generate assembly for a file
 strcase.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strcase.c.s
 .PHONY : strcase.c.s
 
 strdup.o: strdup.c.o
@@ -3224,7 +3224,7 @@ strdup.o: strdup.c.o
 
 # target to build an object file
 strdup.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.o
 .PHONY : strdup.c.o
 
 strdup.i: strdup.c.i
@@ -3232,7 +3232,7 @@ strdup.i: strdup.c.i
 
 # target to preprocess a source file
 strdup.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.i
 .PHONY : strdup.c.i
 
 strdup.s: strdup.c.s
@@ -3240,7 +3240,7 @@ strdup.s: strdup.c.s
 
 # target to generate assembly for a file
 strdup.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strdup.c.s
 .PHONY : strdup.c.s
 
 strequal.o: strequal.c.o
@@ -3248,7 +3248,7 @@ strequal.o: strequal.c.o
 
 # target to build an object file
 strequal.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.o
 .PHONY : strequal.c.o
 
 strequal.i: strequal.c.i
@@ -3256,7 +3256,7 @@ strequal.i: strequal.c.i
 
 # target to preprocess a source file
 strequal.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.i
 .PHONY : strequal.c.i
 
 strequal.s: strequal.c.s
@@ -3264,7 +3264,7 @@ strequal.s: strequal.c.s
 
 # target to generate assembly for a file
 strequal.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strequal.c.s
 .PHONY : strequal.c.s
 
 strerror.o: strerror.c.o
@@ -3272,7 +3272,7 @@ strerror.o: strerror.c.o
 
 # target to build an object file
 strerror.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.o
 .PHONY : strerror.c.o
 
 strerror.i: strerror.c.i
@@ -3280,7 +3280,7 @@ strerror.i: strerror.c.i
 
 # target to preprocess a source file
 strerror.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.i
 .PHONY : strerror.c.i
 
 strerror.s: strerror.c.s
@@ -3288,7 +3288,7 @@ strerror.s: strerror.c.s
 
 # target to generate assembly for a file
 strerror.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/strerror.c.s
 .PHONY : strerror.c.s
 
 system_win32.o: system_win32.c.o
@@ -3296,7 +3296,7 @@ system_win32.o: system_win32.c.o
 
 # target to build an object file
 system_win32.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.o
 .PHONY : system_win32.c.o
 
 system_win32.i: system_win32.c.i
@@ -3304,7 +3304,7 @@ system_win32.i: system_win32.c.i
 
 # target to preprocess a source file
 system_win32.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.i
 .PHONY : system_win32.c.i
 
 system_win32.s: system_win32.c.s
@@ -3312,7 +3312,7 @@ system_win32.s: system_win32.c.s
 
 # target to generate assembly for a file
 system_win32.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/system_win32.c.s
 .PHONY : system_win32.c.s
 
 telnet.o: telnet.c.o
@@ -3320,7 +3320,7 @@ telnet.o: telnet.c.o
 
 # target to build an object file
 telnet.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.o
 .PHONY : telnet.c.o
 
 telnet.i: telnet.c.i
@@ -3328,7 +3328,7 @@ telnet.i: telnet.c.i
 
 # target to preprocess a source file
 telnet.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.i
 .PHONY : telnet.c.i
 
 telnet.s: telnet.c.s
@@ -3336,7 +3336,7 @@ telnet.s: telnet.c.s
 
 # target to generate assembly for a file
 telnet.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/telnet.c.s
 .PHONY : telnet.c.s
 
 tftp.o: tftp.c.o
@@ -3344,7 +3344,7 @@ tftp.o: tftp.c.o
 
 # target to build an object file
 tftp.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.o
 .PHONY : tftp.c.o
 
 tftp.i: tftp.c.i
@@ -3352,7 +3352,7 @@ tftp.i: tftp.c.i
 
 # target to preprocess a source file
 tftp.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.i
 .PHONY : tftp.c.i
 
 tftp.s: tftp.c.s
@@ -3360,7 +3360,7 @@ tftp.s: tftp.c.s
 
 # target to generate assembly for a file
 tftp.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/tftp.c.s
 .PHONY : tftp.c.s
 
 transfer.o: transfer.c.o
@@ -3368,7 +3368,7 @@ transfer.o: transfer.c.o
 
 # target to build an object file
 transfer.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.o
 .PHONY : transfer.c.o
 
 transfer.i: transfer.c.i
@@ -3376,7 +3376,7 @@ transfer.i: transfer.c.i
 
 # target to preprocess a source file
 transfer.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.i
 .PHONY : transfer.c.i
 
 transfer.s: transfer.c.s
@@ -3384,7 +3384,7 @@ transfer.s: transfer.c.s
 
 # target to generate assembly for a file
 transfer.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/transfer.c.s
 .PHONY : transfer.c.s
 
 uint-bset.o: uint-bset.c.o
@@ -3392,7 +3392,7 @@ uint-bset.o: uint-bset.c.o
 
 # target to build an object file
 uint-bset.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.o
 .PHONY : uint-bset.c.o
 
 uint-bset.i: uint-bset.c.i
@@ -3400,7 +3400,7 @@ uint-bset.i: uint-bset.c.i
 
 # target to preprocess a source file
 uint-bset.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.i
 .PHONY : uint-bset.c.i
 
 uint-bset.s: uint-bset.c.s
@@ -3408,7 +3408,7 @@ uint-bset.s: uint-bset.c.s
 
 # target to generate assembly for a file
 uint-bset.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-bset.c.s
 .PHONY : uint-bset.c.s
 
 uint-hash.o: uint-hash.c.o
@@ -3416,7 +3416,7 @@ uint-hash.o: uint-hash.c.o
 
 # target to build an object file
 uint-hash.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.o
 .PHONY : uint-hash.c.o
 
 uint-hash.i: uint-hash.c.i
@@ -3424,7 +3424,7 @@ uint-hash.i: uint-hash.c.i
 
 # target to preprocess a source file
 uint-hash.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.i
 .PHONY : uint-hash.c.i
 
 uint-hash.s: uint-hash.c.s
@@ -3432,7 +3432,7 @@ uint-hash.s: uint-hash.c.s
 
 # target to generate assembly for a file
 uint-hash.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-hash.c.s
 .PHONY : uint-hash.c.s
 
 uint-spbset.o: uint-spbset.c.o
@@ -3440,7 +3440,7 @@ uint-spbset.o: uint-spbset.c.o
 
 # target to build an object file
 uint-spbset.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.o
 .PHONY : uint-spbset.c.o
 
 uint-spbset.i: uint-spbset.c.i
@@ -3448,7 +3448,7 @@ uint-spbset.i: uint-spbset.c.i
 
 # target to preprocess a source file
 uint-spbset.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.i
 .PHONY : uint-spbset.c.i
 
 uint-spbset.s: uint-spbset.c.s
@@ -3456,7 +3456,7 @@ uint-spbset.s: uint-spbset.c.s
 
 # target to generate assembly for a file
 uint-spbset.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-spbset.c.s
 .PHONY : uint-spbset.c.s
 
 uint-table.o: uint-table.c.o
@@ -3464,7 +3464,7 @@ uint-table.o: uint-table.c.o
 
 # target to build an object file
 uint-table.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.o
 .PHONY : uint-table.c.o
 
 uint-table.i: uint-table.c.i
@@ -3472,7 +3472,7 @@ uint-table.i: uint-table.c.i
 
 # target to preprocess a source file
 uint-table.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.i
 .PHONY : uint-table.c.i
 
 uint-table.s: uint-table.c.s
@@ -3480,7 +3480,7 @@ uint-table.s: uint-table.c.s
 
 # target to generate assembly for a file
 uint-table.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/uint-table.c.s
 .PHONY : uint-table.c.s
 
 url.o: url.c.o
@@ -3488,7 +3488,7 @@ url.o: url.c.o
 
 # target to build an object file
 url.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.o
 .PHONY : url.c.o
 
 url.i: url.c.i
@@ -3496,7 +3496,7 @@ url.i: url.c.i
 
 # target to preprocess a source file
 url.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.i
 .PHONY : url.c.i
 
 url.s: url.c.s
@@ -3504,7 +3504,7 @@ url.s: url.c.s
 
 # target to generate assembly for a file
 url.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/url.c.s
 .PHONY : url.c.s
 
 urlapi.o: urlapi.c.o
@@ -3512,7 +3512,7 @@ urlapi.o: urlapi.c.o
 
 # target to build an object file
 urlapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.o
 .PHONY : urlapi.c.o
 
 urlapi.i: urlapi.c.i
@@ -3520,7 +3520,7 @@ urlapi.i: urlapi.c.i
 
 # target to preprocess a source file
 urlapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.i
 .PHONY : urlapi.c.i
 
 urlapi.s: urlapi.c.s
@@ -3528,7 +3528,7 @@ urlapi.s: urlapi.c.s
 
 # target to generate assembly for a file
 urlapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/urlapi.c.s
 .PHONY : urlapi.c.s
 
 vauth/cleartext.o: vauth/cleartext.c.o
@@ -3536,7 +3536,7 @@ vauth/cleartext.o: vauth/cleartext.c.o
 
 # target to build an object file
 vauth/cleartext.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.o
 .PHONY : vauth/cleartext.c.o
 
 vauth/cleartext.i: vauth/cleartext.c.i
@@ -3544,7 +3544,7 @@ vauth/cleartext.i: vauth/cleartext.c.i
 
 # target to preprocess a source file
 vauth/cleartext.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.i
 .PHONY : vauth/cleartext.c.i
 
 vauth/cleartext.s: vauth/cleartext.c.s
@@ -3552,7 +3552,7 @@ vauth/cleartext.s: vauth/cleartext.c.s
 
 # target to generate assembly for a file
 vauth/cleartext.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cleartext.c.s
 .PHONY : vauth/cleartext.c.s
 
 vauth/cram.o: vauth/cram.c.o
@@ -3560,7 +3560,7 @@ vauth/cram.o: vauth/cram.c.o
 
 # target to build an object file
 vauth/cram.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.o
 .PHONY : vauth/cram.c.o
 
 vauth/cram.i: vauth/cram.c.i
@@ -3568,7 +3568,7 @@ vauth/cram.i: vauth/cram.c.i
 
 # target to preprocess a source file
 vauth/cram.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.i
 .PHONY : vauth/cram.c.i
 
 vauth/cram.s: vauth/cram.c.s
@@ -3576,7 +3576,7 @@ vauth/cram.s: vauth/cram.c.s
 
 # target to generate assembly for a file
 vauth/cram.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/cram.c.s
 .PHONY : vauth/cram.c.s
 
 vauth/digest.o: vauth/digest.c.o
@@ -3584,7 +3584,7 @@ vauth/digest.o: vauth/digest.c.o
 
 # target to build an object file
 vauth/digest.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.o
 .PHONY : vauth/digest.c.o
 
 vauth/digest.i: vauth/digest.c.i
@@ -3592,7 +3592,7 @@ vauth/digest.i: vauth/digest.c.i
 
 # target to preprocess a source file
 vauth/digest.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.i
 .PHONY : vauth/digest.c.i
 
 vauth/digest.s: vauth/digest.c.s
@@ -3600,7 +3600,7 @@ vauth/digest.s: vauth/digest.c.s
 
 # target to generate assembly for a file
 vauth/digest.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest.c.s
 .PHONY : vauth/digest.c.s
 
 vauth/digest_sspi.o: vauth/digest_sspi.c.o
@@ -3608,7 +3608,7 @@ vauth/digest_sspi.o: vauth/digest_sspi.c.o
 
 # target to build an object file
 vauth/digest_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.o
 .PHONY : vauth/digest_sspi.c.o
 
 vauth/digest_sspi.i: vauth/digest_sspi.c.i
@@ -3616,7 +3616,7 @@ vauth/digest_sspi.i: vauth/digest_sspi.c.i
 
 # target to preprocess a source file
 vauth/digest_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.i
 .PHONY : vauth/digest_sspi.c.i
 
 vauth/digest_sspi.s: vauth/digest_sspi.c.s
@@ -3624,7 +3624,7 @@ vauth/digest_sspi.s: vauth/digest_sspi.c.s
 
 # target to generate assembly for a file
 vauth/digest_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/digest_sspi.c.s
 .PHONY : vauth/digest_sspi.c.s
 
 vauth/gsasl.o: vauth/gsasl.c.o
@@ -3632,7 +3632,7 @@ vauth/gsasl.o: vauth/gsasl.c.o
 
 # target to build an object file
 vauth/gsasl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.o
 .PHONY : vauth/gsasl.c.o
 
 vauth/gsasl.i: vauth/gsasl.c.i
@@ -3640,7 +3640,7 @@ vauth/gsasl.i: vauth/gsasl.c.i
 
 # target to preprocess a source file
 vauth/gsasl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.i
 .PHONY : vauth/gsasl.c.i
 
 vauth/gsasl.s: vauth/gsasl.c.s
@@ -3648,7 +3648,7 @@ vauth/gsasl.s: vauth/gsasl.c.s
 
 # target to generate assembly for a file
 vauth/gsasl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/gsasl.c.s
 .PHONY : vauth/gsasl.c.s
 
 vauth/krb5_gssapi.o: vauth/krb5_gssapi.c.o
@@ -3656,7 +3656,7 @@ vauth/krb5_gssapi.o: vauth/krb5_gssapi.c.o
 
 # target to build an object file
 vauth/krb5_gssapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.o
 .PHONY : vauth/krb5_gssapi.c.o
 
 vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
@@ -3664,7 +3664,7 @@ vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
 
 # target to preprocess a source file
 vauth/krb5_gssapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.i
 .PHONY : vauth/krb5_gssapi.c.i
 
 vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
@@ -3672,7 +3672,7 @@ vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_gssapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_gssapi.c.s
 .PHONY : vauth/krb5_gssapi.c.s
 
 vauth/krb5_sspi.o: vauth/krb5_sspi.c.o
@@ -3680,7 +3680,7 @@ vauth/krb5_sspi.o: vauth/krb5_sspi.c.o
 
 # target to build an object file
 vauth/krb5_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.o
 .PHONY : vauth/krb5_sspi.c.o
 
 vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
@@ -3688,7 +3688,7 @@ vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
 
 # target to preprocess a source file
 vauth/krb5_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.i
 .PHONY : vauth/krb5_sspi.c.i
 
 vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
@@ -3696,7 +3696,7 @@ vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/krb5_sspi.c.s
 .PHONY : vauth/krb5_sspi.c.s
 
 vauth/ntlm.o: vauth/ntlm.c.o
@@ -3704,7 +3704,7 @@ vauth/ntlm.o: vauth/ntlm.c.o
 
 # target to build an object file
 vauth/ntlm.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.o
 .PHONY : vauth/ntlm.c.o
 
 vauth/ntlm.i: vauth/ntlm.c.i
@@ -3712,7 +3712,7 @@ vauth/ntlm.i: vauth/ntlm.c.i
 
 # target to preprocess a source file
 vauth/ntlm.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.i
 .PHONY : vauth/ntlm.c.i
 
 vauth/ntlm.s: vauth/ntlm.c.s
@@ -3720,7 +3720,7 @@ vauth/ntlm.s: vauth/ntlm.c.s
 
 # target to generate assembly for a file
 vauth/ntlm.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm.c.s
 .PHONY : vauth/ntlm.c.s
 
 vauth/ntlm_sspi.o: vauth/ntlm_sspi.c.o
@@ -3728,7 +3728,7 @@ vauth/ntlm_sspi.o: vauth/ntlm_sspi.c.o
 
 # target to build an object file
 vauth/ntlm_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.o
 .PHONY : vauth/ntlm_sspi.c.o
 
 vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
@@ -3736,7 +3736,7 @@ vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
 
 # target to preprocess a source file
 vauth/ntlm_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.i
 .PHONY : vauth/ntlm_sspi.c.i
 
 vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
@@ -3744,7 +3744,7 @@ vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
 
 # target to generate assembly for a file
 vauth/ntlm_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/ntlm_sspi.c.s
 .PHONY : vauth/ntlm_sspi.c.s
 
 vauth/oauth2.o: vauth/oauth2.c.o
@@ -3752,7 +3752,7 @@ vauth/oauth2.o: vauth/oauth2.c.o
 
 # target to build an object file
 vauth/oauth2.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.o
 .PHONY : vauth/oauth2.c.o
 
 vauth/oauth2.i: vauth/oauth2.c.i
@@ -3760,7 +3760,7 @@ vauth/oauth2.i: vauth/oauth2.c.i
 
 # target to preprocess a source file
 vauth/oauth2.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.i
 .PHONY : vauth/oauth2.c.i
 
 vauth/oauth2.s: vauth/oauth2.c.s
@@ -3768,7 +3768,7 @@ vauth/oauth2.s: vauth/oauth2.c.s
 
 # target to generate assembly for a file
 vauth/oauth2.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/oauth2.c.s
 .PHONY : vauth/oauth2.c.s
 
 vauth/spnego_gssapi.o: vauth/spnego_gssapi.c.o
@@ -3776,7 +3776,7 @@ vauth/spnego_gssapi.o: vauth/spnego_gssapi.c.o
 
 # target to build an object file
 vauth/spnego_gssapi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.o
 .PHONY : vauth/spnego_gssapi.c.o
 
 vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
@@ -3784,7 +3784,7 @@ vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
 
 # target to preprocess a source file
 vauth/spnego_gssapi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.i
 .PHONY : vauth/spnego_gssapi.c.i
 
 vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
@@ -3792,7 +3792,7 @@ vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_gssapi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_gssapi.c.s
 .PHONY : vauth/spnego_gssapi.c.s
 
 vauth/spnego_sspi.o: vauth/spnego_sspi.c.o
@@ -3800,7 +3800,7 @@ vauth/spnego_sspi.o: vauth/spnego_sspi.c.o
 
 # target to build an object file
 vauth/spnego_sspi.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.o
 .PHONY : vauth/spnego_sspi.c.o
 
 vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
@@ -3808,7 +3808,7 @@ vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
 
 # target to preprocess a source file
 vauth/spnego_sspi.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.i
 .PHONY : vauth/spnego_sspi.c.i
 
 vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
@@ -3816,7 +3816,7 @@ vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_sspi.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/spnego_sspi.c.s
 .PHONY : vauth/spnego_sspi.c.s
 
 vauth/vauth.o: vauth/vauth.c.o
@@ -3824,7 +3824,7 @@ vauth/vauth.o: vauth/vauth.c.o
 
 # target to build an object file
 vauth/vauth.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.o
 .PHONY : vauth/vauth.c.o
 
 vauth/vauth.i: vauth/vauth.c.i
@@ -3832,7 +3832,7 @@ vauth/vauth.i: vauth/vauth.c.i
 
 # target to preprocess a source file
 vauth/vauth.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.i
 .PHONY : vauth/vauth.c.i
 
 vauth/vauth.s: vauth/vauth.c.s
@@ -3840,7 +3840,7 @@ vauth/vauth.s: vauth/vauth.c.s
 
 # target to generate assembly for a file
 vauth/vauth.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vauth/vauth.c.s
 .PHONY : vauth/vauth.c.s
 
 version.o: version.c.o
@@ -3848,7 +3848,7 @@ version.o: version.c.o
 
 # target to build an object file
 version.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.o
 .PHONY : version.c.o
 
 version.i: version.c.i
@@ -3856,7 +3856,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -3864,7 +3864,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/version.c.s
 .PHONY : version.c.s
 
 vquic/curl_ngtcp2.o: vquic/curl_ngtcp2.c.o
@@ -3872,7 +3872,7 @@ vquic/curl_ngtcp2.o: vquic/curl_ngtcp2.c.o
 
 # target to build an object file
 vquic/curl_ngtcp2.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.o
 .PHONY : vquic/curl_ngtcp2.c.o
 
 vquic/curl_ngtcp2.i: vquic/curl_ngtcp2.c.i
@@ -3880,7 +3880,7 @@ vquic/curl_ngtcp2.i: vquic/curl_ngtcp2.c.i
 
 # target to preprocess a source file
 vquic/curl_ngtcp2.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.i
 .PHONY : vquic/curl_ngtcp2.c.i
 
 vquic/curl_ngtcp2.s: vquic/curl_ngtcp2.c.s
@@ -3888,7 +3888,7 @@ vquic/curl_ngtcp2.s: vquic/curl_ngtcp2.c.s
 
 # target to generate assembly for a file
 vquic/curl_ngtcp2.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_ngtcp2.c.s
 .PHONY : vquic/curl_ngtcp2.c.s
 
 vquic/curl_osslq.o: vquic/curl_osslq.c.o
@@ -3896,7 +3896,7 @@ vquic/curl_osslq.o: vquic/curl_osslq.c.o
 
 # target to build an object file
 vquic/curl_osslq.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.o
 .PHONY : vquic/curl_osslq.c.o
 
 vquic/curl_osslq.i: vquic/curl_osslq.c.i
@@ -3904,7 +3904,7 @@ vquic/curl_osslq.i: vquic/curl_osslq.c.i
 
 # target to preprocess a source file
 vquic/curl_osslq.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.i
 .PHONY : vquic/curl_osslq.c.i
 
 vquic/curl_osslq.s: vquic/curl_osslq.c.s
@@ -3912,7 +3912,7 @@ vquic/curl_osslq.s: vquic/curl_osslq.c.s
 
 # target to generate assembly for a file
 vquic/curl_osslq.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_osslq.c.s
 .PHONY : vquic/curl_osslq.c.s
 
 vquic/curl_quiche.o: vquic/curl_quiche.c.o
@@ -3920,7 +3920,7 @@ vquic/curl_quiche.o: vquic/curl_quiche.c.o
 
 # target to build an object file
 vquic/curl_quiche.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.o
 .PHONY : vquic/curl_quiche.c.o
 
 vquic/curl_quiche.i: vquic/curl_quiche.c.i
@@ -3928,7 +3928,7 @@ vquic/curl_quiche.i: vquic/curl_quiche.c.i
 
 # target to preprocess a source file
 vquic/curl_quiche.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.i
 .PHONY : vquic/curl_quiche.c.i
 
 vquic/curl_quiche.s: vquic/curl_quiche.c.s
@@ -3936,7 +3936,7 @@ vquic/curl_quiche.s: vquic/curl_quiche.c.s
 
 # target to generate assembly for a file
 vquic/curl_quiche.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/curl_quiche.c.s
 .PHONY : vquic/curl_quiche.c.s
 
 vquic/vquic-tls.o: vquic/vquic-tls.c.o
@@ -3944,7 +3944,7 @@ vquic/vquic-tls.o: vquic/vquic-tls.c.o
 
 # target to build an object file
 vquic/vquic-tls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.o
 .PHONY : vquic/vquic-tls.c.o
 
 vquic/vquic-tls.i: vquic/vquic-tls.c.i
@@ -3952,7 +3952,7 @@ vquic/vquic-tls.i: vquic/vquic-tls.c.i
 
 # target to preprocess a source file
 vquic/vquic-tls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.i
 .PHONY : vquic/vquic-tls.c.i
 
 vquic/vquic-tls.s: vquic/vquic-tls.c.s
@@ -3960,7 +3960,7 @@ vquic/vquic-tls.s: vquic/vquic-tls.c.s
 
 # target to generate assembly for a file
 vquic/vquic-tls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic-tls.c.s
 .PHONY : vquic/vquic-tls.c.s
 
 vquic/vquic.o: vquic/vquic.c.o
@@ -3968,7 +3968,7 @@ vquic/vquic.o: vquic/vquic.c.o
 
 # target to build an object file
 vquic/vquic.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.o
 .PHONY : vquic/vquic.c.o
 
 vquic/vquic.i: vquic/vquic.c.i
@@ -3976,7 +3976,7 @@ vquic/vquic.i: vquic/vquic.c.i
 
 # target to preprocess a source file
 vquic/vquic.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.i
 .PHONY : vquic/vquic.c.i
 
 vquic/vquic.s: vquic/vquic.c.s
@@ -3984,7 +3984,7 @@ vquic/vquic.s: vquic/vquic.c.s
 
 # target to generate assembly for a file
 vquic/vquic.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vquic/vquic.c.s
 .PHONY : vquic/vquic.c.s
 
 vssh/curl_path.o: vssh/curl_path.c.o
@@ -3992,7 +3992,7 @@ vssh/curl_path.o: vssh/curl_path.c.o
 
 # target to build an object file
 vssh/curl_path.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.o
 .PHONY : vssh/curl_path.c.o
 
 vssh/curl_path.i: vssh/curl_path.c.i
@@ -4000,7 +4000,7 @@ vssh/curl_path.i: vssh/curl_path.c.i
 
 # target to preprocess a source file
 vssh/curl_path.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.i
 .PHONY : vssh/curl_path.c.i
 
 vssh/curl_path.s: vssh/curl_path.c.s
@@ -4008,7 +4008,7 @@ vssh/curl_path.s: vssh/curl_path.c.s
 
 # target to generate assembly for a file
 vssh/curl_path.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/curl_path.c.s
 .PHONY : vssh/curl_path.c.s
 
 vssh/libssh.o: vssh/libssh.c.o
@@ -4016,7 +4016,7 @@ vssh/libssh.o: vssh/libssh.c.o
 
 # target to build an object file
 vssh/libssh.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.o
 .PHONY : vssh/libssh.c.o
 
 vssh/libssh.i: vssh/libssh.c.i
@@ -4024,7 +4024,7 @@ vssh/libssh.i: vssh/libssh.c.i
 
 # target to preprocess a source file
 vssh/libssh.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.i
 .PHONY : vssh/libssh.c.i
 
 vssh/libssh.s: vssh/libssh.c.s
@@ -4032,7 +4032,7 @@ vssh/libssh.s: vssh/libssh.c.s
 
 # target to generate assembly for a file
 vssh/libssh.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh.c.s
 .PHONY : vssh/libssh.c.s
 
 vssh/libssh2.o: vssh/libssh2.c.o
@@ -4040,7 +4040,7 @@ vssh/libssh2.o: vssh/libssh2.c.o
 
 # target to build an object file
 vssh/libssh2.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.o
 .PHONY : vssh/libssh2.c.o
 
 vssh/libssh2.i: vssh/libssh2.c.i
@@ -4048,7 +4048,7 @@ vssh/libssh2.i: vssh/libssh2.c.i
 
 # target to preprocess a source file
 vssh/libssh2.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.i
 .PHONY : vssh/libssh2.c.i
 
 vssh/libssh2.s: vssh/libssh2.c.s
@@ -4056,7 +4056,7 @@ vssh/libssh2.s: vssh/libssh2.c.s
 
 # target to generate assembly for a file
 vssh/libssh2.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/libssh2.c.s
 .PHONY : vssh/libssh2.c.s
 
 vssh/wolfssh.o: vssh/wolfssh.c.o
@@ -4064,7 +4064,7 @@ vssh/wolfssh.o: vssh/wolfssh.c.o
 
 # target to build an object file
 vssh/wolfssh.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.o
 .PHONY : vssh/wolfssh.c.o
 
 vssh/wolfssh.i: vssh/wolfssh.c.i
@@ -4072,7 +4072,7 @@ vssh/wolfssh.i: vssh/wolfssh.c.i
 
 # target to preprocess a source file
 vssh/wolfssh.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.i
 .PHONY : vssh/wolfssh.c.i
 
 vssh/wolfssh.s: vssh/wolfssh.c.s
@@ -4080,7 +4080,7 @@ vssh/wolfssh.s: vssh/wolfssh.c.s
 
 # target to generate assembly for a file
 vssh/wolfssh.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vssh/wolfssh.c.s
 .PHONY : vssh/wolfssh.c.s
 
 vtls/cipher_suite.o: vtls/cipher_suite.c.o
@@ -4088,7 +4088,7 @@ vtls/cipher_suite.o: vtls/cipher_suite.c.o
 
 # target to build an object file
 vtls/cipher_suite.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.o
 .PHONY : vtls/cipher_suite.c.o
 
 vtls/cipher_suite.i: vtls/cipher_suite.c.i
@@ -4096,7 +4096,7 @@ vtls/cipher_suite.i: vtls/cipher_suite.c.i
 
 # target to preprocess a source file
 vtls/cipher_suite.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.i
 .PHONY : vtls/cipher_suite.c.i
 
 vtls/cipher_suite.s: vtls/cipher_suite.c.s
@@ -4104,7 +4104,7 @@ vtls/cipher_suite.s: vtls/cipher_suite.c.s
 
 # target to generate assembly for a file
 vtls/cipher_suite.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/cipher_suite.c.s
 .PHONY : vtls/cipher_suite.c.s
 
 vtls/gtls.o: vtls/gtls.c.o
@@ -4112,7 +4112,7 @@ vtls/gtls.o: vtls/gtls.c.o
 
 # target to build an object file
 vtls/gtls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.o
 .PHONY : vtls/gtls.c.o
 
 vtls/gtls.i: vtls/gtls.c.i
@@ -4120,7 +4120,7 @@ vtls/gtls.i: vtls/gtls.c.i
 
 # target to preprocess a source file
 vtls/gtls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.i
 .PHONY : vtls/gtls.c.i
 
 vtls/gtls.s: vtls/gtls.c.s
@@ -4128,7 +4128,7 @@ vtls/gtls.s: vtls/gtls.c.s
 
 # target to generate assembly for a file
 vtls/gtls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/gtls.c.s
 .PHONY : vtls/gtls.c.s
 
 vtls/hostcheck.o: vtls/hostcheck.c.o
@@ -4136,7 +4136,7 @@ vtls/hostcheck.o: vtls/hostcheck.c.o
 
 # target to build an object file
 vtls/hostcheck.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.o
 .PHONY : vtls/hostcheck.c.o
 
 vtls/hostcheck.i: vtls/hostcheck.c.i
@@ -4144,7 +4144,7 @@ vtls/hostcheck.i: vtls/hostcheck.c.i
 
 # target to preprocess a source file
 vtls/hostcheck.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.i
 .PHONY : vtls/hostcheck.c.i
 
 vtls/hostcheck.s: vtls/hostcheck.c.s
@@ -4152,7 +4152,7 @@ vtls/hostcheck.s: vtls/hostcheck.c.s
 
 # target to generate assembly for a file
 vtls/hostcheck.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/hostcheck.c.s
 .PHONY : vtls/hostcheck.c.s
 
 vtls/keylog.o: vtls/keylog.c.o
@@ -4160,7 +4160,7 @@ vtls/keylog.o: vtls/keylog.c.o
 
 # target to build an object file
 vtls/keylog.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.o
 .PHONY : vtls/keylog.c.o
 
 vtls/keylog.i: vtls/keylog.c.i
@@ -4168,7 +4168,7 @@ vtls/keylog.i: vtls/keylog.c.i
 
 # target to preprocess a source file
 vtls/keylog.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.i
 .PHONY : vtls/keylog.c.i
 
 vtls/keylog.s: vtls/keylog.c.s
@@ -4176,7 +4176,7 @@ vtls/keylog.s: vtls/keylog.c.s
 
 # target to generate assembly for a file
 vtls/keylog.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/keylog.c.s
 .PHONY : vtls/keylog.c.s
 
 vtls/mbedtls.o: vtls/mbedtls.c.o
@@ -4184,7 +4184,7 @@ vtls/mbedtls.o: vtls/mbedtls.c.o
 
 # target to build an object file
 vtls/mbedtls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.o
 .PHONY : vtls/mbedtls.c.o
 
 vtls/mbedtls.i: vtls/mbedtls.c.i
@@ -4192,7 +4192,7 @@ vtls/mbedtls.i: vtls/mbedtls.c.i
 
 # target to preprocess a source file
 vtls/mbedtls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.i
 .PHONY : vtls/mbedtls.c.i
 
 vtls/mbedtls.s: vtls/mbedtls.c.s
@@ -4200,7 +4200,7 @@ vtls/mbedtls.s: vtls/mbedtls.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls.c.s
 .PHONY : vtls/mbedtls.c.s
 
 vtls/mbedtls_threadlock.o: vtls/mbedtls_threadlock.c.o
@@ -4208,7 +4208,7 @@ vtls/mbedtls_threadlock.o: vtls/mbedtls_threadlock.c.o
 
 # target to build an object file
 vtls/mbedtls_threadlock.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.o
 .PHONY : vtls/mbedtls_threadlock.c.o
 
 vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
@@ -4216,7 +4216,7 @@ vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
 
 # target to preprocess a source file
 vtls/mbedtls_threadlock.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.i
 .PHONY : vtls/mbedtls_threadlock.c.i
 
 vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
@@ -4224,7 +4224,7 @@ vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls_threadlock.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/mbedtls_threadlock.c.s
 .PHONY : vtls/mbedtls_threadlock.c.s
 
 vtls/openssl.o: vtls/openssl.c.o
@@ -4232,7 +4232,7 @@ vtls/openssl.o: vtls/openssl.c.o
 
 # target to build an object file
 vtls/openssl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.o
 .PHONY : vtls/openssl.c.o
 
 vtls/openssl.i: vtls/openssl.c.i
@@ -4240,7 +4240,7 @@ vtls/openssl.i: vtls/openssl.c.i
 
 # target to preprocess a source file
 vtls/openssl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.i
 .PHONY : vtls/openssl.c.i
 
 vtls/openssl.s: vtls/openssl.c.s
@@ -4248,7 +4248,7 @@ vtls/openssl.s: vtls/openssl.c.s
 
 # target to generate assembly for a file
 vtls/openssl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/openssl.c.s
 .PHONY : vtls/openssl.c.s
 
 vtls/rustls.o: vtls/rustls.c.o
@@ -4256,7 +4256,7 @@ vtls/rustls.o: vtls/rustls.c.o
 
 # target to build an object file
 vtls/rustls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.o
 .PHONY : vtls/rustls.c.o
 
 vtls/rustls.i: vtls/rustls.c.i
@@ -4264,7 +4264,7 @@ vtls/rustls.i: vtls/rustls.c.i
 
 # target to preprocess a source file
 vtls/rustls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.i
 .PHONY : vtls/rustls.c.i
 
 vtls/rustls.s: vtls/rustls.c.s
@@ -4272,7 +4272,7 @@ vtls/rustls.s: vtls/rustls.c.s
 
 # target to generate assembly for a file
 vtls/rustls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/rustls.c.s
 .PHONY : vtls/rustls.c.s
 
 vtls/schannel.o: vtls/schannel.c.o
@@ -4280,7 +4280,7 @@ vtls/schannel.o: vtls/schannel.c.o
 
 # target to build an object file
 vtls/schannel.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.o
 .PHONY : vtls/schannel.c.o
 
 vtls/schannel.i: vtls/schannel.c.i
@@ -4288,7 +4288,7 @@ vtls/schannel.i: vtls/schannel.c.i
 
 # target to preprocess a source file
 vtls/schannel.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.i
 .PHONY : vtls/schannel.c.i
 
 vtls/schannel.s: vtls/schannel.c.s
@@ -4296,7 +4296,7 @@ vtls/schannel.s: vtls/schannel.c.s
 
 # target to generate assembly for a file
 vtls/schannel.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel.c.s
 .PHONY : vtls/schannel.c.s
 
 vtls/schannel_verify.o: vtls/schannel_verify.c.o
@@ -4304,7 +4304,7 @@ vtls/schannel_verify.o: vtls/schannel_verify.c.o
 
 # target to build an object file
 vtls/schannel_verify.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.o
 .PHONY : vtls/schannel_verify.c.o
 
 vtls/schannel_verify.i: vtls/schannel_verify.c.i
@@ -4312,7 +4312,7 @@ vtls/schannel_verify.i: vtls/schannel_verify.c.i
 
 # target to preprocess a source file
 vtls/schannel_verify.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.i
 .PHONY : vtls/schannel_verify.c.i
 
 vtls/schannel_verify.s: vtls/schannel_verify.c.s
@@ -4320,7 +4320,7 @@ vtls/schannel_verify.s: vtls/schannel_verify.c.s
 
 # target to generate assembly for a file
 vtls/schannel_verify.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/schannel_verify.c.s
 .PHONY : vtls/schannel_verify.c.s
 
 vtls/vtls.o: vtls/vtls.c.o
@@ -4328,7 +4328,7 @@ vtls/vtls.o: vtls/vtls.c.o
 
 # target to build an object file
 vtls/vtls.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.o
 .PHONY : vtls/vtls.c.o
 
 vtls/vtls.i: vtls/vtls.c.i
@@ -4336,7 +4336,7 @@ vtls/vtls.i: vtls/vtls.c.i
 
 # target to preprocess a source file
 vtls/vtls.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.i
 .PHONY : vtls/vtls.c.i
 
 vtls/vtls.s: vtls/vtls.c.s
@@ -4344,7 +4344,7 @@ vtls/vtls.s: vtls/vtls.c.s
 
 # target to generate assembly for a file
 vtls/vtls.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls.c.s
 .PHONY : vtls/vtls.c.s
 
 vtls/vtls_scache.o: vtls/vtls_scache.c.o
@@ -4352,7 +4352,7 @@ vtls/vtls_scache.o: vtls/vtls_scache.c.o
 
 # target to build an object file
 vtls/vtls_scache.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.o
 .PHONY : vtls/vtls_scache.c.o
 
 vtls/vtls_scache.i: vtls/vtls_scache.c.i
@@ -4360,7 +4360,7 @@ vtls/vtls_scache.i: vtls/vtls_scache.c.i
 
 # target to preprocess a source file
 vtls/vtls_scache.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.i
 .PHONY : vtls/vtls_scache.c.i
 
 vtls/vtls_scache.s: vtls/vtls_scache.c.s
@@ -4368,7 +4368,7 @@ vtls/vtls_scache.s: vtls/vtls_scache.c.s
 
 # target to generate assembly for a file
 vtls/vtls_scache.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_scache.c.s
 .PHONY : vtls/vtls_scache.c.s
 
 vtls/vtls_spack.o: vtls/vtls_spack.c.o
@@ -4376,7 +4376,7 @@ vtls/vtls_spack.o: vtls/vtls_spack.c.o
 
 # target to build an object file
 vtls/vtls_spack.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.o
 .PHONY : vtls/vtls_spack.c.o
 
 vtls/vtls_spack.i: vtls/vtls_spack.c.i
@@ -4384,7 +4384,7 @@ vtls/vtls_spack.i: vtls/vtls_spack.c.i
 
 # target to preprocess a source file
 vtls/vtls_spack.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.i
 .PHONY : vtls/vtls_spack.c.i
 
 vtls/vtls_spack.s: vtls/vtls_spack.c.s
@@ -4392,7 +4392,7 @@ vtls/vtls_spack.s: vtls/vtls_spack.c.s
 
 # target to generate assembly for a file
 vtls/vtls_spack.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/vtls_spack.c.s
 .PHONY : vtls/vtls_spack.c.s
 
 vtls/wolfssl.o: vtls/wolfssl.c.o
@@ -4400,7 +4400,7 @@ vtls/wolfssl.o: vtls/wolfssl.c.o
 
 # target to build an object file
 vtls/wolfssl.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.o
 .PHONY : vtls/wolfssl.c.o
 
 vtls/wolfssl.i: vtls/wolfssl.c.i
@@ -4408,7 +4408,7 @@ vtls/wolfssl.i: vtls/wolfssl.c.i
 
 # target to preprocess a source file
 vtls/wolfssl.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.i
 .PHONY : vtls/wolfssl.c.i
 
 vtls/wolfssl.s: vtls/wolfssl.c.s
@@ -4416,7 +4416,7 @@ vtls/wolfssl.s: vtls/wolfssl.c.s
 
 # target to generate assembly for a file
 vtls/wolfssl.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/wolfssl.c.s
 .PHONY : vtls/wolfssl.c.s
 
 vtls/x509asn1.o: vtls/x509asn1.c.o
@@ -4424,7 +4424,7 @@ vtls/x509asn1.o: vtls/x509asn1.c.o
 
 # target to build an object file
 vtls/x509asn1.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.o
 .PHONY : vtls/x509asn1.c.o
 
 vtls/x509asn1.i: vtls/x509asn1.c.i
@@ -4432,7 +4432,7 @@ vtls/x509asn1.i: vtls/x509asn1.c.i
 
 # target to preprocess a source file
 vtls/x509asn1.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.i
 .PHONY : vtls/x509asn1.c.i
 
 vtls/x509asn1.s: vtls/x509asn1.c.s
@@ -4440,7 +4440,7 @@ vtls/x509asn1.s: vtls/x509asn1.c.s
 
 # target to generate assembly for a file
 vtls/x509asn1.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/vtls/x509asn1.c.s
 .PHONY : vtls/x509asn1.c.s
 
 ws.o: ws.c.o
@@ -4448,7 +4448,7 @@ ws.o: ws.c.o
 
 # target to build an object file
 ws.c.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.o
 .PHONY : ws.c.o
 
 ws.i: ws.c.i
@@ -4456,7 +4456,7 @@ ws.i: ws.c.i
 
 # target to preprocess a source file
 ws.c.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.i
 .PHONY : ws.c.i
 
 ws.s: ws.c.s
@@ -4464,7 +4464,7 @@ ws.s: ws.c.s
 
 # target to generate assembly for a file
 ws.c.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libcurl_static.dir/build.make lib/CMakeFiles/libcurl_static.dir/ws.c.s
 .PHONY : ws.c.s
 
 # Help Target
@@ -5027,6 +5027,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

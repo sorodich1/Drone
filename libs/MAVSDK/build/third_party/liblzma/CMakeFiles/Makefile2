@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/liblzma.dir/clean
 CMakeFiles/liblzma.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liblzma.dir/build.make CMakeFiles/liblzma.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liblzma.dir/build.make CMakeFiles/liblzma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target liblzma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target liblzma"
 .PHONY : CMakeFiles/liblzma.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/liblzma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/liblzma.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles 0
 .PHONY : CMakeFiles/liblzma.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ liblzma: CMakeFiles/liblzma.dir/rule
 # codegen rule for target.
 CMakeFiles/liblzma.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/liblzma.dir/build.make CMakeFiles/liblzma.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target liblzma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target liblzma"
 .PHONY : CMakeFiles/liblzma.dir/codegen
 
 # clean rule for target.

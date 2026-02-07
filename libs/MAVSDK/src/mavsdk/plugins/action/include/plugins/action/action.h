@@ -79,6 +79,21 @@ public:
     operator<<(std::ostream& str, Action::OrbitYawBehavior const& orbit_yaw_behavior);
 
     /**
+     * @brief Commanded values for relays
+     */
+    enum class RelayCommand {
+        On, /**< @brief Turn the relay off. */
+        Off, /**< @brief Turn the relay on.. */
+    };
+
+    /**
+     * @brief Stream operator to print information about a `Action::RelayCommand`.
+     *
+     * @return A reference to the stream.
+     */
+    friend std::ostream& operator<<(std::ostream& str, Action::RelayCommand const& relay_command);
+
+    /**
      * @brief Possible results returned for action requests.
      */
     enum class Result {
@@ -484,6 +499,30 @@ public:
     Result set_actuator(int32_t index, float value) const;
 
     /**
+     * @brief Send command to set the value of a relay.
+     *
+     * The index of the relay starts at 0.
+     * For the relay value, 1=on, 0=off, others possible depending on system hardware
+     *
+     * This function is non-blocking. See 'set_relay' for the blocking counterpart.
+     */
+    void set_relay_async(int32_t index, RelayCommand setting, const ResultCallback callback);
+
+    /**
+     * @brief Send command to set the value of a relay.
+     *
+     * The index of the relay starts at 0.
+     * For the relay value, 1=on, 0=off, others possible depending on system hardware
+     *
+     * This function is blocking. See 'set_relay_async' for the non-blocking counterpart.
+     *
+
+     * @return Result of request.
+
+     */
+    Result set_relay(int32_t index, RelayCommand setting) const;
+
+    /**
      * @brief Send command to transition the drone to fixedwing.
      *
      * The associated action will only be executed for VTOL vehicles (on other vehicle types the
@@ -643,6 +682,20 @@ public:
 
      */
     Result set_current_speed(float speed_m_s) const;
+
+    /**
+     * @brief Set GPS Global Origin.
+     *
+     * Sets the GPS coordinates of the vehicle local origin (0,0,0) position.
+     *
+     * This function is blocking.
+     *
+
+     * @return Result of request.
+
+     */
+    Result set_gps_global_origin(
+        double latitude_deg, double longitude_deg, float absolute_altitude_m) const;
 
     /**
      * @brief Copy constructor.

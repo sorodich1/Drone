@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/tinyxml2
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/tinyxml2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/tinyxml2
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2
 
 # Utility rule file for tinyxml2.
 
@@ -76,49 +76,49 @@ CMakeFiles/tinyxml2-complete: tinyxml2/src/tinyxml2-stamp/tinyxml2-patch
 CMakeFiles/tinyxml2-complete: tinyxml2/src/tinyxml2-stamp/tinyxml2-configure
 CMakeFiles/tinyxml2-complete: tinyxml2/src/tinyxml2-stamp/tinyxml2-build
 CMakeFiles/tinyxml2-complete: tinyxml2/src/tinyxml2-stamp/tinyxml2-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'tinyxml2'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles/tinyxml2-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'tinyxml2'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles/tinyxml2-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-done
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-build: tinyxml2/src/tinyxml2-stamp/tinyxml2-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'tinyxml2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-build
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-configure: tinyxml2/tmp/tinyxml2-cfgcmd.txt
 tinyxml2/src/tinyxml2-stamp/tinyxml2-configure: tinyxml2/src/tinyxml2-stamp/tinyxml2-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE=Release -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF -Dtinyxml2_BUILD_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 -B /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'tinyxml2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF -Dtinyxml2_BUILD_TESTING=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 -B /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-configure
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-download: tinyxml2/src/tinyxml2-stamp/tinyxml2-gitinfo.txt
 tinyxml2/src/tinyxml2-stamp/tinyxml2-download: tinyxml2/src/tinyxml2-stamp/tinyxml2-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'tinyxml2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-download
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-install: tinyxml2/src/tinyxml2-stamp/tinyxml2-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'tinyxml2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-install
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'tinyxml2'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'tinyxml2'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-mkdir
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-patch: tinyxml2/src/tinyxml2-stamp/tinyxml2-patch-info.txt
 tinyxml2/src/tinyxml2-stamp/tinyxml2-patch: tinyxml2/src/tinyxml2-stamp/tinyxml2-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing patch step for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 && git checkout . && git apply /home/pi/Drone/MAVSDK/third_party/tinyxml2/cmake-3.10.2.patch && git apply /home/pi/Drone/MAVSDK/third_party/tinyxml2/no-lfs64.patch
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'tinyxml2'"
+	/usr/bin/cmake -E echo_append
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2-stamp/tinyxml2-patch
 
 tinyxml2/src/tinyxml2-stamp/tinyxml2-update: tinyxml2/tmp/tinyxml2-gitupdate.cmake
 tinyxml2/src/tinyxml2-stamp/tinyxml2-update: tinyxml2/src/tinyxml2-stamp/tinyxml2-update-info.txt
 tinyxml2/src/tinyxml2-stamp/tinyxml2-update: tinyxml2/src/tinyxml2-stamp/tinyxml2-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'tinyxml2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'tinyxml2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2 && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/tmp/tinyxml2-gitupdate.cmake
 
 CMakeFiles/tinyxml2.dir/codegen:
 .PHONY : CMakeFiles/tinyxml2.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/tinyxml2.dir/clean:
 .PHONY : CMakeFiles/tinyxml2.dir/clean
 
 CMakeFiles/tinyxml2.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/tinyxml2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/tinyxml2 /home/pi/Drone/MAVSDK/third_party/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2 /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/CMakeFiles/tinyxml2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/tinyxml2 /home/pi/Drone/libs/MAVSDK/third_party/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2 /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/CMakeFiles/tinyxml2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tinyxml2.dir/depend
 

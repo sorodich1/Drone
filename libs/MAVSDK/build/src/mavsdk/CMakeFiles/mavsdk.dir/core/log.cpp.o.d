@@ -1,7 +1,8 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/log.cpp /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/log.h /usr/include/c++/14/bitset \
- /usr/include/c++/14/bits/functexcept.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/log.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/log.h \
+ /usr/include/c++/14/bitset /usr/include/c++/14/bits/functexcept.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -98,9 +99,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -108,10 +107,10 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -172,7 +171,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
@@ -187,4 +186,4 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/log.cpp.o: \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
  /usr/include/c++/14/compare /usr/include/c++/14/iostream \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/unused.h
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unused.h

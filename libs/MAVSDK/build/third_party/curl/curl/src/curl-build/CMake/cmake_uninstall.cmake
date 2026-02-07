@@ -21,16 +21,16 @@
 # SPDX-License-Identifier: curl
 #
 ###########################################################################
-if(NOT EXISTS "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt")
+if(NOT EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt")
 endif()
 
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/MAVSDK/build/third_party/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Drone/libs/MAVSDK/build/third_party/install")
 endif()
 message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt" _files)
+file(READ "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/install_manifest.txt" _files)
 string(REGEX REPLACE "\n" ";" _files "${_files}")
 foreach(_file ${_files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${_file}")

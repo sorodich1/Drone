@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/xz.dir/depend.make
@@ -73,242 +73,242 @@ CMakeFiles/xz.dir/codegen:
 .PHONY : CMakeFiles/xz.dir/codegen
 
 CMakeFiles/xz.dir/src/common/tuklib_exit.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/common/tuklib_exit.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
+CMakeFiles/xz.dir/src/common/tuklib_exit.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
 CMakeFiles/xz.dir/src/common/tuklib_exit.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/xz.dir/src/common/tuklib_exit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_exit.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_exit.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_exit.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/xz.dir/src/common/tuklib_exit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_exit.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_exit.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_exit.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c
 
 CMakeFiles/xz.dir/src/common/tuklib_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/common/tuklib_exit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c > CMakeFiles/xz.dir/src/common/tuklib_exit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c > CMakeFiles/xz.dir/src/common/tuklib_exit.c.i
 
 CMakeFiles/xz.dir/src/common/tuklib_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/common/tuklib_exit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c -o CMakeFiles/xz.dir/src/common/tuklib_exit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c -o CMakeFiles/xz.dir/src/common/tuklib_exit.c.s
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c
+CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c > CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c > CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.i
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_fw.c -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_fw.c.s
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c
+CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c > CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c > CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.i
 
 CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_mbstr_width.c -o CMakeFiles/xz.dir/src/common/tuklib_mbstr_width.c.s
 
 CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c
+CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c
 CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c
 
 CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c > CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c > CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.i
 
 CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c -o CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_open_stdxxx.c -o CMakeFiles/xz.dir/src/common/tuklib_open_stdxxx.c.s
 
 CMakeFiles/xz.dir/src/common/tuklib_progname.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/common/tuklib_progname.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
+CMakeFiles/xz.dir/src/common/tuklib_progname.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
 CMakeFiles/xz.dir/src/common/tuklib_progname.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/xz.dir/src/common/tuklib_progname.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_progname.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_progname.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_progname.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/xz.dir/src/common/tuklib_progname.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/common/tuklib_progname.c.o -MF CMakeFiles/xz.dir/src/common/tuklib_progname.c.o.d -o CMakeFiles/xz.dir/src/common/tuklib_progname.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c
 
 CMakeFiles/xz.dir/src/common/tuklib_progname.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/common/tuklib_progname.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c > CMakeFiles/xz.dir/src/common/tuklib_progname.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c > CMakeFiles/xz.dir/src/common/tuklib_progname.c.i
 
 CMakeFiles/xz.dir/src/common/tuklib_progname.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/common/tuklib_progname.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c -o CMakeFiles/xz.dir/src/common/tuklib_progname.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c -o CMakeFiles/xz.dir/src/common/tuklib_progname.c.s
 
 CMakeFiles/xz.dir/src/xz/args.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/args.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c
+CMakeFiles/xz.dir/src/xz/args.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c
 CMakeFiles/xz.dir/src/xz/args.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/xz.dir/src/xz/args.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/args.c.o -MF CMakeFiles/xz.dir/src/xz/args.c.o.d -o CMakeFiles/xz.dir/src/xz/args.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/xz.dir/src/xz/args.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/args.c.o -MF CMakeFiles/xz.dir/src/xz/args.c.o.d -o CMakeFiles/xz.dir/src/xz/args.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c
 
 CMakeFiles/xz.dir/src/xz/args.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/args.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c > CMakeFiles/xz.dir/src/xz/args.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c > CMakeFiles/xz.dir/src/xz/args.c.i
 
 CMakeFiles/xz.dir/src/xz/args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/args.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c -o CMakeFiles/xz.dir/src/xz/args.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/args.c -o CMakeFiles/xz.dir/src/xz/args.c.s
 
 CMakeFiles/xz.dir/src/xz/coder.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/coder.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c
+CMakeFiles/xz.dir/src/xz/coder.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c
 CMakeFiles/xz.dir/src/xz/coder.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/xz.dir/src/xz/coder.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/coder.c.o -MF CMakeFiles/xz.dir/src/xz/coder.c.o.d -o CMakeFiles/xz.dir/src/xz/coder.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/xz.dir/src/xz/coder.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/coder.c.o -MF CMakeFiles/xz.dir/src/xz/coder.c.o.d -o CMakeFiles/xz.dir/src/xz/coder.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c
 
 CMakeFiles/xz.dir/src/xz/coder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/coder.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c > CMakeFiles/xz.dir/src/xz/coder.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c > CMakeFiles/xz.dir/src/xz/coder.c.i
 
 CMakeFiles/xz.dir/src/xz/coder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/coder.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c -o CMakeFiles/xz.dir/src/xz/coder.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/coder.c -o CMakeFiles/xz.dir/src/xz/coder.c.s
 
 CMakeFiles/xz.dir/src/xz/file_io.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/file_io.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c
+CMakeFiles/xz.dir/src/xz/file_io.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c
 CMakeFiles/xz.dir/src/xz/file_io.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/xz.dir/src/xz/file_io.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/file_io.c.o -MF CMakeFiles/xz.dir/src/xz/file_io.c.o.d -o CMakeFiles/xz.dir/src/xz/file_io.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/xz.dir/src/xz/file_io.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/file_io.c.o -MF CMakeFiles/xz.dir/src/xz/file_io.c.o.d -o CMakeFiles/xz.dir/src/xz/file_io.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c
 
 CMakeFiles/xz.dir/src/xz/file_io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/file_io.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c > CMakeFiles/xz.dir/src/xz/file_io.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c > CMakeFiles/xz.dir/src/xz/file_io.c.i
 
 CMakeFiles/xz.dir/src/xz/file_io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/file_io.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c -o CMakeFiles/xz.dir/src/xz/file_io.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/file_io.c -o CMakeFiles/xz.dir/src/xz/file_io.c.s
 
 CMakeFiles/xz.dir/src/xz/hardware.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/hardware.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c
+CMakeFiles/xz.dir/src/xz/hardware.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c
 CMakeFiles/xz.dir/src/xz/hardware.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/xz.dir/src/xz/hardware.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/hardware.c.o -MF CMakeFiles/xz.dir/src/xz/hardware.c.o.d -o CMakeFiles/xz.dir/src/xz/hardware.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/xz.dir/src/xz/hardware.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/hardware.c.o -MF CMakeFiles/xz.dir/src/xz/hardware.c.o.d -o CMakeFiles/xz.dir/src/xz/hardware.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c
 
 CMakeFiles/xz.dir/src/xz/hardware.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/hardware.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c > CMakeFiles/xz.dir/src/xz/hardware.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c > CMakeFiles/xz.dir/src/xz/hardware.c.i
 
 CMakeFiles/xz.dir/src/xz/hardware.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/hardware.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c -o CMakeFiles/xz.dir/src/xz/hardware.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/hardware.c -o CMakeFiles/xz.dir/src/xz/hardware.c.s
 
 CMakeFiles/xz.dir/src/xz/main.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/main.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c
+CMakeFiles/xz.dir/src/xz/main.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c
 CMakeFiles/xz.dir/src/xz/main.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/xz.dir/src/xz/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/main.c.o -MF CMakeFiles/xz.dir/src/xz/main.c.o.d -o CMakeFiles/xz.dir/src/xz/main.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/xz.dir/src/xz/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/main.c.o -MF CMakeFiles/xz.dir/src/xz/main.c.o.d -o CMakeFiles/xz.dir/src/xz/main.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c
 
 CMakeFiles/xz.dir/src/xz/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c > CMakeFiles/xz.dir/src/xz/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c > CMakeFiles/xz.dir/src/xz/main.c.i
 
 CMakeFiles/xz.dir/src/xz/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c -o CMakeFiles/xz.dir/src/xz/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/main.c -o CMakeFiles/xz.dir/src/xz/main.c.s
 
 CMakeFiles/xz.dir/src/xz/message.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/message.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c
+CMakeFiles/xz.dir/src/xz/message.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c
 CMakeFiles/xz.dir/src/xz/message.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/xz.dir/src/xz/message.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/message.c.o -MF CMakeFiles/xz.dir/src/xz/message.c.o.d -o CMakeFiles/xz.dir/src/xz/message.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/xz.dir/src/xz/message.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/message.c.o -MF CMakeFiles/xz.dir/src/xz/message.c.o.d -o CMakeFiles/xz.dir/src/xz/message.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c
 
 CMakeFiles/xz.dir/src/xz/message.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/message.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c > CMakeFiles/xz.dir/src/xz/message.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c > CMakeFiles/xz.dir/src/xz/message.c.i
 
 CMakeFiles/xz.dir/src/xz/message.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/message.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c -o CMakeFiles/xz.dir/src/xz/message.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/message.c -o CMakeFiles/xz.dir/src/xz/message.c.s
 
 CMakeFiles/xz.dir/src/xz/mytime.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/mytime.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c
+CMakeFiles/xz.dir/src/xz/mytime.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c
 CMakeFiles/xz.dir/src/xz/mytime.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/xz.dir/src/xz/mytime.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/mytime.c.o -MF CMakeFiles/xz.dir/src/xz/mytime.c.o.d -o CMakeFiles/xz.dir/src/xz/mytime.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/xz.dir/src/xz/mytime.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/mytime.c.o -MF CMakeFiles/xz.dir/src/xz/mytime.c.o.d -o CMakeFiles/xz.dir/src/xz/mytime.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c
 
 CMakeFiles/xz.dir/src/xz/mytime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/mytime.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c > CMakeFiles/xz.dir/src/xz/mytime.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c > CMakeFiles/xz.dir/src/xz/mytime.c.i
 
 CMakeFiles/xz.dir/src/xz/mytime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/mytime.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c -o CMakeFiles/xz.dir/src/xz/mytime.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/mytime.c -o CMakeFiles/xz.dir/src/xz/mytime.c.s
 
 CMakeFiles/xz.dir/src/xz/options.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/options.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c
+CMakeFiles/xz.dir/src/xz/options.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c
 CMakeFiles/xz.dir/src/xz/options.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/xz.dir/src/xz/options.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/options.c.o -MF CMakeFiles/xz.dir/src/xz/options.c.o.d -o CMakeFiles/xz.dir/src/xz/options.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/xz.dir/src/xz/options.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/options.c.o -MF CMakeFiles/xz.dir/src/xz/options.c.o.d -o CMakeFiles/xz.dir/src/xz/options.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c
 
 CMakeFiles/xz.dir/src/xz/options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/options.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c > CMakeFiles/xz.dir/src/xz/options.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c > CMakeFiles/xz.dir/src/xz/options.c.i
 
 CMakeFiles/xz.dir/src/xz/options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/options.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c -o CMakeFiles/xz.dir/src/xz/options.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/options.c -o CMakeFiles/xz.dir/src/xz/options.c.s
 
 CMakeFiles/xz.dir/src/xz/signals.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/signals.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c
+CMakeFiles/xz.dir/src/xz/signals.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c
 CMakeFiles/xz.dir/src/xz/signals.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/xz.dir/src/xz/signals.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/signals.c.o -MF CMakeFiles/xz.dir/src/xz/signals.c.o.d -o CMakeFiles/xz.dir/src/xz/signals.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/xz.dir/src/xz/signals.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/signals.c.o -MF CMakeFiles/xz.dir/src/xz/signals.c.o.d -o CMakeFiles/xz.dir/src/xz/signals.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c
 
 CMakeFiles/xz.dir/src/xz/signals.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/signals.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c > CMakeFiles/xz.dir/src/xz/signals.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c > CMakeFiles/xz.dir/src/xz/signals.c.i
 
 CMakeFiles/xz.dir/src/xz/signals.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/signals.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c -o CMakeFiles/xz.dir/src/xz/signals.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/signals.c -o CMakeFiles/xz.dir/src/xz/signals.c.s
 
 CMakeFiles/xz.dir/src/xz/suffix.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/suffix.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c
+CMakeFiles/xz.dir/src/xz/suffix.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c
 CMakeFiles/xz.dir/src/xz/suffix.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/xz.dir/src/xz/suffix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/suffix.c.o -MF CMakeFiles/xz.dir/src/xz/suffix.c.o.d -o CMakeFiles/xz.dir/src/xz/suffix.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/xz.dir/src/xz/suffix.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/suffix.c.o -MF CMakeFiles/xz.dir/src/xz/suffix.c.o.d -o CMakeFiles/xz.dir/src/xz/suffix.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c
 
 CMakeFiles/xz.dir/src/xz/suffix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/suffix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c > CMakeFiles/xz.dir/src/xz/suffix.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c > CMakeFiles/xz.dir/src/xz/suffix.c.i
 
 CMakeFiles/xz.dir/src/xz/suffix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/suffix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c -o CMakeFiles/xz.dir/src/xz/suffix.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/suffix.c -o CMakeFiles/xz.dir/src/xz/suffix.c.s
 
 CMakeFiles/xz.dir/src/xz/util.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/util.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c
+CMakeFiles/xz.dir/src/xz/util.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c
 CMakeFiles/xz.dir/src/xz/util.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/xz.dir/src/xz/util.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/util.c.o -MF CMakeFiles/xz.dir/src/xz/util.c.o.d -o CMakeFiles/xz.dir/src/xz/util.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/xz.dir/src/xz/util.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/util.c.o -MF CMakeFiles/xz.dir/src/xz/util.c.o.d -o CMakeFiles/xz.dir/src/xz/util.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c
 
 CMakeFiles/xz.dir/src/xz/util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/util.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c > CMakeFiles/xz.dir/src/xz/util.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c > CMakeFiles/xz.dir/src/xz/util.c.i
 
 CMakeFiles/xz.dir/src/xz/util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/util.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c -o CMakeFiles/xz.dir/src/xz/util.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/util.c -o CMakeFiles/xz.dir/src/xz/util.c.s
 
 CMakeFiles/xz.dir/src/xz/list.c.o: CMakeFiles/xz.dir/flags.make
-CMakeFiles/xz.dir/src/xz/list.c.o: /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c
+CMakeFiles/xz.dir/src/xz/list.c.o: /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c
 CMakeFiles/xz.dir/src/xz/list.c.o: CMakeFiles/xz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/xz.dir/src/xz/list.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/list.c.o -MF CMakeFiles/xz.dir/src/xz/list.c.o.d -o CMakeFiles/xz.dir/src/xz/list.c.o -c /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/xz.dir/src/xz/list.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xz.dir/src/xz/list.c.o -MF CMakeFiles/xz.dir/src/xz/list.c.o.d -o CMakeFiles/xz.dir/src/xz/list.c.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c
 
 CMakeFiles/xz.dir/src/xz/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/xz.dir/src/xz/list.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c > CMakeFiles/xz.dir/src/xz/list.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c > CMakeFiles/xz.dir/src/xz/list.c.i
 
 CMakeFiles/xz.dir/src/xz/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/xz.dir/src/xz/list.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c -o CMakeFiles/xz.dir/src/xz/list.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xz/list.c -o CMakeFiles/xz.dir/src/xz/list.c.s
 
 # Object files for target xz
 xz_OBJECTS = \
@@ -354,7 +354,7 @@ xz: CMakeFiles/xz.dir/build.make
 xz: CMakeFiles/xz.dir/compiler_depend.ts
 xz: liblzma.a
 xz: CMakeFiles/xz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable xz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable xz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -366,6 +366,6 @@ CMakeFiles/xz.dir/clean:
 .PHONY : CMakeFiles/xz.dir/clean
 
 CMakeFiles/xz.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/xz.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma-build/CMakeFiles/xz.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/xz.dir/depend
 

@@ -261,7 +261,7 @@ void UdpConnection::add_remote_impl(
         // by MAVSDK. As such, it should not be advertised as a newly discovered system.
         if (static_cast<int>(remote_sysid) != 0) {
             LogInfo() << "New system on: " << new_remote.ip << ":" << new_remote.port_number
-                      << " (with system ID: " << static_cast<int>(remote_sysid) << ")";
+                      << " (system ID: " << static_cast<int>(remote_sysid) << ")";
         }
         _remotes.push_back(new_remote);
     } else {
@@ -301,21 +301,25 @@ void UdpConnection::receive()
 
         _mavlink_receiver->set_new_datagram(buffer, static_cast<int>(recv_len));
 
-        // Parse all mavlink messages in one datagram. Once exhausted, we'll exit while.
-        while (_mavlink_receiver->parse_message()) {
-            const uint8_t sysid = _mavlink_receiver->get_last_message().sysid;
-
-            if (sysid != 0) {
-                char ip_str[INET_ADDRSTRLEN];
-                if (inet_ntop(AF_INET, &src_addr.sin_addr, ip_str, INET_ADDRSTRLEN) != nullptr) {
-                    add_remote_impl(ip_str, ntohs(src_addr.sin_port), sysid, RemoteOption::Found);
-                } else {
-                    LogErr() << "inet_ntop failure for: " << strerror(errno);
+        // Parse all mavlink messages in one datagram. Once exhausted, we'll exit loop.
+        auto parse_result = _mavlink_receiver->parse_message();
+        while (parse_result != MavlinkReceiver::ParseResult::NoneAvailable) {
+            // Track remote endpoint for valid messages
+            if (parse_result == MavlinkReceiver::ParseResult::MessageParsed) {
+                const uint8_t sysid = _mavlink_receiver->get_last_message().sysid;
+                if (sysid != 0) {
+                    char ip_str[INET_ADDRSTRLEN];
+                    if (inet_ntop(AF_INET, &src_addr.sin_addr, ip_str, INET_ADDRSTRLEN) !=
+                        nullptr) {
+                        add_remote_impl(
+                            ip_str, ntohs(src_addr.sin_port), sysid, RemoteOption::Found);
+                    } else {
+                        LogErr() << "inet_ntop failure for: " << strerror(errno);
+                    }
                 }
             }
-
-            // Handle parsed message
-            receive_message(_mavlink_receiver->get_last_message(), this);
+            receive_message(parse_result, _mavlink_receiver->get_last_message(), this);
+            parse_result = _mavlink_receiver->parse_message();
         }
 
         // Also parse with libmav if available

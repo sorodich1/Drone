@@ -14,13 +14,12 @@
 *.log
 *.dat
 *.csv
-*.txt
 
 # Архивы
 *.zip
 *.tar.gz
 *.7z
-
+*.d
 # Временные файлы
 *~
 *.swp
@@ -45,3 +44,9 @@ Thumbs.db
 # Скрытые файлы
 .*.swp
 .*.swo
+*.cmake
+*.o.d
+*.txt
+*.h
+*.cpp
+*.yml

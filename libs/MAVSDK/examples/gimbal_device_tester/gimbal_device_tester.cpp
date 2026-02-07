@@ -751,7 +751,18 @@ void subscribe_to_heartbeat(MavlinkPassthrough& mavlink_passthrough)
 
             {
                 std::lock_guard<std::mutex> lock(receiver_data.mutex);
-                receiver_data.mav_type = heartbeat.type;
+                switch (message.compid) {
+                    case MAV_COMP_ID_GIMBAL:
+                    case MAV_COMP_ID_GIMBAL2:
+                    case MAV_COMP_ID_GIMBAL3:
+                    case MAV_COMP_ID_GIMBAL4:
+                    case MAV_COMP_ID_GIMBAL5:
+                    case MAV_COMP_ID_GIMBAL6:
+                        receiver_data.mav_type = heartbeat.type;
+                        break;
+                    default:
+                        break;
+                }
             }
         });
 }
@@ -791,8 +802,8 @@ void usage(const std::string& bin_name)
               << "Connection URL format should be :\n"
               << " For TCP server: tcpin://<our_ip>:<port>\n"
               << " For TCP client: tcpout://<remote_ip>:<port>\n"
-              << " For UDP server: udp://<our_ip>:<port>\n"
-              << " For UDP client: udp://<remote_ip>:<port>\n"
+              << " For UDP server: udpin://<our_ip>:<port>\n"
+              << " For UDP client: udpout://<remote_ip>:<port>\n"
               << " For Serial : serial://</path/to/serial/dev>:<baudrate>]\n"
               << "For example, to connect to the simulator use URL: udpin://0.0.0.0:14540\n";
 }

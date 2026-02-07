@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/Drone/MAVSDK/src
+# Install script for directory: /home/pi/Drone/libs/MAVSDK/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -46,7 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK/MAVSDKTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK/MAVSDKTargets.cmake"
-         "/home/pi/Drone/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets.cmake")
+         "/home/pi/Drone/libs/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK/MAVSDKTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -59,35 +59,34 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets-release.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/src/CMakeFiles/Export/9aa1e8485bb7786557c60391a03a096b/MAVSDKTargets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MAVSDK" TYPE FILE FILES
-    "/home/pi/Drone/MAVSDK/build/src/CMakeFiles/MAVSDKConfig.cmake"
-    "/home/pi/Drone/MAVSDK/build/src/MAVSDKConfigVersion.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/src/CMakeFiles/MAVSDKConfig.cmake"
+    "/home/pi/Drone/libs/MAVSDK/build/src/MAVSDKConfigVersion.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/MAVSDK/build/src/mavsdk.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Drone/libs/MAVSDK/build/src/mavsdk.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pi/Drone/MAVSDK/build/src/mavsdk/cmake_install.cmake")
-  include("/home/pi/Drone/MAVSDK/build/src/integration_tests/cmake_install.cmake")
-  include("/home/pi/Drone/MAVSDK/build/src/unit_tests/cmake_install.cmake")
-  include("/home/pi/Drone/MAVSDK/build/src/system_tests/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/src/mavsdk/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/src/unit_tests/cmake_install.cmake")
+  include("/home/pi/Drone/libs/MAVSDK/build/src/system_tests/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/pi/Drone/MAVSDK/build/src/install_local_manifest.txt"
+  file(WRITE "/home/pi/Drone/libs/MAVSDK/build/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

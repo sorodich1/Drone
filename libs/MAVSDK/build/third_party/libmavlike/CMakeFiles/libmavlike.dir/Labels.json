@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/CMakeFiles/libmavlike-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-stamp/libmavlike-update.rule"
 		}
 	],
 	"target" : 

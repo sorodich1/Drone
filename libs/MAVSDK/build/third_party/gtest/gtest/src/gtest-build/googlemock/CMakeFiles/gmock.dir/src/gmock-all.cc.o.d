@@ -1,8 +1,8 @@
 googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-all.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-all.cc \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-actions.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
@@ -75,9 +75,7 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/functional \
@@ -177,11 +175,10 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/c++/14/bits/charconv.h \
+ /usr/include/c++/14/cerrno /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-internal-utils.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-internal-utils.h \
  /usr/include/c++/14/ostream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/ios_base.h \
  /usr/include/c++/14/bits/locale_classes.h \
@@ -199,12 +196,12 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-port.h \
  /usr/include/assert.h /usr/include/c++/14/stdlib.h \
  /usr/include/c++/14/cstdint /usr/include/c++/14/iostream \
  /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/14/limits \
  /usr/include/c++/14/locale \
  /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
@@ -220,8 +217,8 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port-arch.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
  /usr/include/aarch64-linux-gnu/bits/environments.h \
  /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -235,20 +232,20 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/mutex \
  /usr/include/c++/14/any /usr/include/c++/14/optional \
  /usr/include/c++/14/variant \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest.h \
  /usr/include/c++/14/iomanip /usr/include/c++/14/bits/quoted_string.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
  /usr/include/c++/14/set /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_set.h \
  /usr/include/c++/14/bits/stl_multiset.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-assertion-result.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-message.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-death-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-assertion-result.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-message.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-death-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/14/atomic \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/aarch64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
@@ -284,22 +281,22 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-filepath.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-string.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-type-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-string.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/14/cxxabi.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-param-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-param-test.h \
  /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-param-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/14/cassert \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-test-part.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-typed-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_pred_impl.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_prod.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-pp.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-cardinalities.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-test-part.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest-typed-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_pred_impl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googletest/include/gtest/gtest_prod.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/gmock-pp.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-cardinalities.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/syslimits.h \
  /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
@@ -308,9 +305,9 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-function-mocker.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-spec-builders.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-function-mocker.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-spec-builders.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-matchers.h \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -334,14 +331,14 @@ googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-matchers.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-more-actions.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-more-matchers.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-nice-strict.h \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-cardinalities.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-internal-utils.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-more-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/internal/custom/gmock-generated-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-more-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/include/gmock/gmock-nice-strict.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-cardinalities.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-internal-utils.cc \
  /usr/include/c++/14/cstring \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-matchers.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-spec-builders.cc \
- /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock.cc
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-matchers.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock-spec-builders.cc \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest/googlemock/src/gmock.cc

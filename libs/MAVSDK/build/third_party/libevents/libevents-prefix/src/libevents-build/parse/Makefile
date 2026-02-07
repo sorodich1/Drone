@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/clean
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 parse/CMakeFiles/libevents_parser.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_parser.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_parser.dir/rule
 .PHONY : parse/CMakeFiles/libevents_parser.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ libevents_parser: parse/CMakeFiles/libevents_parser.dir/rule
 
 # fast build rule for target.
 libevents_parser/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/build
 .PHONY : libevents_parser/fast
 
 # Convenience name for target.
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ libevents_health_and_arming_checks: parse/CMakeFiles/libevents_health_and_arming
 
 # fast build rule for target.
 libevents_health_and_arming_checks/fast:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/build
 .PHONY : libevents_health_and_arming_checks/fast
 
 health_and_arming_checks.o: health_and_arming_checks.cpp.o
@@ -194,7 +194,7 @@ health_and_arming_checks.o: health_and_arming_checks.cpp.o
 
 # target to build an object file
 health_and_arming_checks.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o
 .PHONY : health_and_arming_checks.cpp.o
 
 health_and_arming_checks.i: health_and_arming_checks.cpp.i
@@ -202,7 +202,7 @@ health_and_arming_checks.i: health_and_arming_checks.cpp.i
 
 # target to preprocess a source file
 health_and_arming_checks.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i
 .PHONY : health_and_arming_checks.cpp.i
 
 health_and_arming_checks.s: health_and_arming_checks.cpp.s
@@ -210,7 +210,7 @@ health_and_arming_checks.s: health_and_arming_checks.cpp.s
 
 # target to generate assembly for a file
 health_and_arming_checks.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s
 .PHONY : health_and_arming_checks.cpp.s
 
 parser.o: parser.cpp.o
@@ -218,7 +218,7 @@ parser.o: parser.cpp.o
 
 # target to build an object file
 parser.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.o
 .PHONY : parser.cpp.o
 
 parser.i: parser.cpp.i
@@ -226,7 +226,7 @@ parser.i: parser.cpp.i
 
 # target to preprocess a source file
 parser.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.i
 .PHONY : parser.cpp.i
 
 parser.s: parser.cpp.s
@@ -234,7 +234,7 @@ parser.s: parser.cpp.s
 
 # target to generate assembly for a file
 parser.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(MAKE) $(MAKESILENT) -f parse/CMakeFiles/libevents_parser.dir/build.make parse/CMakeFiles/libevents_parser.dir/parser.cpp.s
 .PHONY : parser.cpp.s
 
 # Help Target
@@ -269,6 +269,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

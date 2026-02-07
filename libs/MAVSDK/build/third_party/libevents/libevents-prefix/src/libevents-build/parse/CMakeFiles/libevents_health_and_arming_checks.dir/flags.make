@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14 -fPIC -Wall -Wextra -Werror -Wconversion -Wpedantic
+CXX_FLAGS = -std=gnu++14 -fPIC -Wall -Wextra -Werror -Wconversion -Wpedantic
 

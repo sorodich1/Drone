@@ -1,8 +1,8 @@
 CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
  /usr/include/inttypes.h /usr/include/features.h \
@@ -58,10 +58,8 @@ CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h /usr/include/stdio.h \
- /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/stdio.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdarg.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h \
@@ -69,14 +67,13 @@ CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/string.h \
+ /usr/include/aarch64-linux-gnu/bits/stdio_lim.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_gettext.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_gettext.h \
  /usr/include/locale.h /usr/include/aarch64-linux-gnu/bits/locale.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.h \
  /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.h

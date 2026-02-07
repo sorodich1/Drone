@@ -85,7 +85,7 @@ jobs:
         id: cache
         with:
           path: ./build/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -156,7 +156,7 @@ jobs:
         id: cache
         with:
           path: ./build/debug/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -193,7 +193,7 @@ jobs:
         id: cache
         with:
           path: ./build/asan/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-2
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -233,7 +233,7 @@ jobs:
         id: cache
         with:
           path: ./build/tsan/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-2
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -273,7 +273,7 @@ jobs:
         id: cache
         with:
           path: ./build/ubsan/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-2
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -342,7 +342,7 @@ jobs:
         id: cache
         with:
           path: ./build/release/third_party/install
-          key: ${{ github.job }}-${{ matrix.ubuntu_version }}-${{ matrix.cc }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.ubuntu_version }}-${{ matrix.cc }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -404,7 +404,7 @@ jobs:
         id: cache
         with:
           path: ./build/release/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -415,6 +415,25 @@ jobs:
           cmake $superbuild $cmake_prefix_path -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_MAVSDK_SERVER=OFF -DBUILD_WITHOUT_CURL=ON -DWERROR=ON -DCMAKE_INSTALL_PREFIX=install -Bbuild/release -H.
       - name: build
         run: cmake --build build/release -j$(nproc)
+
+  ubuntu-superbuild-off:
+    name: Ubuntu 24.04 (SUPERBUILD=OFF)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y liblzma-dev libtinyxml2-dev libjsoncpp-dev libcurl4-openssl-dev libssl-dev
+      - name: Build with system dependencies
+        run: ./tools/build-with-system-deps.sh
+      - name: unit tests
+        run: ./build-release/src/unit_tests/unit_tests_runner
+      - name: system tests
+        run: ./build-release/src/system_tests/system_tests_runner
 
   ubuntu24-style-and-proto-check:
     name: ubuntu-24.04 (style and proto check)
@@ -438,7 +457,7 @@ jobs:
         id: cache
         with:
           path: ./build/default/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -449,7 +468,7 @@ jobs:
       - name: generate code from protos
         run: PATH="$PATH:$HOME/.local/bin" tools/generate_from_protos.sh
       - name: fix style
-        run: tools/fix_style.sh . || true
+        run: tools/fix_style.py . || true
       - name: check for diff
         run: git diff --exit-code
 
@@ -597,13 +616,16 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@v1.3.1
+        continue-on-error: true
       - name: setup dockcross
         run: docker run --rm ${{ env.ARG_IMAGE }} > ./dockcross-linux-${{ matrix.docker_name }}-custom; chmod +x ./dockcross-linux-${{ matrix.docker_name }}-custom
       - uses: actions/cache@v4
         id: cache
         with:
           path: ./build/linux-${{ matrix.docker_name }}/third_party/install
-          key: ${{ github.job }}-linux-${{ matrix.docker_name }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-linux-${{ matrix.docker_name }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -652,7 +674,7 @@ jobs:
         id: cache
         with:
           path: ./build/release/third_party/install
-          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ hashFiles('./third_party/**') }}-3
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -702,7 +724,7 @@ jobs:
         id: cache
         with:
           path: ./build/${{ matrix.arch_name }}/third_party/install
-          key: ${{ github.job }}-${{ matrix.arch_name }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.arch_name }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
@@ -748,13 +770,16 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@v1.3.1
+        continue-on-error: true
       - name: setup dockcross
         run: docker run --rm dockcross/${{ matrix.name }}:20250818-0a27819 > ./dockcross-${{ matrix.name }}; chmod +x ./dockcross-${{ matrix.name }}
       - uses: actions/cache@v4
         id: cache
         with:
           path: ./build/${{ matrix.name }}/third_party/install
-          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**') }}
+          key: ${{ github.job }}-${{ matrix.name }}-${{ hashFiles('./third_party/**') }}-2
       - name: disable superbuild on cache hit
         if: steps.cache.outputs.cache-hit == 'true'
         run: |

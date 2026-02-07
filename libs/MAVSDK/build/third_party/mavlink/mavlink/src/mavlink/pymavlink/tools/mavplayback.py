@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
 play back a mavlink log as a FlightGear FG NET stream, and as a
@@ -6,18 +6,13 @@ realtime mavlink stream
 
 Useful for visualising flights
 '''
-from __future__ import print_function
-from future import standard_library
-standard_library.install_aliases()
-
-from builtins import object
-
 import os
 import sys
 import time
 import tkinter
 
 from pymavlink import fgFDM
+from pymavlink import DFReader
 
 from argparse import ArgumentParser
 parser = ArgumentParser(description=__doc__)
@@ -57,6 +52,10 @@ class App(object):
 
         self.mlog = mavutil.mavlink_connection(filename, planner_format=args.planner,
                                                robust_parsing=True)
+        if isinstance(self.mlog, DFReader.DFReader_binary):
+            print("mavplayback.py only works on .tlog files, not BIN ('dataflash') files")
+            sys.exit(1)
+
         self.mout = []
         for m in args.out:
             self.mout.append(mavutil.mavlink_connection(m, input=False, baud=args.baudrate))

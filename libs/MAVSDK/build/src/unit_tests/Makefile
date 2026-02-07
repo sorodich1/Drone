@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles /home/pi/Drone/MAVSDK/build/src/unit_tests//CMakeFiles/progress.marks
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/CMakeFiles 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles /home/pi/Drone/libs/MAVSDK/build/src/unit_tests//CMakeFiles/progress.marks
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/clean
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/preinstall
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
 .PHONY : src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ unit_tests_runner: src/unit_tests/CMakeFiles/unit_tests_runner.dir/rule
 
 # fast build rule for target.
 unit_tests_runner/fast:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/build
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/build
 .PHONY : unit_tests_runner/fast
 
 __/mavsdk/core/base64_test.o: __/mavsdk/core/base64_test.cpp.o
@@ -180,7 +180,7 @@ __/mavsdk/core/base64_test.o: __/mavsdk/core/base64_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/base64_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.o
 .PHONY : __/mavsdk/core/base64_test.cpp.o
 
 __/mavsdk/core/base64_test.i: __/mavsdk/core/base64_test.cpp.i
@@ -188,7 +188,7 @@ __/mavsdk/core/base64_test.i: __/mavsdk/core/base64_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/base64_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.i
 .PHONY : __/mavsdk/core/base64_test.cpp.i
 
 __/mavsdk/core/base64_test.s: __/mavsdk/core/base64_test.cpp.s
@@ -196,7 +196,7 @@ __/mavsdk/core/base64_test.s: __/mavsdk/core/base64_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/base64_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/base64_test.cpp.s
 .PHONY : __/mavsdk/core/base64_test.cpp.s
 
 __/mavsdk/core/call_every_handler_test.o: __/mavsdk/core/call_every_handler_test.cpp.o
@@ -204,7 +204,7 @@ __/mavsdk/core/call_every_handler_test.o: __/mavsdk/core/call_every_handler_test
 
 # target to build an object file
 __/mavsdk/core/call_every_handler_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.o
 .PHONY : __/mavsdk/core/call_every_handler_test.cpp.o
 
 __/mavsdk/core/call_every_handler_test.i: __/mavsdk/core/call_every_handler_test.cpp.i
@@ -212,7 +212,7 @@ __/mavsdk/core/call_every_handler_test.i: __/mavsdk/core/call_every_handler_test
 
 # target to preprocess a source file
 __/mavsdk/core/call_every_handler_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.i
 .PHONY : __/mavsdk/core/call_every_handler_test.cpp.i
 
 __/mavsdk/core/call_every_handler_test.s: __/mavsdk/core/call_every_handler_test.cpp.s
@@ -220,7 +220,7 @@ __/mavsdk/core/call_every_handler_test.s: __/mavsdk/core/call_every_handler_test
 
 # target to generate assembly for a file
 __/mavsdk/core/call_every_handler_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/call_every_handler_test.cpp.s
 .PHONY : __/mavsdk/core/call_every_handler_test.cpp.s
 
 __/mavsdk/core/callback_list_test.o: __/mavsdk/core/callback_list_test.cpp.o
@@ -228,7 +228,7 @@ __/mavsdk/core/callback_list_test.o: __/mavsdk/core/callback_list_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/callback_list_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.o
 .PHONY : __/mavsdk/core/callback_list_test.cpp.o
 
 __/mavsdk/core/callback_list_test.i: __/mavsdk/core/callback_list_test.cpp.i
@@ -236,7 +236,7 @@ __/mavsdk/core/callback_list_test.i: __/mavsdk/core/callback_list_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/callback_list_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.i
 .PHONY : __/mavsdk/core/callback_list_test.cpp.i
 
 __/mavsdk/core/callback_list_test.s: __/mavsdk/core/callback_list_test.cpp.s
@@ -244,7 +244,7 @@ __/mavsdk/core/callback_list_test.s: __/mavsdk/core/callback_list_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/callback_list_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/callback_list_test.cpp.s
 .PHONY : __/mavsdk/core/callback_list_test.cpp.s
 
 __/mavsdk/core/cli_arg_test.o: __/mavsdk/core/cli_arg_test.cpp.o
@@ -252,7 +252,7 @@ __/mavsdk/core/cli_arg_test.o: __/mavsdk/core/cli_arg_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/cli_arg_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.o
 .PHONY : __/mavsdk/core/cli_arg_test.cpp.o
 
 __/mavsdk/core/cli_arg_test.i: __/mavsdk/core/cli_arg_test.cpp.i
@@ -260,7 +260,7 @@ __/mavsdk/core/cli_arg_test.i: __/mavsdk/core/cli_arg_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/cli_arg_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.i
 .PHONY : __/mavsdk/core/cli_arg_test.cpp.i
 
 __/mavsdk/core/cli_arg_test.s: __/mavsdk/core/cli_arg_test.cpp.s
@@ -268,7 +268,7 @@ __/mavsdk/core/cli_arg_test.s: __/mavsdk/core/cli_arg_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/cli_arg_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/cli_arg_test.cpp.s
 .PHONY : __/mavsdk/core/cli_arg_test.cpp.s
 
 __/mavsdk/core/curl_test.o: __/mavsdk/core/curl_test.cpp.o
@@ -276,7 +276,7 @@ __/mavsdk/core/curl_test.o: __/mavsdk/core/curl_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/curl_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o
 .PHONY : __/mavsdk/core/curl_test.cpp.o
 
 __/mavsdk/core/curl_test.i: __/mavsdk/core/curl_test.cpp.i
@@ -284,7 +284,7 @@ __/mavsdk/core/curl_test.i: __/mavsdk/core/curl_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/curl_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.i
 .PHONY : __/mavsdk/core/curl_test.cpp.i
 
 __/mavsdk/core/curl_test.s: __/mavsdk/core/curl_test.cpp.s
@@ -292,7 +292,7 @@ __/mavsdk/core/curl_test.s: __/mavsdk/core/curl_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/curl_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.s
 .PHONY : __/mavsdk/core/curl_test.cpp.s
 
 __/mavsdk/core/file_cache_test.o: __/mavsdk/core/file_cache_test.cpp.o
@@ -300,7 +300,7 @@ __/mavsdk/core/file_cache_test.o: __/mavsdk/core/file_cache_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/file_cache_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.o
 .PHONY : __/mavsdk/core/file_cache_test.cpp.o
 
 __/mavsdk/core/file_cache_test.i: __/mavsdk/core/file_cache_test.cpp.i
@@ -308,7 +308,7 @@ __/mavsdk/core/file_cache_test.i: __/mavsdk/core/file_cache_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/file_cache_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.i
 .PHONY : __/mavsdk/core/file_cache_test.cpp.i
 
 __/mavsdk/core/file_cache_test.s: __/mavsdk/core/file_cache_test.cpp.s
@@ -316,7 +316,7 @@ __/mavsdk/core/file_cache_test.s: __/mavsdk/core/file_cache_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/file_cache_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/file_cache_test.cpp.s
 .PHONY : __/mavsdk/core/file_cache_test.cpp.s
 
 __/mavsdk/core/geometry_test.o: __/mavsdk/core/geometry_test.cpp.o
@@ -324,7 +324,7 @@ __/mavsdk/core/geometry_test.o: __/mavsdk/core/geometry_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/geometry_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.o
 .PHONY : __/mavsdk/core/geometry_test.cpp.o
 
 __/mavsdk/core/geometry_test.i: __/mavsdk/core/geometry_test.cpp.i
@@ -332,7 +332,7 @@ __/mavsdk/core/geometry_test.i: __/mavsdk/core/geometry_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/geometry_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.i
 .PHONY : __/mavsdk/core/geometry_test.cpp.i
 
 __/mavsdk/core/geometry_test.s: __/mavsdk/core/geometry_test.cpp.s
@@ -340,7 +340,7 @@ __/mavsdk/core/geometry_test.s: __/mavsdk/core/geometry_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/geometry_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/geometry_test.cpp.s
 .PHONY : __/mavsdk/core/geometry_test.cpp.s
 
 __/mavsdk/core/hostname_to_ip_test.o: __/mavsdk/core/hostname_to_ip_test.cpp.o
@@ -348,7 +348,7 @@ __/mavsdk/core/hostname_to_ip_test.o: __/mavsdk/core/hostname_to_ip_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/hostname_to_ip_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.o
 .PHONY : __/mavsdk/core/hostname_to_ip_test.cpp.o
 
 __/mavsdk/core/hostname_to_ip_test.i: __/mavsdk/core/hostname_to_ip_test.cpp.i
@@ -356,7 +356,7 @@ __/mavsdk/core/hostname_to_ip_test.i: __/mavsdk/core/hostname_to_ip_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/hostname_to_ip_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.i
 .PHONY : __/mavsdk/core/hostname_to_ip_test.cpp.i
 
 __/mavsdk/core/hostname_to_ip_test.s: __/mavsdk/core/hostname_to_ip_test.cpp.s
@@ -364,7 +364,7 @@ __/mavsdk/core/hostname_to_ip_test.s: __/mavsdk/core/hostname_to_ip_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/hostname_to_ip_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/hostname_to_ip_test.cpp.s
 .PHONY : __/mavsdk/core/hostname_to_ip_test.cpp.s
 
 __/mavsdk/core/http_loader_test.o: __/mavsdk/core/http_loader_test.cpp.o
@@ -372,7 +372,7 @@ __/mavsdk/core/http_loader_test.o: __/mavsdk/core/http_loader_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/http_loader_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.o
 .PHONY : __/mavsdk/core/http_loader_test.cpp.o
 
 __/mavsdk/core/http_loader_test.i: __/mavsdk/core/http_loader_test.cpp.i
@@ -380,7 +380,7 @@ __/mavsdk/core/http_loader_test.i: __/mavsdk/core/http_loader_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/http_loader_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.i
 .PHONY : __/mavsdk/core/http_loader_test.cpp.i
 
 __/mavsdk/core/http_loader_test.s: __/mavsdk/core/http_loader_test.cpp.s
@@ -388,7 +388,7 @@ __/mavsdk/core/http_loader_test.s: __/mavsdk/core/http_loader_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/http_loader_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/http_loader_test.cpp.s
 .PHONY : __/mavsdk/core/http_loader_test.cpp.s
 
 __/mavsdk/core/locked_queue_test.o: __/mavsdk/core/locked_queue_test.cpp.o
@@ -396,7 +396,7 @@ __/mavsdk/core/locked_queue_test.o: __/mavsdk/core/locked_queue_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/locked_queue_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.o
 .PHONY : __/mavsdk/core/locked_queue_test.cpp.o
 
 __/mavsdk/core/locked_queue_test.i: __/mavsdk/core/locked_queue_test.cpp.i
@@ -404,7 +404,7 @@ __/mavsdk/core/locked_queue_test.i: __/mavsdk/core/locked_queue_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/locked_queue_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.i
 .PHONY : __/mavsdk/core/locked_queue_test.cpp.i
 
 __/mavsdk/core/locked_queue_test.s: __/mavsdk/core/locked_queue_test.cpp.s
@@ -412,7 +412,7 @@ __/mavsdk/core/locked_queue_test.s: __/mavsdk/core/locked_queue_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/locked_queue_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/locked_queue_test.cpp.s
 .PHONY : __/mavsdk/core/locked_queue_test.cpp.s
 
 __/mavsdk/core/math_utils_test.o: __/mavsdk/core/math_utils_test.cpp.o
@@ -420,7 +420,7 @@ __/mavsdk/core/math_utils_test.o: __/mavsdk/core/math_utils_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/math_utils_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.o
 .PHONY : __/mavsdk/core/math_utils_test.cpp.o
 
 __/mavsdk/core/math_utils_test.i: __/mavsdk/core/math_utils_test.cpp.i
@@ -428,7 +428,7 @@ __/mavsdk/core/math_utils_test.i: __/mavsdk/core/math_utils_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/math_utils_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.i
 .PHONY : __/mavsdk/core/math_utils_test.cpp.i
 
 __/mavsdk/core/math_utils_test.s: __/mavsdk/core/math_utils_test.cpp.s
@@ -436,7 +436,7 @@ __/mavsdk/core/math_utils_test.s: __/mavsdk/core/math_utils_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/math_utils_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/math_utils_test.cpp.s
 .PHONY : __/mavsdk/core/math_utils_test.cpp.s
 
 __/mavsdk/core/mavlink_channels_test.o: __/mavsdk/core/mavlink_channels_test.cpp.o
@@ -444,7 +444,7 @@ __/mavsdk/core/mavlink_channels_test.o: __/mavsdk/core/mavlink_channels_test.cpp
 
 # target to build an object file
 __/mavsdk/core/mavlink_channels_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_channels_test.cpp.o
 
 __/mavsdk/core/mavlink_channels_test.i: __/mavsdk/core/mavlink_channels_test.cpp.i
@@ -452,7 +452,7 @@ __/mavsdk/core/mavlink_channels_test.i: __/mavsdk/core/mavlink_channels_test.cpp
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_channels_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_channels_test.cpp.i
 
 __/mavsdk/core/mavlink_channels_test.s: __/mavsdk/core/mavlink_channels_test.cpp.s
@@ -460,7 +460,7 @@ __/mavsdk/core/mavlink_channels_test.s: __/mavsdk/core/mavlink_channels_test.cpp
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_channels_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_channels_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_channels_test.cpp.s
 
 __/mavsdk/core/mavlink_component_metadata_test.o: __/mavsdk/core/mavlink_component_metadata_test.cpp.o
@@ -468,7 +468,7 @@ __/mavsdk/core/mavlink_component_metadata_test.o: __/mavsdk/core/mavlink_compone
 
 # target to build an object file
 __/mavsdk/core/mavlink_component_metadata_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_component_metadata_test.cpp.o
 
 __/mavsdk/core/mavlink_component_metadata_test.i: __/mavsdk/core/mavlink_component_metadata_test.cpp.i
@@ -476,7 +476,7 @@ __/mavsdk/core/mavlink_component_metadata_test.i: __/mavsdk/core/mavlink_compone
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_component_metadata_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_component_metadata_test.cpp.i
 
 __/mavsdk/core/mavlink_component_metadata_test.s: __/mavsdk/core/mavlink_component_metadata_test.cpp.s
@@ -484,7 +484,7 @@ __/mavsdk/core/mavlink_component_metadata_test.s: __/mavsdk/core/mavlink_compone
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_component_metadata_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_component_metadata_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_component_metadata_test.cpp.s
 
 __/mavsdk/core/mavlink_mission_transfer_client_test.o: __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o
@@ -492,7 +492,7 @@ __/mavsdk/core/mavlink_mission_transfer_client_test.o: __/mavsdk/core/mavlink_mi
 
 # target to build an object file
 __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.o
 
 __/mavsdk/core/mavlink_mission_transfer_client_test.i: __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
@@ -500,7 +500,7 @@ __/mavsdk/core/mavlink_mission_transfer_client_test.i: __/mavsdk/core/mavlink_mi
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.i
 
 __/mavsdk/core/mavlink_mission_transfer_client_test.s: __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
@@ -508,7 +508,7 @@ __/mavsdk/core/mavlink_mission_transfer_client_test.s: __/mavsdk/core/mavlink_mi
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_client_test.cpp.s
 
 __/mavsdk/core/mavlink_mission_transfer_server_test.o: __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o
@@ -516,7 +516,7 @@ __/mavsdk/core/mavlink_mission_transfer_server_test.o: __/mavsdk/core/mavlink_mi
 
 # target to build an object file
 __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.o
 
 __/mavsdk/core/mavlink_mission_transfer_server_test.i: __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
@@ -524,7 +524,7 @@ __/mavsdk/core/mavlink_mission_transfer_server_test.i: __/mavsdk/core/mavlink_mi
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.i
 
 __/mavsdk/core/mavlink_mission_transfer_server_test.s: __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
@@ -532,7 +532,7 @@ __/mavsdk/core/mavlink_mission_transfer_server_test.s: __/mavsdk/core/mavlink_mi
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_mission_transfer_server_test.cpp.s
 
 __/mavsdk/core/mavlink_parameter_cache_test.o: __/mavsdk/core/mavlink_parameter_cache_test.cpp.o
@@ -540,7 +540,7 @@ __/mavsdk/core/mavlink_parameter_cache_test.o: __/mavsdk/core/mavlink_parameter_
 
 # target to build an object file
 __/mavsdk/core/mavlink_parameter_cache_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_parameter_cache_test.cpp.o
 
 __/mavsdk/core/mavlink_parameter_cache_test.i: __/mavsdk/core/mavlink_parameter_cache_test.cpp.i
@@ -548,7 +548,7 @@ __/mavsdk/core/mavlink_parameter_cache_test.i: __/mavsdk/core/mavlink_parameter_
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_parameter_cache_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_parameter_cache_test.cpp.i
 
 __/mavsdk/core/mavlink_parameter_cache_test.s: __/mavsdk/core/mavlink_parameter_cache_test.cpp.s
@@ -556,7 +556,7 @@ __/mavsdk/core/mavlink_parameter_cache_test.s: __/mavsdk/core/mavlink_parameter_
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_parameter_cache_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_parameter_cache_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_parameter_cache_test.cpp.s
 
 __/mavsdk/core/mavlink_statustext_handler_test.o: __/mavsdk/core/mavlink_statustext_handler_test.cpp.o
@@ -564,7 +564,7 @@ __/mavsdk/core/mavlink_statustext_handler_test.o: __/mavsdk/core/mavlink_statust
 
 # target to build an object file
 __/mavsdk/core/mavlink_statustext_handler_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.o
 .PHONY : __/mavsdk/core/mavlink_statustext_handler_test.cpp.o
 
 __/mavsdk/core/mavlink_statustext_handler_test.i: __/mavsdk/core/mavlink_statustext_handler_test.cpp.i
@@ -572,7 +572,7 @@ __/mavsdk/core/mavlink_statustext_handler_test.i: __/mavsdk/core/mavlink_statust
 
 # target to preprocess a source file
 __/mavsdk/core/mavlink_statustext_handler_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.i
 .PHONY : __/mavsdk/core/mavlink_statustext_handler_test.cpp.i
 
 __/mavsdk/core/mavlink_statustext_handler_test.s: __/mavsdk/core/mavlink_statustext_handler_test.cpp.s
@@ -580,7 +580,7 @@ __/mavsdk/core/mavlink_statustext_handler_test.s: __/mavsdk/core/mavlink_statust
 
 # target to generate assembly for a file
 __/mavsdk/core/mavlink_statustext_handler_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavlink_statustext_handler_test.cpp.s
 .PHONY : __/mavsdk/core/mavlink_statustext_handler_test.cpp.s
 
 __/mavsdk/core/mavsdk_test.o: __/mavsdk/core/mavsdk_test.cpp.o
@@ -588,7 +588,7 @@ __/mavsdk/core/mavsdk_test.o: __/mavsdk/core/mavsdk_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/mavsdk_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.o
 .PHONY : __/mavsdk/core/mavsdk_test.cpp.o
 
 __/mavsdk/core/mavsdk_test.i: __/mavsdk/core/mavsdk_test.cpp.i
@@ -596,7 +596,7 @@ __/mavsdk/core/mavsdk_test.i: __/mavsdk/core/mavsdk_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/mavsdk_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.i
 .PHONY : __/mavsdk/core/mavsdk_test.cpp.i
 
 __/mavsdk/core/mavsdk_test.s: __/mavsdk/core/mavsdk_test.cpp.s
@@ -604,7 +604,7 @@ __/mavsdk/core/mavsdk_test.s: __/mavsdk/core/mavsdk_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/mavsdk_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_test.cpp.s
 .PHONY : __/mavsdk/core/mavsdk_test.cpp.s
 
 __/mavsdk/core/mavsdk_time_test.o: __/mavsdk/core/mavsdk_time_test.cpp.o
@@ -612,7 +612,7 @@ __/mavsdk/core/mavsdk_time_test.o: __/mavsdk/core/mavsdk_time_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/mavsdk_time_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.o
 .PHONY : __/mavsdk/core/mavsdk_time_test.cpp.o
 
 __/mavsdk/core/mavsdk_time_test.i: __/mavsdk/core/mavsdk_time_test.cpp.i
@@ -620,7 +620,7 @@ __/mavsdk/core/mavsdk_time_test.i: __/mavsdk/core/mavsdk_time_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/mavsdk_time_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.i
 .PHONY : __/mavsdk/core/mavsdk_time_test.cpp.i
 
 __/mavsdk/core/mavsdk_time_test.s: __/mavsdk/core/mavsdk_time_test.cpp.s
@@ -628,7 +628,7 @@ __/mavsdk/core/mavsdk_time_test.s: __/mavsdk/core/mavsdk_time_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/mavsdk_time_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/mavsdk_time_test.cpp.s
 .PHONY : __/mavsdk/core/mavsdk_time_test.cpp.s
 
 __/mavsdk/core/ringbuffer_test.o: __/mavsdk/core/ringbuffer_test.cpp.o
@@ -636,7 +636,7 @@ __/mavsdk/core/ringbuffer_test.o: __/mavsdk/core/ringbuffer_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/ringbuffer_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.o
 .PHONY : __/mavsdk/core/ringbuffer_test.cpp.o
 
 __/mavsdk/core/ringbuffer_test.i: __/mavsdk/core/ringbuffer_test.cpp.i
@@ -644,7 +644,7 @@ __/mavsdk/core/ringbuffer_test.i: __/mavsdk/core/ringbuffer_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/ringbuffer_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.i
 .PHONY : __/mavsdk/core/ringbuffer_test.cpp.i
 
 __/mavsdk/core/ringbuffer_test.s: __/mavsdk/core/ringbuffer_test.cpp.s
@@ -652,7 +652,7 @@ __/mavsdk/core/ringbuffer_test.s: __/mavsdk/core/ringbuffer_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/ringbuffer_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/ringbuffer_test.cpp.s
 .PHONY : __/mavsdk/core/ringbuffer_test.cpp.s
 
 __/mavsdk/core/string_utils_test.o: __/mavsdk/core/string_utils_test.cpp.o
@@ -660,7 +660,7 @@ __/mavsdk/core/string_utils_test.o: __/mavsdk/core/string_utils_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/string_utils_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.o
 .PHONY : __/mavsdk/core/string_utils_test.cpp.o
 
 __/mavsdk/core/string_utils_test.i: __/mavsdk/core/string_utils_test.cpp.i
@@ -668,7 +668,7 @@ __/mavsdk/core/string_utils_test.i: __/mavsdk/core/string_utils_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/string_utils_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.i
 .PHONY : __/mavsdk/core/string_utils_test.cpp.i
 
 __/mavsdk/core/string_utils_test.s: __/mavsdk/core/string_utils_test.cpp.s
@@ -676,7 +676,7 @@ __/mavsdk/core/string_utils_test.s: __/mavsdk/core/string_utils_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/string_utils_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/string_utils_test.cpp.s
 .PHONY : __/mavsdk/core/string_utils_test.cpp.s
 
 __/mavsdk/core/timeout_handler_test.o: __/mavsdk/core/timeout_handler_test.cpp.o
@@ -684,7 +684,7 @@ __/mavsdk/core/timeout_handler_test.o: __/mavsdk/core/timeout_handler_test.cpp.o
 
 # target to build an object file
 __/mavsdk/core/timeout_handler_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.o
 .PHONY : __/mavsdk/core/timeout_handler_test.cpp.o
 
 __/mavsdk/core/timeout_handler_test.i: __/mavsdk/core/timeout_handler_test.cpp.i
@@ -692,7 +692,7 @@ __/mavsdk/core/timeout_handler_test.i: __/mavsdk/core/timeout_handler_test.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/timeout_handler_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.i
 .PHONY : __/mavsdk/core/timeout_handler_test.cpp.i
 
 __/mavsdk/core/timeout_handler_test.s: __/mavsdk/core/timeout_handler_test.cpp.s
@@ -700,7 +700,7 @@ __/mavsdk/core/timeout_handler_test.s: __/mavsdk/core/timeout_handler_test.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/timeout_handler_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/timeout_handler_test.cpp.s
 .PHONY : __/mavsdk/core/timeout_handler_test.cpp.s
 
 __/mavsdk/core/unittests_main.o: __/mavsdk/core/unittests_main.cpp.o
@@ -708,7 +708,7 @@ __/mavsdk/core/unittests_main.o: __/mavsdk/core/unittests_main.cpp.o
 
 # target to build an object file
 __/mavsdk/core/unittests_main.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.o
 .PHONY : __/mavsdk/core/unittests_main.cpp.o
 
 __/mavsdk/core/unittests_main.i: __/mavsdk/core/unittests_main.cpp.i
@@ -716,7 +716,7 @@ __/mavsdk/core/unittests_main.i: __/mavsdk/core/unittests_main.cpp.i
 
 # target to preprocess a source file
 __/mavsdk/core/unittests_main.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.i
 .PHONY : __/mavsdk/core/unittests_main.cpp.i
 
 __/mavsdk/core/unittests_main.s: __/mavsdk/core/unittests_main.cpp.s
@@ -724,7 +724,7 @@ __/mavsdk/core/unittests_main.s: __/mavsdk/core/unittests_main.cpp.s
 
 # target to generate assembly for a file
 __/mavsdk/core/unittests_main.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/unittests_main.cpp.s
 .PHONY : __/mavsdk/core/unittests_main.cpp.s
 
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.o: __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o
@@ -732,7 +732,7 @@ __/mavsdk/plugins/calibration/calibration_statustext_parser_test.o: __/mavsdk/pl
 
 # target to build an object file
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o
 .PHONY : __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.o
 
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.i: __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
@@ -740,7 +740,7 @@ __/mavsdk/plugins/calibration/calibration_statustext_parser_test.i: __/mavsdk/pl
 
 # target to preprocess a source file
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
 .PHONY : __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.i
 
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.s: __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
@@ -748,7 +748,7 @@ __/mavsdk/plugins/calibration/calibration_statustext_parser_test.s: __/mavsdk/pl
 
 # target to generate assembly for a file
 __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
 .PHONY : __/mavsdk/plugins/calibration/calibration_statustext_parser_test.cpp.s
 
 __/mavsdk/plugins/camera/camera_definition_test.o: __/mavsdk/plugins/camera/camera_definition_test.cpp.o
@@ -756,7 +756,7 @@ __/mavsdk/plugins/camera/camera_definition_test.o: __/mavsdk/plugins/camera/came
 
 # target to build an object file
 __/mavsdk/plugins/camera/camera_definition_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.o
 .PHONY : __/mavsdk/plugins/camera/camera_definition_test.cpp.o
 
 __/mavsdk/plugins/camera/camera_definition_test.i: __/mavsdk/plugins/camera/camera_definition_test.cpp.i
@@ -764,7 +764,7 @@ __/mavsdk/plugins/camera/camera_definition_test.i: __/mavsdk/plugins/camera/came
 
 # target to preprocess a source file
 __/mavsdk/plugins/camera/camera_definition_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.i
 .PHONY : __/mavsdk/plugins/camera/camera_definition_test.cpp.i
 
 __/mavsdk/plugins/camera/camera_definition_test.s: __/mavsdk/plugins/camera/camera_definition_test.cpp.s
@@ -772,7 +772,7 @@ __/mavsdk/plugins/camera/camera_definition_test.s: __/mavsdk/plugins/camera/came
 
 # target to generate assembly for a file
 __/mavsdk/plugins/camera/camera_definition_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/camera/camera_definition_test.cpp.s
 .PHONY : __/mavsdk/plugins/camera/camera_definition_test.cpp.s
 
 __/mavsdk/plugins/mission_raw/mission_import_test.o: __/mavsdk/plugins/mission_raw/mission_import_test.cpp.o
@@ -780,7 +780,7 @@ __/mavsdk/plugins/mission_raw/mission_import_test.o: __/mavsdk/plugins/mission_r
 
 # target to build an object file
 __/mavsdk/plugins/mission_raw/mission_import_test.cpp.o:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.o
 .PHONY : __/mavsdk/plugins/mission_raw/mission_import_test.cpp.o
 
 __/mavsdk/plugins/mission_raw/mission_import_test.i: __/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
@@ -788,7 +788,7 @@ __/mavsdk/plugins/mission_raw/mission_import_test.i: __/mavsdk/plugins/mission_r
 
 # target to preprocess a source file
 __/mavsdk/plugins/mission_raw/mission_import_test.cpp.i:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
 .PHONY : __/mavsdk/plugins/mission_raw/mission_import_test.cpp.i
 
 __/mavsdk/plugins/mission_raw/mission_import_test.s: __/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
@@ -796,7 +796,7 @@ __/mavsdk/plugins/mission_raw/mission_import_test.s: __/mavsdk/plugins/mission_r
 
 # target to generate assembly for a file
 __/mavsdk/plugins/mission_raw/mission_import_test.cpp.s:
-	cd /home/pi/Drone/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build && $(MAKE) $(MAKESILENT) -f src/unit_tests/CMakeFiles/unit_tests_runner.dir/build.make src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
 .PHONY : __/mavsdk/plugins/mission_raw/mission_import_test.cpp.s
 
 # Help Target
@@ -901,6 +901,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Drone/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Drone/libs/MAVSDK/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
 lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/asyn-ares.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/curl_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl-build/lib/curl_config.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
@@ -49,7 +49,7 @@ lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: \
  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/include/curl/system.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
  /usr/include/aarch64-linux-gnu/bits/byteswap.h \
@@ -79,9 +79,8 @@ lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/assert.h \
- /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/wchar.h \
+ /usr/include/assert.h /usr/lib/gcc/aarch64-linux-gnu/14/include/stdint.h \
+ /usr/include/stdint.h /usr/include/aarch64-linux-gnu/bits/wchar.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/limits.h \
@@ -92,10 +91,9 @@ lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: \
  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup_once.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_setup_once.h \
  /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
@@ -121,6 +119,6 @@ lib/CMakeFiles/libcurl_static.dir/asyn-ares.c.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/functypes.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_mem_undef.h \
- /home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ctype.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/functypes.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_mem_undef.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/lib/curl_ctype.h

@@ -23,6 +23,7 @@ public:
     };
     MOCK_CONST_METHOD0(terminate, Action::Result()) {};
     MOCK_CONST_METHOD2(set_actuator, Action::Result(int, float)) {};
+    MOCK_CONST_METHOD2(set_relay, Action::Result(int, Action::RelayCommand)) {};
     MOCK_CONST_METHOD0(kill, Action::Result()) {};
     MOCK_CONST_METHOD0(return_to_launch, Action::Result()) {};
     MOCK_CONST_METHOD0(hold, Action::Result()) {};
@@ -33,6 +34,7 @@ public:
     MOCK_CONST_METHOD0(get_return_to_launch_altitude, std::pair<Action::Result, float>()) {};
     MOCK_CONST_METHOD1(set_return_to_launch_altitude, Action::Result(float)) {};
     MOCK_CONST_METHOD1(set_current_speed, Action::Result(float)) {};
+    MOCK_CONST_METHOD3(set_gps_global_origin, Action::Result(double, double, float)) {};
 };
 
 } // namespace testing

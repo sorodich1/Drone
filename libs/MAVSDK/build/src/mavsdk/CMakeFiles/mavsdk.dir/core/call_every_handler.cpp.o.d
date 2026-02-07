@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/call_every_handler.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/call_every_handler.h \
  /usr/include/c++/14/cstdint \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -150,7 +150,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o: \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
  /usr/include/c++/14/compare /usr/include/c++/14/list \
  /usr/include/c++/14/bits/stl_list.h /usr/include/c++/14/bits/list.tcc \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/mavsdk_time.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/mavsdk_time.h \
  /usr/include/c++/14/chrono /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h /usr/include/c++/14/algorithm \
  /usr/include/c++/14/bits/stl_algo.h \
@@ -165,8 +165,6 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/call_every_handler.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/select.h \
  /usr/include/aarch64-linux-gnu/bits/select.h \
  /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h

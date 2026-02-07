@@ -44,6 +44,7 @@ public:
         const double absolute_altitude_m);
     Action::Result hold() const;
     Action::Result set_actuator(const int index, const float value);
+    Action::Result set_relay(const int index, const Action::RelayCommand setting);
     Action::Result transition_to_fixedwing() const;
     Action::Result transition_to_multicopter() const;
 
@@ -74,6 +75,10 @@ public:
     void hold_async(const Action::ResultCallback& callback) const;
     void
     set_actuator_async(const int index, const float value, const Action::ResultCallback& callback);
+    void set_relay_async(
+        const int index,
+        const Action::RelayCommand setting,
+        const Action::ResultCallback& callback);
     void transition_to_fixedwing_async(const Action::ResultCallback& callback) const;
     void transition_to_multicopter_async(const Action::ResultCallback& callback) const;
 
@@ -92,6 +97,9 @@ public:
     void set_current_speed_async(float speed_m_s, const Action::ResultCallback& callback);
     Action::Result set_current_speed(float speed_m_s);
 
+    Action::Result set_gps_global_origin(
+        double latitude_deg, double longitude_deg, float absolute_altitude_m) const;
+
     Action::Result set_return_to_launch_altitude(const float relative_altitude_m) const;
     std::pair<Action::Result, float> get_return_to_launch_altitude() const;
 
@@ -109,6 +117,7 @@ private:
 
     void takeoff_async_px4(const Action::ResultCallback& callback) const;
     void takeoff_async_apm(const Action::ResultCallback& callback) const;
+    void takeoff_async_standard(const Action::ResultCallback& callback) const;
 
     Action::Result set_takeoff_altitude_px4(float relative_altitude_m);
     Action::Result set_takeoff_altitude_apm(float relative_altitude_m);

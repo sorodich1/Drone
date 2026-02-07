@@ -61,8 +61,8 @@ add_library(CURL::libcurl_static STATIC IMPORTED)
 set_target_properties(CURL::libcurl_static PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "CURL_STATICLIB"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_DIRECTORIES "/usr/lib/aarch64-linux-gnu"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:ldap>;\$<LINK_ONLY:lber>;\$<LINK_ONLY:OpenSSL::SSL>;\$<LINK_ONLY:OpenSSL::Crypto>"
+  INTERFACE_LINK_DIRECTORIES ""
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenSSL::SSL>;\$<LINK_ONLY:OpenSSL::Crypto>"
 )
 
 # Load information for each installed configuration.

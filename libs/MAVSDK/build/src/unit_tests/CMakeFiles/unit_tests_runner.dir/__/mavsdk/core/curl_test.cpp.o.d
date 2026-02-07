@@ -1,7 +1,7 @@
 src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_test.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_test.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper.h \
  /usr/include/c++/14/string /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -101,9 +101,7 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -111,10 +109,10 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -166,10 +164,10 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_include.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curlver.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_include.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curlver.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/system.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
@@ -188,16 +186,16 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/multi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/urlapi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/options.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/header.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/websockets.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/mprintf.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/multi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/urlapi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/options.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/header.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/websockets.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/mprintf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
@@ -210,15 +208,15 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
  /usr/include/c++/14/compare \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-actions.h \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
  /usr/include/c++/14/bits/uniform_int_dist.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-internal-utils.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/gmock-internal-utils.h \
  /usr/include/c++/14/ostream /usr/include/c++/14/ios \
  /usr/include/c++/14/bits/ios_base.h \
  /usr/include/c++/14/bits/locale_classes.h \
@@ -236,12 +234,12 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/gmock-port.h \
  /usr/include/assert.h /usr/include/c++/14/stdlib.h \
  /usr/include/c++/14/cstdint /usr/include/c++/14/iostream \
  /usr/include/c++/14/istream /usr/include/c++/14/bits/istream.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/14/limits \
  /usr/include/c++/14/locale \
  /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
@@ -257,8 +255,8 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-port.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port-arch.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-port.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
  /usr/include/aarch64-linux-gnu/bits/environments.h \
  /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -272,20 +270,20 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/mutex \
  /usr/include/c++/14/any /usr/include/c++/14/optional \
  /usr/include/c++/14/variant \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest.h \
  /usr/include/c++/14/iomanip /usr/include/c++/14/bits/quoted_string.h \
  /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
  /usr/include/c++/14/set /usr/include/c++/14/bits/stl_tree.h \
  /usr/include/c++/14/bits/stl_set.h \
  /usr/include/c++/14/bits/stl_multiset.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-assertion-result.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-message.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-death-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-death-test-internal.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-assertion-result.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-message.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-death-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-death-test-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-matchers.h \
  /usr/include/c++/14/atomic \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-internal.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-internal.h \
  /usr/include/aarch64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
  /usr/include/aarch64-linux-gnu/bits/signum-arch.h \
@@ -320,25 +318,25 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/lib/gcc/aarch64-linux-gnu/14/include/float.h \
  /usr/include/c++/14/map /usr/include/c++/14/bits/stl_map.h \
  /usr/include/c++/14/bits/stl_multimap.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-filepath.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-string.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-type-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-filepath.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-string.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/14/cxxabi.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/cxxabi_tweaks.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-printers.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-param-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/custom/gtest-printers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-param-test.h \
  /usr/include/c++/14/iterator /usr/include/c++/14/bits/stream_iterator.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/internal/gtest-param-util.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/14/cassert \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-test-part.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest-typed-test.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_pred_impl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gtest/gtest_prod.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/gmock-pp.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-cardinalities.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-function-mocker.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-spec-builders.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-test-part.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest-typed-test.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest_pred_impl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gtest/gtest_prod.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/gmock-pp.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-cardinalities.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-function-mocker.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-spec-builders.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-matchers.h \
  /usr/include/c++/14/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -362,11 +360,11 @@ src/unit_tests/CMakeFiles/unit_tests_runner.dir/__/mavsdk/core/curl_test.cpp.o: 
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-matchers.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-more-actions.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-generated-actions.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-more-matchers.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/gmock/gmock-nice-strict.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-more-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/internal/custom/gmock-generated-actions.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-more-matchers.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/gmock/gmock-nice-strict.h \
  /usr/include/c++/14/fstream \
  /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \

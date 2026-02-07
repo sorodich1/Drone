@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build
 
 #=============================================================================
 # Directory level rules for the build root directory

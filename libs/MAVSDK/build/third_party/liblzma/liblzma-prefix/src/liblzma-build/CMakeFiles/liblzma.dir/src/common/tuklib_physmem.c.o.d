@@ -1,9 +1,9 @@
 CMakeFiles/liblzma.dir/src/common/tuklib_physmem.c.o: \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_physmem.c \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_physmem.c \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_physmem.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
- /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_physmem.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_common.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_config.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stddef.h \
  /usr/lib/gcc/aarch64-linux-gnu/14/include/stdbool.h \
  /usr/include/inttypes.h /usr/include/features.h \

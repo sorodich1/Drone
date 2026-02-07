@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mav.dir/depend.make
@@ -73,74 +73,74 @@ CMakeFiles/mav.dir/codegen:
 .PHONY : CMakeFiles/mav.dir/codegen
 
 CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: CMakeFiles/mav.dir/flags.make
-CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp
+CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp
 CMakeFiles/mav.dir/src/MessageDefinition.cpp.o: CMakeFiles/mav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mav.dir/src/MessageDefinition.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/MessageDefinition.cpp.o -MF CMakeFiles/mav.dir/src/MessageDefinition.cpp.o.d -o CMakeFiles/mav.dir/src/MessageDefinition.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mav.dir/src/MessageDefinition.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/MessageDefinition.cpp.o -MF CMakeFiles/mav.dir/src/MessageDefinition.cpp.o.d -o CMakeFiles/mav.dir/src/MessageDefinition.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp
 
 CMakeFiles/mav.dir/src/MessageDefinition.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mav.dir/src/MessageDefinition.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp > CMakeFiles/mav.dir/src/MessageDefinition.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp > CMakeFiles/mav.dir/src/MessageDefinition.cpp.i
 
 CMakeFiles/mav.dir/src/MessageDefinition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mav.dir/src/MessageDefinition.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp -o CMakeFiles/mav.dir/src/MessageDefinition.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageDefinition.cpp -o CMakeFiles/mav.dir/src/MessageDefinition.cpp.s
 
 CMakeFiles/mav.dir/src/MessageSet.cpp.o: CMakeFiles/mav.dir/flags.make
-CMakeFiles/mav.dir/src/MessageSet.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp
+CMakeFiles/mav.dir/src/MessageSet.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp
 CMakeFiles/mav.dir/src/MessageSet.cpp.o: CMakeFiles/mav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mav.dir/src/MessageSet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/MessageSet.cpp.o -MF CMakeFiles/mav.dir/src/MessageSet.cpp.o.d -o CMakeFiles/mav.dir/src/MessageSet.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mav.dir/src/MessageSet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/MessageSet.cpp.o -MF CMakeFiles/mav.dir/src/MessageSet.cpp.o.d -o CMakeFiles/mav.dir/src/MessageSet.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp
 
 CMakeFiles/mav.dir/src/MessageSet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mav.dir/src/MessageSet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp > CMakeFiles/mav.dir/src/MessageSet.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp > CMakeFiles/mav.dir/src/MessageSet.cpp.i
 
 CMakeFiles/mav.dir/src/MessageSet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mav.dir/src/MessageSet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp -o CMakeFiles/mav.dir/src/MessageSet.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/MessageSet.cpp -o CMakeFiles/mav.dir/src/MessageSet.cpp.s
 
 CMakeFiles/mav.dir/src/Message.cpp.o: CMakeFiles/mav.dir/flags.make
-CMakeFiles/mav.dir/src/Message.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp
+CMakeFiles/mav.dir/src/Message.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp
 CMakeFiles/mav.dir/src/Message.cpp.o: CMakeFiles/mav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mav.dir/src/Message.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/Message.cpp.o -MF CMakeFiles/mav.dir/src/Message.cpp.o.d -o CMakeFiles/mav.dir/src/Message.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mav.dir/src/Message.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/Message.cpp.o -MF CMakeFiles/mav.dir/src/Message.cpp.o.d -o CMakeFiles/mav.dir/src/Message.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp
 
 CMakeFiles/mav.dir/src/Message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mav.dir/src/Message.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp > CMakeFiles/mav.dir/src/Message.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp > CMakeFiles/mav.dir/src/Message.cpp.i
 
 CMakeFiles/mav.dir/src/Message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mav.dir/src/Message.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp -o CMakeFiles/mav.dir/src/Message.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/Message.cpp -o CMakeFiles/mav.dir/src/Message.cpp.s
 
 CMakeFiles/mav.dir/src/BufferParser.cpp.o: CMakeFiles/mav.dir/flags.make
-CMakeFiles/mav.dir/src/BufferParser.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp
+CMakeFiles/mav.dir/src/BufferParser.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp
 CMakeFiles/mav.dir/src/BufferParser.cpp.o: CMakeFiles/mav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mav.dir/src/BufferParser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/BufferParser.cpp.o -MF CMakeFiles/mav.dir/src/BufferParser.cpp.o.d -o CMakeFiles/mav.dir/src/BufferParser.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mav.dir/src/BufferParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/BufferParser.cpp.o -MF CMakeFiles/mav.dir/src/BufferParser.cpp.o.d -o CMakeFiles/mav.dir/src/BufferParser.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp
 
 CMakeFiles/mav.dir/src/BufferParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mav.dir/src/BufferParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp > CMakeFiles/mav.dir/src/BufferParser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp > CMakeFiles/mav.dir/src/BufferParser.cpp.i
 
 CMakeFiles/mav.dir/src/BufferParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mav.dir/src/BufferParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp -o CMakeFiles/mav.dir/src/BufferParser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BufferParser.cpp -o CMakeFiles/mav.dir/src/BufferParser.cpp.s
 
 CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o: CMakeFiles/mav.dir/flags.make
-CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp
+CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp
 CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o: CMakeFiles/mav.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o -MF CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o.d -o CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o -MF CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o.d -o CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp
 
 CMakeFiles/mav.dir/src/BuiltInMessages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mav.dir/src/BuiltInMessages.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp > CMakeFiles/mav.dir/src/BuiltInMessages.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp > CMakeFiles/mav.dir/src/BuiltInMessages.cpp.i
 
 CMakeFiles/mav.dir/src/BuiltInMessages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mav.dir/src/BuiltInMessages.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp -o CMakeFiles/mav.dir/src/BuiltInMessages.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/src/BuiltInMessages.cpp -o CMakeFiles/mav.dir/src/BuiltInMessages.cpp.s
 
 # Object files for target mav
 mav_OBJECTS = \
@@ -160,7 +160,7 @@ libmav.a: CMakeFiles/mav.dir/src/BufferParser.cpp.o
 libmav.a: CMakeFiles/mav.dir/src/BuiltInMessages.cpp.o
 libmav.a: CMakeFiles/mav.dir/build.make
 libmav.a: CMakeFiles/mav.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libmav.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libmav.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/mav.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mav.dir/link.txt --verbose=$(VERBOSE)
 
@@ -173,6 +173,6 @@ CMakeFiles/mav.dir/clean:
 .PHONY : CMakeFiles/mav.dir/clean
 
 CMakeFiles/mav.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build /home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles/mav.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build /home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike-build/CMakeFiles/mav.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mav.dir/depend
 

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/openssl
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/openssl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/openssl
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/openssl
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/openssl.dir/clean
 CMakeFiles/openssl.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openssl.dir/build.make CMakeFiles/openssl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openssl.dir/build.make CMakeFiles/openssl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target openssl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target openssl"
 .PHONY : CMakeFiles/openssl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/openssl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/openssl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles 0
 .PHONY : CMakeFiles/openssl.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ openssl: CMakeFiles/openssl.dir/rule
 # codegen rule for target.
 CMakeFiles/openssl.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openssl.dir/build.make CMakeFiles/openssl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target openssl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target openssl"
 .PHONY : CMakeFiles/openssl.dir/codegen
 
 # clean rule for target.

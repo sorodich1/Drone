@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/address-scope.c" "docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/address-scope.c" "docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-address-scope.dir/address-scope.c.o.d"
   "" "docs/examples/address-scope" "gcc" "docs/examples/CMakeFiles/curl-example-address-scope.dir/link.d"
   )
 

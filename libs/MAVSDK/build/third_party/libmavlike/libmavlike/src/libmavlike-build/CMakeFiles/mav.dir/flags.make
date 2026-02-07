@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -D_FILE_OFFSET_BITS=64
 
-CXX_INCLUDES = -I/home/pi/Drone/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/MAVSDK/build/third_party/install/include
+CXX_INCLUDES = -I/home/pi/Drone/libs/MAVSDK/build/third_party/libmavlike/libmavlike/src/libmavlike/include -isystem /home/pi/Drone/libs/MAVSDK/build/third_party/install/include
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion
+CXX_FLAGS = -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wunused -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wnull-dereference -Wuseless-cast -Wdouble-promotion
 

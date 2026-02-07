@@ -1,7 +1,7 @@
 CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: \
- /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.h \
  /usr/include/c++/14/cctype \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -45,8 +45,8 @@ CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/aarch64-linux-gnu/bits/floatn.h \
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cstdlib \
- /usr/include/stdlib.h /usr/include/aarch64-linux-gnu/bits/waitflags.h \
+ /usr/include/c++/14/cstdlib /usr/include/stdlib.h \
+ /usr/include/aarch64-linux-gnu/bits/waitflags.h \
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
  /usr/include/aarch64-linux-gnu/sys/types.h \
  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
@@ -68,9 +68,7 @@ CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstring \
  /usr/include/c++/14/bits/version.h /usr/include/string.h \
  /usr/include/strings.h \

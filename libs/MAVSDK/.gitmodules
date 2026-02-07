@@ -1,0 +1,3 @@
+[submodule "mavsdk-proto"]
+	path = proto
+	url = https://github.com/ryanf55/MAVSDK-Proto.git

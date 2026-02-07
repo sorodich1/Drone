@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_memlimit.c" "CMakeFiles/test_memlimit.dir/tests/test_memlimit.c.o" "gcc" "CMakeFiles/test_memlimit.dir/tests/test_memlimit.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/tests/test_memlimit.c" "CMakeFiles/test_memlimit.dir/tests/test_memlimit.c.o" "gcc" "CMakeFiles/test_memlimit.dir/tests/test_memlimit.c.o.d"
   "" "tests_bin/test_memlimit" "gcc" "CMakeFiles/test_memlimit.dir/link.d"
   )
 

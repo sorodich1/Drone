@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-double.c" "docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/multi-double.c" "docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-multi-double.dir/multi-double.c.o.d"
   "" "docs/examples/multi-double" "gcc" "docs/examples/CMakeFiles/curl-example-multi-double.dir/link.d"
   )
 

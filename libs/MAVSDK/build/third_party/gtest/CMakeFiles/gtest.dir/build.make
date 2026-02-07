@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/gtest
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/gtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/gtest
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/gtest
 
 # Utility rule file for gtest.
 
@@ -76,49 +76,49 @@ CMakeFiles/gtest-complete: gtest/src/gtest-stamp/gtest-patch
 CMakeFiles/gtest-complete: gtest/src/gtest-stamp/gtest-configure
 CMakeFiles/gtest-complete: gtest/src/gtest-stamp/gtest-build
 CMakeFiles/gtest-complete: gtest/src/gtest-stamp/gtest-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'gtest'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles/gtest-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'gtest'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles/gtest-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-done
 
 gtest/src/gtest-stamp/gtest-build: gtest/src/gtest-stamp/gtest-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'gtest'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'gtest'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-build
 
 gtest/src/gtest-stamp/gtest-configure: gtest/tmp/gtest-cfgcmd.txt
 gtest/src/gtest-stamp/gtest-configure: gtest/src/gtest-stamp/gtest-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'gtest'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest -B /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'gtest'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE= -DBUILD_SHARED_LIBS=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest -B /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-configure
 
 gtest/src/gtest-stamp/gtest-download: gtest/src/gtest-stamp/gtest-gitinfo.txt
 gtest/src/gtest-stamp/gtest-download: gtest/src/gtest-stamp/gtest-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'gtest'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'gtest'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-download
 
 gtest/src/gtest-stamp/gtest-install: gtest/src/gtest-stamp/gtest-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'gtest'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'gtest'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-install
 
 gtest/src/gtest-stamp/gtest-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'gtest'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'gtest'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-mkdir
 
 gtest/src/gtest-stamp/gtest-patch: gtest/src/gtest-stamp/gtest-patch-info.txt
 gtest/src/gtest-stamp/gtest-patch: gtest/src/gtest-stamp/gtest-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'gtest'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'gtest'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest-stamp/gtest-patch
 
 gtest/src/gtest-stamp/gtest-update: gtest/tmp/gtest-gitupdate.cmake
 gtest/src/gtest-stamp/gtest-update: gtest/src/gtest-stamp/gtest-update-info.txt
 gtest/src/gtest-stamp/gtest-update: gtest/src/gtest-stamp/gtest-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'gtest'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/src/gtest && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'gtest'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/src/gtest && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/gtest/tmp/gtest-gitupdate.cmake
 
 CMakeFiles/gtest.dir/codegen:
 .PHONY : CMakeFiles/gtest.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/gtest.dir/clean:
 .PHONY : CMakeFiles/gtest.dir/clean
 
 CMakeFiles/gtest.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/gtest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/gtest /home/pi/Drone/MAVSDK/third_party/gtest /home/pi/Drone/MAVSDK/build/third_party/gtest /home/pi/Drone/MAVSDK/build/third_party/gtest /home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles/gtest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/gtest && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/gtest /home/pi/Drone/libs/MAVSDK/third_party/gtest /home/pi/Drone/libs/MAVSDK/build/third_party/gtest /home/pi/Drone/libs/MAVSDK/build/third_party/gtest /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles/gtest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gtest.dir/depend
 

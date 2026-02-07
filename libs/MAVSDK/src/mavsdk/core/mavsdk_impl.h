@@ -11,6 +11,7 @@
 #include <queue>
 
 #include "autopilot.h"
+#include "compatibility_mode.h"
 #include "call_every_handler.h"
 #include "component_type.h"
 #include "connection.h"
@@ -30,6 +31,7 @@
 #include "sender.h"
 #include "timeout_handler.h"
 #include "callback_list.h"
+#include "callback_tracker.h"
 
 // Forward declarations to avoid including MessageSet.h in header
 namespace mav {
@@ -41,6 +43,8 @@ class BufferParser;
 
 namespace mavsdk {
 
+class RawConnection; // Forward declaration
+
 class MavsdkImpl {
 public:
     MavsdkImpl(const Mavsdk::Configuration& configuration);
@@ -49,9 +53,11 @@ public:
     void operator=(const MavsdkImpl&) = delete;
 
     static std::string version();
+    static uint8_t mav_type_for_component_type(ComponentType component_type);
 
     void forward_message(mavlink_message_t& message, Connection* connection);
-    void receive_message(mavlink_message_t& message, Connection* connection);
+    void receive_message(
+        MavlinkReceiver::ParseResult result, mavlink_message_t& message, Connection* connection);
     void receive_libmav_message(const Mavsdk::MavlinkMessage& message, Connection* connection);
 
     std::pair<ConnectionResult, Mavsdk::ConnectionHandle>
@@ -68,12 +74,22 @@ public:
     bool send_message(mavlink_message_t& message);
     uint8_t get_own_system_id() const;
     uint8_t get_own_component_id() const;
-    uint8_t channel() const;
-    Autopilot autopilot() const;
 
     Sender& sender();
 
     uint8_t get_mav_type() const;
+
+    // Server identification (what MAV_AUTOPILOT we send in heartbeats)
+    Autopilot get_autopilot() const;
+    uint8_t get_mav_autopilot() const;
+
+    // Compatibility mode
+    CompatibilityMode get_compatibility_mode() const;
+
+    // Returns effective autopilot for behavior decisions
+    // If compatibility_mode is Auto, returns detected autopilot
+    // Otherwise returns the forced mode (Pure/Px4/ArduPilot)
+    Autopilot effective_autopilot(Autopilot detected) const;
 
     Mavsdk::NewSystemHandle subscribe_on_new_system(const Mavsdk::NewSystemCallback& callback);
     void unsubscribe_on_new_system(Mavsdk::NewSystemHandle handle);
@@ -99,11 +115,17 @@ public:
     subscribe_connection_errors(Mavsdk::ConnectionErrorCallback callback);
     void unsubscribe_connection_errors(Mavsdk::ConnectionErrorHandle handle);
 
+    // Raw bytes API
+    void pass_received_raw_bytes(const char* bytes, size_t length);
+    Mavsdk::RawBytesHandle subscribe_raw_bytes_to_be_sent(const Mavsdk::RawBytesCallback& callback);
+    void unsubscribe_raw_bytes_to_be_sent(Mavsdk::RawBytesHandle handle);
+    bool notify_raw_bytes_sent(const char* bytes, size_t length);
+
     std::shared_ptr<ServerComponent> server_component(unsigned instance = 0);
 
     std::shared_ptr<ServerComponent>
     server_component_by_type(ComponentType server_component_type, unsigned instance = 0);
-    std::shared_ptr<ServerComponent> server_component_by_id(uint8_t component_id);
+    std::shared_ptr<ServerComponent> server_component_by_id(uint8_t component_id, uint8_t mav_type);
 
     Time time{};
     TimeoutHandler timeout_handler;
@@ -113,8 +135,10 @@ public:
         const std::string& filename, int linenumber, const std::function<void()>& func);
 
     void set_timeout_s(double timeout_s) { _timeout_s = timeout_s; }
+    double timeout_s() const { return _timeout_s; }
 
-    double timeout_s() const { return _timeout_s; };
+    void set_heartbeat_timeout_s(double timeout_s) { _heartbeat_timeout_s = timeout_s; }
+    double heartbeat_timeout_s() const { return _heartbeat_timeout_s; }
 
     MavlinkMessageHandler mavlink_message_handler{};
 
@@ -140,6 +164,7 @@ public:
 
 private:
     static constexpr float DEFAULT_TIMEOUT_S = 0.5f;
+    static constexpr double DEFAULT_HEARTBEAT_TIMEOUT_S = 3.0;
 
     std::pair<ConnectionResult, Mavsdk::ConnectionHandle>
     add_udp_connection(const CliArg::Udp& udp, ForwardingOption forwarding_option);
@@ -151,6 +176,8 @@ private:
         int baudrate,
         bool flow_control,
         ForwardingOption forwarding_option);
+    std::pair<ConnectionResult, Mavsdk::ConnectionHandle>
+    add_raw_connection(ForwardingOption forwarding_option);
 
     Mavsdk::ConnectionHandle add_connection(std::unique_ptr<Connection>&& connection);
     void make_system_with_component(uint8_t system_id, uint8_t component_id);
@@ -171,7 +198,8 @@ private:
 
     bool is_any_system_connected() const;
 
-    std::shared_ptr<ServerComponent> server_component_by_id_with_lock(uint8_t component_id);
+    std::shared_ptr<ServerComponent>
+    server_component_by_id_with_lock(uint8_t component_id, uint8_t mav_type);
     ServerComponentImpl& default_server_component_with_lock();
 
     static uint8_t get_target_system_id(const mavlink_message_t& message);
@@ -182,6 +210,9 @@ private:
         const Mavsdk::MavlinkMessage& json_message,
         std::vector<std::pair<Mavsdk::InterceptJsonHandle, Mavsdk::InterceptJsonCallback>>&
             callback_list);
+
+    // Find the raw connection in the connections list
+    RawConnection* find_raw_connection();
 
     mutable std::recursive_mutex _mutex{};
 
@@ -231,6 +262,7 @@ private:
     bool _message_logging_on{false};
     bool _callback_debugging{false};
     bool _system_debugging{false};
+    std::unique_ptr<CallbackTracker> _callback_tracker;
 
     mutable std::mutex _intercept_callbacks_mutex{};
     std::function<bool(mavlink_message_t&)> _intercept_incoming_messages_callback{nullptr};
@@ -244,7 +276,11 @@ private:
     mutable std::mutex _json_subscriptions_mutex{};
     HandleFactory<bool(Mavsdk::MavlinkMessage)> _json_handle_factory{};
 
+    // Raw bytes subscriptions
+    CallbackList<const char*, size_t> _raw_bytes_subscriptions{};
+
     std::atomic<double> _timeout_s{DEFAULT_TIMEOUT_S};
+    std::atomic<double> _heartbeat_timeout_s{DEFAULT_HEARTBEAT_TIMEOUT_S};
 
     struct ReceivedMessage {
         mavlink_message_t message;

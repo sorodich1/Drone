@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles/openssl"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles/openssl"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles/openssl.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles/openssl.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/CMakeFiles/openssl-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/CMakeFiles/openssl-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-stamp/openssl-update.rule"
 		}
 	],
 	"target" : 

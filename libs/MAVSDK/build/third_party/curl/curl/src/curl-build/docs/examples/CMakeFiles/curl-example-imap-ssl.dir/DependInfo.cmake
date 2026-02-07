@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/imap-ssl.c" "docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/curl/curl/src/curl/docs/examples/imap-ssl.c" "docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o" "gcc" "docs/examples/CMakeFiles/curl-example-imap-ssl.dir/imap-ssl.c.o.d"
   "" "docs/examples/imap-ssl" "gcc" "docs/examples/CMakeFiles/curl-example-imap-ssl.dir/link.d"
   )
 

@@ -11,7 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.6/CMakeSystem.cmake"
   "curl/tmp/curl-mkdirs.cmake"
-  "/home/pi/Drone/MAVSDK/third_party/curl/CMakeLists.txt"
+  "/home/pi/Drone/libs/MAVSDK/third_party/curl/CMakeLists.txt"
   "/usr/share/cmake-3.31/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.31/Modules/CMakeCInformation.cmake"

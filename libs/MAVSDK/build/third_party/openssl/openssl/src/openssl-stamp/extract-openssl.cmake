@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl-3.6.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/pi/Drone/MAVSDK/build/third_party/openssl/openssl/src/openssl" ABSOLUTE)
+get_filename_component(filename "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl-3.6.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/pi/Drone/libs/MAVSDK/build/third_party/openssl/openssl/src/openssl" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

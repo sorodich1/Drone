@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'")
+       file='/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'")
 
-  file("MD5" "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz" actual_value)
+  file("MD5" "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "d2bb81e1a1a7808352c4ca28622f5c72")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE "MD5 hash of
-    /home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz
+    /home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz
   does not match expected value
     expected: 'd2bb81e1a1a7808352c4ca28622f5c72'
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
+if(EXISTS "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
+  file='/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
   MD5='d2bb81e1a1a7808352c4ca28622f5c72'"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
+      file(REMOVE "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
+  file='/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
+    file(REMOVE "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
+   dst='/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz"
+        "${url}" "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
+          file(REMOVE "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz")
         else()
           message(VERBOSE "Downloading... done")
           return()

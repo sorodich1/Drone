@@ -1,7 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/inflate_lzma.cpp \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/inflate_lzma.cpp \
  /usr/include/stdc-predef.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/inflate_lzma.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/inflate_lzma.h \
  /usr/include/c++/14/filesystem \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
@@ -112,9 +112,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -122,7 +120,6 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
@@ -190,18 +187,18 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/inflate_lzma.cpp.o: \
  /usr/include/c++/14/ext/aligned_buffer.h \
  /usr/include/c++/14/bits/fs_dir.h /usr/include/c++/14/bits/fs_ops.h \
  /usr/include/c++/14/cstring /usr/include/string.h /usr/include/strings.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/version.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/base.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/vli.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/check.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/filter.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/bcj.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/delta.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/lzma12.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/container.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/stream_flags.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/block.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/index.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/index_hash.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/lzma/hardware.h
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/version.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/base.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/vli.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/check.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/filter.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/bcj.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/delta.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/lzma12.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/container.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/stream_flags.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/block.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/index.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/index_hash.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/lzma/hardware.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp" "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o" "gcc" "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/tinyxml2/tinyxml2/src/tinyxml2/tinyxml2.cpp" "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o" "gcc" "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

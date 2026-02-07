@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/CMakeFiles/mavlink-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-stamp/mavlink-update.rule"
 		}
 	],
 	"target" : 

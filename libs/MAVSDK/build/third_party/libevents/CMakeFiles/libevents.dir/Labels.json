@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles/libevents"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles/libevents"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles/libevents.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles/libevents.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/CMakeFiles/libevents-complete.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/CMakeFiles/libevents-complete.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-build.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-build.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-configure.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-configure.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-download.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-download.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-install.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-install.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-mkdir.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-mkdir.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-patch.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-patch.rule"
 		},
 		{
-			"file" : "/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-update.rule"
+			"file" : "/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-stamp/libevents-update.rule"
 		}
 	],
 	"target" : 

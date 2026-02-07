@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/gtest
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/gtest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/gtest
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/gtest
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/gtest.dir/clean
 CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles 0
 .PHONY : CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ gtest: CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/gtest/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target gtest"
 .PHONY : CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/third_party/picosha2
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/third_party/picosha2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/picosha2
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2
 
 # Utility rule file for picosha2.
 
@@ -76,49 +76,49 @@ CMakeFiles/picosha2-complete: picosha2/src/picosha2-stamp/picosha2-patch
 CMakeFiles/picosha2-complete: picosha2/src/picosha2-stamp/picosha2-configure
 CMakeFiles/picosha2-complete: picosha2/src/picosha2-stamp/picosha2-build
 CMakeFiles/picosha2-complete: picosha2/src/picosha2-stamp/picosha2-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picosha2'"
-	/usr/bin/cmake -E make_directory /home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2-complete
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picosha2'"
+	/usr/bin/cmake -E make_directory /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2-complete
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-done
 
 picosha2/src/picosha2-stamp/picosha2-build: picosha2/src/picosha2-stamp/picosha2-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'picosha2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && $(MAKE)
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'picosha2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && $(MAKE)
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-build
 
 picosha2/src/picosha2-stamp/picosha2-configure: picosha2/tmp/picosha2-cfgcmd.txt
 picosha2/src/picosha2-stamp/picosha2-configure: picosha2/src/picosha2-stamp/picosha2-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'picosha2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE=Release -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF "-GUnix Makefiles" -S /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2 -B /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'picosha2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -DCMAKE_PREFIX_PATH:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_INSTALL_PREFIX:PATH=/home/pi/Drone/libs/MAVSDK/build/third_party/install -DCMAKE_TOOLCHAIN_FILE:PATH= -DCMAKE_BUILD_TYPE= -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DBUILD_SHARED_LIBS=OFF "-GUnix Makefiles" -S /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2 -B /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-configure
 
 picosha2/src/picosha2-stamp/picosha2-download: picosha2/src/picosha2-stamp/picosha2-gitinfo.txt
 picosha2/src/picosha2-stamp/picosha2-download: picosha2/src/picosha2-stamp/picosha2-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'picosha2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-gitclone.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'picosha2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-gitclone.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-download
 
 picosha2/src/picosha2-stamp/picosha2-install: picosha2/src/picosha2-stamp/picosha2-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'picosha2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && $(MAKE) install
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'picosha2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && $(MAKE) install
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-build && /usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-install
 
 picosha2/src/picosha2-stamp/picosha2-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picosha2'"
-	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picosha2'"
+	/usr/bin/cmake -Dcfgdir= -P /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-mkdir
 
 picosha2/src/picosha2-stamp/picosha2-patch: picosha2/src/picosha2-stamp/picosha2-patch-info.txt
 picosha2/src/picosha2-stamp/picosha2-patch: picosha2/src/picosha2-stamp/picosha2-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picosha2'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picosha2'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-patch
+	/usr/bin/cmake -E touch /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2-stamp/picosha2-patch
 
 picosha2/src/picosha2-stamp/picosha2-update: picosha2/tmp/picosha2-gitupdate.cmake
 picosha2/src/picosha2-stamp/picosha2-update: picosha2/src/picosha2-stamp/picosha2-update-info.txt
 picosha2/src/picosha2-stamp/picosha2-update: picosha2/src/picosha2-stamp/picosha2-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'picosha2'"
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2 && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing update step for 'picosha2'"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/src/picosha2 && /usr/bin/cmake -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/picosha2/tmp/picosha2-gitupdate.cmake
 
 CMakeFiles/picosha2.dir/codegen:
 .PHONY : CMakeFiles/picosha2.dir/codegen
@@ -144,6 +144,6 @@ CMakeFiles/picosha2.dir/clean:
 .PHONY : CMakeFiles/picosha2.dir/clean
 
 CMakeFiles/picosha2.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/picosha2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/third_party/picosha2 /home/pi/Drone/MAVSDK/third_party/picosha2 /home/pi/Drone/MAVSDK/build/third_party/picosha2 /home/pi/Drone/MAVSDK/build/third_party/picosha2 /home/pi/Drone/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/third_party/picosha2 /home/pi/Drone/libs/MAVSDK/third_party/picosha2 /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2 /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2 /home/pi/Drone/libs/MAVSDK/build/third_party/picosha2/CMakeFiles/picosha2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/picosha2.dir/depend
 

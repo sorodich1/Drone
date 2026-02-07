@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build
 
 # Utility rule file for generate_c_headers.
 
@@ -66,18 +66,18 @@ include CMakeFiles/generate_c_headers.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/generate_c_headers.dir/progress.make
 
-CMakeFiles/generate_c_headers: include/mavlink/common/mavlink.h
+CMakeFiles/generate_c_headers: include/mavlink/ardupilotmega/mavlink.h
 
-include/mavlink/common/mavlink.h: /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/common.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C headers"
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/python3 -m pip install -r pymavlink/requirements.txt --upgrade -t /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/pip-dependencies/
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -E env PYTHONPATH=/home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/pip-dependencies/ /usr/bin/python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/include/mavlink/ message_definitions/v1.0/common.xml
+include/mavlink/ardupilotmega/mavlink.h: /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink/message_definitions/v1.0/ardupilotmega.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C headers"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/python3 -m pip install -r pymavlink/requirements.txt --upgrade -t /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/pip-dependencies/
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink && /usr/bin/cmake -E env PYTHONPATH=/home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/pip-dependencies/ /usr/bin/python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/include/mavlink/ message_definitions/v1.0/ardupilotmega.xml
 
 CMakeFiles/generate_c_headers.dir/codegen:
 .PHONY : CMakeFiles/generate_c_headers.dir/codegen
 
 generate_c_headers: CMakeFiles/generate_c_headers
-generate_c_headers: include/mavlink/common/mavlink.h
+generate_c_headers: include/mavlink/ardupilotmega/mavlink.h
 generate_c_headers: CMakeFiles/generate_c_headers.dir/build.make
 .PHONY : generate_c_headers
 
@@ -90,6 +90,6 @@ CMakeFiles/generate_c_headers.dir/clean:
 .PHONY : CMakeFiles/generate_c_headers.dir/clean
 
 CMakeFiles/generate_c_headers.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build /home/pi/Drone/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/CMakeFiles/generate_c_headers.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build /home/pi/Drone/libs/MAVSDK/build/third_party/mavlink/mavlink/src/mavlink-build/CMakeFiles/generate_c_headers.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/generate_c_headers.dir/depend
 

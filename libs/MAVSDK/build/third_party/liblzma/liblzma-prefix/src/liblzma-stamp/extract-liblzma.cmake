@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma" ABSOLUTE)
+get_filename_component(filename "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/xz-5.4.5.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

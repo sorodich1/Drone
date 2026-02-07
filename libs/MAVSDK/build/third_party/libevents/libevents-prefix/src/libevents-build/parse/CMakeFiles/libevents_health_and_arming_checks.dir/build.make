@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
+CMAKE_SOURCE_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
+CMAKE_BINARY_DIR = /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build
 
 # Include any dependencies generated for this target.
 include parse/CMakeFiles/libevents_health_and_arming_checks.dir/depend.make
@@ -73,18 +73,18 @@ parse/CMakeFiles/libevents_health_and_arming_checks.dir/codegen:
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/codegen
 
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o: parse/CMakeFiles/libevents_health_and_arming_checks.dir/flags.make
-parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o: /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp
+parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o: /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o: parse/CMakeFiles/libevents_health_and_arming_checks.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o -MF CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o.d -o CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o -c /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o -MF CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o.d -o CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o -c /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp
 
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp > CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp > CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.i
 
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp -o CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse/health_and_arming_checks.cpp -o CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.s
 
 # Object files for target libevents_health_and_arming_checks
 libevents_health_and_arming_checks_OBJECTS = \
@@ -96,19 +96,19 @@ libevents_health_and_arming_checks_EXTERNAL_OBJECTS =
 parse/liblibevents_health_and_arming_checks.a: parse/CMakeFiles/libevents_health_and_arming_checks.dir/health_and_arming_checks.cpp.o
 parse/liblibevents_health_and_arming_checks.a: parse/CMakeFiles/libevents_health_and_arming_checks.dir/build.make
 parse/liblibevents_health_and_arming_checks.a: parse/CMakeFiles/libevents_health_and_arming_checks.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibevents_health_and_arming_checks.a"
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/libevents_health_and_arming_checks.dir/cmake_clean_target.cmake
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libevents_health_and_arming_checks.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibevents_health_and_arming_checks.a"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/libevents_health_and_arming_checks.dir/cmake_clean_target.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libevents_health_and_arming_checks.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/build: parse/liblibevents_health_and_arming_checks.a
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/build
 
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/clean:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/libevents_health_and_arming_checks.dir/cmake_clean.cmake
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse && $(CMAKE_COMMAND) -P CMakeFiles/libevents_health_and_arming_checks.dir/cmake_clean.cmake
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/clean
 
 parse/CMakeFiles/libevents_health_and_arming_checks.dir/depend:
-	cd /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse /home/pi/Drone/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/CMakeFiles/libevents_health_and_arming_checks.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents/libs/cpp/parse /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse /home/pi/Drone/libs/MAVSDK/build/third_party/libevents/libevents-prefix/src/libevents-build/parse/CMakeFiles/libevents_health_and_arming_checks.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : parse/CMakeFiles/libevents_health_and_arming_checks.dir/depend
 

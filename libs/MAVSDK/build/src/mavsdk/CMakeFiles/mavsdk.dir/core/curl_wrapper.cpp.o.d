@@ -1,6 +1,7 @@
 src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper.cpp \
- /usr/include/stdc-predef.h /home/pi/Drone/MAVSDK/src/mavsdk/core/log.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/log.h \
  /usr/include/c++/14/bitset /usr/include/c++/14/bits/functexcept.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/os_defines.h \
@@ -98,9 +99,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/alloca.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/alloca.h /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/14/bits/std_abs.h /usr/include/c++/14/cstdio \
  /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h \
@@ -108,10 +107,10 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
- /usr/include/aarch64-linux-gnu/bits/stdio.h /usr/include/c++/14/cerrno \
- /usr/include/errno.h /usr/include/aarch64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/lib/linux/uapi/arm64/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
@@ -172,7 +171,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/c++/14/bits/ostream.tcc \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/include/mavsdk/log_callback.h \
  /usr/include/c++/14/functional /usr/include/c++/14/bits/std_function.h \
  /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
@@ -187,7 +186,7 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/array \
  /usr/include/c++/14/compare /usr/include/c++/14/iostream \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper.h \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
@@ -201,10 +200,10 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_include.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curlver.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/system.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_include.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curlver.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/system.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
@@ -223,17 +222,17 @@ src/mavsdk/CMakeFiles/mavsdk.dir/core/curl_wrapper.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/multi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/curl.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/urlapi.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/options.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/header.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/websockets.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/mprintf.h \
- /home/pi/Drone/MAVSDK/build/third_party/install/include/curl/easy.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
- /home/pi/Drone/MAVSDK/src/mavsdk/core/unused.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/multi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/curl.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/urlapi.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/options.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/header.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/websockets.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/mprintf.h \
+ /home/pi/Drone/libs/MAVSDK/build/third_party/install/include/curl/easy.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/curl_wrapper_types.h \
+ /home/pi/Drone/libs/MAVSDK/src/mavsdk/core/unused.h \
  /usr/include/c++/14/fstream /usr/include/c++/14/bits/codecvt.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \

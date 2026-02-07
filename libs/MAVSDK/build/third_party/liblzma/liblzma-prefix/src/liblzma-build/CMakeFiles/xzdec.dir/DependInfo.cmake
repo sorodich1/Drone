@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c" "CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o" "gcc" "CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o.d"
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c" "CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o" "gcc" "CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o.d"
-  "/home/pi/Drone/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c" "CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o" "gcc" "CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_exit.c" "CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o" "gcc" "CMakeFiles/xzdec.dir/src/common/tuklib_exit.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/common/tuklib_progname.c" "CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o" "gcc" "CMakeFiles/xzdec.dir/src/common/tuklib_progname.c.o.d"
+  "/home/pi/Drone/libs/MAVSDK/build/third_party/liblzma/liblzma-prefix/src/liblzma/src/xzdec/xzdec.c" "CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o" "gcc" "CMakeFiles/xzdec.dir/src/xzdec/xzdec.c.o.d"
   "" "xzdec" "gcc" "CMakeFiles/xzdec.dir/link.d"
   )
 
