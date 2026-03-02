@@ -29,6 +29,10 @@ public:
     bool execute_mission_from_json(const json& mission_json);
     bool return_to_home_no_land();
     bool execute_simple_takeoff();
+    bool is_mission_completed();
+    bool clear_mission();
+    void get_mission_items();
+    bool is_in_air() const;
     bool getCurrentPosition(double& lat, double& lon, float& alt, float& battery);
     std::shared_ptr<mavsdk::System> getSystem() const { return system_; }
     

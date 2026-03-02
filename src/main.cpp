@@ -9,6 +9,7 @@
 #include <thread>
 #include <atomic>
 #include <iomanip>
+#include <fstream>
 
 std::atomic<bool> server_running{true};
 
@@ -16,6 +17,21 @@ std::atomic<bool> server_running{true};
 std::unique_ptr<CameraCorrectionController> camera_correction_controller = nullptr;
 
 int main() {
+    std::ofstream log_file;
+    auto now = std::chrono::system_clock::now();
+    auto time_t = std::chrono::system_clock::to_time_t(now);
+    std::stringstream filename;
+    filename << "/home/pi/drone_log_" << std::put_time(std::localtime(&time_t), "%Y%m%d_%H%M%S") << ".txt";
+    log_file.open(filename.str());
+    
+    // ��������� ������ ������
+    auto old_cout = std::cout.rdbuf();
+    auto old_cerr = std::cerr.rdbuf();
+    
+    // �������������� �� � ����
+    std::cout.rdbuf(log_file.rdbuf());
+    std::cerr.rdbuf(log_file.rdbuf());
+
     // Создаем ОДИН экземпляр Mavsdk для всего приложения
     auto mavsdk = std::make_shared<mavsdk::Mavsdk>(mavsdk::Mavsdk::Configuration{mavsdk::ComponentType::GroundStation});
 
@@ -151,6 +167,15 @@ int main() {
             res.set_content("{\"error\": \"invalid_json\", \"message\": \"" + std::string(e.what()) + "\"}", "application/json");
             res.status = 400;
         }
+    });
+    
+    server.Get("/mission-status", [&](const httplib::Request& req, httplib::Response& res) {
+        nlohmann::json response;
+        response["completed"] = mission_controller.is_mission_completed();
+        response["in_air"] = mission_controller.is_in_air();
+        response["timestamp"] = std::chrono::duration_cast<std::chrono::milliseconds>(
+            std::chrono::system_clock::now().time_since_epoch()).count();
+        res.set_content(response.dump(), "application/json");
     });
 
     server.Get("/get-position", [&](const httplib::Request& req, httplib::Response& res) {
