@@ -339,16 +339,29 @@ bool MissionController::execute_mission_from_json(const json& mission_json) {
     // ========== ОСТАНОВКА МОНИТОРИНГА ==========
     std::cout << "[DRONE_INFO] 🛑 Остановка мониторинга..." << std::endl;
     stop_mission_monitoring();
-    
+
     // ========== ИТОГ ВЫПОЛНЕНИЯ ==========
     std::cout << "\n[DRONE_INFO] ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐" << std::endl;
     std::cout << "[DRONE_INFO] ⭐                    РЕЗУЛЬТАТ МИССИИ                    ⭐" << std::endl;
     std::cout << "[DRONE_INFO] ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐" << std::endl;
-    
+
     if (mission_completed_) {
         std::cout << "[DRONE_SUCCESS] ✅ МИССИЯ УСПЕШНО ЗАВЕРШЕНА!" << std::endl;
-        std::cout << "[DRONE_INFO] 🛬 Дрон выполнил все точки, ожидание команды посадки с сервера..." << std::endl;
+        std::cout << "[DRONE_INFO] 🛬 Дрон выполнил все точки, начинаем посадку..." << std::endl;
+        
+        // ========== АВТОМАТИЧЕСКАЯ ПОСАДКА ==========
+        std::cout << "[DRONE_INFO] Отправка команды LAND..." << std::endl;
+        auto land_result = action_->land();
+        
+        if (land_result == Action::Result::Success) {
+            std::cout << "[DRONE_SUCCESS] ✅ Команда посадки принята" << std::endl;
+            monitor_landing_progress();
+        } else {
+            std::cerr << "[DRONE_ERROR] ❌ Ошибка посадки: " << static_cast<int>(land_result) << std::endl;
+        }
+        
         return true;
+        
     } else if (force_land_triggered_) {
         std::cout << "[DRONE_WARNING] ⚠️ Миссия завершена с принудительной посадкой" << std::endl;
         return true;
@@ -456,22 +469,56 @@ void MissionController::mission_monitor_loop() {
 }
 
 void MissionController::handle_mission_completion() {
-    std::cout << "\n[DRONE_SUCCESS] ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐" << std::endl;
-    std::cout << "[DRONE_SUCCESS] ⭐ МИССИЯ ПОДТВЕРЖДЕНА КАК ВЫПОЛНЕННАЯ ⭐" << std::endl;
-    std::cout << "[DRONE_SUCCESS] ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐" << std::endl;
+    std::cout << "[DRONE_SUCCESS] ✅ Миссия выполнена. Начинаем посадку как в TakeoffLandController..." << std::endl;
     
-    auto flight_mode = telemetry_->flight_mode();
-    auto position = telemetry_->position();
+    // Прямо как в TakeoffLandController::execute_landing_only()
+    std::cout << "\n=== НАЧАЛО ПОСАДКИ ===" << std::endl;
     
-    std::cout << "[DRONE_INFO] 📊 ФИНАЛЬНЫЙ СТАТУС:" << std::endl;
-    std::cout << "[DRONE_INFO]   - Режим полета: " << flight_mode_to_string(flight_mode) << std::endl;
-    std::cout << "[DRONE_INFO]   - Высота: " << std::fixed << std::setprecision(1) << position.relative_altitude_m << "м" << std::endl;
-    std::cout << "[DRONE_INFO]   - Координаты: " << std::setprecision(7) << position.latitude_deg << ", " << position.longitude_deg << std::endl;
+    // Отправляем команду посадки
+    auto land_result = action_->land();
     
-    std::cout << "[DRONE_INFO] ⏳ ОЖИДАНИЕ КОМАНДЫ ПОСАДКИ С СЕРВЕРА..." << std::endl;
-    std::cout << "[DRONE_INFO] 🔄 Сервер должен отправить POST /takeoff-land" << std::endl;
+    if (land_result != Action::Result::Success) {
+        std::cerr << "[DRONE_ERROR] ❌ Ошибка посадки" << std::endl;
+        return;
+    }
     
-    mission_completed_ = true;
+    std::cout << "[DRONE_SUCCESS] ✅ Команда посадки принята" << std::endl;
+    std::cout << "Descending..." << std::endl;
+    
+    // Ждём посадки (как в TakeoffLandController)
+    for (int i = 0; i < 30; ++i) {
+        safe_sleep(1);
+        
+        try {
+            if (!telemetry_->in_air()) {
+                std::cout << "[DRONE_SUCCESS] ✅ Дрон сел!" << std::endl;
+                
+                // Ждём auto-disarm
+                std::cout << "Ожидание auto-disarm..." << std::endl;
+                safe_sleep(3);
+                
+                // Проверяем моторы
+                if (telemetry_->armed()) {
+                    std::cout << "Принудительное отключение..." << std::endl;
+                    action_->disarm();
+                }
+                
+                std::cout << "\n✓ Посадка завершена" << std::endl;
+                std::cout << "  Дрон на земле, моторы выключены" << std::endl;
+                
+                mission_completed_ = true;
+                return;
+            }
+            
+            auto position = telemetry_->position();
+            std::cout << "Altitude: " << position.relative_altitude_m << "m" << std::endl;
+            
+        } catch (const std::exception& e) {
+            std::cerr << "Error: " << e.what() << std::endl;
+        }
+    }
+    
+    std::cerr << "[DRONE_ERROR] ❌ Таймаут посадки!" << std::endl;
 }
 
 void MissionController::stop_mission_execution() {
@@ -979,14 +1026,6 @@ void MissionController::get_mission_items() {
 
     } catch (const std::exception& e) {
         std::cerr << "[DRONE_ERROR] Ошибка: " << e.what() << std::endl;
-    }
-}
-
-bool MissionController::is_in_air() const {
-    try {
-        return telemetry_->in_air();
-    } catch (...) {
-        return false;
     }
 }
 
