@@ -103,7 +103,7 @@ int main() {
 
     // Инициализируем контроллер коррекции ВСЕГДА (даже если дрон не подключен)
     std::cout << "[SERVER_INFO] Инициализация контроллера коррекции..." << std::endl;
-    camera_correction_controller = std::make_unique<CameraCorrectionController>(mavsdk, drone_system);
+    camera_correction_controller = std::make_unique<CameraCorrectionController>(mavsdk, drone_system, takeoff_controller.get());
 
     if (drone_connected) {
         if (camera_correction_controller->init()) {
